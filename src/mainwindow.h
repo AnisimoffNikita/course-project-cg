@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QImage>
 
 namespace Ui {
 class MainWindow;
@@ -18,7 +20,18 @@ public:
 private slots:
     void on_actOpenImage_triggered();
 
+    void on_actFit_triggered();
+
 private:
+    void openFile();
+    bool loadFile(const QString &filename);
+    void setImage(const QImage &newImage);
+    void initFileDialog(QFileDialog &dialog, QFileDialog::AcceptMode acceptMode);
+    void fitToWindow();
+    void updateActions();
+
+    float scaleFactor;
+    QImage image;
     Ui::MainWindow *ui;
 };
 
