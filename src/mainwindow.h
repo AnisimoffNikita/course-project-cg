@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include <QImage>
+#include <QResizeEvent>
 
 namespace Ui {
 class MainWindow;
@@ -17,11 +18,11 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
+    void resizeEvent(QResizeEvent *);
+
 private slots:
     void on_actOpenImage_triggered();
-
-    void on_actFit_triggered();
-
 private:
     void openFile();
     bool loadFile(const QString &filename);

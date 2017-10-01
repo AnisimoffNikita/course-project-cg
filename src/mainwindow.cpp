@@ -5,12 +5,15 @@
 #include <QImageReader>
 #include <QImageWriter>
 #include <QMessageBox>
+#include <QScreen>
+#include <QGraphicsPixmapItem>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    resize(QGuiApplication::primaryScreen()->availableSize() * 0.6);
     updateActions();
 }
 
@@ -18,6 +21,12 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::resizeEvent(QResizeEvent *)
+{
+
+}
+
 
 void MainWindow::on_actOpenImage_triggered()
 {
@@ -46,8 +55,8 @@ bool MainWindow::loadFile(const QString &filename)
 
     setImage(newImage);
 
-    const QString message = tr("Opened \"%1\", %2x%3, Depth: %4")
-        .arg(QDir::toNativeSeparators(filename)).arg(image.width()).arg(image.height()).arg(image.depth());
+    const QString message = tr("Opened \"%1\", %2x%3")
+        .arg(QDir::toNativeSeparators(filename)).arg(image.width()).arg(image.height());
     statusBar()->showMessage(message);
     return true;
 }
@@ -55,12 +64,10 @@ bool MainWindow::loadFile(const QString &filename)
 void MainWindow::setImage(const QImage &newImage)
 {
     image = newImage;
-    ui->lblImage->setPixmap(QPixmap::fromImage(image));
-    scaleFactor = 1.0;
+
+    ui->imageView->setImage(image);
 
     updateActions();
-
-    ui->lblImage->adjustSize();
 }
 
 void MainWindow::initFileDialog(QFileDialog &dialog, QFileDialog::AcceptMode acceptMode)
@@ -85,16 +92,8 @@ void MainWindow::initFileDialog(QFileDialog &dialog, QFileDialog::AcceptMode acc
         dialog.setDefaultSuffix("jpg");
 }
 
-void MainWindow::fitToWindow()
-{
-}
 
-void MainWindow::on_actFit_triggered()
-{
-    fitToWindow();
-}
 
 void MainWindow::updateActions()
 {
-    ui->actFit->setEnabled(!image.isNull());
 }

@@ -15,6 +15,18 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="grpImage">
+      <property name="title">
+       <string>Изображение</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="ImageView" name="imageView" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QGroupBox" name="grpMenu">
       <property name="minimumSize">
@@ -32,32 +44,6 @@
       <property name="title">
        <string>Меню</string>
       </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QScrollArea" name="scrollArea">
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>386</width>
-         <height>425</height>
-        </rect>
-       </property>
-       <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <widget class="QLabel" name="lblImage">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
      </widget>
     </item>
    </layout>
@@ -79,7 +65,6 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actOpenImage"/>
-   <addaction name="actFit"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actOpenImage">
@@ -91,16 +76,16 @@
     <string>Открыть изображение</string>
    </property>
   </action>
-  <action name="actFit">
-   <property name="icon">
-    <iconset theme="zoom-fit-best"/>
-   </property>
-   <property name="text">
-    <string>Подогнать размер</string>
-   </property>
-  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ImageView</class>
+   <extends>QWidget</extends>
+   <header>src/widgets/imageview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
