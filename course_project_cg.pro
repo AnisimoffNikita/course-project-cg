@@ -25,9 +25,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += src/main.cpp\
         src/mainwindow.cpp \
-    src/widgets/imageview.cpp
+    src/widgets/imageview.cpp \
+    src/math/matrix.cpp \
+    src/math/image.cpp \
+    src/math/rgbimage.cpp \
+    src/math/grayscaleimage.cpp
 
 HEADERS  += src/mainwindow.h \
-    src/widgets/imageview.h
+    src/widgets/imageview.h \
+    src/math/matrix.h \
+    src/math/image.h \
+    src/math/rgbimage.h \
+    src/math/grayscaleimage.h
 
 FORMS    += ui/mainwindow.ui

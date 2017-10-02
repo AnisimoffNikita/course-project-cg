@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>662</width>
-    <height>506</height>
+    <width>598</width>
+    <height>479</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,12 @@
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="1">
      <widget class="QGroupBox" name="grpImage">
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>400</height>
+       </size>
+      </property>
       <property name="title">
        <string>Изображение</string>
       </property>
@@ -32,7 +38,7 @@
       <property name="minimumSize">
        <size>
         <width>250</width>
-        <height>0</height>
+        <height>400</height>
        </size>
       </property>
       <property name="maximumSize">
