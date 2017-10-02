@@ -4,8 +4,6 @@
 
 class Image
 {
-public:
-    Image();
 };
 
 #endif // IMAGE_H

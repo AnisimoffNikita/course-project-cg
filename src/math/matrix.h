@@ -68,7 +68,7 @@ const T& Matrix<M, N, T>::operator()(int row, int col) const
 }
 
 template <int M, int N, typename T>
-T& Matrix<M, N, T>::operator()(int row, int coд)
+T& Matrix<M, N, T>::operator()(int row, int col)
 {
     return m[row][col];
 }

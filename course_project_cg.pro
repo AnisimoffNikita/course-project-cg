@@ -29,13 +29,18 @@ SOURCES += src/main.cpp\
     src/math/matrix.cpp \
     src/math/image.cpp \
     src/math/rgbimage.cpp \
-    src/math/grayscaleimage.cpp
+    src/math/grayscaleimage.cpp \
+    src/math/rgbcolor.cpp \
+    src/math/grayscalecolor.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
     src/math/matrix.h \
     src/math/image.h \
     src/math/rgbimage.h \
-    src/math/grayscaleimage.h
+    src/math/grayscaleimage.h \
+    src/math/rgbcolor.h \
+    src/math/grayscalecolor.h \
+    src/number.h
 
 FORMS    += ui/mainwindow.ui
