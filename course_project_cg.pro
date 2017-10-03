@@ -10,6 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = course_project_cg
 TEMPLATE = app
+CONFIG += c++14
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
@@ -28,19 +29,15 @@ SOURCES += src/main.cpp\
     src/widgets/imageview.cpp \
     src/math/matrix.cpp \
     src/math/image.cpp \
-    src/math/rgbimage.cpp \
-    src/math/grayscaleimage.cpp \
-    src/math/rgbcolor.cpp \
-    src/math/grayscalecolor.cpp
+    src/math/color.cpp \
+    src/math/imageconverter.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
     src/math/matrix.h \
     src/math/image.h \
-    src/math/rgbimage.h \
-    src/math/grayscaleimage.h \
-    src/math/rgbcolor.h \
-    src/math/grayscalecolor.h \
-    src/number.h
+    src/number.h \
+    src/math/color.h \
+    src/math/imageconverter.h
 
 FORMS    += ui/mainwindow.ui
