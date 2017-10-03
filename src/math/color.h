@@ -9,13 +9,13 @@ public:
     Color();
     Color(uint8 r, uint8 g, uint8 b);
 
-    uint8 red() const;
+    uint8 getRed() const;
     void setRed(uint8 value);
 
-    uint8 green() const;
+    uint8 getGreen() const;
     void setGreen(uint8 value);
 
-    uint8 blue() const;
+    uint8 getBlue() const;
     void setBlue(uint8 value);
 
 private:

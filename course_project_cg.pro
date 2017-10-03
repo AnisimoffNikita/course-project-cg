@@ -30,7 +30,9 @@ SOURCES += src/main.cpp\
     src/math/matrix.cpp \
     src/math/image.cpp \
     src/math/color.cpp \
-    src/math/imageconverter.cpp
+    src/math/imageconverter.cpp \
+    src/math/edgedetector.cpp \
+    src/math/linetransform.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -38,6 +40,8 @@ HEADERS  += src/mainwindow.h \
     src/math/image.h \
     src/number.h \
     src/math/color.h \
-    src/math/imageconverter.h
+    src/math/imageconverter.h \
+    src/math/edgedetector.h \
+    src/math/linetransform.h
 
 FORMS    += ui/mainwindow.ui

@@ -14,7 +14,7 @@ Color::Color(uint8 r, uint8 g, uint8 b):
 {
 }
 
-uint8 Color::red() const
+uint8 Color::getRed() const
 {
     return r;
 }
@@ -24,7 +24,7 @@ void Color::setRed(uint8 value)
     r = value;
 }
 
-uint8 Color::green() const
+uint8 Color::getGreen() const
 {
     return g;
 }
@@ -34,7 +34,7 @@ void Color::setGreen(uint8 value)
     g = value;
 }
 
-uint8 Color::blue() const
+uint8 Color::getBlue() const
 {
     return b;
 }

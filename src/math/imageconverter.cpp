@@ -16,3 +16,17 @@ Image ImageConverter::QImageToImage(const QImage &qImage)
         }
     return image;
 }
+
+QImage ImageConverter::ImageToQImage(const Image &image)
+{
+    QImage qImage(image.width, image.height, QImage::Format_RGB32);
+
+    for (uint32 i = 0; i < image.height; i++)
+        for (uint32 j = 0; j < image.width; j++)
+        {
+            QColor color(image.data[i*image.width + j].getRed(),
+                         image.data[i*image.width + j].getBlue(),
+                         image.data[i*image.width + j].getGreen());
+            qImage.setPixelColor(j,i,color);
+        }
+}
