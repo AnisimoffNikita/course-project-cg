@@ -28,20 +28,22 @@ SOURCES += src/main.cpp\
         src/mainwindow.cpp \
     src/widgets/imageview.cpp \
     src/math/matrix.cpp \
-    src/math/image.cpp \
-    src/math/color.cpp \
-    src/math/imageconverter.cpp \
-    src/math/edgedetector.cpp \
-    src/math/linetransform.cpp
+    src/image/image.cpp \
+    src/image/color.cpp \
+    src/image/imageconverter.cpp \
+    src/algorithm/edgedetector.cpp \
+    src/algorithm/linetransform.cpp \
+    src/algorithm/cannyedgedetector.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
     src/math/matrix.h \
-    src/math/image.h \
+    src/image/image.h \
     src/number.h \
-    src/math/color.h \
-    src/math/imageconverter.h \
-    src/math/edgedetector.h \
-    src/math/linetransform.h
+    src/image/color.h \
+    src/image/imageconverter.h \
+    src/algorithm/edgedetector.h \
+    src/algorithm/linetransform.h \
+    src/algorithm/cannyedgedetector.h
 
 FORMS    += ui/mainwindow.ui
