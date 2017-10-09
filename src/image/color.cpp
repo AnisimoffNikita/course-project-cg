@@ -7,6 +7,20 @@ Color::Color():
 {
 }
 
+Color::Color(const Color &color):
+    r(color.r),
+    g(color.g),
+    b(color.b)
+{
+}
+
+Color::Color(uint8 gray) :
+    r(gray),
+    g(gray),
+    b(gray)
+{
+}
+
 Color::Color(uint8 r, uint8 g, uint8 b):
     r(r),
     g(g),
@@ -42,4 +56,9 @@ uint8 Color::getBlue() const
 void Color::setBlue(uint8 value)
 {
     b = value;
+}
+
+void Color::setGray(uint8 gray)
+{
+    r = g = b = gray;
 }

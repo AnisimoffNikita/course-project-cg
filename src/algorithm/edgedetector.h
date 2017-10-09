@@ -1,13 +1,12 @@
 #ifndef EDGEDETECTOR_H
 #define EDGEDETECTOR_H
 
-#include "src/image/image.h"
+#include "imageprocessor.h"
 
-class EdgeDetector
+class EdgeDetector : public ImageProcessor
 {
 public:
     virtual ~EdgeDetector();
-    virtual Image process(const Image &image) = 0;
 };
 
 #endif // EDGEDETECTOR_H

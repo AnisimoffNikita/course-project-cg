@@ -13,7 +13,7 @@ ImageView::ImageView(QWidget *parent) :
 
 void ImageView::setImage(const QImage &image)
 {
-    scene->clear();
+    //scene->clear();
     scene->addPixmap(QPixmap::fromImage(image));
     this->fitInView(scene->itemsBoundingRect(), Qt::KeepAspectRatio);
 }

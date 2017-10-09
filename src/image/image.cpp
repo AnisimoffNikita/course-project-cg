@@ -24,6 +24,25 @@ Image::Image(Image &&image) :
     image.data = nullptr;
 }
 
+Image &Image::operator =(const Image &image)
+{
+    width = image.width;
+    height = image.height;
+    data = std::make_unique<Color[]>(width*height);
+    for (uint32 i = 0; i < width*height; i++)
+        data[i] = image.data[i];
+    return *this;
+}
+
+Image &Image::operator =(Image &&image)
+{
+    data = std::move(image.data);
+    width = image.width;
+    height = image.height;
+    image.data = nullptr;
+    return *this;
+}
+
 
 const Color &Image::at(uint32 i, uint32 j) const
 {

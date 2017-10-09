@@ -23,6 +23,10 @@ protected:
 
 private slots:
     void on_actOpenImage_triggered();
+    void on_btnGray_clicked();
+
+    void on_btnCanny_clicked();
+
 private:
     void openFile();
     bool loadFile(const QString &filename);
@@ -31,9 +35,8 @@ private:
     void fitToWindow();
     void updateActions();
 
-    float scaleFactor;
-    QImage image;
     Ui::MainWindow *ui;
+    QImage image;
 };
 
 #endif // MAINWINDOW_H

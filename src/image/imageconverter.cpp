@@ -10,9 +10,11 @@ Image ImageConverter::QImageToImage(const QImage &qImage)
     for (uint32 i = 0; i < image.height; i++)
         for (uint32 j = 0; j < image.width; j++)
         {
-            image.data[i*image.width + j].setRed(qImage.pixelColor(j, i).red());
-            image.data[i*image.width + j].setGreen(qImage.pixelColor(j, i).green());
-            image.data[i*image.width + j].setBlue(qImage.pixelColor(j, i).blue());
+            Color &pixel = image.data[i*image.width + j];
+            QColor target = qImage.pixelColor(j, i);
+            pixel.setRed(target.red());
+            pixel.setGreen(target.green());
+            pixel.setBlue(target.blue());
         }
     return image;
 }
@@ -24,9 +26,11 @@ QImage ImageConverter::ImageToQImage(const Image &image)
     for (uint32 i = 0; i < image.height; i++)
         for (uint32 j = 0; j < image.width; j++)
         {
-            QColor color(image.data[i*image.width + j].getRed(),
-                         image.data[i*image.width + j].getBlue(),
-                         image.data[i*image.width + j].getGreen());
+            Color &pixel = image.data[i*image.width + j];
+            QColor color(pixel.getRed(),
+                         pixel.getBlue(),
+                         pixel.getGreen());
             qImage.setPixelColor(j,i,color);
         }
+    return qImage;
 }

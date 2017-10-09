@@ -4,7 +4,7 @@
 
 #include <QImage>
 
-#include "memory"
+#include <memory>
 
 #include "src/number.h"
 #include "color.h"
@@ -17,6 +17,9 @@ public:
     Image();
     Image(const Image &image);
     Image(Image &&image);
+
+    Image &operator =(const Image &image);
+    Image &operator =(Image &&image);
 
 public:
     const Color &at(uint32 i, uint32 j) const;
@@ -33,6 +36,7 @@ private:
     uint32 width, height;
 
     friend class ImageConverter;
+    friend class GrayscaleConverter;
 };
 
 

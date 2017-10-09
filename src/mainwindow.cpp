@@ -6,7 +6,10 @@
 #include <QImageWriter>
 #include <QMessageBox>
 #include <QScreen>
-#include <QGraphicsPixmapItem>
+
+#include "src/algorithm/grayscaleconverter.h"
+#include "src/algorithm/cannyedgedetector.h"
+#include "src/image/imageconverter.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -96,4 +99,32 @@ void MainWindow::initFileDialog(QFileDialog &dialog, QFileDialog::AcceptMode acc
 
 void MainWindow::updateActions()
 {
+}
+
+void MainWindow::on_btnGray_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    GrayscaleConverter grayscaleConverter;
+    grayscaleConverter.process(work);
+
+    image = ImageConverter::ImageToQImage(work);
+
+    ui->imageView->setImage(image);
+
+}
+
+void MainWindow::on_btnCanny_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    GrayscaleConverter grayscaleConverter;
+    grayscaleConverter.process(work);
+
+    CannyEdgeDetector canny;
+    canny.process(work);
+
+    image = ImageConverter::ImageToQImage(work);
+
+    ui->imageView->setImage(image);
 }
