@@ -1,6 +1,7 @@
 #include "cannyedgedetector.h"
 
 #include "src/math/math.h"
+#include "src/image/imageconverter.h"
 
 CannyEdgeDetector::CannyEdgeDetector()
 {
@@ -14,18 +15,18 @@ CannyEdgeDetector::~CannyEdgeDetector()
 
 void CannyEdgeDetector::process(Image &image)
 {
-    this->image = image;
+    this->image = ImageConverter::ImageToGrayscalImage(image);
     gaussianBlur(5);
     gradients();
     nonMaxSuppression();
     doubleThreshold();
     hysteresis();
-    image = this->image;
+    image = ImageConverter::GrayscaleImageToImage(this->image);
 }
 
 void CannyEdgeDetector::gaussianBlur(int kernelSize)
 {
-    Image saved(image);
+    GrayscaleImage saved(image);
     float kernel[kernelSize][kernelSize];
     float norm = 0;
     for (int i = 0; i < kernelSize; i++)
@@ -35,55 +36,44 @@ void CannyEdgeDetector::gaussianBlur(int kernelSize)
             norm += kernel[i][j];
         }
 
-    int height = image.getHeight();
-    int width = image.getWidth();
+    uint32 height = image.getHeight();
+    uint32 width = image.getWidth();
 
-    int pixelPosX;
-    int pixelPosY;
+    uint32 pixelPosX;
+    uint32 pixelPosY;
+    float result;
 
-    for (int y = kernelSize / 2; y < height - kernelSize / 2; y++)
+    for (uint32 y = 0; y < height; y++)
     {
-        for (int x = kernelSize / 2; x < width - kernelSize / 2; x++)
+        for (uint32 x = 0; x < width; x++)
         {
-            float rSum = 0, gSum = 0, bSum = 0;
+            result = 0;
 
             for (int i = 0; i < kernelSize; i++)
             {
                 for (int j = 0; j < kernelSize; j++)
                 {
-                    pixelPosX = x + j - kernelSize / 2;
-                    pixelPosY = y + i - kernelSize / 2;
+                    pixelPosX = (x + j - kernelSize / 2 + width)%width;
+                    pixelPosY = (y + i - kernelSize / 2 + height)%height;
 
-                    uint8 red = saved.at(pixelPosY, pixelPosX).getRed();
-                    uint8 green = saved.at(pixelPosY, pixelPosX).getGreen();
-                    uint8 blue = saved.at(pixelPosY, pixelPosX).getBlue();
+                    uint8 color = saved.at(pixelPosY, pixelPosX);
 
                     float kernelVal = kernel[i][j];
 
-                    rSum += red * kernelVal;
-                    gSum += green * kernelVal;
-                    bSum += blue * kernelVal;
+                    result += color * kernelVal;
                 }
             }
 
-            rSum = rSum > 255 ? 255 : rSum;
-            rSum = rSum < 0 ? 0 : rSum;
+            result = Math::Clamp<float>(result, 0, 255);
 
-            gSum = gSum > 255 ? 255 : gSum;
-            gSum = gSum < 0 ? 0 : gSum;
-
-            bSum = bSum > 255 ? 255 : bSum;
-            bSum = bSum < 0 ? 0 : bSum;
-
-            Color color(rSum, gSum, bSum);
-            image.set(pixelPosY, pixelPosX, color);
+            image.set(y, x, static_cast<uint8>(result));
         }
     }
 }
 
 void CannyEdgeDetector::gradients()
 {
-    Image saved(image);
+    GrayscaleImage saved(image);
     constexpr int kernelSize = 3;
     float gx[kernelSize][kernelSize] = {{1,0,-1},{2,0,-2},{1,0,-1}};
     float gy[kernelSize][kernelSize] = {{1,2,1},{0,0,0},{-1,-2,-1}};
@@ -94,79 +84,74 @@ void CannyEdgeDetector::gradients()
     int pixelPosX;
     int pixelPosY;
 
-    directions.resize(image.getHeight());
-    for (auto &row : directions)
-    {
-        row.resize(image.getWidth());
-    }
+    directions = GrayscaleImage(height, width);
 
-    for (int y = kernelSize / 2; y < height - kernelSize / 2; y++)
+    float resultX;
+    float resultY;
+    float result;
+    for (int y = 0; y < height; y++)
     {
-        for (int x = kernelSize / 2; x < width - kernelSize / 2; x++)
+        for (int x =0; x < width; x++)
         {
-            float rxSum = 0;//, gxSum = 0, bxSum = 0;
-            float rySum = 0;//, gySum = 0, bySum = 0;
-            float rSum = 0;//, gSum = 0, bSum = 0;
-
+            resultX = resultY = 0;
             for (int i = 0; i < kernelSize; i++)
             {
                 for (int j = 0; j < kernelSize; j++)
                 {
-                    pixelPosX = x + j - kernelSize / 2;
-                    pixelPosY = y + i - kernelSize / 2;
+                    pixelPosX = (x + j - kernelSize / 2 + width)%width;
+                    pixelPosY = (y + i - kernelSize / 2 + height)%height;
 
-                    uint8 red = saved.at(pixelPosY, pixelPosX).getRed();/*
-                    uint8 green = saved.at(pixelPosY, pixelPosX).getGreen();
-                    uint8 blue = saved.at(pixelPosY, pixelPosX).getBlue();*/
+                    uint8 color = saved.at(pixelPosY, pixelPosX);
 
                     float gxVal = gx[i][j];
                     float gyVal = gy[i][j];
 
-                    rxSum += red * gxVal;/*
-                    gxSum += green * gxVal;
-                    bxSum += blue * gxVal;*/
+                    resultX += color * gxVal;
 
-                    rySum += red * gyVal;/*
-                    gySum += green * gyVal;
-                    bySum += blue * gyVal;*/
+                    resultY += color * gyVal;
                 }
             }
 
-            rSum = abs(rxSum) + abs(rySum);
-            rSum = rSum > 255 ? 255 : rSum;
-            rSum = rSum < 0 ? 0 : rSum;
+            result = sqrt(resultX * resultX + resultY * resultY);
+
 
             float angle;
-            if ((rxSum != 0.0) || (rySum != 0.0))
+            if (resultX == 0)
             {
-                angle = atan2(rxSum, rySum) * 180.0 / M_PI;
-            } else
-            {
-                angle = 0.0;
+                if (resultY == 0)
+                    angle = 0;
+                else
+                    angle = 90;
             }
-            if (((angle > -22.5) && (angle <= 22.5)) ||
-                    ((angle > 157.5) && (angle <= -157.5)))
+            else
             {
-                directions[y][x] = 0;
-            }
-            else if (((angle > 22.5) && (angle <= 67.5)) ||
-                       ((angle > -157.5) && (angle <= -112.5)))
-            {
-                directions[y][x] = 45;
-            }
-            else if (((angle > 67.5) && (angle <= 112.5)) ||
-                       ((angle > -112.5) && (angle <= -67.5)))
-            {
-                directions[y][x] = 90;
-            }
-            else if (((angle > 112.5) && (angle <= 157.5)) ||
-                       ((angle > -67.5) && (angle <= -22.5)))
-            {
-                directions[y][x] = 135;
+                angle = atan2(resultY, resultX) * 180.0 / M_PI;
             }
 
-            Color color(rSum, rSum, rSum);
-            image.set(pixelPosY, pixelPosX, color);
+            if ((angle > -22.5 && angle <= 22.5) ||
+                    (angle > 157.5 && angle <= -157.5) ||
+                    (angle > -202.5 && angle <= -157.5))
+            {
+                directions.set(y, x, 0);
+            }
+            else if ((angle > 22.5 && angle <= 67.5) ||
+                       (angle > -157.5 && angle <= -112.5))
+            {
+                directions.set(y, x, 45);
+            }
+            else if ((angle > 67.5 && angle <= 112.5) ||
+                       (angle > -112.5 && angle <= -67.5))
+            {
+                directions.set(y, x, 90);
+            }
+            else if ((angle > 112.5 && angle <= 157.5) ||
+                       (angle > -67.5 && angle <= -22.5))
+            {
+                directions.set(y, x, 135);
+            }
+
+            result = Math::Clamp<float>(result,0,255);
+            image.set(y, x, static_cast<uint8>(result));
         }
     }
 
@@ -175,42 +160,42 @@ void CannyEdgeDetector::gradients()
 
 void CannyEdgeDetector::nonMaxSuppression()
 {
-    Color pixel_1 = 0;
-    Color pixel_2 = 0;
-    Color pixel;
+    uint8 pixel1 = 0;
+    uint8 pixel2 = 0;
+    uint8 pixel;
 
-    for (uint32 x = 1; x < image.getHeight() - 1; x++)
+    for (uint32 y = 1; y < image.getHeight() - 1; y++)
     {
-        for (uint32 y = 1; y < image.getWidth() - 1; y++)
+        for (uint32 x = 1; x < image.getWidth() - 1; x++)
         {
-            if (directions[x][y] == 0)
+            if (directions.at(y,x) == 90)
             {
-                pixel_1 = image.at(x + 1, y);
-                pixel_2 = image.at(x - 1, y);
+                pixel1 = image.at(y + 1, x);
+                pixel2 = image.at(y - 1, x);
             }
-            else if (directions[x][y] == 45)
+            else if (directions.at(y,x) == 135)
             {
-                pixel_1 = image.at(x + 1, y - 1);
-                pixel_2 = image.at(x - 1, y + 1);
+                pixel1 = image.at(y + 1, x - 1);
+                pixel2 = image.at(y - 1, x + 1);
             }
-            else if (directions[x][y] == 90)
+            else if (directions.at(y,x) == 0)
             {
-                pixel_1 = image.at(x, y - 1);
-                pixel_2 = image.at(x, y + 1);
+                pixel1 = image.at(y, x - 1);
+                pixel2 = image.at(y, x + 1);
             }
-            else if (directions[x][y] == 135)
+            else if (directions.at(y, x) == 45)
             {
-                pixel_1 = image.at(x + 1, y + 1);
-                pixel_2 = image.at(x - 1, y - 1);
+                pixel1 = image.at(y + 1, x + 1);
+                pixel2 = image.at(y - 1, x - 1);
             }
-            pixel = image.at(x, y);
-            if ((pixel.getRed() > pixel_1.getRed()) && (pixel.getRed() > pixel_2.getRed()))
+            pixel = image.at(y, x);
+            if (pixel > pixel1 && pixel > pixel2)
             {
-                image.set(x, y, pixel);
+                image.set(y, x, pixel);
             }
             else
             {
-                image.set(x, y, Color(0,0,0));
+                image.set(y, x, 0);
             }
         }
     }
@@ -219,21 +204,20 @@ void CannyEdgeDetector::nonMaxSuppression()
 
 void CannyEdgeDetector::doubleThreshold()
 {
-    Color pixel;
-    constexpr float max = 140;
-    constexpr float min = 100;
+    uint8 pixel;
+    constexpr float max = 80;
+    constexpr float min = 60;
     for (uint32 y = 0; y < image.getHeight(); y++)
     {
         for (uint32 x = 0; x < image.getWidth(); x++)
         {
             pixel = image.at(y, x);
-            float color = pixel.getRed();
-            if (color > max)
-                image.set(y, x, Color(255,255,255));
-            else if (color < min)
-                image.set(y, x, Color(0,0,0));
+            if (pixel > max)
+                image.set(y, x, 255);
+            else if (pixel < min)
+                image.set(y, x, 0);
             else
-                image.set(y, x, Color(127,127,127));
+                image.set(y, x, 127);
         }
     }
 }
@@ -244,9 +228,19 @@ void CannyEdgeDetector::hysteresis()
     {
         for(uint32 x = 1; x < image.getWidth() - 1; ++x)
         {
-            if(image.at(y,x).getRed() == 255)
+            if(image.at(y,x) == 255)
             {
                 hysteresisRecursive(y, x);
+            }
+        }
+    }
+    for (uint32 y = 0; y < image.getHeight(); y++)
+    {
+        for (uint32 x = 0; x < image.getWidth(); x++)
+        {
+            if(image.at(y,x) != 255)
+            {
+                image.set(y, x, 0);
             }
         }
     }
@@ -254,37 +248,40 @@ void CannyEdgeDetector::hysteresis()
 
 void CannyEdgeDetector::hysteresisRecursive(uint32 y, uint32 x)
 {
-    image.set(y,x,Color(255,255,255));
+    if(image.at(y,x) != 255)
+    {
+        image.set(y, x, 255);
+    }
 
-    if(y < image.getHeight() - 1 && x < image.getWidth() - 1 && image.at(y + 1, x + 1).getRed() == 127)
+    if(y < image.getHeight() - 1 && x < image.getWidth() - 1 && image.at(y + 1, x + 1)== 127)
     {
         hysteresisRecursive(y + 1, x + 1);
     }
-    if(x < image.getWidth() - 1 && image.at(y, x + 1).getRed() == 127)
+    if(x < image.getWidth() - 1 && image.at(y, x + 1) == 127)
     {
         hysteresisRecursive(y, x+1);
     }
-    if(y < image.getHeight() - 1 && image.at(y + 1, x).getRed() == 127)
+    if(y < image.getHeight() - 1 && image.at(y + 1, x) == 127)
     {
         hysteresisRecursive(y + 1, x);
     }
-    if(y > 1 && x < image.getWidth() - 1 && image.at(y - 1, x + 1).getRed() == 127)
+    if(y > 1 && x < image.getWidth() - 1 && image.at(y - 1, x + 1) == 127)
     {
         hysteresisRecursive(y - 1, x + 1);
     }
-    if(y < image.getHeight() - 1 && x > 1 && image.at(y + 1, x - 1).getRed() == 127)
+    if(y < image.getHeight() - 1 && x > 1 && image.at(y + 1, x - 1) == 127)
     {
         hysteresisRecursive(y + 1, x - 1);
     }
-    if(y > 1 && x > 1 && image.at(y - 1, x - 1).getRed() == 127)
+    if(y > 1 && x > 1 && image.at(y - 1, x - 1) == 127)
     {
         hysteresisRecursive(y - 1, x - 1);
     }
-    if(x > 1 && image.at(y, x - 1).getRed() == 127)
+    if(x > 1 && image.at(y, x - 1) == 127)
     {
         hysteresisRecursive(y, x - 1);
     }
-    if(y > 1 && image.at(y - 1, x).getRed() == 127)
+    if(y > 1 && image.at(y - 1, x) == 127)
     {
         hysteresisRecursive(y - 1, x);
     }

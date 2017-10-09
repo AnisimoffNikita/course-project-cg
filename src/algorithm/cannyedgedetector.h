@@ -2,7 +2,7 @@
 #define CANNYEDGEDETECTOR_H
 
 #include "edgedetector.h"
-#include "src/math/matrix.h"
+#include "src/image/grayscaleimage.h"
 
 class CannyEdgeDetector : public EdgeDetector
 {
@@ -20,11 +20,8 @@ private:
     void hysteresis();
     void hysteresisRecursive(uint32 y, uint32 x);
 
-
-
-    Image image;
-    Image result;
-    std::vector<std::vector<int>> directions;
+    GrayscaleImage image;
+    GrayscaleImage directions;
 };
 
 #endif // CANNYEDGEDETECTOR_H

@@ -35,8 +35,10 @@ SOURCES += src/main.cpp\
     src/algorithm/linetransform.cpp \
     src/algorithm/cannyedgedetector.cpp \
     src/algorithm/imageprocessor.cpp \
-    src/algorithm/grayscaleconverter.cpp \
-    src/math/math.cpp
+    src/math/math.cpp \
+    src/image/grayscaleimage.cpp \
+    src/image/imagebase.cpp \
+    src/image/grayscalecolor.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -49,7 +51,9 @@ HEADERS  += src/mainwindow.h \
     src/algorithm/linetransform.h \
     src/algorithm/cannyedgedetector.h \
     src/algorithm/imageprocessor.h \
-    src/algorithm/grayscaleconverter.h \
-    src/math/math.h
+    src/math/math.h \
+    src/image/grayscaleimage.h \
+    src/image/imagebase.h \
+    src/image/grayscalecolor.h
 
 FORMS    += ui/mainwindow.ui

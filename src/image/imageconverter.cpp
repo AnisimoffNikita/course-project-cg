@@ -34,3 +34,26 @@ QImage ImageConverter::ImageToQImage(const Image &image)
         }
     return qImage;
 }
+
+GrayscaleImage ImageConverter::ImageToGrayscalImage(const Image &image)
+{
+    GrayscaleImage grayscaleImage(image.getHeight(), image.getWidth());
+    for (uint32 i = 0; i < image.width*image.height; i++)
+        grayscaleImage.data[i] = getGrayscale(image.data[i]);
+    return grayscaleImage;
+}
+
+uint8 ImageConverter::getGrayscale(const Color &color)
+{
+    uint8 gray = color.getRed()*0.299+color.getGreen()*0.587+color.getBlue()*0.114;
+    return gray;
+}
+
+
+Image ImageConverter::GrayscaleImageToImage(const GrayscaleImage &grayscaleImage)
+{
+    Image image(grayscaleImage.height, grayscaleImage.width);
+    for (uint32 i = 0; i < grayscaleImage.width*grayscaleImage.height; i++)
+        image.data[i].setGray(grayscaleImage.data[i]);
+    return image;
+}

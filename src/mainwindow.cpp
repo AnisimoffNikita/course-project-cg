@@ -7,7 +7,6 @@
 #include <QMessageBox>
 #include <QScreen>
 
-#include "src/algorithm/grayscaleconverter.h"
 #include "src/algorithm/cannyedgedetector.h"
 #include "src/image/imageconverter.h"
 
@@ -105,8 +104,8 @@ void MainWindow::on_btnGray_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
 
-    GrayscaleConverter grayscaleConverter;
-    grayscaleConverter.process(work);
+    GrayscaleImage gray = ImageConverter::ImageToGrayscalImage(work);
+    work = ImageConverter::GrayscaleImageToImage(gray);
 
     image = ImageConverter::ImageToQImage(work);
 
@@ -117,9 +116,6 @@ void MainWindow::on_btnGray_clicked()
 void MainWindow::on_btnCanny_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
-
-    GrayscaleConverter grayscaleConverter;
-    grayscaleConverter.process(work);
 
     CannyEdgeDetector canny;
     canny.process(work);

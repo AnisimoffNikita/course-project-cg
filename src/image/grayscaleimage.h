@@ -1,6 +1,5 @@
-#ifndef IMAGE_H
-#define IMAGE_H
-
+#ifndef GRAYSCALEIMAGE_H
+#define GRAYSCALEIMAGE_H
 
 #include <QImage>
 
@@ -8,18 +7,19 @@
 #include "imagebase.h"
 
 #include "src/number.h"
-#include "color.h"
+#include "grayscalecolor.h"
 
 class ImageConverter;
 
-class Image : public ImageBase<Color>
+class GrayscaleImage : public ImageBase<uint8>
 {
 public:
-    using ImageBase<Color>::ImageBase;
+    using ImageBase<uint8>::ImageBase;
 
     friend class ImageConverter;
     friend class GrayscaleConverter;
 };
 
 
-#endif // IMAGE_H
+
+#endif // GRAYSCALEIMAGE_H
