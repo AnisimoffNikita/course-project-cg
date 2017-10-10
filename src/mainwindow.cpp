@@ -110,7 +110,6 @@ void MainWindow::on_btnCanny_clicked()
     auto temp = ImageConverter::ImageToQImage(work);
 
     ui->imageView->setImage(temp);
-
 }
 
 

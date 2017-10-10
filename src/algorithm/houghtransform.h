@@ -21,9 +21,9 @@ public:
 private:
     void fillAccumulator();
     void getLines();
-    void drawLines();
+    void drawLines(Image &color);
 
-    void brezenhem(const Line &line);
+    void brezenhem(Image &color, const Line &line);
 
     uint32 threshold;
     GrayscaleImage image;

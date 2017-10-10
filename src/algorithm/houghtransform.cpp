@@ -24,9 +24,12 @@ void HoughTransform::process(Image &image)
 
     fillAccumulator();
     getLines();
-    drawLines();
 
-    image = ImageConverter::GrayscaleImageToImage(this->image);
+    Image color = ImageConverter::GrayscaleImageToImage(this->image);
+
+    drawLines(color);
+
+    image = color;
 }
 
 void HoughTransform::fillAccumulator()
@@ -121,22 +124,22 @@ void HoughTransform::getLines()
     }
 }
 
-void HoughTransform::drawLines()
+void HoughTransform::drawLines(Image &color)
 {
     for (const Line &line : lines)
     {
-        brezenhem(line);
+        brezenhem(color, line);
     }
 }
 
-void HoughTransform::brezenhem(const Line &line)
+void HoughTransform::brezenhem(Image &color, const Line &line)
 {
     Point p1 = line.getP1(), p2 = line.getP2();
     int32 x1 = p1.getX(), y1 = p1.getY();
     int32 x2 = p2.getX(), y2 = p2.getY();
     if (x1 == x2 && y1 == y2)
     {
-        image.set(y1, x1, 127);
+        color.set(y1, x1, Color(255,0,0));
     }
     int32 dx = x2 - x1, dy = y2 - y1;
     int32 sx = Math::sgn(dx), sy = Math::sgn(dy);
@@ -153,7 +156,7 @@ void HoughTransform::brezenhem(const Line &line)
     {
         for (int32 i = 0; i < dx; i++)
         {
-            image.set(y, x, 127);
+            color.set(y, x, Color(255,0,0));
             if (f > 0)
             {
                 x += sx;
@@ -167,7 +170,7 @@ void HoughTransform::brezenhem(const Line &line)
     {
         for (int32 i = 0; i < dx; i++)
         {
-            image.set(y, x, 127);
+            color.set(y, x, Color(255,0,0));
             if (f > 0)
             {
                 y += sy;
@@ -177,5 +180,5 @@ void HoughTransform::brezenhem(const Line &line)
             f += dy*2;
         }
     }
-    image.set(y, x, 127);
+    color.set(y, x, 127);
 }
