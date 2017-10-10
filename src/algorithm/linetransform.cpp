@@ -1,6 +1,7 @@
 #include "linetransform.h"
 
-LineTransform::LineTransform()
+
+LineTransform::~LineTransform()
 {
 
 }

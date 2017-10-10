@@ -6,6 +6,10 @@
 #include <QImage>
 #include <QResizeEvent>
 
+#include "src/algorithm/cannyedgedetector.h"
+#include "src/algorithm/houghtransform.h"
+#include "src/algorithm/gaussianblur.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -23,9 +27,10 @@ protected:
 
 private slots:
     void on_actOpenImage_triggered();
-    void on_btnGray_clicked();
 
     void on_btnCanny_clicked();
+
+    void on_btnHough_clicked();
 
 private:
     void openFile();
@@ -37,6 +42,10 @@ private:
 
     Ui::MainWindow *ui;
     QImage image;
+
+    GaussianBlur gauss;
+    CannyEdgeDetector canny;
+    HoughTransform hough;
 };
 
 #endif // MAINWINDOW_H

@@ -7,15 +7,16 @@
 #include <QMessageBox>
 #include <QScreen>
 
-#include "src/algorithm/cannyedgedetector.h"
 #include "src/image/imageconverter.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    gauss(1.4, 3),
+    canny(60, 100)
 {
     ui->setupUi(this);
-    resize(QGuiApplication::primaryScreen()->availableSize() * 0.6);
+    resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
     updateActions();
 }
 
@@ -100,27 +101,29 @@ void MainWindow::updateActions()
 {
 }
 
-void MainWindow::on_btnGray_clicked()
-{
-    Image work = ImageConverter::QImageToImage(image);
-
-    GrayscaleImage gray = ImageConverter::ImageToGrayscalImage(work);
-    work = ImageConverter::GrayscaleImageToImage(gray);
-
-    image = ImageConverter::ImageToQImage(work);
-
-    ui->imageView->setImage(image);
-
-}
-
 void MainWindow::on_btnCanny_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
 
-    CannyEdgeDetector canny;
     canny.process(work);
 
-    image = ImageConverter::ImageToQImage(work);
+    auto temp = ImageConverter::ImageToQImage(work);
 
-    ui->imageView->setImage(image);
+    ui->imageView->setImage(temp);
+
+}
+
+
+void MainWindow::on_btnHough_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    gauss.process(work);
+    canny.process(work);
+    hough.process(work);
+
+    auto temp = ImageConverter::ImageToQImage(work);
+
+    ui->imageView->setImage(temp);
+
 }

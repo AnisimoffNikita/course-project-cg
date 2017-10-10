@@ -1,11 +1,12 @@
 #ifndef LINETRANSFORM_H
 #define LINETRANSFORM_H
 
+#include "imageprocessor.h"
 
-class LineTransform
+class LineTransform : public ImageProcessor
 {
 public:
-    LineTransform();
+    virtual ~LineTransform();
 };
 
 #endif // LINETRANSFORM_H
