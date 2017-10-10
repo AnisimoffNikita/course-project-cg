@@ -13,7 +13,7 @@ class HoughTransform : public LineTransform
 private:
     using Points = std::vector<Point>;
 public:
-    HoughTransform(uint32 threshold = 100);
+    HoughTransform(uint32 threshold = 50);
     virtual ~HoughTransform();
 
     virtual void process(Image &image);
@@ -21,6 +21,10 @@ public:
 private:
     void fillAccumulator();
     void getLines();
+
+    //Temporary here
+    void getParallelLines();
+
     void drawLines(Image &color);
 
     void brezenhem(Image &color, const Line &line);

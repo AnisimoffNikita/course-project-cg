@@ -117,7 +117,7 @@ void MainWindow::on_btnHough_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
 
-    gauss.process(work);
+    //gauss.process(work);
     canny.process(work);
     hough.process(work);
 

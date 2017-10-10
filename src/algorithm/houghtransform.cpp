@@ -25,6 +25,8 @@ void HoughTransform::process(Image &image)
     fillAccumulator();
     getLines();
 
+    getParallelLines();
+
     Image color = ImageConverter::GrayscaleImageToImage(this->image);
 
     drawLines(color);
@@ -122,6 +124,41 @@ void HoughTransform::getLines()
             }
         }
     }
+}
+
+void HoughTransform::getParallelLines()
+{
+    std::vector<Line> result;
+
+
+    for (uint32 i = 0; i < lines.size() - 1; i++)
+    {
+        for (uint32 j = i + 1; j < lines.size(); j++)
+        {
+            int32 dx1 = lines[i].getP1().getX() - lines[i].getP2().getX();
+            int32 dy1 = lines[i].getP1().getY() - lines[i].getP2().getY();
+            int32 dx2 = lines[j].getP1().getX() - lines[j].getP2().getX();
+            int32 dy2 = lines[j].getP1().getY() - lines[j].getP2().getY();
+
+            if ((dx1 >= 0 && dy1 >= 0 && dx2 <= 0 && dy2 <= 0) ||
+                (dx1 <= 0 && dy1 <= 0 && dx2 >= 0 && dy2 >= 0) ||
+                (dx1 >= 0 && dy1 <= 0 && dx2 <= 0 && dy1 >= 0) ||
+                (dx1 <= 0 && dy1 >= 0 && dx2 >= 0 && dy1 <= 0))
+            {
+                dx2 *= -1; dy2 *= -1;
+            }
+
+            int32 eps = 4;
+
+            if (abs(dx1-dx2) < eps && abs(dy1-dy2) < eps)
+            {
+                result.push_back(lines[i]);
+                result.push_back(lines[j]);
+            }
+        }
+    }
+
+    lines = result;
 }
 
 void HoughTransform::drawLines(Image &color)
