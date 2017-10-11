@@ -6,9 +6,9 @@
 #include <QImage>
 #include <QResizeEvent>
 
-#include "src/algorithm/cannyedgedetector.h"
-#include "src/algorithm/houghtransform.h"
-#include "src/algorithm/gaussianblur.h"
+#include "src/algorithm/edgedetector/cannyedgedetector.h"
+#include "src/algorithm/linetransform/houghtransform.h"
+#include "src/algorithm/blur/gaussianblur.h"
 #include "src/algorithm/cylindersizecalculator.h"
 
 namespace Ui {

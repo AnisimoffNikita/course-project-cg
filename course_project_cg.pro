@@ -31,21 +31,21 @@ SOURCES += src/main.cpp\
     src/image/image.cpp \
     src/image/color.cpp \
     src/image/imageconverter.cpp \
-    src/algorithm/edgedetector.cpp \
-    src/algorithm/linetransform.cpp \
-    src/algorithm/cannyedgedetector.cpp \
+    src/algorithm/edgedetector/edgedetector.cpp \
+    src/algorithm/linetransform/linetransform.cpp \
+    src/algorithm/edgedetector/cannyedgedetector.cpp \
     src/math/math.cpp \
     src/image/grayscaleimage.cpp \
     src/image/imagebase.cpp \
     src/image/grayscalecolor.cpp \
-    src/algorithm/houghtransform.cpp \
+    src/algorithm/linetransform/houghtransform.cpp \
     src/math/point.cpp \
     src/math/line.cpp \
-    src/algorithm/gaussianblur.cpp \
+    src/algorithm/blur/gaussianblur.cpp \
     src/math/cylindersize.cpp \
     src/algorithm/cylindersizecalculator.cpp \
     src/algorithm/cylindersizecalculatorbase.cpp \
-    src/algorithm/blur.cpp
+    src/algorithm/blur/blur.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -54,21 +54,21 @@ HEADERS  += src/mainwindow.h \
     src/number.h \
     src/image/color.h \
     src/image/imageconverter.h \
-    src/algorithm/edgedetector.h \
-    src/algorithm/linetransform.h \
-    src/algorithm/cannyedgedetector.h \
+    src/algorithm/edgedetector/edgedetector.h \
+    src/algorithm/linetransform/linetransform.h \
+    src/algorithm/edgedetector/cannyedgedetector.h \
     src/math/math.h \
     src/image/grayscaleimage.h \
     src/image/imagebase.h \
     src/image/grayscalecolor.h \
-    src/algorithm/houghtransform.h \
+    src/algorithm/linetransform/houghtransform.h \
     src/math/point.h \
     src/math/line.h \
-    src/algorithm/gaussianblur.h \
+    src/algorithm/blur/gaussianblur.h \
     src/math/cylindersize.h \
     src/algorithm/cylindersizecalculator.h \
     src/algorithm/cylindersizecalculatorbase.h \
-    src/algorithm/blur.h
+    src/algorithm/blur/blur.h
 
 FORMS    += ui/mainwindow.ui
 QMAKE_CXXFLAGS_RELEASE += -O3

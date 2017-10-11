@@ -14,29 +14,7 @@
    <string>Вычисление размеров цилиндра</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="1">
-     <widget class="QGroupBox" name="grpImage">
-      <property name="minimumSize">
-       <size>
-        <width>400</width>
-        <height>400</height>
-       </size>
-      </property>
-      <property name="title">
-       <string>Изображение</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="0">
-        <widget class="ImageView" name="imageView" native="true">
-         <zorder>grpMenu</zorder>
-         <zorder>grpMenu</zorder>
-         <zorder>grpMenu</zorder>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
+   <layout class="QFormLayout" name="formLayout">
     <item row="0" column="0">
      <widget class="QGroupBox" name="grpMenu">
       <property name="minimumSize">
@@ -54,41 +32,7 @@
       <property name="title">
        <string>Отладка</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout_3">
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>height</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0" colspan="2">
-        <widget class="QPushButton" name="btnCalibrate">
-         <property name="text">
-          <string>calibrate</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="QLineEdit" name="edtR">
-         <property name="text">
-          <string>0.15</string>
-         </property>
-        </widget>
-       </item>
-       <item row="12" column="1">
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
+      <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0" colspan="2">
         <widget class="QPushButton" name="btnCanny">
          <property name="text">
@@ -103,10 +47,17 @@
          </property>
         </widget>
        </item>
-       <item row="9" column="0" colspan="2">
-        <widget class="QPushButton" name="btnEval">
+       <item row="2" column="0" colspan="2">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QPushButton" name="btnCalibrate">
          <property name="text">
-          <string>eval</string>
+          <string>calibrate</string>
          </property>
         </widget>
        </item>
@@ -117,34 +68,6 @@
          </property>
         </widget>
        </item>
-       <item row="5" column="1">
-        <widget class="QLineEdit" name="edtH">
-         <property name="text">
-          <string>0.2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="10" column="0">
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>height</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="0">
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>radius</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0" colspan="2">
-        <widget class="Line" name="line">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
        <item row="4" column="1">
         <widget class="QLineEdit" name="edtDist">
          <property name="text">
@@ -152,26 +75,99 @@
          </property>
         </widget>
        </item>
-       <item row="11" column="0">
-        <widget class="QLabel" name="label_5">
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>height</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="edtH">
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_3">
          <property name="text">
           <string>radius</string>
          </property>
         </widget>
        </item>
-       <item row="10" column="1">
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="edtR">
+         <property name="text">
+          <string>0.15</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="QPushButton" name="btnEval">
+         <property name="text">
+          <string>eval</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>height</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
         <widget class="QLabel" name="lblResH">
          <property name="text">
           <string/>
          </property>
         </widget>
        </item>
-       <item row="11" column="1">
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>radius</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
         <widget class="QLabel" name="lblResR">
          <property name="text">
           <string/>
          </property>
         </widget>
+       </item>
+       <item row="10" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="grpImage">
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Изображение</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="ImageView" name="imageView" native="true"/>
        </item>
       </layout>
      </widget>
