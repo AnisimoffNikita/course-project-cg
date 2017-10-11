@@ -37,6 +37,11 @@ void CylinderSizeCalculator::calibrate(const std::vector<Line> &inLines, double 
     factor = localFactor / visibleEdge;
 }
 
+void CylinderSizeCalculator::calibrate(double diag, double diagPx)
+{
+    factor = diag/diagPx;
+}
+
 void CylinderSizeCalculator::findEdges()
 {
     std::vector<Line> result(2);

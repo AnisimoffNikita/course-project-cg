@@ -12,10 +12,7 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow),
-    gauss(1.4, 3),
-    canny(60, 100),
-    hough(100)
+    ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
@@ -103,56 +100,48 @@ void MainWindow::updateActions()
 {
 }
 
-void MainWindow::on_btnCanny_clicked()
-{
-    Image work = ImageConverter::QImageToImage(image);
-
-    canny.process(work);
-
-    auto temp = ImageConverter::ImageToQImage(work);
-
-    ui->imageView->setImage(temp);
-}
-
-
-void MainWindow::on_btnHough_clicked()
-{
-    Image work = ImageConverter::QImageToImage(image);
-
-    //gauss.process(work);
-    canny.process(work);
-    auto lines = hough.process(work);
-
-    auto temp = ImageConverter::ImageToQImage(work);
-
-    ui->imageView->setImage(temp);
-
-}
 
 void MainWindow::on_btnCalibrate_clicked()
 {
-    Image work = ImageConverter::QImageToImage(image);
+    if (ui->rbnStandard->isChecked())
+    {
+        Image work = ImageConverter::QImageToImage(image);
 
-    //gauss.process(work);
-    canny.process(work);
-    auto lines = hough.process(work);
+        GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                           ui->lblKernel->text().toInt());
+        CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                                ui->lblMaxThresh->text().toInt());
+        HoughTransform hough(ui->lblThresh->text().toInt());
 
-    auto temp = ImageConverter::ImageToQImage(work);
+        gauss.process(work);
+        canny.process(work);
+        auto lines = hough.process(work);
 
-    calc.calibrate(lines,
-                   ui->edtDist->text().toDouble(),
-                   ui->edtR->text().toDouble(),
-                   ui->edtH->text().toDouble());
+        calc.calibrate(lines,
+                       ui->edtDist->text().toDouble(),
+                       ui->edtR->text().toDouble(),
+                       ui->edtH->text().toDouble());
 
-
-    ui->imageView->setImage(temp);
+        ui->imageView->setImage(ImageConverter::ImageToQImage(work));
+    }
+    else if (ui->rbnDiag->isChecked())
+    {
+        calc.calibrate(ui->edtDiag->text().toDouble(),
+                       ui->edtDiagPx->text().toDouble());
+    }
 }
 
 void MainWindow::on_btnEval_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
 
-    //gauss.process(work);
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+    CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                            ui->lblMaxThresh->text().toInt());
+    HoughTransform hough(ui->lblThresh->text().toInt());
+
+    gauss.process(work);
     canny.process(work);
     auto lines = hough.process(work);
 
@@ -164,4 +153,115 @@ void MainWindow::on_btnEval_clicked()
     ui->lblResR->setText(QString::number(size.getRadius()));
 
     ui->imageView->setImage(temp);
+}
+
+void MainWindow::on_sldSigma_valueChanged(int value)
+{
+    ui->lblSigma->setText(QString::number(value/10.0, 'g', 2));
+}
+
+void MainWindow::on_sldKernelSize_valueChanged(int value)
+{
+    ui->lblKernel->setText(QString::number(value*2-1));
+}
+
+
+void MainWindow::on_sldMinThresh_valueChanged(int value)
+{
+    ui->lblMinThresh->setText(QString::number(value));
+    if (value > ui->sldMaxThresh->value())
+    {
+        ui->lblMaxThresh->setText(QString::number(value+1));
+        ui->sldMaxThresh->setValue(value+1);
+    }
+}
+
+void MainWindow::on_sldMaxThresh_valueChanged(int value)
+{
+    ui->lblMaxThresh->setText(QString::number(value));
+    if (value < ui->sldMinThresh->value())
+    {
+        ui->lblMinThresh->setText(QString::number(value-1));
+        ui->sldMinThresh->setValue(value-1);
+    }
+}
+
+void MainWindow::on_sldThresh_valueChanged(int value)
+{
+    ui->lblThresh->setText(QString::number(value));
+}
+
+void MainWindow::on_actRestore_triggered()
+{
+    ui->imageView->setImage(image);
+}
+
+void MainWindow::on_btnGaussApply_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+
+    gauss.process(work);
+
+    auto temp = ImageConverter::ImageToQImage(work);
+
+    ui->imageView->setImage(temp);
+}
+
+
+void MainWindow::on_btnCannyApply_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+    CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                            ui->lblMaxThresh->text().toInt());
+    HoughTransform hough(ui->lblThresh->text().toInt());
+
+    gauss.process(work);
+    canny.process(work);
+
+    auto temp = ImageConverter::ImageToQImage(work);
+
+    ui->imageView->setImage(temp);
+}
+
+void MainWindow::on_btnHoughApply_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+    CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                            ui->lblMaxThresh->text().toInt());
+    HoughTransform hough(ui->lblThresh->text().toInt());
+
+    gauss.process(work);
+    canny.process(work);
+    hough.process(work);
+
+    auto temp = ImageConverter::ImageToQImage(work);
+
+    ui->imageView->setImage(temp);
+}
+
+void MainWindow::on_rbnStandard_toggled(bool checked)
+{
+    ui->edtDist->setEnabled(checked);
+    ui->edtH->setEnabled(checked);
+    ui->edtR->setEnabled(checked);
+    ui->edtDiag->setEnabled(!checked);
+    ui->edtDiagPx->setEnabled(!checked);
+}
+
+void MainWindow::on_rbnDiag_toggled(bool checked)
+{
+    ui->edtDist->setEnabled(!checked);
+    ui->edtH->setEnabled(!checked);
+    ui->edtR->setEnabled(!checked);
+    ui->edtDiag->setEnabled(checked);
+    ui->edtDiagPx->setEnabled(checked);
 }

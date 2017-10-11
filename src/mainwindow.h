@@ -29,13 +29,31 @@ protected:
 private slots:
     void on_actOpenImage_triggered();
 
-    void on_btnCanny_clicked();
-
-    void on_btnHough_clicked();
-
     void on_btnCalibrate_clicked();
 
     void on_btnEval_clicked();
+
+    void on_sldSigma_valueChanged(int value);
+
+    void on_sldKernelSize_valueChanged(int value);
+
+    void on_sldMinThresh_valueChanged(int value);
+
+    void on_sldMaxThresh_valueChanged(int value);
+
+    void on_sldThresh_valueChanged(int value);
+
+    void on_actRestore_triggered();
+
+    void on_btnGaussApply_clicked();
+
+    void on_btnCannyApply_clicked();
+
+    void on_btnHoughApply_clicked();
+
+    void on_rbnStandard_toggled(bool checked);
+
+    void on_rbnDiag_toggled(bool checked);
 
 private:
     void openFile();
@@ -48,9 +66,6 @@ private:
     Ui::MainWindow *ui;
     QImage image;
 
-    GaussianBlur gauss;
-    CannyEdgeDetector canny;
-    HoughTransform hough;
     CylinderSizeCalculator calc;
 };
 

@@ -16,6 +16,9 @@ GaussianBlur::~GaussianBlur()
 
 void GaussianBlur::process(Image &image)
 {
+    if (kernelSize == 1)
+        return;
+
     Image saved(image);
     float kernel[kernelSize][kernelSize];
     for (int i = 0; i < kernelSize; i++)
@@ -63,4 +66,24 @@ void GaussianBlur::process(Image &image)
                                   static_cast<uint8>(resultB)));
         }
     }
+}
+
+double GaussianBlur::getSigma() const
+{
+    return sigma;
+}
+
+void GaussianBlur::setSigma(double value)
+{
+    sigma = value;
+}
+
+uint8 GaussianBlur::getKernelSize() const
+{
+    return kernelSize;
+}
+
+void GaussianBlur::setKernelSize(const uint8 &value)
+{
+    kernelSize = value;
 }

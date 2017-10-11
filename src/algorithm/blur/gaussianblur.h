@@ -11,6 +11,12 @@ public:
     virtual ~GaussianBlur();
 
     virtual void process(Image &image);
+    double getSigma() const;
+    void setSigma(double value);
+
+    uint8 getKernelSize() const;
+    void setKernelSize(const uint8 &value);
+
 private:
     double sigma;
     uint8 kernelSize;
