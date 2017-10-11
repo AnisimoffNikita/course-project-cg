@@ -1,10 +1,10 @@
 #ifndef GAUSSBLUR_H
 #define GAUSSBLUR_H
 
-#include "imageprocessor.h"
+#include "blur.h"
 #include "src/number.h"
 
-class GaussianBlur : public ImageProcessor
+class GaussianBlur : public Blur
 {
 public:
     GaussianBlur(double sigma = 1.4, uint8 kernelSize = 3);

@@ -121,7 +121,7 @@ void MainWindow::on_btnHough_clicked()
 
     //gauss.process(work);
     canny.process(work);
-    auto lines = hough.process2(work);
+    auto lines = hough.process(work);
 
     auto temp = ImageConverter::ImageToQImage(work);
 
@@ -135,7 +135,7 @@ void MainWindow::on_btnCalibrate_clicked()
 
     //gauss.process(work);
     canny.process(work);
-    auto lines = hough.process2(work);
+    auto lines = hough.process(work);
 
     auto temp = ImageConverter::ImageToQImage(work);
 
@@ -154,7 +154,7 @@ void MainWindow::on_btnEval_clicked()
 
     //gauss.process(work);
     canny.process(work);
-    auto lines = hough.process2(work);
+    auto lines = hough.process(work);
 
     auto temp = ImageConverter::ImageToQImage(work);
 

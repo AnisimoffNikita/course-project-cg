@@ -16,9 +16,7 @@ public:
     HoughTransform(uint32 threshold = 50);
     virtual ~HoughTransform();
 
-    virtual void process(Image &){}
-
-    std::vector<Line> process2(Image &image);
+    virtual std::vector<Line> process(Image &image);
 
 
 private:

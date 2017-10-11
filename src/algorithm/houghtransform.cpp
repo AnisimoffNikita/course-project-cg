@@ -15,7 +15,7 @@ HoughTransform::~HoughTransform()
 
 }
 
-std::vector<Line>  HoughTransform::process2(Image &image)
+std::vector<Line>  HoughTransform::process(Image &image)
 {
     this->image = ImageConverter::ImageToGrayscalImage(image);
 

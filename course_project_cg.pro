@@ -34,7 +34,6 @@ SOURCES += src/main.cpp\
     src/algorithm/edgedetector.cpp \
     src/algorithm/linetransform.cpp \
     src/algorithm/cannyedgedetector.cpp \
-    src/algorithm/imageprocessor.cpp \
     src/math/math.cpp \
     src/image/grayscaleimage.cpp \
     src/image/imagebase.cpp \
@@ -45,7 +44,8 @@ SOURCES += src/main.cpp\
     src/algorithm/gaussianblur.cpp \
     src/math/cylindersize.cpp \
     src/algorithm/cylindersizecalculator.cpp \
-    src/algorithm/cylindersizecalculatorbase.cpp
+    src/algorithm/cylindersizecalculatorbase.cpp \
+    src/algorithm/blur.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -57,7 +57,6 @@ HEADERS  += src/mainwindow.h \
     src/algorithm/edgedetector.h \
     src/algorithm/linetransform.h \
     src/algorithm/cannyedgedetector.h \
-    src/algorithm/imageprocessor.h \
     src/math/math.h \
     src/image/grayscaleimage.h \
     src/image/imagebase.h \
@@ -68,7 +67,8 @@ HEADERS  += src/mainwindow.h \
     src/algorithm/gaussianblur.h \
     src/math/cylindersize.h \
     src/algorithm/cylindersizecalculator.h \
-    src/algorithm/cylindersizecalculatorbase.h
+    src/algorithm/cylindersizecalculatorbase.h \
+    src/algorithm/blur.h
 
 FORMS    += ui/mainwindow.ui
 QMAKE_CXXFLAGS_RELEASE += -O3
