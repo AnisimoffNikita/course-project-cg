@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow),
     gauss(1.4, 3),
     canny(60, 100),
-    hough(300)
+    hough(100)
 {
     ui->setupUi(this);
     resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
