@@ -58,7 +58,7 @@ void CylinderSizeCalculator::findEdges()
                 dx2 *= -1; dy2 *= -1;
             }
 
-            int32 eps = 4;
+            int32 eps = 10;
             double maxWidth = 0;
 
             if (fabs(dx1-dx2) < eps && fabs(dy1-dy2) < eps)
