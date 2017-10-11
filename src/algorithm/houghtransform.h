@@ -16,15 +16,14 @@ public:
     HoughTransform(uint32 threshold = 50);
     virtual ~HoughTransform();
 
-    virtual void process(Image &image);
+    virtual void process(Image &){}
+
+    std::vector<Line> process2(Image &image);
+
 
 private:
     void fillAccumulator();
     void getLines();
-
-    //Temporary here
-    void getParallelLines();
-
     void drawLines(Image &color);
 
     void brezenhem(Image &color, const Line &line);

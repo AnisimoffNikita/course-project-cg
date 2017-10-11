@@ -16,6 +16,8 @@ public:
     Point getP2() const;
     void setP2(const Point &value);
 
+    double length();
+
 private:
     Point p1;
     Point p2;

@@ -9,6 +9,7 @@
 #include "src/algorithm/cannyedgedetector.h"
 #include "src/algorithm/houghtransform.h"
 #include "src/algorithm/gaussianblur.h"
+#include "src/algorithm/cylindersizecalculator.h"
 
 namespace Ui {
 class MainWindow;
@@ -32,6 +33,10 @@ private slots:
 
     void on_btnHough_clicked();
 
+    void on_btnCalibrate_clicked();
+
+    void on_btnEval_clicked();
+
 private:
     void openFile();
     bool loadFile(const QString &filename);
@@ -46,6 +51,7 @@ private:
     GaussianBlur gauss;
     CannyEdgeDetector canny;
     HoughTransform hough;
+    CylinderSizeCalculator calc;
 };
 
 #endif // MAINWINDOW_H

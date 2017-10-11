@@ -6,6 +6,7 @@
 #include <QImageWriter>
 #include <QMessageBox>
 #include <QScreen>
+#include <QString>
 
 #include "src/image/imageconverter.h"
 
@@ -13,7 +14,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
     gauss(1.4, 3),
-    canny(60, 100)
+    canny(60, 100),
+    hough(300)
 {
     ui->setupUi(this);
     resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
@@ -119,10 +121,47 @@ void MainWindow::on_btnHough_clicked()
 
     //gauss.process(work);
     canny.process(work);
-    hough.process(work);
+    auto lines = hough.process2(work);
 
     auto temp = ImageConverter::ImageToQImage(work);
 
     ui->imageView->setImage(temp);
 
+}
+
+void MainWindow::on_btnCalibrate_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    //gauss.process(work);
+    canny.process(work);
+    auto lines = hough.process2(work);
+
+    auto temp = ImageConverter::ImageToQImage(work);
+
+    calc.calibrate(lines,
+                   ui->edtDist->text().toDouble(),
+                   ui->edtR->text().toDouble(),
+                   ui->edtH->text().toDouble());
+
+
+    ui->imageView->setImage(temp);
+}
+
+void MainWindow::on_btnEval_clicked()
+{
+    Image work = ImageConverter::QImageToImage(image);
+
+    //gauss.process(work);
+    canny.process(work);
+    auto lines = hough.process2(work);
+
+    auto temp = ImageConverter::ImageToQImage(work);
+
+    auto size = calc.evaluate(lines);
+
+    ui->lblResH->setText(QString::number(size.getHeight()));
+    ui->lblResR->setText(QString::number(size.getRadius()));
+
+    ui->imageView->setImage(temp);
 }

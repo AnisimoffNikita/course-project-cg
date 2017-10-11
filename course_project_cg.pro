@@ -42,7 +42,10 @@ SOURCES += src/main.cpp\
     src/algorithm/houghtransform.cpp \
     src/math/point.cpp \
     src/math/line.cpp \
-    src/algorithm/gaussianblur.cpp
+    src/algorithm/gaussianblur.cpp \
+    src/math/cylindersize.cpp \
+    src/algorithm/cylindersizecalculator.cpp \
+    src/algorithm/cylindersizecalculatorbase.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -62,7 +65,10 @@ HEADERS  += src/mainwindow.h \
     src/algorithm/houghtransform.h \
     src/math/point.h \
     src/math/line.h \
-    src/algorithm/gaussianblur.h
+    src/algorithm/gaussianblur.h \
+    src/math/cylindersize.h \
+    src/algorithm/cylindersizecalculator.h \
+    src/algorithm/cylindersizecalculatorbase.h
 
 FORMS    += ui/mainwindow.ui
 QMAKE_CXXFLAGS_RELEASE += -O3

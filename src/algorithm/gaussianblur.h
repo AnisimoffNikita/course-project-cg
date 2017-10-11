@@ -7,7 +7,7 @@
 class GaussianBlur : public ImageProcessor
 {
 public:
-    GaussianBlur(double sigma, uint8 kernelSize);
+    GaussianBlur(double sigma = 1.4, uint8 kernelSize = 3);
     virtual ~GaussianBlur();
 
     virtual void process(Image &image);

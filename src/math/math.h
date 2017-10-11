@@ -3,9 +3,14 @@
 
 #include "src/number.h"
 
+#include <functional>
+
 class Math
 {
 public:
+    using Func = std::function<double(double)>;
+public:
+
     constexpr static double PI = 3.14159265358979323846;
 
     static double Gauss2(double sigma, int x, int y);
@@ -13,11 +18,13 @@ public:
     template<class T>
     static T Clamp(const T &value, const T &max, const T &min);
 
-    static double toRadians(double degrees);
-    static double toDegrees(double radians);
+    static double ToRadians(double degrees);
+    static double ToDegrees(double radians);
 
     template <typename T>
     static int32 sgn(const T &val);
+
+    static double Bisection(double a, double b, const Func &f, double eps = 1e-6);
 };
 
 template<class T>
