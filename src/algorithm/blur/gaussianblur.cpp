@@ -20,19 +20,26 @@ void GaussianBlur::process(Image &image)
         return;
 
     Image saved(image);
-    float kernel[kernelSize][kernelSize];
+    double sum = 0;
+    double kernel[kernelSize][kernelSize];
     for (int i = 0; i < kernelSize; i++)
         for (int j = 0; j < kernelSize; j++)
         {
             kernel[i][j] = Math::Gauss2(sigma, i-2, j-2);
+            sum += kernel[i][j];
         }
+
+
+    for (int i = 0; i < kernelSize; i++)
+        for (int j = 0; j < kernelSize; j++)
+            kernel[i][j] /= sum;
 
     uint32 height = image.getHeight();
     uint32 width = image.getWidth();
 
     uint32 pixelPosX;
     uint32 pixelPosY;
-    float resultR, resultG, resultB;
+    double resultR, resultG, resultB;
 
     for (uint32 y = 0; y < height; y++)
     {
@@ -49,17 +56,13 @@ void GaussianBlur::process(Image &image)
 
                     Color color = saved.at(pixelPosY, pixelPosX);
 
-                    float kernelVal = kernel[i][j];
+                    double kernelVal = kernel[i][j];
 
                     resultR += color.getRed() * kernelVal;
                     resultG += color.getGreen() * kernelVal;
                     resultB += color.getBlue() * kernelVal;
                 }
             }
-
-            resultR = Math::Clamp<float>(resultR, 0, 255);
-            resultG = Math::Clamp<float>(resultG, 0, 255);
-            resultB = Math::Clamp<float>(resultB, 0, 255);
 
             image.set(y, x, Color(static_cast<uint8>(resultR),
                                   static_cast<uint8>(resultG),

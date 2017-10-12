@@ -28,8 +28,8 @@ QImage ImageConverter::ImageToQImage(const Image &image)
         {
             Color &pixel = image.data[i*image.width + j];
             QColor color(pixel.getRed(),
-                         pixel.getBlue(),
-                         pixel.getGreen());
+                         pixel.getGreen(),
+                         pixel.getBlue());
             qImage.setPixelColor(j,i,color);
         }
     return qImage;
