@@ -158,11 +158,13 @@ void MainWindow::on_btnEval_clicked()
 void MainWindow::on_sldSigma_valueChanged(int value)
 {
     ui->lblSigma->setText(QString::number(value/10.0, 'g', 2));
+    on_btnGaussApply_clicked();
 }
 
 void MainWindow::on_sldKernelSize_valueChanged(int value)
 {
     ui->lblKernel->setText(QString::number(value*2-1));
+    on_btnGaussApply_clicked();
 }
 
 
@@ -174,6 +176,7 @@ void MainWindow::on_sldMinThresh_valueChanged(int value)
         ui->lblMaxThresh->setText(QString::number(value+1));
         ui->sldMaxThresh->setValue(value+1);
     }
+    on_btnCannyApply_clicked();
 }
 
 void MainWindow::on_sldMaxThresh_valueChanged(int value)
@@ -184,11 +187,13 @@ void MainWindow::on_sldMaxThresh_valueChanged(int value)
         ui->lblMinThresh->setText(QString::number(value-1));
         ui->sldMinThresh->setValue(value-1);
     }
+    on_btnCannyApply_clicked();
 }
 
 void MainWindow::on_sldThresh_valueChanged(int value)
 {
     ui->lblThresh->setText(QString::number(value));
+    on_btnHoughApply_clicked();
 }
 
 void MainWindow::on_actRestore_triggered()
