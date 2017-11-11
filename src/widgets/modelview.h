@@ -1,5 +1,5 @@
-#ifndef IMAGEVIEW_H
-#define IMAGEVIEW_H
+#ifndef MODELVIEW_H
+#define MODELVIEW_H
 
 #include <QWidget>
 #include <QImage>
@@ -8,11 +8,11 @@
 #include <QResizeEvent>
 #include <QMouseEvent>
 
-class ImageView : public QGraphicsView
+class ModelView : public QGraphicsView
 {
     Q_OBJECT
 public:
-    explicit ImageView(QWidget *parent = 0);
+    explicit ModelView(QWidget *parent = 0);
 
     void setImage(const QImage &image);
 
@@ -24,4 +24,4 @@ private:
     QGraphicsScene *scene;
 };
 
-#endif // IMAGEVIEW_H
+#endif // MODELVIEW_H

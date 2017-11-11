@@ -24,6 +24,11 @@ public:
     template <typename T>
     static int32 sgn(const T &val);
 
+    static double Cos(double angle);
+    static double Sin(double angle);
+    static double Tan(double angle);
+    static double Sqrt(double value);
+
     static double Bisection(double a, double b, const Func &f, double eps = 1e-6);
 };
 

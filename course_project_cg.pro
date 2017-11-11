@@ -39,13 +39,29 @@ SOURCES += src/main.cpp\
     src/image/imagebase.cpp \
     src/image/grayscalecolor.cpp \
     src/algorithm/linetransform/houghtransform.cpp \
-    src/math/point.cpp \
     src/math/line.cpp \
     src/algorithm/blur/gaussianblur.cpp \
     src/math/cylindersize.cpp \
     src/algorithm/cylindersizecalculator.cpp \
     src/algorithm/cylindersizecalculatorbase.cpp \
-    src/algorithm/blur/blur.cpp
+    src/algorithm/blur/blur.cpp \
+    src/widgets/modelview.cpp \
+    src/animation/sceneobject.cpp \
+    src/animation/model.cpp \
+    src/animation/camera.cpp \
+    src/animation/light.cpp \
+    src/animation/mesh.cpp \
+    src/math/vec2.cpp \
+    src/math/vec3.cpp \
+    src/math/homogeneousvertex.cpp \
+    src/animation/rendercontext.cpp \
+    src/animation/transformation.cpp \
+    src/animation/composite.cpp \
+    src/animation/scene.cpp \
+    src/animation/movetransformation.cpp \
+    src/animation/scaletransformation.cpp \
+    src/animation/rotatetransform.cpp \
+    src/animation/matrixfactory.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -62,13 +78,31 @@ HEADERS  += src/mainwindow.h \
     src/image/imagebase.h \
     src/image/grayscalecolor.h \
     src/algorithm/linetransform/houghtransform.h \
-    src/math/point.h \
     src/math/line.h \
     src/algorithm/blur/gaussianblur.h \
     src/math/cylindersize.h \
     src/algorithm/cylindersizecalculator.h \
     src/algorithm/cylindersizecalculatorbase.h \
-    src/algorithm/blur/blur.h
+    src/algorithm/blur/blur.h \
+    src/widgets/modelview.h \
+    src/animation/sceneobject.h \
+    src/animation/model.h \
+    src/animation/camera.h \
+    src/animation/light.h \
+    src/animation/mesh.h \
+    src/math/vec2.h \
+    src/math/vec3.h \
+    src/math/homogeneousvertex.h \
+    src/animation/rendercontext.h \
+    src/animation/transformation.h \
+    src/animation/composite.h \
+    src/animation/scene.h \
+    src/animation/movetransformation.h \
+    src/animation/scaletransformation.h \
+    src/animation/rotatetransform.h \
+    src/animation/matrixfactory.h
+
+SUBDIRS += src
 
 FORMS    += ui/mainwindow.ui
 QMAKE_CXXFLAGS_RELEASE += -O3

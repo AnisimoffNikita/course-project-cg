@@ -12,7 +12,8 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    state(0)
 {
     ui->setupUi(this);
     resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
@@ -158,13 +159,19 @@ void MainWindow::on_btnEval_clicked()
 void MainWindow::on_sldSigma_valueChanged(int value)
 {
     ui->lblSigma->setText(QString::number(value/10.0, 'g', 2));
+    bool flag = state == 1;
     on_btnGaussApply_clicked();
+    if (flag)
+        on_btnCannyApply_clicked();
 }
 
 void MainWindow::on_sldKernelSize_valueChanged(int value)
 {
     ui->lblKernel->setText(QString::number(value*2-1));
+    bool flag = state == 1;
     on_btnGaussApply_clicked();
+    if (flag)
+        on_btnCannyApply_clicked();
 }
 
 
@@ -213,6 +220,8 @@ void MainWindow::on_btnGaussApply_clicked()
     auto temp = ImageConverter::ImageToQImage(work);
 
     ui->imageView->setImage(temp);
+
+    state = 0;
 }
 
 
@@ -224,7 +233,6 @@ void MainWindow::on_btnCannyApply_clicked()
                        ui->lblKernel->text().toInt());
     CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
                             ui->lblMaxThresh->text().toInt());
-    HoughTransform hough(ui->lblThresh->text().toInt());
 
     gauss.process(work);
     canny.process(work);
@@ -232,6 +240,8 @@ void MainWindow::on_btnCannyApply_clicked()
     auto temp = ImageConverter::ImageToQImage(work);
 
     ui->imageView->setImage(temp);
+
+    state = 1;
 }
 
 void MainWindow::on_btnHoughApply_clicked()

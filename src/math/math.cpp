@@ -17,6 +17,26 @@ double Math::ToDegrees(double radians)
     return 180.0*radians/PI;
 }
 
+double Math::Cos(double angle)
+{
+    return cos(angle);
+}
+
+double Math::Sin(double angle)
+{
+    return sin(angle);
+}
+
+double Math::Tan(double angle)
+{
+    return tan(angle);
+}
+
+double Math::Sqrt(double value)
+{
+    return sqrt(value);
+}
+
 double Math::Bisection(double a, double b, const Func &f, double eps)
 {
     double x = (a + b)*0.5;

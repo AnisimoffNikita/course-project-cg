@@ -5,7 +5,7 @@
 
 #include "linetransform.h"
 #include "src/image/grayscaleimage.h"
-#include "src/math/point.h"
+#include "src/math/vec2.h"
 #include "src/math/line.h"
 
 class HoughTransform : public LineTransform

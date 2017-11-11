@@ -1,30 +1,31 @@
-#include "imageview.h"
+#include "modelview.h"
 
 #include <QStyle>
 
-ImageView::ImageView(QWidget *parent) :
+ModelView::ModelView(QWidget *parent) :
     QGraphicsView(parent),
     scene(new QGraphicsScene())
 {
     this->setStyleSheet("border: none;outline: none;");
     this->setBackgroundBrush(QBrush(QColor(236,232,228)));
     this->setScene(scene);
-    this->setMouseTracking(false);
+    this->setSizeAdjustPolicy(AdjustIgnored);
+    this->setAlignment(Qt::AlignLeft | Qt::AlignTop);
 }
 
-void ImageView::setImage(const QImage &image)
+void ModelView::setImage(const QImage &image)
 {
     scene->clear();
     scene->addPixmap(QPixmap::fromImage(image));
     this->fitInView(scene->itemsBoundingRect(), Qt::KeepAspectRatio);
 }
 
-void ImageView::resizeEvent(QResizeEvent *event)
+void ModelView::resizeEvent(QResizeEvent *event)
 {
     QGraphicsView::resizeEvent(event);
     this->fitInView(scene->itemsBoundingRect(), Qt::KeepAspectRatio);
 }
 
-void ImageView::mouseMoveEvent(QMouseEvent *event)
+void ModelView::mouseMoveEvent(QMouseEvent *event)
 {
 }

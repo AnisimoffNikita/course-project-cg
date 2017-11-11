@@ -25,7 +25,7 @@ void GaussianBlur::process(Image &image)
     for (int i = 0; i < kernelSize; i++)
         for (int j = 0; j < kernelSize; j++)
         {
-            kernel[i][j] = Math::Gauss2(sigma, i-2, j-2);
+            kernel[i][j] = Math::Gauss2(sigma, i-kernelSize/2, j-kernelSize/2);
             sum += kernel[i][j];
         }
 

@@ -2,7 +2,7 @@
 #define LINE_H
 
 #include "src/number.h"
-#include "point.h"
+#include "vec2.h"
 
 class Line
 {

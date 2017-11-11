@@ -67,6 +67,8 @@ private:
     QImage image;
 
     CylinderSizeCalculator calc;
+
+    int state;
 };
 
 #endif // MAINWINDOW_H
