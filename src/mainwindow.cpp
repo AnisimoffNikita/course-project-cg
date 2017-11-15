@@ -9,15 +9,22 @@
 #include <QString>
 
 #include "src/image/imageconverter.h"
+#include "src/animation/meshgenerator.h"
+#include "src/animation/sceneobjectfactory.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
+    scene(std::make_shared<Scene>()),
     state(0)
 {
     ui->setupUi(this);
+    ui->modelView->setModelScene(scene);
     resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
     updateActions();
+
+    debug_setScene();
+
 }
 
 MainWindow::~MainWindow()
@@ -99,6 +106,29 @@ void MainWindow::initFileDialog(QFileDialog &dialog, QFileDialog::AcceptMode acc
 
 void MainWindow::updateActions()
 {
+}
+
+void MainWindow::debug_setScene()
+{
+    CameraFactory::PerspectiveData data;
+    data.fovX = Math::ToRadians(90);
+    data.fovY = Math::ToRadians(90);
+    data.near = 0.1;
+    data.far = 100;
+    CameraFactory cameraFactory(Vertex(2,2,2), Vertex(0,0,0), Vertex(0,0,1), data);
+    auto camera = cameraFactory.create();
+
+    //auto mesh = MeshGenerator::Cylinder(0.1,0.2,4);
+    auto mesh = MeshGenerator::Cube(0.1);
+    ModelFactory modelFactory(Vertex(0,0,0), mesh);
+    auto model = modelFactory.create();
+
+    scene->add(camera);
+    scene->add(model);
+    scene->setActiveCamera(camera);
+
+    auto result = scene->render();
+    ui->modelView->setPixmap(result);
 }
 
 

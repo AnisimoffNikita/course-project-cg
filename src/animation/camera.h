@@ -6,23 +6,28 @@
 class Camera : public SceneObject
 {
 public:
-    Camera();
+    Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, const Mat4 &projection);
 
-    virtual void draw(const RenderContext &render) override;
+    virtual void draw(Render &) override;
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
 
-    virtual void setLookAt(const Vertex &tagret);
+    virtual void setPosition(const Vertex &value) override;
+    virtual void setLookAt(const Vertex &target);
     virtual Mat4 getPVMatrix();
 
 protected:
     void updateViewMatrix();
 
-    Mat4 _viewMatrix;
-    Mat4 _projectionMatrix;
+    Vertex lookAt;
+    Vertex up;
+    Mat4 viewMatrix;
+    Mat4 projectionMatrix;
 
-    Vertex _lookAt;
 };
+
+using SharedCamera = std::shared_ptr<Camera>;
+using WeakCamera = std::weak_ptr<Camera>;
 
 #endif // CAMERA_H

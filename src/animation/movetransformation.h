@@ -8,7 +8,7 @@ class MoveTransformation : public Transformation
 public:
     MoveTransformation(const Vertex &delta);
 
-    virtual void transform(Vertex &vertex) override;
+    virtual void transform(Vertex &vertex) const override;
 };
 
 #endif // MOVETRANSFORMATION_H

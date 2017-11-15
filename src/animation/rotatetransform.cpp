@@ -14,7 +14,7 @@ RotateXTransformation::RotateXTransformation(double angle, const Vertex &origin)
 }
 
 
-void RotateXTransformation::transform(Vertex &vertex)
+void RotateXTransformation::transform(Vertex &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
@@ -34,7 +34,7 @@ RotateYTransformation::RotateYTransformation(double angle, const Vertex &origin)
 }
 
 
-void RotateYTransformation::transform(Vertex &vertex)
+void RotateYTransformation::transform(Vertex &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
@@ -54,7 +54,7 @@ RotateZTransformation::RotateZTransformation(double angle, const Vertex &origin)
 }
 
 
-void RotateZTransformation::transform(Vertex &vertex)
+void RotateZTransformation::transform(Vertex &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);

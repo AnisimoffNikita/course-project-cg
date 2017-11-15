@@ -15,7 +15,7 @@ private:
     std::vector<Vertex> _vertices;
     std::vector<Edge> _edges;
 public:
-    Mesh();
+    Mesh() = default;
 
     void addVertex(const Vertex &vertex);
     void addEdge(const Edge &edge);

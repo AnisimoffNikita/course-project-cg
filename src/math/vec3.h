@@ -55,9 +55,21 @@ public:
         z -= value.z;
         return *this;
     }
+    Vec3 &operator*= (double factor)
+    {
+        x *= factor;
+        y *= factor;
+        z *= factor;
+        return *this;
+    }
     Vec3 operator- (const Vec3 &value) const
     {
         return Vec3(x-value.x, y-value.y, z-value.z);
+    }
+
+    Vec3 operator*(double factor) const
+    {
+        return Vec3(x*factor,y*factor,z*factor);
     }
 
 
@@ -80,7 +92,7 @@ public:
     Vec3 cross(const Vec3 &value) const
     {
         return Vec3(y*value.z-z*value.y,
-                    x*value.z-z*value.x,
+                    -x*value.z+z*value.x,
                     x*value.y-y*value.x);
     }
 

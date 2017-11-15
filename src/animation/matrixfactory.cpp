@@ -12,26 +12,30 @@ Mat4 ModelMatrix::create(const Vertex &vertex)
 
 Mat4 ViewMatrix::create(const Vertex &eye, const Vertex &target, const Vertex &up)
 {
-    Vertex f = (target - eye).normalized();
-    Vertex s = f.cross(up).normalized();
-    Vertex u = s.cross(f);
+    Vertex z = (target - eye).normalized();
+    Vertex x = z.cross(up).normalized();
+    Vertex y = x.cross(z);
 
-    double data[] = {s.getX(), u.getX(), -f.getX(), 0,
-                     s.getY(), u.getY(), -f.getY(), 0,
-                     s.getZ(), u.getZ(), -f.getZ(), 0,
-                     -s.dot(eye), -u.dot(eye), -f.dot(eye), 1};
+    double data[] = {x.getX(), x.getY(), x.getZ(), -x.dot(eye),
+                     y.getX(), y.getY(), y.getZ(), -y.dot(eye),
+                     z.getX(), z.getY(), z.getZ(), -z.dot(eye),
+                     0, 0, 0, 1};
 
     return Mat4(data);
 }
 
-Mat4 PerspectiveMatrix::create(double fovy, double aspect, double zNear, double zFar)
+Mat4 PerspectiveMatrix::create(double fovx, double fovy, double zNear, double zFar)
 {
-    double tanHalfFovy = Math::Tan(fovy / 2);
 
-    double data[] = {1.0 / (aspect * tanHalfFovy), 0, 0, 0,
-                     0, 1.0 / (tanHalfFovy), 0, 0,
-                     0, 0, (zFar + zNear) / (zFar - zNear), 1,
-                     0, 0, -(2 * zFar * zNear) / (zFar - zNear), 0};
+    double data[] = {Math::Atan(fovx / 2), 0, 0, 0,
+                     0, Math::Atan(fovy / 2), 0, 0,
+                     0, 0, -(zFar + zNear) / (zFar - zNear), -1,
+                     0, 0, -(2 * zFar*zNear) / (zFar - zNear), 0};
+
+//    double data[] = {1, 0, 0, 0,
+//                     0, 1, 0, 0,
+//                     0, 0, 1, 0,
+//                     0, 0, -0.1, 1};
 
     return Mat4(data);
 }

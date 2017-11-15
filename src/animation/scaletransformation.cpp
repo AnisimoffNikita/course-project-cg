@@ -13,7 +13,7 @@ ScaleTransformation::ScaleTransformation(const Vertex &scale, const Vertex &orig
 }
 
 
-void ScaleTransformation::transform(Vertex &vertex)
+void ScaleTransformation::transform(Vertex &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);

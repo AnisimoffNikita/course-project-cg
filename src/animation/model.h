@@ -7,16 +7,24 @@
 
 class Model : public SceneObject
 {
-public:
-    Model();
-    virtual ~Model();
 
-    virtual void draw(const RenderContext &render) override;
+public:
+    Model() = default;
+    Model(const Vertex &position, const Mesh &mesh);
+    virtual ~Model() = default;
+
+    virtual void draw(Render &render) override;
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
+
+    Mesh getMesh() const;
+    void setMesh(const Mesh &mesh);
+
 private:
-    Mesh _mesh;
+    Mesh mesh;
 };
+
+using SharedModel = std::shared_ptr<Model>;
 
 #endif // MODEL_H

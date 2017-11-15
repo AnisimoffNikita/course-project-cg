@@ -61,7 +61,10 @@ SOURCES += src/main.cpp\
     src/animation/movetransformation.cpp \
     src/animation/scaletransformation.cpp \
     src/animation/rotatetransform.cpp \
-    src/animation/matrixfactory.cpp
+    src/animation/matrixfactory.cpp \
+    src/animation/commontransformation.cpp \
+    src/animation/sceneobjectfactory.cpp \
+    src/animation/meshgenerator.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -100,7 +103,10 @@ HEADERS  += src/mainwindow.h \
     src/animation/movetransformation.h \
     src/animation/scaletransformation.h \
     src/animation/rotatetransform.h \
-    src/animation/matrixfactory.h
+    src/animation/matrixfactory.h \
+    src/animation/commontransformation.h \
+    src/animation/sceneobjectfactory.h \
+    src/animation/meshgenerator.h
 
 SUBDIRS += src
 

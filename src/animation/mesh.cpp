@@ -1,8 +1,31 @@
 #include "mesh.h"
 
-Mesh::Mesh()
-{
 
+
+void Mesh::addVertex(const Vertex &vertex)
+{
+    _vertices.push_back(vertex);
+}
+
+void Mesh::addEdge(const Edge &edge)
+{
+    _edges.push_back(edge);
+}
+
+const std::vector<Vertex> &Mesh::getVertices() const
+{
+    return _vertices;
+}
+
+const std::vector<Edge> &Mesh::getEdges() const
+{
+    return _edges;
+}
+
+void Mesh::transform(const Transformation &transformation)
+{
+    for (auto &vertex : _vertices)
+        transformation.transform(vertex);
 }
 
 
@@ -19,3 +42,4 @@ int Edge::v2() const
 {
     return _v2;
 }
+

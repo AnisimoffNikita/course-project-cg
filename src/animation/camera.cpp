@@ -2,19 +2,25 @@
 
 #include "matrixfactory.h"
 
-Camera::Camera()
+Camera::Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, const Mat4 &projection) :
+    SceneObject(position),
+    lookAt(lookAt),
+    up(up),
+    projectionMatrix(projection)
 {
-    _projectionMatrix = PerspectiveMatrix::create(90,0.75,0.01,100);
-    _viewMatrix = ViewMatrix::create(Vertex(),Vertex(),Vertex(0,1,0));
+    updateViewMatrix();
 }
 
 
-void Camera::draw(const RenderContext &render)
+void Camera::draw(Render &)
 {
+    return;
 }
 
 void Camera::transform(const Transformation &transformation)
 {
+    transformation.transform(position);
+    updateViewMatrix();
 }
 
 bool Camera::isCamera()
@@ -27,18 +33,25 @@ bool Camera::isLight()
     return false;
 }
 
-void Camera::setLookAt(const Vertex &tagret)
+void Camera::setLookAt(const Vertex &target)
 {
-    _lookAt = target;
+    lookAt = target;
     updateViewMatrix();
 }
 
 Mat4 Camera::getPVMatrix()
 {
-    return _projectionMatrix*_viewMatrix;
+    return projectionMatrix*viewMatrix;
 }
 
 void Camera::updateViewMatrix()
 {
-    _viewMatrix = ViewMatrix::create(_position,_lookAt,Vertex(0,1,0));
+    viewMatrix = ViewMatrix::create(position, lookAt, up);
+}
+
+
+void Camera::setPosition(const Vertex &value)
+{
+    position = value;
+    updateViewMatrix();
 }

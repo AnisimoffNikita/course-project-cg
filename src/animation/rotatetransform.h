@@ -9,7 +9,7 @@ class RotateXTransformation : public Transformation
 public:
     RotateXTransformation(double angle, const Vertex &origin);
 
-    virtual void transform(Vertex &vertex) override;
+    virtual void transform(Vertex &vertex) const override;
 protected:
     Vertex _origin;
 };
@@ -19,7 +19,7 @@ class RotateYTransformation : public Transformation
 public:
     RotateYTransformation(double angle, const Vertex &origin);
 
-    virtual void transform(Vertex &vertex) override;
+    virtual void transform(Vertex &vertex) const override;
 protected:
     Vertex _origin;
 };
@@ -29,7 +29,7 @@ class RotateZTransformation : public Transformation
 public:
     RotateZTransformation(double angle, const Vertex &origin);
 
-    virtual void transform(Vertex &vertex) override;
+    virtual void transform(Vertex &vertex) const override;
 protected:
     Vertex _origin;
 };

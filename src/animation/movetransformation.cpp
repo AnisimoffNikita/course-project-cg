@@ -12,7 +12,7 @@ MoveTransformation::MoveTransformation(const Vertex &delta)
 }
 
 
-void MoveTransformation::transform(Vertex &vertex)
+void MoveTransformation::transform(Vertex &vertex) const
 {
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
     hvec = _matrix*hvec;

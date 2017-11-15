@@ -1,22 +1,17 @@
 #include "sceneobject.h"
 
 
+SceneObject::SceneObject(const Vertex &position):
+    position(position)
+{
+}
+
 Vertex SceneObject::getPosition() const
 {
-    return _position;
+    return position;
 }
 
 void SceneObject::setPosition(const Vertex &value)
 {
-    _position = value;
-}
-
-int32 SceneObject::getTag() const
-{
-    return _tag;
-}
-
-void SceneObject::setTag(const int32 &tag)
-{
-    _tag = tag;
+    position = value;
 }

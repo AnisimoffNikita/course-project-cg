@@ -10,6 +10,7 @@
 #include "src/algorithm/linetransform/houghtransform.h"
 #include "src/algorithm/blur/gaussianblur.h"
 #include "src/algorithm/cylindersizecalculator.h"
+#include "src/animation/scene.h"
 
 namespace Ui {
 class MainWindow;
@@ -63,10 +64,13 @@ private:
     void fitToWindow();
     void updateActions();
 
+    void debug_setScene();
+
     Ui::MainWindow *ui;
     QImage image;
 
     CylinderSizeCalculator calc;
+    std::shared_ptr<Scene> scene;
 
     int state;
 };

@@ -11,6 +11,8 @@
 
 #include "src/number.h"
 
+#include <QPixmap>
+
 using namespace std;
 
 class Scene
@@ -21,14 +23,17 @@ public:
     virtual ~Scene() = default;
 
     virtual void add(const SharedSceneObject &child);
-    virtual SharedSceneObject get(int32 tag);
-    virtual void remove(int32 tag);
+//    virtual SharedSceneObject get(int32 tag);
+//    virtual void remove(int32 tag);
 
-    virtual void setActiveCamera(int32 tag);
+    virtual void setActiveCamera(const SharedSceneObject &child);
+    virtual weak_ptr< Camera > getActiveCamera();
 
     virtual vector< SharedSceneObject> getChildren();
 
-    virtual void draw(const RenderContext &render);
+    virtual QPixmap render();
+
+
 
 protected:
     vector< SharedSceneObject> _children;

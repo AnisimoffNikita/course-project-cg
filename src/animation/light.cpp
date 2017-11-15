@@ -6,7 +6,7 @@ Light::Light()
 }
 
 
-void Light::draw(const RenderContext &render)
+void Light::draw(Render &render)
 {
 }
 

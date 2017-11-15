@@ -46,7 +46,7 @@ public:
     friend Matrix<MM, NN, TT> operator/(const Matrix<MM, NN, TT>& matrix, TT divisor);
 
 private:
-    T m[N][M];
+    T m[M][N];
 
 };
 

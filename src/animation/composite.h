@@ -8,7 +8,7 @@ class Composite : public SceneObject
 public:
     Composite();
 
-    virtual void draw(const RenderContext &render) override;
+    virtual void draw(Render &render) override;
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
