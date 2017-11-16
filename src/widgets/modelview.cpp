@@ -4,17 +4,47 @@
 
 #include "src/animation/rotatetransform.h"
 
+#include "src/animation/scene.h"
+#include "src/animation/renderer.h"
+#include "src/animation/meshgenerator.h"
+#include "src/animation/sceneobjectfactory.h"
+#include "src/animation/carcassrenderer.h"
 
 ModelView::ModelView(QWidget *parent) :
     QGraphicsView(parent),
     graphicsScene(new QGraphicsScene()),
-    pixmap(640,480)
+    canvas(640,480),
+    scene(std::make_unique<Scene>())
 {
     this->setStyleSheet("border: none;outline: none;");
     this->setBackgroundBrush(QBrush(QColor(236,232,228)));
     this->setScene(graphicsScene);
     this->setSizeAdjustPolicy(AdjustIgnored);
     this->setAlignment(Qt::AlignLeft | Qt::AlignTop);
+
+    CameraFactory::PerspectiveData data;
+    data.fovX = Math::ToRadians(80);
+    data.fovY = Math::ToRadians(80);
+    data.near = 0.1;
+    data.far = 100;
+    CameraFactory cameraFactory(Vertex(3,3,3), Vertex(0,0,0), Vertex(0,0,1), data);
+    auto camera = cameraFactory.create();
+
+    ModelFactory modelFactory(Vertex(0,0,0), MeshGenerator::Cube(0.1));
+    auto model = modelFactory.create();
+
+    scene->add(camera);
+    scene->add(model);
+    scene->setActiveCamera(camera);
+
+    renderer = std::make_unique<CarcassRenderer>(100,1024,768);
+
+    scene->render(renderer);
+
+    canvas = renderer->getRendered();
+
+    updateCanvas();
+
 }
 
 void ModelView::resizeEvent(QResizeEvent *event)
@@ -30,19 +60,14 @@ void ModelView::mousePressEvent(QMouseEvent *event)
 
 void ModelView::mouseMoveEvent(QMouseEvent *event)
 {
-    if (scene.expired())
-        return;
     auto dx = event->pos().x() - lastPos.x();
     auto dy = event->pos().y() - lastPos.y();
 
-    auto work = scene.lock();
-
-    auto camera = work->getActiveCamera();
+    auto camera = scene->getActiveCamera();
     if (camera.expired())
         return;
 
     auto workCamera = camera.lock();
-
 
     Vertex cameraPos = workCamera->getPosition();
 
@@ -62,34 +87,22 @@ void ModelView::mouseMoveEvent(QMouseEvent *event)
     }
 
 
+    scene->render(renderer);
+    canvas = renderer->getRendered();
 
-    auto pixmap = work->render();
-
-
-    setPixmap(pixmap);
+    updateCanvas();
 
     lastPos = event->pos();
 }
 
-std::weak_ptr<Scene> ModelView::getModelScene() const
+void ModelView::updateCanvas()
 {
-    return scene;
-}
-
-void ModelView::setModelScene(const std::weak_ptr<Scene> &value)
-{
-    scene = value;
-}
-
-QPixmap ModelView::getPixmap() const
-{
-    return pixmap;
-}
-
-void ModelView::setPixmap(const QPixmap &value)
-{
-    pixmap = value;
     graphicsScene->clear();
-    graphicsScene->addPixmap(pixmap);
+    graphicsScene->addPixmap(canvas);
     this->fitInView(graphicsScene->itemsBoundingRect(), Qt::KeepAspectRatio);
+}
+
+void ModelView::setModelScene(std::unique_ptr<Scene> &&value)
+{
+    scene = std::move(value);
 }

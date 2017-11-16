@@ -8,11 +8,13 @@
 
 #include "sceneobject.h"
 #include "camera.h"
+#include "light.h"
 
 #include "src/number.h"
 
 #include <QPixmap>
-#include "renderer.h"
+
+class Renderer;
 
 using namespace std;
 
@@ -26,14 +28,15 @@ public:
     virtual void add(const SharedSceneObject &child);
 
     virtual void setActiveCamera(const SharedSceneObject &child);
-    virtual WeakCamera getActiveCamera();
+    virtual WeakCamera getActiveCamera() const;
 
-    virtual vector<SharedSceneObject> getChildren();
+    virtual const vector<SharedSceneObject>& getChildren() const;
 
-    virtual QPixmap render();
+    virtual void render(std::unique_ptr<Renderer> &renderer);
 protected:
     vector<SharedSceneObject> _children;
     WeakCamera _camera;
+    vector<WeakLight> lights;
 };
 
 

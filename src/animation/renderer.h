@@ -11,26 +11,19 @@
 class Renderer
 {
 public:
-    Renderer() = default;
+    Renderer(double scale, int32 width, int32 height);
 
-    void setCamera(const WeakCamera &value);
-    WeakCamera getCamera() const;
+    virtual void setCamera(WeakCamera value) = 0;
+    virtual void addLight(WeakLight value) = 0;
 
-    void addLight(const Light &light);
+    virtual void renderMesh(const Mesh &mesh) = 0;
 
-    QPixmap getPixmap() const;
-    void setPixmap(const QPixmap &value);
+    virtual QPixmap getRendered() = 0;
 
-    double getScale() const;
-    void setScale(double value);
-
-    virtual void renderMesh(const Mesh &mesh);
-
-
-private:
-    WeakCamera camera;
-    QPixmap pixmap;
+protected:
     double scale;
+    int32 width;
+    int32 height;
 };
 
 #endif // RENDERER_H

@@ -8,12 +8,14 @@ class Light : public SceneObject
 public:
     Light();
 
-    virtual void draw(Renderer &) override;
+    virtual void draw(std::unique_ptr<Renderer> &) override;
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
 };
 
 using SharedLight = std::shared_ptr<Light>;
+using WeakLight = std::weak_ptr<Light>;
+
 
 #endif // LIGHT_H

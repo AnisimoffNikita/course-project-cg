@@ -9,9 +9,9 @@ Model::Model(const Vertex &position, const Mesh &mesh) :
 {
 }
 
-void Model::draw(Renderer &render)
+void Model::draw(std::unique_ptr<Renderer> &renderer)
 {
-    render.renderMesh(mesh);
+    renderer->renderMesh(mesh);
 }
 
 void Model::transform(const Transformation &transformation)

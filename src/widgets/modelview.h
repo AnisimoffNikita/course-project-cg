@@ -11,6 +11,7 @@
 
 #include <memory>
 #include "src/animation/scene.h"
+#include "src/animation/renderer.h"
 
 class ModelView : public QGraphicsView
 {
@@ -18,11 +19,7 @@ class ModelView : public QGraphicsView
 public:
     explicit ModelView(QWidget *parent = 0);
 
-    QPixmap getPixmap() const;
-    void setPixmap(const QPixmap &value);
-
-    std::weak_ptr<Scene> getModelScene() const;
-    void setModelScene(const std::weak_ptr<Scene> &value);
+    void setModelScene(std::unique_ptr<Scene> &&value);
 
 protected:
     void resizeEvent(QResizeEvent *event);
@@ -30,11 +27,15 @@ protected:
     void mouseMoveEvent(QMouseEvent *event);
 
 private:
+    void updateCanvas();
+
     QGraphicsScene *graphicsScene;
-    QPixmap pixmap;
+    QPixmap canvas;
+
     QPoint lastPos;
 
-    std::weak_ptr<Scene> scene;
+    std::unique_ptr<Scene> scene;
+    std::unique_ptr<Renderer> renderer;
 };
 
 #endif // MODELVIEW_H

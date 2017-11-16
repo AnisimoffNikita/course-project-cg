@@ -1,12 +1,12 @@
 #include "light.h"
+#include "transformation.h"
 
 Light::Light()
 {
 
 }
 
-
-void Light::draw(Renderer &)
+void Light::draw(std::unique_ptr<Renderer> &)
 {
 }
 

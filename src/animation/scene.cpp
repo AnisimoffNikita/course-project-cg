@@ -7,6 +7,8 @@
 void Scene::add(const SharedSceneObject &child)
 {
     _children.push_back(child);
+    if (child->isLight())
+        lights.push_back(static_pointer_cast<Light>(child));
 }
 
 void Scene::setActiveCamera(const SharedSceneObject &child)
@@ -18,30 +20,28 @@ void Scene::setActiveCamera(const SharedSceneObject &child)
     }
 }
 
-WeakCamera Scene::getActiveCamera()
+WeakCamera Scene::getActiveCamera() const
 {
     return _camera;
 }
 
 
-vector<SharedSceneObject> Scene::getChildren()
+const vector<SharedSceneObject> &Scene::getChildren() const
 {
     return _children;
 }
 
-QPixmap Scene::render()
+void Scene::render(std::unique_ptr<Renderer> &renderer)
 {
-    QPixmap pixmap(960,640);
-    pixmap.fill(Qt::white);
+    for (const auto &light : lights)
+    {
+        renderer->addLight(light);
+    }
 
-    Renderer render;
-    render.setCamera(_camera);
-    render.setScale(100);
-    render.setPixmap(pixmap);
+    renderer->setCamera(_camera);
 
     for (const auto &child : _children)
-        child->draw(render);
-
-    return render.getPixmap();
+    {
+        child->draw(renderer);
+    }
 }
-

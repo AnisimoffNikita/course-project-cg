@@ -1,6 +1,7 @@
 #include "camera.h"
 
 #include "matrixfactory.h"
+#include "transformation.h"
 
 Camera::Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, const Mat4 &projection) :
     SceneObject(position),
@@ -12,7 +13,7 @@ Camera::Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, c
 }
 
 
-void Camera::draw(Renderer &)
+void Camera::draw(std::unique_ptr<Renderer> &)
 {
     return;
 }

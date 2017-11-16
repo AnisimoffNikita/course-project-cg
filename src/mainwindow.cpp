@@ -11,15 +11,14 @@
 #include "src/image/imageconverter.h"
 #include "src/animation/meshgenerator.h"
 #include "src/animation/sceneobjectfactory.h"
+#include "src/animation/carcassrenderer.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
-    scene(std::make_shared<Scene>()),
     state(0)
 {
     ui->setupUi(this);
-    ui->modelView->setModelScene(scene);
     resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
     updateActions();
 
@@ -110,23 +109,7 @@ void MainWindow::updateActions()
 
 void MainWindow::debug_setScene()
 {
-    CameraFactory::PerspectiveData data;
-    data.fovX = Math::ToRadians(80);
-    data.fovY = Math::ToRadians(80);
-    data.near = 0.1;
-    data.far = 100;
-    CameraFactory cameraFactory(Vertex(3,3,3), Vertex(0,0,0), Vertex(0,0,1), data);
-    auto camera = cameraFactory.create();
 
-    ModelFactory modelFactory(Vertex(0,0,0), MeshGenerator::Cube(0.1));
-    auto model = modelFactory.create();
-
-    scene->add(camera);
-    scene->add(model);
-    scene->setActiveCamera(camera);
-
-    auto result = scene->render();
-    ui->modelView->setPixmap(result);
 }
 
 

@@ -5,10 +5,9 @@
 #include <memory>
 
 #include "src/math/vec3.h"
-#include "src/math/matrix.h"
-#include "transformation.h"
 
 class Renderer;
+class Transformation;
 
 class SceneObject
 {
@@ -21,7 +20,7 @@ public:
     virtual Vertex getPosition() const;
     virtual void setPosition(const Vertex &value);
 
-    virtual void draw(Renderer &render) = 0;
+    virtual void draw(std::unique_ptr<Renderer> &render) = 0;
     virtual void transform(const Transformation &transformation) = 0;
 
     virtual bool isCamera() = 0;

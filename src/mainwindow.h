@@ -11,6 +11,7 @@
 #include "src/algorithm/blur/gaussianblur.h"
 #include "src/algorithm/cylindersizecalculator.h"
 #include "src/animation/scene.h"
+#include "src/animation/renderer.h"
 
 namespace Ui {
 class MainWindow;
@@ -70,7 +71,6 @@ private:
     QImage image;
 
     CylinderSizeCalculator calc;
-    std::shared_ptr<Scene> scene;
 
     int state;
 };

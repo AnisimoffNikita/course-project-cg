@@ -64,7 +64,8 @@ SOURCES += src/main.cpp\
     src/animation/commontransformation.cpp \
     src/animation/sceneobjectfactory.cpp \
     src/animation/meshgenerator.cpp \
-    src/animation/renderer.cpp
+    src/animation/renderer.cpp \
+    src/animation/carcassrenderer.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -106,7 +107,8 @@ HEADERS  += src/mainwindow.h \
     src/animation/commontransformation.h \
     src/animation/sceneobjectfactory.h \
     src/animation/meshgenerator.h \
-    src/animation/renderer.h
+    src/animation/renderer.h \
+    src/animation/carcassrenderer.h
 
 SUBDIRS += src
 
