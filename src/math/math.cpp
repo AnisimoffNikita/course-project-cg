@@ -42,6 +42,11 @@ double Math::Atan(double value)
     return atan(value);
 }
 
+double Math::Abs(double value)
+{
+    return abs(value);
+}
+
 double Math::Bisection(double a, double b, const Func &f, double eps)
 {
     double x = (a + b)*0.5;

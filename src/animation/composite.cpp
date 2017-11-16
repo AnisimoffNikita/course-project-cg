@@ -6,7 +6,7 @@ Composite::Composite()
 }
 
 
-void Composite::draw(Render &render)
+void Composite::draw(Renderer &render)
 {
 }
 

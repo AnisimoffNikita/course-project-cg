@@ -12,6 +12,7 @@
 #include "src/number.h"
 
 #include <QPixmap>
+#include "renderer.h"
 
 using namespace std;
 
@@ -23,21 +24,16 @@ public:
     virtual ~Scene() = default;
 
     virtual void add(const SharedSceneObject &child);
-//    virtual SharedSceneObject get(int32 tag);
-//    virtual void remove(int32 tag);
 
     virtual void setActiveCamera(const SharedSceneObject &child);
-    virtual weak_ptr< Camera > getActiveCamera();
+    virtual WeakCamera getActiveCamera();
 
-    virtual vector< SharedSceneObject> getChildren();
+    virtual vector<SharedSceneObject> getChildren();
 
     virtual QPixmap render();
-
-
-
 protected:
-    vector< SharedSceneObject> _children;
-    weak_ptr< Camera > _camera;
+    vector<SharedSceneObject> _children;
+    WeakCamera _camera;
 };
 
 

@@ -1,40 +1,40 @@
-#include "rendercontext.h"
+#include "renderer.h"
 
 #include "commontransformation.h"
 
 #include <QPainter>
 
-WeakCamera Render::getCamera() const
+WeakCamera Renderer::getCamera() const
 {
     return camera;
 }
 
-void Render::setCamera(const WeakCamera &value)
+void Renderer::setCamera(const WeakCamera &value)
 {
     camera = value;
 }
 
-QPixmap Render::getPixmap() const
+QPixmap Renderer::getPixmap() const
 {
     return pixmap;
 }
 
-void Render::setPixmap(const QPixmap &value)
+void Renderer::setPixmap(const QPixmap &value)
 {
     pixmap = value;
 }
 
-double Render::getScale() const
+double Renderer::getScale() const
 {
     return scale;
 }
 
-void Render::setScale(double value)
+void Renderer::setScale(double value)
 {
     scale = value;
 }
 
-void Render::renderMesh(const Mesh &mesh)
+void Renderer::renderMesh(const Mesh &mesh)
 {
     if (camera.expired())
         return;
@@ -47,7 +47,7 @@ void Render::renderMesh(const Mesh &mesh)
     CommonTransformation perspective(workCamera->getPVMatrix());
 
     QPainter *paint = new QPainter(&pixmap);
-    paint->setPen(Qt::red);
+    paint->setPen(Qt::black);
     for (const auto& edge : edges)
     {
         Vertex v1 = vertices.at(edge.v1());

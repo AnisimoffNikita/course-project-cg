@@ -43,10 +43,25 @@ void ModelView::mouseMoveEvent(QMouseEvent *event)
 
     auto workCamera = camera.lock();
 
-    RotateZTransformation z(Math::ToRadians(dx)/2, Vertex(0,0,0));
-    RotateXTransformation x(Math::ToRadians(dy)/2, Vertex(0,0,0));
+
+    Vertex cameraPos = workCamera->getPosition();
+
+    RotateZTransformation z(Math::ToRadians(-dx)/2, Vertex(0,0,cameraPos.getZ()));
     workCamera->transform(z);
-    workCamera->transform(x);
+
+
+    if (Math::Abs(cameraPos.getX()) > Math::Abs(cameraPos.getY()))
+    {
+        RotateYTransformation y(Math::ToRadians(-dy)/2, Vertex(0,0,0));
+        workCamera->transform(y);
+    }
+    else
+    {
+        RotateXTransformation x(Math::ToRadians(-dy)/2, Vertex(0,0,0));
+        workCamera->transform(x);
+    }
+
+
 
     auto pixmap = work->render();
 

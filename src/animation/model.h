@@ -13,7 +13,7 @@ public:
     Model(const Vertex &position, const Mesh &mesh);
     virtual ~Model() = default;
 
-    virtual void draw(Render &render) override;
+    virtual void draw(Renderer &render) override;
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;

@@ -12,8 +12,8 @@ class Edge;
 class Mesh
 {
 private:
-    std::vector<Vertex> _vertices;
-    std::vector<Edge> _edges;
+    std::vector<Vertex> vertices;
+    std::vector<Edge> edges;
 public:
     Mesh() = default;
 
@@ -29,12 +29,24 @@ public:
 class Edge
 {
 private:
-    int _v1, _v2;
+    int v[2];
 public:
     Edge(int v1, int v2);
 
     int v1() const;
     int v2() const;
+};
+
+class Triangle
+{
+private:
+    int v[3];
+public:
+    Triangle(int v1, int v2, int v3);
+
+    int v1() const;
+    int v2() const;
+    int v3() const;
 };
 
 #endif // MESH_H

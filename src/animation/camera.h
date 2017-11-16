@@ -8,7 +8,7 @@ class Camera : public SceneObject
 public:
     Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, const Mat4 &projection);
 
-    virtual void draw(Render &) override;
+    virtual void draw(Renderer &) override;
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;

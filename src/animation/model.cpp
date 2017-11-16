@@ -1,6 +1,6 @@
 #include "model.h"
 
-#include "rendercontext.h"
+#include "renderer.h"
 
 
 Model::Model(const Vertex &position, const Mesh &mesh) :
@@ -9,7 +9,7 @@ Model::Model(const Vertex &position, const Mesh &mesh) :
 {
 }
 
-void Model::draw(Render &render)
+void Model::draw(Renderer &render)
 {
     render.renderMesh(mesh);
 }

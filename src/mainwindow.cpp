@@ -111,16 +111,14 @@ void MainWindow::updateActions()
 void MainWindow::debug_setScene()
 {
     CameraFactory::PerspectiveData data;
-    data.fovX = Math::ToRadians(90);
-    data.fovY = Math::ToRadians(90);
+    data.fovX = Math::ToRadians(80);
+    data.fovY = Math::ToRadians(80);
     data.near = 0.1;
     data.far = 100;
-    CameraFactory cameraFactory(Vertex(2,2,2), Vertex(0,0,0), Vertex(0,0,1), data);
+    CameraFactory cameraFactory(Vertex(3,3,3), Vertex(0,0,0), Vertex(0,0,1), data);
     auto camera = cameraFactory.create();
 
-    //auto mesh = MeshGenerator::Cylinder(0.1,0.2,4);
-    auto mesh = MeshGenerator::Cube(0.1);
-    ModelFactory modelFactory(Vertex(0,0,0), mesh);
+    ModelFactory modelFactory(Vertex(0,0,0), MeshGenerator::Cube(0.1));
     auto model = modelFactory.create();
 
     scene->add(camera);

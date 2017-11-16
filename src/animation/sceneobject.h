@@ -8,7 +8,7 @@
 #include "src/math/matrix.h"
 #include "transformation.h"
 
-class Render;
+class Renderer;
 
 class SceneObject
 {
@@ -21,7 +21,7 @@ public:
     virtual Vertex getPosition() const;
     virtual void setPosition(const Vertex &value);
 
-    virtual void draw(Render &render) = 0;
+    virtual void draw(Renderer &render) = 0;
     virtual void transform(const Transformation &transformation) = 0;
 
     virtual bool isCamera() = 0;

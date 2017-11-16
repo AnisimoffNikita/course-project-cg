@@ -12,7 +12,7 @@ Camera::Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, c
 }
 
 
-void Camera::draw(Render &)
+void Camera::draw(Renderer &)
 {
     return;
 }

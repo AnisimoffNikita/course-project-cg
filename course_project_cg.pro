@@ -54,7 +54,6 @@ SOURCES += src/main.cpp\
     src/math/vec2.cpp \
     src/math/vec3.cpp \
     src/math/homogeneousvertex.cpp \
-    src/animation/rendercontext.cpp \
     src/animation/transformation.cpp \
     src/animation/composite.cpp \
     src/animation/scene.cpp \
@@ -64,7 +63,8 @@ SOURCES += src/main.cpp\
     src/animation/matrixfactory.cpp \
     src/animation/commontransformation.cpp \
     src/animation/sceneobjectfactory.cpp \
-    src/animation/meshgenerator.cpp
+    src/animation/meshgenerator.cpp \
+    src/animation/renderer.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -96,7 +96,6 @@ HEADERS  += src/mainwindow.h \
     src/math/vec2.h \
     src/math/vec3.h \
     src/math/homogeneousvertex.h \
-    src/animation/rendercontext.h \
     src/animation/transformation.h \
     src/animation/composite.h \
     src/animation/scene.h \
@@ -106,7 +105,8 @@ HEADERS  += src/mainwindow.h \
     src/animation/matrixfactory.h \
     src/animation/commontransformation.h \
     src/animation/sceneobjectfactory.h \
-    src/animation/meshgenerator.h
+    src/animation/meshgenerator.h \
+    src/animation/renderer.h
 
 SUBDIRS += src
 
