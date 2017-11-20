@@ -15,10 +15,12 @@ public:
 
     virtual void renderMesh(const Mesh &mesh) override;
 
-    virtual QPixmap getRendered() override;
+    virtual QImage getRendered() override;
 
 protected:
-    QPixmap canvas;
+    void brezenhem(const Vertex &p1, const Vertex &p2);
+
+
     WeakCamera camera;
     std::vector<WeakLight> lights;
 

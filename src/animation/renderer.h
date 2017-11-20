@@ -6,24 +6,25 @@
 #include "light.h"
 #include "mesh.h"
 
-#include <QPixmap>
+#include <QImage>
 
 class Renderer
 {
 public:
-    Renderer(double scale, int32 width, int32 height);
+    Renderer(double scale, int width, int height);
 
     virtual void setCamera(WeakCamera value) = 0;
     virtual void addLight(WeakLight value) = 0;
 
     virtual void renderMesh(const Mesh &mesh) = 0;
 
-    virtual QPixmap getRendered() = 0;
+    virtual QImage getRendered() = 0;
 
 protected:
     double scale;
-    int32 width;
-    int32 height;
+    int width;
+    int height;
+    QImage canvas;
 };
 
 #endif // RENDERER_H

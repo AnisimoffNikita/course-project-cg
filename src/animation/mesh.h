@@ -17,6 +17,7 @@ class Mesh
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;
+    std::vector<Vertex> normals;
     std::vector<Triangle> triangles;
 
     Material material;
@@ -24,6 +25,7 @@ public:
     Mesh() = default;
 
     void addVertex(const Vertex &vertex);
+    Vertex getVertex(int i);
     void addEdge(const Edge &edge);
     void addTrinagle(const Triangle &triangle);
 
@@ -41,6 +43,9 @@ public:
 
     const std::vector<Edge> &getEdges() const;
     void setEdges(const std::vector<Edge> &value);
+
+    const std::vector<Vertex> &getNormals() const;
+    void setNormals(const std::vector<Vertex> &value);
 };
 
 

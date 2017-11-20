@@ -83,6 +83,13 @@ public:
         return Vec3(xc*factor,yc*factor,zc*factor);
     }
 
+    bool operator==(const Vec3 &value) const
+    {
+        return xc == value.xc &&
+               yc == value.yc &&
+               zc == value.zc;
+    }
+
 
     Vec3 operator- () const
     {

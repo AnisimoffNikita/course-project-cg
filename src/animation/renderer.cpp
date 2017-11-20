@@ -1,13 +1,10 @@
 #include "renderer.h"
 
-#include "commontransformation.h"
-
-#include <QPainter>
-
-Renderer::Renderer(double scale, int32 width, int32 height) :
+Renderer::Renderer(double scale, int width, int height) :
     scale(scale),
     width(width),
-    height(height)
+    height(height),
+    canvas(width, height, QImage::Format_ARGB32)
 {
 }
 

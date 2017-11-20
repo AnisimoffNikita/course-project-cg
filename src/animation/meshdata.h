@@ -18,12 +18,15 @@ class Triangle
 {
 private:
     int v[3];
+    int n0;
 public:
-    Triangle(int v1, int v2, int v3);
+    Triangle(int v1, int v2, int v3, int n);
 
     int v1() const;
     int v2() const;
     int v3() const;
+
+    int n() const;
 };
 
 class Material

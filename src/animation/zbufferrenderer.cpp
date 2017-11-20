@@ -1,23 +1,22 @@
-#include "trianglerenderer.h"
+#include "zbufferrenderer.h"
 
 #include "commontransformation.h"
 
 #include <QPainter>
 
-TriangleRenderer::TriangleRenderer(double scale, int32 width, int32 height) :
-    Renderer(scale, width, height),
-    canvas(width, height, QImage::Format_ARGB32)
+ZBufferRenderer::ZBufferRenderer(double scale, int32 width, int32 height) :
+    Renderer(scale, width, height)
 {
     canvas.fill(Qt::white);
     buffer.setSize(width, height);
 }
 
-TriangleRenderer::~TriangleRenderer()
+ZBufferRenderer::~ZBufferRenderer()
 {
 }
 
 
-void TriangleRenderer::renderMesh(const Mesh &mesh)
+void ZBufferRenderer::renderMesh(const Mesh &mesh)
 {
     if (camera.expired())
         return;
@@ -40,95 +39,38 @@ void TriangleRenderer::renderMesh(const Mesh &mesh)
 
     auto color = mesh.getMaterial().getDiffuseColor();
 
-    auto qcolor = QColor(color.getRed(), color.getGreen(), color.getBlue());
-
-
     for (const auto& triangle : triangles)
     {
         Vertex v1 = vertices.at(triangle.v1());
         Vertex v2 = vertices.at(triangle.v2());
         Vertex v3 = vertices.at(triangle.v3());
 
-
-        fillTriangle(v1, v2, v3);
-
-//        brezenhem(v1, v2);
-//        brezenhem(v2, v3);
-//        brezenhem(v3, v1);
+        fillTriangle(v1, v2, v3, color);
     }
 
 }
 
 
-void TriangleRenderer::addLight(WeakLight)
+void ZBufferRenderer::addLight(WeakLight)
 {
 }
 
-void TriangleRenderer::setCamera(WeakCamera value)
+void ZBufferRenderer::setCamera(WeakCamera value)
 {
     camera = value;
 }
 
-QPixmap TriangleRenderer::getRendered()
+QImage ZBufferRenderer::getRendered()
 {
     auto toReturn = canvas;
     canvas.fill(Qt::white);
     buffer.init();
-    return QPixmap::fromImage(toReturn);
+    return toReturn;
 }
 
 
-void TriangleRenderer::brezenhem(const Vertex &p1, const Vertex &p2)
-{
-    int32 x1 = p1.x(), y1 = p1.y();
-    int32 x2 = p2.x(), y2 = p2.y();
-    if (x1 == x2 && y1 == y2)
-    {
-        canvas.setPixelColor(y1, x1, Qt::black);
-    }
-    int32 dx = x2 - x1, dy = y2 - y1;
-    int32 sx = Math::sgn(dx), sy = Math::sgn(dy);
-    dx = abs(dx); dy = abs(dy);
-    bool flag = dy > dx;
-    if (flag)
-    {
-        std::swap(dx, dy);
-    }
-    int32 f = (dy<<1) - dx;
-    int32 x = x1, y = y1;
 
-    if (flag)
-    {
-        for (int32 i = 0; i < dx; i++)
-        {
-            canvas.setPixelColor(x, y, Qt::black);
-            if (f > 0)
-            {
-                x += sx;
-                f -= dx*2;
-            }
-            y += sy;
-            f += dy*2;
-        }
-    }
-    else
-    {
-        for (int32 i = 0; i < dx; i++)
-        {
-            canvas.setPixelColor(x, y, Qt::black);
-            if (f > 0)
-            {
-                y += sy;
-                f -= dx*2;
-            }
-            x += sx;
-            f += dy*2;
-        }
-    }
-    canvas.setPixelColor(x, y, Qt::black);
-}
-
-std::vector<int> TriangleRenderer::getBrezenhemX(const Vertex &p1, const Vertex &p2)
+std::vector<int> ZBufferRenderer::getBrezenhemX(const Vertex &p1, const Vertex &p2)
 {
     std::vector<int> result;
     int32 x1 = p1.x(), y1 = p1.y();
@@ -181,7 +123,7 @@ std::vector<int> TriangleRenderer::getBrezenhemX(const Vertex &p1, const Vertex 
 }
 
 
-void TriangleRenderer::fillTriangle(const Vertex &v1, const Vertex &v2, const Vertex &v3)
+void ZBufferRenderer::fillTriangle(const Vertex &v1, const Vertex &v2, const Vertex &v3, const Color &color)
 {
     auto swap = [](Vertex &a, Vertex &b)
     {
@@ -237,6 +179,7 @@ void TriangleRenderer::fillTriangle(const Vertex &v1, const Vertex &v2, const Ve
     if (c == 0)
         return;
 
+    QColor qcolor(color.getRed(), color.getGreen(), color.getBlue());
 
     double z;
     for (int y = wv1.y(), i = 0; y <= wv3.y(); y++, i++)
@@ -248,7 +191,7 @@ void TriangleRenderer::fillTriangle(const Vertex &v1, const Vertex &v2, const Ve
             if (z > buffer.get(x, y))
             {
                 buffer.set(x, y, z);
-                canvas.setPixelColor(x, y, Qt::red);
+                canvas.setPixelColor(x, y, qcolor);
             }
         }
         z = -(a*left[i]+b*y+d)/c;

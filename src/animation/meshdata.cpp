@@ -16,8 +16,9 @@ int Edge::v2() const
 }
 
 
-Triangle::Triangle(int v1, int v2, int v3) :
-    v{v1,v2,v3}
+Triangle::Triangle(int v1, int v2, int v3, int n) :
+    v{v1,v2,v3},
+    n0(n)
 {
 
 }
@@ -35,6 +36,11 @@ int Triangle::v2() const
 int Triangle::v3() const
 {
     return v[2];
+}
+
+int Triangle::n() const
+{
+    return n0;
 }
 
 Color Material::getDiffuseColor() const

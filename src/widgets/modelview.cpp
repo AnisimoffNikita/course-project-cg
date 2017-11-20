@@ -9,7 +9,7 @@
 #include "src/animation/meshgenerator.h"
 #include "src/animation/sceneobjectfactory.h"
 #include "src/animation/carcassrenderer.h"
-#include "src/animation/trianglerenderer.h"
+#include "src/animation/zbufferrenderer.h"
 
 ModelView::ModelView(QWidget *parent) :
     QGraphicsView(parent),
@@ -38,11 +38,11 @@ ModelView::ModelView(QWidget *parent) :
     scene->add(model);
     scene->setActiveCamera(camera);
 
-    renderer = std::make_unique<TriangleRenderer>(100,1024,768);
+    renderer = std::make_unique<ZBufferRenderer>(100,1024,768);
 
     scene->render(renderer);
 
-    canvas = renderer->getRendered();
+    canvas = QPixmap::fromImage(renderer->getRendered());
 
     updateCanvas();
 
@@ -89,7 +89,7 @@ void ModelView::mouseMoveEvent(QMouseEvent *event)
 
 
     scene->render(renderer);
-    canvas = renderer->getRendered();
+    canvas = QPixmap::fromImage(renderer->getRendered());
 
     updateCanvas();
 

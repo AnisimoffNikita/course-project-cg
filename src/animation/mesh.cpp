@@ -1,9 +1,24 @@
 #include "mesh.h"
 
 
+const std::vector<Vertex> &Mesh::getNormals() const
+{
+    return normals;
+}
+
+void Mesh::setNormals(const std::vector<Vertex> &value)
+{
+    normals = value;
+}
+
 void Mesh::addVertex(const Vertex &vertex)
 {
     vertices.push_back(vertex);
+}
+
+Vertex Mesh::getVertex(int i)
+{
+    return vertices[i];
 }
 
 void Mesh::addEdge(const Edge &edge)

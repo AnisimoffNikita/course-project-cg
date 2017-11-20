@@ -12,7 +12,10 @@ public:
     static Mesh CubeCarcass(double size);
 
     static Mesh CylinderTriangles(double radius, double height, int accuracy);
+private:
+    static Vertex getNormal(const Vertex &v1, const Vertex &v2, const Vertex &v3, const Vertex &p);
 };
+
 
 class MaterialGenerator
 {
