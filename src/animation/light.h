@@ -12,6 +12,8 @@ public:
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
+
+
 };
 
 using SharedLight = std::shared_ptr<Light>;

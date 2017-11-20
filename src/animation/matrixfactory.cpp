@@ -32,10 +32,5 @@ Mat4 PerspectiveMatrix::create(double fovx, double fovy, double zNear, double zF
                      0, 0, -(zFar + zNear) / (zFar - zNear), -1,
                      0, 0, -(2 * zFar*zNear) / (zFar - zNear), 0};
 
-//    double data[] = {1, 0, 0, 0,
-//                     0, 1, 0, 0,
-//                     0, 0, 1, 0,
-//                     0, 0, -0.1, 1};
-
     return Mat4(data);
 }

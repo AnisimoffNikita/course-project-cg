@@ -9,6 +9,7 @@
 #include "src/animation/meshgenerator.h"
 #include "src/animation/sceneobjectfactory.h"
 #include "src/animation/carcassrenderer.h"
+#include "src/animation/trianglerenderer.h"
 
 ModelView::ModelView(QWidget *parent) :
     QGraphicsView(parent),
@@ -30,14 +31,14 @@ ModelView::ModelView(QWidget *parent) :
     CameraFactory cameraFactory(Vertex(3,3,3), Vertex(0,0,0), Vertex(0,0,1), data);
     auto camera = cameraFactory.create();
 
-    ModelFactory modelFactory(Vertex(0,0,0), MeshGenerator::Cube(0.1));
+    ModelFactory modelFactory(Vertex(0,0,0), MeshGenerator::CylinderTriangles(1,5,10));
     auto model = modelFactory.create();
 
     scene->add(camera);
     scene->add(model);
     scene->setActiveCamera(camera);
 
-    renderer = std::make_unique<CarcassRenderer>(100,1024,768);
+    renderer = std::make_unique<TriangleRenderer>(100,1024,768);
 
     scene->render(renderer);
 

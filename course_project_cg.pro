@@ -65,7 +65,9 @@ SOURCES += src/main.cpp\
     src/animation/sceneobjectfactory.cpp \
     src/animation/meshgenerator.cpp \
     src/animation/renderer.cpp \
-    src/animation/carcassrenderer.cpp
+    src/animation/carcassrenderer.cpp \
+    src/animation/meshdata.cpp \
+    src/animation/trianglerenderer.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -108,7 +110,9 @@ HEADERS  += src/mainwindow.h \
     src/animation/sceneobjectfactory.h \
     src/animation/meshgenerator.h \
     src/animation/renderer.h \
-    src/animation/carcassrenderer.h
+    src/animation/carcassrenderer.h \
+    src/animation/meshdata.h \
+    src/animation/trianglerenderer.h
 
 SUBDIRS += src
 

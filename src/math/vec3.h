@@ -62,6 +62,12 @@ public:
         z *= factor;
         return *this;
     }
+
+    Vec3 operator+ (const Vec3 &value) const
+    {
+        return Vec3(x+value.x, y+value.y, z+value.z);
+    }
+
     Vec3 operator- (const Vec3 &value) const
     {
         return Vec3(x-value.x, y-value.y, z-value.z);

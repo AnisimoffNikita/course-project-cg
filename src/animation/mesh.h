@@ -6,47 +6,43 @@
 #include "src/math/vec3.h"
 #include "src/math/matrix.h"
 #include "src/animation/transformation.h"
+#include "meshdata.h"
 
 class Edge;
+class Triangle;
+class Material;
 
 class Mesh
 {
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;
+    std::vector<Triangle> triangles;
+
+    Material material;
 public:
     Mesh() = default;
 
     void addVertex(const Vertex &vertex);
     void addEdge(const Edge &edge);
+    void addTrinagle(const Triangle &triangle);
 
-    const std::vector<Vertex> &getVertices() const;
-    const std::vector<Edge> &getEdges() const;
+
+    Material getMaterial() const;
+    void setMaterial(const Material &value);
 
     void transform(const Transformation &transformation);
+
+    const std::vector<Triangle> &getTriangles() const;
+    void setTriangles(const std::vector<Triangle> &value);
+
+    std::vector<Vertex> getVertices() const;
+    void setVertices(const std::vector<Vertex> &value);
+
+    const std::vector<Edge> &getEdges() const;
+    void setEdges(const std::vector<Edge> &value);
 };
 
-class Edge
-{
-private:
-    int v[2];
-public:
-    Edge(int v1, int v2);
 
-    int v1() const;
-    int v2() const;
-};
-
-class Triangle
-{
-private:
-    int v[3];
-public:
-    Triangle(int v1, int v2, int v3);
-
-    int v1() const;
-    int v2() const;
-    int v3() const;
-};
 
 #endif // MESH_H
