@@ -72,11 +72,11 @@ void ModelView::mouseMoveEvent(QMouseEvent *event)
 
     Vertex cameraPos = workCamera->getPosition();
 
-    RotateZTransformation z(Math::ToRadians(-dx)/2, Vertex(0,0,cameraPos.getZ()));
+    RotateZTransformation z(Math::ToRadians(-dx)/2, Vertex(0,0,cameraPos.z()));
     workCamera->transform(z);
 
 
-    if (Math::Abs(cameraPos.getX()) > Math::Abs(cameraPos.getY()))
+    if (Math::Abs(cameraPos.x()) > Math::Abs(cameraPos.y()))
     {
         RotateYTransformation y(Math::ToRadians(-dy)/2, Vertex(0,0,0));
         workCamera->transform(y);

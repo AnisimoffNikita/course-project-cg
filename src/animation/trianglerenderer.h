@@ -4,12 +4,11 @@
 
 #include "renderer.h"
 
+#include "zbuffer.h"
 #include <QPixmap>
 
 class TriangleRenderer : public Renderer
 {
-//public:
-//    using Buffer = std::vector<std::vector<int32>>;
 public:
     TriangleRenderer(double scale, int32 width, int32 height);
     virtual ~TriangleRenderer();
@@ -23,15 +22,13 @@ public:
 
 protected:
     void brezenhem(const Vertex &p1, const Vertex &p2);
+    std::vector<int> getBrezenhemX(const Vertex &p1, const Vertex &p2);
     void setupBuffer();
 
-    void drawHorizontLine(int32 x1, int32 x2, int32 y, uint32 z1, uint32 z2);
-    void fillBottomFlatTriangle(const Vertex &v1, const Vertex &v2, const Vertex &v3);
-    void fillTopFlatTriangle(const Vertex &v1, const Vertex &v2, const Vertex &v3);
     void fillTriangle(const Vertex &v1, const Vertex &v2, const Vertex &v3);
 
     QImage canvas;
-    //Buffer buffer;
+    ZBuffer buffer;
     WeakCamera camera;
     std::vector<WeakLight> lights;
 

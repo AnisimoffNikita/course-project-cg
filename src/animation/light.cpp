@@ -1,7 +1,8 @@
 #include "light.h"
 #include "transformation.h"
 
-Light::Light()
+Light::Light(const Vertex &position) :
+    SceneObject(position)
 {
 
 }

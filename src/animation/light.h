@@ -6,14 +6,16 @@
 class Light : public SceneObject
 {
 public:
-    Light();
+    Light() = default;
+    Light(const Vertex &position);
+    virtual ~Light() = default;
 
     virtual void draw(std::unique_ptr<Renderer> &) override;
     virtual void transform(const Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
 
-
+    virtual double getIntensity(const Vertex &normal) const = 0;
 };
 
 using SharedLight = std::shared_ptr<Light>;

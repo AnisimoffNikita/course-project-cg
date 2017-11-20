@@ -4,9 +4,9 @@
 
 ScaleTransformation::ScaleTransformation(const Vertex &scale, const Vertex &origin)
 {
-    double data[16] = {scale.getX(), 0, 0, 0,
-                       0, scale.getY(), 0, 0,
-                       0, 0, scale.getZ(), 0,
+    double data[16] = {scale.x(), 0, 0, 0,
+                       0, scale.y(), 0, 0,
+                       0, 0, scale.z(), 0,
                        0, 0, 0, 1};
     _matrix = Mat4(data);
     _origin = origin;

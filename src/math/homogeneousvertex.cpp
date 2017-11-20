@@ -11,6 +11,6 @@ Vertex HomogeneousVertexConverter::ToVertex(const HomogeneousVertex &hvec)
 
 HomogeneousVertex HomogeneousVertexConverter::FromVertex(const Vertex &vec)
 {
-    double values[] = {vec.getX(), vec.getY(), vec.getZ(), 1.0};
+    double values[] = {vec.x(), vec.y(), vec.z(), 1.0};
     return HomogeneousVertex(values);
 }

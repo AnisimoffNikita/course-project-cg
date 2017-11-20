@@ -8,104 +8,109 @@ template <class T>
 class Vec3
 {
 public:
-    Vec3() : x(0), y(0), z(0) {}
-    Vec3(const T &x, const T &y, const T &z) : x(x), y(y), z(z) {}
+    Vec3() : xc(0), yc(0), zc(0) {}
+    Vec3(const T &x, const T &y, const T &z) : xc(x), yc(y), zc(z) {}
 
-    T getX() const
+    T x() const
     {
-        return x;
+        return xc;
     }
 
     void setX(const T &value)
     {
-        x = value;
+        xc = value;
     }
 
-    T getY() const
+    T y() const
     {
-        return y;
+        return yc;
     }
 
     void setY(const T &value)
     {
-        y = value;
+        yc = value;
     }
 
-    T getZ() const
+    T z() const
     {
-        return z;
+        return zc;
     }
 
     void setZ(const T &value)
     {
-        z = value;
+        zc = value;
+    }
+
+    double length() const
+    {
+        return Math::Sqrt(xc*xc+yc*yc+zc*zc);
     }
 
     Vec3 &operator+= (const Vec3 &value)
     {
-        x += value.x;
-        y += value.y;
-        z += value.z;
+        xc += value.xc;
+        yc += value.yc;
+        zc += value.zc;
         return *this;
     }
     Vec3 &operator-= (const Vec3 &value)
     {
-        x -= value.x;
-        y -= value.y;
-        z -= value.z;
+        xc -= value.xc;
+        yc -= value.yc;
+        zc -= value.zc;
         return *this;
     }
     Vec3 &operator*= (double factor)
     {
-        x *= factor;
-        y *= factor;
-        z *= factor;
+        xc *= factor;
+        yc *= factor;
+        zc *= factor;
         return *this;
     }
 
     Vec3 operator+ (const Vec3 &value) const
     {
-        return Vec3(x+value.x, y+value.y, z+value.z);
+        return Vec3(xc+value.xc, yc+value.yc, zc+value.zc);
     }
 
     Vec3 operator- (const Vec3 &value) const
     {
-        return Vec3(x-value.x, y-value.y, z-value.z);
+        return Vec3(xc-value.xc, yc-value.yc, zc-value.zc);
     }
 
     Vec3 operator*(double factor) const
     {
-        return Vec3(x*factor,y*factor,z*factor);
+        return Vec3(xc*factor,yc*factor,zc*factor);
     }
 
 
     Vec3 operator- () const
     {
-        return Vec3(-x,-y,-z);
+        return Vec3(-xc,-yc,-zc);
     }
 
     Vec3 normalized() const
     {
-        double l = Math::Sqrt(x*x+y*y+z*z);
-        return Vec3(x/l, y/l, z/l);
+        double l = Math::Sqrt(xc*xc+yc*yc+zc*zc);
+        return Vec3(xc/l, yc/l, zc/l);
     }
 
     T dot(const Vec3 &value) const
     {
-        return x*value.x + y*value.y + z*value.z;
+        return xc*value.xc + yc*value.yc + zc*value.zc;
     }
 
     Vec3 cross(const Vec3 &value) const
     {
-        return Vec3(y*value.z-z*value.y,
-                    -x*value.z+z*value.x,
-                    x*value.y-y*value.x);
+        return Vec3(yc*value.zc-zc*value.yc,
+                    -xc*value.zc+zc*value.xc,
+                    xc*value.yc-yc*value.xc);
     }
 
 private:
-    T x;
-    T y;
-    T z;
+    T xc;
+    T yc;
+    T zc;
 };
 
 using Vertex = Vec3<double>;

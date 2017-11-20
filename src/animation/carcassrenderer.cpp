@@ -36,7 +36,7 @@ void CarcassRenderer::renderMesh(const Mesh &mesh)
         v2 *= scale;
         v1 += Vertex(width/2, height/2, 0);
         v2 += Vertex(width/2, height/2, 0);
-        paint->drawLine(v1.getX(), v1.getY(), v2.getX(), v2.getY());
+        paint->drawLine(v1.x(), v1.y(), v2.x(), v2.y());
     }
     delete paint;
 }

@@ -3,9 +3,9 @@
 
 Mat4 ModelMatrix::create(const Vertex &vertex)
 {
-    double data[16] = {1, 0, 0, vertex.getX(),
-                       0, 1, 0, vertex.getY(),
-                       0, 0, 1, vertex.getZ(),
+    double data[16] = {1, 0, 0, vertex.x(),
+                       0, 1, 0, vertex.y(),
+                       0, 0, 1, vertex.z(),
                        0, 0, 0, 1};
     return Mat4(data);
 }
@@ -16,9 +16,9 @@ Mat4 ViewMatrix::create(const Vertex &eye, const Vertex &target, const Vertex &u
     Vertex x = z.cross(up).normalized();
     Vertex y = x.cross(z);
 
-    double data[] = {x.getX(), x.getY(), x.getZ(), -x.dot(eye),
-                     y.getX(), y.getY(), y.getZ(), -y.dot(eye),
-                     z.getX(), z.getY(), z.getZ(), -z.dot(eye),
+    double data[] = {x.x(), x.y(), x.z(), -x.dot(eye),
+                     y.x(), y.y(), y.z(), -y.dot(eye),
+                     z.x(), z.y(), z.z(), -z.dot(eye),
                      0, 0, 0, 1};
 
     return Mat4(data);

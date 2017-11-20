@@ -47,6 +47,11 @@ double Math::Abs(double value)
     return abs(value);
 }
 
+double Math::Pow(double x, double y)
+{
+    return pow(x, y);
+}
+
 double Math::Bisection(double a, double b, const Func &f, double eps)
 {
     double x = (a + b)*0.5;

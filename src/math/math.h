@@ -30,6 +30,7 @@ public:
     static double Sqrt(double value);
     static double Atan(double value);
     static double Abs(double value);
+    static double Pow(double x, double y);
 
     static double Bisection(double a, double b, const Func &f, double eps = 1e-6);
 };

@@ -67,7 +67,10 @@ SOURCES += src/main.cpp\
     src/animation/renderer.cpp \
     src/animation/carcassrenderer.cpp \
     src/animation/meshdata.cpp \
-    src/animation/trianglerenderer.cpp
+    src/animation/trianglerenderer.cpp \
+    src/animation/ambientlight.cpp \
+    src/animation/pointlight.cpp \
+    src/animation/zbuffer.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -112,7 +115,10 @@ HEADERS  += src/mainwindow.h \
     src/animation/renderer.h \
     src/animation/carcassrenderer.h \
     src/animation/meshdata.h \
-    src/animation/trianglerenderer.h
+    src/animation/trianglerenderer.h \
+    src/animation/ambientlight.h \
+    src/animation/pointlight.h \
+    src/animation/zbuffer.h
 
 SUBDIRS += src
 
