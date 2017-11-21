@@ -49,12 +49,14 @@ ImageBase<T>::ImageBase() :
 
 template<class T>
 ImageBase<T>::ImageBase(const ImageBase &image) :
-    data(std::make_unique<T[]>(image.width*image.height)),
+    data(std::make_unique<T[]>(image.width * image.height)),
     width(image.width),
     height(image.height)
 {
-    for (uint32 i = 0; i < width*height; i++)
+    for (uint32 i = 0; i < width * height; i++)
+    {
         data[i] = image.data[i];
+    }
 }
 
 template<class T>
@@ -68,12 +70,14 @@ ImageBase<T>::ImageBase(ImageBase &&image) :
 
 template<class T>
 ImageBase<T>::ImageBase(uint32 height, uint32 width) :
-    data( std::make_unique<T[]>(width*height)),
+    data(std::make_unique<T[]>(width * height)),
     width(width),
     height(height)
 {
-    for (uint32 i = 0; i < width*height; i++)
+    for (uint32 i = 0; i < width * height; i++)
+    {
         data[i] = T(0);
+    }
 }
 
 
@@ -82,9 +86,13 @@ ImageBase<T> &ImageBase<T>::operator =(const ImageBase<T> &image)
 {
     width = image.width;
     height = image.height;
-    data = std::make_unique<T[]>(width*height);
-    for (uint32 i = 0; i < width*height; i++)
+    data = std::make_unique<T[]>(width * height);
+
+    for (uint32 i = 0; i < width * height; i++)
+    {
         data[i] = image.data[i];
+    }
+
     return *this;
 }
 
@@ -102,13 +110,13 @@ ImageBase<T> &ImageBase<T>::operator =(ImageBase<T> &&image)
 template<class T>
 const T &ImageBase<T>::at(uint32 i, uint32 j) const
 {
-    return data[i*width+j];
+    return data[i * width + j];
 }
 
 template<class T>
 void ImageBase<T>::set(uint32 i, uint32 j, const T &color)
 {
-    data[i*width+j] = color;
+    data[i * width + j] = color;
 }
 
 template<class T>

@@ -1,10 +1,10 @@
 #include "light.h"
 #include "transformation.h"
 
-Light::Light(const Vertex &position) :
-    SceneObject(position)
+Light::Light(const Vertex &position, double intensity) :
+    SceneObject(position),
+    intensity(intensity)
 {
-
 }
 
 void Light::draw(std::unique_ptr<Renderer> &)

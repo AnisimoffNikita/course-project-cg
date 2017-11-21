@@ -2,7 +2,6 @@
 
 Composite::Composite()
 {
-
 }
 
 

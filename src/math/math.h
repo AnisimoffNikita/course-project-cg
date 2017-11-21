@@ -39,9 +39,15 @@ template<class T>
 T Math::Clamp(const T &value, const T &min, const T &max)
 {
     if (value > max)
+    {
         return max;
+    }
+
     if (value < min)
+    {
         return min;
+    }
+
     return value;
 }
 

@@ -4,7 +4,6 @@ CylinderSize::CylinderSize(double height, double radius) :
     height(height),
     radius(radius)
 {
-
 }
 
 double CylinderSize::getRadius() const

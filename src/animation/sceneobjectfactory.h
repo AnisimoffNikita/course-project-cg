@@ -4,6 +4,8 @@
 #include "sceneobject.h"
 #include "camera.h"
 #include "model.h"
+#include "ambientlight.h"
+#include "pointlight.h"
 
 class SceneObjectFactory
 {
@@ -28,7 +30,8 @@ public:
     };
 
 public:
-    CameraFactory(const Vertex &position, const Vertex &lookAt, const Vertex &up, const PerspectiveData &data);
+    CameraFactory(const Vertex &position, const Vertex &lookAt, const Vertex &up,
+                  const PerspectiveData &data);
     //TODO: CameraFactory(const Vertex &position, const Vertex &target, const OrthographicData &data);
     virtual ~CameraFactory() = default;
 
@@ -49,4 +52,25 @@ private:
     std::unique_ptr<Model> model;
 };
 
+class AmbientLightFactory : public SceneObjectFactory
+{
+public:
+    AmbientLightFactory(double intensity);
+    virtual ~AmbientLightFactory() = default;
+
+    virtual SharedSceneObject create() override;
+private:
+    std::unique_ptr<AmbientLight> light;
+};
+
+class PointLightFactory : public SceneObjectFactory
+{
+public:
+    PointLightFactory(const Vertex &position, double intensity);
+    virtual ~PointLightFactory() = default;
+
+    virtual SharedSceneObject create() override;
+private:
+    std::unique_ptr<PointLight> light;
+};
 #endif // SCENEOBJECTFACTORY_H

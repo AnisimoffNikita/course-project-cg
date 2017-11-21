@@ -13,8 +13,8 @@ class Renderer
 public:
     Renderer(double scale, int width, int height);
 
-    virtual void setCamera(WeakCamera value) = 0;
-    virtual void addLight(WeakLight value) = 0;
+    virtual void setCamera(SharedCamera value) = 0;
+    virtual void addLight(SharedLight value) = 0;
 
     virtual void renderMesh(const Mesh &mesh) = 0;
 

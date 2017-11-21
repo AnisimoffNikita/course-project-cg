@@ -2,5 +2,4 @@
 
 CylinderSizeCalculatorBase::~CylinderSizeCalculatorBase()
 {
-
 }

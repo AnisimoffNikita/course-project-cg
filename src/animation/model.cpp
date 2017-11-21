@@ -1,17 +1,19 @@
 #include "model.h"
 
 #include "renderer.h"
+#include "movetransformation.h"
 
-
-Model::Model(const Vertex &position, const Mesh &mesh) :
-    SceneObject(position),
-    mesh(mesh)
+Model::Model(const Vertex &position, const Mesh &mesh)
+    : SceneObject(position)
+    , mesh(mesh)
 {
 }
 
 void Model::draw(std::unique_ptr<Renderer> &renderer)
 {
-    renderer->renderMesh(mesh);
+    auto meshToRender = mesh;
+    meshToRender.transform(MoveTransformation(position));
+    renderer->renderMesh(meshToRender);
 }
 
 void Model::transform(const Transformation &transformation)

@@ -12,7 +12,8 @@ public:
     virtual ~CylinderSizeCalculator();
 
     virtual CylinderSize evaluate(const Lines &lines);
-    virtual void calibrate(const std::vector<Line> &lines, double distance, double radius, double height);
+    virtual void calibrate(const std::vector<Line> &lines, double distance,
+                           double radius, double height);
     virtual void calibrate(double diag, double diagPx);
 
 private:

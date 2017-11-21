@@ -2,5 +2,4 @@
 
 RenderData::RenderData()
 {
-
 }

@@ -10,8 +10,8 @@ class CarcassRenderer : public Renderer
 public:
     CarcassRenderer(double scale, int32 width, int32 height);
 
-    virtual void setCamera(WeakCamera value) override;
-    virtual void addLight(WeakLight) override;
+    virtual void setCamera(SharedCamera value) override;
+    virtual void addLight(SharedLight) override;
 
     virtual void renderMesh(const Mesh &mesh) override;
 
@@ -21,8 +21,8 @@ protected:
     void brezenhem(const Vertex &p1, const Vertex &p2);
 
 
-    WeakCamera camera;
-    std::vector<WeakLight> lights;
+    SharedCamera camera;
+    std::vector<SharedLight> lights;
 
 };
 

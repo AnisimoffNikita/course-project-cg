@@ -2,5 +2,4 @@
 
 SimpleRenderer::SimpleRenderer()
 {
-
 }

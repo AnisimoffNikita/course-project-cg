@@ -7,11 +7,10 @@ class PointLight : public Light
 {
 public:
     PointLight(const Vertex &position, double intensity);
+    virtual ~PointLight() = default;
 
     virtual double getIntensity(const Vertex &normal) const override;
 
-protected:
-    double intensity;
 };
 
 #endif // POINTLIGHT_H

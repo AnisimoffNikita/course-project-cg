@@ -13,30 +13,22 @@ CarcassRenderer::CarcassRenderer(double scale, int32 width, int32 height) :
 
 void CarcassRenderer::renderMesh(const Mesh &mesh)
 {
-    if (camera.expired())
-        return;
-
-    auto workCamera = camera.lock();
-
     auto vertices = mesh.getVertices();
-
-    CommonTransformation perspective(workCamera->getPVMatrix());
-
-    Vertex center(width/2, height/2, 0);
+    CommonTransformation perspective(camera->getPVMatrix());
+    Vertex center(width / 2, height / 2, 0);
 
     for (auto &v : vertices)
     {
         perspective.transform(v);
-        v = v*scale + center;
+        v = v * scale + center;
     }
 
     auto edges = mesh.getEdges();
 
-    for (const auto& edge : edges)
+    for (const auto &edge : edges)
     {
         Vertex v1 = vertices.at(edge.v1());
         Vertex v2 = vertices.at(edge.v2());
-
         brezenhem(v1, v2);
     }
 }
@@ -45,19 +37,24 @@ void CarcassRenderer::brezenhem(const Vertex &p1, const Vertex &p2)
 {
     int32 x1 = p1.x(), y1 = p1.y();
     int32 x2 = p2.x(), y2 = p2.y();
+
     if (x1 == x2 && y1 == y2)
     {
         canvas.setPixelColor(y1, x1, Qt::black);
     }
+
     int32 dx = x2 - x1, dy = y2 - y1;
     int32 sx = Math::sgn(dx), sy = Math::sgn(dy);
-    dx = abs(dx); dy = abs(dy);
+    dx = abs(dx);
+    dy = abs(dy);
     bool flag = dy > dx;
+
     if (flag)
     {
         std::swap(dx, dy);
     }
-    int32 f = (dy<<1) - dx;
+
+    int32 f = (dy << 1) - dx;
     int32 x = x1, y = y1;
 
     if (flag)
@@ -65,13 +62,15 @@ void CarcassRenderer::brezenhem(const Vertex &p1, const Vertex &p2)
         for (int32 i = 0; i < dx; i++)
         {
             canvas.setPixelColor(x, y, Qt::black);
+
             if (f > 0)
             {
                 x += sx;
-                f -= dx*2;
+                f -= dx * 2;
             }
+
             y += sy;
-            f += dy*2;
+            f += dy * 2;
         }
     }
     else
@@ -79,24 +78,27 @@ void CarcassRenderer::brezenhem(const Vertex &p1, const Vertex &p2)
         for (int32 i = 0; i < dx; i++)
         {
             canvas.setPixelColor(x, y, Qt::black);
+
             if (f > 0)
             {
                 y += sy;
-                f -= dx*2;
+                f -= dx * 2;
             }
+
             x += sx;
-            f += dy*2;
+            f += dy * 2;
         }
     }
+
     canvas.setPixelColor(x, y, Qt::black);
 }
 
 
-void CarcassRenderer::addLight(WeakLight)
+void CarcassRenderer::addLight(SharedLight)
 {
 }
 
-void CarcassRenderer::setCamera(WeakCamera value)
+void CarcassRenderer::setCamera(SharedCamera value)
 {
     camera = value;
 }

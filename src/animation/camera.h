@@ -7,7 +7,8 @@
 class Camera : public SceneObject
 {
 public:
-    Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, const Mat4 &projection);
+    Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up,
+           const Mat4 &projection);
 
     virtual void draw(std::unique_ptr<Renderer> &) override;
     virtual void transform(const Transformation &transformation) override;
@@ -17,6 +18,7 @@ public:
     virtual void setPosition(const Vertex &value) override;
 
     virtual void setLookAt(const Vertex &target);
+    virtual Vertex getEyeVector();
     virtual Mat4 getPVMatrix();
 
 protected:

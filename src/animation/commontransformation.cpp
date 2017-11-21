@@ -9,7 +9,7 @@ CommonTransformation::CommonTransformation(const Mat4 &matrix)
 void CommonTransformation::transform(Vertex &vertex) const
 {
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
-    hvec = _matrix*hvec;
+    hvec = _matrix * hvec;
     vertex = HomogeneousVertexConverter::ToVertex(hvec);
 }
 

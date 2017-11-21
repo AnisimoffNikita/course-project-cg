@@ -70,7 +70,9 @@ SOURCES += src/main.cpp\
     src/animation/ambientlight.cpp \
     src/animation/pointlight.cpp \
     src/animation/zbuffer.cpp \
-    src/animation/zbufferrenderer.cpp
+    src/animation/zbufferrenderer.cpp \
+    src/animation/lightzbufferrenderer.cpp \
+    src/animation/objloader.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -118,7 +120,10 @@ HEADERS  += src/mainwindow.h \
     src/animation/ambientlight.h \
     src/animation/pointlight.h \
     src/animation/zbuffer.h \
-    src/animation/zbufferrenderer.h
+    src/animation/zbufferrenderer.h \
+    src/animation/lightzbufferrenderer.h \
+    src/animation/objloader.h \
+    src/3rdparty/ObjLoader/objloader.h
 
 SUBDIRS += src
 

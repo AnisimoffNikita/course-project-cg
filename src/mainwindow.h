@@ -13,7 +13,8 @@
 #include "src/animation/scene.h"
 #include "src/animation/renderer.h"
 
-namespace Ui {
+namespace Ui
+{
 class MainWindow;
 }
 

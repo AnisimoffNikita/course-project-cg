@@ -8,7 +8,7 @@ class Vec2
 {
 public:
     Vec2() : x(0), y(0) {}
-    Vec2(const T& x, const T& y) : x(x), y(y) {}
+    Vec2(const T &x, const T &y) : x(x), y(y) {}
 
     T getX() const
     {

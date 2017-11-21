@@ -3,7 +3,8 @@
 #include "matrixfactory.h"
 #include "transformation.h"
 
-Camera::Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up, const Mat4 &projection) :
+Camera::Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up,
+               const Mat4 &projection) :
     SceneObject(position),
     lookAt(lookAt),
     up(up),
@@ -40,9 +41,14 @@ void Camera::setLookAt(const Vertex &target)
     updateViewMatrix();
 }
 
+Vertex Camera::getEyeVector()
+{
+    return lookAt - position;
+}
+
 Mat4 Camera::getPVMatrix()
 {
-    return projectionMatrix*viewMatrix;
+    return projectionMatrix * viewMatrix;
 }
 
 void Camera::updateViewMatrix()

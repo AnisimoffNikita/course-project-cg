@@ -2,12 +2,14 @@
 
 #include "src/math/homogeneousvertex.h"
 
-ScaleTransformation::ScaleTransformation(const Vertex &scale, const Vertex &origin)
+ScaleTransformation::ScaleTransformation(const Vertex &scale,
+        const Vertex &origin)
 {
     double data[16] = {scale.x(), 0, 0, 0,
                        0, scale.y(), 0, 0,
                        0, 0, scale.z(), 0,
-                       0, 0, 0, 1};
+                       0, 0, 0, 1
+                      };
     _matrix = Mat4(data);
     _origin = origin;
 }
@@ -17,7 +19,7 @@ void ScaleTransformation::transform(Vertex &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
-    hvec = _matrix*hvec;
+    hvec = _matrix * hvec;
     vertex = HomogeneousVertexConverter::ToVertex(hvec);
     vertex += _origin;
 }

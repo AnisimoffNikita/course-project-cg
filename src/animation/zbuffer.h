@@ -13,8 +13,8 @@ public:
     void setSize(int w, int h);
     void init();
 
-    int get(int i, int j);
-    void set(int i, int j, int value);
+    int get(int x, int y);
+    void set(int x, int y, int value);
 
 private:
     vector<vector<int>> buffer;

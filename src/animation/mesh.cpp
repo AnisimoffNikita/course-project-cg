@@ -63,6 +63,11 @@ std::vector<Vertex> Mesh::getVertices() const
     return vertices;
 }
 
+void Mesh::setVertices(const std::vector<Vertex> &value)
+{
+    vertices = value;
+}
+
 const std::vector<Edge> &Mesh::getEdges() const
 {
     return edges;
@@ -71,6 +76,8 @@ const std::vector<Edge> &Mesh::getEdges() const
 void Mesh::transform(const Transformation &transformation)
 {
     for (auto &vertex : vertices)
+    {
         transformation.transform(vertex);
+    }
 }
 

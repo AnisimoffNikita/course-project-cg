@@ -36,5 +36,5 @@ double Line::length()
 {
     int32 dx = p1.getX() - p2.getX();
     int32 dy = p1.getY() - p2.getY();
-    return sqrt(dx*dx+dy*dy);
+    return sqrt(dx * dx + dy * dy);
 }

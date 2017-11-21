@@ -3,5 +3,4 @@
 
 EdgeDetector::~EdgeDetector()
 {
-
 }

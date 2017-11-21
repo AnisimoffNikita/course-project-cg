@@ -30,7 +30,7 @@ public:
     virtual void setActiveCamera(const SharedSceneObject &child);
     virtual WeakCamera getActiveCamera() const;
 
-    virtual const vector<SharedSceneObject>& getChildren() const;
+    virtual const vector<SharedSceneObject> &getChildren() const;
 
     virtual void render(std::unique_ptr<Renderer> &renderer);
 protected:
