@@ -22,6 +22,8 @@ public:
 
     void setGray(uint8 gray);
 
+    Color operator*(double factor);
+
 private:
     uint8 r, g, b;
 };

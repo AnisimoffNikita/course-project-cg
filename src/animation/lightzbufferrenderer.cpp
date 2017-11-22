@@ -3,6 +3,7 @@
 #include "commontransformation.h"
 #include "scaletransformation.h"
 
+#include <omp.h>
 #include <QPainter>
 
 LightZBufferRenderer::LightZBufferRenderer(double scale, int32 width,
@@ -21,7 +22,7 @@ LightZBufferRenderer::~LightZBufferRenderer()
 void LightZBufferRenderer::renderMesh(const Mesh &mesh)
 {
     currentMesh = mesh;
-    projected = mesh.getVertices();
+    projected = currentMesh.getVertices();
     CommonTransformation perspective(camera->getPVMatrix());
     Vec3 center(width / 2, height / 2, 0);
 
@@ -31,9 +32,9 @@ void LightZBufferRenderer::renderMesh(const Mesh &mesh)
         v.setV(v.getV()*scale + center);
     }
 
-    auto triangles = mesh.getTriangles();
+    auto &triangles = currentMesh.getTriangles();
 
-    for (const auto &triangle : triangles)
+    for (auto &triangle : triangles)
     {
         auto eye = Vec3(0, 0, -1);
         auto v1 = projected[triangle.getV1()].getV();
@@ -179,50 +180,14 @@ double LightZBufferRenderer::calculateIntensity(const Vec3 &n)
     return result;
 }
 
-
-void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
+void LightZBufferRenderer::fillTriangle(Triangle &triangle)
 {
-    Triangle sortedTriangle = triangle;
-    triangleSort(projected, sortedTriangle);
-    Vertex wv1 = projected[sortedTriangle.getV1()],
-           wv2 = projected[sortedTriangle.getV2()],
-           wv3 = projected[sortedTriangle.getV3()];
-    std::vector<int> l1 = getBrezenhemY(wv1.getV(), wv2.getV());
-    std::vector<int> l2 = getBrezenhemY(wv2.getV(), wv3.getV());
-    std::vector<int> l3 = getBrezenhemY(wv1.getV(), wv3.getV());
-    std::vector<Vec3> n1 = getNormals(l1,
-                                      currentMesh.getVertices()[sortedTriangle.getV1()].getN(),
-                                      currentMesh.getVertices()[sortedTriangle.getV2()].getN());
-    std::vector<Vec3> n2 = getNormals(l2,
-                                      currentMesh.getVertices()[sortedTriangle.getV2()].getN(),
-                                      currentMesh.getVertices()[sortedTriangle.getV3()].getN());
-    std::vector<Vec3> n3 = getNormals(l3,
-                                      currentMesh.getVertices()[sortedTriangle.getV1()].getN(),
-                                      currentMesh.getVertices()[sortedTriangle.getV3()].getN());
-    l1.pop_back();
-    l1.insert(l1.end(), l2.begin(), l2.end());
-    n1.pop_back();
-    n1.insert(n1.end(), n2.begin(), n2.end());
     std::vector<int> lleft, lright;
     std::vector<Vec3> nleft, nright;
-    int length = l3.size();
-    int m = length / 2;
-
-    if (l1[m] < l3[m])
-    {
-        lleft = std::move(l1);
-        lright = std::move(l3);
-        nleft = std::move(n1);
-        nright = std::move(n3);
-    }
-    else
-    {
-        lleft = std::move(l3);
-        lright = std::move(l1);
-        nleft = std::move(n3);
-        nright = std::move(n1);
-    }
-
+    getLeftRightBounds(lleft, lright, nleft, nright, triangle);
+    const Vertex &wv1 = projected[triangle.getV1()],
+                  &wv2 = projected[triangle.getV2()],
+                   &wv3 = projected[triangle.getV3()];
     Vec3 u = wv2.getV() - wv1.getV();
     Vec3 v = wv3.getV() - wv1.getV();
     Vec3 n = u.cross(v);
@@ -241,10 +206,11 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
     {
         Vec3 n1 = nleft[i], n2 = nright[i];
         float s = lright[i] - lleft[i] + 1;
+        z = -(a * lleft[i] + b * y + d) / c;
 
         for (int x = lleft[i], j = 0; x <= lright[i]; x++, j++)
         {
-            z = -(a * x + b * y + d) / c;
+            z -= a / c;
 
             if (z > buffer.get(x, y))
             {
@@ -253,38 +219,62 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
 
                 if (s > 1)
                 {
-                    n = n1 * ((s - j - 1) / (s - 1)) + n2 * (j / (s - 1));
+                    double part = (j / (s - 1));
+                    n = n1 * (1 - part) + n2 * part;
                 }
                 else
                 {
-                    n = (n1 + n2) * 0.5;
+                    n = n1;
                 }
 
                 double intensity = calculateIntensity(n);
-                int r = color.getRed() * intensity;
-
-                if (r > 240)
-                {
-                    r = 255;
-                }
-
-                int g = color.getGreen() * intensity;
-
-                if (g > 240)
-                {
-                    g = 255;
-                }
-
-                int b = color.getBlue() * intensity;
-
-                if (b > 240)
-                {
-                    b = 255;
-                }
-
-                putPixel(x, y, Color(r, g, b));
+                putPixel(x, y, color * intensity);
             }
         }
+    }
+}
+
+void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
+        std::vector<int> &lright,
+        std::vector<Vec3> &nleft, std::vector<Vec3> &nright,
+        Triangle &triangle)
+{
+    triangleSort(projected, triangle);
+    Vertex wv1 = projected[triangle.getV1()],
+           wv2 = projected[triangle.getV2()],
+           wv3 = projected[triangle.getV3()];
+    std::vector<int> l1 = getBrezenhemY(wv1.getV(), wv2.getV());
+    std::vector<int> l2 = getBrezenhemY(wv2.getV(), wv3.getV());
+    std::vector<int> l3 = getBrezenhemY(wv1.getV(), wv3.getV());
+    std::vector<Vec3> n1 = getNormals(l1,
+                                      currentMesh.getVertices()[triangle.getV1()].getN(),
+                                      currentMesh.getVertices()[triangle.getV2()].getN());
+    std::vector<Vec3> n2 = getNormals(l2,
+                                      currentMesh.getVertices()[triangle.getV2()].getN(),
+                                      currentMesh.getVertices()[triangle.getV3()].getN());
+    std::vector<Vec3> n3 = getNormals(l3,
+                                      currentMesh.getVertices()[triangle.getV1()].getN(),
+                                      currentMesh.getVertices()[triangle.getV3()].getN());
+    l1.pop_back();
+    l1.insert(l1.end(), l2.begin(), l2.end());
+    n1.pop_back();
+    n1.insert(n1.end(), n2.begin(), n2.end());
+    int length = l3.size();
+    int m = length / 2;
+
+    if (l1[m] < l3[m])
+    {
+        lleft = std::move(l1);
+        lright = std::move(l3);
+        nleft = std::move(n1);
+        nright = std::move(n3);
+    }
+    else
+    {
+        lleft = std::move(l3);
+        lright = std::move(l1);
+        nleft = std::move(n3);
+        nright = std::move(n1);
     }
 }
 

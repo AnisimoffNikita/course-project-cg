@@ -1,5 +1,7 @@
 #include "color.h"
 
+#include "src/math/math.h"
+
 Color::Color():
     r(0),
     g(0),
@@ -61,4 +63,11 @@ void Color::setBlue(uint8 value)
 void Color::setGray(uint8 gray)
 {
     r = g = b = gray;
+}
+
+Color Color::operator*(double factor)
+{
+    return Color(Math::Clamp(r * factor, 0.0, 255.0),
+                 Math::Clamp(g * factor, 0.0, 255.0),
+                 Math::Clamp(b * factor, 0.0, 255.0));
 }

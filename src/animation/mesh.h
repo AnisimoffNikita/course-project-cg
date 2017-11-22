@@ -16,13 +16,13 @@ class Mesh
 public:
     Mesh() = default;
 
-    vector<Vertex> getVertices() const;
+    vector<Vertex> &getVertices();
     void setVertices(const vector<Vertex> &value);
 
-    vector<Triangle> getTriangles() const;
+    vector<Triangle> &getTriangles();
     void setTriangles(const vector<Triangle> &value);
 
-    Material getMaterial() const;
+    Material &getMaterial();
     void setMaterial(const Material &value);
 
     void transform(const Transformation &transformation);

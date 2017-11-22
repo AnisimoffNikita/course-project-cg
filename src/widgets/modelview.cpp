@@ -34,29 +34,24 @@ ModelView::ModelView(QWidget *parent) :
     scene->add(camera);
     scene->setActiveCamera(camera);
     {
-        ObjLoader loader("/home/nikita/q.obj");
+        ObjLoader loader("/home/nikita/untitled2.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
-    {
-        ObjLoader loader("/home/nikita/q.obj");
-        Mesh mesh = loader.load();
-        ModelFactory modelFactory(Vec3(-3, -3, -3), mesh);
-        auto model = modelFactory.create();
-        scene->add(model);
-    }
+    //    {
+    //        ObjLoader loader("/home/nikita/untitled2.obj");
+    //        Mesh mesh = loader.load();
+    //        ModelFactory modelFactory(Vec3(-3, -3, -3), mesh);
+    //        auto model = modelFactory.create();
+    //        scene->add(model);
+    //    }
     AmbientLightFactory ambientFactory(0.4);
     auto ambient = ambientFactory.create();
     scene->add(ambient);
     {
         PointLightFactory pointFactory(Vec3(3, 3, 3), 1);
-        auto point = pointFactory.create();
-        scene->add(point);
-    }
-    {
-        PointLightFactory pointFactory(Vec3(-3, 3, 3), 1);
         auto point = pointFactory.create();
         scene->add(point);
     }

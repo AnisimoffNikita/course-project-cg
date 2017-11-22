@@ -3,7 +3,7 @@
 
 
 
-vector<Vertex> Mesh::getVertices() const
+vector<Vertex> &Mesh::getVertices()
 {
     return vertices;
 }
@@ -13,7 +13,7 @@ void Mesh::setVertices(const vector<Vertex> &value)
     vertices = value;
 }
 
-vector<Triangle> Mesh::getTriangles() const
+vector<Triangle> &Mesh::getTriangles()
 {
     return triangles;
 }
@@ -23,7 +23,7 @@ void Mesh::setTriangles(const vector<Triangle> &value)
     triangles = value;
 }
 
-Material Mesh::getMaterial() const
+Material &Mesh::getMaterial()
 {
     return material;
 }

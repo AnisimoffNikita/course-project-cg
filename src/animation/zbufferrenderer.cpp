@@ -18,23 +18,21 @@ ZBufferRenderer::~ZBufferRenderer()
 
 void ZBufferRenderer::renderMesh(const Mesh &mesh)
 {
-    currentMesh = mesh;
-    auto vertices = mesh.getVertices();
-    auto triangles = mesh.getTriangles();
-    CommonTransformation perspective(camera->getPVMatrix());
-
-    for (auto &vertex : vertices)
-    {
-        vertex.transform(perspective);
-    }
-
-    for (const auto &triangle : triangles)
-    {
-        Vertex v1 = vertices.at(triangle.getV1());
-        Vertex v2 = vertices.at(triangle.getV2());
-        Vertex v3 = vertices.at(triangle.getV3());
-        fillTriangle(v1, v2, v3);
-    }
+    //    currentMesh = mesh;
+    //    auto vertices = mesh.getVertices();
+    //    auto &triangles = currentMesh.getTriangles();
+    //    CommonTransformation perspective(camera->getPVMatrix());
+    //    for (auto &vertex : vertices)
+    //    {
+    //        vertex.transform(perspective);
+    //    }
+    //    for (const auto &triangle : triangles)
+    //    {
+    //        Vertex v1 = vertices.at(triangle.getV1());
+    //        Vertex v2 = vertices.at(triangle.getV2());
+    //        Vertex v3 = vertices.at(triangle.getV3());
+    //        fillTriangle(v1, v2, v3);
+    //    }
 }
 
 
