@@ -31,6 +31,8 @@ ModelView::ModelView(QWidget *parent) :
     CameraFactory cameraFactory(Vec3(6, 6, 6), Vec3(0, 0, 0), Vec3(0, 0, 1),
                                 data);
     auto camera = cameraFactory.create();
+    scene->add(camera);
+    scene->setActiveCamera(camera);
     {
         ObjLoader loader("/home/nikita/q.obj");
         Mesh mesh = loader.load();
@@ -47,12 +49,17 @@ ModelView::ModelView(QWidget *parent) :
     }
     AmbientLightFactory ambientFactory(0.4);
     auto ambient = ambientFactory.create();
-    PointLightFactory pointFactory(Vec3(3, 3, 3), 3);
-    auto point = pointFactory.create();
-    scene->add(point);
     scene->add(ambient);
-    scene->add(camera);
-    scene->setActiveCamera(camera);
+    {
+        PointLightFactory pointFactory(Vec3(3, 3, 3), 1);
+        auto point = pointFactory.create();
+        scene->add(point);
+    }
+    {
+        PointLightFactory pointFactory(Vec3(-3, 3, 3), 1);
+        auto point = pointFactory.create();
+        scene->add(point);
+    }
     renderer = std::make_unique<LightZBufferRenderer>(300, 1024, 768);
     scene->render(renderer);
     canvas = QPixmap::fromImage(renderer->getRendered());

@@ -5,11 +5,11 @@
 #include "math.h"
 
 template <class T>
-class Vec3
+class Vector3
 {
 public:
-    Vec3() : xc(0), yc(0), zc(0) {}
-    Vec3(const T &x, const T &y, const T &z) : xc(x), yc(y), zc(z) {}
+    Vector3() : xc(0), yc(0), zc(0) {}
+    Vector3(const T &x, const T &y, const T &z) : xc(x), yc(y), zc(z) {}
 
     T x() const
     {
@@ -46,21 +46,21 @@ public:
         return Math::Sqrt(xc * xc + yc * yc + zc * zc);
     }
 
-    Vec3 &operator+= (const Vec3 &value)
+    Vector3 &operator+= (const Vector3 &value)
     {
         xc += value.xc;
         yc += value.yc;
         zc += value.zc;
         return *this;
     }
-    Vec3 &operator-= (const Vec3 &value)
+    Vector3 &operator-= (const Vector3 &value)
     {
         xc -= value.xc;
         yc -= value.yc;
         zc -= value.zc;
         return *this;
     }
-    Vec3 &operator*= (double factor)
+    Vector3 &operator*= (double factor)
     {
         xc *= factor;
         yc *= factor;
@@ -68,22 +68,22 @@ public:
         return *this;
     }
 
-    Vec3 operator+ (const Vec3 &value) const
+    Vector3 operator+ (const Vector3 &value) const
     {
-        return Vec3(xc + value.xc, yc + value.yc, zc + value.zc);
+        return Vector3(xc + value.xc, yc + value.yc, zc + value.zc);
     }
 
-    Vec3 operator- (const Vec3 &value) const
+    Vector3 operator- (const Vector3 &value) const
     {
-        return Vec3(xc - value.xc, yc - value.yc, zc - value.zc);
+        return Vector3(xc - value.xc, yc - value.yc, zc - value.zc);
     }
 
-    Vec3 operator*(double factor) const
+    Vector3 operator*(double factor) const
     {
-        return Vec3(xc * factor, yc * factor, zc * factor);
+        return Vector3(xc * factor, yc * factor, zc * factor);
     }
 
-    bool operator==(const Vec3 &value) const
+    bool operator==(const Vector3 &value) const
     {
         return xc == value.xc &&
                yc == value.yc &&
@@ -91,27 +91,27 @@ public:
     }
 
 
-    Vec3 operator- () const
+    Vector3 operator- () const
     {
-        return Vec3(-xc, -yc, -zc);
+        return Vector3(-xc, -yc, -zc);
     }
 
-    Vec3 normalized() const
+    Vector3 normalized() const
     {
         double l = Math::Sqrt(xc * xc + yc * yc + zc * zc);
-        return Vec3(xc / l, yc / l, zc / l);
+        return Vector3(xc / l, yc / l, zc / l);
     }
 
-    T dot(const Vec3 &value) const
+    T dot(const Vector3 &value) const
     {
         return xc * value.xc + yc * value.yc + zc * value.zc;
     }
 
-    Vec3 cross(const Vec3 &value) const
+    Vector3 cross(const Vector3 &value) const
     {
-        return Vec3(yc * value.zc - zc * value.yc,
-                    -xc * value.zc + zc * value.xc,
-                    xc * value.yc - yc * value.xc);
+        return Vector3(yc * value.zc - zc * value.yc,
+                       -xc * value.zc + zc * value.xc,
+                       xc * value.yc - yc * value.xc);
     }
 
 private:
@@ -120,6 +120,6 @@ private:
     T zc;
 };
 
-using Vertex = Vec3<double>;
+using Vec3 = Vector3<double>;
 
 #endif // VEC3_H

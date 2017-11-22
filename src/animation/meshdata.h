@@ -2,49 +2,84 @@
 #define MESHDATA_H
 
 #include "src/image/color.h"
+#include "src/math/vec3.h"
+#include <array>
+#include "transformation.h"
 
-class Edge
+using namespace std;
+
+class Vertex
 {
-private:
-    int v[2];
 public:
-    Edge(int v1, int v2);
+    Vertex() = default;
+    Vertex(const Vec3 v, const Vec3 n);
 
-    int v1() const;
-    int v2() const;
+    Vec3 getV() const;
+    void setV(const Vec3 &value);
+
+    Vec3 getN() const;
+    void setN(const Vec3 &value);
+
+    void transform(const Transformation &transformation);
+
+    bool operator ==(const Vertex &other);
+
+private:
+    Vec3 v;
+    Vec3 n;
 };
+
 
 class Triangle
 {
-private:
-    int v[3];
-    int n[3];
 public:
-    Triangle(int v1, int v2, int v3, int n1 = -1, int n2 = -1, int n3 = -1);
+    Triangle() = default;
+    Triangle(const int &v1, const int &v2, const int &v3);
 
-    int v1() const;
-    void setV1(int value);
-    int v2() const;
-    void setV2(int value);
-    int v3() const;
-    void setV3(int value);
+    int getV1() const;
+    void setV1(const int &value);
 
-    int n1() const;
-    void setN1(int value);
-    int n2() const;
-    void setN2(int value);
-    int n3() const;
-    void setN3(int value);
+    int getV2() const;
+    void setV2(const int &value);
+
+    int getV3() const;
+    void setV3(const int &value);
+private:
+    array<int, 3> v;
 };
 
 class Material
 {
 public:
-    Color getDiffuseColor() const;
-    void setDiffuseColor(const Color &value);
+    Material() = default;
+    Material(const Color &ka, const Color &kd, const Color &ks, double ns,
+             double ni, double d);
+
+    Color getKa() const;
+    void setKa(const Color &value);
+
+    Color getKd() const;
+    void setKd(const Color &value);
+
+    Color getKs() const;
+    void setKs(const Color &value);
+
+    double getNs() const;
+    void setNs(double value);
+
+    double getNi() const;
+    void setNi(double value);
+
+    double getD() const;
+    void setD(double value);
 
 private:
-    Color diffuseColor;
+    Color ka;
+    Color kd;
+    Color ks;
+    double ns;
+    double ni;
+    double d;
 };
 
 

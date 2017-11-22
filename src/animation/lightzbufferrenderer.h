@@ -21,11 +21,12 @@ public:
 
 protected:
     void fillTriangle(const Triangle &triangle);
-    void triangleSort(const std::vector<Vec3> &vertices, Triangle &triangle);
+    void triangleSort(const std::vector<Vertex> &vertices, Triangle &triangle);
 
+    void putPixel(int x, int y, const Color &color);
     std::vector<int> getBrezenhemY(const Vec3 &p1, const Vec3 &p2);
     std::vector<Vec3> getNormals(const std::vector<int> &l, const Vec3 &n1,
-                                   const Vec3 &n2);
+                                 const Vec3 &n2);
 
     void setupBuffer();
 
@@ -36,7 +37,7 @@ protected:
     std::vector<SharedLight> lights;
 
     Mesh currentMesh;
-    std::vector<Vec3> projected;
+    std::vector<Vertex> projected;
 };
 
 

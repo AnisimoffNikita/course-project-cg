@@ -1,36 +1,27 @@
 #include "mesh.h"
 
 
-const std::vector<Vertex> &Mesh::getNormals() const
+
+
+vector<Vertex> Mesh::getVertices() const
 {
-    return normals;
+    return vertices;
 }
 
-void Mesh::setNormals(const std::vector<Vertex> &value)
+void Mesh::setVertices(const vector<Vertex> &value)
 {
-    normals = value;
+    vertices = value;
 }
 
-void Mesh::addVertex(const Vertex &vertex)
+vector<Triangle> Mesh::getTriangles() const
 {
-    vertices.push_back(vertex);
+    return triangles;
 }
 
-Vertex Mesh::getVertex(int i)
+void Mesh::setTriangles(const vector<Triangle> &value)
 {
-    return vertices[i];
+    triangles = value;
 }
-
-void Mesh::addEdge(const Edge &edge)
-{
-    edges.push_back(edge);
-}
-
-void Mesh::addTrinagle(const Triangle &triangle)
-{
-    triangles.push_back(triangle);
-}
-
 
 Material Mesh::getMaterial() const
 {
@@ -42,42 +33,10 @@ void Mesh::setMaterial(const Material &value)
     material = value;
 }
 
-const std::vector<Triangle> &Mesh::getTriangles() const
-{
-    return triangles;
-}
-
-void Mesh::setTriangles(const std::vector<Triangle> &value)
-{
-    triangles = value;
-}
-
-void Mesh::setEdges(const std::vector<Edge> &value)
-{
-    edges = value;
-}
-
-
-std::vector<Vertex> Mesh::getVertices() const
-{
-    return vertices;
-}
-
-void Mesh::setVertices(const std::vector<Vertex> &value)
-{
-    vertices = value;
-}
-
-const std::vector<Edge> &Mesh::getEdges() const
-{
-    return edges;
-}
-
 void Mesh::transform(const Transformation &transformation)
 {
     for (auto &vertex : vertices)
     {
-        transformation.transform(vertex);
+        vertex.transform(transformation);
     }
 }
-

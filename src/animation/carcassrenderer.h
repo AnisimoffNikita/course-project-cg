@@ -18,6 +18,8 @@ public:
     virtual QImage getRendered() override;
 
 protected:
+    void putPixel(int x, int y, const Color &color);
+
     void brezenhem(const Vec3 &p1, const Vec3 &p2);
 
 

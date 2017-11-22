@@ -20,7 +20,9 @@ public:
 
     virtual QImage getRendered() = 0;
 
+
 protected:
+
     double scale;
     int width;
     int height;

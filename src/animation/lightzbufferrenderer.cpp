@@ -1,6 +1,7 @@
 #include "lightzbufferrenderer.h"
 
 #include "commontransformation.h"
+#include "scaletransformation.h"
 
 #include <QPainter>
 
@@ -8,7 +9,7 @@ LightZBufferRenderer::LightZBufferRenderer(double scale, int32 width,
         int32 height) :
     Renderer(scale, width, height)
 {
-    canvas.fill(Qt::white);
+    canvas.fill(Qt::lightGray);
     buffer.setSize(width, height);
 }
 
@@ -26,29 +27,31 @@ void LightZBufferRenderer::renderMesh(const Mesh &mesh)
 
     for (auto &v : projected)
     {
-        perspective.transform(v);
-        v = v * scale + center;
+        v.transform(perspective);
+        v.setV(v.getV()*scale + center);
     }
 
     auto triangles = mesh.getTriangles();
 
     for (const auto &triangle : triangles)
     {
-        //        auto eye = camera->getEyeVector();
-        //        auto v1 = currentMesh.getVertices()[triangle.v1()];
-        //        auto v2 = currentMesh.getVertices()[triangle.v2()];
-        //        auto v3 = currentMesh.getVertices()[triangle.v3()];
-        //        Vertex u = v2 - v1;
-        //        Vertex v = v3 - v1;
-        //        Vertex n = u.cross(v);
-        //        if (n.dot(currentMesh.getNormals()[triangle.n1()]) < 0)
-        //        {
-        //            n = -n;
-        //        }
-        //        if (n.dot(eye) > 0)
-        //        {
-        fillTriangle(triangle);
-        //        }
+        auto eye = Vec3(0, 0, -1);
+        auto v1 = projected[triangle.getV1()].getV();
+        auto v2 = projected[triangle.getV2()].getV();
+        auto v3 = projected[triangle.getV3()].getV();
+        Vec3 u = v2 - v1;
+        Vec3 v = v3 - v1;
+        Vec3 n = u.cross(v);
+
+        if (n.dot(projected[triangle.getV1()].getN()) > 0)
+        {
+            n = -n;
+        }
+
+        if (n.dot(eye) > 0)
+        {
+            fillTriangle(triangle);
+        }
     }
 }
 
@@ -71,6 +74,16 @@ QImage LightZBufferRenderer::getRendered()
     buffer.init();
     return toReturn;
 }
+
+void LightZBufferRenderer::putPixel(int x, int y, const Color &color)
+{
+    if (x >= 0 && x < width && y >= 0 && y < height)
+    {
+        QColor qcolor(color.getRed(), color.getGreen(), color.getBlue());
+        canvas.setPixelColor(x, y , qcolor);
+    }
+}
+
 
 std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vec3 &p1,
         const Vec3 &p2)
@@ -171,19 +184,21 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
 {
     Triangle sortedTriangle = triangle;
     triangleSort(projected, sortedTriangle);
-    Vec3 wv1 = projected[sortedTriangle.v1()],
-           wv2 = projected[sortedTriangle.v2()],
-           wv3 = projected[sortedTriangle.v3()];
-    std::vector<int> l1 = getBrezenhemY(wv1, wv2);
-    std::vector<int> l2 = getBrezenhemY(wv2, wv3);
-    std::vector<int> l3 = getBrezenhemY(wv1, wv3);
-    auto normals = currentMesh.getNormals();
-    std::vector<Vec3> n1 = getNormals(l1, normals[sortedTriangle.n1()],
-                                        normals[sortedTriangle.n2()]);
-    std::vector<Vec3> n2 = getNormals(l2, normals[sortedTriangle.n2()],
-                                        normals[sortedTriangle.n3()]);
-    std::vector<Vec3> n3 = getNormals(l3, normals[sortedTriangle.n1()],
-                                        normals[sortedTriangle.n3()]);
+    Vertex wv1 = projected[sortedTriangle.getV1()],
+           wv2 = projected[sortedTriangle.getV2()],
+           wv3 = projected[sortedTriangle.getV3()];
+    std::vector<int> l1 = getBrezenhemY(wv1.getV(), wv2.getV());
+    std::vector<int> l2 = getBrezenhemY(wv2.getV(), wv3.getV());
+    std::vector<int> l3 = getBrezenhemY(wv1.getV(), wv3.getV());
+    std::vector<Vec3> n1 = getNormals(l1,
+                                      currentMesh.getVertices()[sortedTriangle.getV1()].getN(),
+                                      currentMesh.getVertices()[sortedTriangle.getV2()].getN());
+    std::vector<Vec3> n2 = getNormals(l2,
+                                      currentMesh.getVertices()[sortedTriangle.getV2()].getN(),
+                                      currentMesh.getVertices()[sortedTriangle.getV3()].getN());
+    std::vector<Vec3> n3 = getNormals(l3,
+                                      currentMesh.getVertices()[sortedTriangle.getV1()].getN(),
+                                      currentMesh.getVertices()[sortedTriangle.getV3()].getN());
     l1.pop_back();
     l1.insert(l1.end(), l2.begin(), l2.end());
     n1.pop_back();
@@ -208,21 +223,21 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
         nright = std::move(n1);
     }
 
-    Vec3 u = wv2 - wv1;
-    Vec3 v = wv3 - wv1;
+    Vec3 u = wv2.getV() - wv1.getV();
+    Vec3 v = wv3.getV() - wv1.getV();
     Vec3 n = u.cross(v);
     double a = n.x(), b = n.y(), c = n.z();
-    double d = - (a * wv1.x() + b * wv1.y() + c * wv1.z());
+    double d = - (a * wv1.getV().x() + b * wv1.getV().y() + c * wv1.getV().z());
 
     if (c == 0)
     {
         return;
     }
 
-    auto color = currentMesh.getMaterial().getDiffuseColor();
+    auto color = currentMesh.getMaterial().getKd();
     double z;
 
-    for (int y = wv1.y(), i = 0; y <= wv3.y(); y++, i++)
+    for (int y = wv1.getV().y(), i = 0; y <= wv3.getV().y(); y++, i++)
     {
         Vec3 n1 = nleft[i], n2 = nright[i];
         float s = lright[i] - lleft[i] + 1;
@@ -233,11 +248,6 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
 
             if (z > buffer.get(x, y))
             {
-                if (!(x >= 0 && x < width && y >= 0 && y < height))
-                {
-                    continue;
-                }
-
                 buffer.set(x, y, z);
                 Vec3 n;
 
@@ -253,62 +263,58 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
                 double intensity = calculateIntensity(n);
                 int r = color.getRed() * intensity;
 
-                if (r > 255)
+                if (r > 240)
                 {
                     r = 255;
                 }
 
                 int g = color.getGreen() * intensity;
 
-                if (g > 255)
+                if (g > 240)
                 {
                     g = 255;
                 }
 
                 int b = color.getBlue() * intensity;
 
-                if (b > 255)
+                if (b > 240)
                 {
                     b = 255;
                 }
 
-                QColor qcolor(r, b, g);
-                canvas.setPixelColor(x, y, qcolor);
+                putPixel(x, y, Color(r, g, b));
             }
         }
     }
 }
 
-void LightZBufferRenderer::triangleSort(const std::vector<Vec3> &vertices,
+void LightZBufferRenderer::triangleSort(const std::vector<Vertex> &vertices,
                                         Triangle &triangle)
 {
-    if (vertices.at(triangle.v2()).y() < vertices.at(triangle.v1()).y())
+    auto swap = [](int &a, int &b)
     {
-        int temp = triangle.v1();
-        triangle.setV1(triangle.v2());
-        triangle.setV2(temp);
-        temp = triangle.n1();
-        triangle.setN1(triangle.n2());
-        triangle.setN2(temp);
+        int t = a;
+        a = b;
+        b = t;
+    };
+    int i1 = triangle.getV1(), i2 = triangle.getV2(), i3 = triangle.getV3();
+
+    if (vertices.at(i2).getV().y() < vertices.at(i1).getV().y())
+    {
+        swap(i2, i1);
     }
 
-    if (vertices.at(triangle.v3()).y() < vertices.at(triangle.v1()).y())
+    if (vertices.at(i3).getV().y() < vertices.at(i1).getV().y())
     {
-        int temp = triangle.v1();
-        triangle.setV1(triangle.v3());
-        triangle.setV3(temp);
-        temp = triangle.n1();
-        triangle.setN1(triangle.n3());
-        triangle.setN3(temp);
+        swap(i3, i1);
     }
 
-    if (vertices.at(triangle.v3()).y() < vertices.at(triangle.v2()).y())
+    if (vertices.at(i3).getV().y() < vertices.at(i2).getV().y())
     {
-        int temp = triangle.v3();
-        triangle.setV3(triangle.v2());
-        triangle.setV2(temp);
-        temp = triangle.n3();
-        triangle.setN3(triangle.n2());
-        triangle.setN2(temp);
+        swap(i3, i2);
     }
+
+    triangle.setV1(i1);
+    triangle.setV2(i2);
+    triangle.setV3(i3);
 }

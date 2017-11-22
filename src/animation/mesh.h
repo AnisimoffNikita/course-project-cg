@@ -8,45 +8,31 @@
 #include "src/animation/transformation.h"
 #include "meshdata.h"
 
-class Edge;
-class Triangle;
-class Material;
+using namespace std;
+
 
 class Mesh
 {
-private:
-    std::vector<Vec3> vertices;
-    std::vector<Edge> edges;
-    std::vector<Vec3> normals;
-    std::vector<Triangle> triangles;
-
-    Material material;
 public:
     Mesh() = default;
 
-    void addVertex(const Vec3 &vertex);
-    Vec3 getVertex(int i);
-    void addEdge(const Edge &edge);
-    void addTrinagle(const Triangle &triangle);
+    vector<Vertex> getVertices() const;
+    void setVertices(const vector<Vertex> &value);
 
+    vector<Triangle> getTriangles() const;
+    void setTriangles(const vector<Triangle> &value);
 
     Material getMaterial() const;
     void setMaterial(const Material &value);
 
     void transform(const Transformation &transformation);
 
-    const std::vector<Triangle> &getTriangles() const;
-    void setTriangles(const std::vector<Triangle> &value);
-
-    std::vector<Vec3> getVertices() const;
-    void setVertices(const std::vector<Vec3> &value);
-
-    const std::vector<Edge> &getEdges() const;
-    void setEdges(const std::vector<Edge> &value);
-
-    const std::vector<Vec3> &getNormals() const;
-    void setNormals(const std::vector<Vec3> &value);
+private:
+    vector<Vertex> vertices;
+    vector<Triangle> triangles;
+    Material material;
 };
+
 
 
 #endif // MESH_H

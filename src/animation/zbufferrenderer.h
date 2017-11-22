@@ -21,8 +21,8 @@ public:
     virtual QImage getRendered() override;
 
 protected:
-    void fillTriangle(const Vec3 &v1, const Vec3 &v2, const Vec3 &v3,
-                      const Color &color);
+    void putPixel(int x, int y, const Color &color);
+    void fillTriangle(const Vertex &v1, const Vertex &v2, const Vertex &v3);
     void verticesSort(Vec3 &v1, Vec3 &v2, Vec3 &v3);
 
     std::vector<int> getBrezenhemX(const Vec3 &p1, const Vec3 &p2);
@@ -31,6 +31,8 @@ protected:
     ZBuffer buffer;
     SharedCamera camera;
     std::vector<SharedLight> lights;
+
+    Mesh currentMesh;
 };
 
 #endif // ZBUFFER

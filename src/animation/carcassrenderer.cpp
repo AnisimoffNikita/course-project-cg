@@ -17,20 +17,19 @@ void CarcassRenderer::renderMesh(const Mesh &mesh)
     CommonTransformation perspective(camera->getPVMatrix());
     Vec3 center(width / 2, height / 2, 0);
 
-    for (auto &v : vertices)
+    for (auto &vertex : vertices)
     {
-        perspective.transform(v);
-        v = v * scale + center;
+        vertex.transform(perspective);
+        //        v = v * scale + center;
     }
 
-    auto edges = mesh.getEdges();
-
-    for (const auto &edge : edges)
-    {
-        Vec3 v1 = vertices.at(edge.v1());
-        Vec3 v2 = vertices.at(edge.v2());
-        brezenhem(v1, v2);
-    }
+    //    auto edges = mesh.getEdges();
+    //    for (const auto &edge : edges)
+    //    {
+    //        Vec3 v1 = vertices.at(edge.v1());
+    //        Vec3 v2 = vertices.at(edge.v2());
+    //        brezenhem(v1, v2);
+    //    }
 }
 
 void CarcassRenderer::brezenhem(const Vec3 &p1, const Vec3 &p2)

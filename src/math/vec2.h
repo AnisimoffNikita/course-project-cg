@@ -4,11 +4,11 @@
 #include "src/number.h"
 
 template <class T>
-class Vec2
+class Vector2
 {
 public:
-    Vec2() : x(0), y(0) {}
-    Vec2(const T &x, const T &y) : x(x), y(y) {}
+    Vector2() : x(0), y(0) {}
+    Vector2(const T &x, const T &y) : x(x), y(y) {}
 
     T getX() const
     {
@@ -35,6 +35,6 @@ private:
     T y;
 };
 
-using Point = Vec2<int32>;
+using Vec2 = Vector2<int32>;
 
 #endif // VEC2_H
