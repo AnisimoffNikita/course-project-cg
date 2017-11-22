@@ -7,7 +7,7 @@ class Light : public SceneObject
 {
 public:
     Light() = default;
-    Light(const Vertex &position, double intensity);
+    Light(const Vec3 &position, double intensity);
     virtual ~Light() = default;
 
     virtual void draw(std::unique_ptr<Renderer> &) override;
@@ -15,7 +15,7 @@ public:
     virtual bool isCamera() override;
     virtual bool isLight() override;
 
-    virtual double getIntensity(const Vertex &normal) const = 0;
+    virtual double getIntensity(const Vec3 &normal) const = 0;
 
 protected:
     double intensity;

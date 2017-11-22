@@ -3,7 +3,7 @@
 #include "renderer.h"
 #include "movetransformation.h"
 
-Model::Model(const Vertex &position, const Mesh &mesh)
+Model::Model(const Vec3 &position, const Mesh &mesh)
     : SceneObject(position)
     , mesh(mesh)
 {

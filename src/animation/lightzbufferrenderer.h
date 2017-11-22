@@ -21,22 +21,22 @@ public:
 
 protected:
     void fillTriangle(const Triangle &triangle);
-    void triangleSort(const std::vector<Vertex> &vertices, Triangle &triangle);
+    void triangleSort(const std::vector<Vec3> &vertices, Triangle &triangle);
 
-    std::vector<int> getBrezenhemY(const Vertex &p1, const Vertex &p2);
-    std::vector<Vertex> getNormals(const std::vector<int> &l, const Vertex &n1,
-                                   const Vertex &n2);
+    std::vector<int> getBrezenhemY(const Vec3 &p1, const Vec3 &p2);
+    std::vector<Vec3> getNormals(const std::vector<int> &l, const Vec3 &n1,
+                                   const Vec3 &n2);
 
     void setupBuffer();
 
-    double calculateIntensity(const Vertex &n);
+    double calculateIntensity(const Vec3 &n);
 
     ZBuffer buffer;
     SharedCamera camera;
     std::vector<SharedLight> lights;
 
     Mesh currentMesh;
-    std::vector<Vertex> projected;
+    std::vector<Vec3> projected;
 };
 
 

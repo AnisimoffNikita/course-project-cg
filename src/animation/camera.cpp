@@ -3,7 +3,7 @@
 #include "matrixfactory.h"
 #include "transformation.h"
 
-Camera::Camera(const Vertex &position, const Vertex &lookAt, const Vertex &up,
+Camera::Camera(const Vec3 &position, const Vec3 &lookAt, const Vec3 &up,
                const Mat4 &projection) :
     SceneObject(position),
     lookAt(lookAt),
@@ -35,13 +35,13 @@ bool Camera::isLight()
     return false;
 }
 
-void Camera::setLookAt(const Vertex &target)
+void Camera::setLookAt(const Vec3 &target)
 {
     lookAt = target;
     updateViewMatrix();
 }
 
-Vertex Camera::getEyeVector()
+Vec3 Camera::getEyeVector()
 {
     return lookAt - position;
 }
@@ -57,7 +57,7 @@ void Camera::updateViewMatrix()
 }
 
 
-void Camera::setPosition(const Vertex &value)
+void Camera::setPosition(const Vec3 &value)
 {
     position = value;
     updateViewMatrix();

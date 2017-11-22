@@ -10,7 +10,7 @@ class Model : public SceneObject
 
 public:
     Model() = default;
-    Model(const Vertex &position, const Mesh &mesh);
+    Model(const Vec3 &position, const Mesh &mesh);
     virtual ~Model() = default;
 
     virtual void draw(std::unique_ptr<Renderer> &renderer) override;

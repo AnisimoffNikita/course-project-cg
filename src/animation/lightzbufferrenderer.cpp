@@ -22,7 +22,7 @@ void LightZBufferRenderer::renderMesh(const Mesh &mesh)
     currentMesh = mesh;
     projected = mesh.getVertices();
     CommonTransformation perspective(camera->getPVMatrix());
-    Vertex center(width / 2, height / 2, 0);
+    Vec3 center(width / 2, height / 2, 0);
 
     for (auto &v : projected)
     {
@@ -72,8 +72,8 @@ QImage LightZBufferRenderer::getRendered()
     return toReturn;
 }
 
-std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vertex &p1,
-        const Vertex &p2)
+std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vec3 &p1,
+        const Vec3 &p2)
 {
     std::vector<int> result;
     int32 x1 = p1.x(), y1 = p1.y();
@@ -133,10 +133,10 @@ std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vertex &p1,
     return result;
 }
 
-std::vector<Vertex> LightZBufferRenderer::getNormals(const std::vector<int> &l,
-        const Vertex &n1, const Vertex &n2)
+std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<int> &l,
+        const Vec3 &n1, const Vec3 &n2)
 {
-    std::vector<Vertex> result;
+    std::vector<Vec3> result;
     float s = l.size();
 
     for (uint i = 0; i < l.size(); i++)
@@ -154,7 +154,7 @@ std::vector<Vertex> LightZBufferRenderer::getNormals(const std::vector<int> &l,
     return result;
 }
 
-double LightZBufferRenderer::calculateIntensity(const Vertex &n)
+double LightZBufferRenderer::calculateIntensity(const Vec3 &n)
 {
     double result = 0;
 
@@ -171,25 +171,25 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
 {
     Triangle sortedTriangle = triangle;
     triangleSort(projected, sortedTriangle);
-    Vertex wv1 = projected[sortedTriangle.v1()],
+    Vec3 wv1 = projected[sortedTriangle.v1()],
            wv2 = projected[sortedTriangle.v2()],
            wv3 = projected[sortedTriangle.v3()];
     std::vector<int> l1 = getBrezenhemY(wv1, wv2);
     std::vector<int> l2 = getBrezenhemY(wv2, wv3);
     std::vector<int> l3 = getBrezenhemY(wv1, wv3);
     auto normals = currentMesh.getNormals();
-    std::vector<Vertex> n1 = getNormals(l1, normals[sortedTriangle.n1()],
+    std::vector<Vec3> n1 = getNormals(l1, normals[sortedTriangle.n1()],
                                         normals[sortedTriangle.n2()]);
-    std::vector<Vertex> n2 = getNormals(l2, normals[sortedTriangle.n2()],
+    std::vector<Vec3> n2 = getNormals(l2, normals[sortedTriangle.n2()],
                                         normals[sortedTriangle.n3()]);
-    std::vector<Vertex> n3 = getNormals(l3, normals[sortedTriangle.n1()],
+    std::vector<Vec3> n3 = getNormals(l3, normals[sortedTriangle.n1()],
                                         normals[sortedTriangle.n3()]);
     l1.pop_back();
     l1.insert(l1.end(), l2.begin(), l2.end());
     n1.pop_back();
     n1.insert(n1.end(), n2.begin(), n2.end());
     std::vector<int> lleft, lright;
-    std::vector<Vertex> nleft, nright;
+    std::vector<Vec3> nleft, nright;
     int length = l3.size();
     int m = length / 2;
 
@@ -208,9 +208,9 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
         nright = std::move(n1);
     }
 
-    Vertex u = wv2 - wv1;
-    Vertex v = wv3 - wv1;
-    Vertex n = u.cross(v);
+    Vec3 u = wv2 - wv1;
+    Vec3 v = wv3 - wv1;
+    Vec3 n = u.cross(v);
     double a = n.x(), b = n.y(), c = n.z();
     double d = - (a * wv1.x() + b * wv1.y() + c * wv1.z());
 
@@ -224,7 +224,7 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
 
     for (int y = wv1.y(), i = 0; y <= wv3.y(); y++, i++)
     {
-        Vertex n1 = nleft[i], n2 = nright[i];
+        Vec3 n1 = nleft[i], n2 = nright[i];
         float s = lright[i] - lleft[i] + 1;
 
         for (int x = lleft[i], j = 0; x <= lright[i]; x++, j++)
@@ -239,7 +239,7 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
                 }
 
                 buffer.set(x, y, z);
-                Vertex n;
+                Vec3 n;
 
                 if (s > 1)
                 {
@@ -279,7 +279,7 @@ void LightZBufferRenderer::fillTriangle(const Triangle &triangle)
     }
 }
 
-void LightZBufferRenderer::triangleSort(const std::vector<Vertex> &vertices,
+void LightZBufferRenderer::triangleSort(const std::vector<Vec3> &vertices,
                                         Triangle &triangle)
 {
     if (vertices.at(triangle.v2()).y() < vertices.at(triangle.v1()).y())

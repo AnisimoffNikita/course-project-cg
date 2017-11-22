@@ -2,7 +2,7 @@
 
 #include "src/math/homogeneousvertex.h"
 
-MoveTransformation::MoveTransformation(const Vertex &delta)
+MoveTransformation::MoveTransformation(const Vec3 &delta)
 {
     double data[16] = {1, 0, 0, delta.x(),
                        0, 1, 0, delta.y(),
@@ -13,7 +13,7 @@ MoveTransformation::MoveTransformation(const Vertex &delta)
 }
 
 
-void MoveTransformation::transform(Vertex &vertex) const
+void MoveTransformation::transform(Vec3 &vertex) const
 {
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
     hvec = _matrix * hvec;

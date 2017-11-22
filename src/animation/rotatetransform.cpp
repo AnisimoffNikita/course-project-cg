@@ -3,7 +3,7 @@
 #include "src/math/math.h"
 #include "src/math/homogeneousvertex.h"
 
-RotateXTransformation::RotateXTransformation(double angle, const Vertex &origin)
+RotateXTransformation::RotateXTransformation(double angle, const Vec3 &origin)
 {
     double data[16] = {1, 0, 0, 0,
                        0, Math::Cos(angle), Math::Sin(angle), 0,
@@ -15,7 +15,7 @@ RotateXTransformation::RotateXTransformation(double angle, const Vertex &origin)
 }
 
 
-void RotateXTransformation::transform(Vertex &vertex) const
+void RotateXTransformation::transform(Vec3 &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
@@ -24,7 +24,7 @@ void RotateXTransformation::transform(Vertex &vertex) const
     vertex += _origin;
 }
 
-RotateYTransformation::RotateYTransformation(double angle, const Vertex &origin)
+RotateYTransformation::RotateYTransformation(double angle, const Vec3 &origin)
 {
     double data[16] = {Math::Cos(angle), 0, -Math::Sin(angle), 0,
                        0, 1, 0, 0,
@@ -36,7 +36,7 @@ RotateYTransformation::RotateYTransformation(double angle, const Vertex &origin)
 }
 
 
-void RotateYTransformation::transform(Vertex &vertex) const
+void RotateYTransformation::transform(Vec3 &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
@@ -45,7 +45,7 @@ void RotateYTransformation::transform(Vertex &vertex) const
     vertex += _origin;
 }
 
-RotateZTransformation::RotateZTransformation(double angle, const Vertex &origin)
+RotateZTransformation::RotateZTransformation(double angle, const Vec3 &origin)
 {
     double data[16] = {Math::Cos(angle), Math::Sin(angle), 0, 0,
                        -Math::Sin(angle), Math::Cos(angle), 0, 0,
@@ -57,7 +57,7 @@ RotateZTransformation::RotateZTransformation(double angle, const Vertex &origin)
 }
 
 
-void RotateZTransformation::transform(Vertex &vertex) const
+void RotateZTransformation::transform(Vec3 &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);

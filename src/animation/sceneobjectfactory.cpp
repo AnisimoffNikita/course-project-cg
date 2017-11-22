@@ -2,8 +2,8 @@
 
 #include "matrixfactory.h"
 
-CameraFactory::CameraFactory(const Vertex &position, const Vertex &lookAt,
-                             const Vertex &up, const CameraFactory::PerspectiveData &data)
+CameraFactory::CameraFactory(const Vec3 &position, const Vec3 &lookAt,
+                             const Vec3 &up, const CameraFactory::PerspectiveData &data)
 {
     Mat4 projection = PerspectiveMatrix::create(data.fovX, data.fovY, data.near,
                       data.far);
@@ -15,7 +15,7 @@ SharedSceneObject CameraFactory::create()
     return std::move(camera);
 }
 
-ModelFactory::ModelFactory(const Vertex &position, const Mesh &mesh)
+ModelFactory::ModelFactory(const Vec3 &position, const Mesh &mesh)
 {
     model = std::make_unique<Model>(position, mesh);
 }
@@ -35,7 +35,7 @@ SharedSceneObject AmbientLightFactory::create()
     return std::move(light);
 }
 
-PointLightFactory::PointLightFactory(const Vertex &position, double intensity)
+PointLightFactory::PointLightFactory(const Vec3 &position, double intensity)
 {
     light = std::make_unique<PointLight>(position, intensity);
 }

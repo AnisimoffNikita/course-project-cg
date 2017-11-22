@@ -8,19 +8,19 @@ class Line
 {
 public:
     Line();
-    Line(const Point &p1, const Point &p2);
+    Line(const Vec2 &p1, const Vec2 &p2);
 
-    Point getP1() const;
-    void setP1(const Point &value);
+    Vec2 getP1() const;
+    void setP1(const Vec2 &value);
 
-    Point getP2() const;
-    void setP2(const Point &value);
+    Vec2 getP2() const;
+    void setP2(const Vec2 &value);
 
     double length();
 
 private:
-    Point p1;
-    Point p2;
+    Vec2 p1;
+    Vec2 p2;
 };
 
 #endif // LINE_H

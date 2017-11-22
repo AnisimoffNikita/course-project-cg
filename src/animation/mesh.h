@@ -15,17 +15,17 @@ class Material;
 class Mesh
 {
 private:
-    std::vector<Vertex> vertices;
+    std::vector<Vec3> vertices;
     std::vector<Edge> edges;
-    std::vector<Vertex> normals;
+    std::vector<Vec3> normals;
     std::vector<Triangle> triangles;
 
     Material material;
 public:
     Mesh() = default;
 
-    void addVertex(const Vertex &vertex);
-    Vertex getVertex(int i);
+    void addVertex(const Vec3 &vertex);
+    Vec3 getVertex(int i);
     void addEdge(const Edge &edge);
     void addTrinagle(const Triangle &triangle);
 
@@ -38,16 +38,15 @@ public:
     const std::vector<Triangle> &getTriangles() const;
     void setTriangles(const std::vector<Triangle> &value);
 
-    std::vector<Vertex> getVertices() const;
-    void setVertices(const std::vector<Vertex> &value);
+    std::vector<Vec3> getVertices() const;
+    void setVertices(const std::vector<Vec3> &value);
 
     const std::vector<Edge> &getEdges() const;
     void setEdges(const std::vector<Edge> &value);
 
-    const std::vector<Vertex> &getNormals() const;
-    void setNormals(const std::vector<Vertex> &value);
+    const std::vector<Vec3> &getNormals() const;
+    void setNormals(const std::vector<Vec3> &value);
 };
-
 
 
 #endif // MESH_H

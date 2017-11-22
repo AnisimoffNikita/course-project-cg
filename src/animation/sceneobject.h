@@ -13,12 +13,12 @@ class SceneObject
 {
 public:
     SceneObject() = default;
-    SceneObject(const Vertex &position);
+    SceneObject(const Vec3 &position);
     virtual ~SceneObject() = default;
 
 
-    virtual Vertex getPosition() const;
-    virtual void setPosition(const Vertex &value);
+    virtual Vec3 getPosition() const;
+    virtual void setPosition(const Vec3 &value);
 
     virtual void draw(std::unique_ptr<Renderer> &render) = 0;
     virtual void transform(const Transformation &transformation) = 0;
@@ -28,7 +28,7 @@ public:
 
 
 protected:
-    Vertex position;
+    Vec3 position;
 };
 
 using SharedSceneObject = std::shared_ptr<SceneObject>;

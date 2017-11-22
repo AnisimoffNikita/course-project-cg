@@ -1,17 +1,17 @@
 #include "sceneobject.h"
 
 
-SceneObject::SceneObject(const Vertex &position):
+SceneObject::SceneObject(const Vec3 &position):
     position(position)
 {
 }
 
-Vertex SceneObject::getPosition() const
+Vec3 SceneObject::getPosition() const
 {
     return position;
 }
 
-void SceneObject::setPosition(const Vertex &value)
+void SceneObject::setPosition(const Vec3 &value)
 {
     position = value;
 }

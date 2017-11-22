@@ -18,7 +18,7 @@ public:
     virtual QImage getRendered() override;
 
 protected:
-    void brezenhem(const Vertex &p1, const Vertex &p2);
+    void brezenhem(const Vec3 &p1, const Vec3 &p2);
 
 
     SharedCamera camera;

@@ -6,11 +6,11 @@
 class ScaleTransformation : public Transformation
 {
 public:
-    ScaleTransformation(const Vertex &scale, const Vertex &setOrigin);
+    ScaleTransformation(const Vec3 &scale, const Vec3 &setOrigin);
 
-    virtual void transform(Vertex &vertex) const override;
+    virtual void transform(Vec3 &vertex) const override;
 protected:
-    Vertex _origin;
+    Vec3 _origin;
 };
 
 #endif // SCALETRANSFORMATION_H

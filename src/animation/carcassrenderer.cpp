@@ -15,7 +15,7 @@ void CarcassRenderer::renderMesh(const Mesh &mesh)
 {
     auto vertices = mesh.getVertices();
     CommonTransformation perspective(camera->getPVMatrix());
-    Vertex center(width / 2, height / 2, 0);
+    Vec3 center(width / 2, height / 2, 0);
 
     for (auto &v : vertices)
     {
@@ -27,13 +27,13 @@ void CarcassRenderer::renderMesh(const Mesh &mesh)
 
     for (const auto &edge : edges)
     {
-        Vertex v1 = vertices.at(edge.v1());
-        Vertex v2 = vertices.at(edge.v2());
+        Vec3 v1 = vertices.at(edge.v1());
+        Vec3 v2 = vertices.at(edge.v2());
         brezenhem(v1, v2);
     }
 }
 
-void CarcassRenderer::brezenhem(const Vertex &p1, const Vertex &p2)
+void CarcassRenderer::brezenhem(const Vec3 &p1, const Vec3 &p2)
 {
     int32 x1 = p1.x(), y1 = p1.y();
     int32 x2 = p2.x(), y2 = p2.y();

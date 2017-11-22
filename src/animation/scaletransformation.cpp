@@ -2,8 +2,8 @@
 
 #include "src/math/homogeneousvertex.h"
 
-ScaleTransformation::ScaleTransformation(const Vertex &scale,
-        const Vertex &origin)
+ScaleTransformation::ScaleTransformation(const Vec3 &scale,
+        const Vec3 &origin)
 {
     double data[16] = {scale.x(), 0, 0, 0,
                        0, scale.y(), 0, 0,
@@ -15,7 +15,7 @@ ScaleTransformation::ScaleTransformation(const Vertex &scale,
 }
 
 
-void ScaleTransformation::transform(Vertex &vertex) const
+void ScaleTransformation::transform(Vec3 &vertex) const
 {
     vertex -= _origin;
     HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);

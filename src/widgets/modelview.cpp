@@ -28,26 +28,26 @@ ModelView::ModelView(QWidget *parent) :
     data.fovY = Math::ToRadians(80);
     data.near = 0.1;
     data.far = 100;
-    CameraFactory cameraFactory(Vertex(6, 6, 6), Vertex(0, 0, 0), Vertex(0, 0, 1),
+    CameraFactory cameraFactory(Vec3(6, 6, 6), Vec3(0, 0, 0), Vec3(0, 0, 1),
                                 data);
     auto camera = cameraFactory.create();
     {
         ObjLoader loader("/home/nikita/q.obj");
         Mesh mesh = loader.load();
-        ModelFactory modelFactory(Vertex(0, 0, 0), mesh);
+        ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
     {
         ObjLoader loader("/home/nikita/q.obj");
         Mesh mesh = loader.load();
-        ModelFactory modelFactory(Vertex(-3, -3, -3), mesh);
+        ModelFactory modelFactory(Vec3(-3, -3, -3), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
     AmbientLightFactory ambientFactory(0.4);
     auto ambient = ambientFactory.create();
-    PointLightFactory pointFactory(Vertex(3, 3, 3), 3);
+    PointLightFactory pointFactory(Vec3(3, 3, 3), 3);
     auto point = pointFactory.create();
     scene->add(point);
     scene->add(ambient);
@@ -82,18 +82,18 @@ void ModelView::mouseMoveEvent(QMouseEvent *event)
     }
 
     auto workCamera = camera.lock();
-    Vertex cameraPos = workCamera->getPosition();
-    RotateZTransformation z(Math::ToRadians(-dx) / 2, Vertex(0, 0, cameraPos.z()));
+    Vec3 cameraPos = workCamera->getPosition();
+    RotateZTransformation z(Math::ToRadians(-dx) / 2, Vec3(0, 0, cameraPos.z()));
     workCamera->transform(z);
 
     if (Math::Abs(cameraPos.x()) > Math::Abs(cameraPos.y()))
     {
-        RotateYTransformation y(Math::ToRadians(-dy) / 2, Vertex(0, 0, 0));
+        RotateYTransformation y(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
         workCamera->transform(y);
     }
     else
     {
-        RotateXTransformation x(Math::ToRadians(-dy) / 2, Vertex(0, 0, 0));
+        RotateXTransformation x(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
         workCamera->transform(x);
     }
 

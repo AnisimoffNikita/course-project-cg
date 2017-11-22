@@ -21,8 +21,8 @@ Mesh ObjLoader::Load(const string &filename)
         return Mesh();
     }
 
-    vector<Vertex> vertices;
-    vector<Vertex> normals;
+    vector<Vec3> vertices;
+    vector<Vec3> normals;
     vector<Triangle> triangles;
     regex vertexRe("v\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)");
     regex normalRe("vn\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)");
@@ -39,14 +39,14 @@ Mesh ObjLoader::Load(const string &filename)
             auto x = stod(match[1].str());
             auto y = stod(match[2].str());
             auto z = stod(match[3].str());
-            vertices.push_back(Vertex(x, y, z));
+            vertices.push_back(Vec3(x, y, z));
         }
         else if (std::regex_search(line, match, normalRe))
         {
             auto x = stod(match[1].str());
             auto y = stod(match[2].str());
             auto z = stod(match[3].str());
-            normals.push_back(Vertex(x, y, z));
+            normals.push_back(Vec3(x, y, z));
         }
         else if (std::regex_search(line, match, triangleRe))
         {
@@ -86,8 +86,8 @@ Mesh ObjLoader::load()
     }
 
     objl::Mesh omesh = loader.LoadedMeshes[0];
-    vector<Vertex> vertices;
-    vector<Vertex> normals;
+    vector<Vec3> vertices;
+    vector<Vec3> normals;
     vector<Triangle> triangles;
 
     for (int i = 0; i < omesh.Vertices.size(); i += 3)
@@ -97,7 +97,7 @@ Mesh ObjLoader::load()
         for (int j = 0; j < 3; j++)
         {
             objl::Vertex ov = omesh.Vertices[i + j];
-            Vertex v(ov.Position.X, ov.Position.Y, ov.Position.Z);
+            Vec3 v(ov.Position.X, ov.Position.Y, ov.Position.Z);
             auto itv = find(begin(vertices), end(vertices), v);
 
             if (itv != end(vertices))
@@ -110,7 +110,7 @@ Mesh ObjLoader::load()
                 vt[j] = vertices.size() - 1;
             }
 
-            Vertex n(ov.Normal.X, ov.Normal.Y, ov.Normal.Z);
+            Vec3 n(ov.Normal.X, ov.Normal.Y, ov.Normal.Z);
             auto itn = find(begin(normals), end(normals), n);
 
             if (itn != end(normals))

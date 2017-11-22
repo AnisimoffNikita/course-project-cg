@@ -11,7 +11,7 @@
 class HoughTransform : public LineTransform
 {
 private:
-    using Points = std::vector<Point>;
+    using Points = std::vector<Vec2>;
 public:
     HoughTransform(uint32 threshold = 50);
     virtual ~HoughTransform();

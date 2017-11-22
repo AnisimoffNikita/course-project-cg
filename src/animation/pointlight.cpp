@@ -2,16 +2,16 @@
 
 #include "cmath"
 
-PointLight::PointLight(const Vertex &position, double intensity) :
+PointLight::PointLight(const Vec3 &position, double intensity) :
     Light(position, intensity)
 {
 }
 
 
-double PointLight::getIntensity(const Vertex &normal) const
+double PointLight::getIntensity(const Vec3 &normal) const
 {
     constexpr double K = 0;
-    Vertex light = (normal - position);
+    Vec3 light = (normal - position);
     double cos = -light.dot(normal) / (light.length() * normal.length());
 
     if (cos < 0)

@@ -13,7 +13,7 @@ Mesh MeshGenerator::CylinderCarcass(double radius, double height, int accuracy)
     {
         double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
         double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
-        mesh.addVertex(Vertex(x, y, z));
+        mesh.addVertex(Vec3(x, y, z));
         mesh.addEdge(Edge(i, (i + 1) % accuracy));
     }
 
@@ -23,7 +23,7 @@ Mesh MeshGenerator::CylinderCarcass(double radius, double height, int accuracy)
     {
         double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
         double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
-        mesh.addVertex(Vertex(x, y, z));
+        mesh.addVertex(Vec3(x, y, z));
         mesh.addEdge(Edge(i + accuracy, (i + 1) % accuracy + accuracy));
     }
 
@@ -40,14 +40,14 @@ Mesh MeshGenerator::CylinderCarcass(double radius, double height, int accuracy)
 Mesh MeshGenerator::CubeCarcass(double size)
 {
     Mesh mesh;
-    mesh.addVertex(Vertex(-1, -1, -2));
-    mesh.addVertex(Vertex(-1, 1, -2));
-    mesh.addVertex(Vertex(1, 1, -2));
-    mesh.addVertex(Vertex(1, -1, -2));
-    mesh.addVertex(Vertex(-1, -1, 2));
-    mesh.addVertex(Vertex(-1, 1, 2));
-    mesh.addVertex(Vertex(1, 1, 2));
-    mesh.addVertex(Vertex(1, -1, 2));
+    mesh.addVertex(Vec3(-1, -1, -2));
+    mesh.addVertex(Vec3(-1, 1, -2));
+    mesh.addVertex(Vec3(1, 1, -2));
+    mesh.addVertex(Vec3(1, -1, -2));
+    mesh.addVertex(Vec3(-1, -1, 2));
+    mesh.addVertex(Vec3(-1, 1, 2));
+    mesh.addVertex(Vec3(1, 1, 2));
+    mesh.addVertex(Vec3(1, -1, 2));
     mesh.addEdge(Edge(0, 1));
     mesh.addEdge(Edge(1, 2));
     mesh.addEdge(Edge(2, 3));
@@ -74,7 +74,7 @@ Mesh MeshGenerator::CylinderTriangles(double radius, double height,
     {
         double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
         double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
-        mesh.addVertex(Vertex(x, y, z));
+        mesh.addVertex(Vec3(x, y, z));
     }
 
     z = height / 2;
@@ -83,13 +83,13 @@ Mesh MeshGenerator::CylinderTriangles(double radius, double height,
     {
         double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
         double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
-        mesh.addVertex(Vertex(x, y, z));
+        mesh.addVertex(Vec3(x, y, z));
     }
 
-    vector<Vertex> normals;
-    Vertex p(0, 0, 0);
+    vector<Vec3> normals;
+    Vec3 p(0, 0, 0);
     {
-        Vertex n = getNormal(mesh.getVertex(0), mesh.getVertex(1), mesh.getVertex(2),
+        Vec3 n = getNormal(mesh.getVertex(0), mesh.getVertex(1), mesh.getVertex(2),
                              p);
         int ni;
         normals.push_back(n);
@@ -101,7 +101,7 @@ Mesh MeshGenerator::CylinderTriangles(double radius, double height,
         }
     }
     {
-        Vertex n = getNormal(mesh.getVertex(accuracy), mesh.getVertex(accuracy + 1),
+        Vec3 n = getNormal(mesh.getVertex(accuracy), mesh.getVertex(accuracy + 1),
                              mesh.getVertex(accuracy + 2), p);
         int ni;
         normals.push_back(n);
@@ -115,7 +115,7 @@ Mesh MeshGenerator::CylinderTriangles(double radius, double height,
 
     for (int i = 0; i < accuracy; i++)
     {
-        Vertex n = getNormal(mesh.getVertex(i), mesh.getVertex(accuracy + i),
+        Vec3 n = getNormal(mesh.getVertex(i), mesh.getVertex(accuracy + i),
                              mesh.getVertex(accuracy + (i + 1) % accuracy),
                              p)
                    .normalized();
@@ -142,12 +142,12 @@ Mesh MeshGenerator::CylinderTriangles(double radius, double height,
 }
 
 
-Vertex MeshGenerator::getNormal(const Vertex &v1, const Vertex &v2,
-                                const Vertex &v3, const Vertex &p)
+Vec3 MeshGenerator::getNormal(const Vec3 &v1, const Vec3 &v2,
+                                const Vec3 &v3, const Vec3 &p)
 {
-    Vertex u = v2 - v1;
-    Vertex v = v3 - v1;
-    Vertex n = u.cross(v).normalized();
+    Vec3 u = v2 - v1;
+    Vec3 v = v3 - v1;
+    Vec3 n = u.cross(v).normalized();
 
     if (n.dot(v1) < 0)
     {

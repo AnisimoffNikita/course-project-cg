@@ -8,7 +8,7 @@ class AmbientLight : public Light
 public:
     AmbientLight(double intensity);
 
-    virtual double getIntensity(const Vertex &) const override;
+    virtual double getIntensity(const Vec3 &) const override;
 };
 
 #endif // AMBIENTLIGHT_H

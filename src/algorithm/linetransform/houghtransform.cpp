@@ -138,7 +138,7 @@ void HoughTransform::drawLines(Image &color)
 
 void HoughTransform::brezenhem(Image &color, const Line &line)
 {
-    Point p1 = line.getP1(), p2 = line.getP2();
+    Vec2 p1 = line.getP1(), p2 = line.getP2();
     int32 x1 = p1.getX(), y1 = p1.getY();
     int32 x2 = p2.getX(), y2 = p2.getY();
 

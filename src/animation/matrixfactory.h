@@ -8,13 +8,13 @@
 class ModelMatrix
 {
 public:
-    static Mat4 create(const Vertex &vertex);
+    static Mat4 create(const Vec3 &vertex);
 };
 
 class ViewMatrix
 {
 public:
-    static Mat4 create(const Vertex &eye, const Vertex &target, const Vertex &up);
+    static Mat4 create(const Vec3 &eye, const Vec3 &target, const Vec3 &up);
 };
 
 class PerspectiveMatrix

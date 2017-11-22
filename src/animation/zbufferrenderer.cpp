@@ -21,7 +21,7 @@ void ZBufferRenderer::renderMesh(const Mesh &mesh)
     auto vertices = mesh.getVertices();
     auto triangles = mesh.getTriangles();
     CommonTransformation perspective(camera->getPVMatrix());
-    Vertex center(width / 2, height / 2, 0);
+    Vec3 center(width / 2, height / 2, 0);
 
     for (auto &v : vertices)
     {
@@ -33,9 +33,9 @@ void ZBufferRenderer::renderMesh(const Mesh &mesh)
 
     for (const auto &triangle : triangles)
     {
-        Vertex v1 = vertices.at(triangle.v1());
-        Vertex v2 = vertices.at(triangle.v2());
-        Vertex v3 = vertices.at(triangle.v3());
+        Vec3 v1 = vertices.at(triangle.v1());
+        Vec3 v2 = vertices.at(triangle.v2());
+        Vec3 v3 = vertices.at(triangle.v3());
         fillTriangle(v1, v2, v3, color);
     }
 }
@@ -58,8 +58,8 @@ QImage ZBufferRenderer::getRendered()
     return toReturn;
 }
 
-std::vector<int> ZBufferRenderer::getBrezenhemX(const Vertex &p1,
-        const Vertex &p2)
+std::vector<int> ZBufferRenderer::getBrezenhemX(const Vec3 &p1,
+        const Vec3 &p2)
 {
     std::vector<int> result;
     int32 x1 = p1.x(), y1 = p1.y();
@@ -120,10 +120,10 @@ std::vector<int> ZBufferRenderer::getBrezenhemX(const Vertex &p1,
 }
 
 
-void ZBufferRenderer::fillTriangle(const Vertex &v1, const Vertex &v2,
-                                   const Vertex &v3, const Color &color)
+void ZBufferRenderer::fillTriangle(const Vec3 &v1, const Vec3 &v2,
+                                   const Vec3 &v3, const Color &color)
 {
-    Vertex wv1 = v1, wv2 = v2, wv3 = v3;
+    Vec3 wv1 = v1, wv2 = v2, wv3 = v3;
     verticesSort(wv1, wv2, wv3);
     std::vector<int> l1 = getBrezenhemX(wv1, wv2);
     std::vector<int> l2 = getBrezenhemX(wv2, wv3);
@@ -145,9 +145,9 @@ void ZBufferRenderer::fillTriangle(const Vertex &v1, const Vertex &v2,
         right = std::move(l1);
     }
 
-    Vertex u = wv2 - wv1;
-    Vertex v = wv3 - wv1;
-    Vertex n = u.cross(v);
+    Vec3 u = wv2 - wv1;
+    Vec3 v = wv3 - wv1;
+    Vec3 n = u.cross(v);
     double a = n.x(), b = n.y(), c = n.z();
     double d = - (a * wv1.x() + b * wv1.y() + c * wv1.z());
 
@@ -190,11 +190,11 @@ void ZBufferRenderer::fillTriangle(const Vertex &v1, const Vertex &v2,
     }
 }
 
-void ZBufferRenderer::verticesSort(Vertex &v1, Vertex &v2, Vertex &v3)
+void ZBufferRenderer::verticesSort(Vec3 &v1, Vec3 &v2, Vec3 &v3)
 {
-    auto swap = [](Vertex & a, Vertex & b)
+    auto swap = [](Vec3 & a, Vec3 & b)
     {
-        Vertex t = a;
+        Vec3 t = a;
         a = b;
         b = t;
     };

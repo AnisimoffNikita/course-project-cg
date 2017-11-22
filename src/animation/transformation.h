@@ -12,7 +12,7 @@ public:
 
     const Mat4 &getMatrix();
 
-    virtual void transform(Vertex &vertex) const = 0;
+    virtual void transform(Vec3 &vertex) const = 0;
 
 protected:
     Mat4 _matrix;

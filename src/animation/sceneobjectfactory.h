@@ -30,7 +30,7 @@ public:
     };
 
 public:
-    CameraFactory(const Vertex &position, const Vertex &lookAt, const Vertex &up,
+    CameraFactory(const Vec3 &position, const Vec3 &lookAt, const Vec3 &up,
                   const PerspectiveData &data);
     //TODO: CameraFactory(const Vertex &position, const Vertex &target, const OrthographicData &data);
     virtual ~CameraFactory() = default;
@@ -44,7 +44,7 @@ private:
 class ModelFactory : public SceneObjectFactory
 {
 public:
-    ModelFactory(const Vertex &position, const Mesh &mesh);
+    ModelFactory(const Vec3 &position, const Mesh &mesh);
     virtual ~ModelFactory() = default;
 
     virtual SharedSceneObject create() override;
@@ -66,7 +66,7 @@ private:
 class PointLightFactory : public SceneObjectFactory
 {
 public:
-    PointLightFactory(const Vertex &position, double intensity);
+    PointLightFactory(const Vec3 &position, double intensity);
     virtual ~PointLightFactory() = default;
 
     virtual SharedSceneObject create() override;

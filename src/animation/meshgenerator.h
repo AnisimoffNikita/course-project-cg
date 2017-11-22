@@ -14,8 +14,8 @@ public:
     static Mesh CylinderTriangles(double radius, double height, int accuracy);
 
 private:
-    static Vertex getNormal(const Vertex &v1, const Vertex &v2, const Vertex &v3,
-                            const Vertex &p);
+    static Vec3 getNormal(const Vec3 &v1, const Vec3 &v2, const Vec3 &v3,
+                            const Vec3 &p);
 };
 
 
