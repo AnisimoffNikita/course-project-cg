@@ -33,3 +33,9 @@ float PointLight::getIntensity(const Vec3 &n, const Vec3 &p,
     result  /= (d.length());
     return result;
 }
+
+
+bool PointLight::isPoint() const
+{
+    return true;
+}

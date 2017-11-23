@@ -11,6 +11,12 @@ LightZBufferRenderer::LightZBufferRenderer(float scale, int width,
     Renderer(scale, width, height)
 {
     zbuffer.setSize(width, height);
+
+    for (auto &b : shadowBuffer)
+    {
+        b.setSize(width, height);
+    }
+
     buffer = new uchar[width * height * 4];
 }
 
@@ -20,47 +26,26 @@ LightZBufferRenderer::~LightZBufferRenderer()
 }
 
 
-void LightZBufferRenderer::renderMesh(const Mesh &mesh)
+void LightZBufferRenderer::renderMesh(shared_ptr<Mesh> mesh)
 {
-    currentMesh = mesh;
-    projected = currentMesh.getVertices();
-    CommonTransformation perspective(camera->getPVMatrix());
-    Vec3 center(width / 2, height / 2, 0);
-
-    for (auto &v : projected)
-    {
-        v.transform(perspective);
-        v.setV(v.getV()*scale + center);
-    }
-
-    auto &triangles = currentMesh.getTriangles();
-
-    for (auto &triangle : triangles)
-    {
-        auto eye = Vec3(0, 0, -1);
-        auto v1 = projected[triangle.getV1()].getV();
-        auto v2 = projected[triangle.getV2()].getV();
-        auto v3 = projected[triangle.getV3()].getV();
-        Vec3 u = v2 - v1;
-        Vec3 v = v3 - v1;
-        Vec3 n = u.cross(v);
-
-        if (n.dot(projected[triangle.getV1()].getN()) > 0)
-        {
-            n = -n;
-        }
-
-        if (n.dot(eye) > 0)
-        {
-            fillTriangle(triangle);
-        }
-    }
+    meshes.push_back(mesh);
 }
 
 
 void LightZBufferRenderer::addLight(SharedLight value)
 {
     lights.push_back(value);
+
+    if (value->isPoint())
+    {
+        auto lightCamera = make_shared<Camera>(*camera);
+        lightCamera->setPosition(value->getPosition());
+        lightCameras.push_back(lightCamera);
+    }
+    else
+    {
+        lightCameras.push_back(nullptr);
+    }
 }
 
 void LightZBufferRenderer::setCamera(SharedCamera value)
@@ -70,8 +55,6 @@ void LightZBufferRenderer::setCamera(SharedCamera value)
 
 uchar *LightZBufferRenderer::getRendered()
 {
-    zbuffer.init();
-    lights.clear();
     return buffer;
 }
 
@@ -168,6 +151,11 @@ std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<int> &l,
     return result;
 }
 
+void LightZBufferRenderer::fillPointShadow(const Camera &camera,
+        shared_ptr<Light> light)
+{
+}
+
 float LightZBufferRenderer::calculateIntensity(const Vec3 &n, const Vec3 &orig)
 {
     float result = 0;
@@ -220,11 +208,11 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
         return;
     }
 
-    auto color = currentMesh.getMaterial().getKd();
+    auto color = currentMesh->getMaterial().getKd();
     float z;
-    Vec3 ov1 = currentMesh.getVertices()[triangle.getV1()].getV();
-    Vec3 ov2 = currentMesh.getVertices()[triangle.getV2()].getV();
-    Vec3 ov3 = currentMesh.getVertices()[triangle.getV3()].getV();
+    Vec3 ov1 = currentMesh->getVertices()[triangle.getV1()].getV();
+    Vec3 ov2 = currentMesh->getVertices()[triangle.getV2()].getV();
+    Vec3 ov3 = currentMesh->getVertices()[triangle.getV3()].getV();
     int miny = wv1.getV().y();
     int maxy = wv3.getV().y();
 
@@ -289,14 +277,14 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
     std::vector<int> l2 = getBrezenhemY(wv2.getV(), wv3.getV());
     std::vector<int> l3 = getBrezenhemY(wv1.getV(), wv3.getV());
     std::vector<Vec3> n1 = getNormals(l1,
-                                      currentMesh.getVertices()[triangle.getV1()].getN(),
-                                      currentMesh.getVertices()[triangle.getV2()].getN());
+                                      currentMesh->getVertices()[triangle.getV1()].getN(),
+                                      currentMesh->getVertices()[triangle.getV2()].getN());
     std::vector<Vec3> n2 = getNormals(l2,
-                                      currentMesh.getVertices()[triangle.getV2()].getN(),
-                                      currentMesh.getVertices()[triangle.getV3()].getN());
+                                      currentMesh->getVertices()[triangle.getV2()].getN(),
+                                      currentMesh->getVertices()[triangle.getV3()].getN());
     std::vector<Vec3> n3 = getNormals(l3,
-                                      currentMesh.getVertices()[triangle.getV1()].getN(),
-                                      currentMesh.getVertices()[triangle.getV3()].getN());
+                                      currentMesh->getVertices()[triangle.getV1()].getN(),
+                                      currentMesh->getVertices()[triangle.getV3()].getN());
     l1.pop_back();
     l1.insert(l1.end(), l2.begin(), l2.end());
     n1.pop_back();
@@ -361,7 +349,6 @@ void LightZBufferRenderer::start(float scale, int width, int height)
     zbuffer.setSize(width, height);
     zbuffer.init();
     this->scale = scale;
-    delete buffer;
     buffer = new uchar[width * height * 4];
 
     for (int i = 0; i < width * height; i++)
@@ -374,4 +361,57 @@ void LightZBufferRenderer::start(float scale, int width, int height)
 
 void LightZBufferRenderer::finish()
 {
+    for (auto &light : lights)
+    {
+        if (light->isPoint())
+        {
+            Camera sameCamera = *camera;
+            sameCamera.setPosition(light->getPosition());
+            fillPointShadow(sameCamera, light);
+        }
+        else
+        {
+            shadowBuffer.push_back(ZBuffer());
+        }
+    }
+
+    for (auto &mesh : meshes)
+    {
+        currentMesh = mesh;
+        projected = currentMesh->getVertices();
+        CommonTransformation perspective(camera->getPVMatrix());
+        Vec3 center(width / 2, height / 2, 0);
+
+        for (auto &v : projected)
+        {
+            v.transform(perspective);
+            v.setV(v.getV()*scale + center);
+        }
+
+        auto &triangles = currentMesh->getTriangles();
+
+        for (auto &triangle : triangles)
+        {
+            auto eye = Vec3(0, 0, -1);
+            auto v1 = projected[triangle.getV1()].getV();
+            auto v2 = projected[triangle.getV2()].getV();
+            auto v3 = projected[triangle.getV3()].getV();
+            Vec3 u = v2 - v1;
+            Vec3 v = v3 - v1;
+            Vec3 n = u.cross(v);
+
+            if (n.dot(projected[triangle.getV1()].getN()) > 0)
+            {
+                n = -n;
+            }
+
+            if (n.dot(eye) > 0)
+            {
+                fillTriangle(triangle);
+            }
+        }
+    }
+
+    lights.clear();
+    meshes.clear();
 }

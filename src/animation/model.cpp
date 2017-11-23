@@ -11,14 +11,15 @@ Model::Model(const Vec3 &position, const Mesh &mesh)
 
 void Model::draw(std::unique_ptr<Renderer> &renderer)
 {
-    auto meshToRender = mesh;
-    meshToRender.transform(MoveTransformation(position));
+    auto meshToRender = make_shared<Mesh>(mesh);
+    meshToRender->transform(MoveTransformation(position));
     renderer->renderMesh(meshToRender);
 }
 
 void Model::transform(const Transformation &transformation)
 {
     transformation.transform(position);
+    mesh.transform(transformation);
 }
 
 bool Model::isCamera()

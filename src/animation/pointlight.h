@@ -12,6 +12,8 @@ public:
     virtual float getIntensity(const Vec3 &n, const Vec3 &p,
                                const Vec3 &c) const override;
 
+
+    virtual bool isPoint() const override;
 };
 
 #endif // POINTLIGHT_H

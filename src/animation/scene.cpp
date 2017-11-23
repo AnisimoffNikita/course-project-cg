@@ -38,6 +38,13 @@ const vector<SharedSceneObject> &Scene::getChildren() const
 
 void Scene::render(std::unique_ptr<Renderer> &renderer)
 {
+    if (_camera.expired())
+    {
+        return;
+    }
+
+    renderer->setCamera(_camera.lock());
+
     for (const auto &light : lights)
     {
         if (!light.expired())
@@ -45,13 +52,6 @@ void Scene::render(std::unique_ptr<Renderer> &renderer)
             renderer->addLight(light.lock());
         }
     }
-
-    if (_camera.expired())
-    {
-        return;
-    }
-
-    renderer->setCamera(_camera.lock());
 
     for (const auto &child : _children)
     {

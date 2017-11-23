@@ -7,6 +7,7 @@
 #include "src/animation/sceneobjectfactory.h"
 #include "src/animation/lightzbufferrenderer.h"
 #include "src/animation/objloader.h"
+#include "src/animation/scaletransformation.h"
 #include <QPainter>
 
 ModelView2::ModelView2(QWidget *parent)
@@ -29,7 +30,7 @@ void ModelView2::mousePressEvent(QMouseEvent *event)
 void ModelView2::mouseMoveEvent(QMouseEvent *event)
 {
     auto dx = event->pos().x() - lastPos.x();
-    //    auto dy = event->pos().y() - lastPos.y();
+    auto dy = event->pos().y() - lastPos.y();
     auto camera = scene->getActiveCamera();
 
     if (camera.expired())
@@ -38,8 +39,21 @@ void ModelView2::mouseMoveEvent(QMouseEvent *event)
     }
 
     auto workCamera = camera.lock();
+    Vec3 cameraPos = workCamera->getPosition();
     RotateYTransformation y(Math::ToRadians(-dx) / 2, Vec3(0, 0, 0));
     workCamera->transform(y);
+
+    if (Math::Abs(cameraPos.x()) > Math::Abs(cameraPos.z()))
+    {
+        RotateZTransformation z(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
+        workCamera->transform(z);
+    }
+    else
+    {
+        RotateXTransformation x(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
+        workCamera->transform(x);
+    }
+
     lastPos = event->pos();
 }
 
@@ -56,11 +70,11 @@ void ModelView2::updateCanvas()
 void ModelView2::scheduler()
 {
     int w = width(), h = height();
-    renderer->start(300, w, h);
+    renderer->start(150, w, h);
     scene->render(renderer);
+    renderer->finish();
     uchar *buffer = renderer->getRendered();
     image = QImage(buffer, w, h, QImage::Format_RGB32);
-    renderer->finish();
     this->repaint();
 }
 
@@ -71,30 +85,32 @@ void ModelView2::sceneSetup()
     data.fovY = Math::ToRadians(80);
     data.near = 0.1;
     data.far = 100;
-    CameraFactory cameraFactory(Vec3(6, 0, 6), Vec3(0, 0, 0), Vec3(0, 1, 0),
+    CameraFactory cameraFactory(Vec3(10, 10, 10), Vec3(0, 0, 0), Vec3(0, 1, 0),
                                 data);
     auto camera = cameraFactory.create();
     scene->add(camera);
     scene->setActiveCamera(camera);
     {
-        ObjLoader loader("/home/nikita/untitled.obj");
+        ObjLoader loader("/home/nikita/q.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
-    //    {
-    //        ObjLoader loader("/home/nikita/untitled2.obj");
-    //        Mesh mesh = loader.load();
-    //        ModelFactory modelFactory(Vec3(-3, -3, -3), mesh);
-    //        auto model = modelFactory.create();
-    //        scene->add(model);
-    //    }
+    {
+        ObjLoader loader("/home/nikita/q.obj");
+        Mesh mesh = loader.load();
+        ModelFactory modelFactory(Vec3(-6, -6, -6), mesh);
+        auto model = modelFactory.create();
+        ScaleTransformation scale(Vec3(2, 2, 2), Vec3(-3, -3, -3));
+        model->transform(scale);
+        scene->add(model);
+    }
     AmbientLightFactory ambientFactory(0.4);
     auto ambient = ambientFactory.create();
     scene->add(ambient);
     {
-        PointLightFactory pointFactory(Vec3(3, 3, 3), 1);
+        PointLightFactory pointFactory(Vec3(8, 8, 8), 2);
         auto point = pointFactory.create();
         scene->add(point);
     }

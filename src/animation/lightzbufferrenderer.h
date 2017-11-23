@@ -17,7 +17,7 @@ public:
     virtual void addLight(SharedLight) override;
 
     virtual void start(float scale, int width, int height) override;
-    virtual void renderMesh(const Mesh &mesh) override;
+    virtual void renderMesh(shared_ptr<Mesh> mesh) override;
 
     virtual uchar *getRendered() override;
     virtual void finish() override;
@@ -35,16 +35,19 @@ protected:
     std::vector<Vec3> getNormals(const std::vector<int> &l, const Vec3 &n1,
                                  const Vec3 &n2);
 
+    void fillPointShadow(const Camera &camera, shared_ptr<Light> light);
+
     ZBuffer zbuffer;
     uchar *buffer;
     SharedCamera camera;
-    std::vector<SharedLight> lights;
 
-    Mesh currentMesh;
-    std::vector<Vertex> projected;
+    vector<SharedLight> lights;
+    vector<ZBuffer> shadowBuffer;
+    vector<SharedCamera> lightCameras;
 
-    // Renderer interface
-public:
+    vector<shared_ptr<Mesh>> meshes;
+    shared_ptr<Mesh> currentMesh;
+    vector<Vertex> projected;
 };
 
 

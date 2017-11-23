@@ -10,3 +10,9 @@ float AmbientLight::getIntensity(const Vec3 &, const Vec3 &, const Vec3 &) const
 {
     return intensity;
 }
+
+
+bool AmbientLight::isPoint() const
+{
+    return false;
+}

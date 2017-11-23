@@ -10,6 +10,8 @@ public:
 
     virtual float getIntensity(const Vec3 &, const Vec3 &,
                                const Vec3 &) const override;
+
+    virtual bool isPoint() const override;
 };
 
 #endif // AMBIENTLIGHT_H

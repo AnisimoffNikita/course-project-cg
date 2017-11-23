@@ -18,6 +18,7 @@ public:
     virtual float getIntensity(const Vec3 &normal, const Vec3 &position,
                                const Vec3 &camera) const = 0;
 
+    virtual bool isPoint() const = 0;
 protected:
     float intensity;
 };

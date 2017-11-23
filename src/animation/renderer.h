@@ -19,7 +19,7 @@ public:
 
     virtual void start(float scale, int width, int height) = 0;
 
-    virtual void renderMesh(const Mesh &mesh) = 0;
+    virtual void renderMesh(shared_ptr<Mesh> mesh) = 0;
 
     virtual uchar *getRendered() = 0;
 
