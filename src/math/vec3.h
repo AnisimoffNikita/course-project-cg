@@ -41,7 +41,7 @@ public:
         zc = value;
     }
 
-    double length() const
+    float length() const
     {
         return Math::Sqrt(xc * xc + yc * yc + zc * zc);
     }
@@ -60,7 +60,7 @@ public:
         zc -= value.zc;
         return *this;
     }
-    Vector3 &operator*= (double factor)
+    Vector3 &operator*= (float factor)
     {
         xc *= factor;
         yc *= factor;
@@ -78,7 +78,7 @@ public:
         return Vector3(xc - value.xc, yc - value.yc, zc - value.zc);
     }
 
-    Vector3 operator*(double factor) const
+    Vector3 operator*(float factor) const
     {
         return Vector3(xc * factor, yc * factor, zc * factor);
     }
@@ -98,7 +98,7 @@ public:
 
     Vector3 normalized() const
     {
-        double l = Math::Sqrt(xc * xc + yc * yc + zc * zc);
+        float l = Math::Sqrt(xc * xc + yc * yc + zc * zc);
         return Vector3(xc / l, yc / l, zc / l);
     }
 
@@ -120,6 +120,6 @@ private:
     T zc;
 };
 
-using Vec3 = Vector3<double>;
+using Vec3 = Vector3<float>;
 
 #endif // VEC3_H

@@ -3,13 +3,13 @@
 #include "src/math/math.h"
 #include "src/math/homogeneousvertex.h"
 
-RotateXTransformation::RotateXTransformation(double angle, const Vec3 &origin)
+RotateXTransformation::RotateXTransformation(float angle, const Vec3 &origin)
 {
-    double data[16] = {1, 0, 0, 0,
-                       0, Math::Cos(angle), Math::Sin(angle), 0,
-                       0, -Math::Sin(angle), Math::Cos(angle), 0,
-                       0, 0, 0, 1
-                      };
+    float data[16] = {1, 0, 0, 0,
+                      0, (float)Math::Cos(angle), (float)Math::Sin(angle), 0,
+                      0, (float) - Math::Sin(angle), (float)Math::Cos(angle), 0,
+                      0, 0, 0, 1
+                     };
     _matrix = Mat4(data);
     _origin = origin;
 }
@@ -24,13 +24,13 @@ void RotateXTransformation::transform(Vec3 &vertex) const
     vertex += _origin;
 }
 
-RotateYTransformation::RotateYTransformation(double angle, const Vec3 &origin)
+RotateYTransformation::RotateYTransformation(float angle, const Vec3 &origin)
 {
-    double data[16] = {Math::Cos(angle), 0, -Math::Sin(angle), 0,
-                       0, 1, 0, 0,
-                       Math::Sin(angle), 0, Math::Cos(angle), 0,
-                       0, 0, 0, 1
-                      };
+    float data[16] = {(float)Math::Cos(angle), 0, (float) - Math::Sin(angle), 0,
+                      0, 1, 0, 0,
+                      (float)Math::Sin(angle), 0, (float)Math::Cos(angle), 0,
+                      0, 0, 0, 1
+                     };
     _matrix = Mat4(data);
     _origin = origin;
 }
@@ -45,13 +45,13 @@ void RotateYTransformation::transform(Vec3 &vertex) const
     vertex += _origin;
 }
 
-RotateZTransformation::RotateZTransformation(double angle, const Vec3 &origin)
+RotateZTransformation::RotateZTransformation(float angle, const Vec3 &origin)
 {
-    double data[16] = {Math::Cos(angle), Math::Sin(angle), 0, 0,
-                       -Math::Sin(angle), Math::Cos(angle), 0, 0,
-                       0, 0, 1, 0,
-                       0, 0, 0, 1
-                      };
+    float data[16] = {(float)Math::Cos(angle), (float)Math::Sin(angle), 0, 0,
+                      (float) - Math::Sin(angle), (float)Math::Cos(angle), 0, 0,
+                      0, 0, 1, 0,
+                      0, 0, 0, 1
+                     };
     _matrix = Mat4(data);
     _origin = origin;
 }

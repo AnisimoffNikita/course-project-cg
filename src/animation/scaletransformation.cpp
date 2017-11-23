@@ -5,7 +5,7 @@
 ScaleTransformation::ScaleTransformation(const Vec3 &scale,
         const Vec3 &origin)
 {
-    double data[16] = {scale.x(), 0, 0, 0,
+    float data[16] = {scale.x(), 0, 0, 0,
                        0, scale.y(), 0, 0,
                        0, 0, scale.z(), 0,
                        0, 0, 0, 1

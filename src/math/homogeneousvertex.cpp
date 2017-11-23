@@ -12,6 +12,6 @@ Vec3 HomogeneousVertexConverter::ToVertex(const HomogeneousVertex &hvec)
 
 HomogeneousVertex HomogeneousVertexConverter::FromVertex(const Vec3 &vec)
 {
-    double values[] = {vec.x(), vec.y(), vec.z(), 1.0};
+    float values[] = {vec.x(), vec.y(), vec.z(), 1.0};
     return HomogeneousVertex(values);
 }

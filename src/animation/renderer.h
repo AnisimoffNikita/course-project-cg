@@ -11,7 +11,7 @@
 class Renderer
 {
 public:
-    Renderer(double scale, int width, int height);
+    Renderer(float scale, int width, int height);
 
     virtual void setCamera(SharedCamera value) = 0;
     virtual void addLight(SharedLight value) = 0;
@@ -23,7 +23,7 @@ public:
 
 protected:
 
-    double scale;
+    float scale;
     int width;
     int height;
     QImage canvas;

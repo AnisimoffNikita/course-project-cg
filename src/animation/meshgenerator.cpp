@@ -4,15 +4,15 @@
 
 #include <algorithm>
 
-//Mesh MeshGenerator::CylinderCarcass(double radius, double height, int accuracy)
+//Mesh MeshGenerator::CylinderCarcass(float radius, float height, int accuracy)
 //{
 //    Mesh mesh;
-//    double z = -height / 2;
+//    float z = -height / 2;
 
 //    for (int i = 0; i < accuracy; i++)
 //    {
-//        double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
-//        double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
+//        float x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
+//        float y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
 //        mesh.addVertex(Vec3(x, y, z));
 //        mesh.addEdge(Edge(i, (i + 1) % accuracy));
 //    }
@@ -21,8 +21,8 @@
 
 //    for (int i = 0; i < accuracy; i++)
 //    {
-//        double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
-//        double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
+//        float x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
+//        float y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
 //        mesh.addVertex(Vec3(x, y, z));
 //        mesh.addEdge(Edge(i + accuracy, (i + 1) % accuracy + accuracy));
 //    }
@@ -37,7 +37,7 @@
 
 
 
-//Mesh MeshGenerator::CubeCarcass(double size)
+//Mesh MeshGenerator::CubeCarcass(float size)
 //{
 //    Mesh mesh;
 //    mesh.addVertex(Vec3(-1, -1, -2));
@@ -63,17 +63,17 @@
 //    return mesh;
 //}
 
-//Mesh MeshGenerator::CylinderTriangles(double radius, double height,
+//Mesh MeshGenerator::CylinderTriangles(float radius, float height,
 //                                      int accuracy)
 //{
 //    Mesh mesh;
 //    mesh.setMaterial(MaterialGenerator::SimpleMaterial(Color(160, 0, 0)));
-//    double z = -height / 2;
+//    float z = -height / 2;
 
 //    for (int i = 0; i < accuracy; i++)
 //    {
-//        double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
-//        double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
+//        float x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
+//        float y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
 //        mesh.addVertex(Vec3(x, y, z));
 //    }
 
@@ -81,8 +81,8 @@
 
 //    for (int i = 0; i < accuracy; i++)
 //    {
-//        double x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
-//        double y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
+//        float x = radius * Math::Cos(i * 2 * Math::PI / accuracy);
+//        float y = radius * Math::Sin(i * 2 * Math::PI / accuracy);
 //        mesh.addVertex(Vec3(x, y, z));
 //    }
 

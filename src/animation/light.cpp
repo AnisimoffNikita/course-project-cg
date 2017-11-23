@@ -1,7 +1,7 @@
 #include "light.h"
 #include "transformation.h"
 
-Light::Light(const Vec3 &position, double intensity) :
+Light::Light(const Vec3 &position, float intensity) :
     SceneObject(position),
     intensity(intensity)
 {

@@ -4,7 +4,7 @@
 
 #include <QPainter>
 
-ZBufferRenderer::ZBufferRenderer(double scale, int32 width, int32 height) :
+ZBufferRenderer::ZBufferRenderer(float scale, int32 width, int32 height) :
     Renderer(scale, width, height)
 {
     canvas.fill(Qt::white);
@@ -147,14 +147,14 @@ void ZBufferRenderer::fillTriangle(const Vertex &v1, const Vertex &v2,
     //    Vec3 u = wv2 - wv1;
     //    Vec3 v = wv3 - wv1;
     //    Vec3 n = u.cross(v);
-    //    double a = n.x(), b = n.y(), c = n.z();
-    //    double d = - (a * wv1.x() + b * wv1.y() + c * wv1.z());
+    //    float a = n.x(), b = n.y(), c = n.z();
+    //    float d = - (a * wv1.x() + b * wv1.y() + c * wv1.z());
     //    if (c == 0)
     //    {
     //        return;
     //    }
     //    auto color = currentMesh.getMaterial().getKd();
-    //    double z;
+    //    float z;
     //    for (int y = wv1.y(), i = 0; y <= wv3.y(); y++, i++)
     //    {
     //        for (int x = left[i]; x <= right[i]; x++)

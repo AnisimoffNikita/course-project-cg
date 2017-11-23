@@ -13,9 +13,9 @@ public:
     virtual ~CylinderSizeCalculatorBase();
 
     virtual CylinderSize evaluate(const std::vector<Line> &lines) = 0;
-    virtual void calibrate(const std::vector<Line> &lines, double distance,
-                           double radius, double height) = 0;
-    virtual void calibrate(double daig, double diagPx) = 0;
+    virtual void calibrate(const std::vector<Line> &lines, float distance,
+                           float radius, float height) = 0;
+    virtual void calibrate(float daig, float diagPx) = 0;
 };
 
 #endif // SIZECALCULATORBASE_H

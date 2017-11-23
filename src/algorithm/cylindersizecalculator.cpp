@@ -20,18 +20,18 @@ CylinderSize CylinderSizeCalculator::evaluate(const Lines &lines)
 }
 
 void CylinderSizeCalculator::calibrate(const std::vector<Line> &inLines,
-                                       double distance, double radius, double height)
+                                       float distance, float radius, float height)
 {
     lines = inLines;
     this->distance = distance;
     findEdges();
-    double visibleEdge = distance - (radius + radius * radius /
+    float visibleEdge = distance - (radius + radius * radius /
                                      (distance - radius));
-    double localFactor = height / lines[0].length();
+    float localFactor = height / lines[0].length();
     factor = localFactor / visibleEdge;
 }
 
-void CylinderSizeCalculator::calibrate(double diag, double diagPx)
+void CylinderSizeCalculator::calibrate(float diag, float diagPx)
 {
     factor = diag / diagPx;
 }
@@ -59,7 +59,7 @@ void CylinderSizeCalculator::findEdges()
             }
 
             int32 eps = 10;
-            double maxWidth = 0;
+            float maxWidth = 0;
 
             if (fabs(dx1 - dx2) < eps && fabs(dy1 - dy2) < eps)
             {
@@ -90,8 +90,8 @@ void CylinderSizeCalculator::calculateSize()
 {
     int32 dx = lines[0].getP1().getX() - lines[1].getP1().getX();
     int32 dy = lines[0].getP1().getY() - lines[1].getP1().getY();
-    double inDiam = sqrt(dx * dx + dy * dy);
-    Math::Func f = [inDiam, this](double r)
+    float inDiam = sqrt(dx * dx + dy * dy);
+    Math::Func f = [inDiam, this](float r)
     {
         auto visibleDiam = 2 * r * pow((1 - pow((r / (distance - r)), 2)), 0.5);
         auto visibleDist = distance - (r + r * r / (distance - r));
@@ -99,10 +99,10 @@ void CylinderSizeCalculator::calculateSize()
         auto evalDiam = visibleDiam / localFactor;
         return evalDiam - inDiam;
     };
-    double radius = Math::Bisection(0.01, 0.3, f);
+    float radius = Math::Bisection(0.01, 0.3, f);
     auto localFactor = factor * (distance - (radius + radius * radius /
                                  (distance - radius)));
-    double height = localFactor * lines[0].length();
+    float height = localFactor * lines[0].length();
     size.setHeight(height);
     size.setRadius(radius);
 }

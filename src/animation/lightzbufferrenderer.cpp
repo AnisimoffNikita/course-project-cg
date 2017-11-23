@@ -6,7 +6,7 @@
 #include <omp.h>
 #include <QPainter>
 
-LightZBufferRenderer::LightZBufferRenderer(double scale, int32 width,
+LightZBufferRenderer::LightZBufferRenderer(float scale, int32 width,
         int32 height) :
     Renderer(scale, width, height)
 {
@@ -168,13 +168,13 @@ std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<int> &l,
     return result;
 }
 
-double LightZBufferRenderer::calculateIntensity(const Vec3 &n)
+float LightZBufferRenderer::calculateIntensity(const Vec3 &n, const Vec3 &orig)
 {
-    double result = 0;
+    float result = 0;
 
     for (auto &light : lights)
     {
-        result += light->getIntensity(n);
+        result += light->getIntensity(n, orig, camera->getPosition());
     }
 
     return result;
@@ -184,15 +184,16 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
 {
     std::vector<int> lleft, lright;
     std::vector<Vec3> nleft, nright;
-    getLeftRightBounds(lleft, lright, nleft, nright, triangle);
+    bool swapped;
+    getLeftRightBounds(lleft, lright, nleft, nright, triangle, swapped);
     const Vertex &wv1 = projected[triangle.getV1()],
                   &wv2 = projected[triangle.getV2()],
                    &wv3 = projected[triangle.getV3()];
     Vec3 u = wv2.getV() - wv1.getV();
     Vec3 v = wv3.getV() - wv1.getV();
     Vec3 n = u.cross(v);
-    double a = n.x(), b = n.y(), c = n.z();
-    double d = - (a * wv1.getV().x() + b * wv1.getV().y() + c * wv1.getV().z());
+    float a = n.x(), b = n.y(), c = n.z();
+    float d = - (a * wv1.getV().x() + b * wv1.getV().y() + c * wv1.getV().z());
 
     if (c == 0)
     {
@@ -200,9 +201,18 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     }
 
     auto color = currentMesh.getMaterial().getKd();
-    double z;
+    float z;
+    Vec3 ov1 = currentMesh.getVertices()[triangle.getV1()].getV();
+    Vec3 ov2 = currentMesh.getVertices()[triangle.getV2()].getV();
+    Vec3 ov3 = currentMesh.getVertices()[triangle.getV3()].getV();
+    Vec3 ol12 = ov2 - ov1;
+    Vec3 ol23 = ov3 - ov2;
+    Vec3 ol13 = ov3 - ov1;
+    int miny = wv1.getV().y();
+    int maxy = wv3.getV().y();
+    float l = maxy - miny + 1;
 
-    for (int y = wv1.getV().y(), i = 0; y <= wv3.getV().y(); y++, i++)
+    for (int y = miny, i = 0; y <= maxy; y++, i++)
     {
         Vec3 n1 = nleft[i], n2 = nright[i];
         float s = lright[i] - lleft[i] + 1;
@@ -216,10 +226,10 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
             {
                 buffer.set(x, y, z);
                 Vec3 n;
+                float part = (j / (s - 1));
 
                 if (s > 1)
                 {
-                    double part = (j / (s - 1));
                     n = n1 * (1 - part) + n2 * part;
                 }
                 else
@@ -227,7 +237,37 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
                     n = n1;
                 }
 
-                double intensity = calculateIntensity(n);
+                Vec3 orig;
+                {
+                    Vec3 o1 = ov1 + ol13 * ((y - miny) / l);
+                    Vec3 o2;
+
+                    if (y < wv2.getV().y())
+                    {
+                        o2 = ov1 + ol12 * ((y - miny) / (wv2.getV().y() - miny));
+                    }
+                    else
+                    {
+                        o2 = ov2 + ol23 * ((y - wv2.getV().y()) / (maxy - wv2.getV().y()));
+                    }
+
+                    if (s < 1.5)
+                    {
+                        orig = o1;
+                    }
+                    else
+                    {
+                        if (swapped)
+                        {
+                            orig = o1 + (o2 - o1) * part;
+                        }
+                        else
+                        {
+                            orig = o2 + (o1 - o2) * part;
+                        }
+                    }
+                }
+                float intensity = calculateIntensity(n, orig);
                 putPixel(x, y, color * intensity);
             }
         }
@@ -237,12 +277,12 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
 void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
         std::vector<int> &lright,
         std::vector<Vec3> &nleft, std::vector<Vec3> &nright,
-        Triangle &triangle)
+        Triangle &triangle, bool &swapped)
 {
     triangleSort(projected, triangle);
-    Vertex wv1 = projected[triangle.getV1()],
-           wv2 = projected[triangle.getV2()],
-           wv3 = projected[triangle.getV3()];
+    const Vertex &wv1 = projected[triangle.getV1()],
+                  &wv2 = projected[triangle.getV2()],
+                   &wv3 = projected[triangle.getV3()];
     std::vector<int> l1 = getBrezenhemY(wv1.getV(), wv2.getV());
     std::vector<int> l2 = getBrezenhemY(wv2.getV(), wv3.getV());
     std::vector<int> l3 = getBrezenhemY(wv1.getV(), wv3.getV());
@@ -268,6 +308,7 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
         lright = std::move(l3);
         nleft = std::move(n1);
         nright = std::move(n3);
+        swapped = false;
     }
     else
     {
@@ -275,6 +316,7 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
         lright = std::move(l1);
         nleft = std::move(n3);
         nright = std::move(n1);
+        swapped = true;
     }
 }
 

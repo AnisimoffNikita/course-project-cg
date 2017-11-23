@@ -5,17 +5,17 @@
 class CylinderSize
 {
 public:
-    CylinderSize(double height = 0, double radius = 0);
+    CylinderSize(float height = 0, float radius = 0);
 
-    double getRadius() const;
-    void setRadius(double value);
+    float getRadius() const;
+    void setRadius(float value);
 
-    double getHeight() const;
-    void setHeight(double value);
+    float getHeight() const;
+    void setHeight(float value);
 
 private:
-    double height;
-    double radius;
+    float height;
+    float radius;
 };
 
 #endif // CYLINDERSIZE_H

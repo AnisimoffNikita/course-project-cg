@@ -23,10 +23,10 @@ class CameraFactory : public SceneObjectFactory
 public:
     struct PerspectiveData
     {
-        double fovX;
-        double fovY;
-        double near;
-        double far;
+        float fovX;
+        float fovY;
+        float near;
+        float far;
     };
 
 public:
@@ -55,7 +55,7 @@ private:
 class AmbientLightFactory : public SceneObjectFactory
 {
 public:
-    AmbientLightFactory(double intensity);
+    AmbientLightFactory(float intensity);
     virtual ~AmbientLightFactory() = default;
 
     virtual SharedSceneObject create() override;
@@ -66,7 +66,7 @@ private:
 class PointLightFactory : public SceneObjectFactory
 {
 public:
-    PointLightFactory(const Vec3 &position, double intensity);
+    PointLightFactory(const Vec3 &position, float intensity);
     virtual ~PointLightFactory() = default;
 
     virtual SharedSceneObject create() override;

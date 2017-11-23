@@ -33,7 +33,7 @@ struct Vector2
         Y = 0.0f;
     }
     // Variable Set Constructor
-    Vector2(double X_, double Y_)
+    Vector2(float X_, float Y_)
     {
         X = X_;
         Y = Y_;
@@ -59,14 +59,14 @@ struct Vector2
         return Vector2(this->X - right.X, this->Y - right.Y);
     }
     // Float Multiplication Operator Overload
-    Vector2 operator*(const double &other) const
+    Vector2 operator*(const float &other) const
     {
         return Vector2(this->X * other, this->Y * other);
     }
 
     // Positional Variables
-    double X;
-    double Y;
+    float X;
+    float Y;
 };
 
 // Structure: Vector3
@@ -82,7 +82,7 @@ struct Vector3
         Z = 0.0f;
     }
     // Variable Set Constructor
-    Vector3(double X_, double Y_, double Z_)
+    Vector3(float X_, float Y_, float Z_)
     {
         X = X_;
         Y = Y_;
@@ -109,15 +109,15 @@ struct Vector3
         return Vector3(this->X - right.X, this->Y - right.Y, this->Z - right.Z);
     }
     // Float Multiplication Operator Overload
-    Vector3 operator*(const double &other) const
+    Vector3 operator*(const float &other) const
     {
         return Vector3(this->X * other, this->Y * other, this->Z - other);
     }
 
     // Positional Variables
-    double X;
-    double Y;
-    double Z;
+    float X;
+    float Y;
+    float Z;
 };
 
 // Structure: Vertex
@@ -156,11 +156,11 @@ struct Material
     // Specular Color
     Vector3 Ks;
     // Specular Exponent
-    double Ns;
+    float Ns;
     // Optical Density
-    double Ni;
+    float Ni;
     // Dissolve
-    double d;
+    float d;
     // Illumination
     int illum;
     // Ambient Texture Map
@@ -219,21 +219,21 @@ Vector3 CrossV3(const Vector3 a, const Vector3 b)
 }
 
 // Vector3 Magnitude Calculation
-double MagnitudeV3(const Vector3 in)
+float MagnitudeV3(const Vector3 in)
 {
     return (sqrtf(powf(in.X, 2) + powf(in.Y, 2) + powf(in.Z, 2)));
 }
 
 // Vector3 DotProduct
-double DotV3(const Vector3 a, const Vector3 b)
+float DotV3(const Vector3 a, const Vector3 b)
 {
     return (a.X * b.X) + (a.Y * b.Y) + (a.Z * b.Z);
 }
 
 // Angle between 2 Vector3 Objects
-double AngleBetweenV3(const Vector3 a, const Vector3 b)
+float AngleBetweenV3(const Vector3 a, const Vector3 b)
 {
-    double angle = DotV3(a, b);
+    float angle = DotV3(a, b);
     angle /= (MagnitudeV3(a) * MagnitudeV3(b));
     return angle = acosf(angle);
 }
@@ -246,7 +246,7 @@ double AngleBetweenV3(const Vector3 a, const Vector3 b)
 namespace algorithm
 {
 // Vector3 Multiplication Opertor Overload
-Vector3 operator*(const double &left, const Vector3 &right)
+Vector3 operator*(const float &left, const Vector3 &right)
 {
     return Vector3(right.X * left, right.Y * left, right.Z * left);
 }
@@ -259,9 +259,9 @@ bool inTriangle(Vector3 point, Vector3 tri1, Vector3 tri2, Vector3 tri3)
     Vector3 v = tri3 - tri1;
     Vector3 w = point - tri1;
     Vector3 n = math::CrossV3(u, v);
-    double y = (math::DotV3(math::CrossV3(u, w), n) / math::DotV3(n, n));
-    double b = (math::DotV3(math::CrossV3(u, w), n) / math::DotV3(n, n));
-    double a = 1 - y - b;
+    float y = (math::DotV3(math::CrossV3(u, w), n) / math::DotV3(n, n));
+    float b = (math::DotV3(math::CrossV3(u, w), n) / math::DotV3(n, n));
+    float a = 1 - y - b;
     // Projected point
     Vector3  p = (a * tri1) + (b * tri2) + (y * tri3);
 
@@ -939,7 +939,7 @@ private:
                 }
 
                 // If Vertex is not an interior vertex
-                double angle = math::AngleBetweenV3(pPrev.Position - pCur.Position,
+                float angle = math::AngleBetweenV3(pPrev.Position - pCur.Position,
                                                     pNext.Position - pCur.Position) * (180 / 3.14159265359);
 
                 if (angle <= 0 && angle >= 180)

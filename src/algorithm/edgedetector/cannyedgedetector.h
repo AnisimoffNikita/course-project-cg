@@ -27,7 +27,7 @@ public:
 private:
     void gradients();
     void nonMaxSuppression();
-    void doubleThreshold();
+    void floatThreshold();
     void hysteresis();
     void hysteresisRecursive(uint32 y, uint32 x);
 

@@ -18,7 +18,7 @@ void CannyEdgeDetector::process(Image &image)
     this->image = ImageConverter::ImageToGrayscalImage(image);
     gradients();
     nonMaxSuppression();
-    doubleThreshold();
+    floatThreshold();
     hysteresis();
     image = ImageConverter::GrayscaleImageToImage(this->image);
 }
@@ -140,7 +140,7 @@ void CannyEdgeDetector::nonMaxSuppression()
     }
 }
 
-void CannyEdgeDetector::doubleThreshold()
+void CannyEdgeDetector::floatThreshold()
 {
     uint8 pixel;
 

@@ -8,7 +8,7 @@
 class CarcassRenderer : public Renderer
 {
 public:
-    CarcassRenderer(double scale, int32 width, int32 height);
+    CarcassRenderer(float scale, int32 width, int32 height);
 
     virtual void setCamera(SharedCamera value) override;
     virtual void addLight(SharedLight) override;

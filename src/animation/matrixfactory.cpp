@@ -3,7 +3,7 @@
 
 Mat4 ModelMatrix::create(const Vec3 &vertex)
 {
-    double data[16] = {1, 0, 0, vertex.x(),
+    float data[16] = {1, 0, 0, vertex.x(),
                        0, 1, 0, vertex.y(),
                        0, 0, 1, vertex.z(),
                        0, 0, 0, 1
@@ -17,7 +17,7 @@ Mat4 ViewMatrix::create(const Vec3 &eye, const Vec3 &target,
     Vec3 z = (target - eye).normalized();
     Vec3 x = z.cross(up).normalized();
     Vec3 y = x.cross(z);
-    double data[] = {x.x(), x.y(), x.z(), -x.dot(eye),
+    float data[] = {x.x(), x.y(), x.z(), -x.dot(eye),
                      y.x(), y.y(), y.z(), -y.dot(eye),
                      z.x(), z.y(), z.z(), -z.dot(eye),
                      0, 0, 0, 1
@@ -25,10 +25,10 @@ Mat4 ViewMatrix::create(const Vec3 &eye, const Vec3 &target,
     return Mat4(data);
 }
 
-Mat4 PerspectiveMatrix::create(double fovx, double fovy, double zNear,
-                               double zFar)
+Mat4 PerspectiveMatrix::create(float fovx, float fovy, float zNear,
+                               float zFar)
 {
-    double data[] = {Math::Atan(fovx / 2), 0, 0, 0,
+    float data[] = {Math::Atan(fovx / 2), 0, 0, 0,
                      0, Math::Atan(fovy / 2), 0, 0,
                      0, 0, -(zFar + zNear) / (zFar - zNear), -1,
                      0, 0, -(2 * zFar * zNear) / (zFar - zNear), 0

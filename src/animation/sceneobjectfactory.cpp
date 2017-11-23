@@ -25,7 +25,7 @@ SharedSceneObject ModelFactory::create()
     return std::move(model);
 }
 
-AmbientLightFactory::AmbientLightFactory(double intensity)
+AmbientLightFactory::AmbientLightFactory(float intensity)
 {
     light = std::make_unique<AmbientLight>(intensity);
 }
@@ -35,7 +35,7 @@ SharedSceneObject AmbientLightFactory::create()
     return std::move(light);
 }
 
-PointLightFactory::PointLightFactory(const Vec3 &position, double intensity)
+PointLightFactory::PointLightFactory(const Vec3 &position, float intensity)
 {
     light = std::make_unique<PointLight>(position, intensity);
 }

@@ -4,7 +4,7 @@
 #include "src/math/vec3.h"
 #include "src/math/matrix.h"
 
-using HomogeneousVertex = Matrix<4, 1, double>;
+using HomogeneousVertex = Matrix<4, 1, float>;
 
 class HomogeneousVertexConverter
 {

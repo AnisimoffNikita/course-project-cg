@@ -75,8 +75,8 @@ void Triangle::setV3(const int &value)
     v[2] = value;
 }
 
-Material::Material(const Color &ka, const Color &kd, const Color &ks, double ns,
-                   double ni, double d)
+Material::Material(const Color &ka, const Color &kd, const Color &ks, float ns,
+                   float ni, float d)
     : ka(ka)
     , kd(kd)
     , ks(ks)
@@ -116,32 +116,32 @@ void Material::setKs(const Color &value)
     ks = value;
 }
 
-double Material::getD() const
+float Material::getD() const
 {
     return d;
 }
 
-void Material::setD(double value)
+void Material::setD(float value)
 {
     d = value;
 }
 
-double Material::getNi() const
+float Material::getNi() const
 {
     return ni;
 }
 
-void Material::setNi(double value)
+void Material::setNi(float value)
 {
     ni = value;
 }
 
-double Material::getNs() const
+float Material::getNs() const
 {
     return ns;
 }
 
-void Material::setNs(double value)
+void Material::setNs(float value)
 {
     ns = value;
 }

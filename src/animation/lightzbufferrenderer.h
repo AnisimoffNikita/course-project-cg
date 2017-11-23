@@ -9,7 +9,7 @@
 class LightZBufferRenderer : public Renderer
 {
 public:
-    LightZBufferRenderer(double scale, int32 width, int32 height);
+    LightZBufferRenderer(float scale, int32 width, int32 height);
     virtual ~LightZBufferRenderer();
 
     virtual void setCamera(SharedCamera value) override;
@@ -21,9 +21,11 @@ public:
 
 protected:
     void fillTriangle(Triangle &triangle);
-    void getLeftRightBounds(std::vector<int> &lleft, std::vector<int> &lright, std::vector<Vec3> &nleft, std::vector<Vec3> &nright, Triangle &triangle);
+    void getLeftRightBounds(std::vector<int> &lleft, std::vector<int> &lright,
+                            std::vector<Vec3> &nleft, std::vector<Vec3> &nright, Triangle &triangle,
+                            bool &swapped);
     void triangleSort(const std::vector<Vertex> &vertices, Triangle &triangle);
-    double calculateIntensity(const Vec3 &n);
+    float calculateIntensity(const Vec3 &n, const Vec3 &orig);
 
     void putPixel(int x, int y, const Color &color);
     std::vector<int> getBrezenhemY(const Vec3 &p1, const Vec3 &p2);

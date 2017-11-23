@@ -34,8 +34,8 @@ void HoughTransform::fillAccumulator()
                                             1);
     accumulatorWidth = 180;
     accumulator.resize(accumulatorHeight * accumulatorWidth);
-    double centerX = width / 2;
-    double centerY = height / 2;
+    float centerX = width / 2;
+    float centerY = height / 2;
 
     for (uint32 y = 0; y < height; y++)
     {
@@ -45,8 +45,8 @@ void HoughTransform::fillAccumulator()
             {
                 for (uint32 theta = 0; theta < 180; theta++)
                 {
-                    double thetaRad = Math::ToRadians(theta);
-                    double rho = (x - centerX) * cos(thetaRad) + (y - centerY) * sin(thetaRad);
+                    float thetaRad = Math::ToRadians(theta);
+                    float rho = (x - centerX) * cos(thetaRad) + (y - centerY) * sin(thetaRad);
                     accumulator[static_cast<int>(rho + accumulatorHeight / 2) * accumulatorWidth +
                                 theta].emplace_back(x, y);
                 }

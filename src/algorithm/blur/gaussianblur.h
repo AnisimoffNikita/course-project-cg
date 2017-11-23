@@ -7,18 +7,18 @@
 class GaussianBlur : public Blur
 {
 public:
-    GaussianBlur(double sigma = 1.4, uint8 kernelSize = 3);
+    GaussianBlur(float sigma = 1.4, uint8 kernelSize = 3);
     virtual ~GaussianBlur();
 
     virtual void process(Image &image);
-    double getSigma() const;
-    void setSigma(double value);
+    float getSigma() const;
+    void setSigma(float value);
 
     uint8 getKernelSize() const;
     void setKernelSize(const uint8 &value);
 
 private:
-    double sigma;
+    float sigma;
     uint8 kernelSize;
 };
 

@@ -20,7 +20,7 @@ public:
 class PerspectiveMatrix
 {
 public:
-    static Mat4 create(double fovy, double aspect, double zNear, double zFar);
+    static Mat4 create(float fovy, float aspect, float zNear, float zFar);
 };
 
 

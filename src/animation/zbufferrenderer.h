@@ -10,7 +10,7 @@
 class ZBufferRenderer : public Renderer
 {
 public:
-    ZBufferRenderer(double scale, int32 width, int32 height);
+    ZBufferRenderer(float scale, int32 width, int32 height);
     virtual ~ZBufferRenderer();
 
     virtual void setCamera(SharedCamera value) override;

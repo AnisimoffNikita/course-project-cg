@@ -1,6 +1,6 @@
 #include "renderer.h"
 
-Renderer::Renderer(double scale, int width, int height) :
+Renderer::Renderer(float scale, int width, int height) :
     scale(scale),
     width(width),
     height(height),

@@ -4,7 +4,7 @@
 
 MoveTransformation::MoveTransformation(const Vec3 &delta)
 {
-    double data[16] = {1, 0, 0, delta.x(),
+    float data[16] = {1, 0, 0, delta.x(),
                        0, 1, 0, delta.y(),
                        0, 0, 1, delta.z(),
                        0, 0, 0, 1

@@ -12,9 +12,9 @@ public:
     virtual ~CylinderSizeCalculator();
 
     virtual CylinderSize evaluate(const Lines &lines);
-    virtual void calibrate(const std::vector<Line> &lines, double distance,
-                           double radius, double height);
-    virtual void calibrate(double diag, double diagPx);
+    virtual void calibrate(const std::vector<Line> &lines, float distance,
+                           float radius, float height);
+    virtual void calibrate(float diag, float diagPx);
 
 private:
     void findEdges();
@@ -23,8 +23,8 @@ private:
     Lines lines;
     CylinderSize size;
 
-    double distance;
-    double factor;
+    float distance;
+    float factor;
 };
 
 #endif // SIZECALCULATOR_H

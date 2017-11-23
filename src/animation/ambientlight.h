@@ -6,9 +6,10 @@
 class AmbientLight : public Light
 {
 public:
-    AmbientLight(double intensity);
+    AmbientLight(float intensity);
 
-    virtual double getIntensity(const Vec3 &) const override;
+    virtual float getIntensity(const Vec3 &, const Vec3 &,
+                               const Vec3 &) const override;
 };
 
 #endif // AMBIENTLIGHT_H

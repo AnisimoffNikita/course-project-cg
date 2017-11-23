@@ -52,8 +52,8 @@ class Material
 {
 public:
     Material() = default;
-    Material(const Color &ka, const Color &kd, const Color &ks, double ns,
-             double ni, double d);
+    Material(const Color &ka, const Color &kd, const Color &ks, float ns,
+             float ni, float d);
 
     Color getKa() const;
     void setKa(const Color &value);
@@ -64,22 +64,22 @@ public:
     Color getKs() const;
     void setKs(const Color &value);
 
-    double getNs() const;
-    void setNs(double value);
+    float getNs() const;
+    void setNs(float value);
 
-    double getNi() const;
-    void setNi(double value);
+    float getNi() const;
+    void setNi(float value);
 
-    double getD() const;
-    void setD(double value);
+    float getD() const;
+    void setD(float value);
 
 private:
     Color ka;
     Color kd;
     Color ks;
-    double ns;
-    double ni;
-    double d;
+    float ns;
+    float ni;
+    float d;
 };
 
 

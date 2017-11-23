@@ -16,7 +16,7 @@ public:
     Vec2 getP2() const;
     void setP2(const Vec2 &value);
 
-    double length();
+    float length();
 
 private:
     Vec2 p1;

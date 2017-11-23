@@ -62,7 +62,7 @@ private:
 
 };
 
-using Mat4 = Matrix<4, 4, double>;
+using Mat4 = Matrix<4, 4, float>;
 
 template <int32 M, int32 N, typename T>
 Matrix<M, N, T>::Matrix()

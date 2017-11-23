@@ -32,7 +32,7 @@ void Line::setP2(const Vec2 &value)
     p2 = value;
 }
 
-double Line::length()
+float Line::length()
 {
     int32 dx = p1.getX() - p2.getX();
     int32 dy = p1.getY() - p2.getY();

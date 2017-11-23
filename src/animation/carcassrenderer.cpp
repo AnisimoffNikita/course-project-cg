@@ -4,7 +4,7 @@
 
 #include <QPainter>
 
-CarcassRenderer::CarcassRenderer(double scale, int32 width, int32 height) :
+CarcassRenderer::CarcassRenderer(float scale, int32 width, int32 height) :
     Renderer(scale, width, height)
 {
     canvas.fill(Qt::white);

@@ -22,7 +22,7 @@ public:
 
     void setGray(uint8 gray);
 
-    Color operator*(double factor);
+    Color operator*(float factor);
 
 private:
     uint8 r, g, b;

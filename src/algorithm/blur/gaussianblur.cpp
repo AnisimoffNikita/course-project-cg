@@ -3,7 +3,7 @@
 #include "src/image/imageconverter.h"
 #include "src/math/math.h"
 
-GaussianBlur::GaussianBlur(double sigma, uint8 kernelSize):
+GaussianBlur::GaussianBlur(float sigma, uint8 kernelSize):
     sigma(sigma),
     kernelSize(kernelSize)
 {
@@ -21,8 +21,8 @@ void GaussianBlur::process(Image &image)
     }
 
     Image saved(image);
-    double sum = 0;
-    double kernel[kernelSize][kernelSize];
+    float sum = 0;
+    float kernel[kernelSize][kernelSize];
 
     for (int i = 0; i < kernelSize; i++)
         for (int j = 0; j < kernelSize; j++)
@@ -41,7 +41,7 @@ void GaussianBlur::process(Image &image)
     uint32 width = image.getWidth();
     uint32 pixelPosX;
     uint32 pixelPosY;
-    double resultR, resultG, resultB;
+    float resultR, resultG, resultB;
 
     for (uint32 y = 0; y < height; y++)
     {
@@ -56,7 +56,7 @@ void GaussianBlur::process(Image &image)
                     pixelPosX = (x + j - kernelSize / 2 + width) % width;
                     pixelPosY = (y + i - kernelSize / 2 + height) % height;
                     Color color = saved.at(pixelPosY, pixelPosX);
-                    double kernelVal = kernel[i][j];
+                    float kernelVal = kernel[i][j];
                     resultR += color.getRed() * kernelVal;
                     resultG += color.getGreen() * kernelVal;
                     resultB += color.getBlue() * kernelVal;
@@ -70,12 +70,12 @@ void GaussianBlur::process(Image &image)
     }
 }
 
-double GaussianBlur::getSigma() const
+float GaussianBlur::getSigma() const
 {
     return sigma;
 }
 
-void GaussianBlur::setSigma(double value)
+void GaussianBlur::setSigma(float value)
 {
     sigma = value;
 }

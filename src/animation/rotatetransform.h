@@ -7,7 +7,7 @@
 class RotateXTransformation : public Transformation
 {
 public:
-    RotateXTransformation(double angle, const Vec3 &origin);
+    RotateXTransformation(float angle, const Vec3 &origin);
 
     virtual void transform(Vec3 &vertex) const override;
 protected:
@@ -17,7 +17,7 @@ protected:
 class RotateYTransformation : public Transformation
 {
 public:
-    RotateYTransformation(double angle, const Vec3 &origin);
+    RotateYTransformation(float angle, const Vec3 &origin);
 
     virtual void transform(Vec3 &vertex) const override;
 protected:
@@ -27,7 +27,7 @@ protected:
 class RotateZTransformation : public Transformation
 {
 public:
-    RotateZTransformation(double angle, const Vec3 &origin);
+    RotateZTransformation(float angle, const Vec3 &origin);
 
     virtual void transform(Vec3 &vertex) const override;
 protected:

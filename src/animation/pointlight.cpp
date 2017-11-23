@@ -2,30 +2,35 @@
 
 #include "cmath"
 
-PointLight::PointLight(const Vec3 &position, double intensity) :
+PointLight::PointLight(const Vec3 &position, float intensity) :
     Light(position, intensity)
 {
 }
 
 
-double PointLight::getIntensity(const Vec3 &normal) const
+float PointLight::getIntensity(const Vec3 &n, const Vec3 &p,
+                               const Vec3 &c) const
 {
-    constexpr double K = 0;
-    Vec3 light = (normal - position);
-    double cos = -light.dot(normal) / (light.length() * normal.length());
+    constexpr float K = 0;
+    Vec3 d = (p - position);
+    float cos = -d.dot(n) / (d.length() * n.length());
+    float result;
 
-    if (cos < 0)
+    if (cos > 0)
     {
-        return 0;
+        result += intensity * cos ;
     }
 
-    auto result = intensity * cos / (light.length() + K);
+    Vec3 nn = n.normalized();
+    Vec3 look = p - c;
+    Vec3 r = d - nn * (d.dot(nn)) * 2;
+    float cosa = -look.dot(r) / (look.length() * r.length());
 
-    if (std::isnan(result))
+    if (cosa > 0)
     {
-        int a;
-        a = 4;
+        result += 3 * Math::Pow(cosa, 3);
     }
 
-    return intensity * cos / (light.length() + K);
+    result  /= (d.length());
+    return result;
 }

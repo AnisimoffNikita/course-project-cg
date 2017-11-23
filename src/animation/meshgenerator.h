@@ -8,10 +8,10 @@ using namespace std;
 //class MeshGenerator
 //{
 //public:
-//    static Mesh CylinderCarcass(double radius, double height, int accuracy);
-//    static Mesh CubeCarcass(double size);
+//    static Mesh CylinderCarcass(float radius, float height, int accuracy);
+//    static Mesh CubeCarcass(float size);
 
-//    static Mesh CylinderTriangles(double radius, double height, int accuracy);
+//    static Mesh CylinderTriangles(float radius, float height, int accuracy);
 
 //private:
 //    static Vec3 getNormal(const Vec3 &v1, const Vec3 &v2, const Vec3 &v3,

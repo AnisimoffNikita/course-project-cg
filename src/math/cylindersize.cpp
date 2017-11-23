@@ -1,27 +1,27 @@
 #include "cylindersize.h"
 
-CylinderSize::CylinderSize(double height, double radius) :
+CylinderSize::CylinderSize(float height, float radius) :
     height(height),
     radius(radius)
 {
 }
 
-double CylinderSize::getRadius() const
+float CylinderSize::getRadius() const
 {
     return radius;
 }
 
-void CylinderSize::setRadius(double value)
+void CylinderSize::setRadius(float value)
 {
     radius = value;
 }
 
-double CylinderSize::getHeight() const
+float CylinderSize::getHeight() const
 {
     return height;
 }
 
-void CylinderSize::setHeight(double value)
+void CylinderSize::setHeight(float value)
 {
     height = value;
 }

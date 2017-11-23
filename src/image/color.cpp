@@ -65,9 +65,9 @@ void Color::setGray(uint8 gray)
     r = g = b = gray;
 }
 
-Color Color::operator*(double factor)
+Color Color::operator*(float factor)
 {
-    return Color(Math::Clamp(r * factor, 0.0, 255.0),
-                 Math::Clamp(g * factor, 0.0, 255.0),
-                 Math::Clamp(b * factor, 0.0, 255.0));
+    return Color(Math::Clamp(r * factor, 0.0f, 255.0f),
+                 Math::Clamp(g * factor, 0.0f, 255.0f),
+                 Math::Clamp(b * factor, 0.0f, 255.0f));
 }
