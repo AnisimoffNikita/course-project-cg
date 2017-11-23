@@ -14,10 +14,10 @@ public:
     void init();
 
     int get(int x, int y);
-    void set(int x, int y, int value);
+    void set(int x, int y, float value);
 
 private:
-    vector<vector<int>> buffer;
+    vector<float> buffer;
     int width, height;
 };
 

@@ -6,16 +6,17 @@
 #include <omp.h>
 #include <QPainter>
 
-LightZBufferRenderer::LightZBufferRenderer(float scale, int32 width,
-        int32 height) :
+LightZBufferRenderer::LightZBufferRenderer(float scale, int width,
+        int height) :
     Renderer(scale, width, height)
 {
-    canvas.fill(Qt::lightGray);
-    buffer.setSize(width, height);
+    zbuffer.setSize(width, height);
+    buffer = new uchar[width * height * 4];
 }
 
 LightZBufferRenderer::~LightZBufferRenderer()
 {
+    delete buffer;
 }
 
 
@@ -67,21 +68,20 @@ void LightZBufferRenderer::setCamera(SharedCamera value)
     camera = value;
 }
 
-QImage LightZBufferRenderer::getRendered()
+uchar *LightZBufferRenderer::getRendered()
 {
-    auto toReturn = canvas;
-    canvas.fill(Qt::lightGray);
+    zbuffer.init();
     lights.clear();
-    buffer.init();
-    return toReturn;
+    return buffer;
 }
 
 void LightZBufferRenderer::putPixel(int x, int y, const Color &color)
 {
     if (x >= 0 && x < width && y >= 0 && y < height)
     {
-        QColor qcolor(color.getRed(), color.getGreen(), color.getBlue());
-        canvas.setPixelColor(x, y , qcolor);
+        buffer[4 * (y * width + x)] = color.getRed();
+        buffer[4 * (y * width + x) + 1] = color.getGreen();
+        buffer[4 * (y * width + x) + 2] = color.getBlue();
     }
 }
 
@@ -180,6 +180,26 @@ float LightZBufferRenderer::calculateIntensity(const Vec3 &n, const Vec3 &orig)
     return result;
 }
 
+Vec3 toBarycenteric(const Vec3 &p, const Vec3 &a, const Vec3 &b, const Vec3 &c)
+{
+    Vec3 v0 = b - a, v1 = c - a, v2 = p - a;
+    float d00 = v0.dot(v0);
+    float d01 = v0.dot(v1);
+    float d11 = v1.dot(v1);
+    float d20 = v2.dot(v0);
+    float d21 = v2.dot(v1);
+    float denom = d00 * d11 - d01 * d01;
+    float v = (d11 * d20 - d01 * d21) / denom;
+    float w = (d00 * d21 - d01 * d20) / denom;
+    float u = 1.0f - v - w;
+    return Vec3(u, v, w);
+}
+Vec3 toCartesian(const Vec3 &barycentric, const Vec3 &a, const Vec3 &b,
+                 const Vec3 &c)
+{
+    return a * barycentric.x() + b * barycentric.y() + c * barycentric.z();
+}
+
 void LightZBufferRenderer::fillTriangle(Triangle &triangle)
 {
     std::vector<int> lleft, lright;
@@ -205,12 +225,23 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     Vec3 ov1 = currentMesh.getVertices()[triangle.getV1()].getV();
     Vec3 ov2 = currentMesh.getVertices()[triangle.getV2()].getV();
     Vec3 ov3 = currentMesh.getVertices()[triangle.getV3()].getV();
-    Vec3 ol12 = ov2 - ov1;
-    Vec3 ol23 = ov3 - ov2;
-    Vec3 ol13 = ov3 - ov1;
     int miny = wv1.getV().y();
     int maxy = wv3.getV().y();
-    float l = maxy - miny + 1;
+
+    for (int y = miny, i = 0; y <= maxy; y++, i++)
+    {
+        z = -(a * lleft[i] + b * y + d) / c;
+
+        for (int x = lleft[i], j = 0; x <= lright[i]; x++, j++)
+        {
+            z -= a / c;
+
+            if (z > zbuffer.get(x, y))
+            {
+                zbuffer.set(x, y, z);
+            }
+        }
+    }
 
     for (int y = miny, i = 0; y <= maxy; y++, i++)
     {
@@ -222,9 +253,8 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
         {
             z -= a / c;
 
-            if (z > buffer.get(x, y))
+            if (z >= zbuffer.get(x, y))
             {
-                buffer.set(x, y, z);
                 Vec3 n;
                 float part = (j / (s - 1));
 
@@ -237,36 +267,8 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
                     n = n1;
                 }
 
-                Vec3 orig;
-                {
-                    Vec3 o1 = ov1 + ol13 * ((y - miny) / l);
-                    Vec3 o2;
-
-                    if (y < wv2.getV().y())
-                    {
-                        o2 = ov1 + ol12 * ((y - miny) / (wv2.getV().y() - miny));
-                    }
-                    else
-                    {
-                        o2 = ov2 + ol23 * ((y - wv2.getV().y()) / (maxy - wv2.getV().y()));
-                    }
-
-                    if (s < 1.5)
-                    {
-                        orig = o1;
-                    }
-                    else
-                    {
-                        if (swapped)
-                        {
-                            orig = o1 + (o2 - o1) * part;
-                        }
-                        else
-                        {
-                            orig = o2 + (o1 - o2) * part;
-                        }
-                    }
-                }
+                Vec3 orig = toCartesian(toBarycenteric(Vec3(x, y, z), wv1.getV(), wv2.getV(),
+                                                       wv3.getV()), ov1, ov2, ov3);
                 float intensity = calculateIntensity(n, orig);
                 putPixel(x, y, color * intensity);
             }
@@ -349,4 +351,27 @@ void LightZBufferRenderer::triangleSort(const std::vector<Vertex> &vertices,
     triangle.setV1(i1);
     triangle.setV2(i2);
     triangle.setV3(i3);
+}
+
+
+void LightZBufferRenderer::start(float scale, int width, int height)
+{
+    this->width = width;
+    this->height = height;
+    zbuffer.setSize(width, height);
+    zbuffer.init();
+    this->scale = scale;
+    delete buffer;
+    buffer = new uchar[width * height * 4];
+
+    for (int i = 0; i < width * height; i++)
+    {
+        buffer[4 * i] = 33;
+        buffer[4 * i + 1] = 33;
+        buffer[4 * i + 2] = 33;
+    }
+}
+
+void LightZBufferRenderer::finish()
+{
 }

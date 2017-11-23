@@ -10,30 +10,24 @@ void ZBuffer::setSize(int w, int h)
 {
     width = w;
     height = h;
-    buffer.resize(height);
-
-    for (int i = 0; i < height; i++)
-    {
-        buffer[i].resize(width);
-    }
+    buffer.resize(height * width);
 }
 
 void ZBuffer::init()
 {
-    int min = numeric_limits<int>::min();
+    int min = -100000;
 
-    for (int i = 0; i < height; i++)
-        for (int j = 0; j < width; j++)
-        {
-            buffer[i][j] = min;
-        }
+    for (int i = 0; i < height * width; i++)
+    {
+        buffer[i] = min;
+    }
 }
 
 int ZBuffer::get(int x, int y)
 {
     if (x >= 0 && x < width && y >= 0 && y < height)
     {
-        return buffer[y][x];
+        return buffer[y * width + x];
     }
     else
     {
@@ -41,10 +35,10 @@ int ZBuffer::get(int x, int y)
     }
 }
 
-void ZBuffer::set(int x, int y, int value)
+void ZBuffer::set(int x, int y, float value)
 {
     if (x >= 0 && x < width && y >= 0 && y < height)
     {
-        buffer[y][x] = value;
+        buffer[y * width + x] = value;
     }
 }

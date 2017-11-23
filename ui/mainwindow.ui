@@ -490,7 +490,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0">
-         <widget class="ModelView" name="modelView" native="true"/>
+         <widget class="ModelView2" name="modelView" native="true"/>
         </item>
        </layout>
       </widget>
@@ -546,9 +546,9 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>ModelView</class>
+   <class>ModelView2</class>
    <extends>QWidget</extends>
-   <header>src/widgets/modelview.h</header>
+   <header>src/widgets/modelview2.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

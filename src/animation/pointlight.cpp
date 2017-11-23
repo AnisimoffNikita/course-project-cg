@@ -11,10 +11,9 @@ PointLight::PointLight(const Vec3 &position, float intensity) :
 float PointLight::getIntensity(const Vec3 &n, const Vec3 &p,
                                const Vec3 &c) const
 {
-    constexpr float K = 0;
     Vec3 d = (p - position);
     float cos = -d.dot(n) / (d.length() * n.length());
-    float result;
+    float result = 0;
 
     if (cos > 0)
     {
@@ -28,7 +27,7 @@ float PointLight::getIntensity(const Vec3 &n, const Vec3 &p,
 
     if (cosa > 0)
     {
-        result += 3 * Math::Pow(cosa, 3);
+        result += 3 * Math::Pow(cosa, 5);
     }
 
     result  /= (d.length());

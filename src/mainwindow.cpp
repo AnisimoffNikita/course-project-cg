@@ -11,7 +11,6 @@
 #include "src/image/imageconverter.h"
 #include "src/animation/meshgenerator.h"
 #include "src/animation/sceneobjectfactory.h"
-#include "src/animation/carcassrenderer.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

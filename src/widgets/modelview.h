@@ -8,8 +8,10 @@
 #include <QResizeEvent>
 #include <QMouseEvent>
 #include <QPixmap>
+#include <QTimer>
 
 #include <memory>
+
 #include "src/animation/scene.h"
 #include "src/animation/renderer.h"
 
@@ -28,11 +30,13 @@ protected:
 
 private:
     void updateCanvas();
+    void scheduler();
 
     QGraphicsScene *graphicsScene;
     QPixmap canvas;
 
     QPoint lastPos;
+    QTimer *timer;
 
     std::unique_ptr<Scene> scene;
     std::unique_ptr<Renderer> renderer;

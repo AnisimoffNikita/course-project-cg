@@ -9,15 +9,18 @@
 class LightZBufferRenderer : public Renderer
 {
 public:
-    LightZBufferRenderer(float scale, int32 width, int32 height);
+    LightZBufferRenderer() = default;
+    LightZBufferRenderer(float scale, int width, int height);
     virtual ~LightZBufferRenderer();
 
     virtual void setCamera(SharedCamera value) override;
     virtual void addLight(SharedLight) override;
 
+    virtual void start(float scale, int width, int height) override;
     virtual void renderMesh(const Mesh &mesh) override;
 
-    virtual QImage getRendered() override;
+    virtual uchar *getRendered() override;
+    virtual void finish() override;
 
 protected:
     void fillTriangle(Triangle &triangle);
@@ -32,12 +35,16 @@ protected:
     std::vector<Vec3> getNormals(const std::vector<int> &l, const Vec3 &n1,
                                  const Vec3 &n2);
 
-    ZBuffer buffer;
+    ZBuffer zbuffer;
+    uchar *buffer;
     SharedCamera camera;
     std::vector<SharedLight> lights;
 
     Mesh currentMesh;
     std::vector<Vertex> projected;
+
+    // Renderer interface
+public:
 };
 
 
