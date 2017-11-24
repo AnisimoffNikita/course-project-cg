@@ -6,7 +6,7 @@ SceneObject::SceneObject(const Vec3 &position):
 {
 }
 
-Vec3 SceneObject::getPosition() const
+const Vec3 &SceneObject::getPosition()
 {
     return position;
 }

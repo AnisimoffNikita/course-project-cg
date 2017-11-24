@@ -17,7 +17,7 @@ public:
     virtual ~SceneObject() = default;
 
 
-    virtual Vec3 getPosition() const;
+    virtual const Vec3 &getPosition();
     virtual void setPosition(const Vec3 &value);
 
     virtual void draw(std::unique_ptr<Renderer> &render) = 0;

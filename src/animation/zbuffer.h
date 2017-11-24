@@ -13,7 +13,7 @@ public:
     void setSize(int w, int h);
     void init();
 
-    int get(int x, int y);
+    float get(int x, int y);
     void set(int x, int y, float value);
 
 private:

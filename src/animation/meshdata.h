@@ -14,10 +14,10 @@ public:
     Vertex() = default;
     Vertex(const Vec3 v, const Vec3 n);
 
-    Vec3 getV() const;
+    const Vec3 &getV() const;
     void setV(const Vec3 &value);
 
-    Vec3 getN() const;
+    const Vec3 &getN();
     void setN(const Vec3 &value);
 
     void transform(const Transformation &transformation);

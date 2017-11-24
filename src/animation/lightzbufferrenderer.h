@@ -35,15 +35,11 @@ protected:
     std::vector<Vec3> getNormals(const std::vector<int> &l, const Vec3 &n1,
                                  const Vec3 &n2);
 
-    void fillPointShadow(const Camera &camera, shared_ptr<Light> light);
-
     ZBuffer zbuffer;
     uchar *buffer;
     SharedCamera camera;
 
     vector<SharedLight> lights;
-    vector<ZBuffer> shadowBuffer;
-    vector<SharedCamera> lightCameras;
 
     vector<shared_ptr<Mesh>> meshes;
     shared_ptr<Mesh> currentMesh;

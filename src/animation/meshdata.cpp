@@ -6,7 +6,7 @@ Vertex::Vertex(const Vec3 v, const Vec3 n)
 {
 }
 
-Vec3 Vertex::getV() const
+const Vec3 &Vertex::getV() const
 {
     return v;
 }
@@ -16,7 +16,7 @@ void Vertex::setV(const Vec3 &value)
     v = value;
 }
 
-Vec3 Vertex::getN() const
+const Vec3 &Vertex::getN()
 {
     return n;
 }

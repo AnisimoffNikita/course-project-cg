@@ -17,9 +17,9 @@ ModelView2::ModelView2(QWidget *parent)
 {
     sceneSetup();
     timer = new QTimer(this);
+    timer->setInterval(1000 / 60.0);
     connect(timer, &QTimer::timeout, this,  &ModelView2::scheduler);
     timer->start();
-    time.start();
 }
 
 void ModelView2::mousePressEvent(QMouseEvent *event)
@@ -70,7 +70,7 @@ void ModelView2::updateCanvas()
 void ModelView2::scheduler()
 {
     int w = width(), h = height();
-    renderer->start(150, w, h);
+    renderer->start(100, w, h);
     scene->render(renderer);
     renderer->finish();
     uchar *buffer = renderer->getRendered();
@@ -81,8 +81,8 @@ void ModelView2::scheduler()
 void ModelView2::sceneSetup()
 {
     CameraFactory::PerspectiveData data;
-    data.fovX = Math::ToRadians(80);
-    data.fovY = Math::ToRadians(80);
+    data.fovX = Math::ToRadians(90);
+    data.fovY = Math::ToRadians(90);
     data.near = 0.1;
     data.far = 100;
     CameraFactory cameraFactory(Vec3(10, 10, 10), Vec3(0, 0, 0), Vec3(0, 1, 0),
@@ -91,23 +91,32 @@ void ModelView2::sceneSetup()
     scene->add(camera);
     scene->setActiveCamera(camera);
     {
-        ObjLoader loader("/home/nikita/q.obj");
+        ObjLoader loader("/home/nikita/ostl.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
     {
-        ObjLoader loader("/home/nikita/q.obj");
+        ObjLoader loader("/home/nikita/polotno.obj");
         Mesh mesh = loader.load();
-        ModelFactory modelFactory(Vec3(-6, -6, -6), mesh);
+        ModelFactory modelFactory(Vec3(0, 0.03, 0.03), mesh);
+        ScaleTransformation scale(Vec3(0.3, 0.3, 0.3), Vec3(0, 0, 0));
         auto model = modelFactory.create();
-        ScaleTransformation scale(Vec3(2, 2, 2), Vec3(-3, -3, -3));
-        model->transform(scale);
         scene->add(model);
     }
+    //    {
+    //        ObjLoader loader("/home/nikita/q.obj");
+    //        Mesh mesh = loader.load();
+    //        ModelFactory modelFactory(Vec3(-6, -6, -6), mesh);
+    //        auto model = modelFactory.create();
+    //        ScaleTransformation scale(Vec3(2, 2, 2), Vec3(-3, -3, -3));
+    //        model->transform(scale);
+    //        scene->add(model);
+    //    }
     AmbientLightFactory ambientFactory(0.4);
     auto ambient = ambientFactory.create();
+    scene->add(ambient);
     scene->add(ambient);
     {
         PointLightFactory pointFactory(Vec3(8, 8, 8), 2);
@@ -115,7 +124,7 @@ void ModelView2::sceneSetup()
         scene->add(point);
     }
     //    {
-    //        PointLightFactory pointFactory(Vec3(-3, 3, 3), 1);
+    //        PointLightFactory pointFactory(Vec3(-2, 1, 0.3), 1);
     //        auto point = pointFactory.create();
     //        scene->add(point);
     //    }

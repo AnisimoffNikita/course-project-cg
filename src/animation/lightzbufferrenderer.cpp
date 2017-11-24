@@ -11,12 +11,6 @@ LightZBufferRenderer::LightZBufferRenderer(float scale, int width,
     Renderer(scale, width, height)
 {
     zbuffer.setSize(width, height);
-
-    for (auto &b : shadowBuffer)
-    {
-        b.setSize(width, height);
-    }
-
     buffer = new uchar[width * height * 4];
 }
 
@@ -35,17 +29,6 @@ void LightZBufferRenderer::renderMesh(shared_ptr<Mesh> mesh)
 void LightZBufferRenderer::addLight(SharedLight value)
 {
     lights.push_back(value);
-
-    if (value->isPoint())
-    {
-        auto lightCamera = make_shared<Camera>(*camera);
-        lightCamera->setPosition(value->getPosition());
-        lightCameras.push_back(lightCamera);
-    }
-    else
-    {
-        lightCameras.push_back(nullptr);
-    }
 }
 
 void LightZBufferRenderer::setCamera(SharedCamera value)
@@ -73,8 +56,8 @@ std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vec3 &p1,
         const Vec3 &p2)
 {
     std::vector<int> result;
-    int32 x1 = p1.x(), y1 = p1.y();
-    int32 x2 = p2.x(), y2 = p2.y();
+    int32 x1 = round(p1.x()), y1 = round(p1.y());
+    int32 x2 = round(p2.x()), y2 = round(p2.y());
 
     if (x1 == x2 && y1 == y2)
     {
@@ -98,7 +81,7 @@ std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vec3 &p1,
 
     if (flag)
     {
-        for (int32 i = 0; i < dx; i++)
+        for (int32 i = 0; i <= dx; i++)
         {
             result.push_back(x);
 
@@ -113,7 +96,12 @@ std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vec3 &p1,
     }
     else
     {
-        for (int32 i = 0; i < dx; i++)
+        if (f <= 0)
+        {
+            result.push_back(x);
+        }
+
+        for (int32 i = 0; i <= dx; i++)
         {
             if (f > 0)
             {
@@ -126,7 +114,6 @@ std::vector<int> LightZBufferRenderer::getBrezenhemY(const Vec3 &p1,
         }
     }
 
-    result.push_back(x);
     return result;
 }
 
@@ -151,10 +138,6 @@ std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<int> &l,
     return result;
 }
 
-void LightZBufferRenderer::fillPointShadow(const Camera &camera,
-        shared_ptr<Light> light)
-{
-}
 
 float LightZBufferRenderer::calculateIntensity(const Vec3 &n, const Vec3 &orig)
 {
@@ -213,23 +196,8 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     Vec3 ov1 = currentMesh->getVertices()[triangle.getV1()].getV();
     Vec3 ov2 = currentMesh->getVertices()[triangle.getV2()].getV();
     Vec3 ov3 = currentMesh->getVertices()[triangle.getV3()].getV();
-    int miny = wv1.getV().y();
-    int maxy = wv3.getV().y();
-
-    for (int y = miny, i = 0; y <= maxy; y++, i++)
-    {
-        z = -(a * lleft[i] + b * y + d) / c;
-
-        for (int x = lleft[i], j = 0; x <= lright[i]; x++, j++)
-        {
-            z -= a / c;
-
-            if (z > zbuffer.get(x, y))
-            {
-                zbuffer.set(x, y, z);
-            }
-        }
-    }
+    int miny = round(wv1.getV().y());
+    int maxy = round(wv3.getV().y());
 
     for (int y = miny, i = 0; y <= maxy; y++, i++)
     {
@@ -239,10 +207,13 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
 
         for (int x = lleft[i], j = 0; x <= lright[i]; x++, j++)
         {
-            z -= a / c;
+            //z -= a / c;
+            z = -(a * x + b * y + d) / c;
+            auto old = zbuffer.get(x, y);
 
-            if (z >= zbuffer.get(x, y))
+            if (z > zbuffer.get(x, y))
             {
+                zbuffer.set(x, y, z);
                 Vec3 n;
                 float part = (j / (s - 1));
 
@@ -291,6 +262,14 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
     n1.insert(n1.end(), n2.begin(), n2.end());
     int length = l3.size();
     int m = length / 2;
+
+    if (l1.size() != l3.size())
+    {
+        std::vector<int> q1 = getBrezenhemY(wv1.getV(), wv2.getV());
+        std::vector<int> q2 = getBrezenhemY(wv2.getV(), wv3.getV());
+        std::vector<int> q3 = getBrezenhemY(wv1.getV(), wv3.getV());
+        Q_ASSERT(false);
+    }
 
     if (l1[m] < l3[m])
     {
@@ -349,6 +328,7 @@ void LightZBufferRenderer::start(float scale, int width, int height)
     zbuffer.setSize(width, height);
     zbuffer.init();
     this->scale = scale;
+    delete buffer;
     buffer = new uchar[width * height * 4];
 
     for (int i = 0; i < width * height; i++)
@@ -361,20 +341,6 @@ void LightZBufferRenderer::start(float scale, int width, int height)
 
 void LightZBufferRenderer::finish()
 {
-    for (auto &light : lights)
-    {
-        if (light->isPoint())
-        {
-            Camera sameCamera = *camera;
-            sameCamera.setPosition(light->getPosition());
-            fillPointShadow(sameCamera, light);
-        }
-        else
-        {
-            shadowBuffer.push_back(ZBuffer());
-        }
-    }
-
     for (auto &mesh : meshes)
     {
         currentMesh = mesh;

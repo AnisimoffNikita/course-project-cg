@@ -23,22 +23,22 @@ void ZBuffer::init()
     }
 }
 
-int ZBuffer::get(int x, int y)
+float ZBuffer::get(int x, int y)
 {
-    if (x >= 0 && x < width && y >= 0 && y < height)
-    {
-        return buffer[y * width + x];
-    }
-    else
-    {
-        return numeric_limits<int>::min();
-    }
+    //    if (x >= 0 && x < width && y >= 0 && y < height)
+    //    {
+    return buffer[y * width + x];
+    //    }
+    //    else
+    //    {
+    //        return numeric_limits<int>::min();
+    //    }
 }
 
 void ZBuffer::set(int x, int y, float value)
 {
-    if (x >= 0 && x < width && y >= 0 && y < height)
-    {
-        buffer[y * width + x] = value;
-    }
+    //    if (x >= 0 && x < width && y >= 0 && y < height)
+    //    {
+    buffer[y * width + x] = value;
+    //    }
 }
