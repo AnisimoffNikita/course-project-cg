@@ -31,6 +31,7 @@ public:
     static double Atan(double value);
     static double Abs(double value);
     static double Pow(double x, double y);
+    static double Ctg(double x);
 
     static double Bisection(double a, double b, const Func &f, double eps = 1e-6);
 };

@@ -70,7 +70,7 @@ void ModelView2::updateCanvas()
 void ModelView2::scheduler()
 {
     int w = width(), h = height();
-    renderer->start(500, w, h);
+    renderer->start(100, w, h);
     scene->render(renderer);
     renderer->finish();
     uchar *buffer = renderer->getRendered();
@@ -81,26 +81,27 @@ void ModelView2::scheduler()
 void ModelView2::sceneSetup()
 {
     CameraFactory::PerspectiveData data;
-    data.fovX = Math::ToRadians(90);
-    data.fovY = Math::ToRadians(90);
-    data.near = 0.1;
-    data.far = 10;
-    CameraFactory cameraFactory(Vec3(10, 10, 10), Vec3(0, 0, 0), Vec3(0, 1, 0),
+    data.fovX = Math::ToRadians(60);
+    data.fovY = Math::ToRadians(60);
+    data.near = 2;
+    data.far = 6;
+    CameraFactory cameraFactory(Vec3(5, 5, 5), Vec3(0, 0, 0), Vec3(0, -1, 0),
                                 data);
     auto camera = cameraFactory.create();
     scene->add(camera);
     scene->setActiveCamera(camera);
     {
-        ObjLoader loader("/home/nikita/ostl.obj");
+        ObjLoader loader("/home/nikita/1.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
     {
-        ObjLoader loader("/home/nikita/polotno.obj");
+        ObjLoader loader("/home/nikita/2.obj");
         Mesh mesh = loader.load();
-        ModelFactory modelFactory(Vec3(0, 0.03, 0.03), mesh);
+        //ModelFactory modelFactory(Vec3(0, 0.03, 0.03), mesh);
+        ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         ScaleTransformation scale(Vec3(0.3, 0.3, 0.3), Vec3(0, 0, 0));
         auto model = modelFactory.create();
         //model->transform(scale);

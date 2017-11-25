@@ -199,43 +199,43 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     const Vertex &wv1 = projected[triangle.getV1()],
                   &wv2 = projected[triangle.getV2()],
                    &wv3 = projected[triangle.getV3()];
-    Vec3 u = wv2.getV() - wv1.getV();
-    Vec3 v = wv3.getV() - wv1.getV();
-    Vec3 n = u.cross(v);
-    float a = n.x(), b = n.y(), c = n.z();
-    float d = - (a * wv1.getV().x() + b * wv1.getV().y() + c * wv1.getV().z());
-
-    if (c == 0)
-    {
-        return;
-    }
-
     auto color = currentMesh->getMaterial().getKd();
-    float z;
     Vec3 ov1 = currentMesh->getVertices()[triangle.getV1()].getV();
     Vec3 ov2 = currentMesh->getVertices()[triangle.getV2()].getV();
     Vec3 ov3 = currentMesh->getVertices()[triangle.getV3()].getV();
     int miny = round(wv1.getV().y());
     int maxy = round(wv3.getV().y());
 
+    if (miny == maxy)
+    {
+        return;
+    }
+
     for (int y = miny, i = 0; y <= maxy; y++, i++)
     {
         Vec3 n1 = nleft[i], n2 = nright[i];
         float s = lright[i] - lleft[i] + 1;
-        //z = -(a * lleft[i] + b * y + d) / c;
         float z1 = zleft[i], z2 = zright[i];
         float dz = (z2 - z1) / (lright[i] - lleft[i]);
         float z = z1;
 
         for (int x = lleft[i], j = 0; x <= lright[i]; x++, j++)
         {
-            //z -= a / c;
-            //z = -(a * x + b * y + d) / c;
-            float old = zbuffer.get(x, y);
-
-            if (z > zbuffer.get(x, y))
+            if (x < 0 || x >= width || y < 0 || y >= height)
             {
-                zbuffer.set(x, y, z);
+                continue;
+            }
+
+            float old = zbuffer.get(x, y);
+            float zFar = 6;
+            float zNear = 2;
+            float a = (zFar + zNear) / (zFar - zNear);
+            float b = -(2 * zFar * zNear) / (zFar - zNear);
+            uint z_buffer_value = (1 << 24) * (a + b / z);
+
+            if (z_buffer_value < zbuffer.get(x, y))
+            {
+                zbuffer.set(x, y, z_buffer_value);
                 Vec3 n;
                 float part = (j / (s - 1));
 
@@ -368,8 +368,13 @@ void LightZBufferRenderer::start(float scale, int width, int height)
 void LightZBufferRenderer::finish()
 {
     CommonTransformation perspective(camera->getPVMatrix());
+    CommonTransformation pt(camera->getPMatrix());
+    CommonTransformation vt(camera->getVMatrix());
     Vec3 center(width / 2, height / 2, 0);
     auto eye = Vec3(0, 0, -1);
+    float scalex = 2.0 / width;
+    float scaley = 2.0 / height;
+    scale = scalex > scaley ? scaley : scalex;
 
     for (auto &mesh : meshes)
     {
@@ -378,30 +383,34 @@ void LightZBufferRenderer::finish()
 
         for (auto &v : projected)
         {
-            v.transform(perspective);
-            v.setV(v.getV()*scale + center);
+            Vec3 test = v.getV();
+            vt.transform(test);
+            pt.transform(test);
+            //            v.transform(perspective);
+            test.setX(test.x() / scale);
+            test.setY(test.y() / scale);
+            v.setV(test);
+            v.setV(v.getV() + center);
         }
 
         auto &triangles = currentMesh->getTriangles();
 
         for (auto &triangle : triangles)
         {
-            auto v1 = projected[triangle.getV1()].getV();
-            auto v2 = projected[triangle.getV2()].getV();
-            auto v3 = projected[triangle.getV3()].getV();
-            Vec3 u = v2 - v1;
-            Vec3 v = v3 - v1;
-            Vec3 n = u.cross(v);
-
-            if (n.dot(projected[triangle.getV1()].getN()) > 0)
-            {
-                n = -n;
-            }
-
-            if (n.dot(eye) > 0)
-            {
-                fillTriangle(triangle);
-            }
+            //            auto v1 = projected[triangle.getV1()].getV();
+            //            auto v2 = projected[triangle.getV2()].getV();
+            //            auto v3 = projected[triangle.getV3()].getV();
+            //            Vec3 u = v2 - v1;
+            //            Vec3 v = v3 - v1;
+            //            Vec3 n = u.cross(v);
+            //            if (n.dot(projected[triangle.getV1()].getN()) > 0)
+            //            {
+            //                n = -n;
+            //            }
+            //            if (n.dot(eye) > 0)
+            //            {
+            fillTriangle(triangle);
+            //            }
         }
     }
 

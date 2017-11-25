@@ -15,7 +15,7 @@ void ZBuffer::setSize(int w, int h)
 
 void ZBuffer::init()
 {
-    int min = -100000;
+    unsigned min = ~0;
 
     for (int i = 0; i < height * width; i++)
     {
@@ -23,7 +23,7 @@ void ZBuffer::init()
     }
 }
 
-float ZBuffer::get(int x, int y)
+unsigned ZBuffer::get(int x, int y)
 {
     //    if (x >= 0 && x < width && y >= 0 && y < height)
     //    {
@@ -35,7 +35,7 @@ float ZBuffer::get(int x, int y)
     //    }
 }
 
-void ZBuffer::set(int x, int y, float value)
+void ZBuffer::set(int x, int y, unsigned value)
 {
     //    if (x >= 0 && x < width && y >= 0 && y < height)
     //    {
