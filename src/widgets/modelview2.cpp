@@ -70,7 +70,7 @@ void ModelView2::updateCanvas()
 void ModelView2::scheduler()
 {
     int w = width(), h = height();
-    renderer->start(100, w, h);
+    renderer->start(500, w, h);
     scene->render(renderer);
     renderer->finish();
     uchar *buffer = renderer->getRendered();
@@ -84,7 +84,7 @@ void ModelView2::sceneSetup()
     data.fovX = Math::ToRadians(90);
     data.fovY = Math::ToRadians(90);
     data.near = 0.1;
-    data.far = 100;
+    data.far = 10;
     CameraFactory cameraFactory(Vec3(10, 10, 10), Vec3(0, 0, 0), Vec3(0, 1, 0),
                                 data);
     auto camera = cameraFactory.create();
@@ -103,6 +103,7 @@ void ModelView2::sceneSetup()
         ModelFactory modelFactory(Vec3(0, 0.03, 0.03), mesh);
         ScaleTransformation scale(Vec3(0.3, 0.3, 0.3), Vec3(0, 0, 0));
         auto model = modelFactory.create();
+        //model->transform(scale);
         scene->add(model);
     }
     //    {

@@ -20,6 +20,8 @@ public:
     virtual void setLookAt(const Vec3 &target);
     virtual Vec3 getEyeVector();
     virtual Mat4 getPVMatrix();
+    virtual const Mat4 &getPMatrix() const;
+    virtual const Mat4 &getVMatrix() const;
 
 protected:
     void updateViewMatrix();

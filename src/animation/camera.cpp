@@ -51,6 +51,16 @@ Mat4 Camera::getPVMatrix()
     return projectionMatrix * viewMatrix;
 }
 
+const Mat4 &Camera::getPMatrix() const
+{
+    return projectionMatrix;
+}
+
+const Mat4 &Camera::getVMatrix() const
+{
+    return viewMatrix;
+}
+
 void Camera::updateViewMatrix()
 {
     viewMatrix = ViewMatrix::create(position, lookAt, up);

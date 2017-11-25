@@ -25,15 +25,18 @@ public:
 protected:
     void fillTriangle(Triangle &triangle);
     void getLeftRightBounds(std::vector<int> &lleft, std::vector<int> &lright,
-                            std::vector<Vec3> &nleft, std::vector<Vec3> &nright, Triangle &triangle,
+                            std::vector<Vec3> &nleft, std::vector<Vec3> &nright, std::vector<float> &zleft,
+                            std::vector<float> &zright,
+                            Triangle &triangle,
                             bool &swapped);
     void triangleSort(const std::vector<Vertex> &vertices, Triangle &triangle);
     float calculateIntensity(const Vec3 &n, const Vec3 &orig);
 
     void putPixel(int x, int y, const Color &color);
-    std::vector<int> getBrezenhemY(const Vec3 &p1, const Vec3 &p2);
+    std::vector<int> getBrezenhemX(const Vec3 &p1, const Vec3 &p2);
     std::vector<Vec3> getNormals(const std::vector<int> &l, const Vec3 &n1,
                                  const Vec3 &n2);
+    std::vector<float> getZLine(const Vec3 &p1, const Vec3 &p2, int n);
 
     ZBuffer zbuffer;
     uchar *buffer;

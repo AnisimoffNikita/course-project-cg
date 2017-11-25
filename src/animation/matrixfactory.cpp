@@ -33,10 +33,10 @@ Mat4 PerspectiveMatrix::create(float fovx, float fovy, float zNear,
                     0, 0, -(zFar + zNear) / (zFar - zNear), -1,
                     0, 0, -(2 * zFar * zNear) / (zFar - zNear), 0
                    };
-    //    float data[] = {1, 0, 0, 0,
-    //                    0, 1, 0, 0,
-    //                    0, 0, 1, -20,
-    //                    0, 0, 20, 1
+    //    float data[] = {Math::Atan(fovx / 2), 0, 0, 0,
+    //                    0, Math::Atan(fovy / 2), 0, 0,
+    //                    0, 0, -1, -1,
+    //                    0, 0, -2 * zNear, 0
     //                   };
     return Mat4(data);
 }
