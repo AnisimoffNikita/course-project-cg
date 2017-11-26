@@ -52,72 +52,26 @@ void LightZBufferRenderer::putPixel(int x, int y, const Color &color)
 }
 
 
-std::vector<int> LightZBufferRenderer::getBrezenhemX(const Vec3 &p1,
+std::vector<float> LightZBufferRenderer::getBrezenhemX(const Vec3 &p1,
         const Vec3 &p2)
 {
-    std::vector<int> result;
-    int32 x1 = round(p1.x()), y1 = round(p1.y());
-    int32 x2 = round(p2.x()), y2 = round(p2.y());
+    float x1 = p1.x();
+    float x2 = p2.x();
+    int n = abs(static_cast<int>(p1.y() + 0.5) - static_cast<int>
+                (p2.y() + 0.5)) + 1;
+    std::vector<float> result(n);
+    float dx = (x2 - x1) / (n - 1);
+    result[0] = x1;
 
-    if (x1 == x2 && y1 == y2)
+    for (int i = 1; i < n; i++)
     {
-        result.push_back(x1);
-        return result;
-    }
-
-    int32 dx = x2 - x1, dy = y2 - y1;
-    int32 sx = Math::sgn(dx);
-    dx = abs(dx);
-    dy = abs(dy);
-    bool flag = dy > dx;
-
-    if (flag)
-    {
-        std::swap(dx, dy);
-    }
-
-    int32 f = (dy << 1) - dx;
-    int32 x = x1;
-
-    if (flag)
-    {
-        for (int32 i = 0; i <= dx; i++)
-        {
-            result.push_back(x);
-
-            if (f > 0)
-            {
-                x += sx;
-                f -= dx * 2;
-            }
-
-            f += dy * 2;
-        }
-    }
-    else
-    {
-        if (f <= 0)
-        {
-            result.push_back(x);
-        }
-
-        for (int32 i = 0; i <= dx; i++)
-        {
-            if (f > 0)
-            {
-                result.push_back(x);
-                f -= dx * 2;
-            }
-
-            x += sx;
-            f += dy * 2;
-        }
+        result[i] = result[i - 1] + dx;
     }
 
     return result;
 }
 
-std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<int> &l,
+std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<float> &l,
         const Vec3 &n1, const Vec3 &n2)
 {
     std::vector<Vec3> result;
@@ -190,7 +144,7 @@ Vec3 toCartesian(const Vec3 &barycentric, const Vec3 &a, const Vec3 &b,
 
 void LightZBufferRenderer::fillTriangle(Triangle &triangle)
 {
-    std::vector<int> lleft, lright;
+    std::vector<float> lleft, lright;
     std::vector<float> zleft, zright;
     std::vector<Vec3> nleft, nright;
     bool swapped;
@@ -214,25 +168,28 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     for (int y = miny, i = 0; y <= maxy; y++, i++)
     {
         Vec3 n1 = nleft[i], n2 = nright[i];
-        float s = lright[i] - lleft[i] + 1;
+        float x1 = lleft[i], x2 = lright[i];
+        int s = abs(static_cast<int>(x2 + 0.5) - static_cast<int>(x1 + 0.5));
+        float dx = (x2 - x1) / s;
         float z1 = zleft[i], z2 = zright[i];
-        float dz = (z2 - z1) / (lright[i] - lleft[i]);
+        float dz = (z2 - z1) / s;
         float z = z1;
+        float x = x1;
 
-        for (int x = lleft[i], j = 0; x <= lright[i]; x++, j++)
+        for (int j = 0; j < s + 1; j++)
         {
-            if (x < 0 || x >= width || y < 0 || y >= height)
+            int ix = x + 0.5, iy = y + 0.5;
+
+            if (ix < 0 || ix >= width || iy < 0 || iy >= height)
             {
                 continue;
             }
 
-            float old = zbuffer.get(x, y);
-
-            if (z < zbuffer.get(x, y))
+            if (z < zbuffer.get(ix, iy))
             {
-                zbuffer.set(x, y, z);
+                zbuffer.set(ix, iy, z);
                 Vec3 n;
-                float part = (j / (s - 1));
+                float part = (float)j / s;
 
                 if (s > 1)
                 {
@@ -246,16 +203,17 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
                 Vec3 orig = toCartesian(toBarycenteric(Vec3(x, y, z), wv1, wv2,
                                                        wv3), ov1, ov2, ov3);
                 float intensity = calculateIntensity(n, orig);
-                putPixel(x, y, color * intensity);
+                putPixel(ix, iy, color * intensity);
             }
 
             z += dz;
+            x += dx;
         }
     }
 }
 
-void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
-        std::vector<int> &lright,
+void LightZBufferRenderer::getLeftRightBounds(std::vector<float> &lleft,
+        std::vector<float> &lright,
         std::vector<Vec3> &nleft, std::vector<Vec3> &nright, std::vector<float> &zleft,
         std::vector<float> &zright,
         Triangle &triangle, bool &swapped)
@@ -264,9 +222,9 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
     const Vec3 &wv1 = projected[triangle.getV1()],
                 &wv2 = projected[triangle.getV2()],
                  &wv3 = projected[triangle.getV3()];
-    std::vector<int> l1 = getBrezenhemX(wv1, wv2);
-    std::vector<int> l2 = getBrezenhemX(wv2, wv3);
-    std::vector<int> l3 = getBrezenhemX(wv1, wv3);
+    std::vector<float> l1 = getBrezenhemX(wv1, wv2);
+    std::vector<float> l2 = getBrezenhemX(wv2, wv3);
+    std::vector<float> l3 = getBrezenhemX(wv1, wv3);
     std::vector<Vec3> n1 = getNormals(l1,
                                       currentMesh->getVertices()[triangle.getV1()].getN(),
                                       currentMesh->getVertices()[triangle.getV2()].getN());
@@ -363,9 +321,6 @@ void LightZBufferRenderer::start(float scale, int width, int height)
 void LightZBufferRenderer::finish()
 {
     CommonTransformation perspective(camera->getPVMatrix());
-    CommonTransformation pm(camera->getPMatrix());
-    CommonTransformation vm(camera->getVMatrix());
-    auto eye = Vec3(0, 0, -1);
     float scalex = width / 2;
     float scaley = height / 2;
     scale = scalex > scaley ? scaley : scalex;
@@ -375,7 +330,6 @@ void LightZBufferRenderer::finish()
         currentMesh = mesh;
         projected.clear();
         projected.reserve(currentMesh->getVertices().size());
-        //projected = currentMesh->getVertices();
 
         for (auto &vertex : currentMesh->getVertices())
         {
@@ -390,20 +344,7 @@ void LightZBufferRenderer::finish()
 
         for (auto &triangle : triangles)
         {
-            //            auto v1 = projected[triangle.getV1()].getV();
-            //            auto v2 = projected[triangle.getV2()].getV();
-            //            auto v3 = projected[triangle.getV3()].getV();
-            //            Vec3 u = v2 - v1;
-            //            Vec3 v = v3 - v1;
-            //            Vec3 n = u.cross(v);
-            //            if (n.dot(projected[triangle.getV3()].getN()) < 0)
-            //            {
-            //                n = -n;
-            //            }
-            //            if (n.dot(eye) > 0)
-            //            {
             fillTriangle(triangle);
-            //            }
         }
     }
 

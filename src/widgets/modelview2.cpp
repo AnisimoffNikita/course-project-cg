@@ -42,16 +42,18 @@ void ModelView2::mouseMoveEvent(QMouseEvent *event)
     Vec3 cameraPos = workCamera->getPosition();
     RotateYTransformation y(Math::ToRadians(-dx) / 2, Vec3(0, 0, 0));
     workCamera->transform(y);
-    //    if (Math::Abs(cameraPos.x()) > Math::Abs(cameraPos.z()))
-    //    {
-    //        RotateZTransformation z(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
-    //        workCamera->transform(z);
-    //    }
-    //    else
-    //    {
-    //        RotateXTransformation x(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
-    //        workCamera->transform(x);
-    //    }
+
+    if (Math::Abs(cameraPos.x()) > Math::Abs(cameraPos.z()))
+    {
+        RotateZTransformation z(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
+        workCamera->transform(z);
+    }
+    else
+    {
+        RotateXTransformation x(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
+        workCamera->transform(x);
+    }
+
     lastPos = event->pos();
 }
 
@@ -81,9 +83,9 @@ void ModelView2::sceneSetup()
     CameraFactory::PerspectiveData data;
     data.fovX = Math::ToRadians(60);
     data.fovY = Math::ToRadians(60);
-    data.near = 3;
-    data.far = 12;
-    CameraFactory cameraFactory(Vec3(8, 4, 0), Vec3(0, 0, 0), Vec3(0, -1, 0),
+    data.near = 2;
+    data.far = 10;
+    CameraFactory cameraFactory(Vec3(4, 4, 0), Vec3(0, 0, 0), Vec3(0, -1, 0),
                                 data);
     auto camera = cameraFactory.create();
     scene->add(camera);
@@ -98,7 +100,7 @@ void ModelView2::sceneSetup()
     {
         ObjLoader loader("/home/nikita/polotno.obj");
         Mesh mesh = loader.load();
-        ModelFactory modelFactory(Vec3(0, 0.03, 0.1), mesh);
+        ModelFactory modelFactory(Vec3(0, 0, 0.08), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
@@ -111,9 +113,4 @@ void ModelView2::sceneSetup()
         auto point = pointFactory.create();
         scene->add(point);
     }
-    //    {
-    //        PointLightFactory pointFactory(Vec3(-2, 1, 0.3), 1);
-    //        auto point = pointFactory.create();
-    //        scene->add(point);
-    //    }
 }
