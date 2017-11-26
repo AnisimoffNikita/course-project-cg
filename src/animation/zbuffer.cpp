@@ -23,7 +23,7 @@ void ZBuffer::init()
     }
 }
 
-unsigned ZBuffer::get(int x, int y)
+float ZBuffer::get(int x, int y)
 {
     //    if (x >= 0 && x < width && y >= 0 && y < height)
     //    {
@@ -35,7 +35,7 @@ unsigned ZBuffer::get(int x, int y)
     //    }
 }
 
-void ZBuffer::set(int x, int y, unsigned value)
+void ZBuffer::set(int x, int y, float value)
 {
     //    if (x >= 0 && x < width && y >= 0 && y < height)
     //    {

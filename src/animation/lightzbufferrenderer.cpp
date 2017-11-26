@@ -196,15 +196,15 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     bool swapped;
     getLeftRightBounds(lleft, lright, nleft, nright, zleft, zright, triangle,
                        swapped);
-    const Vertex &wv1 = projected[triangle.getV1()],
-                  &wv2 = projected[triangle.getV2()],
-                   &wv3 = projected[triangle.getV3()];
+    const Vec3 &wv1 = projected[triangle.getV1()],
+                &wv2 = projected[triangle.getV2()],
+                 &wv3 = projected[triangle.getV3()];
     auto color = currentMesh->getMaterial().getKd();
     Vec3 ov1 = currentMesh->getVertices()[triangle.getV1()].getV();
     Vec3 ov2 = currentMesh->getVertices()[triangle.getV2()].getV();
     Vec3 ov3 = currentMesh->getVertices()[triangle.getV3()].getV();
-    int miny = round(wv1.getV().y());
-    int maxy = round(wv3.getV().y());
+    int miny = round(wv1.y());
+    int maxy = round(wv3.y());
 
     if (miny == maxy)
     {
@@ -227,15 +227,10 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
             }
 
             float old = zbuffer.get(x, y);
-            float zFar = 6;
-            float zNear = 2;
-            float a = (zFar + zNear) / (zFar - zNear);
-            float b = -(2 * zFar * zNear) / (zFar - zNear);
-            uint z_buffer_value = (1 << 24) * (a + b / z);
 
-            if (z_buffer_value < zbuffer.get(x, y))
+            if (z < zbuffer.get(x, y))
             {
-                zbuffer.set(x, y, z_buffer_value);
+                zbuffer.set(x, y, z);
                 Vec3 n;
                 float part = (j / (s - 1));
 
@@ -248,8 +243,8 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
                     n = n1;
                 }
 
-                Vec3 orig = toCartesian(toBarycenteric(Vec3(x, y, z), wv1.getV(), wv2.getV(),
-                                                       wv3.getV()), ov1, ov2, ov3);
+                Vec3 orig = toCartesian(toBarycenteric(Vec3(x, y, z), wv1, wv2,
+                                                       wv3), ov1, ov2, ov3);
                 float intensity = calculateIntensity(n, orig);
                 putPixel(x, y, color * intensity);
             }
@@ -266,12 +261,12 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
         Triangle &triangle, bool &swapped)
 {
     triangleSort(projected, triangle);
-    const Vertex &wv1 = projected[triangle.getV1()],
-                  &wv2 = projected[triangle.getV2()],
-                   &wv3 = projected[triangle.getV3()];
-    std::vector<int> l1 = getBrezenhemX(wv1.getV(), wv2.getV());
-    std::vector<int> l2 = getBrezenhemX(wv2.getV(), wv3.getV());
-    std::vector<int> l3 = getBrezenhemX(wv1.getV(), wv3.getV());
+    const Vec3 &wv1 = projected[triangle.getV1()],
+                &wv2 = projected[triangle.getV2()],
+                 &wv3 = projected[triangle.getV3()];
+    std::vector<int> l1 = getBrezenhemX(wv1, wv2);
+    std::vector<int> l2 = getBrezenhemX(wv2, wv3);
+    std::vector<int> l3 = getBrezenhemX(wv1, wv3);
     std::vector<Vec3> n1 = getNormals(l1,
                                       currentMesh->getVertices()[triangle.getV1()].getN(),
                                       currentMesh->getVertices()[triangle.getV2()].getN());
@@ -281,9 +276,9 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
     std::vector<Vec3> n3 = getNormals(l3,
                                       currentMesh->getVertices()[triangle.getV1()].getN(),
                                       currentMesh->getVertices()[triangle.getV3()].getN());
-    std::vector<float> z1 = getZLine(wv1.getV(), wv2.getV(), l1.size());
-    std::vector<float> z2 = getZLine(wv2.getV(), wv3.getV(), l2.size());
-    std::vector<float> z3 = getZLine(wv1.getV(), wv3.getV(), l3.size());
+    std::vector<float> z1 = getZLine(wv1, wv2, l1.size());
+    std::vector<float> z2 = getZLine(wv2, wv3, l2.size());
+    std::vector<float> z3 = getZLine(wv1, wv3, l3.size());
     l1.pop_back();
     l1.insert(l1.end(), l2.begin(), l2.end());
     n1.pop_back();
@@ -315,7 +310,7 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<int> &lleft,
     }
 }
 
-void LightZBufferRenderer::triangleSort(const std::vector<Vertex> &vertices,
+void LightZBufferRenderer::triangleSort(const std::vector<Vec3> &vertices,
                                         Triangle &triangle)
 {
     auto swap = [](int &a, int &b)
@@ -326,17 +321,17 @@ void LightZBufferRenderer::triangleSort(const std::vector<Vertex> &vertices,
     };
     int i1 = triangle.getV1(), i2 = triangle.getV2(), i3 = triangle.getV3();
 
-    if (vertices.at(i2).getV().y() < vertices.at(i1).getV().y())
+    if (vertices.at(i2).y() < vertices.at(i1).y())
     {
         swap(i2, i1);
     }
 
-    if (vertices.at(i3).getV().y() < vertices.at(i1).getV().y())
+    if (vertices.at(i3).y() < vertices.at(i1).y())
     {
         swap(i3, i1);
     }
 
-    if (vertices.at(i3).getV().y() < vertices.at(i2).getV().y())
+    if (vertices.at(i3).y() < vertices.at(i2).y())
     {
         swap(i3, i2);
     }
@@ -368,29 +363,27 @@ void LightZBufferRenderer::start(float scale, int width, int height)
 void LightZBufferRenderer::finish()
 {
     CommonTransformation perspective(camera->getPVMatrix());
-    CommonTransformation pt(camera->getPMatrix());
-    CommonTransformation vt(camera->getVMatrix());
-    Vec3 center(width / 2, height / 2, 0);
+    CommonTransformation pm(camera->getPMatrix());
+    CommonTransformation vm(camera->getVMatrix());
     auto eye = Vec3(0, 0, -1);
-    float scalex = 2.0 / width;
-    float scaley = 2.0 / height;
+    float scalex = width / 2;
+    float scaley = height / 2;
     scale = scalex > scaley ? scaley : scalex;
 
     for (auto &mesh : meshes)
     {
         currentMesh = mesh;
-        projected = currentMesh->getVertices();
+        projected.clear();
+        projected.reserve(currentMesh->getVertices().size());
+        //projected = currentMesh->getVertices();
 
-        for (auto &v : projected)
+        for (auto &vertex : currentMesh->getVertices())
         {
-            Vec3 test = v.getV();
-            vt.transform(test);
-            pt.transform(test);
-            //            v.transform(perspective);
-            test.setX(test.x() / scale);
-            test.setY(test.y() / scale);
-            v.setV(test);
-            v.setV(v.getV() + center);
+            Vec3 v = vertex.getV();
+            perspective.transform(v);
+            v.setX(v.x() * scale + width / 2);
+            v.setY(v.y() * scale + height / 2);
+            projected.push_back(v);
         }
 
         auto &triangles = currentMesh->getTriangles();
@@ -403,7 +396,7 @@ void LightZBufferRenderer::finish()
             //            Vec3 u = v2 - v1;
             //            Vec3 v = v3 - v1;
             //            Vec3 n = u.cross(v);
-            //            if (n.dot(projected[triangle.getV1()].getN()) > 0)
+            //            if (n.dot(projected[triangle.getV3()].getN()) < 0)
             //            {
             //                n = -n;
             //            }

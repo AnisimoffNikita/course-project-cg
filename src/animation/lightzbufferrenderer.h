@@ -29,7 +29,7 @@ protected:
                             std::vector<float> &zright,
                             Triangle &triangle,
                             bool &swapped);
-    void triangleSort(const std::vector<Vertex> &vertices, Triangle &triangle);
+    void triangleSort(const std::vector<Vec3> &vertices, Triangle &triangle);
     float calculateIntensity(const Vec3 &n, const Vec3 &orig);
 
     void putPixel(int x, int y, const Color &color);
@@ -46,7 +46,7 @@ protected:
 
     vector<shared_ptr<Mesh>> meshes;
     shared_ptr<Mesh> currentMesh;
-    vector<Vertex> projected;
+    vector<Vec3> projected;
 };
 
 

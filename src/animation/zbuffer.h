@@ -13,11 +13,11 @@ public:
     void setSize(int w, int h);
     void init();
 
-    unsigned get(int x, int y);
-    void set(int x, int y, unsigned value);
+    float get(int x, int y);
+    void set(int x, int y, float value);
 
 private:
-    vector<unsigned> buffer;
+    vector<float> buffer;
     int width, height;
 };
 

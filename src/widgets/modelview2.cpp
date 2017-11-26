@@ -42,18 +42,16 @@ void ModelView2::mouseMoveEvent(QMouseEvent *event)
     Vec3 cameraPos = workCamera->getPosition();
     RotateYTransformation y(Math::ToRadians(-dx) / 2, Vec3(0, 0, 0));
     workCamera->transform(y);
-
-    if (Math::Abs(cameraPos.x()) > Math::Abs(cameraPos.z()))
-    {
-        RotateZTransformation z(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
-        workCamera->transform(z);
-    }
-    else
-    {
-        RotateXTransformation x(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
-        workCamera->transform(x);
-    }
-
+    //    if (Math::Abs(cameraPos.x()) > Math::Abs(cameraPos.z()))
+    //    {
+    //        RotateZTransformation z(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
+    //        workCamera->transform(z);
+    //    }
+    //    else
+    //    {
+    //        RotateXTransformation x(Math::ToRadians(-dy) / 2, Vec3(0, 0, 0));
+    //        workCamera->transform(x);
+    //    }
     lastPos = event->pos();
 }
 
@@ -83,45 +81,33 @@ void ModelView2::sceneSetup()
     CameraFactory::PerspectiveData data;
     data.fovX = Math::ToRadians(60);
     data.fovY = Math::ToRadians(60);
-    data.near = 2;
-    data.far = 6;
-    CameraFactory cameraFactory(Vec3(5, 5, 5), Vec3(0, 0, 0), Vec3(0, -1, 0),
+    data.near = 3;
+    data.far = 12;
+    CameraFactory cameraFactory(Vec3(8, 4, 0), Vec3(0, 0, 0), Vec3(0, -1, 0),
                                 data);
     auto camera = cameraFactory.create();
     scene->add(camera);
     scene->setActiveCamera(camera);
     {
-        ObjLoader loader("/home/nikita/1.obj");
+        ObjLoader loader("/home/nikita/ostl.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
     {
-        ObjLoader loader("/home/nikita/2.obj");
+        ObjLoader loader("/home/nikita/polotno.obj");
         Mesh mesh = loader.load();
-        //ModelFactory modelFactory(Vec3(0, 0.03, 0.03), mesh);
-        ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
-        ScaleTransformation scale(Vec3(0.3, 0.3, 0.3), Vec3(0, 0, 0));
+        ModelFactory modelFactory(Vec3(0, 0.03, 0.1), mesh);
         auto model = modelFactory.create();
-        //model->transform(scale);
         scene->add(model);
     }
-    //    {
-    //        ObjLoader loader("/home/nikita/q.obj");
-    //        Mesh mesh = loader.load();
-    //        ModelFactory modelFactory(Vec3(-6, -6, -6), mesh);
-    //        auto model = modelFactory.create();
-    //        ScaleTransformation scale(Vec3(2, 2, 2), Vec3(-3, -3, -3));
-    //        model->transform(scale);
-    //        scene->add(model);
-    //    }
     AmbientLightFactory ambientFactory(0.4);
     auto ambient = ambientFactory.create();
     scene->add(ambient);
     scene->add(ambient);
     {
-        PointLightFactory pointFactory(Vec3(8, 8, 8), 2);
+        PointLightFactory pointFactory(Vec3(5, 5, -5), 2);
         auto point = pointFactory.create();
         scene->add(point);
     }
