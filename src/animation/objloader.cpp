@@ -5,7 +5,6 @@
 #include <fstream>
 
 #include "src/3rdparty/ObjLoader/objloader.h"
-#include "meshgenerator.h"
 
 ObjLoader::ObjLoader(const string &filename)
     : filename(filename)
@@ -87,7 +86,7 @@ Mesh ObjLoader::load()
     {
         array<int, 3> v;
 
-        for (int j = 0; j < 3; j++)
+        for (int32 j = 0; j < 3; j++)
         {
             objl::Vertex ov = omesh.Vertices[i + j];
             Vertex cv(Vec3(ov.Position.X, ov.Position.Y, ov.Position.Z),

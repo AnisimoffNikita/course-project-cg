@@ -40,37 +40,37 @@ bool Vertex::operator ==(const Vertex &other)
 }
 
 
-Triangle::Triangle(const int &v1, const int &v2, const int &v3)
+Triangle::Triangle(const int32 &v1, const int32 &v2, const int32 &v3)
     : v{v1, v2, v3}
 {
 }
 
-int Triangle::getV1() const
+int32 Triangle::getV1() const
 {
     return v[0];
 }
 
-void Triangle::setV1(const int &value)
+void Triangle::setV1(const int32 &value)
 {
     v[0] = value;
 }
 
-int Triangle::getV2() const
+int32 Triangle::getV2() const
 {
     return v[1];
 }
 
-void Triangle::setV2(const int &value)
+void Triangle::setV2(const int32 &value)
 {
     v[1] = value;
 }
 
-int Triangle::getV3() const
+int32 Triangle::getV3() const
 {
     return v[2];
 }
 
-void Triangle::setV3(const int &value)
+void Triangle::setV3(const int32 &value)
 {
     v[2] = value;
 }

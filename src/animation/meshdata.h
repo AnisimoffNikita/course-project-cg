@@ -3,6 +3,7 @@
 
 #include "src/image/color.h"
 #include "src/math/vec3.h"
+#include "src/number.h"
 #include <array>
 #include "transformation.h"
 
@@ -34,16 +35,16 @@ class Triangle
 {
 public:
     Triangle() = default;
-    Triangle(const int &v1, const int &v2, const int &v3);
+    Triangle(const int32 &v1, const int32 &v2, const int32 &v3);
 
-    int getV1() const;
-    void setV1(const int &value);
+    int32 getV1() const;
+    void setV1(const int32 &value);
 
-    int getV2() const;
-    void setV2(const int &value);
+    int32 getV2() const;
+    void setV2(const int32 &value);
 
-    int getV3() const;
-    void setV3(const int &value);
+    int32 getV3() const;
+    void setV3(const int32 &value);
 private:
     array<int, 3> v;
 };

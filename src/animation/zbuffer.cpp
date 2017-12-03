@@ -6,7 +6,7 @@ ZBuffer::ZBuffer()
 {
 }
 
-void ZBuffer::setSize(int w, int h)
+void ZBuffer::setSize(int32 w, int32 h)
 {
     width = w;
     height = h;
@@ -17,28 +17,18 @@ void ZBuffer::init()
 {
     unsigned min = ~0;
 
-    for (int i = 0; i < height * width; i++)
+    for (int32 i = 0; i < height * width; i++)
     {
         buffer[i] = min;
     }
 }
 
-float ZBuffer::get(int x, int y)
+float ZBuffer::get(int32 x, int32 y)
 {
-    //    if (x >= 0 && x < width && y >= 0 && y < height)
-    //    {
     return buffer[y * width + x];
-    //    }
-    //    else
-    //    {
-    //        return numeric_limits<int>::min();
-    //    }
 }
 
-void ZBuffer::set(int x, int y, float value)
+void ZBuffer::set(int32 x, int32 y, float value)
 {
-    //    if (x >= 0 && x < width && y >= 0 && y < height)
-    //    {
     buffer[y * width + x] = value;
-    //    }
 }

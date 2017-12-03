@@ -2,12 +2,13 @@
 
 #include "commontransformation.h"
 #include "scaletransformation.h"
+#include "src/number.h"
 
 #include <omp.h>
 #include <QPainter>
 
-LightZBufferRenderer::LightZBufferRenderer(float scale, int width,
-        int height) :
+LightZBufferRenderer::LightZBufferRenderer(float scale, int32 width,
+        int32 height) :
     Renderer(scale, width, height)
 {
     zbuffer.setSize(width, height);
@@ -41,7 +42,7 @@ uchar *LightZBufferRenderer::getRendered()
     return buffer;
 }
 
-void LightZBufferRenderer::putPixel(int x, int y, const Color &color)
+void LightZBufferRenderer::putPixel(int32 x, int32 y, const Color &color)
 {
     buffer[4 * (y * width + x) + 2] = color.getRed();
     buffer[4 * (y * width + x) + 1] = color.getGreen();
@@ -54,13 +55,13 @@ std::vector<float> LightZBufferRenderer::getBrezenhemX(const Vec3 &p1,
 {
     float x1 = p1.x();
     float x2 = p2.x();
-    int n = abs(static_cast<int>(p1.y() + 0.5) - static_cast<int>
-                (p2.y() + 0.5)) + 1;
+    int32 n = abs(static_cast<int>(p1.y() + 0.5) - static_cast<int>
+                  (p2.y() + 0.5)) + 1;
     std::vector<float> result(n);
     float dx = (x2 - x1) / (n - 1);
     result[0] = x1;
 
-    for (int i = 1; i < n; i++)
+    for (int32 i = 1; i < n; i++)
     {
         result[i] = result[i - 1] + dx;
     }
@@ -74,7 +75,7 @@ std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<float> &l,
     std::vector<Vec3> result;
     float s = l.size();
 
-    for (uint i = 0; i < l.size(); i++)
+    for (uint32 i = 0; i < l.size(); i++)
     {
         if (s > 1)
         {
@@ -90,7 +91,7 @@ std::vector<Vec3> LightZBufferRenderer::getNormals(const std::vector<float> &l,
 }
 
 std::vector<float> LightZBufferRenderer::getZLine(const Vec3 &p1,
-        const Vec3 &p2, int n)
+        const Vec3 &p2, int32 n)
 {
     float z1 = p1.z();
     float z2 = p2.z();
@@ -98,7 +99,7 @@ std::vector<float> LightZBufferRenderer::getZLine(const Vec3 &p1,
     float dz = (z2 - z1) / (n - 1);
     result[0] = z1;
 
-    for (int i = 1; i < n; i++)
+    for (int32 i = 1; i < n; i++)
     {
         result[i] = result[i - 1] + dz;
     }
@@ -154,28 +155,28 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     Vec3 ov1 = currentMesh->getVertices()[triangle.getV1()].getV();
     Vec3 ov2 = currentMesh->getVertices()[triangle.getV2()].getV();
     Vec3 ov3 = currentMesh->getVertices()[triangle.getV3()].getV();
-    int miny = round(wv1.y());
-    int maxy = round(wv3.y());
+    int32 miny = round(wv1.y());
+    int32 maxy = round(wv3.y());
 
     if (miny == maxy)
     {
         return;
     }
 
-    for (int y = miny, i = 0; y <= maxy; y++, i++)
+    for (int32 y = miny, i = 0; y <= maxy; y++, i++)
     {
         Vec3 n1 = nleft[i], n2 = nright[i];
         float x1 = lleft[i], x2 = lright[i];
-        int s = abs(static_cast<int>(x2 + 0.5) - static_cast<int>(x1 + 0.5));
+        int32 s = abs(static_cast<int>(x2 + 0.5) - static_cast<int>(x1 + 0.5));
         float dx = (x2 - x1) / s;
         float z1 = zleft[i], z2 = zright[i];
         float dz = (z2 - z1) / s;
         float z = z1;
         float x = x1;
 
-        for (int j = 0; j < s + 1; j++)
+        for (int32 j = 0; j < s + 1; j++)
         {
-            int ix = x + 0.5, iy = y + 0.5;
+            int32 ix = x + 0.5, iy = y + 0.5;
 
             if (ix < 0 || ix >= width || iy < 0 || iy >= height)
             {
@@ -240,8 +241,8 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<float> &lleft,
     n1.insert(n1.end(), n2.begin(), n2.end());
     z1.pop_back();
     z1.insert(z1.end(), z2.begin(), z2.end());
-    int length = l3.size();
-    int m = length / 2;
+    int32 length = l3.size();
+    int32 m = length / 2;
 
     if (l1[m] < l3[m])
     {
@@ -268,13 +269,13 @@ void LightZBufferRenderer::getLeftRightBounds(std::vector<float> &lleft,
 void LightZBufferRenderer::triangleSort(const std::vector<Vec3> &vertices,
                                         Triangle &triangle)
 {
-    auto swap = [](int &a, int &b)
+    auto swap = [](int32 & a, int32 & b)
     {
-        int t = a;
+        int32 t = a;
         a = b;
         b = t;
     };
-    int i1 = triangle.getV1(), i2 = triangle.getV2(), i3 = triangle.getV3();
+    int32 i1 = triangle.getV1(), i2 = triangle.getV2(), i3 = triangle.getV3();
 
     if (vertices.at(i2).y() < vertices.at(i1).y())
     {
@@ -297,7 +298,7 @@ void LightZBufferRenderer::triangleSort(const std::vector<Vec3> &vertices,
 }
 
 
-void LightZBufferRenderer::start(float scale, int width, int height)
+void LightZBufferRenderer::start(int32 width, int32 height)
 {
     this->width = width;
     this->height = height;
@@ -307,7 +308,7 @@ void LightZBufferRenderer::start(float scale, int width, int height)
     delete buffer;
     buffer = new uchar[width * height * 4];
 
-    for (int i = 0; i < width * height; i++)
+    for (int32 i = 0; i < width * height; i++)
     {
         buffer[4 * i] = 33;
         buffer[4 * i + 1] = 33;

@@ -12,12 +12,12 @@ class Renderer
 {
 public:
     Renderer() = default;
-    Renderer(float scale, int width, int height);
+    Renderer(float scale, int32 width, int32 height);
 
     virtual void setCamera(SharedCamera value) = 0;
     virtual void addLight(SharedLight value) = 0;
 
-    virtual void start(float scale, int width, int height) = 0;
+    virtual void start(int32 width, int32 height) = 0;
 
     virtual void renderMesh(shared_ptr<Mesh> mesh) = 0;
 
@@ -29,8 +29,8 @@ public:
 protected:
 
     float scale;
-    int width;
-    int height;
+    int32 width;
+    int32 height;
 };
 
 #endif // RENDERER_H

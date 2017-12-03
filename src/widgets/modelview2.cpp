@@ -3,7 +3,6 @@
 #include "src/animation/rotatetransform.h"
 #include "src/animation/scene.h"
 #include "src/animation/renderer.h"
-#include "src/animation/meshgenerator.h"
 #include "src/animation/sceneobjectfactory.h"
 #include "src/animation/lightzbufferrenderer.h"
 #include "src/animation/objloader.h"
@@ -73,12 +72,12 @@ void ModelView2::updateCanvas()
 
 void ModelView2::scheduler()
 {
-    int elapsed = time.elapsed();
+    int32 elapsed = time.elapsed();
     time.start();
     float delta = elapsed / 1000.0;
     actionManager->update(delta);
-    int w = width(), h = height();
-    renderer->start(100, w, h);
+    int32 w = width(), h = height();
+    renderer->start(w, h);
     scene->render(renderer);
     renderer->finish();
     uchar *buffer = renderer->getRendered();
@@ -89,8 +88,8 @@ void ModelView2::scheduler()
 void ModelView2::sceneSetup()
 {
     CameraFactory::PerspectiveData data;
-    data.fovX = Math::ToRadians(60);
-    data.fovY = Math::ToRadians(60);
+    data.fovX = Math::ToRadians(120);
+    data.fovY = Math::ToRadians(120);
     data.near = 0.01;
     data.far = 10000;
     CameraFactory cameraFactory(Vec3(4.5, 4.5, 0), Vec3(0, 0, 0), Vec3(0, -1, 0),

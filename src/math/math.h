@@ -13,7 +13,7 @@ public:
 
     constexpr static double PI = 3.14159265358979323846;
 
-    static double Gauss2(double sigma, int x, int y);
+    static double Gauss2(double sigma, int32 x, int32 y);
 
     template<class T>
     static T Clamp(const T &value, const T &max, const T &min);

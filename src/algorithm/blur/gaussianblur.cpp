@@ -24,15 +24,15 @@ void GaussianBlur::process(Image &image)
     float sum = 0;
     float kernel[kernelSize][kernelSize];
 
-    for (int i = 0; i < kernelSize; i++)
-        for (int j = 0; j < kernelSize; j++)
+    for (int32 i = 0; i < kernelSize; i++)
+        for (int32 j = 0; j < kernelSize; j++)
         {
             kernel[i][j] = Math::Gauss2(sigma, i - kernelSize / 2, j - kernelSize / 2);
             sum += kernel[i][j];
         }
 
-    for (int i = 0; i < kernelSize; i++)
-        for (int j = 0; j < kernelSize; j++)
+    for (int32 i = 0; i < kernelSize; i++)
+        for (int32 j = 0; j < kernelSize; j++)
         {
             kernel[i][j] /= sum;
         }
@@ -49,9 +49,9 @@ void GaussianBlur::process(Image &image)
         {
             resultR = resultG = resultB = 0;
 
-            for (int i = 0; i < kernelSize; i++)
+            for (int32 i = 0; i < kernelSize; i++)
             {
-                for (int j = 0; j < kernelSize; j++)
+                for (int32 j = 0; j < kernelSize; j++)
                 {
                     pixelPosX = (x + j - kernelSize / 2 + width) % width;
                     pixelPosY = (y + i - kernelSize / 2 + height) % height;

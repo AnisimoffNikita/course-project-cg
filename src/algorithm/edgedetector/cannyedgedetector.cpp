@@ -3,7 +3,7 @@
 #include "src/math/math.h"
 #include "src/image/imageconverter.h"
 
-CannyEdgeDetector::CannyEdgeDetector(int minThresh, int maxThresh) :
+CannyEdgeDetector::CannyEdgeDetector(int32 minThresh, int32 maxThresh) :
     minThresh(minThresh),
     maxThresh(maxThresh)
 {
@@ -28,27 +28,27 @@ void CannyEdgeDetector::process(Image &image)
 void CannyEdgeDetector::gradients()
 {
     GrayscaleImage saved(image);
-    constexpr int kernelSize = 3;
+    constexpr int32 kernelSize = 3;
     float gx[kernelSize][kernelSize] = {{1, 0, -1}, {2, 0, -2}, {1, 0, -1}};
     float gy[kernelSize][kernelSize] = {{1, 2, 1}, {0, 0, 0}, { -1, -2, -1}};
-    int height = image.getHeight();
-    int width = image.getWidth();
-    int pixelPosX;
-    int pixelPosY;
+    int32 height = image.getHeight();
+    int32 width = image.getWidth();
+    int32 pixelPosX;
+    int32 pixelPosY;
     directions = GrayscaleImage(height, width);
     float resultX;
     float resultY;
     float result;
 
-    for (int y = 0; y < height; y++)
+    for (int32 y = 0; y < height; y++)
     {
-        for (int x = 0; x < width; x++)
+        for (int32 x = 0; x < width; x++)
         {
             resultX = resultY = 0;
 
-            for (int i = 0; i < kernelSize; i++)
+            for (int32 i = 0; i < kernelSize; i++)
             {
-                for (int j = 0; j < kernelSize; j++)
+                for (int32 j = 0; j < kernelSize; j++)
                 {
                     pixelPosX = (x + j - kernelSize / 2 + width) % width;
                     pixelPosY = (y + i - kernelSize / 2 + height) % height;
@@ -240,22 +240,22 @@ void CannyEdgeDetector::hysteresisRecursive(uint32 y, uint32 x)
     }
 }
 
-int CannyEdgeDetector::getMaxThresh() const
+int32 CannyEdgeDetector::getMaxThresh() const
 {
     return maxThresh;
 }
 
-void CannyEdgeDetector::setMaxThresh(int value)
+void CannyEdgeDetector::setMaxThresh(int32 value)
 {
     maxThresh = value;
 }
 
-int CannyEdgeDetector::getMinThresh() const
+int32 CannyEdgeDetector::getMinThresh() const
 {
     return minThresh;
 }
 
-void CannyEdgeDetector::setMinThresh(int value)
+void CannyEdgeDetector::setMinThresh(int32 value)
 {
     minThresh = value;
 }

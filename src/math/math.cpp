@@ -2,7 +2,7 @@
 
 #include <cmath>
 
-double Math::Gauss2(double sigma, int x, int y)
+double Math::Gauss2(double sigma, int32 x, int32 y)
 {
     return (1.0 / (2 * PI * sigma * sigma)) * exp(-(x * x + y * y) /
             (2 * sigma * sigma));

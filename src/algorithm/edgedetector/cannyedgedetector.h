@@ -3,26 +3,27 @@
 
 #include "edgedetector.h"
 #include "src/image/grayscaleimage.h"
+#include "src/number.h"
 
 class CannyEdgeDetector : public EdgeDetector
 {
 public:
-    CannyEdgeDetector(int minThresh = 80, int maxThresh = 100);
+    CannyEdgeDetector(int32 minThresh = 80, int32 maxThresh = 100);
     virtual ~CannyEdgeDetector();
 
     virtual void process(Image &image);
 
-    int getGaussKernelSize() const;
-    void setGaussKernelSize(int value);
+    int32 getGaussKernelSize() const;
+    void setGaussKernelSize(int32 value);
 
     float getGaussSigma() const;
     void setGaussSigma(float value);
 
-    int getMinThresh() const;
-    void setMinThresh(int value);
+    int32 getMinThresh() const;
+    void setMinThresh(int32 value);
 
-    int getMaxThresh() const;
-    void setMaxThresh(int value);
+    int32 getMaxThresh() const;
+    void setMaxThresh(int32 value);
 
 private:
     void gradients();
@@ -31,8 +32,8 @@ private:
     void hysteresis();
     void hysteresisRecursive(uint32 y, uint32 x);
 
-    int minThresh;
-    int maxThresh;
+    int32 minThresh;
+    int32 maxThresh;
 
     GrayscaleImage image;
     GrayscaleImage directions;

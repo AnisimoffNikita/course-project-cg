@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "debugmainwindow.h"
 #include "ui_mainwindow.h"
 
 #include <QStandardPaths>
@@ -9,12 +9,11 @@
 #include <QString>
 
 #include "src/image/imageconverter.h"
-#include "src/animation/meshgenerator.h"
 #include "src/animation/sceneobjectfactory.h"
 
-MainWindow::MainWindow(QWidget *parent) :
+DebugMainWindow::DebugMainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow),
+    ui(new Ui::DebugMainWindow),
     state(0)
 {
     ui->setupUi(this);
@@ -23,22 +22,22 @@ MainWindow::MainWindow(QWidget *parent) :
     debug_setScene();
 }
 
-MainWindow::~MainWindow()
+DebugMainWindow::~DebugMainWindow()
 {
     delete ui;
 }
 
-void MainWindow::resizeEvent(QResizeEvent *)
+void DebugMainWindow::resizeEvent(QResizeEvent *)
 {
 }
 
 
-void MainWindow::on_actOpenImage_triggered()
+void DebugMainWindow::on_actOpenImage_triggered()
 {
     openFile();
 }
 
-void MainWindow::openFile()
+void DebugMainWindow::openFile()
 {
     QFileDialog dialog(this, tr("Open File"));
     initFileDialog(dialog, QFileDialog::AcceptOpen);
@@ -47,7 +46,7 @@ void MainWindow::openFile()
             !loadFile(dialog.selectedFiles().first())) {}
 }
 
-bool MainWindow::loadFile(const QString &filename)
+bool DebugMainWindow::loadFile(const QString &filename)
 {
     QImageReader reader(filename);
     reader.setAutoTransform(true);
@@ -68,15 +67,15 @@ bool MainWindow::loadFile(const QString &filename)
     return true;
 }
 
-void MainWindow::setImage(const QImage &newImage)
+void DebugMainWindow::setImage(const QImage &newImage)
 {
     image = newImage;
     ui->imageView->setImage(image);
     updateActions();
 }
 
-void MainWindow::initFileDialog(QFileDialog &dialog,
-                                QFileDialog::AcceptMode acceptMode)
+void DebugMainWindow::initFileDialog(QFileDialog &dialog,
+                                     QFileDialog::AcceptMode acceptMode)
 {
     static bool firstDialog = true;
 
@@ -110,16 +109,16 @@ void MainWindow::initFileDialog(QFileDialog &dialog,
 
 
 
-void MainWindow::updateActions()
+void DebugMainWindow::updateActions()
 {
 }
 
-void MainWindow::debug_setScene()
+void DebugMainWindow::debug_setScene()
 {
 }
 
 
-void MainWindow::on_btnCalibrate_clicked()
+void DebugMainWindow::on_btnCalibrate_clicked()
 {
     if (ui->rbnStandard->isChecked())
     {
@@ -145,7 +144,7 @@ void MainWindow::on_btnCalibrate_clicked()
     }
 }
 
-void MainWindow::on_btnEval_clicked()
+void DebugMainWindow::on_btnEval_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -163,7 +162,7 @@ void MainWindow::on_btnEval_clicked()
     ui->imageView->setImage(temp);
 }
 
-void MainWindow::on_sldSigma_valueChanged(int value)
+void DebugMainWindow::on_sldSigma_valueChanged(int value)
 {
     ui->lblSigma->setText(QString::number(value / 10.0, 'g', 2));
     bool flag = state == 1;
@@ -175,7 +174,7 @@ void MainWindow::on_sldSigma_valueChanged(int value)
     }
 }
 
-void MainWindow::on_sldKernelSize_valueChanged(int value)
+void DebugMainWindow::on_sldKernelSize_valueChanged(int value)
 {
     ui->lblKernel->setText(QString::number(value * 2 - 1));
     bool flag = state == 1;
@@ -188,7 +187,7 @@ void MainWindow::on_sldKernelSize_valueChanged(int value)
 }
 
 
-void MainWindow::on_sldMinThresh_valueChanged(int value)
+void DebugMainWindow::on_sldMinThresh_valueChanged(int value)
 {
     ui->lblMinThresh->setText(QString::number(value));
 
@@ -201,7 +200,7 @@ void MainWindow::on_sldMinThresh_valueChanged(int value)
     on_btnCannyApply_clicked();
 }
 
-void MainWindow::on_sldMaxThresh_valueChanged(int value)
+void DebugMainWindow::on_sldMaxThresh_valueChanged(int value)
 {
     ui->lblMaxThresh->setText(QString::number(value));
 
@@ -214,18 +213,18 @@ void MainWindow::on_sldMaxThresh_valueChanged(int value)
     on_btnCannyApply_clicked();
 }
 
-void MainWindow::on_sldThresh_valueChanged(int value)
+void DebugMainWindow::on_sldThresh_valueChanged(int value)
 {
     ui->lblThresh->setText(QString::number(value));
     on_btnHoughApply_clicked();
 }
 
-void MainWindow::on_actRestore_triggered()
+void DebugMainWindow::on_actRestore_triggered()
 {
     ui->imageView->setImage(image);
 }
 
-void MainWindow::on_btnGaussApply_clicked()
+void DebugMainWindow::on_btnGaussApply_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -237,7 +236,7 @@ void MainWindow::on_btnGaussApply_clicked()
 }
 
 
-void MainWindow::on_btnCannyApply_clicked()
+void DebugMainWindow::on_btnCannyApply_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -251,7 +250,7 @@ void MainWindow::on_btnCannyApply_clicked()
     state = 1;
 }
 
-void MainWindow::on_btnHoughApply_clicked()
+void DebugMainWindow::on_btnHoughApply_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -266,7 +265,7 @@ void MainWindow::on_btnHoughApply_clicked()
     ui->imageView->setImage(temp);
 }
 
-void MainWindow::on_rbnStandard_toggled(bool checked)
+void DebugMainWindow::on_rbnStandard_toggled(bool checked)
 {
     ui->edtDist->setEnabled(checked);
     ui->edtH->setEnabled(checked);
@@ -275,7 +274,7 @@ void MainWindow::on_rbnStandard_toggled(bool checked)
     ui->edtDiagPx->setEnabled(!checked);
 }
 
-void MainWindow::on_rbnDiag_toggled(bool checked)
+void DebugMainWindow::on_rbnDiag_toggled(bool checked)
 {
     ui->edtDist->setEnabled(!checked);
     ui->edtH->setEnabled(!checked);

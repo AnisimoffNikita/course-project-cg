@@ -26,7 +26,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #MAKE_CXXFLAGS+=-O3
 
 SOURCES += src/main.cpp\
-        src/mainwindow.cpp \
+        src/debugmainwindow.cpp \
     src/widgets/imageview.cpp \
     src/math/matrix.cpp \
     src/image/image.cpp \
@@ -64,7 +64,6 @@ SOURCES += src/main.cpp\
     src/animation/matrixfactory.cpp \
     src/animation/commontransformation.cpp \
     src/animation/sceneobjectfactory.cpp \
-    src/animation/meshgenerator.cpp \
     src/animation/renderer.cpp \
     src/animation/meshdata.cpp \
     src/animation/ambientlight.cpp \
@@ -76,7 +75,7 @@ SOURCES += src/main.cpp\
     src/animation/actionmanager.cpp \
     src/animation/actions.cpp
 
-HEADERS  += src/mainwindow.h \
+HEADERS  += src/debugmainwindow.h \
     src/widgets/imageview.h \
     src/math/matrix.h \
     src/image/image.h \
@@ -115,7 +114,6 @@ HEADERS  += src/mainwindow.h \
     src/animation/matrixfactory.h \
     src/animation/commontransformation.h \
     src/animation/sceneobjectfactory.h \
-    src/animation/meshgenerator.h \
     src/animation/renderer.h \
     src/animation/meshdata.h \
     src/animation/ambientlight.h \
@@ -130,5 +128,5 @@ HEADERS  += src/mainwindow.h \
 
 SUBDIRS += src
 
-FORMS    += ui/mainwindow.ui
+FORMS    += ui/debug_mainwindow.ui
 QMAKE_CXXFLAGS_RELEASE += -O3
