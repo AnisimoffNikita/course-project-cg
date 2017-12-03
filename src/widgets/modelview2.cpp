@@ -1,13 +1,14 @@
 #include "modelview2.h"
 
-#include "src/animation/rotatetransform.h"
+#include "src/animation/rotatetransformation.h"
 #include "src/animation/scene.h"
 #include "src/animation/renderer.h"
 #include "src/animation/sceneobjectfactory.h"
 #include "src/animation/lightzbufferrenderer.h"
 #include "src/animation/objloader.h"
 #include "src/animation/scaletransformation.h"
-#include "src/animation/rotatetransform.h"
+#include "src/animation/rotatetransformation.h"
+#include "src/animation/movetransformation.h"
 #include "src/animation/actions.h"
 #include <QPainter>
 
@@ -60,6 +61,23 @@ void ModelView2::mouseMoveEvent(QMouseEvent *event)
     lastPos = event->pos();
 }
 
+void ModelView2::wheelEvent(QWheelEvent *event)
+{
+    auto camera = scene->getActiveCamera();
+
+    if (camera.expired())
+    {
+        return;
+    }
+
+    auto workCamera = camera.lock();
+    Vec3 pos = workCamera->getPosition();
+    Vec3 look = workCamera->getLookAt();
+    auto delta = -(pos - look) * (event->delta() / 1200.0);
+    MoveTransformation move(delta);
+    workCamera->transform(move);
+}
+
 void ModelView2::paintEvent(QPaintEvent *)
 {
     QPainter p(this);
@@ -90,8 +108,8 @@ void ModelView2::sceneSetup()
     CameraFactory::PerspectiveData data;
     data.fovX = Math::ToRadians(120);
     data.fovY = Math::ToRadians(120);
-    data.near = 0.01;
-    data.far = 10000;
+    data.near = 0.1;
+    data.far = 100;
     CameraFactory cameraFactory(Vec3(4.5, 4.5, 0), Vec3(0, 0, 0), Vec3(0, -1, 0),
                                 data);
     auto camera = cameraFactory.create();

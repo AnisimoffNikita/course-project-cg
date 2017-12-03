@@ -17,6 +17,7 @@ public:
 
     virtual void setPosition(const Vec3 &value) override;
 
+    virtual const Vec3 &getLookAt();
     virtual void setLookAt(const Vec3 &target);
     virtual Vec3 getEyeVector();
     virtual Mat4 getPVMatrix();

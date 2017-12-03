@@ -10,7 +10,7 @@ PointLight::PointLight(const Vec3 &position, float intensity) :
 
 Color PointLight::getIntensity(const Vec3 &n, const Vec3 &p,
                                const Vec3 &c,
-                               const Color &ka, const Color &kd, const Color &ks, float ns) const
+                               const Color &, const Color &kd, const Color &ks, float ns) const
 {
     Vec3 d = (p - position);
     float cos = -d.dot(n) / (d.length() * n.length());

@@ -10,7 +10,7 @@ public:
     virtual ~PointLight() = default;
 
     virtual Color getIntensity(const Vec3 &n, const Vec3 &p,
-                               const Vec3 &c, const Color &ka,
+                               const Vec3 &c, const Color &,
                                const Color &kd, const Color &ks, float ns) const override;
 
 

@@ -2,7 +2,7 @@
 
 #include <QStyle>
 
-#include "src/animation/rotatetransform.h"
+#include "src/animation/rotatetransformation.h"
 
 #include "src/animation/scene.h"
 #include "src/animation/renderer.h"

@@ -61,7 +61,6 @@ SOURCES += src/main.cpp\
     src/animation/scene.cpp \
     src/animation/movetransformation.cpp \
     src/animation/scaletransformation.cpp \
-    src/animation/rotatetransform.cpp \
     src/animation/matrixfactory.cpp \
     src/animation/commontransformation.cpp \
     src/animation/sceneobjectfactory.cpp \
@@ -74,7 +73,8 @@ SOURCES += src/main.cpp\
     src/animation/objloader.cpp \
     src/widgets/modelview2.cpp \
     src/animation/actionmanager.cpp \
-    src/animation/actions.cpp
+    src/animation/actions.cpp \
+    src/animation/rotatetransformation.cpp
 
 HEADERS  += src/debugmainwindow.h \
     src/widgets/imageview.h \
@@ -111,7 +111,6 @@ HEADERS  += src/debugmainwindow.h \
     src/animation/scene.h \
     src/animation/movetransformation.h \
     src/animation/scaletransformation.h \
-    src/animation/rotatetransform.h \
     src/animation/matrixfactory.h \
     src/animation/commontransformation.h \
     src/animation/sceneobjectfactory.h \
@@ -125,7 +124,8 @@ HEADERS  += src/debugmainwindow.h \
     src/3rdparty/ObjLoader/objloader.h \
     src/widgets/modelview2.h \
     src/animation/actionmanager.h \
-    src/animation/actions.h
+    src/animation/actions.h \
+    src/animation/rotatetransformation.h
 
 FORMS    += ui/debug_mainwindow.ui
 

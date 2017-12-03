@@ -72,3 +72,8 @@ void Camera::setPosition(const Vec3 &value)
     position = value;
     updateViewMatrix();
 }
+
+const Vec3 &Camera::getLookAt()
+{
+    return lookAt;
+}

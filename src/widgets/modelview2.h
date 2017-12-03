@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QMouseEvent>
+#include <QWheelEvent>
 #include <QWidget>
 #include <QTimer>
 #include <QImage>
@@ -21,6 +22,7 @@ public:
 protected:
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
+    void wheelEvent(QWheelEvent *event);
     void paintEvent(QPaintEvent *);
 
 private:

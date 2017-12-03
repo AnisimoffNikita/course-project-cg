@@ -1,4 +1,4 @@
-#include "rotatetransform.h"
+#include "rotatetransformation.h"
 
 #include "src/math/math.h"
 #include "src/math/homogeneousvertex.h"
