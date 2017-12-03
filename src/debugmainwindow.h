@@ -15,7 +15,7 @@
 
 namespace Ui
 {
-class DebugMainWindow;
+class MainWindow;
 }
 
 class DebugMainWindow : public QMainWindow
@@ -68,7 +68,7 @@ private:
 
     void debug_setScene();
 
-    Ui::DebugMainWindow *ui;
+    Ui::MainWindow *ui;
     QImage image;
 
     CylinderSizeCalculator calc;

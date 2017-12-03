@@ -13,7 +13,7 @@
 
 DebugMainWindow::DebugMainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::DebugMainWindow),
+    ui(new Ui::MainWindow),
     state(0)
 {
     ui->setupUi(this);

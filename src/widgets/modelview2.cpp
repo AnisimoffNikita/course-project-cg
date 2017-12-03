@@ -98,21 +98,21 @@ void ModelView2::sceneSetup()
     scene->add(camera);
     scene->setActiveCamera(camera);
     {
-        ObjLoader loader("/home/nikita/ostl.obj");
+        ObjLoader loader(":/obj/conveor.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(0, 0, 0), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
     {
-        ObjLoader loader("/home/nikita/polotno.obj");
+        ObjLoader loader(":/obj/band.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(0, 0, 0.08), mesh);
         auto model = modelFactory.create();
         scene->add(model);
     }
     {
-        ObjLoader loader("/home/nikita/cylinder.obj");
+        ObjLoader loader(":/obj/cylinder.obj");
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(3.5, 1.01, 0.3), mesh);
         auto model = modelFactory.create();

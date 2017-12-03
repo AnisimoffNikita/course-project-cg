@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>obj/band.mtl</file>
+        <file>obj/band.obj</file>
+        <file>obj/conveor.mtl</file>
+        <file>obj/conveor.obj</file>
+        <file>obj/cylinder.mtl</file>
+        <file>obj/cylinder.obj</file>
+    </qresource>
+</RCC>

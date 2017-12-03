@@ -130,3 +130,6 @@ SUBDIRS += src
 
 FORMS    += ui/debug_mainwindow.ui
 QMAKE_CXXFLAGS_RELEASE += -O3
+
+RESOURCES += \
+    res/models.qrc

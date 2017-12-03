@@ -19,6 +19,13 @@
 //
 // Description: The namespace that holds eveyrthing that
 //  is needed and used for the OBJ Model Loader
+
+
+// NIKITA CODE
+#include <QFile>
+#include <QTextStream>
+// NIKITA CODE
+
 namespace objl
 {
 // Structure: Vector2
@@ -406,9 +413,11 @@ public:
             return false;
         }
 
-        std::ifstream file(Path);
+        QFile qfile(Path.c_str());
+        //std::ifstream file(Path);
 
-        if (!file.is_open())
+        //if (!file.is_open())
+        if (!qfile.open(QIODevice::ReadOnly | QIODevice::Text))
         {
             return false;
         }
@@ -430,9 +439,14 @@ public:
         unsigned int outputIndicator = outputEveryNth;
 #endif
         std::string curline;
+        QString qline;
+        QTextStream in(&qfile);
 
-        while (std::getline(file, curline))
+        //while (std::getline(file, curline))
+        while (!in.atEnd())
         {
+            qline = in.readLine();
+            curline = qline.toStdString();
 #ifdef OBJL_CONSOLE_OUTPUT
 
             if ((outputIndicator = ((outputIndicator + 1) % outputEveryNth)) == 1)
@@ -647,7 +661,8 @@ public:
             LoadedMeshes.push_back(tempMesh);
         }
 
-        file.close();
+        //file.close();
+        qfile.close();
 
         // Set Materials for each Mesh
         for (int i = 0; i < MeshMatNames.size(); i++)
@@ -1025,10 +1040,12 @@ private:
             return false;
         }
 
-        std::ifstream file(path);
+        //std::ifstream file(path);
+        QFile qfile(path.c_str());
 
         // If the file is not found return false
-        if (!file.is_open())
+        //if (!file.is_open())
+        if (!qfile.open(QIODevice::ReadOnly | QIODevice::Text))
         {
             return false;
         }
@@ -1037,9 +1054,15 @@ private:
         bool listening = false;
         // Go through each line looking for material variables
         std::string curline;
+        QString qline;
+        QTextStream in(&qfile);
 
-        while (std::getline(file, curline))
+        //while (std::getline(file, curline))
+        while (!in.atEnd())
         {
+            qline = in.readLine();
+            curline = qline.toStdString();
+
             // new material and material name
             if (algorithm::firstToken(curline) == "newmtl")
             {
@@ -1188,6 +1211,7 @@ private:
         // Deal with last material
         // Push Back loaded Material
         LoadedMaterials.push_back(tempMaterial);
+        qfile.close();
 
         // Test to see if anything was loaded
         // If not return false
