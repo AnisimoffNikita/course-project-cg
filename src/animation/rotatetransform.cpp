@@ -24,6 +24,11 @@ void RotateXTransformation::transform(Vec3 &vertex) const
     vertex += _origin;
 }
 
+void RotateXTransformation::resetOrigin()
+{
+    _origin = Vec3(0, 0, 0);
+}
+
 RotateYTransformation::RotateYTransformation(float angle, const Vec3 &origin)
 {
     float data[16] = {(float)Math::Cos(angle), 0, (float) - Math::Sin(angle), 0,
@@ -45,6 +50,11 @@ void RotateYTransformation::transform(Vec3 &vertex) const
     vertex += _origin;
 }
 
+void RotateYTransformation::resetOrigin()
+{
+    _origin = Vec3(0, 0, 0);
+}
+
 RotateZTransformation::RotateZTransformation(float angle, const Vec3 &origin)
 {
     float data[16] = {(float)Math::Cos(angle), (float)Math::Sin(angle), 0, 0,
@@ -64,4 +74,9 @@ void RotateZTransformation::transform(Vec3 &vertex) const
     hvec = _matrix * hvec;
     vertex = HomogeneousVertexConverter::ToVertex(hvec);
     vertex += _origin;
+}
+
+void RotateZTransformation::resetOrigin()
+{
+    _origin = Vec3(0, 0, 0);
 }

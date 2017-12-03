@@ -11,7 +11,7 @@ public:
     virtual ~Light() = default;
 
     virtual void draw(std::unique_ptr<Renderer> &) override;
-    virtual void transform(const Transformation &transformation) override;
+    virtual void transform(Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
 

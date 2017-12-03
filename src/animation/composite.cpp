@@ -9,7 +9,7 @@ void Composite::draw(std::unique_ptr<Renderer> &)
 {
 }
 
-void Composite::transform(const Transformation &)
+void Composite::transform(Transformation &)
 {
 }
 

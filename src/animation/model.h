@@ -14,7 +14,7 @@ public:
     virtual ~Model() = default;
 
     virtual void draw(std::unique_ptr<Renderer> &renderer) override;
-    virtual void transform(const Transformation &transformation) override;
+    virtual void transform(Transformation &transformation) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
 

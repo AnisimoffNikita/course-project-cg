@@ -14,3 +14,8 @@ void CommonTransformation::transform(Vec3 &vertex) const
 }
 
 
+
+
+void CommonTransformation::resetOrigin()
+{
+}

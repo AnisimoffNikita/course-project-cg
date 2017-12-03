@@ -10,6 +10,7 @@ public:
     RotateXTransformation(float angle, const Vec3 &origin);
 
     virtual void transform(Vec3 &vertex) const override;
+    virtual void resetOrigin() override;
 protected:
     Vec3 _origin;
 };
@@ -20,6 +21,7 @@ public:
     RotateYTransformation(float angle, const Vec3 &origin);
 
     virtual void transform(Vec3 &vertex) const override;
+    virtual void resetOrigin() override;
 protected:
     Vec3 _origin;
 };
@@ -30,6 +32,7 @@ public:
     RotateZTransformation(float angle, const Vec3 &origin);
 
     virtual void transform(Vec3 &vertex) const override;
+    virtual void resetOrigin() override;
 protected:
     Vec3 _origin;
 };

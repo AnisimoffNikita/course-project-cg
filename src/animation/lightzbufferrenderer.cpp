@@ -43,12 +43,9 @@ uchar *LightZBufferRenderer::getRendered()
 
 void LightZBufferRenderer::putPixel(int x, int y, const Color &color)
 {
-    if (x >= 0 && x < width && y >= 0 && y < height)
-    {
-        buffer[4 * (y * width + x)] = color.getRed();
-        buffer[4 * (y * width + x) + 1] = color.getGreen();
-        buffer[4 * (y * width + x) + 2] = color.getBlue();
-    }
+    buffer[4 * (y * width + x) + 2] = color.getRed();
+    buffer[4 * (y * width + x) + 1] = color.getGreen();
+    buffer[4 * (y * width + x) + 0] = color.getBlue();
 }
 
 

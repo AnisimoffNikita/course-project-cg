@@ -10,6 +10,7 @@ public:
     CommonTransformation(const Mat4 &matrix);
 
     virtual void transform(Vec3 &vertex) const override;
+    virtual void resetOrigin() override;
 };
 
 #endif // COMMONTRANSFORMATION_H

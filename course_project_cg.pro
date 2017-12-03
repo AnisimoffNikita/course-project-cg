@@ -72,7 +72,9 @@ SOURCES += src/main.cpp\
     src/animation/zbuffer.cpp \
     src/animation/lightzbufferrenderer.cpp \
     src/animation/objloader.cpp \
-    src/widgets/modelview2.cpp
+    src/widgets/modelview2.cpp \
+    src/animation/actionmanager.cpp \
+    src/animation/actions.cpp
 
 HEADERS  += src/mainwindow.h \
     src/widgets/imageview.h \
@@ -122,7 +124,9 @@ HEADERS  += src/mainwindow.h \
     src/animation/lightzbufferrenderer.h \
     src/animation/objloader.h \
     src/3rdparty/ObjLoader/objloader.h \
-    src/widgets/modelview2.h
+    src/widgets/modelview2.h \
+    src/animation/actionmanager.h \
+    src/animation/actions.h
 
 SUBDIRS += src
 

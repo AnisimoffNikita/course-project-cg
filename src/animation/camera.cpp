@@ -19,7 +19,7 @@ void Camera::draw(std::unique_ptr<Renderer> &)
     return;
 }
 
-void Camera::transform(const Transformation &transformation)
+void Camera::transform(Transformation &transformation)
 {
     transformation.transform(position);
     updateViewMatrix();

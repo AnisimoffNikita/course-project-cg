@@ -11,7 +11,7 @@ void Light::draw(std::unique_ptr<Renderer> &)
 {
 }
 
-void Light::transform(const Transformation &transformation)
+void Light::transform(Transformation &transformation)
 {
     transformation.transform(position);
 }

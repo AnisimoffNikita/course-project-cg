@@ -9,7 +9,7 @@ public:
     Composite();
 
     virtual void draw(std::unique_ptr<Renderer> &) override;
-    virtual void transform(const Transformation &) override;
+    virtual void transform(Transformation &) override;
     virtual bool isCamera() override;
     virtual bool isLight() override;
 };

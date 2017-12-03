@@ -13,7 +13,7 @@
 #include <iostream>
 
 // Print progress to console while loading (large models)
-#define OBJL_CONSOLE_OUTPUT
+// #define OBJL_CONSOLE_OUTPUT
 
 // Namespace: OBJL
 //
@@ -940,7 +940,7 @@ private:
 
                 // If Vertex is not an interior vertex
                 float angle = math::AngleBetweenV3(pPrev.Position - pCur.Position,
-                                                    pNext.Position - pCur.Position) * (180 / 3.14159265359);
+                                                   pNext.Position - pCur.Position) * (180 / 3.14159265359);
 
                 if (angle <= 0 && angle >= 180)
                 {

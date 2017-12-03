@@ -15,8 +15,8 @@ Mat4 ViewMatrix::create(const Vec3 &eye, const Vec3 &target,
                         const Vec3 &up)
 {
     Vec3 z = (target - eye).normalized();
-    Vec3 x = z.cross(up).normalized();
-    Vec3 y = x.cross(z);
+    Vec3 x = -z.cross(up).normalized();
+    Vec3 y = -x.cross(z);
     float data[] = {x.x(), x.y(), x.z(), -x.dot(eye),
                     y.x(), y.y(), y.z(), -y.dot(eye),
                     z.x(), z.y(), z.z(), -z.dot(eye),

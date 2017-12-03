@@ -13,6 +13,7 @@ public:
     const Mat4 &getMatrix();
 
     virtual void transform(Vec3 &vertex) const = 0;
+    virtual void resetOrigin() = 0;
 
 protected:
     Mat4 _matrix;

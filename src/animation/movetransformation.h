@@ -9,6 +9,7 @@ public:
     MoveTransformation(const Vec3 &delta);
 
     virtual void transform(Vec3 &vertex) const override;
+    virtual void resetOrigin()  override;
 };
 
 #endif // MOVETRANSFORMATION_H

@@ -21,7 +21,7 @@ public:
     virtual void setPosition(const Vec3 &value);
 
     virtual void draw(std::unique_ptr<Renderer> &render) = 0;
-    virtual void transform(const Transformation &transformation) = 0;
+    virtual void transform(Transformation &transformation) = 0;
 
     virtual bool isCamera() = 0;
     virtual bool isLight() = 0;

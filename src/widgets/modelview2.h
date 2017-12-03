@@ -10,6 +10,7 @@
 
 #include "src/animation/scene.h"
 #include "src/animation/renderer.h"
+#include "src/animation/actionmanager.h"
 
 class ModelView2 : public QWidget
 {
@@ -30,6 +31,7 @@ private:
 
     unique_ptr<Scene> scene;
     unique_ptr<Renderer> renderer;
+    unique_ptr<ActionManager> actionManager;
     QTimer *timer;
     QPoint lastPos;
     QImage image;

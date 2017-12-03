@@ -16,9 +16,10 @@ void Model::draw(std::unique_ptr<Renderer> &renderer)
     renderer->renderMesh(meshToRender);
 }
 
-void Model::transform(const Transformation &transformation)
+void Model::transform(Transformation &transformation)
 {
     transformation.transform(position);
+    transformation.resetOrigin();
     mesh.transform(transformation);
 }
 

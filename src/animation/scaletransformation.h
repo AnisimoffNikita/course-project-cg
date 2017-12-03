@@ -9,6 +9,7 @@ public:
     ScaleTransformation(const Vec3 &scale, const Vec3 &setOrigin);
 
     virtual void transform(Vec3 &vertex) const override;
+    virtual void resetOrigin() override;
 protected:
     Vec3 _origin;
 };
