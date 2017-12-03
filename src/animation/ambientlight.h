@@ -8,8 +8,9 @@ class AmbientLight : public Light
 public:
     AmbientLight(float intensity);
 
-    virtual float getIntensity(const Vec3 &, const Vec3 &,
-                               const Vec3 &) const override;
+    virtual Color getIntensity(const Vec3 &, const Vec3 &,
+                               const Vec3 &, const Color &ka, const Color &, const Color &,
+                               float) const override;
 
     virtual bool isPoint() const override;
 };

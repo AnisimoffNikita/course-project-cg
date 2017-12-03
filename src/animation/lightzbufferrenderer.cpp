@@ -108,13 +108,14 @@ std::vector<float> LightZBufferRenderer::getZLine(const Vec3 &p1,
 }
 
 
-float LightZBufferRenderer::calculateIntensity(const Vec3 &n, const Vec3 &orig)
+Color LightZBufferRenderer::calculateIntensity(const Vec3 &n, const Vec3 &orig,
+        const Color &ka, const Color &kd, const Color &ks, float ns)
 {
-    float result = 0;
+    Color result = 0;
 
     for (auto &light : lights)
     {
-        result += light->getIntensity(n, orig, camera->getPosition());
+        result += light->getIntensity(n, orig, camera->getPosition(), ka, kd, ks, ns);
     }
 
     return result;
@@ -151,7 +152,10 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
     const Vec3 &wv1 = projected[triangle.getV1()],
                 &wv2 = projected[triangle.getV2()],
                  &wv3 = projected[triangle.getV3()];
-    auto color = currentMesh->getMaterial().getKd();
+    auto ka = currentMesh->getMaterial().getKa();
+    auto kd = currentMesh->getMaterial().getKd();
+    auto ks = currentMesh->getMaterial().getKs();
+    auto ns = currentMesh->getMaterial().getNs();
     Vec3 ov1 = currentMesh->getVertices()[triangle.getV1()].getV();
     Vec3 ov2 = currentMesh->getVertices()[triangle.getV2()].getV();
     Vec3 ov3 = currentMesh->getVertices()[triangle.getV3()].getV();
@@ -200,8 +204,8 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
 
                 Vec3 orig = toCartesian(toBarycenteric(Vec3(x, y, z), wv1, wv2,
                                                        wv3), ov1, ov2, ov3);
-                float intensity = calculateIntensity(n, orig);
-                putPixel(ix, iy, color * intensity);
+                Color intensity = calculateIntensity(n, orig, ka, kd, ks, ns);
+                putPixel(ix, iy, intensity);
             }
 
             z += dz;

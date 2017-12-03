@@ -6,16 +6,16 @@
 #include <QImage>
 #include <QResizeEvent>
 
-#include "src/algorithm/edgedetector/cannyedgedetector.h"
-#include "src/algorithm/linetransform/houghtransform.h"
-#include "src/algorithm/blur/gaussianblur.h"
-#include "src/algorithm/cylindersizecalculator.h"
-#include "src/animation/scene.h"
-#include "src/animation/renderer.h"
+#include "algorithm/edgedetector/cannyedgedetector.h"
+#include "algorithm/linetransform/houghtransform.h"
+#include "algorithm/blur/gaussianblur.h"
+#include "algorithm/cylindersizecalculator.h"
+#include "animation/scene.h"
+#include "animation/renderer.h"
 
 namespace Ui
 {
-class MainWindow;
+class DebugMainWindow;
 }
 
 class DebugMainWindow : public QMainWindow
@@ -68,7 +68,7 @@ private:
 
     void debug_setScene();
 
-    Ui::MainWindow *ui;
+    Ui::DebugMainWindow *ui;
     QImage image;
 
     CylinderSizeCalculator calc;

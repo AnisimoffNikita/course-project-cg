@@ -65,9 +65,17 @@ void Color::setGray(uint8 gray)
     r = g = b = gray;
 }
 
-Color Color::operator*(float factor)
+Color Color::operator*(float factor) const
 {
     return Color(Math::Clamp(r * factor, 0.0f, 255.0f),
                  Math::Clamp(g * factor, 0.0f, 255.0f),
                  Math::Clamp(b * factor, 0.0f, 255.0f));
+}
+
+Color &Color::operator+=(const Color &other)
+{
+    r = Math::Clamp(r + other.r, 0, 255);
+    g = Math::Clamp(g + other.g, 0, 255);
+    b = Math::Clamp(b + other.b, 0, 255);
+    return *this;
 }

@@ -1,5 +1,5 @@
 #include "debugmainwindow.h"
-#include "ui_mainwindow.h"
+#include "ui_debug_mainwindow.h"
 
 #include <QStandardPaths>
 #include <QImageReader>
@@ -13,7 +13,7 @@
 
 DebugMainWindow::DebugMainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow),
+    ui(new Ui::DebugMainWindow),
     state(0)
 {
     ui->setupUi(this);

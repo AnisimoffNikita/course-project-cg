@@ -22,7 +22,8 @@ public:
 
     void setGray(uint8 gray);
 
-    Color operator*(float factor);
+    Color operator*(float factor) const;
+    Color &operator+=(const Color &other);
 
 private:
     uint8 r, g, b;

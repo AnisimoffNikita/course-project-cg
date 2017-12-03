@@ -6,9 +6,10 @@ AmbientLight::AmbientLight(float intensity) :
 }
 
 
-float AmbientLight::getIntensity(const Vec3 &, const Vec3 &, const Vec3 &) const
+Color AmbientLight::getIntensity(const Vec3 &, const Vec3 &, const Vec3 &,
+                                 const Color &ka, const Color &, const Color &, float) const
 {
-    return intensity;
+    return ka * intensity;
 }
 
 

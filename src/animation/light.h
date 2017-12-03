@@ -2,6 +2,7 @@
 #define LIGHT_H
 
 #include "sceneobject.h"
+#include "src/image/color.h"
 
 class Light : public SceneObject
 {
@@ -15,8 +16,10 @@ public:
     virtual bool isCamera() override;
     virtual bool isLight() override;
 
-    virtual float getIntensity(const Vec3 &normal, const Vec3 &position,
-                               const Vec3 &camera) const = 0;
+    virtual Color getIntensity(const Vec3 &normal, const Vec3 &position,
+                               const Vec3 &camera,
+                               const Color &ka, const Color &kd, const Color &ks,
+                               float ns) const = 0;
 
     virtual bool isPoint() const = 0;
 protected:

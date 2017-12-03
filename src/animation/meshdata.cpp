@@ -86,7 +86,7 @@ Material::Material(const Color &ka, const Color &kd, const Color &ks, float ns,
 {
 }
 
-Color Material::getKa() const
+const Color &Material::getKa()
 {
     return ka;
 }
@@ -96,7 +96,7 @@ void Material::setKa(const Color &value)
     ka = value;
 }
 
-Color Material::getKd() const
+const Color &Material::getKd()
 {
     return kd;
 }
@@ -106,7 +106,7 @@ void Material::setKd(const Color &value)
     kd = value;
 }
 
-Color Material::getKs() const
+const Color &Material::getKs()
 {
     return ks;
 }

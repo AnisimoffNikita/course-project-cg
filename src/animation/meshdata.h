@@ -56,13 +56,13 @@ public:
     Material(const Color &ka, const Color &kd, const Color &ks, float ns,
              float ni, float d);
 
-    Color getKa() const;
+    const Color &getKa();
     void setKa(const Color &value);
 
-    Color getKd() const;
+    const Color &getKd();
     void setKd(const Color &value);
 
-    Color getKs() const;
+    const Color &getKs();
     void setKs(const Color &value);
 
     float getNs() const;

@@ -18,7 +18,7 @@ public:
 
 protected:
     void resizeEvent(QResizeEvent *event);
-    void mouseMoveEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *);
 
 private:
     QGraphicsScene *scene;

@@ -30,7 +30,8 @@ protected:
                             Triangle &triangle,
                             bool &swapped);
     void triangleSort(const std::vector<Vec3> &vertices, Triangle &triangle);
-    float calculateIntensity(const Vec3 &n, const Vec3 &orig);
+    Color calculateIntensity(const Vec3 &n, const Vec3 &orig, const Color &ka,
+                             const Color &kd, const Color &ks, float ns);
 
     void putPixel(int32 x, int32 y, const Color &color);
     std::vector<float> getBrezenhemX(const Vec3 &p1, const Vec3 &p2);

@@ -25,6 +25,6 @@ void ImageView::resizeEvent(QResizeEvent *event)
     this->fitInView(scene->itemsBoundingRect(), Qt::KeepAspectRatio);
 }
 
-void ImageView::mouseMoveEvent(QMouseEvent *event)
+void ImageView::mouseMoveEvent(QMouseEvent *)
 {
 }
