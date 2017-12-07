@@ -1,0 +1,190 @@
+\hypertarget{class_model}{}\section{Класс Model}
+\label{class_model}\index{Model@{Model}}
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+
+
+Граф наследования\+:Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{dd/dc7/class_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/db1/class_model__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model_ab5bdabea36b1d1bee80151e2da913373}{Model} ()=default
+\item 
+\hyperlink{class_model_a8dcd35d49dd569537d6f62ee61ade330}{Model} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&\hyperlink{class_scene_object_af190cdf9b9449f96f73d836848ce4ad3}{position}, const \hyperlink{class_mesh}{Mesh} \&\hyperlink{class_model_a3d4bb8dadc8b8fa5513cd052ccc2276e}{mesh})
+\item 
+virtual \hyperlink{class_model_a2efbe4ec768191fa70ad86f260ec2fd6}{$\sim$\+Model} ()=default
+\item 
+virtual void \hyperlink{class_model_a09879231a804bbc347d6549a5b1ad495}{draw} (std\+::unique\+\_\+ptr$<$ \hyperlink{class_renderer}{Renderer} $>$ \&renderer) override
+\item 
+virtual void \hyperlink{class_model_a0bb5ca842ec53af3dde6918a04eecbca}{transform} (\hyperlink{class_transformation}{Transformation} \&transformation) override
+\item 
+virtual bool \hyperlink{class_model_a48eee23fb4c5246630fd97e21589f620}{is\+Camera} () override
+\item 
+virtual bool \hyperlink{class_model_a362e8e14db5f0d90cb44759bdad96e13}{is\+Light} () override
+\item 
+\hyperlink{class_mesh}{Mesh} \hyperlink{class_model_a38ca1ac30254bbf656b44c4dbac46474}{get\+Mesh} () const 
+\item 
+void \hyperlink{class_model_a9b279076425cc5296ee501cb28e343ea}{set\+Mesh} (const \hyperlink{class_mesh}{Mesh} \&\hyperlink{class_model_a3d4bb8dadc8b8fa5513cd052ccc2276e}{mesh})
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mesh}{Mesh} \hyperlink{class_model_a3d4bb8dadc8b8fa5513cd052ccc2276e}{mesh}
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле model.\+h строка 8
+
+
+
+\subsection{Конструктор(ы)}
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Model()=default}{Model()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_model_ab5bdabea36b1d1bee80151e2da913373}{}\label{class_model_ab5bdabea36b1d1bee80151e2da913373}
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{Model(const Vec3 \&position, const Mesh \&mesh)}{Model(const Vec3 &position, const Mesh &mesh)}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{const {\bf Mesh} \&}]{mesh}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a8dcd35d49dd569537d6f62ee61ade330}{}\label{class_model_a8dcd35d49dd569537d6f62ee61ade330}
+
+
+См. определение в файле model.\+cpp строка 6
+
+\index{Model@{Model}!````~Model@{$\sim$\+Model}}
+\index{````~Model@{$\sim$\+Model}!Model@{Model}}
+\subsubsection[{\texorpdfstring{$\sim$\+Model()=default}{~Model()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Model\+::$\sim$\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_model_a2efbe4ec768191fa70ad86f260ec2fd6}{}\label{class_model_a2efbe4ec768191fa70ad86f260ec2fd6}
+
+
+\subsection{Методы}
+\index{Model@{Model}!draw@{draw}}
+\index{draw@{draw}!Model@{Model}}
+\subsubsection[{\texorpdfstring{draw(std\+::unique\+\_\+ptr$<$ Renderer $>$ \&renderer) override}{draw(std::unique_ptr< Renderer > &renderer) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Renderer} $>$ \&}]{renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_model_a09879231a804bbc347d6549a5b1ad495}{}\label{class_model_a09879231a804bbc347d6549a5b1ad495}
+
+
+Замещает \hyperlink{class_scene_object_adc906ce4e4a896a351949ccabfd44016}{Scene\+Object}.
+
+
+
+См. определение в файле model.\+cpp строка 12
+
+\index{Model@{Model}!get\+Mesh@{get\+Mesh}}
+\index{get\+Mesh@{get\+Mesh}!Model@{Model}}
+\subsubsection[{\texorpdfstring{get\+Mesh() const }{getMesh() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mesh} Model\+::get\+Mesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_model_a38ca1ac30254bbf656b44c4dbac46474}{}\label{class_model_a38ca1ac30254bbf656b44c4dbac46474}
+
+
+См. определение в файле model.\+cpp строка 36
+
+\index{Model@{Model}!is\+Camera@{is\+Camera}}
+\index{is\+Camera@{is\+Camera}!Model@{Model}}
+\subsubsection[{\texorpdfstring{is\+Camera() override}{isCamera() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Model\+::is\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_model_a48eee23fb4c5246630fd97e21589f620}{}\label{class_model_a48eee23fb4c5246630fd97e21589f620}
+
+
+Замещает \hyperlink{class_scene_object_a6d7cb8b9a2c29f38fd039731e83167f4}{Scene\+Object}.
+
+
+
+См. определение в файле model.\+cpp строка 26
+
+\index{Model@{Model}!is\+Light@{is\+Light}}
+\index{is\+Light@{is\+Light}!Model@{Model}}
+\subsubsection[{\texorpdfstring{is\+Light() override}{isLight() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Model\+::is\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_model_a362e8e14db5f0d90cb44759bdad96e13}{}\label{class_model_a362e8e14db5f0d90cb44759bdad96e13}
+
+
+Замещает \hyperlink{class_scene_object_a9c5b006b8a0e457634f15c19eb51ca73}{Scene\+Object}.
+
+
+
+См. определение в файле model.\+cpp строка 31
+
+\index{Model@{Model}!set\+Mesh@{set\+Mesh}}
+\index{set\+Mesh@{set\+Mesh}!Model@{Model}}
+\subsubsection[{\texorpdfstring{set\+Mesh(const Mesh \&mesh)}{setMesh(const Mesh &mesh)}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::set\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mesh} \&}]{mesh}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_a9b279076425cc5296ee501cb28e343ea}{}\label{class_model_a9b279076425cc5296ee501cb28e343ea}
+
+
+См. определение в файле model.\+cpp строка 41
+
+\index{Model@{Model}!transform@{transform}}
+\index{transform@{transform}!Model@{Model}}
+\subsubsection[{\texorpdfstring{transform(\+Transformation \&transformation) override}{transform(Transformation &transformation) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Transformation} \&}]{transformation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_model_a0bb5ca842ec53af3dde6918a04eecbca}{}\label{class_model_a0bb5ca842ec53af3dde6918a04eecbca}
+
+
+Замещает \hyperlink{class_scene_object_a1b8a4b90f1200f1cd025d95964d43630}{Scene\+Object}.
+
+
+
+См. определение в файле model.\+cpp строка 19
+
+
+
+\subsection{Данные класса}
+\index{Model@{Model}!mesh@{mesh}}
+\index{mesh@{mesh}!Model@{Model}}
+\subsubsection[{\texorpdfstring{mesh}{mesh}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mesh} Model\+::mesh\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_a3d4bb8dadc8b8fa5513cd052ccc2276e}{}\label{class_model_a3d4bb8dadc8b8fa5513cd052ccc2276e}
+
+
+См. определение в файле model.\+h строка 25
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{model_8h}{model.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{model_8cpp}{model.\+cpp}\end{DoxyCompactItemize}

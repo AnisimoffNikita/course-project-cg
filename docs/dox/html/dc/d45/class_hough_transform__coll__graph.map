@@ -1,0 +1,5 @@
+<map id="HoughTransform" name="HoughTransform">
+<area shape="rect" id="node2" href="$d3/d23/class_line_transform.html" title="{LineTransform\n||+ ~LineTransform()\l+ process()\l}" alt="" coords="5,323,139,415"/>
+<area shape="rect" id="node3" href="$dd/d52/class_grayscale_image.html" title="{GrayscaleImage\n||}" alt="" coords="163,330,280,407"/>
+<area shape="rect" id="node4" href="$db/d6b/class_image_base.html" title="{ImageBase\&lt; uint8 \&gt;\n|&#45; data\l&#45; width\l&#45; height\l|+ ImageBase()\l+ ImageBase()\l+ ImageBase()\l+ ImageBase()\l+ operator=()\l+ operator=()\l+ at()\l+ set()\l+ getHeight()\l+ setHeight()\l+ getWidth()\l+ setWidth()\l}" alt="" coords="151,5,291,273"/>
+</map>

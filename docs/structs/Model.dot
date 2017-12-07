@@ -1,0 +1,5 @@
+digraph Model
+{
+graph [ rankdir="RL" ]
+"d0/de3/class_model" [ label="Model\n|+Model (  )\l+Model ( position : const Vec3 &, mesh : const Mesh & )\l/+draw ( renderer : std::unique_ptr\< Renderer \> & ) : void \{virtual\}\l+getMesh (  ) : Mesh\l/+isCamera (  ) : bool \{virtual\}\l/+isLight (  ) : bool \{virtual\}\l+setMesh ( mesh : const Mesh & ) : void\l/+transform ( transformation : Transformation & ) : void \{virtual\}\l+~Model (  ) \{virtual\}\l|-mesh : Mesh\l" shape="record" ]
+}

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/dd8/class_obj_loader" kind="class" language="C++" prot="public">
+    <compoundname>ObjLoader</compoundname>
+    <includes refid="de/d7c/animation_2objloader_8h" local="no">objloader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/dd8/class_obj_loader_1a19f5e9808f15ad018f6ca66fa047b15c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ObjLoader::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/objloader.h" line="20" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/objloader.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/dd8/class_obj_loader_1a3371efa56723975460455dd7ff14882b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ObjLoader::ObjLoader</definition>
+        <argsstring>(const string &amp;filename)</argsstring>
+        <name>ObjLoader</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/objloader.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/objloader.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/class_obj_loader_1a8d4e47e1e5c9cf9b96401037f818ae95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref></type>
+        <definition>Mesh ObjLoader::load</definition>
+        <argsstring>()</argsstring>
+        <name>load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/objloader.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/objloader.cpp" bodystart="71" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d5/dd8/class_obj_loader_1abe0da9b7f93b7fe357b52b70244d3519" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref></type>
+        <definition>Mesh ObjLoader::Load</definition>
+        <argsstring>(const string &amp;filename)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/objloader.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/objloader.cpp" bodystart="14" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="431">
+        <label>ObjLoader</label>
+        <link refid="d5/dd8/class_obj_loader"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/objloader.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/objloader.h" bodystart="10" bodyend="21"/>
+    <listofallmembers>
+      <member refid="d5/dd8/class_obj_loader_1a19f5e9808f15ad018f6ca66fa047b15c" prot="private" virt="non-virtual"><scope>ObjLoader</scope><name>filename</name></member>
+      <member refid="d5/dd8/class_obj_loader_1a8d4e47e1e5c9cf9b96401037f818ae95" prot="public" virt="non-virtual"><scope>ObjLoader</scope><name>load</name></member>
+      <member refid="d5/dd8/class_obj_loader_1abe0da9b7f93b7fe357b52b70244d3519" prot="public" virt="non-virtual"><scope>ObjLoader</scope><name>Load</name></member>
+      <member refid="d5/dd8/class_obj_loader_1a3371efa56723975460455dd7ff14882b" prot="public" virt="non-virtual"><scope>ObjLoader</scope><name>ObjLoader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

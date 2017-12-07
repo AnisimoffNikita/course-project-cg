@@ -1,0 +1,53 @@
+\hypertarget{lightzbufferrenderer_8cpp}{}\section{Файл Projects/labs/course\+\_\+project\+\_\+cg/src/animation/lightzbufferrenderer.cpp}
+\label{lightzbufferrenderer_8cpp}\index{Projects/labs/course\+\_\+project\+\_\+cg/src/animation/lightzbufferrenderer.\+cpp@{Projects/labs/course\+\_\+project\+\_\+cg/src/animation/lightzbufferrenderer.\+cpp}}
+{\ttfamily \#include \char`\"{}lightzbufferrenderer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}commontransformation.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scaletransformation.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}src/number.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$omp.\+h$>$}\\*
+{\ttfamily \#include $<$Q\+Painter$>$}\\*
+Граф включаемых заголовочных файлов для lightzbufferrenderer.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/da8/lightzbufferrenderer_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{lightzbufferrenderer_8cpp_afe05928bb086f3cae2194eb990e25d01}{to\+Barycenteric} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&p, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&a, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&b, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&c)
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{lightzbufferrenderer_8cpp_ac81309394911edeb46d7dc9af43c1f58}{to\+Cartesian} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&barycentric, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&a, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&b, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\index{lightzbufferrenderer.\+cpp@{lightzbufferrenderer.\+cpp}!to\+Barycenteric@{to\+Barycenteric}}
+\index{to\+Barycenteric@{to\+Barycenteric}!lightzbufferrenderer.\+cpp@{lightzbufferrenderer.\+cpp}}
+\subsubsection[{\texorpdfstring{to\+Barycenteric(const Vec3 \&p, const Vec3 \&a, const Vec3 \&b, const Vec3 \&c)}{toBarycenteric(const Vec3 &p, const Vec3 &a, const Vec3 &b, const Vec3 &c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} to\+Barycenteric (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{p, }
+\item[{const {\bf Vec3} \&}]{a, }
+\item[{const {\bf Vec3} \&}]{b, }
+\item[{const {\bf Vec3} \&}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{lightzbufferrenderer_8cpp_afe05928bb086f3cae2194eb990e25d01}{}\label{lightzbufferrenderer_8cpp_afe05928bb086f3cae2194eb990e25d01}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 124
+
+\index{lightzbufferrenderer.\+cpp@{lightzbufferrenderer.\+cpp}!to\+Cartesian@{to\+Cartesian}}
+\index{to\+Cartesian@{to\+Cartesian}!lightzbufferrenderer.\+cpp@{lightzbufferrenderer.\+cpp}}
+\subsubsection[{\texorpdfstring{to\+Cartesian(const Vec3 \&barycentric, const Vec3 \&a, const Vec3 \&b, const Vec3 \&c)}{toCartesian(const Vec3 &barycentric, const Vec3 &a, const Vec3 &b, const Vec3 &c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} to\+Cartesian (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{barycentric, }
+\item[{const {\bf Vec3} \&}]{a, }
+\item[{const {\bf Vec3} \&}]{b, }
+\item[{const {\bf Vec3} \&}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{lightzbufferrenderer_8cpp_ac81309394911edeb46d7dc9af43c1f58}{}\label{lightzbufferrenderer_8cpp_ac81309394911edeb46d7dc9af43c1f58}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 138
+

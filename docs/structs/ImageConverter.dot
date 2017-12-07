@@ -1,0 +1,5 @@
+digraph ImageConverter
+{
+graph [ rankdir="RL" ]
+"db/db1/class_image_converter" [ label="ImageConverter\n|+GrayscaleImageToImage ( image : const GrayscaleImage & ) : Image \{static\}\l+ImageToGrayscalImage ( image : const Image & ) : GrayscaleImage \{static\}\l+ImageToQImage ( image : const Image & ) : QImage \{static\}\l+QImageToImage ( qImage : const QImage & ) : Image \{static\}\l-getGrayscale ( color : const Color & ) : uint8 \{static\}\l|" shape="record" ]
+}

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dc/d6a/class_rotate_x_transformation" kind="class" language="C++" prot="public">
+    <compoundname>RotateXTransformation</compoundname>
+    <basecompoundref refid="d1/d32/class_transformation" prot="public" virt="non-virtual">Transformation</basecompoundref>
+    <includes refid="d5/d2e/rotatetransformation_8h" local="no">rotatetransformation.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="dc/d6a/class_rotate_x_transformation_1a771b16f30e12e307d6fa352f0aeca526" prot="protected" static="no" mutable="no">
+        <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref></type>
+        <definition>Vec3 RotateXTransformation::_origin</definition>
+        <argsstring></argsstring>
+        <name>_origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/rotatetransformation.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/rotatetransformation.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d6a/class_rotate_x_transformation_1a90758976e184ef89825281c15ad0f71a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RotateXTransformation::RotateXTransformation</definition>
+        <argsstring>(float angle, const Vec3 &amp;origin)</argsstring>
+        <name>RotateXTransformation</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/rotatetransformation.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp" bodystart="6" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d6a/class_rotate_x_transformation_1a4ce10fae3f680ab275e996f9a80aed31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RotateXTransformation::transform</definition>
+        <argsstring>(Vec3 &amp;vertex) const override</argsstring>
+        <name>transform</name>
+        <reimplements refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee">transform</reimplements>
+        <param>
+          <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/rotatetransformation.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d6a/class_rotate_x_transformation_1ace8f34cb88796d5a1102387ff55003fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RotateXTransformation::resetOrigin</definition>
+        <argsstring>() override</argsstring>
+        <name>resetOrigin</name>
+        <reimplements refid="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038">resetOrigin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/rotatetransformation.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="458">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+      </node>
+      <node id="457">
+        <label>RotateXTransformation</label>
+        <link refid="dc/d6a/class_rotate_x_transformation"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="460">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+        <childnode refid="461" relation="usage">
+          <edgelabel>#_matrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="462">
+        <label>Vector3&lt; float &gt;</label>
+        <link refid="d3/de7/class_vector3"/>
+      </node>
+      <node id="461">
+        <label>Matrix&lt; 4, 4, float &gt;</label>
+        <link refid="d6/d3f/class_matrix"/>
+      </node>
+      <node id="459">
+        <label>RotateXTransformation</label>
+        <link refid="dc/d6a/class_rotate_x_transformation"/>
+        <childnode refid="460" relation="public-inheritance">
+        </childnode>
+        <childnode refid="462" relation="usage">
+          <edgelabel>#_origin</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/rotatetransformation.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/rotatetransformation.h" bodystart="7" bodyend="16"/>
+    <listofallmembers>
+      <member refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" prot="protected" virt="non-virtual"><scope>RotateXTransformation</scope><name>_matrix</name></member>
+      <member refid="dc/d6a/class_rotate_x_transformation_1a771b16f30e12e307d6fa352f0aeca526" prot="protected" virt="non-virtual"><scope>RotateXTransformation</scope><name>_origin</name></member>
+      <member refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" prot="public" virt="non-virtual"><scope>RotateXTransformation</scope><name>getMatrix</name></member>
+      <member refid="dc/d6a/class_rotate_x_transformation_1ace8f34cb88796d5a1102387ff55003fd" prot="public" virt="virtual"><scope>RotateXTransformation</scope><name>resetOrigin</name></member>
+      <member refid="dc/d6a/class_rotate_x_transformation_1a90758976e184ef89825281c15ad0f71a" prot="public" virt="non-virtual"><scope>RotateXTransformation</scope><name>RotateXTransformation</name></member>
+      <member refid="dc/d6a/class_rotate_x_transformation_1a4ce10fae3f680ab275e996f9a80aed31" prot="public" virt="virtual"><scope>RotateXTransformation</scope><name>transform</name></member>
+      <member refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" prot="public" virt="non-virtual"><scope>RotateXTransformation</scope><name>Transformation</name></member>
+      <member refid="d1/d32/class_transformation_1a4e436a0834b3295b8261c38748e8602d" prot="public" virt="virtual"><scope>RotateXTransformation</scope><name>~Transformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

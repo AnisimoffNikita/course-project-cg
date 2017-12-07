@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/d54/renderer_8cpp" kind="file" language="C++">
+    <compoundname>renderer.cpp</compoundname>
+    <includes refid="d6/d85/renderer_8h" local="yes">renderer.h</includes>
+    <incdepgraph>
+      <node id="2604">
+        <label>functional</label>
+      </node>
+      <node id="2611">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2602" relation="include">
+        </childnode>
+      </node>
+      <node id="2607">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+        <childnode refid="2601" relation="include">
+        </childnode>
+      </node>
+      <node id="2601">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2602" relation="include">
+        </childnode>
+        <childnode refid="2603" relation="include">
+        </childnode>
+      </node>
+      <node id="2602">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2615">
+        <label>QImage</label>
+      </node>
+      <node id="2613">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2611" relation="include">
+        </childnode>
+        <childnode refid="2601" relation="include">
+        </childnode>
+        <childnode refid="2602" relation="include">
+        </childnode>
+        <childnode refid="2614" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+      </node>
+      <node id="2605">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2602" relation="include">
+        </childnode>
+      </node>
+      <node id="2606">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+      </node>
+      <node id="2599">
+        <label>renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2600" relation="include">
+        </childnode>
+        <childnode refid="2606" relation="include">
+        </childnode>
+        <childnode refid="2610" relation="include">
+        </childnode>
+        <childnode refid="2612" relation="include">
+        </childnode>
+        <childnode refid="2615" relation="include">
+        </childnode>
+      </node>
+      <node id="2603">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2602" relation="include">
+        </childnode>
+        <childnode refid="2604" relation="include">
+        </childnode>
+      </node>
+      <node id="2608">
+        <label>vector</label>
+      </node>
+      <node id="2614">
+        <label>array</label>
+      </node>
+      <node id="2598">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.cpp</label>
+        <link refid="renderer.cpp"/>
+        <childnode refid="2599" relation="include">
+        </childnode>
+      </node>
+      <node id="2612">
+        <label>mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2601" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+      </node>
+      <node id="2600">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2601" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+      </node>
+      <node id="2610">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2611" relation="include">
+        </childnode>
+      </node>
+      <node id="2609">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d85/renderer_8h" kindref="compound">renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d4/d44/class_renderer_1ae0b9551d2d89c7bc08e962eafa43ebb0" refkind="member"><highlight class="normal"><ref refid="d4/d44/class_renderer_1a4dddd75ab18573a3686f90225f3f03d4" kindref="member">Renderer::Renderer</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>width,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>height)<sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>scale(scale),</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>width(width),</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>height(height)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/renderer.cpp"/>
+  </compounddef>
+</doxygen>

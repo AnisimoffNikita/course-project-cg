@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d2/daa/struct_camera_factory_1_1_perspective_data" kind="struct" language="C++" prot="public">
+    <compoundname>CameraFactory::PerspectiveData</compoundname>
+    <includes refid="d9/d8f/sceneobjectfactory_8h" local="no">sceneobjectfactory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/daa/struct_camera_factory_1_1_perspective_data_1adad856561ffc92f96a2fe6a834f9baf0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraFactory::PerspectiveData::fovX</definition>
+        <argsstring></argsstring>
+        <name>fovX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/daa/struct_camera_factory_1_1_perspective_data_1aee0e522e300405859de7ef8d32b63249" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraFactory::PerspectiveData::fovY</definition>
+        <argsstring></argsstring>
+        <name>fovY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="27" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/daa/struct_camera_factory_1_1_perspective_data_1a2d3bcbd8b639a6ace7a79f91f0e71952" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraFactory::PerspectiveData::near</definition>
+        <argsstring></argsstring>
+        <name>near</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/daa/struct_camera_factory_1_1_perspective_data_1a7a69342f752826f9440482ddce959a2f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraFactory::PerspectiveData::far</definition>
+        <argsstring></argsstring>
+        <name>far</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="433">
+        <label>CameraFactory::PerspectiveData</label>
+        <link refid="d2/daa/struct_camera_factory_1_1_perspective_data"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="24" bodyend="30"/>
+    <listofallmembers>
+      <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a7a69342f752826f9440482ddce959a2f" prot="public" virt="non-virtual"><scope>CameraFactory::PerspectiveData</scope><name>far</name></member>
+      <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1adad856561ffc92f96a2fe6a834f9baf0" prot="public" virt="non-virtual"><scope>CameraFactory::PerspectiveData</scope><name>fovX</name></member>
+      <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1aee0e522e300405859de7ef8d32b63249" prot="public" virt="non-virtual"><scope>CameraFactory::PerspectiveData</scope><name>fovY</name></member>
+      <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a2d3bcbd8b639a6ace7a79f91f0e71952" prot="public" virt="non-virtual"><scope>CameraFactory::PerspectiveData</scope><name>near</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/d61/imageconverter_8h" kind="file" language="C++">
+    <compoundname>imageconverter.h</compoundname>
+    <includes local="no">QImage</includes>
+    <includes refid="d5/db2/image_8h" local="yes">image.h</includes>
+    <includes refid="d3/d37/grayscaleimage_8h" local="yes">grayscaleimage.h</includes>
+    <includedby refid="d0/d8b/gaussianblur_8cpp" local="yes">Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp</includedby>
+    <includedby refid="d8/d97/cannyedgedetector_8cpp" local="yes">Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp</includedby>
+    <includedby refid="d0/d3d/houghtransform_8cpp" local="yes">Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.cpp</includedby>
+    <includedby refid="da/d94/imageconverter_8cpp" local="yes">Projects/labs/course_project_cg/src/image/imageconverter.cpp</includedby>
+    <includedby refid="d8/dd9/mainwindow_8cpp" local="yes">Projects/labs/course_project_cg/src/mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="3100">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="3097" relation="include">
+        </childnode>
+        <childnode refid="3099" relation="include">
+        </childnode>
+        <childnode refid="3101" relation="include">
+        </childnode>
+        <childnode refid="3102" relation="include">
+        </childnode>
+      </node>
+      <node id="3102">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="3101" relation="include">
+        </childnode>
+      </node>
+      <node id="3101">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3096">
+        <label>Projects/labs/course_project_cg/src/image/imageconverter.h</label>
+        <link refid="imageconverter.h"/>
+        <childnode refid="3097" relation="include">
+        </childnode>
+        <childnode refid="3098" relation="include">
+        </childnode>
+        <childnode refid="3103" relation="include">
+        </childnode>
+      </node>
+      <node id="3097">
+        <label>QImage</label>
+      </node>
+      <node id="3098">
+        <label>image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="3097" relation="include">
+        </childnode>
+        <childnode refid="3099" relation="include">
+        </childnode>
+        <childnode refid="3100" relation="include">
+        </childnode>
+        <childnode refid="3101" relation="include">
+        </childnode>
+        <childnode refid="3102" relation="include">
+        </childnode>
+      </node>
+      <node id="3104">
+        <label>grayscalecolor.h</label>
+        <link refid="d0/d9c/grayscalecolor_8h"/>
+        <childnode refid="3101" relation="include">
+        </childnode>
+      </node>
+      <node id="3103">
+        <label>grayscaleimage.h</label>
+        <link refid="d3/d37/grayscaleimage_8h"/>
+        <childnode refid="3097" relation="include">
+        </childnode>
+        <childnode refid="3099" relation="include">
+        </childnode>
+        <childnode refid="3100" relation="include">
+        </childnode>
+        <childnode refid="3101" relation="include">
+        </childnode>
+        <childnode refid="3104" relation="include">
+        </childnode>
+      </node>
+      <node id="3099">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3110">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="3105">
+        <label>Projects/labs/course_project_cg/src/image/imageconverter.h</label>
+        <link refid="imageconverter.h"/>
+        <childnode refid="3106" relation="include">
+        </childnode>
+        <childnode refid="3107" relation="include">
+        </childnode>
+        <childnode refid="3108" relation="include">
+        </childnode>
+        <childnode refid="3109" relation="include">
+        </childnode>
+        <childnode refid="3110" relation="include">
+        </childnode>
+      </node>
+      <node id="3107">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp</label>
+        <link refid="d8/d97/cannyedgedetector_8cpp"/>
+      </node>
+      <node id="3106">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp</label>
+        <link refid="d0/d8b/gaussianblur_8cpp"/>
+      </node>
+      <node id="3109">
+        <label>Projects/labs/course_project_cg/src/image/imageconverter.cpp</label>
+        <link refid="da/d94/imageconverter_8cpp"/>
+      </node>
+      <node id="3108">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.cpp</label>
+        <link refid="d0/d3d/houghtransform_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="db/db1/class_image_converter" prot="public">ImageConverter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>IMAGECONVERTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGECONVERTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/db2/image_8h" kindref="compound">image.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d37/grayscaleimage_8h" kindref="compound">grayscaleimage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="db/db1/class_image_converter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/db1/class_image_converter" kindref="compound">ImageConverter</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/d73/class_image" kindref="compound">Image</ref><sp/><ref refid="db/db1/class_image_converter_1a5c0f28c5f9da5f2c64077e8dc7462a03" kindref="member">QImageToImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage<sp/>&amp;qImage);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="db/db1/class_image_converter_1a1d4ec9d93d250b7db9dc8fbf28c513cf" kindref="member">ImageToQImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d73/class_image" kindref="compound">Image</ref><sp/>&amp;image);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="dd/d52/class_grayscale_image" kindref="compound">GrayscaleImage</ref><sp/><ref refid="db/db1/class_image_converter_1a58b9e3e65e60d89986327f90bf305069" kindref="member">ImageToGrayscalImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d73/class_image" kindref="compound">Image</ref><sp/>&amp;image);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/d73/class_image" kindref="compound">Image</ref><sp/><ref refid="db/db1/class_image_converter_1a43b58fb52b437bad20fb9dbb57f01067" kindref="member">GrayscaleImageToImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/d52/class_grayscale_image" kindref="compound">GrayscaleImage</ref><sp/>&amp;image);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="db/db1/class_image_converter_1a478c9d613c0591f3a0f0f0db6081b986" kindref="member">getGrayscale</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;color);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>IMAGECONVERTER_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/image/imageconverter.h"/>
+  </compounddef>
+</doxygen>

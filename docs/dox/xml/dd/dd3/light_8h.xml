@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dd/dd3/light_8h" kind="file" language="C++">
+    <compoundname>light.h</compoundname>
+    <includes refid="d5/d69/sceneobject_8h" local="yes">sceneobject.h</includes>
+    <includes refid="da/dec/color_8h" local="yes">src/image/color.h</includes>
+    <includedby refid="dc/d87/ambientlight_8h" local="yes">Projects/labs/course_project_cg/src/animation/ambientlight.h</includedby>
+    <includedby refid="dd/dfa/light_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/light.cpp</includedby>
+    <includedby refid="d6/d85/renderer_8h" local="yes">Projects/labs/course_project_cg/src/animation/renderer.h</includedby>
+    <includedby refid="d0/d23/pointlight_8h" local="yes">Projects/labs/course_project_cg/src/animation/pointlight.h</includedby>
+    <includedby refid="db/d83/scene_8h" local="yes">Projects/labs/course_project_cg/src/animation/scene.h</includedby>
+    <incdepgraph>
+      <node id="2304">
+        <label>functional</label>
+      </node>
+      <node id="2305">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2302" relation="include">
+        </childnode>
+      </node>
+      <node id="2298">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2299" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2301" relation="include">
+        </childnode>
+      </node>
+      <node id="2301">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2302" relation="include">
+        </childnode>
+        <childnode refid="2303" relation="include">
+        </childnode>
+      </node>
+      <node id="2302">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2303">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2302" relation="include">
+        </childnode>
+        <childnode refid="2304" relation="include">
+        </childnode>
+      </node>
+      <node id="2299">
+        <label>vector</label>
+      </node>
+      <node id="2297">
+        <label>Projects/labs/course_project_cg/src/animation/light.h</label>
+        <link refid="light.h"/>
+        <childnode refid="2298" relation="include">
+        </childnode>
+        <childnode refid="2305" relation="include">
+        </childnode>
+      </node>
+      <node id="2300">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2316">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="2317" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2313" relation="include">
+        </childnode>
+      </node>
+      <node id="2327">
+        <label>Projects/labs/course_project_cg/src/animation/scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="2320" relation="include">
+        </childnode>
+        <childnode refid="2321" relation="include">
+        </childnode>
+        <childnode refid="2323" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2324" relation="include">
+        </childnode>
+        <childnode refid="2313" relation="include">
+        </childnode>
+      </node>
+      <node id="2320">
+        <label>Projects/labs/course_project_cg/src/animation/scene.cpp</label>
+        <link refid="da/d33/scene_8cpp"/>
+      </node>
+      <node id="2311">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2324">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="2313" relation="include">
+        </childnode>
+      </node>
+      <node id="2323">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.h</label>
+        <link refid="d3/d6a/modelview_8h"/>
+        <childnode refid="2312" relation="include">
+        </childnode>
+      </node>
+      <node id="2310">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="2326">
+        <label>Projects/labs/course_project_cg/src/animation/pointlight.cpp</label>
+        <link refid="d7/d88/pointlight_8cpp"/>
+      </node>
+      <node id="2325">
+        <label>Projects/labs/course_project_cg/src/animation/pointlight.h</label>
+        <link refid="d0/d23/pointlight_8h"/>
+        <childnode refid="2326" relation="include">
+        </childnode>
+        <childnode refid="2309" relation="include">
+        </childnode>
+      </node>
+      <node id="2318">
+        <label>Projects/labs/course_project_cg/src/animation/model.cpp</label>
+        <link refid="d6/db4/model_8cpp"/>
+      </node>
+      <node id="2312">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2322">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2314">
+        <label>Projects/labs/course_project_cg/src/animation/light.cpp</label>
+        <link refid="dd/dfa/light_8cpp"/>
+      </node>
+      <node id="2315">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2316" relation="include">
+        </childnode>
+        <childnode refid="2318" relation="include">
+        </childnode>
+        <childnode refid="2319" relation="include">
+        </childnode>
+        <childnode refid="2320" relation="include">
+        </childnode>
+        <childnode refid="2321" relation="include">
+        </childnode>
+        <childnode refid="2323" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2324" relation="include">
+        </childnode>
+        <childnode refid="2313" relation="include">
+        </childnode>
+      </node>
+      <node id="2309">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="d9/d8f/sceneobjectfactory_8h"/>
+        <childnode refid="2310" relation="include">
+        </childnode>
+        <childnode refid="2311" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2313" relation="include">
+        </childnode>
+      </node>
+      <node id="2313">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2319">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.cpp</label>
+        <link refid="d6/d54/renderer_8cpp"/>
+      </node>
+      <node id="2317">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+      <node id="2321">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2322" relation="include">
+        </childnode>
+        <childnode refid="2311" relation="include">
+        </childnode>
+      </node>
+      <node id="2306">
+        <label>Projects/labs/course_project_cg/src/animation/light.h</label>
+        <link refid="light.h"/>
+        <childnode refid="2307" relation="include">
+        </childnode>
+        <childnode refid="2314" relation="include">
+        </childnode>
+        <childnode refid="2315" relation="include">
+        </childnode>
+        <childnode refid="2325" relation="include">
+        </childnode>
+        <childnode refid="2327" relation="include">
+        </childnode>
+      </node>
+      <node id="2308">
+        <label>Projects/labs/course_project_cg/src/animation/ambientlight.cpp</label>
+        <link refid="d3/d01/ambientlight_8cpp"/>
+      </node>
+      <node id="2307">
+        <label>Projects/labs/course_project_cg/src/animation/ambientlight.h</label>
+        <link refid="dc/d87/ambientlight_8h"/>
+        <childnode refid="2308" relation="include">
+        </childnode>
+        <childnode refid="2309" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/d7c/class_light" prot="public">Light</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dd/dd3/light_8h_1ae1ec32369be93ce20c1e9047a8d388c0" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="da/d7c/class_light" kindref="compound">Light</ref> &gt;</type>
+        <definition>using SharedLight =  std::shared_ptr&lt;Light&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedLight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dd/dd3/light_8h_1ad5a9f0d258bb17c6cfc218b80530781f" prot="public" static="no">
+        <type>std::weak_ptr&lt; <ref refid="da/d7c/class_light" kindref="compound">Light</ref> &gt;</type>
+        <definition>using WeakLight =  std::weak_ptr&lt;Light&gt;</definition>
+        <argsstring></argsstring>
+        <name>WeakLight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="30" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LIGHT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIGHT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d69/sceneobject_8h" kindref="compound">sceneobject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="da/dec/color_8h" kindref="compound">src/image/color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="da/d7c/class_light" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/d7c/class_light" kindref="compound">Light</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d7c/class_light_1af49ca6a5dd2fb43fb878a5ad5f0409fe" kindref="member">Light</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d7c/class_light_1af49ca6a5dd2fb43fb878a5ad5f0409fe" kindref="member">Light</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" kindref="member">intensity</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1ae3e3209d4b97d0bbbd614ded5e1213d9" kindref="member">~Light</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1a5ae4db3ece8e61f53db06e8d3af4cdca" kindref="member">draw</ref>(std::unique_ptr&lt;Renderer&gt;<sp/>&amp;)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1afb03030e1dd8056c73e813095701d796" kindref="member">transform</ref>(<ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1a942b4fb690c63be248ae031723a6148c" kindref="member">isCamera</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1af09370083a781d2733247bc2ee2f4c33" kindref="member">isLight</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/><ref refid="da/d7c/class_light_1a81a8d20cdba6692644cda765aced1473" kindref="member">getIntensity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;normal,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;position,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;camera,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;ka,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;kd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;ks,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ns)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1aa17c9733d1616d8631ed63640344b733" kindref="member">isPoint</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" kindref="member">intensity</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="dd/dd3/light_8h_1ae1ec32369be93ce20c1e9047a8d388c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="dd/dd3/light_8h_1ae1ec32369be93ce20c1e9047a8d388c0" kindref="member">SharedLight</ref><sp/>=<sp/>std::shared_ptr&lt;Light&gt;;</highlight></codeline>
+<codeline lineno="30" refid="dd/dd3/light_8h_1ad5a9f0d258bb17c6cfc218b80530781f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="dd/dd3/light_8h_1ad5a9f0d258bb17c6cfc218b80530781f" kindref="member">WeakLight</ref><sp/>=<sp/>std::weak_ptr&lt;Light&gt;;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LIGHT_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/light.h"/>
+  </compounddef>
+</doxygen>

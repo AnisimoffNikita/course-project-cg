@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_b82668e916e017fb161f8813909345a1" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/algorithm</compoundname>
+    <innerdir refid="dir_5179f0e1b4ade01a8c45e78f1171086c">Projects/labs/course_project_cg/src/algorithm/blur</innerdir>
+    <innerdir refid="dir_10b8344b8c560a48028f6a1c27889f43">Projects/labs/course_project_cg/src/algorithm/edgedetector</innerdir>
+    <innerdir refid="dir_d1d6a2882a77ea338bb328f3080a1589">Projects/labs/course_project_cg/src/algorithm/linetransform</innerdir>
+    <innerfile refid="d3/d57/cylindersizecalculator_8cpp">cylindersizecalculator.cpp</innerfile>
+    <innerfile refid="d3/dff/cylindersizecalculator_8h">cylindersizecalculator.h</innerfile>
+    <innerfile refid="df/de2/cylindersizecalculatorbase_8cpp">cylindersizecalculatorbase.cpp</innerfile>
+    <innerfile refid="db/d0b/cylindersizecalculatorbase_8h">cylindersizecalculatorbase.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/algorithm/"/>
+  </compounddef>
+</doxygen>

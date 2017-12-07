@@ -1,0 +1,117 @@
+\hypertarget{class_action}{}\section{Класс Action}
+\label{class_action}\index{Action@{Action}}
+
+
+{\ttfamily \#include $<$actions.\+h$>$}
+
+
+
+Граф наследования\+:Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{d2/d05/class_action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{db/d84/class_action__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_action_aa456764076858773c74674ba04f25bd8}{Action} (float \hyperlink{class_action_af26e528eec8ae24e9dfc1ab9d6e809a7}{duration}, weak\+\_\+ptr$<$ \hyperlink{class_scene_object}{Scene\+Object} $>$ \hyperlink{class_action_a1dfd6b0f501cce2b19d076b7d6b5aec8}{object})
+\item 
+virtual \hyperlink{class_action_abfc040fdc62410622a0e3835a713740f}{$\sim$\+Action} ()=default
+\item 
+virtual bool \hyperlink{class_action_aa6a73e716470c9b573b1afb4025b292d}{update} (float delta)=0
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_action_af26e528eec8ae24e9dfc1ab9d6e809a7}{duration}
+\item 
+float \hyperlink{class_action_a11d29bdc060c2c492d170632507c0635}{time}
+\item 
+weak\+\_\+ptr$<$ \hyperlink{class_scene_object}{Scene\+Object} $>$ \hyperlink{class_action_a1dfd6b0f501cce2b19d076b7d6b5aec8}{object}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле actions.\+h строка 9
+
+
+
+\subsection{Конструктор(ы)}
+\index{Action@{Action}!Action@{Action}}
+\index{Action@{Action}!Action@{Action}}
+\subsubsection[{\texorpdfstring{Action(float duration, weak\+\_\+ptr$<$ Scene\+Object $>$ object)}{Action(float duration, weak_ptr< SceneObject > object)}}]{\setlength{\rightskip}{0pt plus 5cm}Action\+::\+Action (
+\begin{DoxyParamCaption}
+\item[{float}]{duration, }
+\item[{weak\+\_\+ptr$<$ {\bf Scene\+Object} $>$}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{class_action_aa456764076858773c74674ba04f25bd8}{}\label{class_action_aa456764076858773c74674ba04f25bd8}
+
+
+См. определение в файле actions.\+cpp строка 3
+
+\index{Action@{Action}!````~Action@{$\sim$\+Action}}
+\index{````~Action@{$\sim$\+Action}!Action@{Action}}
+\subsubsection[{\texorpdfstring{$\sim$\+Action()=default}{~Action()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Action\+::$\sim$\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_action_abfc040fdc62410622a0e3835a713740f}{}\label{class_action_abfc040fdc62410622a0e3835a713740f}
+
+
+\subsection{Методы}
+\index{Action@{Action}!update@{update}}
+\index{update@{update}!Action@{Action}}
+\subsubsection[{\texorpdfstring{update(float delta)=0}{update(float delta)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Action\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_action_aa6a73e716470c9b573b1afb4025b292d}{}\label{class_action_aa6a73e716470c9b573b1afb4025b292d}
+
+
+Замещается в \hyperlink{class_repeat_move_action_ad2a08b798e2c0ae093d1ae358c8ec3c2}{Repeat\+Move\+Action}.
+
+
+
+\subsection{Данные класса}
+\index{Action@{Action}!duration@{duration}}
+\index{duration@{duration}!Action@{Action}}
+\subsubsection[{\texorpdfstring{duration}{duration}}]{\setlength{\rightskip}{0pt plus 5cm}float Action\+::duration\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_action_af26e528eec8ae24e9dfc1ab9d6e809a7}{}\label{class_action_af26e528eec8ae24e9dfc1ab9d6e809a7}
+
+
+См. определение в файле actions.\+h строка 17
+
+\index{Action@{Action}!object@{object}}
+\index{object@{object}!Action@{Action}}
+\subsubsection[{\texorpdfstring{object}{object}}]{\setlength{\rightskip}{0pt plus 5cm}weak\+\_\+ptr$<${\bf Scene\+Object}$>$ Action\+::object\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_action_a1dfd6b0f501cce2b19d076b7d6b5aec8}{}\label{class_action_a1dfd6b0f501cce2b19d076b7d6b5aec8}
+
+
+См. определение в файле actions.\+h строка 19
+
+\index{Action@{Action}!time@{time}}
+\index{time@{time}!Action@{Action}}
+\subsubsection[{\texorpdfstring{time}{time}}]{\setlength{\rightskip}{0pt plus 5cm}float Action\+::time\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_action_a11d29bdc060c2c492d170632507c0635}{}\label{class_action_a11d29bdc060c2c492d170632507c0635}
+
+
+См. определение в файле actions.\+h строка 18
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{actions_8h}{actions.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{actions_8cpp}{actions.\+cpp}\end{DoxyCompactItemize}

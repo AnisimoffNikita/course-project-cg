@@ -1,0 +1,154 @@
+\hypertarget{class_scene}{}\section{Класс Scene}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+
+
+Граф связей класса Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{d4/d7f/class_scene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scene_a93ccc41b0a2f6c24e467d5d9de76ec0d}{Scene} ()=default
+\item 
+virtual \hyperlink{class_scene_af6e09d91ebd10ae9cc7c12c39d06386c}{$\sim$\+Scene} ()=default
+\item 
+virtual void \hyperlink{class_scene_ada0a975a207aa2670498fee329c6c480}{add} (const \hyperlink{sceneobject_8h_af9afe0f4fe2038e305b8b22ff495305f}{Shared\+Scene\+Object} \&child)
+\item 
+virtual void \hyperlink{class_scene_aac8b52a8123b9d4c1dceb417b9360085}{set\+Active\+Camera} (const \hyperlink{sceneobject_8h_af9afe0f4fe2038e305b8b22ff495305f}{Shared\+Scene\+Object} \&child)
+\item 
+virtual \hyperlink{camera_8h_a7b9616f276c6529ece2bbfb711f5c756}{Weak\+Camera} \hyperlink{class_scene_acfa5379bbdff26d3a01fa11dc3791295}{get\+Active\+Camera} () const 
+\item 
+virtual const vector$<$ \hyperlink{sceneobject_8h_af9afe0f4fe2038e305b8b22ff495305f}{Shared\+Scene\+Object} $>$ \& \hyperlink{class_scene_a2fcdd4356401f0bedb6d8b523bc1eaba}{get\+Children} () const 
+\item 
+virtual void \hyperlink{class_scene_a7f0c78f0935e2f080c6252cc4782ddbf}{render} (std\+::unique\+\_\+ptr$<$ \hyperlink{class_renderer}{Renderer} $>$ \&renderer)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{sceneobject_8h_af9afe0f4fe2038e305b8b22ff495305f}{Shared\+Scene\+Object} $>$ \hyperlink{class_scene_a14327127e1a055c38eacc5b524d293c5}{\+\_\+children}
+\item 
+\hyperlink{camera_8h_a7b9616f276c6529ece2bbfb711f5c756}{Weak\+Camera} \hyperlink{class_scene_a6a1ea61cb1fb35cf292c2280195d9dc8}{\+\_\+camera}
+\item 
+vector$<$ \hyperlink{light_8h_ad5a9f0d258bb17c6cfc218b80530781f}{Weak\+Light} $>$ \hyperlink{class_scene_aa82b5e8b6ba1d05fae6a836962cded02}{lights}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле scene.\+h строка 21
+
+
+
+\subsection{Конструктор(ы)}
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{Scene()=default}{Scene()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_scene_a93ccc41b0a2f6c24e467d5d9de76ec0d}{}\label{class_scene_a93ccc41b0a2f6c24e467d5d9de76ec0d}
+\index{Scene@{Scene}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{$\sim$\+Scene()=default}{~Scene()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Scene\+::$\sim$\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_scene_af6e09d91ebd10ae9cc7c12c39d06386c}{}\label{class_scene_af6e09d91ebd10ae9cc7c12c39d06386c}
+
+
+\subsection{Методы}
+\index{Scene@{Scene}!add@{add}}
+\index{add@{add}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{add(const Shared\+Scene\+Object \&child)}{add(const SharedSceneObject &child)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shared\+Scene\+Object} \&}]{child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_scene_ada0a975a207aa2670498fee329c6c480}{}\label{class_scene_ada0a975a207aa2670498fee329c6c480}
+
+
+См. определение в файле scene.\+cpp строка 7
+
+\index{Scene@{Scene}!get\+Active\+Camera@{get\+Active\+Camera}}
+\index{get\+Active\+Camera@{get\+Active\+Camera}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{get\+Active\+Camera() const }{getActiveCamera() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Weak\+Camera} Scene\+::get\+Active\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_scene_acfa5379bbdff26d3a01fa11dc3791295}{}\label{class_scene_acfa5379bbdff26d3a01fa11dc3791295}
+
+
+См. определение в файле scene.\+cpp строка 28
+
+\index{Scene@{Scene}!get\+Children@{get\+Children}}
+\index{get\+Children@{get\+Children}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{get\+Children() const }{getChildren() const }}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Shared\+Scene\+Object} $>$ \& Scene\+::get\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_scene_a2fcdd4356401f0bedb6d8b523bc1eaba}{}\label{class_scene_a2fcdd4356401f0bedb6d8b523bc1eaba}
+
+
+См. определение в файле scene.\+cpp строка 34
+
+\index{Scene@{Scene}!render@{render}}
+\index{render@{render}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{render(std\+::unique\+\_\+ptr$<$ Renderer $>$ \&renderer)}{render(std::unique_ptr< Renderer > &renderer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::render (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Renderer} $>$ \&}]{renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_scene_a7f0c78f0935e2f080c6252cc4782ddbf}{}\label{class_scene_a7f0c78f0935e2f080c6252cc4782ddbf}
+
+
+См. определение в файле scene.\+cpp строка 39
+
+\index{Scene@{Scene}!set\+Active\+Camera@{set\+Active\+Camera}}
+\index{set\+Active\+Camera@{set\+Active\+Camera}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{set\+Active\+Camera(const Shared\+Scene\+Object \&child)}{setActiveCamera(const SharedSceneObject &child)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scene\+::set\+Active\+Camera (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shared\+Scene\+Object} \&}]{child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_scene_aac8b52a8123b9d4c1dceb417b9360085}{}\label{class_scene_aac8b52a8123b9d4c1dceb417b9360085}
+
+
+См. определение в файле scene.\+cpp строка 17
+
+
+
+\subsection{Данные класса}
+\index{Scene@{Scene}!\+\_\+camera@{\+\_\+camera}}
+\index{\+\_\+camera@{\+\_\+camera}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{\+\_\+camera}{_camera}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Weak\+Camera} Scene\+::\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_a6a1ea61cb1fb35cf292c2280195d9dc8}{}\label{class_scene_a6a1ea61cb1fb35cf292c2280195d9dc8}
+
+
+См. определение в файле scene.\+h строка 38
+
+\index{Scene@{Scene}!\+\_\+children@{\+\_\+children}}
+\index{\+\_\+children@{\+\_\+children}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{\+\_\+children}{_children}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Shared\+Scene\+Object}$>$ Scene\+::\+\_\+children\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_a14327127e1a055c38eacc5b524d293c5}{}\label{class_scene_a14327127e1a055c38eacc5b524d293c5}
+
+
+См. определение в файле scene.\+h строка 37
+
+\index{Scene@{Scene}!lights@{lights}}
+\index{lights@{lights}!Scene@{Scene}}
+\subsubsection[{\texorpdfstring{lights}{lights}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Weak\+Light}$>$ Scene\+::lights\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scene_aa82b5e8b6ba1d05fae6a836962cded02}{}\label{class_scene_aa82b5e8b6ba1d05fae6a836962cded02}
+
+
+См. определение в файле scene.\+h строка 39
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{scene_8h}{scene.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{scene_8cpp}{scene.\+cpp}\end{DoxyCompactItemize}

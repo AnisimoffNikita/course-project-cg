@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_b82668e916e017fb161f8813909345a1.html">algorithm</a></li><li class="navelem"><a class="el" href="../../dir_10b8344b8c560a48028f6a1c27889f43.html">edgedetector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cannyedgedetector.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d3b/cannyedgedetector_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CANNYEDGEDETECTOR_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CANNYEDGEDETECTOR_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/da5/edgedetector_8h.html">edgedetector.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d37/grayscaleimage_8h.html">src/image/grayscaleimage.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d22/number_8h.html">src/number.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../d1/d15/class_canny_edge_detector.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d15/class_canny_edge_detector.html">CannyEdgeDetector</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d8a/class_edge_detector.html">EdgeDetector</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a6f7de6f12f8b52563d28e612a46f7a0d">CannyEdgeDetector</a>(<a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ae88472e936f883044b00e8cd50f662c6">minThresh</a> = 80, <a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ab551b06077d0221f1caa6e5e4cce48d9">maxThresh</a> = 100);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ad6f031b85ac2fc2f916ecaa04c536c01">~CannyEdgeDetector</a>();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ae97e095e14e43d763a8fc2563f6e9a87">process</a>(<a class="code" href="../../de/d73/class_image.html">Image</a> &amp;<a class="code" href="../../d1/d15/class_canny_edge_detector.html#a271e3c9036a5cb2611bb1b7da4d7d146">image</a>);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a38218d65e7d450dc226e3bbb0c7043e9">getGaussKernelSize</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#adb6b71e26f03edea19d3fef041fd6cbd">setGaussKernelSize</a>(<a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> value);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ac3e362832dcd3e18801bed15856e79b4">getGaussSigma</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#afc77ac77d033264009ea66670eeec9d0">setGaussSigma</a>(<span class="keywordtype">float</span> value);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#aa0ae63194968f376d4ea6e6d7e13f285">getMinThresh</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a825df00f677a9a949d0dcb87939a99b5">setMinThresh</a>(<a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> value);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#aa3cb693f65b9a07e5f245d7ecadf9c5c">getMaxThresh</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ae48e5be375a3a3d23c4dc81a158149c7">setMaxThresh</a>(<a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> value);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ad5843016a5e861eed74fa24f4abd688b">gradients</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a8622531b7410c002284f466df043af13">nonMaxSuppression</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a0c6b710be023dec7cfd38e55d42066a3">floatThreshold</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ab4bf8eb092943ab7042762ee48aeb0c1">hysteresis</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a3f180b6eb26a8afa34a03c8cdd0781ca">hysteresisRecursive</a>(<a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> y, <a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> x);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d1/d15/class_canny_edge_detector.html#ae88472e936f883044b00e8cd50f662c6">   35</a></span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ae88472e936f883044b00e8cd50f662c6">minThresh</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d1/d15/class_canny_edge_detector.html#ab551b06077d0221f1caa6e5e4cce48d9">   36</a></span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#ab551b06077d0221f1caa6e5e4cce48d9">maxThresh</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d1/d15/class_canny_edge_detector.html#a271e3c9036a5cb2611bb1b7da4d7d146">   38</a></span>&#160;    <a class="code" href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a271e3c9036a5cb2611bb1b7da4d7d146">image</a>;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d1/d15/class_canny_edge_detector.html#a96275be60c2ffdc3798384f7a3588684">   39</a></span>&#160;    <a class="code" href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a> <a class="code" href="../../d1/d15/class_canny_edge_detector.html#a96275be60c2ffdc3798384f7a3588684">directions</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // CANNYEDGEDETECTOR_H</span></div><div class="ttc" id="class_grayscale_image_html"><div class="ttname"><a href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/grayscaleimage_8h_source.html#l00014">grayscaleimage.h:14</a></div></div>
+<div class="ttc" id="edgedetector_8h_html"><div class="ttname"><a href="../../d4/da5/edgedetector_8h.html">edgedetector.h</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a38218d65e7d450dc226e3bbb0c7043e9"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a38218d65e7d450dc226e3bbb0c7043e9">CannyEdgeDetector::getGaussKernelSize</a></div><div class="ttdeci">int32 getGaussKernelSize() const </div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ae88472e936f883044b00e8cd50f662c6"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ae88472e936f883044b00e8cd50f662c6">CannyEdgeDetector::minThresh</a></div><div class="ttdeci">int32 minThresh</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/cannyedgedetector_8h_source.html#l00035">cannyedgedetector.h:35</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html">CannyEdgeDetector</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/cannyedgedetector_8h_source.html#l00008">cannyedgedetector.h:8</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_aa3cb693f65b9a07e5f245d7ecadf9c5c"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#aa3cb693f65b9a07e5f245d7ecadf9c5c">CannyEdgeDetector::getMaxThresh</a></div><div class="ttdeci">int32 getMaxThresh() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00243">cannyedgedetector.cpp:243</a></div></div>
+<div class="ttc" id="class_edge_detector_html"><div class="ttname"><a href="../../d9/d8a/class_edge_detector.html">EdgeDetector</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/da5/edgedetector_8h_source.html#l00006">edgedetector.h:6</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ab4bf8eb092943ab7042762ee48aeb0c1"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ab4bf8eb092943ab7042762ee48aeb0c1">CannyEdgeDetector::hysteresis</a></div><div class="ttdeci">void hysteresis()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00169">cannyedgedetector.cpp:169</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a96275be60c2ffdc3798384f7a3588684"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a96275be60c2ffdc3798384f7a3588684">CannyEdgeDetector::directions</a></div><div class="ttdeci">GrayscaleImage directions</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/cannyedgedetector_8h_source.html#l00039">cannyedgedetector.h:39</a></div></div>
+<div class="ttc" id="number_8h_html_a43d43196463bde49cb067f5c20ab8481"><div class="ttname"><a href="../../d3/d22/number_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a></div><div class="ttdeci">signed int int32</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d22/number_8h_source.html#l00008">number.h:8</a></div></div>
+<div class="ttc" id="class_image_html"><div class="ttname"><a href="../../de/d73/class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db2/image_8h_source.html#l00015">image.h:15</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a271e3c9036a5cb2611bb1b7da4d7d146"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a271e3c9036a5cb2611bb1b7da4d7d146">CannyEdgeDetector::image</a></div><div class="ttdeci">GrayscaleImage image</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/cannyedgedetector_8h_source.html#l00038">cannyedgedetector.h:38</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ab551b06077d0221f1caa6e5e4cce48d9"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ab551b06077d0221f1caa6e5e4cce48d9">CannyEdgeDetector::maxThresh</a></div><div class="ttdeci">int32 maxThresh</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/cannyedgedetector_8h_source.html#l00036">cannyedgedetector.h:36</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a6f7de6f12f8b52563d28e612a46f7a0d"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a6f7de6f12f8b52563d28e612a46f7a0d">CannyEdgeDetector::CannyEdgeDetector</a></div><div class="ttdeci">CannyEdgeDetector(int32 minThresh=80, int32 maxThresh=100)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00006">cannyedgedetector.cpp:6</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ae48e5be375a3a3d23c4dc81a158149c7"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ae48e5be375a3a3d23c4dc81a158149c7">CannyEdgeDetector::setMaxThresh</a></div><div class="ttdeci">void setMaxThresh(int32 value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00248">cannyedgedetector.cpp:248</a></div></div>
+<div class="ttc" id="number_8h_html"><div class="ttname"><a href="../../d3/d22/number_8h.html">number.h</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_afc77ac77d033264009ea66670eeec9d0"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#afc77ac77d033264009ea66670eeec9d0">CannyEdgeDetector::setGaussSigma</a></div><div class="ttdeci">void setGaussSigma(float value)</div></div>
+<div class="ttc" id="number_8h_html_a1134b580f8da4de94ca6b1de4d37975e"><div class="ttname"><a href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a></div><div class="ttdeci">unsigned int uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d22/number_8h_source.html#l00009">number.h:9</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_adb6b71e26f03edea19d3fef041fd6cbd"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#adb6b71e26f03edea19d3fef041fd6cbd">CannyEdgeDetector::setGaussKernelSize</a></div><div class="ttdeci">void setGaussKernelSize(int32 value)</div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a0c6b710be023dec7cfd38e55d42066a3"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a0c6b710be023dec7cfd38e55d42066a3">CannyEdgeDetector::floatThreshold</a></div><div class="ttdeci">void floatThreshold()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00143">cannyedgedetector.cpp:143</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a825df00f677a9a949d0dcb87939a99b5"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a825df00f677a9a949d0dcb87939a99b5">CannyEdgeDetector::setMinThresh</a></div><div class="ttdeci">void setMinThresh(int32 value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00258">cannyedgedetector.cpp:258</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ac3e362832dcd3e18801bed15856e79b4"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ac3e362832dcd3e18801bed15856e79b4">CannyEdgeDetector::getGaussSigma</a></div><div class="ttdeci">float getGaussSigma() const </div></div>
+<div class="ttc" id="grayscaleimage_8h_html"><div class="ttname"><a href="../../d3/d37/grayscaleimage_8h.html">grayscaleimage.h</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a3f180b6eb26a8afa34a03c8cdd0781ca"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a3f180b6eb26a8afa34a03c8cdd0781ca">CannyEdgeDetector::hysteresisRecursive</a></div><div class="ttdeci">void hysteresisRecursive(uint32 y, uint32 x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00194">cannyedgedetector.cpp:194</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ae97e095e14e43d763a8fc2563f6e9a87"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ae97e095e14e43d763a8fc2563f6e9a87">CannyEdgeDetector::process</a></div><div class="ttdeci">virtual void process(Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00016">cannyedgedetector.cpp:16</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_a8622531b7410c002284f466df043af13"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#a8622531b7410c002284f466df043af13">CannyEdgeDetector::nonMaxSuppression</a></div><div class="ttdeci">void nonMaxSuppression()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00102">cannyedgedetector.cpp:102</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ad6f031b85ac2fc2f916ecaa04c536c01"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ad6f031b85ac2fc2f916ecaa04c536c01">CannyEdgeDetector::~CannyEdgeDetector</a></div><div class="ttdeci">virtual ~CannyEdgeDetector()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00012">cannyedgedetector.cpp:12</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_aa0ae63194968f376d4ea6e6d7e13f285"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#aa0ae63194968f376d4ea6e6d7e13f285">CannyEdgeDetector::getMinThresh</a></div><div class="ttdeci">int32 getMinThresh() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00253">cannyedgedetector.cpp:253</a></div></div>
+<div class="ttc" id="class_canny_edge_detector_html_ad5843016a5e861eed74fa24f4abd688b"><div class="ttname"><a href="../../d1/d15/class_canny_edge_detector.html#ad5843016a5e861eed74fa24f4abd688b">CannyEdgeDetector::gradients</a></div><div class="ttdeci">void gradients()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/cannyedgedetector_8cpp_source.html#l00028">cannyedgedetector.cpp:28</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

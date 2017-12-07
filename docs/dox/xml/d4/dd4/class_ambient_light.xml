@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/dd4/class_ambient_light" kind="class" language="C++" prot="public">
+    <compoundname>AmbientLight</compoundname>
+    <basecompoundref refid="da/d7c/class_light" prot="public" virt="non-virtual">Light</basecompoundref>
+    <includes refid="dc/d87/ambientlight_8h" local="no">ambientlight.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/dd4/class_ambient_light_1a81a7a88347dddaf2fdec12d6d2793f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AmbientLight::AmbientLight</definition>
+        <argsstring>(float intensity)</argsstring>
+        <name>AmbientLight</name>
+        <param>
+          <type>float</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/ambientlight.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/ambientlight.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd4/class_ambient_light_1aebbccf2534a3cbe399ccddc552d1a49d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>Color AmbientLight::getIntensity</definition>
+        <argsstring>(const Vec3 &amp;, const Vec3 &amp;, const Vec3 &amp;, const Color &amp;ka, const Color &amp;, const Color &amp;, float) const override</argsstring>
+        <name>getIntensity</name>
+        <reimplements refid="da/d7c/class_light_1a81a8d20cdba6692644cda765aced1473">getIntensity</reimplements>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ka</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/ambientlight.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/ambientlight.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd4/class_ambient_light_1accccb9b3c5f0a9c38dceaef386c2964a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool AmbientLight::isPoint</definition>
+        <argsstring>() const override</argsstring>
+        <name>isPoint</name>
+        <reimplements refid="da/d7c/class_light_1aa17c9733d1616d8631ed63640344b733">isPoint</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/ambientlight.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/ambientlight.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="272">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+      </node>
+      <node id="271">
+        <label>Light</label>
+        <link refid="da/d7c/class_light"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>AmbientLight</label>
+        <link refid="d4/dd4/class_ambient_light"/>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="275">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+        <childnode refid="276" relation="usage">
+          <edgelabel>#position</edgelabel>
+        </childnode>
+      </node>
+      <node id="274">
+        <label>Light</label>
+        <link refid="da/d7c/class_light"/>
+        <childnode refid="275" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>Vector3&lt; float &gt;</label>
+        <link refid="d3/de7/class_vector3"/>
+      </node>
+      <node id="273">
+        <label>AmbientLight</label>
+        <link refid="d4/dd4/class_ambient_light"/>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/ambientlight.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/ambientlight.h" bodystart="6" bodyend="16"/>
+    <listofallmembers>
+      <member refid="d4/dd4/class_ambient_light_1a81a7a88347dddaf2fdec12d6d2793f8b" prot="public" virt="non-virtual"><scope>AmbientLight</scope><name>AmbientLight</name></member>
+      <member refid="da/d7c/class_light_1a5ae4db3ece8e61f53db06e8d3af4cdca" prot="public" virt="virtual"><scope>AmbientLight</scope><name>draw</name></member>
+      <member refid="d4/dd4/class_ambient_light_1aebbccf2534a3cbe399ccddc552d1a49d" prot="public" virt="virtual"><scope>AmbientLight</scope><name>getIntensity</name></member>
+      <member refid="dc/df8/class_scene_object_1a9e5d8a20e5e0123e894c2918b0e39dc3" prot="public" virt="virtual"><scope>AmbientLight</scope><name>getPosition</name></member>
+      <member refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" prot="protected" virt="non-virtual"><scope>AmbientLight</scope><name>intensity</name></member>
+      <member refid="da/d7c/class_light_1a942b4fb690c63be248ae031723a6148c" prot="public" virt="virtual"><scope>AmbientLight</scope><name>isCamera</name></member>
+      <member refid="da/d7c/class_light_1af09370083a781d2733247bc2ee2f4c33" prot="public" virt="virtual"><scope>AmbientLight</scope><name>isLight</name></member>
+      <member refid="d4/dd4/class_ambient_light_1accccb9b3c5f0a9c38dceaef386c2964a" prot="public" virt="virtual"><scope>AmbientLight</scope><name>isPoint</name></member>
+      <member refid="da/d7c/class_light_1af49ca6a5dd2fb43fb878a5ad5f0409fe" prot="public" virt="non-virtual"><scope>AmbientLight</scope><name>Light</name></member>
+      <member refid="da/d7c/class_light_1adc14c27a60cc0b1d86fdc2f44858c705" prot="public" virt="non-virtual"><scope>AmbientLight</scope><name>Light</name></member>
+      <member refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" prot="protected" virt="non-virtual"><scope>AmbientLight</scope><name>position</name></member>
+      <member refid="dc/df8/class_scene_object_1a39ac215b0b6183ac251a26a522acde14" prot="public" virt="non-virtual"><scope>AmbientLight</scope><name>SceneObject</name></member>
+      <member refid="dc/df8/class_scene_object_1ad7093f7620ca338f97d98651fd6c87a9" prot="public" virt="non-virtual"><scope>AmbientLight</scope><name>SceneObject</name></member>
+      <member refid="dc/df8/class_scene_object_1ae0e79b1773e3e3357d1dcf302463e46a" prot="public" virt="virtual"><scope>AmbientLight</scope><name>setPosition</name></member>
+      <member refid="da/d7c/class_light_1afb03030e1dd8056c73e813095701d796" prot="public" virt="virtual"><scope>AmbientLight</scope><name>transform</name></member>
+      <member refid="da/d7c/class_light_1ae3e3209d4b97d0bbbd614ded5e1213d9" prot="public" virt="virtual"><scope>AmbientLight</scope><name>~Light</name></member>
+      <member refid="dc/df8/class_scene_object_1a0b8708ffea012cd61f583103bf84b531" prot="public" virt="virtual"><scope>AmbientLight</scope><name>~SceneObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

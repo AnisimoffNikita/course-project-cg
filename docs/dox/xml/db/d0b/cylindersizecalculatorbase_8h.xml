@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/d0b/cylindersizecalculatorbase_8h" kind="file" language="C++">
+    <compoundname>cylindersizecalculatorbase.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">utility</includes>
+    <includes refid="d7/d5d/line_8h" local="yes">src/math/line.h</includes>
+    <includes refid="d1/dfa/cylindersize_8h" local="yes">src/math/cylindersize.h</includes>
+    <includedby refid="d3/dff/cylindersizecalculator_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.h</includedby>
+    <includedby refid="df/de2/cylindersizecalculatorbase_8cpp" local="yes">Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.cpp</includedby>
+    <incdepgraph>
+      <node id="2001">
+        <label>src/math/line.h</label>
+        <link refid="d7/d5d/line_8h"/>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="2003" relation="include">
+        </childnode>
+      </node>
+      <node id="2002">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="1998">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h</label>
+        <link refid="cylindersizecalculatorbase.h"/>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+        <childnode refid="2004" relation="include">
+        </childnode>
+      </node>
+      <node id="2004">
+        <label>src/math/cylindersize.h</label>
+        <link refid="d1/dfa/cylindersize_8h"/>
+      </node>
+      <node id="2003">
+        <label>vec2.h</label>
+        <link refid="d3/dbe/vec2_8h"/>
+        <childnode refid="2002" relation="include">
+        </childnode>
+      </node>
+      <node id="1999">
+        <label>vector</label>
+      </node>
+      <node id="2000">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2006">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.h</label>
+        <link refid="d3/dff/cylindersizecalculator_8h"/>
+        <childnode refid="2007" relation="include">
+        </childnode>
+        <childnode refid="2008" relation="include">
+        </childnode>
+      </node>
+      <node id="2010">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2005">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h</label>
+        <link refid="cylindersizecalculatorbase.h"/>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2007">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.cpp</label>
+        <link refid="d3/d57/cylindersizecalculator_8cpp"/>
+      </node>
+      <node id="2008">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="2010" relation="include">
+        </childnode>
+      </node>
+      <node id="2011">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.cpp</label>
+        <link refid="df/de2/cylindersizecalculatorbase_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d7d/class_cylinder_size_calculator_base" prot="public">CylinderSizeCalculatorBase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SIZECALCULATORBASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZECALCULATORBASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d5d/line_8h" kindref="compound">src/math/line.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/dfa/cylindersize_8h" kindref="compound">src/math/cylindersize.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="df/d7d/class_cylinder_size_calculator_base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/d7d/class_cylinder_size_calculator_base" kindref="compound">CylinderSizeCalculatorBase</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="df/d7d/class_cylinder_size_calculator_base_1acddec2ff7cfef169dc7df5ae3a2cc239" kindref="member">~CylinderSizeCalculatorBase</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size" kindref="compound">CylinderSize</ref><sp/><ref refid="df/d7d/class_cylinder_size_calculator_base_1adb5dd331f24a1c78b00266cb051f79ea" kindref="member">evaluate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Line&gt;<sp/>&amp;lines)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d7d/class_cylinder_size_calculator_base_1ad37d6cd0b2746034294ed91e6ae2488e" kindref="member">calibrate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Line&gt;<sp/>&amp;lines,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d7d/class_cylinder_size_calculator_base_1ad37d6cd0b2746034294ed91e6ae2488e" kindref="member">calibrate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>daig,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>diagPx)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SIZECALCULATORBASE_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h"/>
+  </compounddef>
+</doxygen>

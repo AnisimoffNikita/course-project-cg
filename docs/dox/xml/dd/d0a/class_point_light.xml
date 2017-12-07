@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dd/d0a/class_point_light" kind="class" language="C++" prot="public">
+    <compoundname>PointLight</compoundname>
+    <basecompoundref refid="da/d7c/class_light" prot="public" virt="non-virtual">Light</basecompoundref>
+    <includes refid="d0/d23/pointlight_8h" local="no">pointlight.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d0a/class_point_light_1aea07f7df125d6c2ae1812904d5ddc922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PointLight::PointLight</definition>
+        <argsstring>(const Vec3 &amp;position, float intensity)</argsstring>
+        <name>PointLight</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/pointlight.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/pointlight.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d0a/class_point_light_1a8965081e292ec53fddeae614165800d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual PointLight::~PointLight</definition>
+        <argsstring>()=default</argsstring>
+        <name>~PointLight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/pointlight.h" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d0a/class_point_light_1a1fc0406a41b9474e7568bf925287fabe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>Color PointLight::getIntensity</definition>
+        <argsstring>(const Vec3 &amp;n, const Vec3 &amp;p, const Vec3 &amp;c, const Color &amp;, const Color &amp;kd, const Color &amp;ks, float ns) const override</argsstring>
+        <name>getIntensity</name>
+        <reimplements refid="da/d7c/class_light_1a81a8d20cdba6692644cda765aced1473">getIntensity</reimplements>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>kd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ks</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/pointlight.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/pointlight.cpp" bodystart="11" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d0a/class_point_light_1a002882a80254c1b99bd45f5a97f25e99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool PointLight::isPoint</definition>
+        <argsstring>() const override</argsstring>
+        <name>isPoint</name>
+        <reimplements refid="da/d7c/class_light_1aa17c9733d1616d8631ed63640344b733">isPoint</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/pointlight.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/pointlight.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="436">
+        <label>PointLight</label>
+        <link refid="dd/d0a/class_point_light"/>
+        <childnode refid="437" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+      </node>
+      <node id="437">
+        <label>Light</label>
+        <link refid="da/d7c/class_light"/>
+        <childnode refid="438" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="439">
+        <label>PointLight</label>
+        <link refid="dd/d0a/class_point_light"/>
+        <childnode refid="440" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+        <childnode refid="442" relation="usage">
+          <edgelabel>#position</edgelabel>
+        </childnode>
+      </node>
+      <node id="440">
+        <label>Light</label>
+        <link refid="da/d7c/class_light"/>
+        <childnode refid="441" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>Vector3&lt; float &gt;</label>
+        <link refid="d3/de7/class_vector3"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/pointlight.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/pointlight.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="da/d7c/class_light_1a5ae4db3ece8e61f53db06e8d3af4cdca" prot="public" virt="virtual"><scope>PointLight</scope><name>draw</name></member>
+      <member refid="dd/d0a/class_point_light_1a1fc0406a41b9474e7568bf925287fabe" prot="public" virt="virtual"><scope>PointLight</scope><name>getIntensity</name></member>
+      <member refid="dc/df8/class_scene_object_1a9e5d8a20e5e0123e894c2918b0e39dc3" prot="public" virt="virtual"><scope>PointLight</scope><name>getPosition</name></member>
+      <member refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" prot="protected" virt="non-virtual"><scope>PointLight</scope><name>intensity</name></member>
+      <member refid="da/d7c/class_light_1a942b4fb690c63be248ae031723a6148c" prot="public" virt="virtual"><scope>PointLight</scope><name>isCamera</name></member>
+      <member refid="da/d7c/class_light_1af09370083a781d2733247bc2ee2f4c33" prot="public" virt="virtual"><scope>PointLight</scope><name>isLight</name></member>
+      <member refid="dd/d0a/class_point_light_1a002882a80254c1b99bd45f5a97f25e99" prot="public" virt="virtual"><scope>PointLight</scope><name>isPoint</name></member>
+      <member refid="da/d7c/class_light_1af49ca6a5dd2fb43fb878a5ad5f0409fe" prot="public" virt="non-virtual"><scope>PointLight</scope><name>Light</name></member>
+      <member refid="da/d7c/class_light_1adc14c27a60cc0b1d86fdc2f44858c705" prot="public" virt="non-virtual"><scope>PointLight</scope><name>Light</name></member>
+      <member refid="dd/d0a/class_point_light_1aea07f7df125d6c2ae1812904d5ddc922" prot="public" virt="non-virtual"><scope>PointLight</scope><name>PointLight</name></member>
+      <member refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" prot="protected" virt="non-virtual"><scope>PointLight</scope><name>position</name></member>
+      <member refid="dc/df8/class_scene_object_1a39ac215b0b6183ac251a26a522acde14" prot="public" virt="non-virtual"><scope>PointLight</scope><name>SceneObject</name></member>
+      <member refid="dc/df8/class_scene_object_1ad7093f7620ca338f97d98651fd6c87a9" prot="public" virt="non-virtual"><scope>PointLight</scope><name>SceneObject</name></member>
+      <member refid="dc/df8/class_scene_object_1ae0e79b1773e3e3357d1dcf302463e46a" prot="public" virt="virtual"><scope>PointLight</scope><name>setPosition</name></member>
+      <member refid="da/d7c/class_light_1afb03030e1dd8056c73e813095701d796" prot="public" virt="virtual"><scope>PointLight</scope><name>transform</name></member>
+      <member refid="da/d7c/class_light_1ae3e3209d4b97d0bbbd614ded5e1213d9" prot="public" virt="virtual"><scope>PointLight</scope><name>~Light</name></member>
+      <member refid="dd/d0a/class_point_light_1a8965081e292ec53fddeae614165800d6" prot="public" virt="virtual"><scope>PointLight</scope><name>~PointLight</name></member>
+      <member refid="dc/df8/class_scene_object_1a0b8708ffea012cd61f583103bf84b531" prot="public" virt="virtual"><scope>PointLight</scope><name>~SceneObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

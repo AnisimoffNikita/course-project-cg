@@ -1,0 +1,4 @@
+<map id="AmbientLight" name="AmbientLight">
+<area shape="rect" id="node2" href="$da/d7c/class_light.html" title="{Light\n|# intensity\l|+ Light()\l+ Light()\l+ ~Light()\l+ draw()\l+ transform()\l+ isCamera()\l+ isLight()\l+ getIntensity()\l+ isPoint()\l}" alt="" coords="13,248,123,443"/>
+<area shape="rect" id="node3" href="$dc/df8/class_scene_object.html" title="{SceneObject\n|# position\l|+ SceneObject()\l+ SceneObject()\l+ ~SceneObject()\l+ getPosition()\l+ setPosition()\l+ draw()\l+ transform()\l+ isCamera()\l+ isLight()\l}" alt="" coords="5,5,131,200"/>
+</map>

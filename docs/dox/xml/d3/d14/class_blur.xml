@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d14/class_blur" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Blur</compoundname>
+    <derivedcompoundref refid="d3/d0b/class_gaussian_blur" prot="public" virt="non-virtual">GaussianBlur</derivedcompoundref>
+    <includes refid="d4/df5/blur_8h" local="no">blur.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d14/class_blur_1a6b1d2a771f096d933b72f4dff5f07d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Blur::~Blur</definition>
+        <argsstring>()</argsstring>
+        <name>~Blur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/blur.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/blur.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d14/class_blur_1a675fd2caa4a262e8140bdff64912bab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Blur::process</definition>
+        <argsstring>(Image &amp;image)=0</argsstring>
+        <name>process</name>
+        <reimplementedby refid="d3/d0b/class_gaussian_blur_1a6af6684bdf5e86e5c9a79fe1f3a8c183">process</reimplementedby>
+        <param>
+          <type><ref refid="de/d73/class_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/blur.h" line="11" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="285">
+        <label>Blur</label>
+        <link refid="d3/d14/class_blur"/>
+      </node>
+      <node id="286">
+        <label>GaussianBlur</label>
+        <link refid="d3/d0b/class_gaussian_blur"/>
+        <childnode refid="285" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="287">
+        <label>Blur</label>
+        <link refid="d3/d14/class_blur"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/algorithm/blur/blur.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/blur.h" bodystart="6" bodyend="12"/>
+    <listofallmembers>
+      <member refid="d3/d14/class_blur_1a675fd2caa4a262e8140bdff64912bab4" prot="public" virt="pure-virtual"><scope>Blur</scope><name>process</name></member>
+      <member refid="d3/d14/class_blur_1a6b1d2a771f096d933b72f4dff5f07d2d" prot="public" virt="virtual"><scope>Blur</scope><name>~Blur</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_581b7ad157500577ff4e2176d03b851c" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src</compoundname>
+    <innerdir refid="dir_38710d7c85c0357ca15876da14e36d2e">Projects/labs/course_project_cg/src/3rdparty</innerdir>
+    <innerdir refid="dir_b82668e916e017fb161f8813909345a1">Projects/labs/course_project_cg/src/algorithm</innerdir>
+    <innerdir refid="dir_1acf6d7c8ce8cb5e459a37a0d36ab35d">Projects/labs/course_project_cg/src/animation</innerdir>
+    <innerdir refid="dir_faa6bbdaad12a27e5f3fab6b6907be93">Projects/labs/course_project_cg/src/image</innerdir>
+    <innerdir refid="dir_73373614dec9400c8130353c6d16a542">Projects/labs/course_project_cg/src/math</innerdir>
+    <innerdir refid="dir_7ea7e6b139e7d411ea1a9017c76e2852">Projects/labs/course_project_cg/src/widgets</innerdir>
+    <innerfile refid="dc/d49/animationwindow_8cpp">animationwindow.cpp</innerfile>
+    <innerfile refid="d9/d5e/animationwindow_8h">animationwindow.h</innerfile>
+    <innerfile refid="df/d0a/main_8cpp">main.cpp</innerfile>
+    <innerfile refid="d8/dd9/mainwindow_8cpp">mainwindow.cpp</innerfile>
+    <innerfile refid="d9/d53/mainwindow_8h">mainwindow.h</innerfile>
+    <innerfile refid="d3/d22/number_8h">number.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/"/>
+  </compounddef>
+</doxygen>

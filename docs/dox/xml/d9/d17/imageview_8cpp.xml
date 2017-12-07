@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/d17/imageview_8cpp" kind="file" language="C++">
+    <compoundname>imageview.cpp</compoundname>
+    <includes refid="df/dd7/imageview_8h" local="yes">imageview.h</includes>
+    <includes local="no">QStyle</includes>
+    <incdepgraph>
+      <node id="3614">
+        <label>imageview.h</label>
+        <link refid="df/dd7/imageview_8h"/>
+        <childnode refid="3615" relation="include">
+        </childnode>
+        <childnode refid="3616" relation="include">
+        </childnode>
+        <childnode refid="3617" relation="include">
+        </childnode>
+        <childnode refid="3618" relation="include">
+        </childnode>
+        <childnode refid="3619" relation="include">
+        </childnode>
+        <childnode refid="3620" relation="include">
+        </childnode>
+      </node>
+      <node id="3613">
+        <label>Projects/labs/course_project_cg/src/widgets/imageview.cpp</label>
+        <link refid="imageview.cpp"/>
+        <childnode refid="3614" relation="include">
+        </childnode>
+        <childnode refid="3621" relation="include">
+        </childnode>
+      </node>
+      <node id="3617">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="3616">
+        <label>QImage</label>
+      </node>
+      <node id="3621">
+        <label>QStyle</label>
+      </node>
+      <node id="3620">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="3619">
+        <label>QResizeEvent</label>
+      </node>
+      <node id="3618">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="3615">
+        <label>QWidget</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/dd7/imageview_8h" kindref="compound">imageview.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStyle&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="df/de8/class_image_view_1ab9dfd4d7ac8503631906b1c35ad2d445" refkind="member"><highlight class="normal"><ref refid="df/de8/class_image_view_1ab9dfd4d7ac8503631906b1c35ad2d445" kindref="member">ImageView::ImageView</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsView(parent),</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>scene(new<sp/>QGraphicsScene())</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;border:<sp/>none;outline:<sp/>none;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setBackgroundBrush(QBrush(QColor(236,<sp/>232,<sp/>228)));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setScene(<ref refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" kindref="member">scene</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setMouseTracking(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="df/de8/class_image_view_1a450337ded2ce7bb5444b6f249e68d13d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/de8/class_image_view_1a450337ded2ce7bb5444b6f249e68d13d" kindref="member">ImageView::setImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage<sp/>&amp;image)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" kindref="member">scene</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" kindref="member">scene</ref>-&gt;addPixmap(QPixmap::fromImage(image));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;fitInView(<ref refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" kindref="member">scene</ref>-&gt;itemsBoundingRect(),<sp/>Qt::KeepAspectRatio);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="df/de8/class_image_view_1a0bcc3711738a814ce221127d0b7ecf5b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/de8/class_image_view_1a0bcc3711738a814ce221127d0b7ecf5b" kindref="member">ImageView::resizeEvent</ref>(QResizeEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsView::resizeEvent(event);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;fitInView(<ref refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" kindref="member">scene</ref>-&gt;itemsBoundingRect(),<sp/>Qt::KeepAspectRatio);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="df/de8/class_image_view_1a29a6e4346d585008cf72be75d06e7daa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/de8/class_image_view_1a29a6e4346d585008cf72be75d06e7daa" kindref="member">ImageView::mouseMoveEvent</ref>(QMouseEvent<sp/>*)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/widgets/imageview.cpp"/>
+  </compounddef>
+</doxygen>

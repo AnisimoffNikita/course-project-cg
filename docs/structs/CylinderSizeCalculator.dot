@@ -1,0 +1,5 @@
+digraph CylinderSizeCalculator
+{
+graph [ rankdir="RL" ]
+"d2/dc7/class_cylinder_size_calculator" [ label="CylinderSizeCalculator\n|+CylinderSizeCalculator (  )\l/+calibrate ( lines : const std::vector\< Line \> &, distance : float, radius : float, height : float ) : void \{virtual\}\l/+calibrate ( diag : float, diagPx : float ) : void \{virtual\}\l/+evaluate ( lines : const Lines & ) : CylinderSize \{virtual\}\l+~CylinderSizeCalculator (  ) \{virtual\}\l-calculateSize (  ) : void\l-findEdges (  ) : void\l|-distance : float\l-factor : float\l-lines : Lines\l-size : CylinderSize\l" shape="record" ]
+}

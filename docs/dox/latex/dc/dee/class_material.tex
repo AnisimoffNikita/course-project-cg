@@ -1,0 +1,281 @@
+\hypertarget{class_material}{}\section{Класс Material}
+\label{class_material}\index{Material@{Material}}
+
+
+{\ttfamily \#include $<$meshdata.\+h$>$}
+
+
+
+Граф связей класса Material\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/dad/class_material__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_material_a6059ec72855855b11672ff25962e9336}{Material} ()=default
+\item 
+\hyperlink{class_material_ac71c087b6f2dcbf130e19e38067a7a5b}{Material} (const \hyperlink{class_color}{Color} \&\hyperlink{class_material_a93cc771f8b2e9d1f273465e25504ea7b}{ka}, const \hyperlink{class_color}{Color} \&\hyperlink{class_material_a42e6838a32f4a6b54a62a01afc4a1cdb}{kd}, const \hyperlink{class_color}{Color} \&\hyperlink{class_material_a986cb019dc23c99fc139b16793c1ddb5}{ks}, float \hyperlink{class_material_a49335919c5596c4523f71be7f01bdf9d}{ns}, float \hyperlink{class_material_a9132d1f6cc468abe6c40659962e06236}{ni}, float \hyperlink{class_material_a72cb289b8dccb7a08e0b0f7880a92803}{d})
+\item 
+const \hyperlink{class_color}{Color} \& \hyperlink{class_material_a58208d6d0a2debccac4739af6ba61b7b}{get\+Ka} ()
+\item 
+void \hyperlink{class_material_af4bc3531d699fb7b7a06253d674d0ede}{set\+Ka} (const \hyperlink{class_color}{Color} \&value)
+\item 
+const \hyperlink{class_color}{Color} \& \hyperlink{class_material_ad89eb0c9b9d729e918a91d7a621afe10}{get\+Kd} ()
+\item 
+void \hyperlink{class_material_ab31df4f79c03f8863c96dd748b9d2069}{set\+Kd} (const \hyperlink{class_color}{Color} \&value)
+\item 
+const \hyperlink{class_color}{Color} \& \hyperlink{class_material_ad03edbeaa265fc4aa796904b7f314e86}{get\+Ks} ()
+\item 
+void \hyperlink{class_material_a0333444c1bfe41998957f56319481f23}{set\+Ks} (const \hyperlink{class_color}{Color} \&value)
+\item 
+float \hyperlink{class_material_a8843ba8fa8d3e8fb3e04d6a7553408ea}{get\+Ns} () const 
+\item 
+void \hyperlink{class_material_a46bf0fa68e2bf6da38f360eaecc8bd13}{set\+Ns} (float value)
+\item 
+float \hyperlink{class_material_afe38fa1be1b3f608ff08414ccc99d539}{get\+Ni} () const 
+\item 
+void \hyperlink{class_material_a1d41d55723411069d7774c3ae2b33bc8}{set\+Ni} (float value)
+\item 
+float \hyperlink{class_material_ae8fef701b92d7ca4ddb3761dd2133fec}{getD} () const 
+\item 
+void \hyperlink{class_material_a7729d3679891dd4394c1468c0a338a01}{setD} (float value)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_color}{Color} \hyperlink{class_material_a93cc771f8b2e9d1f273465e25504ea7b}{ka}
+\item 
+\hyperlink{class_color}{Color} \hyperlink{class_material_a42e6838a32f4a6b54a62a01afc4a1cdb}{kd}
+\item 
+\hyperlink{class_color}{Color} \hyperlink{class_material_a986cb019dc23c99fc139b16793c1ddb5}{ks}
+\item 
+float \hyperlink{class_material_a49335919c5596c4523f71be7f01bdf9d}{ns}
+\item 
+float \hyperlink{class_material_a9132d1f6cc468abe6c40659962e06236}{ni}
+\item 
+float \hyperlink{class_material_a72cb289b8dccb7a08e0b0f7880a92803}{d}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле meshdata.\+h строка 52
+
+
+
+\subsection{Конструктор(ы)}
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Material()=default}{Material()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Material\+::\+Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_material_a6059ec72855855b11672ff25962e9336}{}\label{class_material_a6059ec72855855b11672ff25962e9336}
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\subsubsection[{\texorpdfstring{Material(const Color \&ka, const Color \&kd, const Color \&ks, float ns, float ni, float d)}{Material(const Color &ka, const Color &kd, const Color &ks, float ns, float ni, float d)}}]{\setlength{\rightskip}{0pt plus 5cm}Material\+::\+Material (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color} \&}]{ka, }
+\item[{const {\bf Color} \&}]{kd, }
+\item[{const {\bf Color} \&}]{ks, }
+\item[{float}]{ns, }
+\item[{float}]{ni, }
+\item[{float}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_ac71c087b6f2dcbf130e19e38067a7a5b}{}\label{class_material_ac71c087b6f2dcbf130e19e38067a7a5b}
+
+
+См. определение в файле meshdata.\+cpp строка 78
+
+
+
+\subsection{Методы}
+\index{Material@{Material}!getD@{getD}}
+\index{getD@{getD}!Material@{Material}}
+\subsubsection[{\texorpdfstring{get\+D() const }{getD() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Material\+::getD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_material_ae8fef701b92d7ca4ddb3761dd2133fec}{}\label{class_material_ae8fef701b92d7ca4ddb3761dd2133fec}
+
+
+См. определение в файле meshdata.\+cpp строка 119
+
+\index{Material@{Material}!get\+Ka@{get\+Ka}}
+\index{get\+Ka@{get\+Ka}!Material@{Material}}
+\subsubsection[{\texorpdfstring{get\+Ka()}{getKa()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Color} \& Material\+::get\+Ka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a58208d6d0a2debccac4739af6ba61b7b}{}\label{class_material_a58208d6d0a2debccac4739af6ba61b7b}
+
+
+См. определение в файле meshdata.\+cpp строка 89
+
+\index{Material@{Material}!get\+Kd@{get\+Kd}}
+\index{get\+Kd@{get\+Kd}!Material@{Material}}
+\subsubsection[{\texorpdfstring{get\+Kd()}{getKd()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Color} \& Material\+::get\+Kd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_ad89eb0c9b9d729e918a91d7a621afe10}{}\label{class_material_ad89eb0c9b9d729e918a91d7a621afe10}
+
+
+См. определение в файле meshdata.\+cpp строка 99
+
+\index{Material@{Material}!get\+Ks@{get\+Ks}}
+\index{get\+Ks@{get\+Ks}!Material@{Material}}
+\subsubsection[{\texorpdfstring{get\+Ks()}{getKs()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Color} \& Material\+::get\+Ks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_ad03edbeaa265fc4aa796904b7f314e86}{}\label{class_material_ad03edbeaa265fc4aa796904b7f314e86}
+
+
+См. определение в файле meshdata.\+cpp строка 109
+
+\index{Material@{Material}!get\+Ni@{get\+Ni}}
+\index{get\+Ni@{get\+Ni}!Material@{Material}}
+\subsubsection[{\texorpdfstring{get\+Ni() const }{getNi() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Material\+::get\+Ni (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_material_afe38fa1be1b3f608ff08414ccc99d539}{}\label{class_material_afe38fa1be1b3f608ff08414ccc99d539}
+
+
+См. определение в файле meshdata.\+cpp строка 129
+
+\index{Material@{Material}!get\+Ns@{get\+Ns}}
+\index{get\+Ns@{get\+Ns}!Material@{Material}}
+\subsubsection[{\texorpdfstring{get\+Ns() const }{getNs() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Material\+::get\+Ns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_material_a8843ba8fa8d3e8fb3e04d6a7553408ea}{}\label{class_material_a8843ba8fa8d3e8fb3e04d6a7553408ea}
+
+
+См. определение в файле meshdata.\+cpp строка 139
+
+\index{Material@{Material}!setD@{setD}}
+\index{setD@{setD}!Material@{Material}}
+\subsubsection[{\texorpdfstring{set\+D(float value)}{setD(float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Material\+::setD (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a7729d3679891dd4394c1468c0a338a01}{}\label{class_material_a7729d3679891dd4394c1468c0a338a01}
+
+
+См. определение в файле meshdata.\+cpp строка 124
+
+\index{Material@{Material}!set\+Ka@{set\+Ka}}
+\index{set\+Ka@{set\+Ka}!Material@{Material}}
+\subsubsection[{\texorpdfstring{set\+Ka(const Color \&value)}{setKa(const Color &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Material\+::set\+Ka (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color} \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_af4bc3531d699fb7b7a06253d674d0ede}{}\label{class_material_af4bc3531d699fb7b7a06253d674d0ede}
+
+
+См. определение в файле meshdata.\+cpp строка 94
+
+\index{Material@{Material}!set\+Kd@{set\+Kd}}
+\index{set\+Kd@{set\+Kd}!Material@{Material}}
+\subsubsection[{\texorpdfstring{set\+Kd(const Color \&value)}{setKd(const Color &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Material\+::set\+Kd (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color} \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_ab31df4f79c03f8863c96dd748b9d2069}{}\label{class_material_ab31df4f79c03f8863c96dd748b9d2069}
+
+
+См. определение в файле meshdata.\+cpp строка 104
+
+\index{Material@{Material}!set\+Ks@{set\+Ks}}
+\index{set\+Ks@{set\+Ks}!Material@{Material}}
+\subsubsection[{\texorpdfstring{set\+Ks(const Color \&value)}{setKs(const Color &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Material\+::set\+Ks (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color} \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a0333444c1bfe41998957f56319481f23}{}\label{class_material_a0333444c1bfe41998957f56319481f23}
+
+
+См. определение в файле meshdata.\+cpp строка 114
+
+\index{Material@{Material}!set\+Ni@{set\+Ni}}
+\index{set\+Ni@{set\+Ni}!Material@{Material}}
+\subsubsection[{\texorpdfstring{set\+Ni(float value)}{setNi(float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Material\+::set\+Ni (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a1d41d55723411069d7774c3ae2b33bc8}{}\label{class_material_a1d41d55723411069d7774c3ae2b33bc8}
+
+
+См. определение в файле meshdata.\+cpp строка 134
+
+\index{Material@{Material}!set\+Ns@{set\+Ns}}
+\index{set\+Ns@{set\+Ns}!Material@{Material}}
+\subsubsection[{\texorpdfstring{set\+Ns(float value)}{setNs(float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Material\+::set\+Ns (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_material_a46bf0fa68e2bf6da38f360eaecc8bd13}{}\label{class_material_a46bf0fa68e2bf6da38f360eaecc8bd13}
+
+
+См. определение в файле meshdata.\+cpp строка 144
+
+
+
+\subsection{Данные класса}
+\index{Material@{Material}!d@{d}}
+\index{d@{d}!Material@{Material}}
+\subsubsection[{\texorpdfstring{d}{d}}]{\setlength{\rightskip}{0pt plus 5cm}float Material\+::d\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a72cb289b8dccb7a08e0b0f7880a92803}{}\label{class_material_a72cb289b8dccb7a08e0b0f7880a92803}
+
+
+См. определение в файле meshdata.\+h строка 83
+
+\index{Material@{Material}!ka@{ka}}
+\index{ka@{ka}!Material@{Material}}
+\subsubsection[{\texorpdfstring{ka}{ka}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Material\+::ka\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a93cc771f8b2e9d1f273465e25504ea7b}{}\label{class_material_a93cc771f8b2e9d1f273465e25504ea7b}
+
+
+См. определение в файле meshdata.\+h строка 78
+
+\index{Material@{Material}!kd@{kd}}
+\index{kd@{kd}!Material@{Material}}
+\subsubsection[{\texorpdfstring{kd}{kd}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Material\+::kd\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a42e6838a32f4a6b54a62a01afc4a1cdb}{}\label{class_material_a42e6838a32f4a6b54a62a01afc4a1cdb}
+
+
+См. определение в файле meshdata.\+h строка 79
+
+\index{Material@{Material}!ks@{ks}}
+\index{ks@{ks}!Material@{Material}}
+\subsubsection[{\texorpdfstring{ks}{ks}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Material\+::ks\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a986cb019dc23c99fc139b16793c1ddb5}{}\label{class_material_a986cb019dc23c99fc139b16793c1ddb5}
+
+
+См. определение в файле meshdata.\+h строка 80
+
+\index{Material@{Material}!ni@{ni}}
+\index{ni@{ni}!Material@{Material}}
+\subsubsection[{\texorpdfstring{ni}{ni}}]{\setlength{\rightskip}{0pt plus 5cm}float Material\+::ni\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a9132d1f6cc468abe6c40659962e06236}{}\label{class_material_a9132d1f6cc468abe6c40659962e06236}
+
+
+См. определение в файле meshdata.\+h строка 82
+
+\index{Material@{Material}!ns@{ns}}
+\index{ns@{ns}!Material@{Material}}
+\subsubsection[{\texorpdfstring{ns}{ns}}]{\setlength{\rightskip}{0pt plus 5cm}float Material\+::ns\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_material_a49335919c5596c4523f71be7f01bdf9d}{}\label{class_material_a49335919c5596c4523f71be7f01bdf9d}
+
+
+См. определение в файле meshdata.\+h строка 81
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{meshdata_8h}{meshdata.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{meshdata_8cpp}{meshdata.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/d09/vec3_8cpp" kind="file" language="C++">
+    <compoundname>vec3.cpp</compoundname>
+    <includes refid="d8/d08/vec3_8h" local="yes">vec3.h</includes>
+    <incdepgraph>
+      <node id="3457">
+        <label>functional</label>
+      </node>
+      <node id="3453">
+        <label>Projects/labs/course_project_cg/src/math/vec3.cpp</label>
+        <link refid="vec3.cpp"/>
+        <childnode refid="3454" relation="include">
+        </childnode>
+      </node>
+      <node id="3454">
+        <label>vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="3455" relation="include">
+        </childnode>
+        <childnode refid="3456" relation="include">
+        </childnode>
+      </node>
+      <node id="3455">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3456">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="3455" relation="include">
+        </childnode>
+        <childnode refid="3457" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d08/vec3_8h" kindref="compound">vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/math/vec3.cpp"/>
+  </compounddef>
+</doxygen>

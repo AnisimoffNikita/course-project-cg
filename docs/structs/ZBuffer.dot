@@ -1,0 +1,5 @@
+digraph ZBuffer
+{
+graph [ rankdir="RL" ]
+"d6/d99/class_z_buffer" [ label="ZBuffer\n|+ZBuffer (  )\l+get ( x : int32, y : int32 ) : float\l+init (  ) : void\l+set ( x : int32, y : int32, value : float ) : void\l+setSize ( w : int32, h : int32 ) : void\l|-buffer : vector\< float \>\l-height : int32\l-width : int32\l" shape="record" ]
+}

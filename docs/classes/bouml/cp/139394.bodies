@@ -1,0 +1,54 @@
+class ImageConverter
+!!!166786.cpp!!!	QImageToImage(in qImage : QImage) : Image
+    Image image;
+    image.width = qImage.width();
+    image.height = qImage.height();
+    image.data = std::make_unique<Color[]>(image.width * image.height);
+
+    for (uint32 i = 0; i < image.height; i++)
+        for (uint32 j = 0; j < image.width; j++)
+        {
+            Color &pixel = image.data[i * image.width + j];
+            QColor target = qImage.pixelColor(j, i);
+            pixel.setRed(target.red());
+            pixel.setGreen(target.green());
+            pixel.setBlue(target.blue());
+        }
+
+    return image;
+!!!166914.cpp!!!	ImageToQImage(in image : Image) : QImage
+    QImage qImage(image.width, image.height, QImage::Format_RGB32);
+
+    for (uint32 i = 0; i < image.height; i++)
+        for (uint32 j = 0; j < image.width; j++)
+        {
+            Color &pixel = image.data[i * image.width + j];
+            QColor color(pixel.getRed(),
+                         pixel.getGreen(),
+                         pixel.getBlue());
+            qImage.setPixelColor(j, i, color);
+        }
+
+    return qImage;
+!!!167042.cpp!!!	ImageToGrayscalImage(in image : Image) : GrayscaleImage
+    GrayscaleImage grayscaleImage(image.getHeight(), image.getWidth());
+
+    for (uint32 i = 0; i < image.width * image.height; i++)
+    {
+        grayscaleImage.data[i] = getGrayscale(image.data[i]);
+    }
+
+    return grayscaleImage;
+!!!167170.cpp!!!	GrayscaleImageToImage(in grayscaleImage : GrayscaleImage) : Image
+    Image image(grayscaleImage.height, grayscaleImage.width);
+
+    for (uint32 i = 0; i < grayscaleImage.width * grayscaleImage.height; i++)
+    {
+        image.data[i].setGray(grayscaleImage.data[i]);
+    }
+
+    return image;
+!!!167298.cpp!!!	getGrayscale(in color : Color) : uint8
+    uint8 gray = color.getRed() * 0.299 + color.getGreen() * 0.587 + color.getBlue()
+                 * 0.114;
+    return gray;

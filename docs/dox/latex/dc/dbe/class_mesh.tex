@@ -1,0 +1,171 @@
+\hypertarget{class_mesh}{}\section{Класс Mesh}
+\label{class_mesh}\index{Mesh@{Mesh}}
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+
+
+Граф связей класса Mesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d43/class_mesh__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mesh_ae6b6c56f0ebfa2f6b2b10d25a835c865}{Mesh} ()=default
+\item 
+vector$<$ \hyperlink{class_vertex}{Vertex} $>$ \& \hyperlink{class_mesh_a1844b662689440a6c5ad761c53be4f94}{get\+Vertices} ()
+\item 
+void \hyperlink{class_mesh_a5c68963c5e297f561932ae51d1f0e8f5}{set\+Vertices} (const vector$<$ \hyperlink{class_vertex}{Vertex} $>$ \&value)
+\item 
+vector$<$ \hyperlink{class_triangle}{Triangle} $>$ \& \hyperlink{class_mesh_a7674d50589acad6a336f264d007e71c9}{get\+Triangles} ()
+\item 
+void \hyperlink{class_mesh_a26adb872946b00793f84f8cecd48cc56}{set\+Triangles} (const vector$<$ \hyperlink{class_triangle}{Triangle} $>$ \&value)
+\item 
+\hyperlink{class_material}{Material} \& \hyperlink{class_mesh_add1ff13540509dc02be32fa791c22352}{get\+Material} ()
+\item 
+void \hyperlink{class_mesh_a16e6aa53eab442ce66381e67259be050}{set\+Material} (const \hyperlink{class_material}{Material} \&value)
+\item 
+void \hyperlink{class_mesh_a6261935dee415d96a87e3db58cdbe6a2}{transform} (const \hyperlink{class_transformation}{Transformation} \&transformation)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_vertex}{Vertex} $>$ \hyperlink{class_mesh_abe5c05c224e47ba1e8b6393759798a9b}{vertices}
+\item 
+vector$<$ \hyperlink{class_triangle}{Triangle} $>$ \hyperlink{class_mesh_a2b30e4823d6d0d17c115018065bd1e91}{triangles}
+\item 
+\hyperlink{class_material}{Material} \hyperlink{class_mesh_a3368c3bc60dd176e522df1542b764847}{material}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле mesh.\+h строка 14
+
+
+
+\subsection{Конструктор(ы)}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{Mesh()=default}{Mesh()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mesh\+::\+Mesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mesh_ae6b6c56f0ebfa2f6b2b10d25a835c865}{}\label{class_mesh_ae6b6c56f0ebfa2f6b2b10d25a835c865}
+
+
+\subsection{Методы}
+\index{Mesh@{Mesh}!get\+Material@{get\+Material}}
+\index{get\+Material@{get\+Material}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{get\+Material()}{getMaterial()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} \& Mesh\+::get\+Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mesh_add1ff13540509dc02be32fa791c22352}{}\label{class_mesh_add1ff13540509dc02be32fa791c22352}
+
+
+См. определение в файле mesh.\+cpp строка 26
+
+\index{Mesh@{Mesh}!get\+Triangles@{get\+Triangles}}
+\index{get\+Triangles@{get\+Triangles}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{get\+Triangles()}{getTriangles()}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Triangle} $>$ \& Mesh\+::get\+Triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mesh_a7674d50589acad6a336f264d007e71c9}{}\label{class_mesh_a7674d50589acad6a336f264d007e71c9}
+
+
+См. определение в файле mesh.\+cpp строка 16
+
+\index{Mesh@{Mesh}!get\+Vertices@{get\+Vertices}}
+\index{get\+Vertices@{get\+Vertices}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{get\+Vertices()}{getVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Vertex} $>$ \& Mesh\+::get\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mesh_a1844b662689440a6c5ad761c53be4f94}{}\label{class_mesh_a1844b662689440a6c5ad761c53be4f94}
+
+
+См. определение в файле mesh.\+cpp строка 6
+
+\index{Mesh@{Mesh}!set\+Material@{set\+Material}}
+\index{set\+Material@{set\+Material}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{set\+Material(const Material \&value)}{setMaterial(const Material &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mesh\+::set\+Material (
+\begin{DoxyParamCaption}
+\item[{const {\bf Material} \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mesh_a16e6aa53eab442ce66381e67259be050}{}\label{class_mesh_a16e6aa53eab442ce66381e67259be050}
+
+
+См. определение в файле mesh.\+cpp строка 31
+
+\index{Mesh@{Mesh}!set\+Triangles@{set\+Triangles}}
+\index{set\+Triangles@{set\+Triangles}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{set\+Triangles(const vector$<$ Triangle $>$ \&value)}{setTriangles(const vector< Triangle > &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mesh\+::set\+Triangles (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Triangle} $>$ \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mesh_a26adb872946b00793f84f8cecd48cc56}{}\label{class_mesh_a26adb872946b00793f84f8cecd48cc56}
+
+
+См. определение в файле mesh.\+cpp строка 21
+
+\index{Mesh@{Mesh}!set\+Vertices@{set\+Vertices}}
+\index{set\+Vertices@{set\+Vertices}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{set\+Vertices(const vector$<$ Vertex $>$ \&value)}{setVertices(const vector< Vertex > &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mesh\+::set\+Vertices (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Vertex} $>$ \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mesh_a5c68963c5e297f561932ae51d1f0e8f5}{}\label{class_mesh_a5c68963c5e297f561932ae51d1f0e8f5}
+
+
+См. определение в файле mesh.\+cpp строка 11
+
+\index{Mesh@{Mesh}!transform@{transform}}
+\index{transform@{transform}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{transform(const Transformation \&transformation)}{transform(const Transformation &transformation)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mesh\+::transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{transformation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mesh_a6261935dee415d96a87e3db58cdbe6a2}{}\label{class_mesh_a6261935dee415d96a87e3db58cdbe6a2}
+
+
+См. определение в файле mesh.\+cpp строка 36
+
+
+
+\subsection{Данные класса}
+\index{Mesh@{Mesh}!material@{material}}
+\index{material@{material}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{material}{material}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Material} Mesh\+::material\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_mesh_a3368c3bc60dd176e522df1542b764847}{}\label{class_mesh_a3368c3bc60dd176e522df1542b764847}
+
+
+См. определение в файле mesh.\+h строка 33
+
+\index{Mesh@{Mesh}!triangles@{triangles}}
+\index{triangles@{triangles}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{triangles}{triangles}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Triangle}$>$ Mesh\+::triangles\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_mesh_a2b30e4823d6d0d17c115018065bd1e91}{}\label{class_mesh_a2b30e4823d6d0d17c115018065bd1e91}
+
+
+См. определение в файле mesh.\+h строка 32
+
+\index{Mesh@{Mesh}!vertices@{vertices}}
+\index{vertices@{vertices}!Mesh@{Mesh}}
+\subsubsection[{\texorpdfstring{vertices}{vertices}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Vertex}$>$ Mesh\+::vertices\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_mesh_abe5c05c224e47ba1e8b6393759798a9b}{}\label{class_mesh_abe5c05c224e47ba1e8b6393759798a9b}
+
+
+См. определение в файле mesh.\+h строка 31
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{mesh_8h}{mesh.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{mesh_8cpp}{mesh.\+cpp}\end{DoxyCompactItemize}

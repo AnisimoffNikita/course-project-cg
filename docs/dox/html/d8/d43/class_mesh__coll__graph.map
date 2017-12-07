@@ -1,0 +1,4 @@
+<map id="Mesh" name="Mesh">
+<area shape="rect" id="node2" href="$dc/dee/class_material.html" title="{Material\n|&#45; ns\l&#45; ni\l&#45; d\l|+ Material()\l+ Material()\l+ getKa()\l+ setKa()\l+ getKd()\l+ setKd()\l+ getKs()\l+ setKs()\l+ getNs()\l+ setNs()\l+ getNi()\l+ setNi()\l+ getD()\l+ setD()\l}" alt="" coords="18,380,106,677"/>
+<area shape="rect" id="node3" href="$d9/ddd/class_color.html" title="{Color\n|&#45; r\l&#45; g\l&#45; b\l|+ Color()\l+ Color()\l+ Color()\l+ Color()\l+ getRed()\l+ setRed()\l+ getGreen()\l+ setGreen()\l+ getBlue()\l+ setBlue()\l+ setGray()\l+ operator*()\l+ operator+=()\l}" alt="" coords="9,5,115,288"/>
+</map>

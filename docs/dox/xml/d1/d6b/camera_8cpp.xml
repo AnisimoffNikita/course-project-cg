@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/d6b/camera_8cpp" kind="file" language="C++">
+    <compoundname>camera.cpp</compoundname>
+    <includes refid="d7/df6/camera_8h" local="yes">camera.h</includes>
+    <includes refid="df/d3d/matrixfactory_8h" local="yes">matrixfactory.h</includes>
+    <includes refid="dc/d53/transformation_8h" local="yes">transformation.h</includes>
+    <incdepgraph>
+      <node id="2211">
+        <label>functional</label>
+      </node>
+      <node id="2205">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2206" relation="include">
+        </childnode>
+        <childnode refid="2207" relation="include">
+        </childnode>
+        <childnode refid="2208" relation="include">
+        </childnode>
+      </node>
+      <node id="2208">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2209" relation="include">
+        </childnode>
+        <childnode refid="2210" relation="include">
+        </childnode>
+      </node>
+      <node id="2213">
+        <label>matrixfactory.h</label>
+        <link refid="df/d3d/matrixfactory_8h"/>
+        <childnode refid="2212" relation="include">
+        </childnode>
+        <childnode refid="2208" relation="include">
+        </childnode>
+      </node>
+      <node id="2209">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2212">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2209" relation="include">
+        </childnode>
+      </node>
+      <node id="2204">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="2205" relation="include">
+        </childnode>
+        <childnode refid="2212" relation="include">
+        </childnode>
+      </node>
+      <node id="2210">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2209" relation="include">
+        </childnode>
+        <childnode refid="2211" relation="include">
+        </childnode>
+      </node>
+      <node id="2206">
+        <label>vector</label>
+      </node>
+      <node id="2203">
+        <label>Projects/labs/course_project_cg/src/animation/camera.cpp</label>
+        <link refid="camera.cpp"/>
+        <childnode refid="2204" relation="include">
+        </childnode>
+        <childnode refid="2213" relation="include">
+        </childnode>
+        <childnode refid="2214" relation="include">
+        </childnode>
+      </node>
+      <node id="2214">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2208" relation="include">
+        </childnode>
+        <childnode refid="2212" relation="include">
+        </childnode>
+      </node>
+      <node id="2207">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/df6/camera_8h" kindref="compound">camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d3d/matrixfactory_8h" kindref="compound">matrixfactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d53/transformation_8h" kindref="compound">transformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="da/dbb/class_camera_1a2f7d35911a4dcf218a0ef901cc0906dc" refkind="member"><highlight class="normal"><ref refid="da/dbb/class_camera_1a2f7d35911a4dcf218a0ef901cc0906dc" kindref="member">Camera::Camera</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;lookAt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;up,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;projection)<sp/>:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref>(position),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>lookAt(lookAt),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>up(up),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>projectionMatrix(projection)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" kindref="member">updateViewMatrix</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="da/dbb/class_camera_1a5c5155e999ea54c0385461de3ca0b95a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a5c5155e999ea54c0385461de3ca0b95a" kindref="member">Camera::draw</ref>(std::unique_ptr&lt;Renderer&gt;<sp/>&amp;)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="da/dbb/class_camera_1a76d8a9057211e4935405040d8fa154f6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a76d8a9057211e4935405040d8fa154f6" kindref="member">Camera::transform</ref>(<ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>transformation.<ref refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" kindref="member">transform</ref>(<ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" kindref="member">updateViewMatrix</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="da/dbb/class_camera_1a629ebafac4f86f952dad42a0087c344c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a629ebafac4f86f952dad42a0087c344c" kindref="member">Camera::isCamera</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="da/dbb/class_camera_1a7209dc5149f4b8af2ed9e8b6297f6c41" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a7209dc5149f4b8af2ed9e8b6297f6c41" kindref="member">Camera::isLight</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="da/dbb/class_camera_1abd0ac1ec8cc6c5ca79798fc61aa4a1fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1abd0ac1ec8cc6c5ca79798fc61aa4a1fa" kindref="member">Camera::setLookAt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;target)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" kindref="member">lookAt</ref><sp/>=<sp/>target;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" kindref="member">updateViewMatrix</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="da/dbb/class_camera_1a49e96c7af94f85b1297fb4184c99fa28" refkind="member"><highlight class="normal"><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="da/dbb/class_camera_1a49e96c7af94f85b1297fb4184c99fa28" kindref="member">Camera::getEyeVector</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" kindref="member">lookAt</ref><sp/>-<sp/><ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="da/dbb/class_camera_1a081e90588c62b55623f22d0477082924" refkind="member"><highlight class="normal"><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="da/dbb/class_camera_1a081e90588c62b55623f22d0477082924" kindref="member">Camera::getPVMatrix</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a33e328413d91278d44953ccb0adef3ce" kindref="member">projectionMatrix</ref><sp/>*<sp/><ref refid="da/dbb/class_camera_1a9e4efa2b0bb97699cda8904309873aa9" kindref="member">viewMatrix</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="da/dbb/class_camera_1a0baac3a162f4e3507a5c35c97a2c4236" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1a0baac3a162f4e3507a5c35c97a2c4236" kindref="member">Camera::getPMatrix</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="55"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a33e328413d91278d44953ccb0adef3ce" kindref="member">projectionMatrix</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="da/dbb/class_camera_1ac9ca414b8f610584b90486938131aa1e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1ac9ca414b8f610584b90486938131aa1e" kindref="member">Camera::getVMatrix</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="60"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a9e4efa2b0bb97699cda8904309873aa9" kindref="member">viewMatrix</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" kindref="member">Camera::updateViewMatrix</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dbb/class_camera_1a9e4efa2b0bb97699cda8904309873aa9" kindref="member">viewMatrix</ref><sp/>=<sp/><ref refid="d7/d66/class_view_matrix_1ad8f81cdb7577b980e7c31dd258320db3" kindref="member">ViewMatrix::create</ref>(<ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>,<sp/><ref refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" kindref="member">lookAt</ref>,<sp/><ref refid="da/dbb/class_camera_1a4473532c8bbceefb503a5a7195044bfe" kindref="member">up</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="da/dbb/class_camera_1a1ba2c3600a8a0f6e231ad9564bdb7359" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a1ba2c3600a8a0f6e231ad9564bdb7359" kindref="member">Camera::setPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" kindref="member">updateViewMatrix</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="da/dbb/class_camera_1a318614134ed9e5182954daaceb17ca47" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1a318614134ed9e5182954daaceb17ca47" kindref="member">Camera::getLookAt</ref>()</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" kindref="member">lookAt</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/camera.cpp"/>
+  </compounddef>
+</doxygen>

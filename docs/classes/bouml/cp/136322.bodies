@@ -1,0 +1,25 @@
+class Material
+!!!151682.cpp!!!	getKa() : Color
+    return ka;
+!!!151810.cpp!!!	setKa(in value : Color) : void
+    ka = value;
+!!!151938.cpp!!!	getKd() : Color
+    return kd;
+!!!152066.cpp!!!	setKd(in value : Color) : void
+    kd = value;
+!!!152194.cpp!!!	getKs() : Color
+    return ks;
+!!!152322.cpp!!!	setKs(in value : Color) : void
+    ks = value;
+!!!152450.cpp!!!	getNs() : float
+    return ns;
+!!!152578.cpp!!!	setNs(in value : float) : void
+    ns = value;
+!!!152706.cpp!!!	getNi() : float
+    return ni;
+!!!152834.cpp!!!	setNi(in value : float) : void
+    ni = value;
+!!!152962.cpp!!!	getD() : float
+    return d;
+!!!153090.cpp!!!	setD(in value : float) : void
+    d = value;

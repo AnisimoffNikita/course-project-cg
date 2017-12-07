@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d03/color_8cpp" kind="file" language="C++">
+    <compoundname>color.cpp</compoundname>
+    <includes refid="da/dec/color_8h" local="yes">color.h</includes>
+    <includes refid="df/db1/math_8h" local="yes">src/math/math.h</includes>
+    <incdepgraph>
+      <node id="2914">
+        <label>functional</label>
+      </node>
+      <node id="2911">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2912" relation="include">
+        </childnode>
+      </node>
+      <node id="2912">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2913">
+        <label>src/math/math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2912" relation="include">
+        </childnode>
+        <childnode refid="2914" relation="include">
+        </childnode>
+      </node>
+      <node id="2910">
+        <label>Projects/labs/course_project_cg/src/image/color.cpp</label>
+        <link refid="color.cpp"/>
+        <childnode refid="2911" relation="include">
+        </childnode>
+        <childnode refid="2913" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="da/dec/color_8h" kindref="compound">color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/db1/math_8h" kindref="compound">src/math/math.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" refkind="member"><highlight class="normal"><ref refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" kindref="member">Color::Color</ref>():</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>r(0),</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>g(0),</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>b(0)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d9/ddd/class_color_1a7b075d27e3bbdde7cbe648dc3b804261" refkind="member"><highlight class="normal"><ref refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" kindref="member">Color::Color</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;color):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref>(color.<ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref>),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref>(color.<ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref>),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref>(color.<ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d9/ddd/class_color_1a03aa495dec904466b0986feaa884bb8b" refkind="member"><highlight class="normal"><ref refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" kindref="member">Color::Color</ref>(<ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/>gray)<sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref>(gray),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref>(gray),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref>(gray)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d9/ddd/class_color_1a9e2a61644848b70eff8103fe538e1b30" refkind="member"><highlight class="normal"><ref refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" kindref="member">Color::Color</ref>(<ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref>,<sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref>,<sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref>):</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>r(r),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>g(g),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>b(b)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d9/ddd/class_color_1aaf34b98c81cfe8ec2682cc38761a4d5c" refkind="member"><highlight class="normal"><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d9/ddd/class_color_1aaf34b98c81cfe8ec2682cc38761a4d5c" kindref="member">Color::getRed</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="34"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d9/ddd/class_color_1a0db91f928764aa5fef82e92f55e34a2f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1a0db91f928764aa5fef82e92f55e34a2f" kindref="member">Color::setRed</ref>(<ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/>value)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d9/ddd/class_color_1affb4bc39163b1c057e338125ed377494" refkind="member"><highlight class="normal"><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d9/ddd/class_color_1affb4bc39163b1c057e338125ed377494" kindref="member">Color::getGreen</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="44"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d9/ddd/class_color_1a35f06f6d8e5b2e57366ce2b3911b8d34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1a35f06f6d8e5b2e57366ce2b3911b8d34" kindref="member">Color::setGreen</ref>(<ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/>value)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d9/ddd/class_color_1ad3adb9f5cc739957f9dbf053d2641de2" refkind="member"><highlight class="normal"><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d9/ddd/class_color_1ad3adb9f5cc739957f9dbf053d2641de2" kindref="member">Color::getBlue</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="54"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d9/ddd/class_color_1a957be1669566c9422dc48595d21547a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1a957be1669566c9422dc48595d21547a1" kindref="member">Color::setBlue</ref>(<ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/>value)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d9/ddd/class_color_1a0524f53d56d0e27be194f3c02644c6da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1a0524f53d56d0e27be194f3c02644c6da" kindref="member">Color::setGray</ref>(<ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/>gray)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref><sp/>=<sp/><ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref><sp/>=<sp/><ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref><sp/>=<sp/>gray;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d9/ddd/class_color_1ab9427899af3ac7ef621c81a49633d1cb" refkind="member"><highlight class="normal"><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/><ref refid="d9/ddd/class_color_1ab9427899af3ac7ef621c81a49633d1cb" kindref="member">Color::operator*</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>factor)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="69"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" kindref="member">Color</ref>(<ref refid="d4/d34/class_math_1a827e8a0ff76d6f12323a35fbf2e39ea3" kindref="member">Math::Clamp</ref>(<ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref><sp/>*<sp/>factor,<sp/>0.0f,<sp/>255.0f),</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d34/class_math_1a827e8a0ff76d6f12323a35fbf2e39ea3" kindref="member">Math::Clamp</ref>(<ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref><sp/>*<sp/>factor,<sp/>0.0f,<sp/>255.0f),</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d34/class_math_1a827e8a0ff76d6f12323a35fbf2e39ea3" kindref="member">Math::Clamp</ref>(<ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref><sp/>*<sp/>factor,<sp/>0.0f,<sp/>255.0f));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="d9/ddd/class_color_1a26fc45655619e26ab7606823e39d80eb" refkind="member"><highlight class="normal"><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;<ref refid="d9/ddd/class_color_1a26fc45655619e26ab7606823e39d80eb" kindref="member">Color::operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;other)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref><sp/>=<sp/><ref refid="d4/d34/class_math_1a827e8a0ff76d6f12323a35fbf2e39ea3" kindref="member">Math::Clamp</ref>(<ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref><sp/>+<sp/>other.<ref refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kindref="member">r</ref>,<sp/>0,<sp/>255);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref><sp/>=<sp/><ref refid="d4/d34/class_math_1a827e8a0ff76d6f12323a35fbf2e39ea3" kindref="member">Math::Clamp</ref>(<ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref><sp/>+<sp/>other.<ref refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kindref="member">g</ref>,<sp/>0,<sp/>255);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref><sp/>=<sp/><ref refid="d4/d34/class_math_1a827e8a0ff76d6f12323a35fbf2e39ea3" kindref="member">Math::Clamp</ref>(<ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref><sp/>+<sp/>other.<ref refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kindref="member">b</ref>,<sp/>0,<sp/>255);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/image/color.cpp"/>
+  </compounddef>
+</doxygen>

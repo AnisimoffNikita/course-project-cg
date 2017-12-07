@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/d1d/class_point_light_factory" kind="class" language="C++" prot="public">
+    <compoundname>PointLightFactory</compoundname>
+    <basecompoundref refid="d4/df7/class_scene_object_factory" prot="public" virt="non-virtual">SceneObjectFactory</basecompoundref>
+    <includes refid="d9/d8f/sceneobjectfactory_8h" local="no">sceneobjectfactory.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d1d/class_point_light_factory_1a23ff1783d18b5a6274c4e0bc94ad0a3d" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="dd/d0a/class_point_light" kindref="compound">PointLight</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;PointLight&gt; PointLightFactory::light</definition>
+        <argsstring></argsstring>
+        <name>light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="74" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d1d/class_point_light_factory_1a28f83cb24964302de5e1e678c4ba7b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PointLightFactory::PointLightFactory</definition>
+        <argsstring>(const Vec3 &amp;position, float intensity)</argsstring>
+        <name>PointLightFactory</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="69" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d1d/class_point_light_factory_1a069223f14968fb1d3d2e8caff83f30c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual PointLightFactory::~PointLightFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~PointLightFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d1d/class_point_light_factory_1aa7b3093c77ea99fae845932e785504e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref></type>
+        <definition>SharedSceneObject PointLightFactory::create</definition>
+        <argsstring>() override</argsstring>
+        <name>create</name>
+        <reimplements refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993">create</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="72" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="443">
+        <label>PointLightFactory</label>
+        <link refid="de/d1d/class_point_light_factory"/>
+        <childnode refid="444" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="445">
+        <label>PointLightFactory</label>
+        <link refid="de/d1d/class_point_light_factory"/>
+        <childnode refid="446" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="67" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="66" bodyend="75"/>
+    <listofallmembers>
+      <member refid="de/d1d/class_point_light_factory_1aa7b3093c77ea99fae845932e785504e0" prot="public" virt="virtual"><scope>PointLightFactory</scope><name>create</name></member>
+      <member refid="de/d1d/class_point_light_factory_1a23ff1783d18b5a6274c4e0bc94ad0a3d" prot="private" virt="non-virtual"><scope>PointLightFactory</scope><name>light</name></member>
+      <member refid="de/d1d/class_point_light_factory_1a28f83cb24964302de5e1e678c4ba7b7e" prot="public" virt="non-virtual"><scope>PointLightFactory</scope><name>PointLightFactory</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" prot="public" virt="non-virtual"><scope>PointLightFactory</scope><name>SceneObjectFactory</name></member>
+      <member refid="de/d1d/class_point_light_factory_1a069223f14968fb1d3d2e8caff83f30c9" prot="public" virt="virtual"><scope>PointLightFactory</scope><name>~PointLightFactory</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" prot="public" virt="virtual"><scope>PointLightFactory</scope><name>~SceneObjectFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

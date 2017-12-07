@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/df0/homogeneousvertex_8h" kind="file" language="C++">
+    <compoundname>homogeneousvertex.h</compoundname>
+    <includes refid="d8/d08/vec3_8h" local="yes">src/math/vec3.h</includes>
+    <includes refid="dd/df4/matrix_8h" local="yes">src/math/matrix.h</includes>
+    <includedby refid="d0/d18/commontransformation_8h" local="yes">Projects/labs/course_project_cg/src/animation/commontransformation.h</includedby>
+    <includedby refid="db/dd4/movetransformation_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/movetransformation.cpp</includedby>
+    <includedby refid="dc/d9f/rotatetransformation_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp</includedby>
+    <includedby refid="d3/dc7/scaletransformation_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/scaletransformation.cpp</includedby>
+    <includedby refid="df/d0a/main_8cpp" local="yes">Projects/labs/course_project_cg/src/main.cpp</includedby>
+    <includedby refid="d6/def/homogeneousvertex_8cpp" local="yes">Projects/labs/course_project_cg/src/math/homogeneousvertex.cpp</includedby>
+    <incdepgraph>
+      <node id="3280">
+        <label>functional</label>
+      </node>
+      <node id="3277">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="3278" relation="include">
+        </childnode>
+        <childnode refid="3279" relation="include">
+        </childnode>
+      </node>
+      <node id="3278">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3276">
+        <label>Projects/labs/course_project_cg/src/math/homogeneousvertex.h</label>
+        <link refid="homogeneousvertex.h"/>
+        <childnode refid="3277" relation="include">
+        </childnode>
+        <childnode refid="3281" relation="include">
+        </childnode>
+      </node>
+      <node id="3281">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="3278" relation="include">
+        </childnode>
+      </node>
+      <node id="3279">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="3278" relation="include">
+        </childnode>
+        <childnode refid="3280" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3288">
+        <label>Projects/labs/course_project_cg/src/animation/scaletransformation.cpp</label>
+        <link refid="d3/dc7/scaletransformation_8cpp"/>
+      </node>
+      <node id="3283">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.h</label>
+        <link refid="d0/d18/commontransformation_8h"/>
+        <childnode refid="3284" relation="include">
+        </childnode>
+        <childnode refid="3285" relation="include">
+        </childnode>
+      </node>
+      <node id="3282">
+        <label>Projects/labs/course_project_cg/src/math/homogeneousvertex.h</label>
+        <link refid="homogeneousvertex.h"/>
+        <childnode refid="3283" relation="include">
+        </childnode>
+        <childnode refid="3286" relation="include">
+        </childnode>
+        <childnode refid="3287" relation="include">
+        </childnode>
+        <childnode refid="3288" relation="include">
+        </childnode>
+        <childnode refid="3289" relation="include">
+        </childnode>
+        <childnode refid="3290" relation="include">
+        </childnode>
+      </node>
+      <node id="3287">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp</label>
+        <link refid="dc/d9f/rotatetransformation_8cpp"/>
+      </node>
+      <node id="3290">
+        <label>Projects/labs/course_project_cg/src/math/homogeneousvertex.cpp</label>
+        <link refid="d6/def/homogeneousvertex_8cpp"/>
+      </node>
+      <node id="3289">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="3284">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.cpp</label>
+        <link refid="de/dc1/commontransformation_8cpp"/>
+      </node>
+      <node id="3285">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+      <node id="3286">
+        <label>Projects/labs/course_project_cg/src/animation/movetransformation.cpp</label>
+        <link refid="db/dd4/movetransformation_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/db7/class_homogeneous_vertex_converter" prot="public">HomogeneousVertexConverter</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d4/df0/homogeneousvertex_8h_1ac57a7e4c1ca5e8ae47858d4ae8e7120d" prot="public" static="no">
+        <type><ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; 4, 1, float &gt;</type>
+        <definition>using HomogeneousVertex =  Matrix&lt;4, 1, float&gt;</definition>
+        <argsstring></argsstring>
+        <name>HomogeneousVertex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/homogeneousvertex.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/math/homogeneousvertex.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>HOMOGENEOUSVERTEX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HOMOGENEOUSVERTEX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d08/vec3_8h" kindref="compound">src/math/vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/df4/matrix_8h" kindref="compound">src/math/matrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d4/df0/homogeneousvertex_8h_1ac57a7e4c1ca5e8ae47858d4ae8e7120d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">HomogeneousVertex</ref><sp/>=<sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Matrix&lt;4, 1, float&gt;</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d9/db7/class_homogeneous_vertex_converter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/db7/class_homogeneous_vertex_converter" kindref="compound">HomogeneousVertexConverter</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" kindref="member">ToVertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">HomogeneousVertex</ref><sp/>&amp;hvec);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">HomogeneousVertex</ref><sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" kindref="member">FromVertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vec);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>HOMOGENEOUSVERTEX_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/math/homogeneousvertex.h"/>
+  </compounddef>
+</doxygen>

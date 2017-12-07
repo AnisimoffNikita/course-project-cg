@@ -1,0 +1,3 @@
+<map id="LineTransform" name="LineTransform">
+<area shape="rect" id="node2" href="$d6/dd5/class_hough_transform.html" title="{HoughTransform\n|&#45; threshold\l&#45; image\l&#45; accumulator\l&#45; lines\l&#45; accumulatorWidth\l&#45; accumulatorHeight\l|+ HoughTransform()\l+ ~HoughTransform()\l+ process()\l&#45; fillAccumulator()\l&#45; getLines()\l&#45; drawLines()\l&#45; brezenhem()\l}" alt="" coords="5,145,152,384"/>
+</map>

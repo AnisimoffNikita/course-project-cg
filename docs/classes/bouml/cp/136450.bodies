@@ -1,0 +1,16 @@
+class Vertex
+!!!149634.cpp!!!	getV() : Vec3
+    return v;
+!!!149762.cpp!!!	setV(in value : Vec3) : void
+    v = value;
+!!!149890.cpp!!!	getN() : Vec3
+    return n;
+!!!150018.cpp!!!	setN(in value : Vec3) : void
+    n = value;
+!!!150146.cpp!!!	transform(in transformation : Transformation) : void
+    n += v;
+    transformation.transform(v);
+    transformation.transform(n);
+    n -= v;
+!!!150274.cpp!!!	operator ==(in other : Vertex) : bool
+    return n == other.n && v == other.v;

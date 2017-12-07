@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d7/d66/class_view_matrix" kind="class" language="C++" prot="public">
+    <compoundname>ViewMatrix</compoundname>
+    <includes refid="df/d3d/matrixfactory_8h" local="no">matrixfactory.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d7/d66/class_view_matrix_1ad8f81cdb7577b980e7c31dd258320db3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kindref="member">Mat4</ref></type>
+        <definition>Mat4 ViewMatrix::create</definition>
+        <argsstring>(const Vec3 &amp;eye, const Vec3 &amp;target, const Vec3 &amp;up)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>eye</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/matrixfactory.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/matrixfactory.cpp" bodystart="14" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="527">
+        <label>ViewMatrix</label>
+        <link refid="d7/d66/class_view_matrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/matrixfactory.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/matrixfactory.h" bodystart="14" bodyend="18"/>
+    <listofallmembers>
+      <member refid="d7/d66/class_view_matrix_1ad8f81cdb7577b980e7c31dd258320db3" prot="public" virt="non-virtual"><scope>ViewMatrix</scope><name>create</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

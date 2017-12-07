@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5179f0e1b4ade01a8c45e78f1171086c" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/algorithm/blur</compoundname>
+    <innerfile refid="de/dc8/blur_8cpp">blur.cpp</innerfile>
+    <innerfile refid="d4/df5/blur_8h">blur.h</innerfile>
+    <innerfile refid="d0/d8b/gaussianblur_8cpp">gaussianblur.cpp</innerfile>
+    <innerfile refid="dc/d32/gaussianblur_8h">gaussianblur.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/algorithm/blur/"/>
+  </compounddef>
+</doxygen>

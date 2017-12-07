@@ -1,0 +1,17 @@
+<map id="Projects/labs/course_project_cg/src/widgets/modelview2.h" name="Projects/labs/course_project_cg/src/widgets/modelview2.h">
+<area shape="rect" id="node8" href="$db/d83/scene_8h.html" title="src/animation/scene.h" alt="" coords="947,109,1097,136"/>
+<area shape="rect" id="node22" href="$d6/d85/renderer_8h.html" title="src/animation/renderer.h" alt="" coords="499,109,662,136"/>
+<area shape="rect" id="node27" href="$d7/d86/actionmanager_8h.html" title="src/animation/actionmanager.h" alt="" coords="686,109,886,136"/>
+<area shape="rect" id="node12" href="$d5/d69/sceneobject_8h.html" title="sceneobject.h" alt="" coords="917,259,1020,285"/>
+<area shape="rect" id="node14" href="$d3/d22/number_8h.html" title="src/number.h" alt="" coords="703,557,802,584"/>
+<area shape="rect" id="node17" href="$d7/df6/camera_8h.html" title="camera.h" alt="" coords="619,184,695,211"/>
+<area shape="rect" id="node19" href="$dd/dd3/light_8h.html" title="light.h" alt="" coords="819,184,876,211"/>
+<area shape="rect" id="node13" href="$d8/d08/vec3_8h.html" title="src/math/vec3.h" alt="" coords="624,408,740,435"/>
+<area shape="rect" id="node15" href="$df/db1/math_8h.html" title="math.h" alt="" coords="576,483,639,509"/>
+<area shape="rect" id="node18" href="$dd/df4/matrix_8h.html" title="src/math/matrix.h" alt="" coords="435,408,559,435"/>
+<area shape="rect" id="node20" href="$da/dec/color_8h.html" title="src/image/color.h" alt="" coords="866,333,989,360"/>
+<area shape="rect" id="node23" href="$dc/d53/transformation_8h.html" title="transformation.h" alt="" coords="397,333,513,360"/>
+<area shape="rect" id="node24" href="$d8/d3b/mesh_8h.html" title="mesh.h" alt="" coords="529,184,595,211"/>
+<area shape="rect" id="node25" href="$d5/d6a/meshdata_8h.html" title="meshdata.h" alt="" coords="650,259,741,285"/>
+<area shape="rect" id="node28" href="$d3/de1/actions_8h.html" title="actions.h" alt="" coords="719,184,794,211"/>
+</map>

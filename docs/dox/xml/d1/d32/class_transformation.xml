@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/d32/class_transformation" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Transformation</compoundname>
+    <derivedcompoundref refid="d1/d3e/class_common_transformation" prot="public" virt="non-virtual">CommonTransformation</derivedcompoundref>
+    <derivedcompoundref refid="da/d5b/class_move_transformation" prot="public" virt="non-virtual">MoveTransformation</derivedcompoundref>
+    <derivedcompoundref refid="dc/d6a/class_rotate_x_transformation" prot="public" virt="non-virtual">RotateXTransformation</derivedcompoundref>
+    <derivedcompoundref refid="d1/d32/class_rotate_y_transformation" prot="public" virt="non-virtual">RotateYTransformation</derivedcompoundref>
+    <derivedcompoundref refid="d0/dac/class_rotate_z_transformation" prot="public" virt="non-virtual">RotateZTransformation</derivedcompoundref>
+    <derivedcompoundref refid="dc/d60/class_scale_transformation" prot="public" virt="non-virtual">ScaleTransformation</derivedcompoundref>
+    <includes refid="dc/d53/transformation_8h" local="no">transformation.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" prot="protected" static="no" mutable="no">
+        <type><ref refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kindref="member">Mat4</ref></type>
+        <definition>Mat4 Transformation::_matrix</definition>
+        <argsstring></argsstring>
+        <name>_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/transformation.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/transformation.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Transformation::Transformation</definition>
+        <argsstring>()</argsstring>
+        <name>Transformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/transformation.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/transformation.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d32/class_transformation_1a4e436a0834b3295b8261c38748e8602d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Transformation::~Transformation</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Transformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/transformation.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kindref="member">Mat4</ref> &amp;</type>
+        <definition>const Mat4 &amp; Transformation::getMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/transformation.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/transformation.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Transformation::transform</definition>
+        <argsstring>(Vec3 &amp;vertex) const =0</argsstring>
+        <name>transform</name>
+        <reimplementedby refid="dc/d60/class_scale_transformation_1a78e8e8f441eea7f39b669ea8bbd1bdc2">transform</reimplementedby>
+        <reimplementedby refid="da/d5b/class_move_transformation_1aecef1d1fab45fef381366c7dd54ced4d">transform</reimplementedby>
+        <reimplementedby refid="dc/d6a/class_rotate_x_transformation_1a4ce10fae3f680ab275e996f9a80aed31">transform</reimplementedby>
+        <reimplementedby refid="d1/d3e/class_common_transformation_1a7daef5b3ad4576a691b474d888c3dfd5">transform</reimplementedby>
+        <reimplementedby refid="d1/d32/class_rotate_y_transformation_1adaed2a21b00aa575007754d15335e7e8">transform</reimplementedby>
+        <reimplementedby refid="d0/dac/class_rotate_z_transformation_1a3f50084c9e113dde3ce12f57dda91d5b">transform</reimplementedby>
+        <param>
+          <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/transformation.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Transformation::resetOrigin</definition>
+        <argsstring>()=0</argsstring>
+        <name>resetOrigin</name>
+        <reimplementedby refid="dc/d60/class_scale_transformation_1a4c23c7d4596a9bb90ee5f854aa3e5a17">resetOrigin</reimplementedby>
+        <reimplementedby refid="da/d5b/class_move_transformation_1a7596e30e79d61ffaaf266ff39e540439">resetOrigin</reimplementedby>
+        <reimplementedby refid="dc/d6a/class_rotate_x_transformation_1ace8f34cb88796d5a1102387ff55003fd">resetOrigin</reimplementedby>
+        <reimplementedby refid="d1/d3e/class_common_transformation_1a8f789aa59517fd1bf553e1846241eacc">resetOrigin</reimplementedby>
+        <reimplementedby refid="d1/d32/class_rotate_y_transformation_1affca7c164fd1385996174e2e58089203">resetOrigin</reimplementedby>
+        <reimplementedby refid="d0/dac/class_rotate_z_transformation_1abae96c9cce0479c768e4c0ec80dd60f8">resetOrigin</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/transformation.h" line="16" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="502">
+        <label>RotateYTransformation</label>
+        <link refid="d1/d32/class_rotate_y_transformation"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+      </node>
+      <node id="503">
+        <label>RotateZTransformation</label>
+        <link refid="d0/dac/class_rotate_z_transformation"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>CommonTransformation</label>
+        <link refid="d1/d3e/class_common_transformation"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>ScaleTransformation</label>
+        <link refid="dc/d60/class_scale_transformation"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>MoveTransformation</label>
+        <link refid="da/d5b/class_move_transformation"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>RotateXTransformation</label>
+        <link refid="dc/d6a/class_rotate_x_transformation"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="505">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+        <childnode refid="506" relation="usage">
+          <edgelabel>#_matrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="506">
+        <label>Matrix&lt; 4, 4, float &gt;</label>
+        <link refid="d6/d3f/class_matrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/transformation.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/transformation.h" bodystart="7" bodyend="20"/>
+    <listofallmembers>
+      <member refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" prot="protected" virt="non-virtual"><scope>Transformation</scope><name>_matrix</name></member>
+      <member refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" prot="public" virt="non-virtual"><scope>Transformation</scope><name>getMatrix</name></member>
+      <member refid="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038" prot="public" virt="pure-virtual"><scope>Transformation</scope><name>resetOrigin</name></member>
+      <member refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" prot="public" virt="pure-virtual"><scope>Transformation</scope><name>transform</name></member>
+      <member refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" prot="public" virt="non-virtual"><scope>Transformation</scope><name>Transformation</name></member>
+      <member refid="d1/d32/class_transformation_1a4e436a0834b3295b8261c38748e8602d" prot="public" virt="virtual"><scope>Transformation</scope><name>~Transformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

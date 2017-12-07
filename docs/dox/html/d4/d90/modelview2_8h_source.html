@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/widgets/modelview2.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_7ea7e6b139e7d411ea1a9017c76e2852.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">modelview2.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d90/modelview2_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MODELVIEW2_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MODELVIEW2_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QMouseEvent&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QWheelEvent&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QTime&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d83/scene_8h.html">src/animation/scene.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d85/renderer_8h.html">src/animation/renderer.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d86/actionmanager_8h.html">src/animation/actionmanager.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/d8f/class_model_view2.html">ModelView2</a> : <span class="keyword">public</span> QWidget</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d8f/class_model_view2.html#a49c5f725d0d7540faa5288004c50a867">ModelView2</a>(QWidget *parent = 0);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d8f/class_model_view2.html#ae59cb67124c0409a250aa17e69aec1bb">mousePressEvent</a>(QMouseEvent *event);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d8f/class_model_view2.html#a60d419fe7b9564a83724bbb51ebdb014">mouseMoveEvent</a>(QMouseEvent *event);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d8f/class_model_view2.html#a118a304dcb2118dd6d78ff5e3f3cb2f1">wheelEvent</a>(QWheelEvent *event);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d8f/class_model_view2.html#a61d9ca903be6a825c0c72b14fc1f5fb0">paintEvent</a>(QPaintEvent *);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d8f/class_model_view2.html#acff1b190997243a07c654af83e7dd4e0">updateCanvas</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d8f/class_model_view2.html#a5ac909e07ab7908e7c9b6e63d92666af">scheduler</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d8f/class_model_view2.html#a27eb4e398dc6506c3896175335d15850">sceneSetup</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html#acb280540a8957a2f7a50ebf689608831">   34</a></span>&#160;    unique_ptr&lt;Scene&gt; <a class="code" href="../../d5/d8f/class_model_view2.html#acb280540a8957a2f7a50ebf689608831">scene</a>;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html#ab6f007ccf983cf121c11717f90bfe7a8">   35</a></span>&#160;    unique_ptr&lt;Renderer&gt; <a class="code" href="../../d5/d8f/class_model_view2.html#ab6f007ccf983cf121c11717f90bfe7a8">renderer</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html#ad4ef1f165c0f1341dd73b7a8c0be357e">   36</a></span>&#160;    unique_ptr&lt;ActionManager&gt; <a class="code" href="../../d5/d8f/class_model_view2.html#ad4ef1f165c0f1341dd73b7a8c0be357e">actionManager</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html#ab6f5ba3f864092610433f644bdd09540">   37</a></span>&#160;    QTimer *<a class="code" href="../../d5/d8f/class_model_view2.html#ab6f5ba3f864092610433f644bdd09540">timer</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html#a2ab7665cf858a630e0c08accf1cad25b">   38</a></span>&#160;    QPoint <a class="code" href="../../d5/d8f/class_model_view2.html#a2ab7665cf858a630e0c08accf1cad25b">lastPos</a>;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html#acfbdec1f9d732929c211bd7f7fe60132">   39</a></span>&#160;    QImage <a class="code" href="../../d5/d8f/class_model_view2.html#acfbdec1f9d732929c211bd7f7fe60132">image</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d5/d8f/class_model_view2.html#a74993d9390f59b659289765f886e3bfd">   40</a></span>&#160;    QTime <a class="code" href="../../d5/d8f/class_model_view2.html#a74993d9390f59b659289765f886e3bfd">time</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // MODELVIEW2_H</span></div><div class="ttc" id="class_model_view2_html_a27eb4e398dc6506c3896175335d15850"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a27eb4e398dc6506c3896175335d15850">ModelView2::sceneSetup</a></div><div class="ttdeci">void sceneSetup()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00106">modelview2.cpp:106</a></div></div>
+<div class="ttc" id="class_model_view2_html_a118a304dcb2118dd6d78ff5e3f3cb2f1"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a118a304dcb2118dd6d78ff5e3f3cb2f1">ModelView2::wheelEvent</a></div><div class="ttdeci">void wheelEvent(QWheelEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00064">modelview2.cpp:64</a></div></div>
+<div class="ttc" id="class_model_view2_html_a2ab7665cf858a630e0c08accf1cad25b"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a2ab7665cf858a630e0c08accf1cad25b">ModelView2::lastPos</a></div><div class="ttdeci">QPoint lastPos</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00038">modelview2.h:38</a></div></div>
+<div class="ttc" id="class_model_view2_html_ad4ef1f165c0f1341dd73b7a8c0be357e"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#ad4ef1f165c0f1341dd73b7a8c0be357e">ModelView2::actionManager</a></div><div class="ttdeci">unique_ptr&lt; ActionManager &gt; actionManager</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00036">modelview2.h:36</a></div></div>
+<div class="ttc" id="class_model_view2_html_acb280540a8957a2f7a50ebf689608831"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#acb280540a8957a2f7a50ebf689608831">ModelView2::scene</a></div><div class="ttdeci">unique_ptr&lt; Scene &gt; scene</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00034">modelview2.h:34</a></div></div>
+<div class="ttc" id="scene_8h_html"><div class="ttname"><a href="../../db/d83/scene_8h.html">scene.h</a></div></div>
+<div class="ttc" id="actionmanager_8h_html"><div class="ttname"><a href="../../d7/d86/actionmanager_8h.html">actionmanager.h</a></div></div>
+<div class="ttc" id="class_model_view2_html_ab6f5ba3f864092610433f644bdd09540"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#ab6f5ba3f864092610433f644bdd09540">ModelView2::timer</a></div><div class="ttdeci">QTimer * timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00037">modelview2.h:37</a></div></div>
+<div class="ttc" id="class_model_view2_html_a61d9ca903be6a825c0c72b14fc1f5fb0"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a61d9ca903be6a825c0c72b14fc1f5fb0">ModelView2::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00081">modelview2.cpp:81</a></div></div>
+<div class="ttc" id="class_model_view2_html_a74993d9390f59b659289765f886e3bfd"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a74993d9390f59b659289765f886e3bfd">ModelView2::time</a></div><div class="ttdeci">QTime time</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00040">modelview2.h:40</a></div></div>
+<div class="ttc" id="class_model_view2_html_a60d419fe7b9564a83724bbb51ebdb014"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a60d419fe7b9564a83724bbb51ebdb014">ModelView2::mouseMoveEvent</a></div><div class="ttdeci">void mouseMoveEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00034">modelview2.cpp:34</a></div></div>
+<div class="ttc" id="class_model_view2_html_a5ac909e07ab7908e7c9b6e63d92666af"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a5ac909e07ab7908e7c9b6e63d92666af">ModelView2::scheduler</a></div><div class="ttdeci">void scheduler()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00091">modelview2.cpp:91</a></div></div>
+<div class="ttc" id="class_model_view2_html_acfbdec1f9d732929c211bd7f7fe60132"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#acfbdec1f9d732929c211bd7f7fe60132">ModelView2::image</a></div><div class="ttdeci">QImage image</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00039">modelview2.h:39</a></div></div>
+<div class="ttc" id="class_model_view2_html"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html">ModelView2</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00016">modelview2.h:16</a></div></div>
+<div class="ttc" id="class_model_view2_html_ae59cb67124c0409a250aa17e69aec1bb"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#ae59cb67124c0409a250aa17e69aec1bb">ModelView2::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00029">modelview2.cpp:29</a></div></div>
+<div class="ttc" id="class_model_view2_html_a49c5f725d0d7540faa5288004c50a867"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#a49c5f725d0d7540faa5288004c50a867">ModelView2::ModelView2</a></div><div class="ttdeci">ModelView2(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00015">modelview2.cpp:15</a></div></div>
+<div class="ttc" id="class_model_view2_html_acff1b190997243a07c654af83e7dd4e0"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#acff1b190997243a07c654af83e7dd4e0">ModelView2::updateCanvas</a></div><div class="ttdeci">void updateCanvas()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/modelview2_8cpp_source.html#l00087">modelview2.cpp:87</a></div></div>
+<div class="ttc" id="renderer_8h_html"><div class="ttname"><a href="../../d6/d85/renderer_8h.html">renderer.h</a></div></div>
+<div class="ttc" id="class_model_view2_html_ab6f007ccf983cf121c11717f90bfe7a8"><div class="ttname"><a href="../../d5/d8f/class_model_view2.html#ab6f007ccf983cf121c11717f90bfe7a8">ModelView2::renderer</a></div><div class="ttdeci">unique_ptr&lt; Renderer &gt; renderer</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d90/modelview2_8h_source.html#l00035">modelview2.h:35</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

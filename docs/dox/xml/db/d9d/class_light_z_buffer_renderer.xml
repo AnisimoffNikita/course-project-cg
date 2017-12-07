@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/d9d/class_light_z_buffer_renderer" kind="class" language="C++" prot="public">
+    <compoundname>LightZBufferRenderer</compoundname>
+    <basecompoundref refid="d4/d44/class_renderer" prot="public" virt="non-virtual">Renderer</basecompoundref>
+    <includes refid="d7/d17/lightzbufferrenderer_8h" local="no">lightzbufferrenderer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="db/d9d/class_light_z_buffer_renderer_1ad2acd2dd6506b9847a5ab10405b3a856" prot="protected" static="no" mutable="no">
+        <type><ref refid="d6/d99/class_z_buffer" kindref="compound">ZBuffer</ref></type>
+        <definition>ZBuffer LightZBufferRenderer::zbuffer</definition>
+        <argsstring></argsstring>
+        <name>zbuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="42" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9d/class_light_z_buffer_renderer_1adb59e3ede69cc0d7ebf1c203bd01a8fd" prot="protected" static="no" mutable="no">
+        <type>uchar *</type>
+        <definition>uchar* LightZBufferRenderer::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="43" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9d/class_light_z_buffer_renderer_1a0484f1880ff31e965399a77b8795903f" prot="protected" static="no" mutable="no">
+        <type><ref refid="d7/df6/camera_8h_1a01f929aec8e912be07dca2c1f8d00f67" kindref="member">SharedCamera</ref></type>
+        <definition>SharedCamera LightZBufferRenderer::camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="44" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9d/class_light_z_buffer_renderer_1aa656a2afff0d9f793c6f93000fdc6f88" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="dd/dd3/light_8h_1ae1ec32369be93ce20c1e9047a8d388c0" kindref="member">SharedLight</ref> &gt;</type>
+        <definition>vector&lt;SharedLight&gt; LightZBufferRenderer::lights</definition>
+        <argsstring></argsstring>
+        <name>lights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="46" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9d/class_light_z_buffer_renderer_1ab019713ebac78d9b63039a06900f1c76" prot="protected" static="no" mutable="no">
+        <type>vector&lt; shared_ptr&lt; <ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref> &gt; &gt;</type>
+        <definition>vector&lt;shared_ptr&lt;Mesh&gt; &gt; LightZBufferRenderer::meshes</definition>
+        <argsstring></argsstring>
+        <name>meshes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="48" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9d/class_light_z_buffer_renderer_1a7971a31fc4b6ce58e115fa0a3580f46c" prot="protected" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref> &gt;</type>
+        <definition>shared_ptr&lt;Mesh&gt; LightZBufferRenderer::currentMesh</definition>
+        <argsstring></argsstring>
+        <name>currentMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="49" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9d/class_light_z_buffer_renderer_1a809ed37dacd61c93f142be3ed674bc6f" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &gt;</type>
+        <definition>vector&lt;Vec3&gt; LightZBufferRenderer::projected</definition>
+        <argsstring></argsstring>
+        <name>projected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="50" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a6b48dd8c2782308bd742cd43f4185a53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LightZBufferRenderer::LightZBufferRenderer</definition>
+        <argsstring>()=default</argsstring>
+        <name>LightZBufferRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1ae0d09c94784fc721d926c93a87907a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LightZBufferRenderer::LightZBufferRenderer</definition>
+        <argsstring>(float scale, int32 width, int32 height)</argsstring>
+        <name>LightZBufferRenderer</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a8bc0f947c608e08a7094be1b02a27e13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>LightZBufferRenderer::~LightZBufferRenderer</definition>
+        <argsstring>()</argsstring>
+        <name>~LightZBufferRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1acc0d204a38cc6105a7c258b49e5197a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::setCamera</definition>
+        <argsstring>(SharedCamera value) override</argsstring>
+        <name>setCamera</name>
+        <reimplements refid="d4/d44/class_renderer_1a832ac0e6a4fe1e840e07bd82a405edd6">setCamera</reimplements>
+        <param>
+          <type><ref refid="d7/df6/camera_8h_1a01f929aec8e912be07dca2c1f8d00f67" kindref="member">SharedCamera</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a73f101ddbdbb27eb19d6ee719da9bf9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::addLight</definition>
+        <argsstring>(SharedLight) override</argsstring>
+        <name>addLight</name>
+        <reimplements refid="d4/d44/class_renderer_1a000c8a4b55c252ad1353bbd33dc4def9">addLight</reimplements>
+        <param>
+          <type><ref refid="dd/dd3/light_8h_1ae1ec32369be93ce20c1e9047a8d388c0" kindref="member">SharedLight</ref></type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a431be9dc219e4d2706c95ada2aca8af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::start</definition>
+        <argsstring>(int32 width, int32 height) override</argsstring>
+        <name>start</name>
+        <reimplements refid="d4/d44/class_renderer_1a78cc00edca00b08d09121065fb4fc771">start</reimplements>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="301" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a258b9e41e648b8f6393a39d2935d4d42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::renderMesh</definition>
+        <argsstring>(shared_ptr&lt; Mesh &gt; mesh) override</argsstring>
+        <name>renderMesh</name>
+        <reimplements refid="d4/d44/class_renderer_1a40c3fe3b0e46de69ed563d4b4ca13986">renderMesh</reimplements>
+        <param>
+          <type>shared_ptr&lt; <ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref> &gt;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="20" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a7e712d8d1b3a7be674efb620ba3ff0ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uchar *</type>
+        <definition>uchar * LightZBufferRenderer::getRendered</definition>
+        <argsstring>() override</argsstring>
+        <name>getRendered</name>
+        <reimplements refid="d4/d44/class_renderer_1ad3a00c526a6765792b02f328e7a7dad1">getRendered</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1ad8084c0d5f0b4555900efbeaa81ec066" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::finish</definition>
+        <argsstring>() override</argsstring>
+        <name>finish</name>
+        <reimplements refid="d4/d44/class_renderer_1ae8a0a67a993626066a989dbf02ae43f9">finish</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="319" bodyend="351"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a48bc043f59326ca98f2821e96710cd41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::fillTriangle</definition>
+        <argsstring>(Triangle &amp;triangle)</argsstring>
+        <name>fillTriangle</name>
+        <param>
+          <type><ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="144" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a4fa5b867bf1e51f603713631d674cb06" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::getLeftRightBounds</definition>
+        <argsstring>(std::vector&lt; float &gt; &amp;lleft, std::vector&lt; float &gt; &amp;lright, std::vector&lt; Vec3 &gt; &amp;nleft, std::vector&lt; Vec3 &gt; &amp;nright, std::vector&lt; float &gt; &amp;zleft, std::vector&lt; float &gt; &amp;zright, Triangle &amp;triangle, bool &amp;swapped)</argsstring>
+        <name>getLeftRightBounds</name>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>lleft</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>lright</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &gt; &amp;</type>
+          <declname>nleft</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &gt; &amp;</type>
+          <declname>nright</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>zleft</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>zright</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>swapped</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="27" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="213" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a73dff4db530851b997e468bf73eb98ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::triangleSort</definition>
+        <argsstring>(const std::vector&lt; Vec3 &gt; &amp;vertices, Triangle &amp;triangle)</argsstring>
+        <name>triangleSort</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &gt; &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref> &amp;</type>
+          <declname>triangle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="32" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="269" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1ad22c18963eabaa75aea9e26472e24895" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>Color LightZBufferRenderer::calculateIntensity</definition>
+        <argsstring>(const Vec3 &amp;n, const Vec3 &amp;orig, const Color &amp;ka, const Color &amp;kd, const Color &amp;ks, float ns)</argsstring>
+        <name>calculateIntensity</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ka</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>kd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ks</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="33" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="111" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a5ab92396f07a122fdd9296d2647d5ba9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LightZBufferRenderer::putPixel</definition>
+        <argsstring>(int32 x, int32 y, const Color &amp;color)</argsstring>
+        <name>putPixel</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="36" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a8f2e11c38172b8a5da977ab951937055" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; LightZBufferRenderer::getBrezenhemX</definition>
+        <argsstring>(const Vec3 &amp;p1, const Vec3 &amp;p2)</argsstring>
+        <name>getBrezenhemX</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="37" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="53" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1ae37535afff9d52ee46c6be7321bca843" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt; Vec3 &gt; LightZBufferRenderer::getNormals</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;l, const Vec3 &amp;n1, const Vec3 &amp;n2)</argsstring>
+        <name>getNormals</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>n2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="72" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9d/class_light_z_buffer_renderer_1a7ba24d9b0fbd7e05b85bc857d147ff52" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; LightZBufferRenderer::getZLine</definition>
+        <argsstring>(const Vec3 &amp;p1, const Vec3 &amp;p2, int32 n)</argsstring>
+        <name>getZLine</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="40" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" bodystart="93" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="365">
+        <label>Renderer</label>
+        <link refid="d4/d44/class_renderer"/>
+      </node>
+      <node id="364">
+        <label>LightZBufferRenderer</label>
+        <link refid="db/d9d/class_light_z_buffer_renderer"/>
+        <childnode refid="365" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="367">
+        <label>Renderer</label>
+        <link refid="d4/d44/class_renderer"/>
+      </node>
+      <node id="368">
+        <label>ZBuffer</label>
+        <link refid="d6/d99/class_z_buffer"/>
+      </node>
+      <node id="366">
+        <label>LightZBufferRenderer</label>
+        <link refid="db/d9d/class_light_z_buffer_renderer"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+        <childnode refid="368" relation="usage">
+          <edgelabel>#zbuffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h" bodystart="9" bodyend="51"/>
+    <listofallmembers>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a73f101ddbdbb27eb19d6ee719da9bf9a" prot="public" virt="virtual"><scope>LightZBufferRenderer</scope><name>addLight</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1adb59e3ede69cc0d7ebf1c203bd01a8fd" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>buffer</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1ad22c18963eabaa75aea9e26472e24895" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>calculateIntensity</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a0484f1880ff31e965399a77b8795903f" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>camera</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a7971a31fc4b6ce58e115fa0a3580f46c" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>currentMesh</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a48bc043f59326ca98f2821e96710cd41" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>fillTriangle</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1ad8084c0d5f0b4555900efbeaa81ec066" prot="public" virt="virtual"><scope>LightZBufferRenderer</scope><name>finish</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a8f2e11c38172b8a5da977ab951937055" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>getBrezenhemX</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a4fa5b867bf1e51f603713631d674cb06" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>getLeftRightBounds</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1ae37535afff9d52ee46c6be7321bca843" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>getNormals</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a7e712d8d1b3a7be674efb620ba3ff0ef" prot="public" virt="virtual"><scope>LightZBufferRenderer</scope><name>getRendered</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a7ba24d9b0fbd7e05b85bc857d147ff52" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>getZLine</name></member>
+      <member refid="d4/d44/class_renderer_1ab2e154b790a2d31603f147510c261ac2" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>height</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1aa656a2afff0d9f793c6f93000fdc6f88" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>lights</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a6b48dd8c2782308bd742cd43f4185a53" prot="public" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>LightZBufferRenderer</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1ae0d09c94784fc721d926c93a87907a0c" prot="public" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>LightZBufferRenderer</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1ab019713ebac78d9b63039a06900f1c76" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>meshes</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a809ed37dacd61c93f142be3ed674bc6f" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>projected</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a5ab92396f07a122fdd9296d2647d5ba9" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>putPixel</name></member>
+      <member refid="d4/d44/class_renderer_1a4dddd75ab18573a3686f90225f3f03d4" prot="public" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>Renderer</name></member>
+      <member refid="d4/d44/class_renderer_1ae0b9551d2d89c7bc08e962eafa43ebb0" prot="public" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>Renderer</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a258b9e41e648b8f6393a39d2935d4d42" prot="public" virt="virtual"><scope>LightZBufferRenderer</scope><name>renderMesh</name></member>
+      <member refid="d4/d44/class_renderer_1aeab228a83d206c55fc73c7a14a0f0761" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>scale</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1acc0d204a38cc6105a7c258b49e5197a4" prot="public" virt="virtual"><scope>LightZBufferRenderer</scope><name>setCamera</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a431be9dc219e4d2706c95ada2aca8af6" prot="public" virt="virtual"><scope>LightZBufferRenderer</scope><name>start</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a73dff4db530851b997e468bf73eb98ab" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>triangleSort</name></member>
+      <member refid="d4/d44/class_renderer_1ada813defebef120813571bfb6053e88f" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>width</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1ad2acd2dd6506b9847a5ab10405b3a856" prot="protected" virt="non-virtual"><scope>LightZBufferRenderer</scope><name>zbuffer</name></member>
+      <member refid="db/d9d/class_light_z_buffer_renderer_1a8bc0f947c608e08a7094be1b02a27e13" prot="public" virt="virtual"><scope>LightZBufferRenderer</scope><name>~LightZBufferRenderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

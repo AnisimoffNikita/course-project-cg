@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="df/d7d/class_cylinder_size_calculator_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CylinderSizeCalculatorBase</compoundname>
+    <derivedcompoundref refid="d2/dc7/class_cylinder_size_calculator" prot="public" virt="non-virtual">CylinderSizeCalculator</derivedcompoundref>
+    <includes refid="db/d0b/cylindersizecalculatorbase_8h" local="no">cylindersizecalculatorbase.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d7d/class_cylinder_size_calculator_base_1acddec2ff7cfef169dc7df5ae3a2cc239" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>CylinderSizeCalculatorBase::~CylinderSizeCalculatorBase</definition>
+        <argsstring>()</argsstring>
+        <name>~CylinderSizeCalculatorBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d7d/class_cylinder_size_calculator_base_1adb5dd331f24a1c78b00266cb051f79ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d1/d47/class_cylinder_size" kindref="compound">CylinderSize</ref></type>
+        <definition>virtual CylinderSize CylinderSizeCalculatorBase::evaluate</definition>
+        <argsstring>(const std::vector&lt; Line &gt; &amp;lines)=0</argsstring>
+        <name>evaluate</name>
+        <reimplementedby refid="d2/dc7/class_cylinder_size_calculator_1a979a607bd694c5819355793d231c5df2">evaluate</reimplementedby>
+        <param>
+          <type>const std::vector&lt; <ref refid="dd/db4/class_line" kindref="compound">Line</ref> &gt; &amp;</type>
+          <declname>lines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d7d/class_cylinder_size_calculator_base_1ad37d6cd0b2746034294ed91e6ae2488e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CylinderSizeCalculatorBase::calibrate</definition>
+        <argsstring>(const std::vector&lt; Line &gt; &amp;lines, float distance, float radius, float height)=0</argsstring>
+        <name>calibrate</name>
+        <reimplementedby refid="d2/dc7/class_cylinder_size_calculator_1a411f74a0f0baa7c393fe53c36d957fd4">calibrate</reimplementedby>
+        <param>
+          <type>const std::vector&lt; <ref refid="dd/db4/class_line" kindref="compound">Line</ref> &gt; &amp;</type>
+          <declname>lines</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d7d/class_cylinder_size_calculator_base_1a1713b5dbd13c49aeb2769cebaa24ebdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CylinderSizeCalculatorBase::calibrate</definition>
+        <argsstring>(float daig, float diagPx)=0</argsstring>
+        <name>calibrate</name>
+        <reimplementedby refid="d2/dc7/class_cylinder_size_calculator_1ace80de293c2d4626b65e83fcb0fcde54">calibrate</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>daig</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>diagPx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h" line="18" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="324">
+        <label>CylinderSizeCalculator</label>
+        <link refid="d2/dc7/class_cylinder_size_calculator"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>CylinderSizeCalculatorBase</label>
+        <link refid="df/d7d/class_cylinder_size_calculator_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="325">
+        <label>CylinderSizeCalculatorBase</label>
+        <link refid="df/d7d/class_cylinder_size_calculator_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h" bodystart="10" bodyend="19"/>
+    <listofallmembers>
+      <member refid="df/d7d/class_cylinder_size_calculator_base_1ad37d6cd0b2746034294ed91e6ae2488e" prot="public" virt="pure-virtual"><scope>CylinderSizeCalculatorBase</scope><name>calibrate</name></member>
+      <member refid="df/d7d/class_cylinder_size_calculator_base_1a1713b5dbd13c49aeb2769cebaa24ebdb" prot="public" virt="pure-virtual"><scope>CylinderSizeCalculatorBase</scope><name>calibrate</name></member>
+      <member refid="df/d7d/class_cylinder_size_calculator_base_1adb5dd331f24a1c78b00266cb051f79ea" prot="public" virt="pure-virtual"><scope>CylinderSizeCalculatorBase</scope><name>evaluate</name></member>
+      <member refid="df/d7d/class_cylinder_size_calculator_base_1acddec2ff7cfef169dc7df5ae3a2cc239" prot="public" virt="virtual"><scope>CylinderSizeCalculatorBase</scope><name>~CylinderSizeCalculatorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

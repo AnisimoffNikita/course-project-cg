@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/d8f/class_model_view2" kind="class" language="C++" prot="public">
+    <compoundname>ModelView2</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="d4/d90/modelview2_8h" local="no">modelview2.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d8f/class_model_view2_1acb280540a8957a2f7a50ebf689608831" prot="private" static="no" mutable="no">
+        <type>unique_ptr&lt; <ref refid="d6/db5/class_scene" kindref="compound">Scene</ref> &gt;</type>
+        <definition>unique_ptr&lt;Scene&gt; ModelView2::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="34" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d8f/class_model_view2_1ab6f007ccf983cf121c11717f90bfe7a8" prot="private" static="no" mutable="no">
+        <type>unique_ptr&lt; <ref refid="d4/d44/class_renderer" kindref="compound">Renderer</ref> &gt;</type>
+        <definition>unique_ptr&lt;Renderer&gt; ModelView2::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d8f/class_model_view2_1ad4ef1f165c0f1341dd73b7a8c0be357e" prot="private" static="no" mutable="no">
+        <type>unique_ptr&lt; <ref refid="d7/d7b/class_action_manager" kindref="compound">ActionManager</ref> &gt;</type>
+        <definition>unique_ptr&lt;ActionManager&gt; ModelView2::actionManager</definition>
+        <argsstring></argsstring>
+        <name>actionManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="36" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d8f/class_model_view2_1ab6f5ba3f864092610433f644bdd09540" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* ModelView2::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="37" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d8f/class_model_view2_1a2ab7665cf858a630e0c08accf1cad25b" prot="private" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint ModelView2::lastPos</definition>
+        <argsstring></argsstring>
+        <name>lastPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d8f/class_model_view2_1acfbdec1f9d732929c211bd7f7fe60132" prot="private" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage ModelView2::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="39" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d8f/class_model_view2_1a74993d9390f59b659289765f886e3bfd" prot="private" static="no" mutable="no">
+        <type>QTime</type>
+        <definition>QTime ModelView2::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="40" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1a49c5f725d0d7540faa5288004c50a867" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModelView2::ModelView2</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>ModelView2</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="20" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="15" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1ae59cb67124c0409a250aa17e69aec1bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView2::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mousePressEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1a60d419fe7b9564a83724bbb51ebdb014" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView2::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseMoveEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="24" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="34" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1a118a304dcb2118dd6d78ff5e3f3cb2f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView2::wheelEvent</definition>
+        <argsstring>(QWheelEvent *event)</argsstring>
+        <name>wheelEvent</name>
+        <param>
+          <type>QWheelEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="64" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1a61d9ca903be6a825c0c72b14fc1f5fb0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView2::paintEvent</definition>
+        <argsstring>(QPaintEvent *)</argsstring>
+        <name>paintEvent</name>
+        <param>
+          <type>QPaintEvent *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="81" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1acff1b190997243a07c654af83e7dd4e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView2::updateCanvas</definition>
+        <argsstring>()</argsstring>
+        <name>updateCanvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1a5ac909e07ab7908e7c9b6e63d92666af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView2::scheduler</definition>
+        <argsstring>()</argsstring>
+        <name>scheduler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="30" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="91" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d8f/class_model_view2_1a27eb4e398dc6506c3896175335d15850" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView2::sceneSetup</definition>
+        <argsstring>()</argsstring>
+        <name>sceneSetup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.cpp" bodystart="106" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="421">
+        <label>ModelView2</label>
+        <link refid="d5/d8f/class_model_view2"/>
+        <childnode refid="422" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="423">
+        <label>ModelView2</label>
+        <link refid="d5/d8f/class_model_view2"/>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview2.h" bodystart="16" bodyend="42"/>
+    <listofallmembers>
+      <member refid="d5/d8f/class_model_view2_1ad4ef1f165c0f1341dd73b7a8c0be357e" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>actionManager</name></member>
+      <member refid="d5/d8f/class_model_view2_1acfbdec1f9d732929c211bd7f7fe60132" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>image</name></member>
+      <member refid="d5/d8f/class_model_view2_1a2ab7665cf858a630e0c08accf1cad25b" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>lastPos</name></member>
+      <member refid="d5/d8f/class_model_view2_1a49c5f725d0d7540faa5288004c50a867" prot="public" virt="non-virtual"><scope>ModelView2</scope><name>ModelView2</name></member>
+      <member refid="d5/d8f/class_model_view2_1a60d419fe7b9564a83724bbb51ebdb014" prot="protected" virt="non-virtual"><scope>ModelView2</scope><name>mouseMoveEvent</name></member>
+      <member refid="d5/d8f/class_model_view2_1ae59cb67124c0409a250aa17e69aec1bb" prot="protected" virt="non-virtual"><scope>ModelView2</scope><name>mousePressEvent</name></member>
+      <member refid="d5/d8f/class_model_view2_1a61d9ca903be6a825c0c72b14fc1f5fb0" prot="protected" virt="non-virtual"><scope>ModelView2</scope><name>paintEvent</name></member>
+      <member refid="d5/d8f/class_model_view2_1ab6f007ccf983cf121c11717f90bfe7a8" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>renderer</name></member>
+      <member refid="d5/d8f/class_model_view2_1acb280540a8957a2f7a50ebf689608831" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>scene</name></member>
+      <member refid="d5/d8f/class_model_view2_1a27eb4e398dc6506c3896175335d15850" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>sceneSetup</name></member>
+      <member refid="d5/d8f/class_model_view2_1a5ac909e07ab7908e7c9b6e63d92666af" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>scheduler</name></member>
+      <member refid="d5/d8f/class_model_view2_1a74993d9390f59b659289765f886e3bfd" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>time</name></member>
+      <member refid="d5/d8f/class_model_view2_1ab6f5ba3f864092610433f644bdd09540" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>timer</name></member>
+      <member refid="d5/d8f/class_model_view2_1acff1b190997243a07c654af83e7dd4e0" prot="private" virt="non-virtual"><scope>ModelView2</scope><name>updateCanvas</name></member>
+      <member refid="d5/d8f/class_model_view2_1a118a304dcb2118dd6d78ff5e3f3cb2f1" prot="protected" virt="non-virtual"><scope>ModelView2</scope><name>wheelEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

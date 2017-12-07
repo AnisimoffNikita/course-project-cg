@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/dc6/class_main_window" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="d9/d53/mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/dc6/class_main_window_1aeb8f8bc8e591c09d7c2bd5d3e4a754dc" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d30/class_animation_window" kindref="compound">AnimationWindow</ref></type>
+        <definition>AnimationWindow MainWindow::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="74" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dc6/class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="75" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dc6/class_main_window_1a66a1d5b734bad3d2e9e2db622b9950b4" prot="private" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage MainWindow::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="76" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dc6/class_main_window_1ab59b6f62b19d0cd5feef140f71655001" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/dc7/class_cylinder_size_calculator" kindref="compound">CylinderSizeCalculator</ref></type>
+        <definition>CylinderSizeCalculator MainWindow::calc</definition>
+        <argsstring></argsstring>
+        <name>calc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="78" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dc6/class_main_window_1aa2b6e7a3cfbc2bffb42aa8c74c37ef2b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="80" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/dc6/class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="27" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="15" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dc6/class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d9/dc6/class_main_window_1a8851a931482834eeec527490eedaf20e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::resizeEvent</definition>
+        <argsstring>(QResizeEvent *)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a444b28f9a298e9e256411f3b428f360c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_actOpenImage_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_actOpenImage_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="34" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1aa8d88789d920fe1a8094bf0124375e37" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_btnCalibrate_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_btnCalibrate_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="36" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="122" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1ad73256a4d549f57499a168d4ecb29731" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_btnEval_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_btnEval_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="148" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a42f92b00e3336f2efec873fdcb5d612b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_sldSigma_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_sldSigma_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="40" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="166" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a5f0302c9dadda691baf7db36058dd320" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_sldKernelSize_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_sldKernelSize_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="42" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="178" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a1cd7c221bd2f97f249b13522bcd05aa2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_sldMinThresh_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_sldMinThresh_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="44" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="191" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a03d260c44d11800d1b6f2653e35bc493" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_sldMaxThresh_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_sldMaxThresh_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="46" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="204" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1adbd6bf1258b5b2b8fd692542f62f0343" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_sldThresh_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_sldThresh_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="48" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="217" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a05932234bd7e1ce4d84a854bd9b1116f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_actRestore_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_actRestore_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="50" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a398b215bc771decd945f2f57755c1378" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_btnGaussApply_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_btnGaussApply_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="52" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="228" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a0a67f3153d50bd7b6c460e8cd5bb2f2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_btnCannyApply_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_btnCannyApply_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="54" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="240" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a8475da3b0861fbd81ba3ecdfeabaf706" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_btnHoughApply_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_btnHoughApply_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="56" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="254" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a566f53b41639cb820cfdd538de49e6c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_rbnStandard_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_rbnStandard_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="58" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="269" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1a43e6036500db86ce70ce805fadad4676" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_rbnDiag_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_rbnDiag_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="60" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="278" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="slot" id="d9/dc6/class_main_window_1adbe7e3decb27c0c8120a92c4946d270a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_actAnimation_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_actAnimation_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="62" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="287" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/dc6/class_main_window_1a288b768c3c21a9171bdc56fe845ece8b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::openFile</definition>
+        <argsstring>()</argsstring>
+        <name>openFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="65" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dc6/class_main_window_1a1918d23eda34853c378edf6db1d42e34" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MainWindow::loadFile</definition>
+        <argsstring>(const QString &amp;filename)</argsstring>
+        <name>loadFile</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="66" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="50" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dc6/class_main_window_1ad1d392c319d9debb466d46d0764ff2d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setImage</definition>
+        <argsstring>(const QImage &amp;newImage)</argsstring>
+        <name>setImage</name>
+        <param>
+          <type>const QImage &amp;</type>
+          <declname>newImage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="67" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="71" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dc6/class_main_window_1a58dcc04f752ebec40b339dc7817b50e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::initFileDialog</definition>
+        <argsstring>(QFileDialog &amp;dialog, QFileDialog::AcceptMode acceptMode)</argsstring>
+        <name>initFileDialog</name>
+        <param>
+          <type>QFileDialog &amp;</type>
+          <declname>dialog</declname>
+        </param>
+        <param>
+          <type>QFileDialog::AcceptMode</type>
+          <declname>acceptMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="68" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="78" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dc6/class_main_window_1ab435999eabc5f946c138d920a3196ac9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::fitToWindow</definition>
+        <argsstring>()</argsstring>
+        <name>fitToWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dc6/class_main_window_1aa2ffe303230bdcd17f4ddeafd222ccad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::updateActions</definition>
+        <argsstring>()</argsstring>
+        <name>updateActions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="70" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dc6/class_main_window_1a2cf5c71112c73af4937f1f79eb5723ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::debug_setScene</definition>
+        <argsstring>()</argsstring>
+        <name>debug_setScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="72" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.cpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="378">
+        <label>QMainWindow</label>
+      </node>
+      <node id="377">
+        <label>MainWindow</label>
+        <link refid="d9/dc6/class_main_window"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="384">
+        <label>CylinderSize</label>
+        <link refid="d1/d47/class_cylinder_size"/>
+      </node>
+      <node id="382">
+        <label>CylinderSizeCalculator</label>
+        <link refid="d2/dc7/class_cylinder_size_calculator"/>
+        <childnode refid="383" relation="public-inheritance">
+        </childnode>
+        <childnode refid="384" relation="usage">
+          <edgelabel>-size</edgelabel>
+        </childnode>
+      </node>
+      <node id="380">
+        <label>QMainWindow</label>
+      </node>
+      <node id="379">
+        <label>MainWindow</label>
+        <link refid="d9/dc6/class_main_window"/>
+        <childnode refid="380" relation="public-inheritance">
+        </childnode>
+        <childnode refid="381" relation="usage">
+          <edgelabel>-w</edgelabel>
+        </childnode>
+        <childnode refid="382" relation="usage">
+          <edgelabel>-calc</edgelabel>
+        </childnode>
+      </node>
+      <node id="383">
+        <label>CylinderSizeCalculatorBase</label>
+        <link refid="df/d7d/class_cylinder_size_calculator_base"/>
+      </node>
+      <node id="381">
+        <label>AnimationWindow</label>
+        <link refid="d3/d30/class_animation_window"/>
+        <childnode refid="380" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/mainwindow.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/mainwindow.h" bodystart="22" bodyend="81"/>
+    <listofallmembers>
+      <member refid="d9/dc6/class_main_window_1ab59b6f62b19d0cd5feef140f71655001" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>calc</name></member>
+      <member refid="d9/dc6/class_main_window_1a2cf5c71112c73af4937f1f79eb5723ba" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>debug_setScene</name></member>
+      <member refid="d9/dc6/class_main_window_1ab435999eabc5f946c138d920a3196ac9" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>fitToWindow</name></member>
+      <member refid="d9/dc6/class_main_window_1a66a1d5b734bad3d2e9e2db622b9950b4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>image</name></member>
+      <member refid="d9/dc6/class_main_window_1a58dcc04f752ebec40b339dc7817b50e4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>initFileDialog</name></member>
+      <member refid="d9/dc6/class_main_window_1a1918d23eda34853c378edf6db1d42e34" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>loadFile</name></member>
+      <member refid="d9/dc6/class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="d9/dc6/class_main_window_1adbe7e3decb27c0c8120a92c4946d270a" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_actAnimation_triggered</name></member>
+      <member refid="d9/dc6/class_main_window_1a444b28f9a298e9e256411f3b428f360c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_actOpenImage_triggered</name></member>
+      <member refid="d9/dc6/class_main_window_1a05932234bd7e1ce4d84a854bd9b1116f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_actRestore_triggered</name></member>
+      <member refid="d9/dc6/class_main_window_1aa8d88789d920fe1a8094bf0124375e37" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_btnCalibrate_clicked</name></member>
+      <member refid="d9/dc6/class_main_window_1a0a67f3153d50bd7b6c460e8cd5bb2f2b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_btnCannyApply_clicked</name></member>
+      <member refid="d9/dc6/class_main_window_1ad73256a4d549f57499a168d4ecb29731" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_btnEval_clicked</name></member>
+      <member refid="d9/dc6/class_main_window_1a398b215bc771decd945f2f57755c1378" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_btnGaussApply_clicked</name></member>
+      <member refid="d9/dc6/class_main_window_1a8475da3b0861fbd81ba3ecdfeabaf706" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_btnHoughApply_clicked</name></member>
+      <member refid="d9/dc6/class_main_window_1a43e6036500db86ce70ce805fadad4676" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_rbnDiag_toggled</name></member>
+      <member refid="d9/dc6/class_main_window_1a566f53b41639cb820cfdd538de49e6c5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_rbnStandard_toggled</name></member>
+      <member refid="d9/dc6/class_main_window_1a5f0302c9dadda691baf7db36058dd320" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_sldKernelSize_valueChanged</name></member>
+      <member refid="d9/dc6/class_main_window_1a03d260c44d11800d1b6f2653e35bc493" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_sldMaxThresh_valueChanged</name></member>
+      <member refid="d9/dc6/class_main_window_1a1cd7c221bd2f97f249b13522bcd05aa2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_sldMinThresh_valueChanged</name></member>
+      <member refid="d9/dc6/class_main_window_1a42f92b00e3336f2efec873fdcb5d612b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_sldSigma_valueChanged</name></member>
+      <member refid="d9/dc6/class_main_window_1adbd6bf1258b5b2b8fd692542f62f0343" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_sldThresh_valueChanged</name></member>
+      <member refid="d9/dc6/class_main_window_1a288b768c3c21a9171bdc56fe845ece8b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>openFile</name></member>
+      <member refid="d9/dc6/class_main_window_1a8851a931482834eeec527490eedaf20e" prot="protected" virt="non-virtual"><scope>MainWindow</scope><name>resizeEvent</name></member>
+      <member refid="d9/dc6/class_main_window_1ad1d392c319d9debb466d46d0764ff2d2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>setImage</name></member>
+      <member refid="d9/dc6/class_main_window_1aa2b6e7a3cfbc2bffb42aa8c74c37ef2b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>state</name></member>
+      <member refid="d9/dc6/class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="d9/dc6/class_main_window_1aa2ffe303230bdcd17f4ddeafd222ccad" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>updateActions</name></member>
+      <member refid="d9/dc6/class_main_window_1aeb8f8bc8e591c09d7c2bd5d3e4a754dc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>w</name></member>
+      <member refid="d9/dc6/class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

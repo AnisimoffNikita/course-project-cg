@@ -1,0 +1,5 @@
+digraph Vertex
+{
+graph [ rankdir="RL" ]
+"d0/d72/class_vertex" [ label="Vertex\n|+Vertex (  )\l+Vertex ( v : const Vec3, n : const Vec3 )\l+getN (  ) : const Vec3 &\l+getV (  ) : const Vec3 &\l+operator== ( other : const Vertex & ) : bool\l+setN ( value : const Vec3 & ) : void\l+setV ( value : const Vec3 & ) : void\l+transform ( transformation : const Transformation & ) : void\l|-n : Vec3\l-v : Vec3\l" shape="record" ]
+}

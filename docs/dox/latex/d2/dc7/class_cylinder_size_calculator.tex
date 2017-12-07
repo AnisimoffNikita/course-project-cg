@@ -1,0 +1,215 @@
+\hypertarget{class_cylinder_size_calculator}{}\section{Класс Cylinder\+Size\+Calculator}
+\label{class_cylinder_size_calculator}\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+
+
+{\ttfamily \#include $<$cylindersizecalculator.\+h$>$}
+
+
+
+Граф наследования\+:Cylinder\+Size\+Calculator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{da/d4d/class_cylinder_size_calculator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Cylinder\+Size\+Calculator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{da/d2c/class_cylinder_size_calculator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cylinder_size_calculator_ab4daaa75220e687cca3ce57e9db2fe57}{Cylinder\+Size\+Calculator} ()
+\item 
+virtual \hyperlink{class_cylinder_size_calculator_af8ff9a4ab970aa5fcdca273112789978}{$\sim$\+Cylinder\+Size\+Calculator} ()
+\item 
+virtual \hyperlink{class_cylinder_size}{Cylinder\+Size} \hyperlink{class_cylinder_size_calculator_a979a607bd694c5819355793d231c5df2}{evaluate} (const \hyperlink{class_cylinder_size_calculator_a7c30882e5312856d6757dc0022eb231f}{Lines} \&\hyperlink{class_cylinder_size_calculator_a8a329c2526e67545603769c720d76692}{lines})
+\item 
+virtual void \hyperlink{class_cylinder_size_calculator_a411f74a0f0baa7c393fe53c36d957fd4}{calibrate} (const std\+::vector$<$ \hyperlink{class_line}{Line} $>$ \&\hyperlink{class_cylinder_size_calculator_a8a329c2526e67545603769c720d76692}{lines}, float \hyperlink{class_cylinder_size_calculator_a1d88b87623a24582f968bb06acd80b8c}{distance}, float radius, float height)
+\item 
+virtual void \hyperlink{class_cylinder_size_calculator_ace80de293c2d4626b65e83fcb0fcde54}{calibrate} (float diag, float diag\+Px)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые типы}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{class_cylinder_size_calculator_a7c30882e5312856d6757dc0022eb231f}{Lines} = std\+::vector$<$ \hyperlink{class_line}{Line} $>$
+\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cylinder_size_calculator_ad908e8325d6a03c7b4d1b55cf87eade9}{find\+Edges} ()
+\item 
+void \hyperlink{class_cylinder_size_calculator_a4afc5d76534bc67a394a0f78d21a4811}{calculate\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cylinder_size_calculator_a7c30882e5312856d6757dc0022eb231f}{Lines} \hyperlink{class_cylinder_size_calculator_a8a329c2526e67545603769c720d76692}{lines}
+\item 
+\hyperlink{class_cylinder_size}{Cylinder\+Size} \hyperlink{class_cylinder_size_calculator_a13af96a82c344f22f3d2749d4dafa15c}{size}
+\item 
+float \hyperlink{class_cylinder_size_calculator_a1d88b87623a24582f968bb06acd80b8c}{distance}
+\item 
+float \hyperlink{class_cylinder_size_calculator_ad0ffced643e054737c077c3f654a4608}{factor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле cylindersizecalculator.\+h строка 6
+
+
+
+\subsection{Определения типов}
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!Lines@{Lines}}
+\index{Lines@{Lines}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{Lines}{Lines}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Cylinder\+Size\+Calculator\+::\+Lines} =  std\+::vector$<${\bf Line}$>$\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cylinder_size_calculator_a7c30882e5312856d6757dc0022eb231f}{}\label{class_cylinder_size_calculator_a7c30882e5312856d6757dc0022eb231f}
+
+
+См. определение в файле cylindersizecalculator.\+h строка 9
+
+
+
+\subsection{Конструктор(ы)}
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{Cylinder\+Size\+Calculator()}{CylinderSizeCalculator()}}]{\setlength{\rightskip}{0pt plus 5cm}Cylinder\+Size\+Calculator\+::\+Cylinder\+Size\+Calculator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cylinder_size_calculator_ab4daaa75220e687cca3ce57e9db2fe57}{}\label{class_cylinder_size_calculator_ab4daaa75220e687cca3ce57e9db2fe57}
+
+
+См. определение в файле cylindersizecalculator.\+cpp строка 6
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!````~Cylinder\+Size\+Calculator@{$\sim$\+Cylinder\+Size\+Calculator}}
+\index{````~Cylinder\+Size\+Calculator@{$\sim$\+Cylinder\+Size\+Calculator}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{$\sim$\+Cylinder\+Size\+Calculator()}{~CylinderSizeCalculator()}}]{\setlength{\rightskip}{0pt plus 5cm}Cylinder\+Size\+Calculator\+::$\sim$\+Cylinder\+Size\+Calculator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_cylinder_size_calculator_af8ff9a4ab970aa5fcdca273112789978}{}\label{class_cylinder_size_calculator_af8ff9a4ab970aa5fcdca273112789978}
+
+
+См. определение в файле cylindersizecalculator.\+cpp строка 10
+
+
+
+\subsection{Методы}
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!calculate\+Size@{calculate\+Size}}
+\index{calculate\+Size@{calculate\+Size}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{calculate\+Size()}{calculateSize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\+Size\+Calculator\+::calculate\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cylinder_size_calculator_a4afc5d76534bc67a394a0f78d21a4811}{}\label{class_cylinder_size_calculator_a4afc5d76534bc67a394a0f78d21a4811}
+
+
+См. определение в файле cylindersizecalculator.\+cpp строка 89
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!calibrate@{calibrate}}
+\index{calibrate@{calibrate}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{calibrate(const std\+::vector$<$ Line $>$ \&lines, float distance, float radius, float height)}{calibrate(const std::vector< Line > &lines, float distance, float radius, float height)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\+Size\+Calculator\+::calibrate (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Line} $>$ \&}]{lines, }
+\item[{float}]{distance, }
+\item[{float}]{radius, }
+\item[{float}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_cylinder_size_calculator_a411f74a0f0baa7c393fe53c36d957fd4}{}\label{class_cylinder_size_calculator_a411f74a0f0baa7c393fe53c36d957fd4}
+
+
+Замещает \hyperlink{class_cylinder_size_calculator_base_ad37d6cd0b2746034294ed91e6ae2488e}{Cylinder\+Size\+Calculator\+Base}.
+
+
+
+См. определение в файле cylindersizecalculator.\+cpp строка 22
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!calibrate@{calibrate}}
+\index{calibrate@{calibrate}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{calibrate(float diag, float diag\+Px)}{calibrate(float diag, float diagPx)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\+Size\+Calculator\+::calibrate (
+\begin{DoxyParamCaption}
+\item[{float}]{diag, }
+\item[{float}]{diag\+Px}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_cylinder_size_calculator_ace80de293c2d4626b65e83fcb0fcde54}{}\label{class_cylinder_size_calculator_ace80de293c2d4626b65e83fcb0fcde54}
+
+
+Замещает \hyperlink{class_cylinder_size_calculator_base_a1713b5dbd13c49aeb2769cebaa24ebdb}{Cylinder\+Size\+Calculator\+Base}.
+
+
+
+См. определение в файле cylindersizecalculator.\+cpp строка 34
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{evaluate(const Lines \&lines)}{evaluate(const Lines &lines)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cylinder\+Size} Cylinder\+Size\+Calculator\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lines} \&}]{lines}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_cylinder_size_calculator_a979a607bd694c5819355793d231c5df2}{}\label{class_cylinder_size_calculator_a979a607bd694c5819355793d231c5df2}
+
+
+Замещает \hyperlink{class_cylinder_size_calculator_base_adb5dd331f24a1c78b00266cb051f79ea}{Cylinder\+Size\+Calculator\+Base}.
+
+
+
+См. определение в файле cylindersizecalculator.\+cpp строка 14
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!find\+Edges@{find\+Edges}}
+\index{find\+Edges@{find\+Edges}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{find\+Edges()}{findEdges()}}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\+Size\+Calculator\+::find\+Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cylinder_size_calculator_ad908e8325d6a03c7b4d1b55cf87eade9}{}\label{class_cylinder_size_calculator_ad908e8325d6a03c7b4d1b55cf87eade9}
+
+
+См. определение в файле cylindersizecalculator.\+cpp строка 39
+
+
+
+\subsection{Данные класса}
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!distance@{distance}}
+\index{distance@{distance}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{distance}{distance}}]{\setlength{\rightskip}{0pt plus 5cm}float Cylinder\+Size\+Calculator\+::distance\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cylinder_size_calculator_a1d88b87623a24582f968bb06acd80b8c}{}\label{class_cylinder_size_calculator_a1d88b87623a24582f968bb06acd80b8c}
+
+
+См. определение в файле cylindersizecalculator.\+h строка 26
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!factor@{factor}}
+\index{factor@{factor}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{factor}{factor}}]{\setlength{\rightskip}{0pt plus 5cm}float Cylinder\+Size\+Calculator\+::factor\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cylinder_size_calculator_ad0ffced643e054737c077c3f654a4608}{}\label{class_cylinder_size_calculator_ad0ffced643e054737c077c3f654a4608}
+
+
+См. определение в файле cylindersizecalculator.\+h строка 27
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!lines@{lines}}
+\index{lines@{lines}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{lines}{lines}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lines} Cylinder\+Size\+Calculator\+::lines\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cylinder_size_calculator_a8a329c2526e67545603769c720d76692}{}\label{class_cylinder_size_calculator_a8a329c2526e67545603769c720d76692}
+
+
+См. определение в файле cylindersizecalculator.\+h строка 23
+
+\index{Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}!size@{size}}
+\index{size@{size}!Cylinder\+Size\+Calculator@{Cylinder\+Size\+Calculator}}
+\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cylinder\+Size} Cylinder\+Size\+Calculator\+::size\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cylinder_size_calculator_a13af96a82c344f22f3d2749d4dafa15c}{}\label{class_cylinder_size_calculator_a13af96a82c344f22f3d2749d4dafa15c}
+
+
+См. определение в файле cylindersizecalculator.\+h строка 24
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/\hyperlink{cylindersizecalculator_8h}{cylindersizecalculator.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/\hyperlink{cylindersizecalculator_8cpp}{cylindersizecalculator.\+cpp}\end{DoxyCompactItemize}

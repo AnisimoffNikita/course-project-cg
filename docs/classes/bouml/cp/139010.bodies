@@ -1,0 +1,5 @@
+class PointLightFactory
+!!!161922.cpp!!!	PointLightFactory(in position : Vec3, in intensity : float)
+    light = std::make_unique<PointLight>(position, intensity);
+!!!162178.cpp!!!	create() : SharedSceneObject
+    return std::move(light);

@@ -1,0 +1,7 @@
+class Light
+!!!145154.cpp!!!	transform(inout transformation : Transformation) : void
+    transformation.transform(position);
+!!!145282.cpp!!!	isCamera() : bool
+    return false;
+!!!145410.cpp!!!	isLight() : bool
+    return true;

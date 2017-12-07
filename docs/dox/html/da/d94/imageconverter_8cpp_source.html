@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/image/imageconverter.cpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_faa6bbdaad12a27e5f3fab6b6907be93.html">image</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imageconverter.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d94/imageconverter_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d61/imageconverter_8h.html">imageconverter.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../db/db1/class_image_converter.html#a5c0f28c5f9da5f2c64077e8dc7462a03">    4</a></span>&#160;<a class="code" href="../../de/d73/class_image.html">Image</a> <a class="code" href="../../db/db1/class_image_converter.html#a5c0f28c5f9da5f2c64077e8dc7462a03">ImageConverter::QImageToImage</a>(<span class="keyword">const</span> QImage &amp;qImage)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="../../de/d73/class_image.html">Image</a> image;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    image.width = qImage.width();</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    image.height = qImage.height();</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    image.data = std::make_unique&lt;Color[]&gt;(image.width * image.height);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> i = 0; i &lt; image.height; i++)</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> j = 0; j &lt; image.width; j++)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <a class="code" href="../../d9/ddd/class_color.html">Color</a> &amp;pixel = image.data[i * image.width + j];</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            QColor target = qImage.pixelColor(j, i);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            pixel.<a class="code" href="../../d9/ddd/class_color.html#a0db91f928764aa5fef82e92f55e34a2f">setRed</a>(target.red());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            pixel.<a class="code" href="../../d9/ddd/class_color.html#a35f06f6d8e5b2e57366ce2b3911b8d34">setGreen</a>(target.green());</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            pixel.<a class="code" href="../../d9/ddd/class_color.html#a957be1669566c9422dc48595d21547a1">setBlue</a>(target.blue());</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> image;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../db/db1/class_image_converter.html#a1d4ec9d93d250b7db9dc8fbf28c513cf">   24</a></span>&#160;QImage <a class="code" href="../../db/db1/class_image_converter.html#a1d4ec9d93d250b7db9dc8fbf28c513cf">ImageConverter::ImageToQImage</a>(<span class="keyword">const</span> <a class="code" href="../../de/d73/class_image.html">Image</a> &amp;image)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QImage qImage(image.width, image.height, QImage::Format_RGB32);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> i = 0; i &lt; image.height; i++)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> j = 0; j &lt; image.width; j++)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="../../d9/ddd/class_color.html">Color</a> &amp;pixel = image.data[i * image.width + j];</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            QColor color(pixel.<a class="code" href="../../d9/ddd/class_color.html#aaf34b98c81cfe8ec2682cc38761a4d5c">getRed</a>(),</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                         pixel.<a class="code" href="../../d9/ddd/class_color.html#affb4bc39163b1c057e338125ed377494">getGreen</a>(),</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                         pixel.<a class="code" href="../../d9/ddd/class_color.html#ad3adb9f5cc739957f9dbf053d2641de2">getBlue</a>());</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            qImage.setPixelColor(j, i, color);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> qImage;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../db/db1/class_image_converter.html#a58b9e3e65e60d89986327f90bf305069">   41</a></span>&#160;<a class="code" href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a> <a class="code" href="../../db/db1/class_image_converter.html#a58b9e3e65e60d89986327f90bf305069">ImageConverter::ImageToGrayscalImage</a>(<span class="keyword">const</span> <a class="code" href="../../de/d73/class_image.html">Image</a> &amp;image)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a> grayscaleImage(image.<a class="code" href="../../db/d6b/class_image_base.html#a750ec0d8ff1dd10dfa26467c018cc68c">getHeight</a>(), image.<a class="code" href="../../db/d6b/class_image_base.html#a576197cd4b79d141bb8bd832511fb26a">getWidth</a>());</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> i = 0; i &lt; image.width * image.height; i++)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        grayscaleImage.data[i] = <a class="code" href="../../db/db1/class_image_converter.html#a478c9d613c0591f3a0f0f0db6081b986">getGrayscale</a>(image.data[i]);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> grayscaleImage;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../db/db1/class_image_converter.html#a478c9d613c0591f3a0f0f0db6081b986">   53</a></span>&#160;<a class="code" href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> <a class="code" href="../../db/db1/class_image_converter.html#a478c9d613c0591f3a0f0f0db6081b986">ImageConverter::getGrayscale</a>(<span class="keyword">const</span> <a class="code" href="../../d9/ddd/class_color.html">Color</a> &amp;color)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> gray = color.<a class="code" href="../../d9/ddd/class_color.html#aaf34b98c81cfe8ec2682cc38761a4d5c">getRed</a>() * 0.299 + color.<a class="code" href="../../d9/ddd/class_color.html#affb4bc39163b1c057e338125ed377494">getGreen</a>() * 0.587 + color.<a class="code" href="../../d9/ddd/class_color.html#ad3adb9f5cc739957f9dbf053d2641de2">getBlue</a>()</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                 * 0.114;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> gray;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../db/db1/class_image_converter.html#a43b58fb52b437bad20fb9dbb57f01067">   61</a></span>&#160;<a class="code" href="../../de/d73/class_image.html">Image</a> <a class="code" href="../../db/db1/class_image_converter.html#a43b58fb52b437bad20fb9dbb57f01067">ImageConverter::GrayscaleImageToImage</a>(<span class="keyword">const</span> <a class="code" href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        &amp;grayscaleImage)</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../de/d73/class_image.html">Image</a> image(grayscaleImage.height, grayscaleImage.width);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> i = 0; i &lt; grayscaleImage.width * grayscaleImage.height; i++)</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        image.data[i].setGray(grayscaleImage.data[i]);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> image;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div><div class="ttc" id="class_grayscale_image_html"><div class="ttname"><a href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/grayscaleimage_8h_source.html#l00014">grayscaleimage.h:14</a></div></div>
+<div class="ttc" id="number_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d22/number_8h_source.html#l00005">number.h:5</a></div></div>
+<div class="ttc" id="class_color_html_a957be1669566c9422dc48595d21547a1"><div class="ttname"><a href="../../d9/ddd/class_color.html#a957be1669566c9422dc48595d21547a1">Color::setBlue</a></div><div class="ttdeci">void setBlue(uint8 value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d03/color_8cpp_source.html#l00058">color.cpp:58</a></div></div>
+<div class="ttc" id="class_color_html_ad3adb9f5cc739957f9dbf053d2641de2"><div class="ttname"><a href="../../d9/ddd/class_color.html#ad3adb9f5cc739957f9dbf053d2641de2">Color::getBlue</a></div><div class="ttdeci">uint8 getBlue() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d03/color_8cpp_source.html#l00053">color.cpp:53</a></div></div>
+<div class="ttc" id="class_image_converter_html_a5c0f28c5f9da5f2c64077e8dc7462a03"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a5c0f28c5f9da5f2c64077e8dc7462a03">ImageConverter::QImageToImage</a></div><div class="ttdeci">static Image QImageToImage(const QImage &amp;qImage)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00004">imageconverter.cpp:4</a></div></div>
+<div class="ttc" id="class_image_base_html_a576197cd4b79d141bb8bd832511fb26a"><div class="ttname"><a href="../../db/d6b/class_image_base.html#a576197cd4b79d141bb8bd832511fb26a">ImageBase::getWidth</a></div><div class="ttdeci">uint32 getWidth() const </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd1/imagebase_8h_source.html#l00135">imagebase.h:135</a></div></div>
+<div class="ttc" id="class_color_html"><div class="ttname"><a href="../../d9/ddd/class_color.html">Color</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/color_8h_source.html#l00006">color.h:6</a></div></div>
+<div class="ttc" id="class_image_html"><div class="ttname"><a href="../../de/d73/class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db2/image_8h_source.html#l00015">image.h:15</a></div></div>
+<div class="ttc" id="imageconverter_8h_html"><div class="ttname"><a href="../../d4/d61/imageconverter_8h.html">imageconverter.h</a></div></div>
+<div class="ttc" id="class_image_converter_html_a478c9d613c0591f3a0f0f0db6081b986"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a478c9d613c0591f3a0f0f0db6081b986">ImageConverter::getGrayscale</a></div><div class="ttdeci">static uint8 getGrayscale(const Color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00053">imageconverter.cpp:53</a></div></div>
+<div class="ttc" id="class_color_html_aaf34b98c81cfe8ec2682cc38761a4d5c"><div class="ttname"><a href="../../d9/ddd/class_color.html#aaf34b98c81cfe8ec2682cc38761a4d5c">Color::getRed</a></div><div class="ttdeci">uint8 getRed() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d03/color_8cpp_source.html#l00033">color.cpp:33</a></div></div>
+<div class="ttc" id="class_image_converter_html_a1d4ec9d93d250b7db9dc8fbf28c513cf"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a1d4ec9d93d250b7db9dc8fbf28c513cf">ImageConverter::ImageToQImage</a></div><div class="ttdeci">static QImage ImageToQImage(const Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00024">imageconverter.cpp:24</a></div></div>
+<div class="ttc" id="class_color_html_a0db91f928764aa5fef82e92f55e34a2f"><div class="ttname"><a href="../../d9/ddd/class_color.html#a0db91f928764aa5fef82e92f55e34a2f">Color::setRed</a></div><div class="ttdeci">void setRed(uint8 value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d03/color_8cpp_source.html#l00038">color.cpp:38</a></div></div>
+<div class="ttc" id="number_8h_html_a1134b580f8da4de94ca6b1de4d37975e"><div class="ttname"><a href="../../d3/d22/number_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a></div><div class="ttdeci">unsigned int uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d22/number_8h_source.html#l00009">number.h:9</a></div></div>
+<div class="ttc" id="class_image_converter_html_a58b9e3e65e60d89986327f90bf305069"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a58b9e3e65e60d89986327f90bf305069">ImageConverter::ImageToGrayscalImage</a></div><div class="ttdeci">static GrayscaleImage ImageToGrayscalImage(const Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00041">imageconverter.cpp:41</a></div></div>
+<div class="ttc" id="class_color_html_affb4bc39163b1c057e338125ed377494"><div class="ttname"><a href="../../d9/ddd/class_color.html#affb4bc39163b1c057e338125ed377494">Color::getGreen</a></div><div class="ttdeci">uint8 getGreen() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d03/color_8cpp_source.html#l00043">color.cpp:43</a></div></div>
+<div class="ttc" id="class_color_html_a35f06f6d8e5b2e57366ce2b3911b8d34"><div class="ttname"><a href="../../d9/ddd/class_color.html#a35f06f6d8e5b2e57366ce2b3911b8d34">Color::setGreen</a></div><div class="ttdeci">void setGreen(uint8 value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d03/color_8cpp_source.html#l00048">color.cpp:48</a></div></div>
+<div class="ttc" id="class_image_base_html_a750ec0d8ff1dd10dfa26467c018cc68c"><div class="ttname"><a href="../../db/d6b/class_image_base.html#a750ec0d8ff1dd10dfa26467c018cc68c">ImageBase::getHeight</a></div><div class="ttdeci">uint32 getHeight() const </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd1/imagebase_8h_source.html#l00123">imagebase.h:123</a></div></div>
+<div class="ttc" id="class_image_converter_html_a43b58fb52b437bad20fb9dbb57f01067"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a43b58fb52b437bad20fb9dbb57f01067">ImageConverter::GrayscaleImageToImage</a></div><div class="ttdeci">static Image GrayscaleImageToImage(const GrayscaleImage &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00061">imageconverter.cpp:61</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

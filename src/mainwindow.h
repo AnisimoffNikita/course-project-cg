@@ -12,19 +12,20 @@
 #include "algorithm/cylindersizecalculator.h"
 #include "animation/scene.h"
 #include "animation/renderer.h"
+#include "src/animationwindow.h"
 
 namespace Ui
 {
-class DebugMainWindow;
+class MainWindow;
 }
 
-class DebugMainWindow : public QMainWindow
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit DebugMainWindow(QWidget *parent = 0);
-    ~DebugMainWindow();
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
 
 protected:
     void resizeEvent(QResizeEvent *);
@@ -58,6 +59,8 @@ private slots:
 
     void on_rbnDiag_toggled(bool checked);
 
+    void on_actAnimation_triggered();
+
 private:
     void openFile();
     bool loadFile(const QString &filename);
@@ -68,7 +71,8 @@ private:
 
     void debug_setScene();
 
-    Ui::DebugMainWindow *ui;
+    AnimationWindow w;
+    Ui::MainWindow *ui;
     QImage image;
 
     CylinderSizeCalculator calc;
@@ -76,4 +80,4 @@ private:
     int state;
 };
 
-#endif // MAINWINDOW_H
+#endif // DEBUGMAINWINDOW_H

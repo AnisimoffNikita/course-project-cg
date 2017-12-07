@@ -1,0 +1,5 @@
+digraph AmbientLight
+{
+graph [ rankdir="RL" ]
+"d4/dd4/class_ambient_light" [ label="AmbientLight\n|+AmbientLight ( intensity : float )\l/+getIntensity (  : const Vec3 &,  : const Vec3 &,  : const Vec3 &, ka : const Color &,  : const Color &,  : const Color... ) : Color \{virtual\}\l/+isPoint (  ) : bool \{virtual\}\l|" shape="record" ]
+}

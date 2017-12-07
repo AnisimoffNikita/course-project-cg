@@ -1,0 +1,4 @@
+digraph objl::Vertex
+{
+graph [ rankdir="RL" ]
+"d4/dd1/structobjl_1_1_vertex" [ label="objl::Vertex\n||+Normal : Vector3\l+Position : Vector3\l+TextureCoordinate : Vector2\l" shape="record" ]}

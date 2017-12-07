@@ -1,0 +1,5 @@
+digraph Vector3
+{
+graph [ rankdir="RL" ]
+"d3/de7/class_vector3" [ label="Vector3\n|+Vector3 (  )\l+Vector3 ( x : const T &, y : const T &, z : const T & )\l+cross ( value : const Vector3 & ) : Vector3\l+dot ( value : const Vector3 & ) : T\l+length (  ) : float\l+normalized (  ) : Vector3\l+operator* ( factor : float ) : Vector3\l+operator*= ( factor : float ) : Vector3 &\l+operator+ ( value : const Vector3 & ) : Vector3\l+operator+= ( value : const Vector3 & ) : Vector3 &\l+operator- (  ) : Vector3\l+operator- ( value : const Vector3 & ) : Vector3\l+operator-= ( value : const Vector3 & ) : Vector3 &\l+operator== ( value : const Vector3 & ) : bool\l+setX ( value : const T & ) : void\l+setY ( value : const T & ) : void\l+setZ ( value : const T & ) : void\l+x (  ) : T\l+y (  ) : T\l+z (  ) : T\l|-xc : T\l-yc : T\l-zc : T\l" shape="record" ]
+}

@@ -1,0 +1,5 @@
+digraph Line
+{
+graph [ rankdir="RL" ]
+"dd/db4/class_line" [ label="Line\n|+Line (  )\l+Line ( p1 : const Vec2 &, p2 : const Vec2 & )\l+getP1 (  ) : Vec2\l+getP2 (  ) : Vec2\l+length (  ) : float\l+setP1 ( value : const Vec2 & ) : void\l+setP2 ( value : const Vec2 & ) : void\l|-p1 : Vec2\l-p2 : Vec2\l" shape="record" ]
+}

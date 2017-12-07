@@ -1,0 +1,5 @@
+class ModelFactory
+!!!161154.cpp!!!	ModelFactory(in position : Vec3, in mesh : Mesh)
+    model = std::make_unique<Model>(position, mesh);
+!!!161410.cpp!!!	create() : SharedSceneObject
+    return std::move(model);

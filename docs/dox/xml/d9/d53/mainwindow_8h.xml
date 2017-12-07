@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/d53/mainwindow_8h" kind="file" language="C++">
+    <compoundname>mainwindow.h</compoundname>
+    <includes local="no">QMainWindow</includes>
+    <includes local="no">QFileDialog</includes>
+    <includes local="no">QImage</includes>
+    <includes local="no">QResizeEvent</includes>
+    <includes refid="de/d3b/cannyedgedetector_8h" local="yes">algorithm/edgedetector/cannyedgedetector.h</includes>
+    <includes refid="dd/d54/houghtransform_8h" local="yes">algorithm/linetransform/houghtransform.h</includes>
+    <includes refid="dc/d32/gaussianblur_8h" local="yes">algorithm/blur/gaussianblur.h</includes>
+    <includes refid="d3/dff/cylindersizecalculator_8h" local="yes">algorithm/cylindersizecalculator.h</includes>
+    <includes refid="db/d83/scene_8h" local="yes">animation/scene.h</includes>
+    <includes refid="d6/d85/renderer_8h" local="yes">animation/renderer.h</includes>
+    <includes refid="d9/d5e/animationwindow_8h" local="yes">src/animationwindow.h</includes>
+    <includedby refid="df/d0a/main_8cpp" local="yes">Projects/labs/course_project_cg/src/main.cpp</includedby>
+    <includedby refid="d8/dd9/mainwindow_8cpp" local="yes">Projects/labs/course_project_cg/src/mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="3217">
+        <label>algorithm/edgedetector/cannyedgedetector.h</label>
+        <link refid="de/d3b/cannyedgedetector_8h"/>
+        <childnode refid="3218" relation="include">
+        </childnode>
+        <childnode refid="3224" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+      </node>
+      <node id="3221">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3223" relation="include">
+        </childnode>
+      </node>
+      <node id="3241">
+        <label>functional</label>
+      </node>
+      <node id="3223">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+      </node>
+      <node id="3237">
+        <label>animation/scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3235" relation="include">
+        </childnode>
+        <childnode refid="3234" relation="include">
+        </childnode>
+        <childnode refid="3238" relation="include">
+        </childnode>
+        <childnode refid="3242" relation="include">
+        </childnode>
+        <childnode refid="3244" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3245" relation="include">
+        </childnode>
+      </node>
+      <node id="3232">
+        <label>algorithm/cylindersizecalculator.h</label>
+        <link refid="d3/dff/cylindersizecalculator_8h"/>
+        <childnode refid="3233" relation="include">
+        </childnode>
+      </node>
+      <node id="3238">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="3234" relation="include">
+        </childnode>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3239" relation="include">
+        </childnode>
+      </node>
+      <node id="3226">
+        <label>algorithm/linetransform/houghtransform.h</label>
+        <link refid="dd/d54/houghtransform_8h"/>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3227" relation="include">
+        </childnode>
+        <childnode refid="3224" relation="include">
+        </childnode>
+        <childnode refid="3229" relation="include">
+        </childnode>
+        <childnode refid="3228" relation="include">
+        </childnode>
+      </node>
+      <node id="3227">
+        <label>linetransform.h</label>
+        <link refid="d9/d6e/linetransform_8h"/>
+        <childnode refid="3219" relation="include">
+        </childnode>
+        <childnode refid="3228" relation="include">
+        </childnode>
+      </node>
+      <node id="3228">
+        <label>src/math/line.h</label>
+        <link refid="d7/d5d/line_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3229" relation="include">
+        </childnode>
+      </node>
+      <node id="3218">
+        <label>edgedetector.h</label>
+        <link refid="d4/da5/edgedetector_8h"/>
+        <childnode refid="3219" relation="include">
+        </childnode>
+      </node>
+      <node id="3239">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3240" relation="include">
+        </childnode>
+      </node>
+      <node id="3213">
+        <label>QMainWindow</label>
+      </node>
+      <node id="3222">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3233">
+        <label>cylindersizecalculatorbase.h</label>
+        <link refid="db/d0b/cylindersizecalculatorbase_8h"/>
+        <childnode refid="3234" relation="include">
+        </childnode>
+        <childnode refid="3235" relation="include">
+        </childnode>
+        <childnode refid="3228" relation="include">
+        </childnode>
+        <childnode refid="3236" relation="include">
+        </childnode>
+      </node>
+      <node id="3215">
+        <label>QImage</label>
+      </node>
+      <node id="3219">
+        <label>src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3221" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3223" relation="include">
+        </childnode>
+      </node>
+      <node id="3249">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="3223" relation="include">
+        </childnode>
+        <childnode refid="3239" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3250" relation="include">
+        </childnode>
+        <childnode refid="3247" relation="include">
+        </childnode>
+      </node>
+      <node id="3243">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+      </node>
+      <node id="3242">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="3238" relation="include">
+        </childnode>
+        <childnode refid="3243" relation="include">
+        </childnode>
+      </node>
+      <node id="3236">
+        <label>src/math/cylindersize.h</label>
+        <link refid="d1/dfa/cylindersize_8h"/>
+      </node>
+      <node id="3214">
+        <label>QFileDialog</label>
+      </node>
+      <node id="3229">
+        <label>vec2.h</label>
+        <link refid="d3/dbe/vec2_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+      </node>
+      <node id="3216">
+        <label>QResizeEvent</label>
+      </node>
+      <node id="3246">
+        <label>animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="3247" relation="include">
+        </childnode>
+        <childnode refid="3242" relation="include">
+        </childnode>
+        <childnode refid="3244" relation="include">
+        </childnode>
+        <childnode refid="3248" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+      </node>
+      <node id="3240">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3241" relation="include">
+        </childnode>
+      </node>
+      <node id="3234">
+        <label>vector</label>
+      </node>
+      <node id="3225">
+        <label>grayscalecolor.h</label>
+        <link refid="d0/d9c/grayscalecolor_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+      </node>
+      <node id="3235">
+        <label>utility</label>
+      </node>
+      <node id="3250">
+        <label>array</label>
+      </node>
+      <node id="3224">
+        <label>src/image/grayscaleimage.h</label>
+        <link refid="d3/d37/grayscaleimage_8h"/>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3221" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3225" relation="include">
+        </childnode>
+      </node>
+      <node id="3251">
+        <label>src/animationwindow.h</label>
+        <link refid="d9/d5e/animationwindow_8h"/>
+        <childnode refid="3213" relation="include">
+        </childnode>
+      </node>
+      <node id="3248">
+        <label>mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="3234" relation="include">
+        </childnode>
+        <childnode refid="3239" relation="include">
+        </childnode>
+        <childnode refid="3243" relation="include">
+        </childnode>
+        <childnode refid="3247" relation="include">
+        </childnode>
+        <childnode refid="3249" relation="include">
+        </childnode>
+      </node>
+      <node id="3212">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="3213" relation="include">
+        </childnode>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3216" relation="include">
+        </childnode>
+        <childnode refid="3217" relation="include">
+        </childnode>
+        <childnode refid="3226" relation="include">
+        </childnode>
+        <childnode refid="3230" relation="include">
+        </childnode>
+        <childnode refid="3232" relation="include">
+        </childnode>
+        <childnode refid="3237" relation="include">
+        </childnode>
+        <childnode refid="3246" relation="include">
+        </childnode>
+        <childnode refid="3251" relation="include">
+        </childnode>
+      </node>
+      <node id="3245">
+        <label>QPixmap</label>
+      </node>
+      <node id="3247">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="3239" relation="include">
+        </childnode>
+        <childnode refid="3243" relation="include">
+        </childnode>
+      </node>
+      <node id="3230">
+        <label>algorithm/blur/gaussianblur.h</label>
+        <link refid="dc/d32/gaussianblur_8h"/>
+        <childnode refid="3231" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+      </node>
+      <node id="3244">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="3238" relation="include">
+        </childnode>
+        <childnode refid="3223" relation="include">
+        </childnode>
+      </node>
+      <node id="3220">
+        <label>memory</label>
+      </node>
+      <node id="3231">
+        <label>blur.h</label>
+        <link refid="d4/df5/blur_8h"/>
+        <childnode refid="3219" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3254">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="3253">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="3252">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="3253" relation="include">
+        </childnode>
+        <childnode refid="3254" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/dc6/class_main_window" prot="public">MainWindow</innerclass>
+    <innernamespace refid="dc/df0/namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QResizeEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/d3b/cannyedgedetector_8h" kindref="compound">algorithm/edgedetector/cannyedgedetector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/d54/houghtransform_8h" kindref="compound">algorithm/linetransform/houghtransform.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d32/gaussianblur_8h" kindref="compound">algorithm/blur/gaussianblur.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/dff/cylindersizecalculator_8h" kindref="compound">algorithm/cylindersizecalculator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d83/scene_8h" kindref="compound">animation/scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d85/renderer_8h" kindref="compound">animation/renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d5e/animationwindow_8h" kindref="compound">src/animationwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="dc/df0/namespace_ui" kindref="compound">Ui</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/dc6/class_main_window" kindref="compound">MainWindow</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d9/dc6/class_main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/dc6/class_main_window" kindref="compound">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d9/dc6/class_main_window" kindref="compound">MainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="d9/dc6/class_main_window" kindref="compound">MainWindow</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resizeEvent(QResizeEvent<sp/>*);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_actOpenImage_triggered();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_btnCalibrate_clicked();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_btnEval_clicked();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_sldSigma_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_sldKernelSize_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_sldMinThresh_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_sldMaxThresh_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_sldThresh_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_actRestore_triggered();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_btnGaussApply_clicked();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_btnCannyApply_clicked();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_btnHoughApply_clicked();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_rbnStandard_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_rbnDiag_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_actAnimation_triggered();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>openFile();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loadFile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;filename);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setImage(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage<sp/>&amp;newImage);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initFileDialog(QFileDialog<sp/>&amp;dialog,<sp/>QFileDialog::AcceptMode<sp/>acceptMode);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fitToWindow();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateActions();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>debug_setScene();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="d9/dc6/class_main_window_1aeb8f8bc8e591c09d7c2bd5d3e4a754dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d30/class_animation_window" kindref="compound">AnimationWindow</ref><sp/><ref refid="d9/dc6/class_main_window_1aeb8f8bc8e591c09d7c2bd5d3e4a754dc" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="75" refid="d9/dc6/class_main_window_1a35466a70ed47252a0191168126a352a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::MainWindow<sp/>*<ref refid="d9/dc6/class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="76" refid="d9/dc6/class_main_window_1a66a1d5b734bad3d2e9e2db622b9950b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="d9/dc6/class_main_window_1a66a1d5b734bad3d2e9e2db622b9950b4" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="d9/dc6/class_main_window_1ab59b6f62b19d0cd5feef140f71655001" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator" kindref="compound">CylinderSizeCalculator</ref><sp/><ref refid="d9/dc6/class_main_window_1ab59b6f62b19d0cd5feef140f71655001" kindref="member">calc</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="d9/dc6/class_main_window_1aa2b6e7a3cfbc2bffb42aa8c74c37ef2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/dc6/class_main_window_1aa2b6e7a3cfbc2bffb42aa8c74c37ef2b" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DEBUGMAINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/mainwindow.h"/>
+  </compounddef>
+</doxygen>

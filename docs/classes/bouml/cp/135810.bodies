@@ -1,0 +1,18 @@
+class Mesh
+!!!148482.cpp!!!	getVertices() : vector<Vertex>
+    return vertices;
+!!!148610.cpp!!!	setVertices(in value : vector<Vertex>) : void
+    vertices = value;
+!!!148738.cpp!!!	getTriangles() : vector<Triangle>
+    return triangles;
+!!!148866.cpp!!!	setTriangles(in value : vector<Triangle>) : void
+    triangles = value;
+!!!148994.cpp!!!	getMaterial() : Material
+    return material;
+!!!149122.cpp!!!	setMaterial(in value : Material) : void
+    material = value;
+!!!149250.cpp!!!	transform(in transformation : Transformation) : void
+    for (auto &vertex : vertices)
+    {
+        vertex.transform(transformation);
+    }

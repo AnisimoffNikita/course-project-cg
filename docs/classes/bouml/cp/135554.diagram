@@ -1,0 +1,37 @@
+format 215
+
+classcanvas 128002 class_ref 135810 // Mesh
+  classdiagramsettings member_max_width 0 end
+  xyz 378 48 2000
+end
+classcanvas 128130 class_ref 136322 // Material
+  classdiagramsettings member_max_width 0 end
+  xyz 524 47 3005
+end
+classcanvas 128386 class_ref 135554 // Triangle
+  classdiagramsettings member_max_width 0 end
+  xyz 219 41 3005
+end
+classcanvas 128898 class_ref 136450 // Vertex
+  classdiagramsettings member_max_width 0 end
+  xyz 53 42 2006
+end
+relationcanvas 128258 relation_ref 135682 // <directional composition>
+  decenter_end 448
+  from ref 128002 z 3006 to ref 128130
+  role_a_pos 524 214 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 135554 // <directional composition>
+  from ref 128002 z 3006 stereotype "<<vector>>" xyz 303.5 162 3006 to ref 128386
+  role_a_pos 315 134 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 135426 // <directional composition>
+  from ref 128002 z 2007 to point 429 323
+  line 129538 z 2007 stereotype "<<vector>>" xyz 229.5 325.5 2007 to point 101 324
+  line 129410 z 2007 to ref 128898
+  role_a_pos 114 281 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

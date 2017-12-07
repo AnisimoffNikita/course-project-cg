@@ -1,0 +1,140 @@
+\hypertarget{matrix_8h}{}\section{Файл Projects/labs/course\+\_\+project\+\_\+cg/src/math/matrix.h}
+\label{matrix_8h}\index{Projects/labs/course\+\_\+project\+\_\+cg/src/math/matrix.\+h@{Projects/labs/course\+\_\+project\+\_\+cg/src/math/matrix.\+h}}
+{\ttfamily \#include $<$src/number.\+h$>$}\\*
+Граф включаемых заголовочных файлов для matrix.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{d5/dd7/matrix_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d78/matrix_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_matrix}{Matrix$<$ M, N, T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} = \hyperlink{class_matrix}{Matrix}$<$ 4, 4, float $>$
+\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int32 M, int32 N, typename T $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \hyperlink{matrix_8h_afc99578cd5a48bbdeaa2457daed7cf1c}{operator+} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&m1, const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&m2)
+\item 
+{\footnotesize template$<$int32 M, int32 N, typename T $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \hyperlink{matrix_8h_ae167d8d4563f1cefb01c70a1f11efbb2}{operator-\/} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&m1, const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&m2)
+\item 
+{\footnotesize template$<$int32 N, int32 M1, int32 M2, typename T $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M1, M2, T $>$ \hyperlink{matrix_8h_a4b5dbdac70575aa11430751928c6ac97}{operator$\ast$} (const \hyperlink{class_matrix}{Matrix}$<$ M1, N, T $>$ \&m1, const \hyperlink{class_matrix}{Matrix}$<$ N, M2, T $>$ \&m2)
+\item 
+{\footnotesize template$<$int32 M, int32 N, typename T $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \hyperlink{matrix_8h_ab0eff7d7c6b5d5e4c499493cae0dab26}{operator-\/} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&matrix)
+\item 
+{\footnotesize template$<$int32 M, int32 N, typename T $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \hyperlink{matrix_8h_aa0d11ffe31c035ea6a38ba95b8407dcb}{operator$\ast$} (T factor, const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&matrix)
+\item 
+{\footnotesize template$<$int32 M, int32 N, typename T $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \hyperlink{matrix_8h_a3666902c6cc04222e4ccf7cb45cdf96e}{operator$\ast$} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&matrix, T factor)
+\item 
+{\footnotesize template$<$int32 M, int32 N, typename T $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \hyperlink{matrix_8h_aa29fee384749d934f288c7928a993396}{operator/} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&matrix, T divisor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Типы}
+\index{matrix.\+h@{matrix.\+h}!Mat4@{Mat4}}
+\index{Mat4@{Mat4}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{Mat4}{Mat4}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Mat4} =  {\bf Matrix}$<$4, 4, float$>$}\hypertarget{matrix_8h_a077dce9756976f552e5703c34475d5e3}{}\label{matrix_8h_a077dce9756976f552e5703c34475d5e3}
+
+
+См. определение в файле matrix.\+h строка 65
+
+
+
+\subsection{Функции}
+\index{matrix.\+h@{matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Matrix$<$ M1, N, T $>$ \&m1, const Matrix$<$ N, M2, T $>$ \&m2)}{operator*(const Matrix< M1, N, T > &m1, const Matrix< N, M2, T > &m2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 N, int32 M1, int32 M2, typename T $>$ {\bf Matrix}$<$M1, M2, T$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M1, N, T $>$ \&}]{m1, }
+\item[{const {\bf Matrix}$<$ N, M2, T $>$ \&}]{m2}
+\end{DoxyParamCaption}
+)}\hypertarget{matrix_8h_a4b5dbdac70575aa11430751928c6ac97}{}\label{matrix_8h_a4b5dbdac70575aa11430751928c6ac97}
+
+
+См. определение в файле matrix.\+h строка 253
+
+\index{matrix.\+h@{matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{operator$\ast$(\+T factor, const Matrix$<$ M, N, T $>$ \&matrix)}{operator*(T factor, const Matrix< M, N, T > &matrix)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$M, N, T$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{T}]{factor, }
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{matrix}
+\end{DoxyParamCaption}
+)}\hypertarget{matrix_8h_aa0d11ffe31c035ea6a38ba95b8407dcb}{}\label{matrix_8h_aa0d11ffe31c035ea6a38ba95b8407dcb}
+
+
+См. определение в файле matrix.\+h строка 289
+
+\index{matrix.\+h@{matrix.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Matrix$<$ M, N, T $>$ \&matrix, T factor)}{operator*(const Matrix< M, N, T > &matrix, T factor)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$M, N, T$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{matrix, }
+\item[{T}]{factor}
+\end{DoxyParamCaption}
+)}\hypertarget{matrix_8h_a3666902c6cc04222e4ccf7cb45cdf96e}{}\label{matrix_8h_a3666902c6cc04222e4ccf7cb45cdf96e}
+
+
+См. определение в файле matrix.\+h строка 303
+
+\index{matrix.\+h@{matrix.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{operator+(const Matrix$<$ M, N, T $>$ \&m1, const Matrix$<$ M, N, T $>$ \&m2)}{operator+(const Matrix< M, N, T > &m1, const Matrix< M, N, T > &m2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$M, N, T$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{m1, }
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{m2}
+\end{DoxyParamCaption}
+)}\hypertarget{matrix_8h_afc99578cd5a48bbdeaa2457daed7cf1c}{}\label{matrix_8h_afc99578cd5a48bbdeaa2457daed7cf1c}
+
+
+См. определение в файле matrix.\+h строка 225
+
+\index{matrix.\+h@{matrix.\+h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{operator-\/(const Matrix$<$ M, N, T $>$ \&m1, const Matrix$<$ M, N, T $>$ \&m2)}{operator-(const Matrix< M, N, T > &m1, const Matrix< M, N, T > &m2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$M, N, T$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{m1, }
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{m2}
+\end{DoxyParamCaption}
+)}\hypertarget{matrix_8h_ae167d8d4563f1cefb01c70a1f11efbb2}{}\label{matrix_8h_ae167d8d4563f1cefb01c70a1f11efbb2}
+
+
+См. определение в файле matrix.\+h строка 239
+
+\index{matrix.\+h@{matrix.\+h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{operator-\/(const Matrix$<$ M, N, T $>$ \&matrix)}{operator-(const Matrix< M, N, T > &matrix)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$M, N, T$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{matrix}
+\end{DoxyParamCaption}
+)}\hypertarget{matrix_8h_ab0eff7d7c6b5d5e4c499493cae0dab26}{}\label{matrix_8h_ab0eff7d7c6b5d5e4c499493cae0dab26}
+
+
+См. определение в файле matrix.\+h строка 275
+
+\index{matrix.\+h@{matrix.\+h}!operator/@{operator/}}
+\index{operator/@{operator/}!matrix.\+h@{matrix.\+h}}
+\subsubsection[{\texorpdfstring{operator/(const Matrix$<$ M, N, T $>$ \&matrix, T divisor)}{operator/(const Matrix< M, N, T > &matrix, T divisor)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$M, N, T$>$ operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{matrix, }
+\item[{T}]{divisor}
+\end{DoxyParamCaption}
+)}\hypertarget{matrix_8h_aa29fee384749d934f288c7928a993396}{}\label{matrix_8h_aa29fee384749d934f288c7928a993396}
+
+
+См. определение в файле matrix.\+h строка 317
+

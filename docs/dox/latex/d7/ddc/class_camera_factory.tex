@@ -1,0 +1,110 @@
+\hypertarget{class_camera_factory}{}\section{Класс Camera\+Factory}
+\label{class_camera_factory}\index{Camera\+Factory@{Camera\+Factory}}
+
+
+{\ttfamily \#include $<$sceneobjectfactory.\+h$>$}
+
+
+
+Граф наследования\+:Camera\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{dc/db7/class_camera_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Camera\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{da/d5f/class_camera_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_camera_factory_1_1_perspective_data}{Perspective\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_factory_a73bf5c839340ca2a94ce52a1c400d231}{Camera\+Factory} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&position, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&look\+At, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&up, const \hyperlink{struct_camera_factory_1_1_perspective_data}{Perspective\+Data} \&data)
+\item 
+virtual \hyperlink{class_camera_factory_ab63fa4fcfc787465aa1b2d5bf03e9a4d}{$\sim$\+Camera\+Factory} ()=default
+\item 
+virtual \hyperlink{sceneobject_8h_af9afe0f4fe2038e305b8b22ff495305f}{Shared\+Scene\+Object} \hyperlink{class_camera_factory_a7a105ab24599d2d48fc03f40a28a1492}{create} () override
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_camera}{Camera} $>$ \hyperlink{class_camera_factory_ad1e2114f133f8489e790a4f42b377de3}{camera}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле sceneobjectfactory.\+h строка 21
+
+
+
+\subsection{Конструктор(ы)}
+\index{Camera\+Factory@{Camera\+Factory}!Camera\+Factory@{Camera\+Factory}}
+\index{Camera\+Factory@{Camera\+Factory}!Camera\+Factory@{Camera\+Factory}}
+\subsubsection[{\texorpdfstring{Camera\+Factory(const Vec3 \&position, const Vec3 \&look\+At, const Vec3 \&up, const Perspective\+Data \&data)}{CameraFactory(const Vec3 &position, const Vec3 &lookAt, const Vec3 &up, const PerspectiveData &data)}}]{\setlength{\rightskip}{0pt plus 5cm}Camera\+Factory\+::\+Camera\+Factory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{const {\bf Vec3} \&}]{look\+At, }
+\item[{const {\bf Vec3} \&}]{up, }
+\item[{const {\bf Perspective\+Data} \&}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_factory_a73bf5c839340ca2a94ce52a1c400d231}{}\label{class_camera_factory_a73bf5c839340ca2a94ce52a1c400d231}
+
+
+См. определение в файле sceneobjectfactory.\+cpp строка 5
+
+\index{Camera\+Factory@{Camera\+Factory}!````~Camera\+Factory@{$\sim$\+Camera\+Factory}}
+\index{````~Camera\+Factory@{$\sim$\+Camera\+Factory}!Camera\+Factory@{Camera\+Factory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Camera\+Factory()=default}{~CameraFactory()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Camera\+Factory\+::$\sim$\+Camera\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_camera_factory_ab63fa4fcfc787465aa1b2d5bf03e9a4d}{}\label{class_camera_factory_ab63fa4fcfc787465aa1b2d5bf03e9a4d}
+
+
+\subsection{Методы}
+\index{Camera\+Factory@{Camera\+Factory}!create@{create}}
+\index{create@{create}!Camera\+Factory@{Camera\+Factory}}
+\subsubsection[{\texorpdfstring{create() override}{create() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shared\+Scene\+Object} Camera\+Factory\+::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_camera_factory_a7a105ab24599d2d48fc03f40a28a1492}{}\label{class_camera_factory_a7a105ab24599d2d48fc03f40a28a1492}
+
+
+Замещает \hyperlink{class_scene_object_factory_a9b90daaddbc34b747c072f770bc6b993}{Scene\+Object\+Factory}.
+
+
+
+См. определение в файле sceneobjectfactory.\+cpp строка 13
+
+
+
+\subsection{Данные класса}
+\index{Camera\+Factory@{Camera\+Factory}!camera@{camera}}
+\index{camera@{camera}!Camera\+Factory@{Camera\+Factory}}
+\subsubsection[{\texorpdfstring{camera}{camera}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Camera}$>$ Camera\+Factory\+::camera\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_camera_factory_ad1e2114f133f8489e790a4f42b377de3}{}\label{class_camera_factory_ad1e2114f133f8489e790a4f42b377de3}
+
+
+См. определение в файле sceneobjectfactory.\+h строка 41
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{sceneobjectfactory_8h}{sceneobjectfactory.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{sceneobjectfactory_8cpp}{sceneobjectfactory.\+cpp}\end{DoxyCompactItemize}

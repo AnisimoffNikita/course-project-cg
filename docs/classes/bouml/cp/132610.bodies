@@ -1,0 +1,9 @@
+class ActionManager
+!!!140674.cpp!!!	add(inout action : unique_ptr<Action>) : void
+    actions.push_back(std::move(action));
+!!!140802.cpp!!!	update(in delta : float) : void
+    //TODO: check for delete
+    for (auto &action : actions)
+    {
+        action->update(delta);
+    }

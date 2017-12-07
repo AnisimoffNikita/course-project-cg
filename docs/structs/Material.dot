@@ -1,0 +1,5 @@
+digraph Material
+{
+graph [ rankdir="RL" ]
+"dc/dee/class_material" [ label="Material\n|+Material (  )\l+Material ( ka : const Color &, kd : const Color &, ks : const Color &, ns : float, ni : float, d : float )\l+getD (  ) : float\l+getKa (  ) : const Color &\l+getKd (  ) : const Color &\l+getKs (  ) : const Color &\l+getNi (  ) : float\l+getNs (  ) : float\l+setD ( value : float ) : void\l+setKa ( value : const Color & ) : void\l+setKd ( value : const Color & ) : void\l+setKs ( value : const Color & ) : void\l+setNi ( value : float ) : void\l+setNs ( value : float ) : void\l|-d : float\l-ka : Color\l-kd : Color\l-ks : Color\l-ni : float\l-ns : float\l" shape="record" ]
+}

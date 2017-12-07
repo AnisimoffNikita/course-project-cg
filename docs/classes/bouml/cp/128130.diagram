@@ -1,0 +1,16 @@
+format 215
+
+classcanvas 128002 class_ref 131202 // Blur
+  classdiagramsettings member_max_width 0 end
+  xyz 62 42 2000
+end
+classcanvas 128130 class_ref 131458 // GaussianBlur
+  classdiagramsettings member_max_width 0 end
+  xyz 39 169 2006
+end
+relationcanvas 128258 relation_ref 130562 // <generalisation>
+  from ref 128130 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

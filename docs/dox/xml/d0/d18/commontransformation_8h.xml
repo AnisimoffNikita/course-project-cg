@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d0/d18/commontransformation_8h" kind="file" language="C++">
+    <compoundname>commontransformation.h</compoundname>
+    <includes refid="dc/d53/transformation_8h" local="yes">transformation.h</includes>
+    <includes refid="d4/df0/homogeneousvertex_8h" local="yes">src/math/homogeneousvertex.h</includes>
+    <includedby refid="de/dc1/commontransformation_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/commontransformation.cpp</includedby>
+    <includedby refid="d8/dc3/lightzbufferrenderer_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</includedby>
+    <incdepgraph>
+      <node id="2253">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.h</label>
+        <link refid="commontransformation.h"/>
+        <childnode refid="2254" relation="include">
+        </childnode>
+        <childnode refid="2260" relation="include">
+        </childnode>
+      </node>
+      <node id="2258">
+        <label>functional</label>
+      </node>
+      <node id="2255">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2256" relation="include">
+        </childnode>
+        <childnode refid="2257" relation="include">
+        </childnode>
+      </node>
+      <node id="2256">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2260">
+        <label>src/math/homogeneousvertex.h</label>
+        <link refid="d4/df0/homogeneousvertex_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+        <childnode refid="2259" relation="include">
+        </childnode>
+      </node>
+      <node id="2259">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2256" relation="include">
+        </childnode>
+      </node>
+      <node id="2257">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2256" relation="include">
+        </childnode>
+        <childnode refid="2258" relation="include">
+        </childnode>
+      </node>
+      <node id="2254">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+        <childnode refid="2259" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2261">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.h</label>
+        <link refid="commontransformation.h"/>
+        <childnode refid="2262" relation="include">
+        </childnode>
+        <childnode refid="2263" relation="include">
+        </childnode>
+      </node>
+      <node id="2262">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.cpp</label>
+        <link refid="de/dc1/commontransformation_8cpp"/>
+      </node>
+      <node id="2263">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d3e/class_common_transformation" prot="public">CommonTransformation</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMONTRANSFORMATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMONTRANSFORMATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d53/transformation_8h" kindref="compound">transformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/df0/homogeneousvertex_8h" kindref="compound">src/math/homogeneousvertex.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d1/d3e/class_common_transformation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d3e/class_common_transformation" kindref="compound">CommonTransformation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d3e/class_common_transformation_1a6482f70fab18b0afa41bc9b2f1b56665" kindref="member">CommonTransformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;matrix);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d3e/class_common_transformation_1a7daef5b3ad4576a691b474d888c3dfd5" kindref="member">transform</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d3e/class_common_transformation_1a8f789aa59517fd1bf553e1846241eacc" kindref="member">resetOrigin</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>COMMONTRANSFORMATION_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/commontransformation.h"/>
+  </compounddef>
+</doxygen>

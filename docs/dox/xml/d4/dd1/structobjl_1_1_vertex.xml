@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/dd1/structobjl_1_1_vertex" kind="struct" language="C++" prot="public">
+    <compoundname>objl::Vertex</compoundname>
+    <includes refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" local="no">objloader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/dd1/structobjl_1_1_vertex_1a08acd50ed3a3a8b7b0b6ca0b78b61c13" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Vertex::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="137" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dd1/structobjl_1_1_vertex_1a0a5918e142a939241edeec52944b9edf" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Vertex::Normal</definition>
+        <argsstring></argsstring>
+        <name>Normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="140" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dd1/structobjl_1_1_vertex_1af05b2c1ef5f35a15c8ada3e2cd99a9b1" prot="public" static="no" mutable="no">
+        <type><ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 objl::Vertex::TextureCoordinate</definition>
+        <argsstring></argsstring>
+        <name>TextureCoordinate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="143" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="523">
+        <label>objl::Vertex</label>
+        <link refid="d4/dd1/structobjl_1_1_vertex"/>
+        <childnode refid="524" relation="usage">
+          <edgelabel>+TextureCoordinate</edgelabel>
+        </childnode>
+        <childnode refid="525" relation="usage">
+          <edgelabel>+Normal</edgelabel>
+          <edgelabel>+Position</edgelabel>
+        </childnode>
+      </node>
+      <node id="524">
+        <label>objl::Vector2</label>
+        <link refid="df/d1a/structobjl_1_1_vector2"/>
+      </node>
+      <node id="525">
+        <label>objl::Vector3</label>
+        <link refid="d0/d73/structobjl_1_1_vector3"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="135" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="134" bodyend="144"/>
+    <listofallmembers>
+      <member refid="d4/dd1/structobjl_1_1_vertex_1a0a5918e142a939241edeec52944b9edf" prot="public" virt="non-virtual"><scope>objl::Vertex</scope><name>Normal</name></member>
+      <member refid="d4/dd1/structobjl_1_1_vertex_1a08acd50ed3a3a8b7b0b6ca0b78b61c13" prot="public" virt="non-virtual"><scope>objl::Vertex</scope><name>Position</name></member>
+      <member refid="d4/dd1/structobjl_1_1_vertex_1af05b2c1ef5f35a15c8ada3e2cd99a9b1" prot="public" virt="non-virtual"><scope>objl::Vertex</scope><name>TextureCoordinate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

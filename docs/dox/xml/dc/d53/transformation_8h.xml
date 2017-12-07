@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dc/d53/transformation_8h" kind="file" language="C++">
+    <compoundname>transformation.h</compoundname>
+    <includes refid="d8/d08/vec3_8h" local="yes">src/math/vec3.h</includes>
+    <includes refid="dd/df4/matrix_8h" local="yes">src/math/matrix.h</includes>
+    <includedby refid="d1/d6b/camera_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/camera.cpp</includedby>
+    <includedby refid="d0/d18/commontransformation_8h" local="yes">Projects/labs/course_project_cg/src/animation/commontransformation.h</includedby>
+    <includedby refid="dd/dfa/light_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/light.cpp</includedby>
+    <includedby refid="d6/d85/renderer_8h" local="yes">Projects/labs/course_project_cg/src/animation/renderer.h</includedby>
+    <includedby refid="d8/d3b/mesh_8h" local="yes">Projects/labs/course_project_cg/src/animation/mesh.h</includedby>
+    <includedby refid="d5/d6a/meshdata_8h" local="yes">Projects/labs/course_project_cg/src/animation/meshdata.h</includedby>
+    <includedby refid="d0/d00/scaletransformation_8h" local="yes">Projects/labs/course_project_cg/src/animation/scaletransformation.h</includedby>
+    <includedby refid="dc/d51/model_8h" local="yes">Projects/labs/course_project_cg/src/animation/model.h</includedby>
+    <includedby refid="d0/dad/movetransformation_8h" local="yes">Projects/labs/course_project_cg/src/animation/movetransformation.h</includedby>
+    <includedby refid="d5/d2e/rotatetransformation_8h" local="yes">Projects/labs/course_project_cg/src/animation/rotatetransformation.h</includedby>
+    <includedby refid="d2/d67/transformation_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/transformation.cpp</includedby>
+    <incdepgraph>
+      <node id="2847">
+        <label>functional</label>
+      </node>
+      <node id="2844">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2845" relation="include">
+        </childnode>
+        <childnode refid="2846" relation="include">
+        </childnode>
+      </node>
+      <node id="2845">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2848">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2845" relation="include">
+        </childnode>
+      </node>
+      <node id="2846">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2845" relation="include">
+        </childnode>
+        <childnode refid="2847" relation="include">
+        </childnode>
+      </node>
+      <node id="2843">
+        <label>Projects/labs/course_project_cg/src/animation/transformation.h</label>
+        <link refid="transformation.h"/>
+        <childnode refid="2844" relation="include">
+        </childnode>
+        <childnode refid="2848" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2880">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.h</label>
+        <link refid="d5/d2e/rotatetransformation_8h"/>
+        <childnode refid="2881" relation="include">
+        </childnode>
+        <childnode refid="2857" relation="include">
+        </childnode>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2877">
+        <label>Projects/labs/course_project_cg/src/animation/scaletransformation.cpp</label>
+        <link refid="d3/dc7/scaletransformation_8cpp"/>
+      </node>
+      <node id="2851">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.h</label>
+        <link refid="d0/d18/commontransformation_8h"/>
+        <childnode refid="2852" relation="include">
+        </childnode>
+        <childnode refid="2853" relation="include">
+        </childnode>
+      </node>
+      <node id="2875">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.cpp</label>
+        <link refid="dd/dd8/meshdata_8cpp"/>
+      </node>
+      <node id="2856">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="2853" relation="include">
+        </childnode>
+        <childnode refid="2857" relation="include">
+        </childnode>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2873">
+        <label>Projects/labs/course_project_cg/src/animation/objloader.cpp</label>
+        <link refid="dd/dbb/objloader_8cpp"/>
+      </node>
+      <node id="2861">
+        <label>Projects/labs/course_project_cg/src/animation/scene.cpp</label>
+        <link refid="da/d33/scene_8cpp"/>
+      </node>
+      <node id="2864">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2866">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2865">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.h</label>
+        <link refid="d3/d6a/modelview_8h"/>
+        <childnode refid="2857" relation="include">
+        </childnode>
+      </node>
+      <node id="2871">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="2878">
+        <label>Projects/labs/course_project_cg/src/animation/movetransformation.h</label>
+        <link refid="d0/dad/movetransformation_8h"/>
+        <childnode refid="2859" relation="include">
+        </childnode>
+        <childnode refid="2879" relation="include">
+        </childnode>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2881">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp</label>
+        <link refid="dc/d9f/rotatetransformation_8cpp"/>
+      </node>
+      <node id="2874">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2867" relation="include">
+        </childnode>
+        <childnode refid="2875" relation="include">
+        </childnode>
+      </node>
+      <node id="2872">
+        <label>Projects/labs/course_project_cg/src/animation/objloader.h</label>
+        <link refid="de/d7c/animation_2objloader_8h"/>
+        <childnode refid="2873" relation="include">
+        </childnode>
+        <childnode refid="2857" relation="include">
+        </childnode>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2869">
+        <label>Projects/labs/course_project_cg/src/animation/model.h</label>
+        <link refid="dc/d51/model_8h"/>
+        <childnode refid="2859" relation="include">
+        </childnode>
+        <childnode refid="2870" relation="include">
+        </childnode>
+      </node>
+      <node id="2868">
+        <label>Projects/labs/course_project_cg/src/animation/mesh.cpp</label>
+        <link refid="d8/dd2/mesh_8cpp"/>
+      </node>
+      <node id="2859">
+        <label>Projects/labs/course_project_cg/src/animation/model.cpp</label>
+        <link refid="d6/db4/model_8cpp"/>
+      </node>
+      <node id="2857">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2863">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2854">
+        <label>Projects/labs/course_project_cg/src/animation/light.cpp</label>
+        <link refid="dd/dfa/light_8cpp"/>
+      </node>
+      <node id="2855">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2856" relation="include">
+        </childnode>
+        <childnode refid="2859" relation="include">
+        </childnode>
+        <childnode refid="2860" relation="include">
+        </childnode>
+        <childnode refid="2861" relation="include">
+        </childnode>
+        <childnode refid="2862" relation="include">
+        </childnode>
+        <childnode refid="2865" relation="include">
+        </childnode>
+        <childnode refid="2857" relation="include">
+        </childnode>
+        <childnode refid="2866" relation="include">
+        </childnode>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2870">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="d9/d8f/sceneobjectfactory_8h"/>
+        <childnode refid="2871" relation="include">
+        </childnode>
+        <childnode refid="2864" relation="include">
+        </childnode>
+        <childnode refid="2857" relation="include">
+        </childnode>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2876">
+        <label>Projects/labs/course_project_cg/src/animation/scaletransformation.h</label>
+        <link refid="d0/d00/scaletransformation_8h"/>
+        <childnode refid="2853" relation="include">
+        </childnode>
+        <childnode refid="2877" relation="include">
+        </childnode>
+        <childnode refid="2858" relation="include">
+        </childnode>
+      </node>
+      <node id="2858">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2850">
+        <label>Projects/labs/course_project_cg/src/animation/camera.cpp</label>
+        <link refid="d1/d6b/camera_8cpp"/>
+      </node>
+      <node id="2860">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.cpp</label>
+        <link refid="d6/d54/renderer_8cpp"/>
+      </node>
+      <node id="2882">
+        <label>Projects/labs/course_project_cg/src/animation/transformation.cpp</label>
+        <link refid="d2/d67/transformation_8cpp"/>
+      </node>
+      <node id="2852">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.cpp</label>
+        <link refid="de/dc1/commontransformation_8cpp"/>
+      </node>
+      <node id="2867">
+        <label>Projects/labs/course_project_cg/src/animation/mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2855" relation="include">
+        </childnode>
+        <childnode refid="2868" relation="include">
+        </childnode>
+        <childnode refid="2869" relation="include">
+        </childnode>
+        <childnode refid="2872" relation="include">
+        </childnode>
+      </node>
+      <node id="2853">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+      <node id="2862">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2863" relation="include">
+        </childnode>
+        <childnode refid="2864" relation="include">
+        </childnode>
+      </node>
+      <node id="2879">
+        <label>Projects/labs/course_project_cg/src/animation/movetransformation.cpp</label>
+        <link refid="db/dd4/movetransformation_8cpp"/>
+      </node>
+      <node id="2849">
+        <label>Projects/labs/course_project_cg/src/animation/transformation.h</label>
+        <link refid="transformation.h"/>
+        <childnode refid="2850" relation="include">
+        </childnode>
+        <childnode refid="2851" relation="include">
+        </childnode>
+        <childnode refid="2854" relation="include">
+        </childnode>
+        <childnode refid="2855" relation="include">
+        </childnode>
+        <childnode refid="2867" relation="include">
+        </childnode>
+        <childnode refid="2874" relation="include">
+        </childnode>
+        <childnode refid="2876" relation="include">
+        </childnode>
+        <childnode refid="2869" relation="include">
+        </childnode>
+        <childnode refid="2878" relation="include">
+        </childnode>
+        <childnode refid="2880" relation="include">
+        </childnode>
+        <childnode refid="2882" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d32/class_transformation" prot="public">Transformation</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TRANSFORMATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRANSFORMATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d08/vec3_8h" kindref="compound">src/math/vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/df4/matrix_8h" kindref="compound">src/math/matrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d1/d32/class_transformation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" kindref="member">Transformation</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation_1a4e436a0834b3295b8261c38748e8602d" kindref="member">~Transformation</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;<ref refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" kindref="member">getMatrix</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" kindref="member">transform</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038" kindref="member">resetOrigin</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" kindref="member">_matrix</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TRANSFORMATION_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/transformation.h"/>
+  </compounddef>
+</doxygen>

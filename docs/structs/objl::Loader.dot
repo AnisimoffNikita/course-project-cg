@@ -1,0 +1,5 @@
+digraph objl::Loader
+{
+graph [ rankdir="RL" ]
+"de/d31/classobjl_1_1_loader" [ label="objl::Loader\n|+LoadFile ( Path : std::string ) : bool\l+Loader (  )\l+~Loader (  )\l-GenVerticesFromRawOBJ ( oVerts : std::vector\< Vertex \> &, iPositions : const std::vector\< Vector3 \> &, iTCoords : const... ) : void\l-LoadMaterials ( path : std::string ) : bool\l-VertexTriangluation ( oIndices : std::vector\< unsigned int \> &, iVerts : const std::vector\< Vertex \> & ) : void\l|+LoadedIndices : std::vector\< unsigned int \>\l+LoadedMaterials : std::vector\< Material \>\l+LoadedMeshes : std::vector\< Mesh \>\l+LoadedVertices : std::vector\< Vertex \>\l" shape="record" ]
+}

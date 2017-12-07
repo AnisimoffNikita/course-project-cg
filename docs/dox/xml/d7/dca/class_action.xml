@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d7/dca/class_action" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Action</compoundname>
+    <derivedcompoundref refid="de/dd1/class_repeat_move_action" prot="public" virt="non-virtual">RepeatMoveAction</derivedcompoundref>
+    <includes refid="d3/de1/actions_8h" local="no">actions.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/dca/class_action_1af26e528eec8ae24e9dfc1ab9d6e809a7" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Action::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dca/class_action_1a11d29bdc060c2c492d170632507c0635" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Action::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dca/class_action_1a1dfd6b0f501cce2b19d076b7d6b5aec8" prot="protected" static="no" mutable="no">
+        <type>weak_ptr&lt; <ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref> &gt;</type>
+        <definition>weak_ptr&lt;SceneObject&gt; Action::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/dca/class_action_1aa456764076858773c74674ba04f25bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Action::Action</definition>
+        <argsstring>(float duration, weak_ptr&lt; SceneObject &gt; object)</argsstring>
+        <name>Action</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>weak_ptr&lt; <ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dca/class_action_1abfc040fdc62410622a0e3835a713740f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Action::~Action</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dca/class_action_1aa6a73e716470c9b573b1afb4025b292d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Action::update</definition>
+        <argsstring>(float delta)=0</argsstring>
+        <name>update</name>
+        <reimplementedby refid="de/dd1/class_repeat_move_action_1ad2a08b798e2c0ae093d1ae358c8ec3c2">update</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="15" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="265">
+        <label>Action</label>
+        <link refid="d7/dca/class_action"/>
+      </node>
+      <node id="266">
+        <label>RepeatMoveAction</label>
+        <link refid="de/dd1/class_repeat_move_action"/>
+        <childnode refid="265" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="267">
+        <label>Action</label>
+        <link refid="d7/dca/class_action"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.h" bodystart="9" bodyend="20"/>
+    <listofallmembers>
+      <member refid="d7/dca/class_action_1aa456764076858773c74674ba04f25bd8" prot="public" virt="non-virtual"><scope>Action</scope><name>Action</name></member>
+      <member refid="d7/dca/class_action_1af26e528eec8ae24e9dfc1ab9d6e809a7" prot="protected" virt="non-virtual"><scope>Action</scope><name>duration</name></member>
+      <member refid="d7/dca/class_action_1a1dfd6b0f501cce2b19d076b7d6b5aec8" prot="protected" virt="non-virtual"><scope>Action</scope><name>object</name></member>
+      <member refid="d7/dca/class_action_1a11d29bdc060c2c492d170632507c0635" prot="protected" virt="non-virtual"><scope>Action</scope><name>time</name></member>
+      <member refid="d7/dca/class_action_1aa6a73e716470c9b573b1afb4025b292d" prot="public" virt="pure-virtual"><scope>Action</scope><name>update</name></member>
+      <member refid="d7/dca/class_action_1abfc040fdc62410622a0e3835a713740f" prot="public" virt="virtual"><scope>Action</scope><name>~Action</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+digraph ModelMatrix
+{
+graph [ rankdir="RL" ]
+"d4/d22/class_model_matrix" [ label="ModelMatrix\n|+create ( vertex : const Vec3 & ) : Mat4 \{static\}\l|" shape="record" ]
+}

@@ -1,0 +1,5 @@
+digraph Scene
+{
+graph [ rankdir="RL" ]
+"d6/db5/class_scene" [ label="Scene\n|+Scene (  )\l+add ( child : const SharedSceneObject & ) : void \{virtual\}\l+getActiveCamera (  ) : WeakCamera \{virtual\}\l+getChildren (  ) : const vector\< SharedSceneObject \> & \{virtual\}\l+render ( renderer : std::unique_ptr\< Renderer \> & ) : void \{virtual\}\l+setActiveCamera ( child : const SharedSceneObject & ) : void \{virtual\}\l+~Scene (  ) \{virtual\}\l|#_camera : WeakCamera\l#_children : vector\< SharedSceneObject \>\l#lights : vector\< WeakLight \>\l" shape="record" ]
+}

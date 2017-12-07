@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/d9a/zbuffer_8cpp" kind="file" language="C++">
+    <compoundname>zbuffer.cpp</compoundname>
+    <includes refid="db/dd0/zbuffer_8h" local="yes">zbuffer.h</includes>
+    <includes local="no">limits</includes>
+    <incdepgraph>
+      <node id="2887">
+        <label>limits</label>
+      </node>
+      <node id="2883">
+        <label>Projects/labs/course_project_cg/src/animation/zbuffer.cpp</label>
+        <link refid="zbuffer.cpp"/>
+        <childnode refid="2884" relation="include">
+        </childnode>
+        <childnode refid="2887" relation="include">
+        </childnode>
+      </node>
+      <node id="2884">
+        <label>zbuffer.h</label>
+        <link refid="db/dd0/zbuffer_8h"/>
+        <childnode refid="2885" relation="include">
+        </childnode>
+        <childnode refid="2886" relation="include">
+        </childnode>
+      </node>
+      <node id="2886">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2885">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/dd0/zbuffer_8h" kindref="compound">zbuffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d6/d99/class_z_buffer_1a1ddb4afd219393f425cf06d779cd2db9" refkind="member"><highlight class="normal"><ref refid="d6/d99/class_z_buffer_1a1ddb4afd219393f425cf06d779cd2db9" kindref="member">ZBuffer::ZBuffer</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d6/d99/class_z_buffer_1afadfadfc332f211cd3596e43dc9bcda0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d99/class_z_buffer_1afadfadfc332f211cd3596e43dc9bcda0" kindref="member">ZBuffer::setSize</ref>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>w,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>h)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" kindref="member">width</ref><sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d99/class_z_buffer_1a2e0ebf69ff20c3a3c8c6926e812a6275" kindref="member">height</ref><sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" kindref="member">buffer</ref>.resize(<ref refid="d6/d99/class_z_buffer_1a2e0ebf69ff20c3a3c8c6926e812a6275" kindref="member">height</ref><sp/>*<sp/><ref refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" kindref="member">width</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d6/d99/class_z_buffer_1a6eba663a5e6a64b74f9c6749d0c19437" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d99/class_z_buffer_1a6eba663a5e6a64b74f9c6749d0c19437" kindref="member">ZBuffer::init</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>min<sp/>=<sp/>~0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="d6/d99/class_z_buffer_1a2e0ebf69ff20c3a3c8c6926e812a6275" kindref="member">height</ref><sp/>*<sp/><ref refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" kindref="member">width</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" kindref="member">buffer</ref>[i]<sp/>=<sp/>min;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d6/d99/class_z_buffer_1a0bcc59480cb2df9ceab776ea0bb415ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d6/d99/class_z_buffer_1a0bcc59480cb2df9ceab776ea0bb415ae" kindref="member">ZBuffer::get</ref>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>x,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>y)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" kindref="member">buffer</ref>[y<sp/>*<sp/><ref refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" kindref="member">width</ref><sp/>+<sp/>x];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d6/d99/class_z_buffer_1aed7172a077d6f65d8db289a7b64b2b89" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d99/class_z_buffer_1aed7172a077d6f65d8db289a7b64b2b89" kindref="member">ZBuffer::set</ref>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>x,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" kindref="member">buffer</ref>[y<sp/>*<sp/><ref refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" kindref="member">width</ref><sp/>+<sp/>x]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/zbuffer.cpp"/>
+  </compounddef>
+</doxygen>

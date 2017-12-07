@@ -1,0 +1,163 @@
+\hypertarget{class_vertex}{}\section{Класс Vertex}
+\label{class_vertex}\index{Vertex@{Vertex}}
+
+
+{\ttfamily \#include $<$meshdata.\+h$>$}
+
+
+
+Граф связей класса Vertex\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/d29/class_vertex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vertex_ae2152b82b92f1522812a1e2bb8c32ba5}{Vertex} ()=default
+\item 
+\hyperlink{class_vertex_a7a9ca1b036b7786403085e35afc2efe3}{Vertex} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_vertex_a74530e6e784db7cfa08df21c219f4b2b}{v}, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_vertex_ab747b8661900312711237a2e055f4058}{n})
+\item 
+const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \& \hyperlink{class_vertex_ac923f6352efb5e3ad9458fd03931d00b}{getV} () const 
+\item 
+void \hyperlink{class_vertex_a556cc98768f4036f0f7f3458a0211468}{setV} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&value)
+\item 
+const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \& \hyperlink{class_vertex_a65780983d9f9a29dc13b2099aa3f2996}{getN} ()
+\item 
+void \hyperlink{class_vertex_a471dd2fc5b33a6079c2142d6faad3a2c}{setN} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&value)
+\item 
+void \hyperlink{class_vertex_acf4d583092aa2bb904c03d378a0c966a}{transform} (const \hyperlink{class_transformation}{Transformation} \&transformation)
+\item 
+bool \hyperlink{class_vertex_af1ee0c4cbcbf0363ade89e95e2c74f9f}{operator==} (const \hyperlink{class_vertex}{Vertex} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_vertex_a74530e6e784db7cfa08df21c219f4b2b}{v}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_vertex_ab747b8661900312711237a2e055f4058}{n}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле meshdata.\+h строка 12
+
+
+
+\subsection{Конструктор(ы)}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex()=default}{Vertex()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_vertex_ae2152b82b92f1522812a1e2bb8c32ba5}{}\label{class_vertex_ae2152b82b92f1522812a1e2bb8c32ba5}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{Vertex(const Vec3 v, const Vec3 n)}{Vertex(const Vec3 v, const Vec3 n)}}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+::\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3}}]{v, }
+\item[{const {\bf Vec3}}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a7a9ca1b036b7786403085e35afc2efe3}{}\label{class_vertex_a7a9ca1b036b7786403085e35afc2efe3}
+
+
+См. определение в файле meshdata.\+cpp строка 3
+
+
+
+\subsection{Методы}
+\index{Vertex@{Vertex}!getN@{getN}}
+\index{getN@{getN}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{get\+N()}{getN()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vec3} \& Vertex\+::getN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a65780983d9f9a29dc13b2099aa3f2996}{}\label{class_vertex_a65780983d9f9a29dc13b2099aa3f2996}
+
+
+См. определение в файле meshdata.\+cpp строка 19
+
+\index{Vertex@{Vertex}!getV@{getV}}
+\index{getV@{getV}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{get\+V() const }{getV() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vec3} \& Vertex\+::getV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_vertex_ac923f6352efb5e3ad9458fd03931d00b}{}\label{class_vertex_ac923f6352efb5e3ad9458fd03931d00b}
+
+
+См. определение в файле meshdata.\+cpp строка 9
+
+\index{Vertex@{Vertex}!operator==@{operator==}}
+\index{operator==@{operator==}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{operator==(const Vertex \&other)}{operator==(const Vertex &other)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Vertex\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vertex} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_af1ee0c4cbcbf0363ade89e95e2c74f9f}{}\label{class_vertex_af1ee0c4cbcbf0363ade89e95e2c74f9f}
+
+
+См. определение в файле meshdata.\+cpp строка 37
+
+\index{Vertex@{Vertex}!setN@{setN}}
+\index{setN@{setN}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{set\+N(const Vec3 \&value)}{setN(const Vec3 &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::setN (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a471dd2fc5b33a6079c2142d6faad3a2c}{}\label{class_vertex_a471dd2fc5b33a6079c2142d6faad3a2c}
+
+
+См. определение в файле meshdata.\+cpp строка 24
+
+\index{Vertex@{Vertex}!setV@{setV}}
+\index{setV@{setV}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{set\+V(const Vec3 \&value)}{setV(const Vec3 &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::setV (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_a556cc98768f4036f0f7f3458a0211468}{}\label{class_vertex_a556cc98768f4036f0f7f3458a0211468}
+
+
+См. определение в файле meshdata.\+cpp строка 14
+
+\index{Vertex@{Vertex}!transform@{transform}}
+\index{transform@{transform}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{transform(const Transformation \&transformation)}{transform(const Transformation &transformation)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+::transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{transformation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vertex_acf4d583092aa2bb904c03d378a0c966a}{}\label{class_vertex_acf4d583092aa2bb904c03d378a0c966a}
+
+
+См. определение в файле meshdata.\+cpp строка 29
+
+
+
+\subsection{Данные класса}
+\index{Vertex@{Vertex}!n@{n}}
+\index{n@{n}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{n}{n}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vertex\+::n\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vertex_ab747b8661900312711237a2e055f4058}{}\label{class_vertex_ab747b8661900312711237a2e055f4058}
+
+
+См. определение в файле meshdata.\+h строка 30
+
+\index{Vertex@{Vertex}!v@{v}}
+\index{v@{v}!Vertex@{Vertex}}
+\subsubsection[{\texorpdfstring{v}{v}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vertex\+::v\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vertex_a74530e6e784db7cfa08df21c219f4b2b}{}\label{class_vertex_a74530e6e784db7cfa08df21c219f4b2b}
+
+
+См. определение в файле meshdata.\+h строка 29
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{meshdata_8h}{meshdata.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{meshdata_8cpp}{meshdata.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d7/d7b/class_action_manager" kind="class" language="C++" prot="public">
+    <compoundname>ActionManager</compoundname>
+    <includes refid="d7/d86/actionmanager_8h" local="no">actionmanager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d7b/class_action_manager_1a1d425cc776debdc5f32d269ee7e532bb" prot="private" static="no" mutable="no">
+        <type>vector&lt; unique_ptr&lt; <ref refid="d7/dca/class_action" kindref="compound">Action</ref> &gt; &gt;</type>
+        <definition>vector&lt;unique_ptr&lt;Action&gt; &gt; ActionManager::actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actionmanager.h" line="20" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actionmanager.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d7b/class_action_manager_1a7d0c405d568795fba0c51f411e77b821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ActionManager::ActionManager</definition>
+        <argsstring>()</argsstring>
+        <name>ActionManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actionmanager.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actionmanager.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d7b/class_action_manager_1a2fb6c58c581225959d8dfddfd386c9b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ActionManager::~ActionManager</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ActionManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actionmanager.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d7b/class_action_manager_1a52f8cabe9b3fd9676e0e082ba8b741c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActionManager::add</definition>
+        <argsstring>(unique_ptr&lt; Action &gt; &amp;&amp;action)</argsstring>
+        <name>add</name>
+        <param>
+          <type>unique_ptr&lt; <ref refid="d7/dca/class_action" kindref="compound">Action</ref> &gt; &amp;&amp;</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actionmanager.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actionmanager.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d7b/class_action_manager_1a1f8ccc02cbf26b3659a08d2e7a91fdac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActionManager::update</definition>
+        <argsstring>(float delta)</argsstring>
+        <name>update</name>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actionmanager.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actionmanager.cpp" bodystart="12" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="269">
+        <label>ActionManager</label>
+        <link refid="d7/d7b/class_action_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/actionmanager.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actionmanager.h" bodystart="9" bodyend="21"/>
+    <listofallmembers>
+      <member refid="d7/d7b/class_action_manager_1a7d0c405d568795fba0c51f411e77b821" prot="public" virt="non-virtual"><scope>ActionManager</scope><name>ActionManager</name></member>
+      <member refid="d7/d7b/class_action_manager_1a1d425cc776debdc5f32d269ee7e532bb" prot="private" virt="non-virtual"><scope>ActionManager</scope><name>actions</name></member>
+      <member refid="d7/d7b/class_action_manager_1a52f8cabe9b3fd9676e0e082ba8b741c3" prot="public" virt="non-virtual"><scope>ActionManager</scope><name>add</name></member>
+      <member refid="d7/d7b/class_action_manager_1a1f8ccc02cbf26b3659a08d2e7a91fdac" prot="public" virt="non-virtual"><scope>ActionManager</scope><name>update</name></member>
+      <member refid="d7/d7b/class_action_manager_1a2fb6c58c581225959d8dfddfd386c9b3" prot="public" virt="virtual"><scope>ActionManager</scope><name>~ActionManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

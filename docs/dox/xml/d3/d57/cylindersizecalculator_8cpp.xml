@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d57/cylindersizecalculator_8cpp" kind="file" language="C++">
+    <compoundname>cylindersizecalculator.cpp</compoundname>
+    <includes refid="d3/dff/cylindersizecalculator_8h" local="yes">cylindersizecalculator.h</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="df/db1/math_8h" local="yes">src/math/math.h</includes>
+    <incdepgraph>
+      <node id="1974">
+        <label>functional</label>
+      </node>
+      <node id="1964">
+        <label>cylindersizecalculator.h</label>
+        <link refid="d3/dff/cylindersizecalculator_8h"/>
+        <childnode refid="1965" relation="include">
+        </childnode>
+      </node>
+      <node id="1968">
+        <label>src/math/line.h</label>
+        <link refid="d7/d5d/line_8h"/>
+        <childnode refid="1969" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+      </node>
+      <node id="1972">
+        <label>cmath</label>
+      </node>
+      <node id="1969">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="1965">
+        <label>cylindersizecalculatorbase.h</label>
+        <link refid="db/d0b/cylindersizecalculatorbase_8h"/>
+        <childnode refid="1966" relation="include">
+        </childnode>
+        <childnode refid="1967" relation="include">
+        </childnode>
+        <childnode refid="1968" relation="include">
+        </childnode>
+        <childnode refid="1971" relation="include">
+        </childnode>
+      </node>
+      <node id="1971">
+        <label>src/math/cylindersize.h</label>
+        <link refid="d1/dfa/cylindersize_8h"/>
+      </node>
+      <node id="1970">
+        <label>vec2.h</label>
+        <link refid="d3/dbe/vec2_8h"/>
+        <childnode refid="1969" relation="include">
+        </childnode>
+      </node>
+      <node id="1963">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.cpp</label>
+        <link refid="cylindersizecalculator.cpp"/>
+        <childnode refid="1964" relation="include">
+        </childnode>
+        <childnode refid="1972" relation="include">
+        </childnode>
+        <childnode refid="1973" relation="include">
+        </childnode>
+      </node>
+      <node id="1973">
+        <label>src/math/math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="1969" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+      </node>
+      <node id="1966">
+        <label>vector</label>
+      </node>
+      <node id="1967">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/dff/cylindersizecalculator_8h" kindref="compound">cylindersizecalculator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/db1/math_8h" kindref="compound">src/math/math.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d2/dc7/class_cylinder_size_calculator_1ab4daaa75220e687cca3ce57e9db2fe57" refkind="member"><highlight class="normal"><ref refid="d2/dc7/class_cylinder_size_calculator_1ab4daaa75220e687cca3ce57e9db2fe57" kindref="member">CylinderSizeCalculator::CylinderSizeCalculator</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="d2/dc7/class_cylinder_size_calculator_1af8ff9a4ab970aa5fcdca273112789978" refkind="member"><highlight class="normal"><ref refid="d2/dc7/class_cylinder_size_calculator_1af8ff9a4ab970aa5fcdca273112789978" kindref="member">CylinderSizeCalculator::~CylinderSizeCalculator</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d2/dc7/class_cylinder_size_calculator_1a979a607bd694c5819355793d231c5df2" refkind="member"><highlight class="normal"><ref refid="d1/d47/class_cylinder_size" kindref="compound">CylinderSize</ref><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a979a607bd694c5819355793d231c5df2" kindref="member">CylinderSizeCalculator::evaluate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a7c30882e5312856d6757dc0022eb231f" kindref="member">Lines</ref><sp/>&amp;<ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;lines<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1ad908e8325d6a03c7b4d1b55cf87eade9" kindref="member">findEdges</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a4afc5d76534bc67a394a0f78d21a4811" kindref="member">calculateSize</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a13af96a82c344f22f3d2749d4dafa15c" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d2/dc7/class_cylinder_size_calculator_1a411f74a0f0baa7c393fe53c36d957fd4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a411f74a0f0baa7c393fe53c36d957fd4" kindref="member">CylinderSizeCalculator::calibrate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Line&gt;<sp/>&amp;inLines,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kindref="member">distance</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref><sp/>=<sp/>inLines;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;distance<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kindref="member">distance</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1ad908e8325d6a03c7b4d1b55cf87eade9" kindref="member">findEdges</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>visibleEdge<sp/>=<sp/>distance<sp/>-<sp/>(radius<sp/>+<sp/>radius<sp/>*<sp/>radius<sp/>/</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(distance<sp/>-<sp/>radius));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>localFactor<sp/>=<sp/>height<sp/>/<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[0].length();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1ad0ffced643e054737c077c3f654a4608" kindref="member">factor</ref><sp/>=<sp/>localFactor<sp/>/<sp/>visibleEdge;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d2/dc7/class_cylinder_size_calculator_1ace80de293c2d4626b65e83fcb0fcde54" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a411f74a0f0baa7c393fe53c36d957fd4" kindref="member">CylinderSizeCalculator::calibrate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>diag,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>diagPx)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1ad0ffced643e054737c077c3f654a4608" kindref="member">factor</ref><sp/>=<sp/>diag<sp/>/<sp/>diagPx;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d2/dc7/class_cylinder_size_calculator_1ad908e8325d6a03c7b4d1b55cf87eade9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1ad908e8325d6a03c7b4d1b55cf87eade9" kindref="member">CylinderSizeCalculator::findEdges</ref>()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Line&gt;<sp/>result(2);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>j<sp/>=<sp/>i<sp/>+<sp/>1;<sp/>j<sp/>&lt;<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>.size();<sp/>j++)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dx1<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP1().getX()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP2().getX();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dy1<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP1().getY()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP2().getY();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dx2<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP1().getX()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP2().getX();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dy2<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP1().getY()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP2().getY();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((dx1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>dy1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>dx2<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>dy2<sp/>&lt;=<sp/>0)<sp/>||</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(dx1<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>dy1<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>dx2<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>dy2<sp/>&gt;=<sp/>0)<sp/>||</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(dx1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>dy1<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>dx2<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>dy1<sp/>&gt;=<sp/>0)<sp/>||</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(dx1<sp/>&lt;=<sp/>0<sp/>&amp;&amp;<sp/>dy1<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>dx2<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>dy1<sp/>&lt;=<sp/>0))</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dx2<sp/>*=<sp/>-1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dy2<sp/>*=<sp/>-1;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>eps<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxWidth<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fabs(dx1<sp/>-<sp/>dx2)<sp/>&lt;<sp/>eps<sp/>&amp;&amp;<sp/>fabs(dy1<sp/>-<sp/>dy2)<sp/>&lt;<sp/>eps)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dx3<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP1().getX()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP1().getX();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dy3<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP1().getY()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP1().getY();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dx4<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP2().getX()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP2().getX();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dy4<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i].getP2().getY()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j].getP2().getY();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fabs(dx3<sp/>-<sp/>dx4)<sp/>&lt;<sp/>eps<sp/>&amp;&amp;<sp/>fabs(dy3<sp/>-<sp/>dy4)<sp/>&lt;<sp/>eps)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>width<sp/>=<sp/>sqrt(dx3<sp/>*<sp/>dx3<sp/>+<sp/>dy3<sp/>*<sp/>dy3);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(width<sp/>&gt;<sp/>maxWidth)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxWidth<sp/>=<sp/>width;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result[0]<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[i];</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result[1]<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[j];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref><sp/>=<sp/>result;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="d2/dc7/class_cylinder_size_calculator_1a4afc5d76534bc67a394a0f78d21a4811" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a4afc5d76534bc67a394a0f78d21a4811" kindref="member">CylinderSizeCalculator::calculateSize</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dx<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[0].getP1().getX()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[1].getP1().getX();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>dy<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[0].getP1().getY()<sp/>-<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[1].getP1().getY();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inDiam<sp/>=<sp/>sqrt(dx<sp/>*<sp/>dx<sp/>+<sp/>dy<sp/>*<sp/>dy);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d34/class_math_1ab9fef5c7ba3bd81d13008e8a36abc655" kindref="member">Math::Func</ref><sp/>f<sp/>=<sp/>[inDiam,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>visibleDiam<sp/>=<sp/>2<sp/>*<sp/>r<sp/>*<sp/>pow((1<sp/>-<sp/>pow((r<sp/>/<sp/>(<ref refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kindref="member">distance</ref><sp/>-<sp/>r)),<sp/>2)),<sp/>0.5);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>visibleDist<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kindref="member">distance</ref><sp/>-<sp/>(r<sp/>+<sp/>r<sp/>*<sp/>r<sp/>/<sp/>(<ref refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kindref="member">distance</ref><sp/>-<sp/>r));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>localFactor<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1ad0ffced643e054737c077c3f654a4608" kindref="member">factor</ref><sp/>*<sp/>visibleDist;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>evalDiam<sp/>=<sp/>visibleDiam<sp/>/<sp/>localFactor;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>evalDiam<sp/>-<sp/>inDiam;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius<sp/>=<sp/><ref refid="d4/d34/class_math_1aef8d43dd2175c684297b6226192a54f4" kindref="member">Math::Bisection</ref>(0.01,<sp/>0.3,<sp/>f);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>localFactor<sp/>=<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1ad0ffced643e054737c077c3f654a4608" kindref="member">factor</ref><sp/>*<sp/>(<ref refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kindref="member">distance</ref><sp/>-<sp/>(radius<sp/>+<sp/>radius<sp/>*<sp/>radius<sp/>/</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kindref="member">distance</ref><sp/>-<sp/>radius)));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>localFactor<sp/>*<sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kindref="member">lines</ref>[0].length();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a13af96a82c344f22f3d2749d4dafa15c" kindref="member">size</ref>.<ref refid="d1/d47/class_cylinder_size_1afad35daeb0ed7d9c3b132a23de7412c0" kindref="member">setHeight</ref>(height);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc7/class_cylinder_size_calculator_1a13af96a82c344f22f3d2749d4dafa15c" kindref="member">size</ref>.<ref refid="d1/d47/class_cylinder_size_1a7598cedd43027dfaea97ad273180ed63" kindref="member">setRadius</ref>(radius);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.cpp"/>
+  </compounddef>
+</doxygen>

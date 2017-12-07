@@ -1,0 +1,195 @@
+\hypertarget{class_light}{}\section{Класс Light}
+\label{class_light}\index{Light@{Light}}
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+
+
+Граф наследования\+:Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{dd/d00/class_light__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/d88/class_light__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_light_af49ca6a5dd2fb43fb878a5ad5f0409fe}{Light} ()=default
+\item 
+\hyperlink{class_light_adc14c27a60cc0b1d86fdc2f44858c705}{Light} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&\hyperlink{class_scene_object_af190cdf9b9449f96f73d836848ce4ad3}{position}, float \hyperlink{class_light_a1071eaa556f4bb2a9345fdfba7e6f220}{intensity})
+\item 
+virtual \hyperlink{class_light_ae3e3209d4b97d0bbbd614ded5e1213d9}{$\sim$\+Light} ()=default
+\item 
+virtual void \hyperlink{class_light_a5ae4db3ece8e61f53db06e8d3af4cdca}{draw} (std\+::unique\+\_\+ptr$<$ \hyperlink{class_renderer}{Renderer} $>$ \&) override
+\item 
+virtual void \hyperlink{class_light_afb03030e1dd8056c73e813095701d796}{transform} (\hyperlink{class_transformation}{Transformation} \&transformation) override
+\item 
+virtual bool \hyperlink{class_light_a942b4fb690c63be248ae031723a6148c}{is\+Camera} () override
+\item 
+virtual bool \hyperlink{class_light_af09370083a781d2733247bc2ee2f4c33}{is\+Light} () override
+\item 
+virtual \hyperlink{class_color}{Color} \hyperlink{class_light_a81a8d20cdba6692644cda765aced1473}{get\+Intensity} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&normal, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&\hyperlink{class_scene_object_af190cdf9b9449f96f73d836848ce4ad3}{position}, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&camera, const \hyperlink{class_color}{Color} \&ka, const \hyperlink{class_color}{Color} \&kd, const \hyperlink{class_color}{Color} \&ks, float ns) const =0
+\item 
+virtual bool \hyperlink{class_light_aa17c9733d1616d8631ed63640344b733}{is\+Point} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_light_a1071eaa556f4bb2a9345fdfba7e6f220}{intensity}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле light.\+h строка 7
+
+
+
+\subsection{Конструктор(ы)}
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection[{\texorpdfstring{Light()=default}{Light()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Light\+::\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_light_af49ca6a5dd2fb43fb878a5ad5f0409fe}{}\label{class_light_af49ca6a5dd2fb43fb878a5ad5f0409fe}
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection[{\texorpdfstring{Light(const Vec3 \&position, float intensity)}{Light(const Vec3 &position, float intensity)}}]{\setlength{\rightskip}{0pt plus 5cm}Light\+::\+Light (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{float}]{intensity}
+\end{DoxyParamCaption}
+)}\hypertarget{class_light_adc14c27a60cc0b1d86fdc2f44858c705}{}\label{class_light_adc14c27a60cc0b1d86fdc2f44858c705}
+
+
+См. определение в файле light.\+cpp строка 4
+
+\index{Light@{Light}!````~Light@{$\sim$\+Light}}
+\index{````~Light@{$\sim$\+Light}!Light@{Light}}
+\subsubsection[{\texorpdfstring{$\sim$\+Light()=default}{~Light()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Light\+::$\sim$\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_light_ae3e3209d4b97d0bbbd614ded5e1213d9}{}\label{class_light_ae3e3209d4b97d0bbbd614ded5e1213d9}
+
+
+\subsection{Методы}
+\index{Light@{Light}!draw@{draw}}
+\index{draw@{draw}!Light@{Light}}
+\subsubsection[{\texorpdfstring{draw(std\+::unique\+\_\+ptr$<$ Renderer $>$ \&) override}{draw(std::unique_ptr< Renderer > &) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Renderer} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_a5ae4db3ece8e61f53db06e8d3af4cdca}{}\label{class_light_a5ae4db3ece8e61f53db06e8d3af4cdca}
+
+
+Замещает \hyperlink{class_scene_object_adc906ce4e4a896a351949ccabfd44016}{Scene\+Object}.
+
+
+
+См. определение в файле light.\+cpp строка 10
+
+\index{Light@{Light}!get\+Intensity@{get\+Intensity}}
+\index{get\+Intensity@{get\+Intensity}!Light@{Light}}
+\subsubsection[{\texorpdfstring{get\+Intensity(const Vec3 \&normal, const Vec3 \&position, const Vec3 \&camera, const Color \&ka, const Color \&kd, const Color \&ks, float ns) const =0}{getIntensity(const Vec3 &normal, const Vec3 &position, const Vec3 &camera, const Color &ka, const Color &kd, const Color &ks, float ns) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Color} Light\+::get\+Intensity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{normal, }
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{const {\bf Vec3} \&}]{camera, }
+\item[{const {\bf Color} \&}]{ka, }
+\item[{const {\bf Color} \&}]{kd, }
+\item[{const {\bf Color} \&}]{ks, }
+\item[{float}]{ns}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_light_a81a8d20cdba6692644cda765aced1473}{}\label{class_light_a81a8d20cdba6692644cda765aced1473}
+
+
+Замещается в \hyperlink{class_point_light_a1fc0406a41b9474e7568bf925287fabe}{Point\+Light} и \hyperlink{class_ambient_light_aebbccf2534a3cbe399ccddc552d1a49d}{Ambient\+Light}.
+
+\index{Light@{Light}!is\+Camera@{is\+Camera}}
+\index{is\+Camera@{is\+Camera}!Light@{Light}}
+\subsubsection[{\texorpdfstring{is\+Camera() override}{isCamera() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Light\+::is\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_a942b4fb690c63be248ae031723a6148c}{}\label{class_light_a942b4fb690c63be248ae031723a6148c}
+
+
+Замещает \hyperlink{class_scene_object_a6d7cb8b9a2c29f38fd039731e83167f4}{Scene\+Object}.
+
+
+
+См. определение в файле light.\+cpp строка 19
+
+\index{Light@{Light}!is\+Light@{is\+Light}}
+\index{is\+Light@{is\+Light}!Light@{Light}}
+\subsubsection[{\texorpdfstring{is\+Light() override}{isLight() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Light\+::is\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_af09370083a781d2733247bc2ee2f4c33}{}\label{class_light_af09370083a781d2733247bc2ee2f4c33}
+
+
+Замещает \hyperlink{class_scene_object_a9c5b006b8a0e457634f15c19eb51ca73}{Scene\+Object}.
+
+
+
+См. определение в файле light.\+cpp строка 24
+
+\index{Light@{Light}!is\+Point@{is\+Point}}
+\index{is\+Point@{is\+Point}!Light@{Light}}
+\subsubsection[{\texorpdfstring{is\+Point() const =0}{isPoint() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Light\+::is\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_light_aa17c9733d1616d8631ed63640344b733}{}\label{class_light_aa17c9733d1616d8631ed63640344b733}
+
+
+Замещается в \hyperlink{class_point_light_a002882a80254c1b99bd45f5a97f25e99}{Point\+Light} и \hyperlink{class_ambient_light_accccb9b3c5f0a9c38dceaef386c2964a}{Ambient\+Light}.
+
+\index{Light@{Light}!transform@{transform}}
+\index{transform@{transform}!Light@{Light}}
+\subsubsection[{\texorpdfstring{transform(\+Transformation \&transformation) override}{transform(Transformation &transformation) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Transformation} \&}]{transformation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_afb03030e1dd8056c73e813095701d796}{}\label{class_light_afb03030e1dd8056c73e813095701d796}
+
+
+Замещает \hyperlink{class_scene_object_a1b8a4b90f1200f1cd025d95964d43630}{Scene\+Object}.
+
+
+
+См. определение в файле light.\+cpp строка 14
+
+
+
+\subsection{Данные класса}
+\index{Light@{Light}!intensity@{intensity}}
+\index{intensity@{intensity}!Light@{Light}}
+\subsubsection[{\texorpdfstring{intensity}{intensity}}]{\setlength{\rightskip}{0pt plus 5cm}float Light\+::intensity\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_a1071eaa556f4bb2a9345fdfba7e6f220}{}\label{class_light_a1071eaa556f4bb2a9345fdfba7e6f220}
+
+
+См. определение в файле light.\+h строка 26
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{light_8h}{light.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{light_8cpp}{light.\+cpp}\end{DoxyCompactItemize}

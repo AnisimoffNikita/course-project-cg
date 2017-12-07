@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/da5/edgedetector_8h" kind="file" language="C++">
+    <compoundname>edgedetector.h</compoundname>
+    <includes refid="d5/db2/image_8h" local="yes">src/image/image.h</includes>
+    <includedby refid="de/d3b/cannyedgedetector_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</includedby>
+    <includedby refid="da/de5/edgedetector_8cpp" local="yes">Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.cpp</includedby>
+    <incdepgraph>
+      <node id="2055">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="2053" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2056" relation="include">
+        </childnode>
+        <childnode refid="2057" relation="include">
+        </childnode>
+      </node>
+      <node id="2057">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2056" relation="include">
+        </childnode>
+      </node>
+      <node id="2051">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h</label>
+        <link refid="edgedetector.h"/>
+        <childnode refid="2052" relation="include">
+        </childnode>
+      </node>
+      <node id="2056">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2053">
+        <label>QImage</label>
+      </node>
+      <node id="2052">
+        <label>src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="2053" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2055" relation="include">
+        </childnode>
+        <childnode refid="2056" relation="include">
+        </childnode>
+        <childnode refid="2057" relation="include">
+        </childnode>
+      </node>
+      <node id="2054">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2059">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</label>
+        <link refid="de/d3b/cannyedgedetector_8h"/>
+        <childnode refid="2060" relation="include">
+        </childnode>
+        <childnode refid="2061" relation="include">
+        </childnode>
+      </node>
+      <node id="2058">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h</label>
+        <link refid="edgedetector.h"/>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2064" relation="include">
+        </childnode>
+      </node>
+      <node id="2063">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2060">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp</label>
+        <link refid="d8/d97/cannyedgedetector_8cpp"/>
+      </node>
+      <node id="2064">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.cpp</label>
+        <link refid="da/de5/edgedetector_8cpp"/>
+      </node>
+      <node id="2062">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2061">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2062" relation="include">
+        </childnode>
+        <childnode refid="2063" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/d8a/class_edge_detector" prot="public">EdgeDetector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EDGEDETECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDGEDETECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/db2/image_8h" kindref="compound">src/image/image.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d9/d8a/class_edge_detector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/d8a/class_edge_detector" kindref="compound">EdgeDetector</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d9/d8a/class_edge_detector_1a84d1668be5dd4052278a2cf86802746e" kindref="member">~EdgeDetector</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d8a/class_edge_detector_1aefa2d90e960e7dc3171bccadbed4a13e" kindref="member">process</ref>(<ref refid="de/d73/class_image" kindref="compound">Image</ref><sp/>&amp;image)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>EDGEDETECTOR_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/widgets/imageview.cpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_7ea7e6b139e7d411ea1a9017c76e2852.html">widgets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imageview.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d9/d17/imageview_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/dd7/imageview_8h.html">imageview.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QStyle&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../df/de8/class_image_view.html#ab9dfd4d7ac8503631906b1c35ad2d445">    5</a></span>&#160;<a class="code" href="../../df/de8/class_image_view.html#ab9dfd4d7ac8503631906b1c35ad2d445">ImageView::ImageView</a>(QWidget *parent) :</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    QGraphicsView(parent),</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    scene(new QGraphicsScene())</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    this-&gt;setStyleSheet(<span class="stringliteral">&quot;border: none;outline: none;&quot;</span>);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;setBackgroundBrush(QBrush(QColor(236, 232, 228)));</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    this-&gt;setScene(<a class="code" href="../../df/de8/class_image_view.html#a371e669523a21ae10284613a0d84ff6b">scene</a>);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    this-&gt;setMouseTracking(<span class="keyword">false</span>);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../df/de8/class_image_view.html#a450337ded2ce7bb5444b6f249e68d13d">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/de8/class_image_view.html#a450337ded2ce7bb5444b6f249e68d13d">ImageView::setImage</a>(<span class="keyword">const</span> QImage &amp;image)</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../df/de8/class_image_view.html#a371e669523a21ae10284613a0d84ff6b">scene</a>-&gt;clear();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../df/de8/class_image_view.html#a371e669523a21ae10284613a0d84ff6b">scene</a>-&gt;addPixmap(QPixmap::fromImage(image));</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    this-&gt;fitInView(<a class="code" href="../../df/de8/class_image_view.html#a371e669523a21ae10284613a0d84ff6b">scene</a>-&gt;itemsBoundingRect(), Qt::KeepAspectRatio);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../df/de8/class_image_view.html#a0bcc3711738a814ce221127d0b7ecf5b">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/de8/class_image_view.html#a0bcc3711738a814ce221127d0b7ecf5b">ImageView::resizeEvent</a>(QResizeEvent *event)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QGraphicsView::resizeEvent(event);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    this-&gt;fitInView(<a class="code" href="../../df/de8/class_image_view.html#a371e669523a21ae10284613a0d84ff6b">scene</a>-&gt;itemsBoundingRect(), Qt::KeepAspectRatio);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../df/de8/class_image_view.html#a29a6e4346d585008cf72be75d06e7daa">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/de8/class_image_view.html#a29a6e4346d585008cf72be75d06e7daa">ImageView::mouseMoveEvent</a>(QMouseEvent *)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="ttc" id="class_image_view_html_a450337ded2ce7bb5444b6f249e68d13d"><div class="ttname"><a href="../../df/de8/class_image_view.html#a450337ded2ce7bb5444b6f249e68d13d">ImageView::setImage</a></div><div class="ttdeci">void setImage(const QImage &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d17/imageview_8cpp_source.html#l00015">imageview.cpp:15</a></div></div>
+<div class="ttc" id="class_image_view_html_a371e669523a21ae10284613a0d84ff6b"><div class="ttname"><a href="../../df/de8/class_image_view.html#a371e669523a21ae10284613a0d84ff6b">ImageView::scene</a></div><div class="ttdeci">QGraphicsScene * scene</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd7/imageview_8h_source.html#l00024">imageview.h:24</a></div></div>
+<div class="ttc" id="class_image_view_html_ab9dfd4d7ac8503631906b1c35ad2d445"><div class="ttname"><a href="../../df/de8/class_image_view.html#ab9dfd4d7ac8503631906b1c35ad2d445">ImageView::ImageView</a></div><div class="ttdeci">ImageView(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d17/imageview_8cpp_source.html#l00005">imageview.cpp:5</a></div></div>
+<div class="ttc" id="imageview_8h_html"><div class="ttname"><a href="../../df/dd7/imageview_8h.html">imageview.h</a></div></div>
+<div class="ttc" id="class_image_view_html_a29a6e4346d585008cf72be75d06e7daa"><div class="ttname"><a href="../../df/de8/class_image_view.html#a29a6e4346d585008cf72be75d06e7daa">ImageView::mouseMoveEvent</a></div><div class="ttdeci">void mouseMoveEvent(QMouseEvent *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d17/imageview_8cpp_source.html#l00028">imageview.cpp:28</a></div></div>
+<div class="ttc" id="class_image_view_html_a0bcc3711738a814ce221127d0b7ecf5b"><div class="ttname"><a href="../../df/de8/class_image_view.html#a0bcc3711738a814ce221127d0b7ecf5b">ImageView::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d17/imageview_8cpp_source.html#l00022">imageview.cpp:22</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

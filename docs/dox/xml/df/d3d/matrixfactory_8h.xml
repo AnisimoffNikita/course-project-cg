@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="df/d3d/matrixfactory_8h" kind="file" language="C++">
+    <compoundname>matrixfactory.h</compoundname>
+    <includes refid="dd/df4/matrix_8h" local="yes">src/math/matrix.h</includes>
+    <includes refid="d8/d08/vec3_8h" local="yes">src/math/vec3.h</includes>
+    <includedby refid="d1/d6b/camera_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/camera.cpp</includedby>
+    <includedby refid="da/d36/matrixfactory_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/matrixfactory.cpp</includedby>
+    <includedby refid="da/d15/sceneobjectfactory_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</includedby>
+    <incdepgraph>
+      <node id="2392">
+        <label>functional</label>
+      </node>
+      <node id="2390">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2391" relation="include">
+        </childnode>
+      </node>
+      <node id="2387">
+        <label>Projects/labs/course_project_cg/src/animation/matrixfactory.h</label>
+        <link refid="matrixfactory.h"/>
+        <childnode refid="2388" relation="include">
+        </childnode>
+        <childnode refid="2390" relation="include">
+        </childnode>
+      </node>
+      <node id="2389">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2388">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+      </node>
+      <node id="2391">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2392" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2395">
+        <label>Projects/labs/course_project_cg/src/animation/matrixfactory.cpp</label>
+        <link refid="da/d36/matrixfactory_8cpp"/>
+      </node>
+      <node id="2393">
+        <label>Projects/labs/course_project_cg/src/animation/matrixfactory.h</label>
+        <link refid="matrixfactory.h"/>
+        <childnode refid="2394" relation="include">
+        </childnode>
+        <childnode refid="2395" relation="include">
+        </childnode>
+        <childnode refid="2396" relation="include">
+        </childnode>
+      </node>
+      <node id="2396">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="2394">
+        <label>Projects/labs/course_project_cg/src/animation/camera.cpp</label>
+        <link refid="d1/d6b/camera_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/d22/class_model_matrix" prot="public">ModelMatrix</innerclass>
+    <innerclass refid="d7/d66/class_view_matrix" prot="public">ViewMatrix</innerclass>
+    <innerclass refid="d6/d8c/class_perspective_matrix" prot="public">PerspectiveMatrix</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MATRIXFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MATRIXFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/df4/matrix_8h" kindref="compound">src/math/matrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d08/vec3_8h" kindref="compound">src/math/vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d4/d22/class_model_matrix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/d22/class_model_matrix" kindref="compound">ModelMatrix</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="d4/d22/class_model_matrix_1ac7cce9713a0c3f32b297de47efe7a088" kindref="member">create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d7/d66/class_view_matrix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d66/class_view_matrix" kindref="compound">ViewMatrix</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="d4/d22/class_model_matrix_1ac7cce9713a0c3f32b297de47efe7a088" kindref="member">create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;eye,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;up);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d6/d8c/class_perspective_matrix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d8c/class_perspective_matrix" kindref="compound">PerspectiveMatrix</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="d4/d22/class_model_matrix_1ac7cce9713a0c3f32b297de47efe7a088" kindref="member">create</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fovy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zNear,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zFar);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MATRIXFACTORY_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/matrixfactory.h"/>
+  </compounddef>
+</doxygen>

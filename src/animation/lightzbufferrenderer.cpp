@@ -182,12 +182,8 @@ void LightZBufferRenderer::fillTriangle(Triangle &triangle)
         {
             int32 ix = x + 0.5, iy = y + 0.5;
 
-            if (ix < 0 || ix >= width || iy < 0 || iy >= height)
-            {
-                continue;
-            }
-
-            if (z < zbuffer.get(ix, iy))
+            if (!(ix < 0 || ix >= width || iy < 0 || iy >= height) &&
+                    z < zbuffer.get(ix, iy))
             {
                 zbuffer.set(ix, iy, z);
                 Vec3 n;
@@ -314,9 +310,9 @@ void LightZBufferRenderer::start(int32 width, int32 height)
 
     for (int32 i = 0; i < width * height; i++)
     {
-        buffer[4 * i] = 33;
-        buffer[4 * i + 1] = 33;
-        buffer[4 * i + 2] = 33;
+        buffer[4 * i] = 231;
+        buffer[4 * i + 1] = 235;
+        buffer[4 * i + 2] = 239;
     }
 }
 

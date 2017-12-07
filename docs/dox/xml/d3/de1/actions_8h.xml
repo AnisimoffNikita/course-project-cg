@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/de1/actions_8h" kind="file" language="C++">
+    <compoundname>actions.h</compoundname>
+    <includes refid="d5/d69/sceneobject_8h" local="yes">sceneobject.h</includes>
+    <includes refid="d8/d08/vec3_8h" local="yes">src/math/vec3.h</includes>
+    <includedby refid="d7/d86/actionmanager_8h" local="yes">Projects/labs/course_project_cg/src/animation/actionmanager.h</includedby>
+    <includedby refid="d8/dcf/actions_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/actions.cpp</includedby>
+    <includedby refid="d1/d5e/modelview2_8cpp" local="yes">Projects/labs/course_project_cg/src/widgets/modelview2.cpp</includedby>
+    <incdepgraph>
+      <node id="2167">
+        <label>functional</label>
+      </node>
+      <node id="2161">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2162" relation="include">
+        </childnode>
+        <childnode refid="2163" relation="include">
+        </childnode>
+        <childnode refid="2164" relation="include">
+        </childnode>
+      </node>
+      <node id="2164">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2165" relation="include">
+        </childnode>
+        <childnode refid="2166" relation="include">
+        </childnode>
+      </node>
+      <node id="2165">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2166">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2165" relation="include">
+        </childnode>
+        <childnode refid="2167" relation="include">
+        </childnode>
+      </node>
+      <node id="2162">
+        <label>vector</label>
+      </node>
+      <node id="2160">
+        <label>Projects/labs/course_project_cg/src/animation/actions.h</label>
+        <link refid="actions.h"/>
+        <childnode refid="2161" relation="include">
+        </childnode>
+        <childnode refid="2164" relation="include">
+        </childnode>
+      </node>
+      <node id="2163">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2169">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.h</label>
+        <link refid="d7/d86/actionmanager_8h"/>
+        <childnode refid="2170" relation="include">
+        </childnode>
+        <childnode refid="2171" relation="include">
+        </childnode>
+      </node>
+      <node id="2173">
+        <label>Projects/labs/course_project_cg/src/animation/actions.cpp</label>
+        <link refid="d8/dcf/actions_8cpp"/>
+      </node>
+      <node id="2171">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="2172" relation="include">
+        </childnode>
+      </node>
+      <node id="2172">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2170">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.cpp</label>
+        <link refid="d3/df9/actionmanager_8cpp"/>
+      </node>
+      <node id="2168">
+        <label>Projects/labs/course_project_cg/src/animation/actions.h</label>
+        <link refid="actions.h"/>
+        <childnode refid="2169" relation="include">
+        </childnode>
+        <childnode refid="2173" relation="include">
+        </childnode>
+        <childnode refid="2172" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/dca/class_action" prot="public">Action</innerclass>
+    <innerclass refid="de/dd1/class_repeat_move_action" prot="public">RepeatMoveAction</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ACTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d69/sceneobject_8h" kindref="compound">sceneobject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d08/vec3_8h" kindref="compound">src/math/vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d7/dca/class_action" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/dca/class_action" kindref="compound">Action</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/dca/class_action" kindref="compound">Action</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>duration,<sp/>weak_ptr&lt;SceneObject&gt;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d7/dca/class_action" kindref="compound">Action</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>delta)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="d7/dca/class_action_1af26e528eec8ae24e9dfc1ab9d6e809a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d7/dca/class_action_1af26e528eec8ae24e9dfc1ab9d6e809a7" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="18" refid="d7/dca/class_action_1a11d29bdc060c2c492d170632507c0635" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d7/dca/class_action_1a11d29bdc060c2c492d170632507c0635" kindref="member">time</ref>;</highlight></codeline>
+<codeline lineno="19" refid="d7/dca/class_action_1a1dfd6b0f501cce2b19d076b7d6b5aec8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>weak_ptr&lt;SceneObject&gt;<sp/><ref refid="d7/dca/class_action_1a1dfd6b0f501cce2b19d076b7d6b5aec8" kindref="member">object</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="de/dd1/class_repeat_move_action" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/dd1/class_repeat_move_action" kindref="compound">RepeatMoveAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d7/dca/class_action" kindref="compound">Action</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd1/class_repeat_move_action" kindref="compound">RepeatMoveAction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>duration,<sp/>weak_ptr&lt;SceneObject&gt;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;finish);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>delta);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30" refid="de/dd1/class_repeat_move_action_1a2edadba70d6c63c8d6373c821622a6ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="de/dd1/class_repeat_move_action_1a2edadba70d6c63c8d6373c821622a6ee" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="31" refid="de/dd1/class_repeat_move_action_1a26a23d209a989bcc3f634e29f0532652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="de/dd1/class_repeat_move_action_1a26a23d209a989bcc3f634e29f0532652" kindref="member">diff</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ACTIONS_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/actions.h"/>
+  </compounddef>
+</doxygen>

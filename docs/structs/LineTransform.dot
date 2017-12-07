@@ -1,0 +1,5 @@
+digraph LineTransform
+{
+graph [ rankdir="RL" ]
+"d3/d23/class_line_transform" [ label="LineTransform\nabstract\n|+process ( image : Image & ) : std::vector\< Line \> \{pure-virtual\}\l+~LineTransform (  ) \{virtual\}\l|" shape="record" ]
+}

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_73373614dec9400c8130353c6d16a542" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/math</compoundname>
+    <innerfile refid="d4/dc0/cylindersize_8cpp">cylindersize.cpp</innerfile>
+    <innerfile refid="d1/dfa/cylindersize_8h">cylindersize.h</innerfile>
+    <innerfile refid="d6/def/homogeneousvertex_8cpp">homogeneousvertex.cpp</innerfile>
+    <innerfile refid="d4/df0/homogeneousvertex_8h">homogeneousvertex.h</innerfile>
+    <innerfile refid="dd/da3/line_8cpp">line.cpp</innerfile>
+    <innerfile refid="d7/d5d/line_8h">line.h</innerfile>
+    <innerfile refid="dd/d2d/math_8cpp">math.cpp</innerfile>
+    <innerfile refid="df/db1/math_8h">math.h</innerfile>
+    <innerfile refid="d5/d84/matrix_8cpp">matrix.cpp</innerfile>
+    <innerfile refid="dd/df4/matrix_8h">matrix.h</innerfile>
+    <innerfile refid="da/d32/vec2_8cpp">vec2.cpp</innerfile>
+    <innerfile refid="d3/dbe/vec2_8h">vec2.h</innerfile>
+    <innerfile refid="d9/d09/vec3_8cpp">vec3.cpp</innerfile>
+    <innerfile refid="d8/d08/vec3_8h">vec3.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/math/"/>
+  </compounddef>
+</doxygen>

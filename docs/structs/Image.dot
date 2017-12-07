@@ -1,0 +1,5 @@
+digraph Image
+{
+graph [ rankdir="RL" ]
+"de/d73/class_image" [ label="Image\n|+GrayscaleConverter (  ) : friend class\l+ImageConverter (  ) : friend class\l|" shape="record" ]
+}

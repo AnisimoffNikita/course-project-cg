@@ -1,0 +1,5 @@
+digraph Math
+{
+graph [ rankdir="RL" ]
+"d4/d34/class_math" [ label="Math\n|+Abs ( value : double ) : double \{static\}\l+Atan ( value : double ) : double \{static\}\l+Bisection ( a : double, b : double, f : const Func &, eps : double ) : double \{static\}\l+Clamp ( value : const T &, max : const T &, min : const T & ) : T \{static\}\l+Cos ( angle : double ) : double \{static\}\l+Ctg ( x : double ) : double \{static\}\l+Gauss2 ( sigma : double, x : int32, y : int32 ) : double \{static\}\l+Pow ( x : double, y : double ) : double \{static\}\l+Sin ( angle : double ) : double \{static\}\l+Sqrt ( value : double ) : double \{static\}\l+Tan ( angle : double ) : double \{static\}\l+ToDegrees ( radians : double ) : double \{static\}\l+ToRadians ( degrees : double ) : double \{static\}\l+sgn ( val : const T & ) : int32 \{static\}\l|+PI : constexpr double \{static\}\l" shape="record" ]
+}

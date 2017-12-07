@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dd/d52/class_grayscale_image" kind="class" language="C++" prot="public">
+    <compoundname>GrayscaleImage</compoundname>
+    <basecompoundref refid="db/d6b/class_image_base" prot="public" virt="non-virtual">ImageBase&lt; uint8 &gt;</basecompoundref>
+    <includes refid="d3/d37/grayscaleimage_8h" local="no">grayscaleimage.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="dd/d52/class_grayscale_image_1a683b929065aaead03ccce450a7b4ab30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ImageConverter</definition>
+        <argsstring></argsstring>
+        <name>ImageConverter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/grayscaleimage.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/image/grayscaleimage.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="dd/d52/class_grayscale_image_1a655e20b76703bb6a4e6ecd9ed4a5d9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GrayscaleConverter</definition>
+        <argsstring></argsstring>
+        <name>GrayscaleConverter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/grayscaleimage.h" line="20" column="1" bodyfile="Projects/labs/course_project_cg/src/image/grayscaleimage.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="333">
+        <label>GrayscaleImage</label>
+        <link refid="dd/d52/class_grayscale_image"/>
+        <childnode refid="334" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>ImageBase&lt; uint8 &gt;</label>
+        <link refid="db/d6b/class_image_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="335">
+        <label>GrayscaleImage</label>
+        <link refid="dd/d52/class_grayscale_image"/>
+        <childnode refid="336" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>ImageBase&lt; uint8 &gt;</label>
+        <link refid="db/d6b/class_image_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/image/grayscaleimage.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/image/grayscaleimage.h" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="db/d6b/class_image_base_1acf5042cc5679250825272cb23a4594a1" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>at</name></member>
+      <member refid="db/d6b/class_image_base_1a750ec0d8ff1dd10dfa26467c018cc68c" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>getHeight</name></member>
+      <member refid="db/d6b/class_image_base_1a576197cd4b79d141bb8bd832511fb26a" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>getWidth</name></member>
+      <member refid="dd/d52/class_grayscale_image_1a655e20b76703bb6a4e6ecd9ed4a5d9ed" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>GrayscaleConverter</name></member>
+      <member refid="db/d6b/class_image_base_1a0d0996266703e4c7bbedf96bc5c6313c" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>ImageBase</name></member>
+      <member refid="db/d6b/class_image_base_1a43a4b975fe25dfca53ce3f0155dd5976" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>ImageBase</name></member>
+      <member refid="db/d6b/class_image_base_1a655bd5b3b40499448b5b204de54de2b2" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>ImageBase</name></member>
+      <member refid="db/d6b/class_image_base_1a6094d4bcf9e48de9b2d66d4f9bbb9db2" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>ImageBase</name></member>
+      <member refid="dd/d52/class_grayscale_image_1a683b929065aaead03ccce450a7b4ab30" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>ImageConverter</name></member>
+      <member refid="db/d6b/class_image_base_1a84b330cd4e586ff7bed5beee148c3309" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>operator=</name></member>
+      <member refid="db/d6b/class_image_base_1a0def07d97e63c1448751a70e06c3e370" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>operator=</name></member>
+      <member refid="db/d6b/class_image_base_1a2ed65bd7506be1b5bf8ff56a5b56d3a2" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>set</name></member>
+      <member refid="db/d6b/class_image_base_1ac26af0c1bfd19f915f19d6b6f85c05c5" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>setHeight</name></member>
+      <member refid="db/d6b/class_image_base_1a1448e596fe52852668baa5caefe23f86" prot="public" virt="non-virtual"><scope>GrayscaleImage</scope><name>setWidth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

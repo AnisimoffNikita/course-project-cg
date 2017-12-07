@@ -1,0 +1,13 @@
+class ImageView
+!!!177282.cpp!!!	ImageView(inout parent : QWidget = 0)
+    this->setStyleSheet("border: none;outline: none;");
+    this->setBackgroundBrush(QBrush(QColor(236, 232, 228)));
+    this->setScene(scene);
+    this->setMouseTracking(false);
+!!!177410.cpp!!!	setImage(in image : QImage) : void
+    scene->clear();
+    scene->addPixmap(QPixmap::fromImage(image));
+    this->fitInView(scene->itemsBoundingRect(), Qt::KeepAspectRatio);
+!!!177538.cpp!!!	resizeEvent(inout event : QResizeEvent) : void
+    QGraphicsView::resizeEvent(event);
+    this->fitInView(scene->itemsBoundingRect(), Qt::KeepAspectRatio);

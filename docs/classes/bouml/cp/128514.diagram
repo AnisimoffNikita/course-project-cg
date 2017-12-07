@@ -1,0 +1,29 @@
+format 215
+
+classcanvas 128002 class_ref 139266 // ImageBase
+  classdiagramsettings member_max_width 0 end
+  xyz 174 41 2005
+end
+classcanvas 128130 class_ref 131842 // GrayscaleImage
+  classdiagramsettings member_max_width 0 end
+  xyz 41 488 3005
+end
+classcanvas 129154 class_ref 131330 // Image
+  classdiagramsettings member_max_width 0 end
+  xyz 203 488 3017
+end
+relationcanvas 128258 relation_ref 140930 // <realization>
+  geometry VHV unfixed
+  from ref 128130 z 3006 to point 99 446
+  line 129538 z 3006 to point 226 446
+  line 129666 z 3006 label "<T->uint8>" max_width 255 xyz 94.5 404 3006 stereotype "<<bind>>" xyz 94.5 423 3006 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129282 relation_ref 141186 // <realization>
+  from ref 129154 z 3018 label "<T->Color>" max_width 255 xyz 229.5 414 3018 stereotype "<<bind>>" xyz 234.5 440 3018 to point 226 449
+  line 129794 z 3018 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

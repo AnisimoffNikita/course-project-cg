@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_7bb5a5ac0f935e40ab936c64c19a29c2" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/3rdparty/ObjLoader</compoundname>
+    <innerfile refid="de/da6/3rdparty_2_obj_loader_2objloader_8h">objloader.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/"/>
+  </compounddef>
+</doxygen>

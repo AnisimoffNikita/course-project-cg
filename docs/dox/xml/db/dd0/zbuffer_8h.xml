@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/dd0/zbuffer_8h" kind="file" language="C++">
+    <compoundname>zbuffer.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="d3/d22/number_8h" local="yes">src/number.h</includes>
+    <includedby refid="d7/d17/lightzbufferrenderer_8h" local="yes">Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</includedby>
+    <includedby refid="de/d9a/zbuffer_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/zbuffer.cpp</includedby>
+    <incdepgraph>
+      <node id="2889">
+        <label>Projects/labs/course_project_cg/src/animation/zbuffer.h</label>
+        <link refid="zbuffer.h"/>
+        <childnode refid="2890" relation="include">
+        </childnode>
+        <childnode refid="2891" relation="include">
+        </childnode>
+      </node>
+      <node id="2891">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2890">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2893">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="2894" relation="include">
+        </childnode>
+        <childnode refid="2895" relation="include">
+        </childnode>
+        <childnode refid="2896" relation="include">
+        </childnode>
+      </node>
+      <node id="2897">
+        <label>Projects/labs/course_project_cg/src/animation/zbuffer.cpp</label>
+        <link refid="de/d9a/zbuffer_8cpp"/>
+      </node>
+      <node id="2892">
+        <label>Projects/labs/course_project_cg/src/animation/zbuffer.h</label>
+        <link refid="zbuffer.h"/>
+        <childnode refid="2893" relation="include">
+        </childnode>
+        <childnode refid="2897" relation="include">
+        </childnode>
+      </node>
+      <node id="2895">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2896">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2894">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d6/d99/class_z_buffer" prot="public">ZBuffer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ZBUFFER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZBUFFER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d22/number_8h" kindref="compound">src/number.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d6/d99/class_z_buffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d99/class_z_buffer" kindref="compound">ZBuffer</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d99/class_z_buffer" kindref="compound">ZBuffer</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSize(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>w,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>h);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>x,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>y);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>x,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;float&gt;<sp/><ref refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="22" refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" kindref="member">width</ref>,<sp/>height;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ZBUFFER_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h"/>
+  </compounddef>
+</doxygen>

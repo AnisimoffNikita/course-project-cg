@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/d3b/cannyedgedetector_8h" kind="file" language="C++">
+    <compoundname>cannyedgedetector.h</compoundname>
+    <includes refid="d4/da5/edgedetector_8h" local="yes">edgedetector.h</includes>
+    <includes refid="d3/d37/grayscaleimage_8h" local="yes">src/image/grayscaleimage.h</includes>
+    <includes refid="d3/d22/number_8h" local="yes">src/number.h</includes>
+    <includedby refid="d8/d97/cannyedgedetector_8cpp" local="yes">Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp</includedby>
+    <includedby refid="d9/d53/mainwindow_8h" local="yes">Projects/labs/course_project_cg/src/mainwindow.h</includedby>
+    <incdepgraph>
+      <node id="2027">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</label>
+        <link refid="cannyedgedetector.h"/>
+        <childnode refid="2028" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+      </node>
+      <node id="2032">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2034" relation="include">
+        </childnode>
+      </node>
+      <node id="2034">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2033" relation="include">
+        </childnode>
+      </node>
+      <node id="2028">
+        <label>edgedetector.h</label>
+        <link refid="d4/da5/edgedetector_8h"/>
+        <childnode refid="2029" relation="include">
+        </childnode>
+      </node>
+      <node id="2033">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2030">
+        <label>QImage</label>
+      </node>
+      <node id="2029">
+        <label>src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2034" relation="include">
+        </childnode>
+      </node>
+      <node id="2036">
+        <label>grayscalecolor.h</label>
+        <link refid="d0/d9c/grayscalecolor_8h"/>
+        <childnode refid="2033" relation="include">
+        </childnode>
+      </node>
+      <node id="2035">
+        <label>src/image/grayscaleimage.h</label>
+        <link refid="d3/d37/grayscaleimage_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2036" relation="include">
+        </childnode>
+      </node>
+      <node id="2031">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2037">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</label>
+        <link refid="cannyedgedetector.h"/>
+        <childnode refid="2038" relation="include">
+        </childnode>
+        <childnode refid="2039" relation="include">
+        </childnode>
+      </node>
+      <node id="2041">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2038">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp</label>
+        <link refid="d8/d97/cannyedgedetector_8cpp"/>
+      </node>
+      <node id="2040">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2039">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2040" relation="include">
+        </childnode>
+        <childnode refid="2041" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d15/class_canny_edge_detector" prot="public">CannyEdgeDetector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CANNYEDGEDETECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CANNYEDGEDETECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/da5/edgedetector_8h" kindref="compound">edgedetector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d37/grayscaleimage_8h" kindref="compound">src/image/grayscaleimage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d22/number_8h" kindref="compound">src/number.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d1/d15/class_canny_edge_detector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d15/class_canny_edge_detector" kindref="compound">CannyEdgeDetector</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d9/d8a/class_edge_detector" kindref="compound">EdgeDetector</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d15/class_canny_edge_detector_1a6f7de6f12f8b52563d28e612a46f7a0d" kindref="member">CannyEdgeDetector</ref>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1ae88472e936f883044b00e8cd50f662c6" kindref="member">minThresh</ref><sp/>=<sp/>80,<sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1ab551b06077d0221f1caa6e5e4cce48d9" kindref="member">maxThresh</ref><sp/>=<sp/>100);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1ad6f031b85ac2fc2f916ecaa04c536c01" kindref="member">~CannyEdgeDetector</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1ae97e095e14e43d763a8fc2563f6e9a87" kindref="member">process</ref>(<ref refid="de/d73/class_image" kindref="compound">Image</ref><sp/>&amp;<ref refid="d1/d15/class_canny_edge_detector_1a271e3c9036a5cb2611bb1b7da4d7d146" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1a38218d65e7d450dc226e3bbb0c7043e9" kindref="member">getGaussKernelSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1adb6b71e26f03edea19d3fef041fd6cbd" kindref="member">setGaussKernelSize</ref>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>value);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1ac3e362832dcd3e18801bed15856e79b4" kindref="member">getGaussSigma</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1afc77ac77d033264009ea66670eeec9d0" kindref="member">setGaussSigma</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1aa0ae63194968f376d4ea6e6d7e13f285" kindref="member">getMinThresh</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1a825df00f677a9a949d0dcb87939a99b5" kindref="member">setMinThresh</ref>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>value);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1aa3cb693f65b9a07e5f245d7ecadf9c5c" kindref="member">getMaxThresh</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1ae48e5be375a3a3d23c4dc81a158149c7" kindref="member">setMaxThresh</ref>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>value);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1ad5843016a5e861eed74fa24f4abd688b" kindref="member">gradients</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1a8622531b7410c002284f466df043af13" kindref="member">nonMaxSuppression</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1a0c6b710be023dec7cfd38e55d42066a3" kindref="member">floatThreshold</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1ab4bf8eb092943ab7042762ee48aeb0c1" kindref="member">hysteresis</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d15/class_canny_edge_detector_1a3f180b6eb26a8afa34a03c8cdd0781ca" kindref="member">hysteresisRecursive</ref>(<ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>y,<sp/><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>x);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d1/d15/class_canny_edge_detector_1ae88472e936f883044b00e8cd50f662c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1ae88472e936f883044b00e8cd50f662c6" kindref="member">minThresh</ref>;</highlight></codeline>
+<codeline lineno="36" refid="d1/d15/class_canny_edge_detector_1ab551b06077d0221f1caa6e5e4cce48d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1ab551b06077d0221f1caa6e5e4cce48d9" kindref="member">maxThresh</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d1/d15/class_canny_edge_detector_1a271e3c9036a5cb2611bb1b7da4d7d146" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d52/class_grayscale_image" kindref="compound">GrayscaleImage</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1a271e3c9036a5cb2611bb1b7da4d7d146" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="39" refid="d1/d15/class_canny_edge_detector_1a96275be60c2ffdc3798384f7a3588684" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d52/class_grayscale_image" kindref="compound">GrayscaleImage</ref><sp/><ref refid="d1/d15/class_canny_edge_detector_1a96275be60c2ffdc3798384f7a3588684" kindref="member">directions</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CANNYEDGEDETECTOR_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h"/>
+  </compounddef>
+</doxygen>

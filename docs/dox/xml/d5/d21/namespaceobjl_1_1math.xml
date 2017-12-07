@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/d21/namespaceobjl_1_1math" kind="namespace" language="C++">
+    <compoundname>objl::math</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d21/namespaceobjl_1_1math_1a0a60e59c13969d1baaff0b393a6d045c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::math::CrossV3</definition>
+        <argsstring>(const Vector3 a, const Vector3 b)</argsstring>
+        <name>CrossV3</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="221" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="221" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d21/namespaceobjl_1_1math_1aafce95377aefa7ef8f6c732bef547333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float objl::math::MagnitudeV3</definition>
+        <argsstring>(const Vector3 in)</argsstring>
+        <name>MagnitudeV3</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="229" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d21/namespaceobjl_1_1math_1a822b1ebd1dc13a06c95a813ff45fd2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float objl::math::DotV3</definition>
+        <argsstring>(const Vector3 a, const Vector3 b)</argsstring>
+        <name>DotV3</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="235" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d21/namespaceobjl_1_1math_1a2e4951a1ceabb660f63a3b6cc57a051e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float objl::math::AngleBetweenV3</definition>
+        <argsstring>(const Vector3 a, const Vector3 b)</argsstring>
+        <name>AngleBetweenV3</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="241" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="241" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="219" column="1"/>
+  </compounddef>
+</doxygen>

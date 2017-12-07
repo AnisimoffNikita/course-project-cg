@@ -1,0 +1,103 @@
+\hypertarget{class_model_factory}{}\section{Класс Model\+Factory}
+\label{class_model_factory}\index{Model\+Factory@{Model\+Factory}}
+
+
+{\ttfamily \#include $<$sceneobjectfactory.\+h$>$}
+
+
+
+Граф наследования\+:Model\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{d9/d14/class_model_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Model\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{de/dae/class_model_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model_factory_acd9b3a20367746edc4a39ae6fc9d4ea8}{Model\+Factory} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&position, const \hyperlink{class_mesh}{Mesh} \&mesh)
+\item 
+virtual \hyperlink{class_model_factory_afdb5cf1902348dfd9e1cc88626f3ec0e}{$\sim$\+Model\+Factory} ()=default
+\item 
+virtual \hyperlink{sceneobject_8h_af9afe0f4fe2038e305b8b22ff495305f}{Shared\+Scene\+Object} \hyperlink{class_model_factory_a4dd20bd3b89ef69c366c3e1fe00ebb69}{create} () override
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ \hyperlink{class_model_factory_a145458dc259da4dd2236acb519e998af}{model}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле sceneobjectfactory.\+h строка 44
+
+
+
+\subsection{Конструктор(ы)}
+\index{Model\+Factory@{Model\+Factory}!Model\+Factory@{Model\+Factory}}
+\index{Model\+Factory@{Model\+Factory}!Model\+Factory@{Model\+Factory}}
+\subsubsection[{\texorpdfstring{Model\+Factory(const Vec3 \&position, const Mesh \&mesh)}{ModelFactory(const Vec3 &position, const Mesh &mesh)}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+Factory\+::\+Model\+Factory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{const {\bf Mesh} \&}]{mesh}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_factory_acd9b3a20367746edc4a39ae6fc9d4ea8}{}\label{class_model_factory_acd9b3a20367746edc4a39ae6fc9d4ea8}
+
+
+См. определение в файле sceneobjectfactory.\+cpp строка 18
+
+\index{Model\+Factory@{Model\+Factory}!````~Model\+Factory@{$\sim$\+Model\+Factory}}
+\index{````~Model\+Factory@{$\sim$\+Model\+Factory}!Model\+Factory@{Model\+Factory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Model\+Factory()=default}{~ModelFactory()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Model\+Factory\+::$\sim$\+Model\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_model_factory_afdb5cf1902348dfd9e1cc88626f3ec0e}{}\label{class_model_factory_afdb5cf1902348dfd9e1cc88626f3ec0e}
+
+
+\subsection{Методы}
+\index{Model\+Factory@{Model\+Factory}!create@{create}}
+\index{create@{create}!Model\+Factory@{Model\+Factory}}
+\subsubsection[{\texorpdfstring{create() override}{create() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shared\+Scene\+Object} Model\+Factory\+::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_model_factory_a4dd20bd3b89ef69c366c3e1fe00ebb69}{}\label{class_model_factory_a4dd20bd3b89ef69c366c3e1fe00ebb69}
+
+
+Замещает \hyperlink{class_scene_object_factory_a9b90daaddbc34b747c072f770bc6b993}{Scene\+Object\+Factory}.
+
+
+
+См. определение в файле sceneobjectfactory.\+cpp строка 23
+
+
+
+\subsection{Данные класса}
+\index{Model\+Factory@{Model\+Factory}!model@{model}}
+\index{model@{model}!Model\+Factory@{Model\+Factory}}
+\subsubsection[{\texorpdfstring{model}{model}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Model}$>$ Model\+Factory\+::model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_model_factory_a145458dc259da4dd2236acb519e998af}{}\label{class_model_factory_a145458dc259da4dd2236acb519e998af}
+
+
+См. определение в файле sceneobjectfactory.\+h строка 52
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{sceneobjectfactory_8h}{sceneobjectfactory.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{sceneobjectfactory_8cpp}{sceneobjectfactory.\+cpp}\end{DoxyCompactItemize}

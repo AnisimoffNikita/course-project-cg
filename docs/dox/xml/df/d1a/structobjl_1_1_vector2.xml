@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="df/d1a/structobjl_1_1_vector2" kind="struct" language="C++" prot="public">
+    <compoundname>objl::Vector2</compoundname>
+    <includes refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" local="no">objloader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d1a/structobjl_1_1_vector2_1a4e6202bf1555b7eb26cf37b5a86ffee7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Vector2::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="75" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1a/structobjl_1_1_vector2_1a25df0f9690a937dc76b1922b46c0fe7c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Vector2::Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="76" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d1a/structobjl_1_1_vector2_1abca84763e73ad0c32dd10ef1c87a86a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Vector2::Vector2</definition>
+        <argsstring>()</argsstring>
+        <name>Vector2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="37" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1a/structobjl_1_1_vector2_1a011c4cfca74a240d9ac50fbf8400c781" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Vector2::Vector2</definition>
+        <argsstring>(float X_, float Y_)</argsstring>
+        <name>Vector2</name>
+        <param>
+          <type>float</type>
+          <declname>X_</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Y_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="43" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1a/structobjl_1_1_vector2_1a79a3733f50a038299d4c5adf41d95c2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool objl::Vector2::operator==</definition>
+        <argsstring>(const Vector2 &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="49" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1a/structobjl_1_1_vector2_1ab73ea0ab43cbec8b1b75a6a2de60e7df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool objl::Vector2::operator!=</definition>
+        <argsstring>(const Vector2 &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="54" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1a/structobjl_1_1_vector2_1a7fe3352f0f3e442a047867b79d8cea21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 objl::Vector2::operator+</definition>
+        <argsstring>(const Vector2 &amp;right) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="59" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1a/structobjl_1_1_vector2_1ab47d3a9c104a32e72706ebd5089266ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 objl::Vector2::operator-</definition>
+        <argsstring>(const Vector2 &amp;right) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="64" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d1a/structobjl_1_1_vector2_1ae0c8bd6d04d2d514b11f6039ff4099ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 objl::Vector2::operator*</definition>
+        <argsstring>(const float &amp;other) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="69" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="513">
+        <label>objl::Vector2</label>
+        <link refid="df/d1a/structobjl_1_1_vector2"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="34" bodyend="77"/>
+    <listofallmembers>
+      <member refid="df/d1a/structobjl_1_1_vector2_1ab73ea0ab43cbec8b1b75a6a2de60e7df" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>operator!=</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1ae0c8bd6d04d2d514b11f6039ff4099ed" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>operator*</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1a7fe3352f0f3e442a047867b79d8cea21" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>operator+</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1ab47d3a9c104a32e72706ebd5089266ef" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>operator-</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1a79a3733f50a038299d4c5adf41d95c2a" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>operator==</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1abca84763e73ad0c32dd10ef1c87a86a4" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>Vector2</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1a011c4cfca74a240d9ac50fbf8400c781" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>Vector2</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1a4e6202bf1555b7eb26cf37b5a86ffee7" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>X</name></member>
+      <member refid="df/d1a/structobjl_1_1_vector2_1a25df0f9690a937dc76b1922b46c0fe7c" prot="public" virt="non-virtual"><scope>objl::Vector2</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

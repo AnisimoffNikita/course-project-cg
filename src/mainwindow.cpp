@@ -1,5 +1,5 @@
-#include "debugmainwindow.h"
-#include "ui_debug_mainwindow.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 
 #include <QStandardPaths>
 #include <QImageReader>
@@ -7,13 +7,14 @@
 #include <QMessageBox>
 #include <QScreen>
 #include <QString>
+#include <QDialog>
 
 #include "src/image/imageconverter.h"
 #include "src/animation/sceneobjectfactory.h"
 
-DebugMainWindow::DebugMainWindow(QWidget *parent) :
+MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::DebugMainWindow),
+    ui(new Ui::MainWindow),
     state(0)
 {
     ui->setupUi(this);
@@ -22,22 +23,22 @@ DebugMainWindow::DebugMainWindow(QWidget *parent) :
     debug_setScene();
 }
 
-DebugMainWindow::~DebugMainWindow()
+MainWindow::~MainWindow()
 {
     delete ui;
 }
 
-void DebugMainWindow::resizeEvent(QResizeEvent *)
+void MainWindow::resizeEvent(QResizeEvent *)
 {
 }
 
 
-void DebugMainWindow::on_actOpenImage_triggered()
+void MainWindow::on_actOpenImage_triggered()
 {
     openFile();
 }
 
-void DebugMainWindow::openFile()
+void MainWindow::openFile()
 {
     QFileDialog dialog(this, tr("Open File"));
     initFileDialog(dialog, QFileDialog::AcceptOpen);
@@ -46,7 +47,7 @@ void DebugMainWindow::openFile()
             !loadFile(dialog.selectedFiles().first())) {}
 }
 
-bool DebugMainWindow::loadFile(const QString &filename)
+bool MainWindow::loadFile(const QString &filename)
 {
     QImageReader reader(filename);
     reader.setAutoTransform(true);
@@ -67,15 +68,15 @@ bool DebugMainWindow::loadFile(const QString &filename)
     return true;
 }
 
-void DebugMainWindow::setImage(const QImage &newImage)
+void MainWindow::setImage(const QImage &newImage)
 {
     image = newImage;
     ui->imageView->setImage(image);
     updateActions();
 }
 
-void DebugMainWindow::initFileDialog(QFileDialog &dialog,
-                                     QFileDialog::AcceptMode acceptMode)
+void MainWindow::initFileDialog(QFileDialog &dialog,
+                                QFileDialog::AcceptMode acceptMode)
 {
     static bool firstDialog = true;
 
@@ -109,16 +110,16 @@ void DebugMainWindow::initFileDialog(QFileDialog &dialog,
 
 
 
-void DebugMainWindow::updateActions()
+void MainWindow::updateActions()
 {
 }
 
-void DebugMainWindow::debug_setScene()
+void MainWindow::debug_setScene()
 {
 }
 
 
-void DebugMainWindow::on_btnCalibrate_clicked()
+void MainWindow::on_btnCalibrate_clicked()
 {
     if (ui->rbnStandard->isChecked())
     {
@@ -139,12 +140,14 @@ void DebugMainWindow::on_btnCalibrate_clicked()
     }
     else if (ui->rbnDiag->isChecked())
     {
-        calc.calibrate(ui->edtDiag->text().toDouble(),
-                       ui->edtDiagPx->text().toDouble());
+        calc.calibrate(
+            ui->edtDist->text().toDouble(),
+            ui->edtDiag->text().toDouble(),
+            ui->edtDiagPx->text().toDouble());
     }
 }
 
-void DebugMainWindow::on_btnEval_clicked()
+void MainWindow::on_btnEval_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -162,7 +165,7 @@ void DebugMainWindow::on_btnEval_clicked()
     ui->imageView->setImage(temp);
 }
 
-void DebugMainWindow::on_sldSigma_valueChanged(int value)
+void MainWindow::on_sldSigma_valueChanged(int value)
 {
     ui->lblSigma->setText(QString::number(value / 10.0, 'g', 2));
     bool flag = state == 1;
@@ -174,7 +177,7 @@ void DebugMainWindow::on_sldSigma_valueChanged(int value)
     }
 }
 
-void DebugMainWindow::on_sldKernelSize_valueChanged(int value)
+void MainWindow::on_sldKernelSize_valueChanged(int value)
 {
     ui->lblKernel->setText(QString::number(value * 2 - 1));
     bool flag = state == 1;
@@ -187,7 +190,7 @@ void DebugMainWindow::on_sldKernelSize_valueChanged(int value)
 }
 
 
-void DebugMainWindow::on_sldMinThresh_valueChanged(int value)
+void MainWindow::on_sldMinThresh_valueChanged(int value)
 {
     ui->lblMinThresh->setText(QString::number(value));
 
@@ -200,7 +203,7 @@ void DebugMainWindow::on_sldMinThresh_valueChanged(int value)
     on_btnCannyApply_clicked();
 }
 
-void DebugMainWindow::on_sldMaxThresh_valueChanged(int value)
+void MainWindow::on_sldMaxThresh_valueChanged(int value)
 {
     ui->lblMaxThresh->setText(QString::number(value));
 
@@ -213,18 +216,18 @@ void DebugMainWindow::on_sldMaxThresh_valueChanged(int value)
     on_btnCannyApply_clicked();
 }
 
-void DebugMainWindow::on_sldThresh_valueChanged(int value)
+void MainWindow::on_sldThresh_valueChanged(int value)
 {
     ui->lblThresh->setText(QString::number(value));
     on_btnHoughApply_clicked();
 }
 
-void DebugMainWindow::on_actRestore_triggered()
+void MainWindow::on_actRestore_triggered()
 {
     ui->imageView->setImage(image);
 }
 
-void DebugMainWindow::on_btnGaussApply_clicked()
+void MainWindow::on_btnGaussApply_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -236,7 +239,7 @@ void DebugMainWindow::on_btnGaussApply_clicked()
 }
 
 
-void DebugMainWindow::on_btnCannyApply_clicked()
+void MainWindow::on_btnCannyApply_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -250,7 +253,7 @@ void DebugMainWindow::on_btnCannyApply_clicked()
     state = 1;
 }
 
-void DebugMainWindow::on_btnHoughApply_clicked()
+void MainWindow::on_btnHoughApply_clicked()
 {
     Image work = ImageConverter::QImageToImage(image);
     GaussianBlur gauss(ui->lblSigma->text().toDouble(),
@@ -265,7 +268,7 @@ void DebugMainWindow::on_btnHoughApply_clicked()
     ui->imageView->setImage(temp);
 }
 
-void DebugMainWindow::on_rbnStandard_toggled(bool checked)
+void MainWindow::on_rbnStandard_toggled(bool checked)
 {
     ui->edtDist->setEnabled(checked);
     ui->edtH->setEnabled(checked);
@@ -274,11 +277,16 @@ void DebugMainWindow::on_rbnStandard_toggled(bool checked)
     ui->edtDiagPx->setEnabled(!checked);
 }
 
-void DebugMainWindow::on_rbnDiag_toggled(bool checked)
+void MainWindow::on_rbnDiag_toggled(bool checked)
 {
-    ui->edtDist->setEnabled(!checked);
+    ui->edtDist->setEnabled(checked);
     ui->edtH->setEnabled(!checked);
     ui->edtR->setEnabled(!checked);
     ui->edtDiag->setEnabled(checked);
     ui->edtDiagPx->setEnabled(checked);
+}
+
+void MainWindow::on_actAnimation_triggered()
+{
+    w.show();
 }

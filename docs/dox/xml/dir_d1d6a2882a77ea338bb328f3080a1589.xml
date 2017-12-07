@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d1d6a2882a77ea338bb328f3080a1589" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/algorithm/linetransform</compoundname>
+    <innerfile refid="d0/d3d/houghtransform_8cpp">houghtransform.cpp</innerfile>
+    <innerfile refid="dd/d54/houghtransform_8h">houghtransform.h</innerfile>
+    <innerfile refid="dd/d42/linetransform_8cpp">linetransform.cpp</innerfile>
+    <innerfile refid="d9/d6e/linetransform_8h">linetransform.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/algorithm/linetransform/"/>
+  </compounddef>
+</doxygen>

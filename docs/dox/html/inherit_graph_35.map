@@ -1,0 +1,9 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$dc/df8/class_scene_object.html" title="SceneObject" alt="" coords="5,81,103,108"/>
+<area shape="rect" id="node2" href="$da/dbb/class_camera.html" title="Camera" alt="" coords="159,5,227,32"/>
+<area shape="rect" id="node3" href="$df/dec/class_composite.html" title="Composite" alt="" coords="151,56,236,83"/>
+<area shape="rect" id="node4" href="$da/d7c/class_light.html" title="Light" alt="" coords="168,107,219,133"/>
+<area shape="rect" id="node7" href="$d0/de3/class_model.html" title="Model" alt="" coords="165,157,222,184"/>
+<area shape="rect" id="node5" href="$d4/dd4/class_ambient_light.html" title="AmbientLight" alt="" coords="284,81,383,108"/>
+<area shape="rect" id="node6" href="$dd/d0a/class_point_light.html" title="PointLight" alt="" coords="293,132,373,159"/>
+</map>

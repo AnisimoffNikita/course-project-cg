@@ -1,0 +1,958 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Класс MainWindow</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="../../inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="../../functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pri-slots">Закрытые слоты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="../../d0/d54/class_main_window-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MainWindow</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d4b/class_main_window__inherit__graph.png" border="0" usemap="#_main_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="_main_window_inherit__map" id="_main_window_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/db8/class_main_window__coll__graph.png" border="0" usemap="#_main_window_coll__map" alt="Collaboration graph"/></div>
+<map name="_main_window_coll__map" id="_main_window_coll__map">
+<area shape="rect" id="node3" href="../../d3/d30/class_animation_window.html" title="{AnimationWindow\n|&#45; ui\l|+ AnimationWindow()\l+ ~AnimationWindow()\l}" alt="" coords="60,270,215,362"/>
+<area shape="rect" id="node4" href="../../d2/dc7/class_cylinder_size_calculator.html" title="{CylinderSizeCalculator\n|&#45; lines\l&#45; distance\l&#45; factor\l|+ CylinderSizeCalculator()\l+ ~CylinderSizeCalculator()\l+ evaluate()\l+ calibrate()\l+ calibrate()\l&#45; findEdges()\l&#45; calculateSize()\l}" alt="" coords="239,219,422,413"/>
+<area shape="rect" id="node5" href="../../df/d7d/class_cylinder_size_calculator_base.html" title="{CylinderSizeCalculatorBase\n||+ ~CylinderSizeCalculatorBase()\l+ evaluate()\l+ calibrate()\l+ calibrate()\l}" alt="" coords="180,20,393,141"/>
+<area shape="rect" id="node6" href="../../d1/d47/class_cylinder_size.html" title="{CylinderSize\n|&#45; height\l&#45; radius\l|+ CylinderSize()\l+ getRadius()\l+ setRadius()\l+ getHeight()\l+ setHeight()\l}" alt="" coords="418,5,534,156"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8b244be8b7b7db1b08de2a2acb9409db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow</a> (QWidget *parent=0)</td></tr>
+<tr class="separator:a8b244be8b7b7db1b08de2a2acb9409db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a8851a931482834eeec527490eedaf20e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a8851a931482834eeec527490eedaf20e">resizeEvent</a> (QResizeEvent *)</td></tr>
+<tr class="separator:a8851a931482834eeec527490eedaf20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:a444b28f9a298e9e256411f3b428f360c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a444b28f9a298e9e256411f3b428f360c">on_actOpenImage_triggered</a> ()</td></tr>
+<tr class="separator:a444b28f9a298e9e256411f3b428f360c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d88789d920fe1a8094bf0124375e37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#aa8d88789d920fe1a8094bf0124375e37">on_btnCalibrate_clicked</a> ()</td></tr>
+<tr class="separator:aa8d88789d920fe1a8094bf0124375e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73256a4d549f57499a168d4ecb29731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#ad73256a4d549f57499a168d4ecb29731">on_btnEval_clicked</a> ()</td></tr>
+<tr class="separator:ad73256a4d549f57499a168d4ecb29731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f92b00e3336f2efec873fdcb5d612b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a42f92b00e3336f2efec873fdcb5d612b">on_sldSigma_valueChanged</a> (int value)</td></tr>
+<tr class="separator:a42f92b00e3336f2efec873fdcb5d612b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0302c9dadda691baf7db36058dd320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a5f0302c9dadda691baf7db36058dd320">on_sldKernelSize_valueChanged</a> (int value)</td></tr>
+<tr class="separator:a5f0302c9dadda691baf7db36058dd320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd7c221bd2f97f249b13522bcd05aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a1cd7c221bd2f97f249b13522bcd05aa2">on_sldMinThresh_valueChanged</a> (int value)</td></tr>
+<tr class="separator:a1cd7c221bd2f97f249b13522bcd05aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d260c44d11800d1b6f2653e35bc493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a03d260c44d11800d1b6f2653e35bc493">on_sldMaxThresh_valueChanged</a> (int value)</td></tr>
+<tr class="separator:a03d260c44d11800d1b6f2653e35bc493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd6bf1258b5b2b8fd692542f62f0343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#adbd6bf1258b5b2b8fd692542f62f0343">on_sldThresh_valueChanged</a> (int value)</td></tr>
+<tr class="separator:adbd6bf1258b5b2b8fd692542f62f0343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05932234bd7e1ce4d84a854bd9b1116f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a05932234bd7e1ce4d84a854bd9b1116f">on_actRestore_triggered</a> ()</td></tr>
+<tr class="separator:a05932234bd7e1ce4d84a854bd9b1116f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398b215bc771decd945f2f57755c1378"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a398b215bc771decd945f2f57755c1378">on_btnGaussApply_clicked</a> ()</td></tr>
+<tr class="separator:a398b215bc771decd945f2f57755c1378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a67f3153d50bd7b6c460e8cd5bb2f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a0a67f3153d50bd7b6c460e8cd5bb2f2b">on_btnCannyApply_clicked</a> ()</td></tr>
+<tr class="separator:a0a67f3153d50bd7b6c460e8cd5bb2f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8475da3b0861fbd81ba3ecdfeabaf706"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a8475da3b0861fbd81ba3ecdfeabaf706">on_btnHoughApply_clicked</a> ()</td></tr>
+<tr class="separator:a8475da3b0861fbd81ba3ecdfeabaf706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566f53b41639cb820cfdd538de49e6c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a566f53b41639cb820cfdd538de49e6c5">on_rbnStandard_toggled</a> (bool checked)</td></tr>
+<tr class="separator:a566f53b41639cb820cfdd538de49e6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e6036500db86ce70ce805fadad4676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a43e6036500db86ce70ce805fadad4676">on_rbnDiag_toggled</a> (bool checked)</td></tr>
+<tr class="separator:a43e6036500db86ce70ce805fadad4676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe7e3decb27c0c8120a92c4946d270a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#adbe7e3decb27c0c8120a92c4946d270a">on_actAnimation_triggered</a> ()</td></tr>
+<tr class="separator:adbe7e3decb27c0c8120a92c4946d270a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a288b768c3c21a9171bdc56fe845ece8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a288b768c3c21a9171bdc56fe845ece8b">openFile</a> ()</td></tr>
+<tr class="separator:a288b768c3c21a9171bdc56fe845ece8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1918d23eda34853c378edf6db1d42e34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a1918d23eda34853c378edf6db1d42e34">loadFile</a> (const QString &amp;filename)</td></tr>
+<tr class="separator:a1918d23eda34853c378edf6db1d42e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d392c319d9debb466d46d0764ff2d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#ad1d392c319d9debb466d46d0764ff2d2">setImage</a> (const QImage &amp;newImage)</td></tr>
+<tr class="separator:ad1d392c319d9debb466d46d0764ff2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dcc04f752ebec40b339dc7817b50e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a58dcc04f752ebec40b339dc7817b50e4">initFileDialog</a> (QFileDialog &amp;dialog, QFileDialog::AcceptMode acceptMode)</td></tr>
+<tr class="separator:a58dcc04f752ebec40b339dc7817b50e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab435999eabc5f946c138d920a3196ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#ab435999eabc5f946c138d920a3196ac9">fitToWindow</a> ()</td></tr>
+<tr class="separator:ab435999eabc5f946c138d920a3196ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ffe303230bdcd17f4ddeafd222ccad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#aa2ffe303230bdcd17f4ddeafd222ccad">updateActions</a> ()</td></tr>
+<tr class="separator:aa2ffe303230bdcd17f4ddeafd222ccad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf5c71112c73af4937f1f79eb5723ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a2cf5c71112c73af4937f1f79eb5723ba">debug_setScene</a> ()</td></tr>
+<tr class="separator:a2cf5c71112c73af4937f1f79eb5723ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:aeb8f8bc8e591c09d7c2bd5d3e4a754dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d30/class_animation_window.html">AnimationWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#aeb8f8bc8e591c09d7c2bd5d3e4a754dc">w</a></td></tr>
+<tr class="separator:aeb8f8bc8e591c09d7c2bd5d3e4a754dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35466a70ed47252a0191168126a352a5"><td class="memItemLeft" align="right" valign="top">Ui::MainWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a></td></tr>
+<tr class="separator:a35466a70ed47252a0191168126a352a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a1d5b734bad3d2e9e2db622b9950b4"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#a66a1d5b734bad3d2e9e2db622b9950b4">image</a></td></tr>
+<tr class="separator:a66a1d5b734bad3d2e9e2db622b9950b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59b6f62b19d0cd5feef140f71655001"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html">CylinderSizeCalculator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#ab59b6f62b19d0cd5feef140f71655001">calc</a></td></tr>
+<tr class="separator:ab59b6f62b19d0cd5feef140f71655001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b6e7a3cfbc2bffb42aa8c74c37ef2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc6/class_main_window.html#aa2b6e7a3cfbc2bffb42aa8c74c37ef2b">state</a></td></tr>
+<tr class="separator:aa2b6e7a3cfbc2bffb42aa8c74c37ef2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p>См. определение в файле <a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="../../d9/d53/mainwindow_8h_source.html#l00022">22</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a8b244be8b7b7db1b08de2a2acb9409db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::~MainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a2cf5c71112c73af4937f1f79eb5723ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::debug_setScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00117">117</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ab435999eabc5f946c138d920a3196ac9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::fitToWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58dcc04f752ebec40b339dc7817b50e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::initFileDialog </td>
+          <td>(</td>
+          <td class="paramtype">QFileDialog &amp;&#160;</td>
+          <td class="paramname"><em>dialog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QFileDialog::AcceptMode&#160;</td>
+          <td class="paramname"><em>acceptMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00078">78</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1918d23eda34853c378edf6db1d42e34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::loadFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a class="anchor" id="adbe7e3decb27c0c8120a92c4946d270a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_actAnimation_triggered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00287">287</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a444b28f9a298e9e256411f3b428f360c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_actOpenImage_triggered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00036">36</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a05932234bd7e1ce4d84a854bd9b1116f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_actRestore_triggered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00223">223</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aa8d88789d920fe1a8094bf0124375e37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_btnCalibrate_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00122">122</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a0a67f3153d50bd7b6c460e8cd5bb2f2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_btnCannyApply_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00240">240</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad73256a4d549f57499a168d4ecb29731"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_btnEval_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00148">148</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a398b215bc771decd945f2f57755c1378"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_btnGaussApply_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00228">228</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a8475da3b0861fbd81ba3ecdfeabaf706"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_btnHoughApply_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00254">254</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a43e6036500db86ce70ce805fadad4676"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_rbnDiag_toggled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checked</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00278">278</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a566f53b41639cb820cfdd538de49e6c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_rbnStandard_toggled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checked</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00269">269</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a5f0302c9dadda691baf7db36058dd320"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_sldKernelSize_valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00178">178</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a03d260c44d11800d1b6f2653e35bc493"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_sldMaxThresh_valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00204">204</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a1cd7c221bd2f97f249b13522bcd05aa2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_sldMinThresh_valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00191">191</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a42f92b00e3336f2efec873fdcb5d612b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_sldSigma_valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00166">166</a></p>
+
+</div>
+</div>
+<a class="anchor" id="adbd6bf1258b5b2b8fd692542f62f0343"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_sldThresh_valueChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00217">217</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a288b768c3c21a9171bdc56fe845ece8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::openFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a8851a931482834eeec527490eedaf20e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00031">31</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad1d392c319d9debb466d46d0764ff2d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::setImage </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>newImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00071">71</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aa2ffe303230bdcd17f4ddeafd222ccad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::updateActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html#l00113">113</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="ab59b6f62b19d0cd5feef140f71655001"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html">CylinderSizeCalculator</a> MainWindow::calc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="../../d9/d53/mainwindow_8h_source.html#l00078">78</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a66a1d5b734bad3d2e9e2db622b9950b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage MainWindow::image</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="../../d9/d53/mainwindow_8h_source.html#l00076">76</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aa2b6e7a3cfbc2bffb42aa8c74c37ef2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainWindow::state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="../../d9/d53/mainwindow_8h_source.html#l00080">80</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a35466a70ed47252a0191168126a352a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::MainWindow* MainWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="../../d9/d53/mainwindow_8h_source.html#l00075">75</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aeb8f8bc8e591c09d7c2bd5d3e4a754dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d30/class_animation_window.html">AnimationWindow</a> MainWindow::w</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="../../d9/d53/mainwindow_8h_source.html#l00074">74</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Projects/labs/course_project_cg/src/<a class="el" href="../../d9/d53/mainwindow_8h_source.html">mainwindow.h</a></li>
+<li>Projects/labs/course_project_cg/src/<a class="el" href="../../d8/dd9/mainwindow_8cpp_source.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,19 @@
+window_sizes 1724 924 431 1287 767 104
+cleanlooks_style
+diagrams
+  classdiagram_ref 135426 // transform
+    1029 613 100 Legal-Landscape 24 0
+  active  classdiagram_ref 128642 // animation1
+    1029 613 100 A4 251 0
+  classdiagram_ref 135170 // scene
+    1029 613 100 B 72 0
+  classdiagram_ref 135554 // mesh
+    1029 613 100 A4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 128642 // animation1
+open
+  class_ref 133890 // Transformation
+  class_ref 138370 // SceneObjectFactory
+end
+end

@@ -1,0 +1,29 @@
+class ModelView
+!!!177922.cpp!!!	setModelScene(inout value : std::unique_ptr<Scene>) : void
+    scene = std::move(value);
+!!!178050.cpp!!!	resizeEvent(inout event : QResizeEvent) : void
+    QGraphicsView::resizeEvent(event);
+    this->fitInView(graphicsScene->itemsBoundingRect(), Qt::KeepAspectRatio);
+!!!178178.cpp!!!	mousePressEvent(inout event : QMouseEvent) : void
+    lastPos = event->pos();
+!!!178306.cpp!!!	mouseMoveEvent(inout event : QMouseEvent) : void
+    auto dx = event->pos().x() - lastPos.x();
+    auto camera = scene->getActiveCamera();
+
+    if (camera.expired())
+    {
+        return;
+    }
+
+    auto workCamera = camera.lock();
+    RotateYTransformation y(Math::ToRadians(dx) / 2, Vec3(0, 0, 0));
+    workCamera->transform(y);
+    lastPos = event->pos();
+!!!178434.cpp!!!	updateCanvas() : void
+    graphicsScene->clear();
+    graphicsScene->addPixmap(canvas);
+    this->fitInView(graphicsScene->itemsBoundingRect(), Qt::KeepAspectRatio);
+!!!178562.cpp!!!	scheduler() : void
+    //    scene->render(renderer);
+    //    canvas = QPixmap::fromImage(renderer->getRendered());
+    //    updateCanvas();

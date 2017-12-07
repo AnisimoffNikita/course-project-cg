@@ -1,0 +1,5 @@
+digraph ScaleTransformation
+{
+graph [ rankdir="RL" ]
+"dc/d60/class_scale_transformation" [ label="ScaleTransformation\n|+ScaleTransformation ( scale : const Vec3 &, setOrigin : const Vec3 & )\l/+resetOrigin (  ) : void \{virtual\}\l/+transform ( vertex : Vec3 & ) : void \{virtual\}\l|#_origin : Vec3\l" shape="record" ]
+}

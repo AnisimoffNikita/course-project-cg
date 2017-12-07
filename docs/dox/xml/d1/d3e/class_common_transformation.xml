@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/d3e/class_common_transformation" kind="class" language="C++" prot="public">
+    <compoundname>CommonTransformation</compoundname>
+    <basecompoundref refid="d1/d32/class_transformation" prot="public" virt="non-virtual">Transformation</basecompoundref>
+    <includes refid="d0/d18/commontransformation_8h" local="no">commontransformation.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d3e/class_common_transformation_1a6482f70fab18b0afa41bc9b2f1b56665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CommonTransformation::CommonTransformation</definition>
+        <argsstring>(const Mat4 &amp;matrix)</argsstring>
+        <name>CommonTransformation</name>
+        <param>
+          <type>const <ref refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kindref="member">Mat4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/commontransformation.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/commontransformation.cpp" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d3e/class_common_transformation_1a7daef5b3ad4576a691b474d888c3dfd5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CommonTransformation::transform</definition>
+        <argsstring>(Vec3 &amp;vertex) const override</argsstring>
+        <name>transform</name>
+        <reimplements refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee">transform</reimplements>
+        <param>
+          <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/commontransformation.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/commontransformation.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d3e/class_common_transformation_1a8f789aa59517fd1bf553e1846241eacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CommonTransformation::resetOrigin</definition>
+        <argsstring>() override</argsstring>
+        <name>resetOrigin</name>
+        <reimplements refid="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038">resetOrigin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/commontransformation.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/commontransformation.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="307">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+      </node>
+      <node id="306">
+        <label>CommonTransformation</label>
+        <link refid="d1/d3e/class_common_transformation"/>
+        <childnode refid="307" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="309">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+        <childnode refid="310" relation="usage">
+          <edgelabel>#_matrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="308">
+        <label>CommonTransformation</label>
+        <link refid="d1/d3e/class_common_transformation"/>
+        <childnode refid="309" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>Matrix&lt; 4, 4, float &gt;</label>
+        <link refid="d6/d3f/class_matrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/commontransformation.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/commontransformation.h" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" prot="protected" virt="non-virtual"><scope>CommonTransformation</scope><name>_matrix</name></member>
+      <member refid="d1/d3e/class_common_transformation_1a6482f70fab18b0afa41bc9b2f1b56665" prot="public" virt="non-virtual"><scope>CommonTransformation</scope><name>CommonTransformation</name></member>
+      <member refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" prot="public" virt="non-virtual"><scope>CommonTransformation</scope><name>getMatrix</name></member>
+      <member refid="d1/d3e/class_common_transformation_1a8f789aa59517fd1bf553e1846241eacc" prot="public" virt="virtual"><scope>CommonTransformation</scope><name>resetOrigin</name></member>
+      <member refid="d1/d3e/class_common_transformation_1a7daef5b3ad4576a691b474d888c3dfd5" prot="public" virt="virtual"><scope>CommonTransformation</scope><name>transform</name></member>
+      <member refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" prot="public" virt="non-virtual"><scope>CommonTransformation</scope><name>Transformation</name></member>
+      <member refid="d1/d32/class_transformation_1a4e436a0834b3295b8261c38748e8602d" prot="public" virt="virtual"><scope>CommonTransformation</scope><name>~Transformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

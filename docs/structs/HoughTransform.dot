@@ -1,0 +1,5 @@
+digraph HoughTransform
+{
+graph [ rankdir="RL" ]
+"d6/dd5/class_hough_transform" [ label="HoughTransform\n|+HoughTransform ( threshold : uint32 )\l/+process ( image : Image & ) : std::vector\< Line \> \{virtual\}\l+~HoughTransform (  ) \{virtual\}\l-brezenhem ( color : Image &, line : const Line & ) : void\l-drawLines ( color : Image & ) : void\l-fillAccumulator (  ) : void\l-getLines (  ) : void\l|-accumulator : std::vector\< Points \>\l-accumulatorHeight : uint32\l-accumulatorWidth : uint32\l-image : GrayscaleImage\l-lines : std::vector\< Line \>\l-threshold : uint32\l" shape="record" ]
+}

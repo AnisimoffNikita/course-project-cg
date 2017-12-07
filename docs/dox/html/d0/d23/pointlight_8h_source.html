@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/animation/pointlight.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_1acf6d7c8ce8cb5e459a37a0d36ab35d.html">animation</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pointlight.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d23/pointlight_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef POINTLIGHT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define POINTLIGHT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd3/light_8h.html">light.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../dd/d0a/class_point_light.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d0a/class_point_light.html">PointLight</a> : <span class="keyword">public</span> <a class="code" href="../../da/d7c/class_light.html">Light</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../dd/d0a/class_point_light.html#aea07f7df125d6c2ae1812904d5ddc922">PointLight</a>(<span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;<a class="code" href="../../dc/df8/class_scene_object.html#af190cdf9b9449f96f73d836848ce4ad3">position</a>, <span class="keywordtype">float</span> <a class="code" href="../../da/d7c/class_light.html#a1071eaa556f4bb2a9345fdfba7e6f220">intensity</a>);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d0a/class_point_light.html#a8965081e292ec53fddeae614165800d6">~PointLight</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d9/ddd/class_color.html">Color</a> <a class="code" href="../../dd/d0a/class_point_light.html#a1fc0406a41b9474e7568bf925287fabe">getIntensity</a>(<span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;n, <span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;p,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                               <span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;c, <span class="keyword">const</span> <a class="code" href="../../d9/ddd/class_color.html">Color</a> &amp;,</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                               <span class="keyword">const</span> <a class="code" href="../../d9/ddd/class_color.html">Color</a> &amp;kd, <span class="keyword">const</span> <a class="code" href="../../d9/ddd/class_color.html">Color</a> &amp;ks, <span class="keywordtype">float</span> ns) <span class="keyword">const override</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../dd/d0a/class_point_light.html#a002882a80254c1b99bd45f5a97f25e99">isPoint</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif // POINTLIGHT_H</span></div><div class="ttc" id="class_light_html"><div class="ttname"><a href="../../da/d7c/class_light.html">Light</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd3/light_8h_source.html#l00007">light.h:7</a></div></div>
+<div class="ttc" id="class_color_html"><div class="ttname"><a href="../../d9/ddd/class_color.html">Color</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/color_8h_source.html#l00006">color.h:6</a></div></div>
+<div class="ttc" id="light_8h_html"><div class="ttname"><a href="../../dd/dd3/light_8h.html">light.h</a></div></div>
+<div class="ttc" id="class_point_light_html_a1fc0406a41b9474e7568bf925287fabe"><div class="ttname"><a href="../../dd/d0a/class_point_light.html#a1fc0406a41b9474e7568bf925287fabe">PointLight::getIntensity</a></div><div class="ttdeci">virtual Color getIntensity(const Vec3 &amp;n, const Vec3 &amp;p, const Vec3 &amp;c, const Color &amp;, const Color &amp;kd, const Color &amp;ks, float ns) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d88/pointlight_8cpp_source.html#l00011">pointlight.cpp:11</a></div></div>
+<div class="ttc" id="class_point_light_html_a002882a80254c1b99bd45f5a97f25e99"><div class="ttname"><a href="../../dd/d0a/class_point_light.html#a002882a80254c1b99bd45f5a97f25e99">PointLight::isPoint</a></div><div class="ttdeci">virtual bool isPoint() const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d88/pointlight_8cpp_source.html#l00049">pointlight.cpp:49</a></div></div>
+<div class="ttc" id="class_vector3_html"><div class="ttname"><a href="../../d3/de7/class_vector3.html">Vector3&lt; float &gt;</a></div></div>
+<div class="ttc" id="class_point_light_html"><div class="ttname"><a href="../../dd/d0a/class_point_light.html">PointLight</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d23/pointlight_8h_source.html#l00006">pointlight.h:6</a></div></div>
+<div class="ttc" id="class_scene_object_html_af190cdf9b9449f96f73d836848ce4ad3"><div class="ttname"><a href="../../dc/df8/class_scene_object.html#af190cdf9b9449f96f73d836848ce4ad3">SceneObject::position</a></div><div class="ttdeci">Vec3 position</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d69/sceneobject_8h_source.html#l00031">sceneobject.h:31</a></div></div>
+<div class="ttc" id="class_light_html_a1071eaa556f4bb2a9345fdfba7e6f220"><div class="ttname"><a href="../../da/d7c/class_light.html#a1071eaa556f4bb2a9345fdfba7e6f220">Light::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd3/light_8h_source.html#l00026">light.h:26</a></div></div>
+<div class="ttc" id="class_point_light_html_aea07f7df125d6c2ae1812904d5ddc922"><div class="ttname"><a href="../../dd/d0a/class_point_light.html#aea07f7df125d6c2ae1812904d5ddc922">PointLight::PointLight</a></div><div class="ttdeci">PointLight(const Vec3 &amp;position, float intensity)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d88/pointlight_8cpp_source.html#l00005">pointlight.cpp:5</a></div></div>
+<div class="ttc" id="class_point_light_html_a8965081e292ec53fddeae614165800d6"><div class="ttname"><a href="../../dd/d0a/class_point_light.html#a8965081e292ec53fddeae614165800d6">PointLight::~PointLight</a></div><div class="ttdeci">virtual ~PointLight()=default</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

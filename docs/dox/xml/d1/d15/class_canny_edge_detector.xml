@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/d15/class_canny_edge_detector" kind="class" language="C++" prot="public">
+    <compoundname>CannyEdgeDetector</compoundname>
+    <basecompoundref refid="d9/d8a/class_edge_detector" prot="public" virt="non-virtual">EdgeDetector</basecompoundref>
+    <includes refid="de/d3b/cannyedgedetector_8h" local="no">cannyedgedetector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d15/class_canny_edge_detector_1ae88472e936f883044b00e8cd50f662c6" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 CannyEdgeDetector::minThresh</definition>
+        <argsstring></argsstring>
+        <name>minThresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d15/class_canny_edge_detector_1ab551b06077d0221f1caa6e5e4cce48d9" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 CannyEdgeDetector::maxThresh</definition>
+        <argsstring></argsstring>
+        <name>maxThresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="36" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d15/class_canny_edge_detector_1a271e3c9036a5cb2611bb1b7da4d7d146" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d52/class_grayscale_image" kindref="compound">GrayscaleImage</ref></type>
+        <definition>GrayscaleImage CannyEdgeDetector::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d15/class_canny_edge_detector_1a96275be60c2ffdc3798384f7a3588684" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d52/class_grayscale_image" kindref="compound">GrayscaleImage</ref></type>
+        <definition>GrayscaleImage CannyEdgeDetector::directions</definition>
+        <argsstring></argsstring>
+        <name>directions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="39" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1a6f7de6f12f8b52563d28e612a46f7a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CannyEdgeDetector::CannyEdgeDetector</definition>
+        <argsstring>(int32 minThresh=80, int32 maxThresh=100)</argsstring>
+        <name>CannyEdgeDetector</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>minThresh</declname>
+          <defval>80</defval>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>maxThresh</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1ad6f031b85ac2fc2f916ecaa04c536c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>CannyEdgeDetector::~CannyEdgeDetector</definition>
+        <argsstring>()</argsstring>
+        <name>~CannyEdgeDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1ae97e095e14e43d763a8fc2563f6e9a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::process</definition>
+        <argsstring>(Image &amp;image)</argsstring>
+        <name>process</name>
+        <reimplements refid="d9/d8a/class_edge_detector_1aefa2d90e960e7dc3171bccadbed4a13e">process</reimplements>
+        <param>
+          <type><ref refid="de/d73/class_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1a38218d65e7d450dc226e3bbb0c7043e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 CannyEdgeDetector::getGaussKernelSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getGaussKernelSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1adb6b71e26f03edea19d3fef041fd6cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::setGaussKernelSize</definition>
+        <argsstring>(int32 value)</argsstring>
+        <name>setGaussKernelSize</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1ac3e362832dcd3e18801bed15856e79b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CannyEdgeDetector::getGaussSigma</definition>
+        <argsstring>() const </argsstring>
+        <name>getGaussSigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1afc77ac77d033264009ea66670eeec9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::setGaussSigma</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setGaussSigma</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1aa0ae63194968f376d4ea6e6d7e13f285" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 CannyEdgeDetector::getMinThresh</definition>
+        <argsstring>() const </argsstring>
+        <name>getMinThresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1a825df00f677a9a949d0dcb87939a99b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::setMinThresh</definition>
+        <argsstring>(int32 value)</argsstring>
+        <name>setMinThresh</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1aa3cb693f65b9a07e5f245d7ecadf9c5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 CannyEdgeDetector::getMaxThresh</definition>
+        <argsstring>() const </argsstring>
+        <name>getMaxThresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1ae48e5be375a3a3d23c4dc81a158149c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::setMaxThresh</definition>
+        <argsstring>(int32 value)</argsstring>
+        <name>setMaxThresh</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="248" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1ad5843016a5e861eed74fa24f4abd688b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::gradients</definition>
+        <argsstring>()</argsstring>
+        <name>gradients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="28" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1a8622531b7410c002284f466df043af13" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::nonMaxSuppression</definition>
+        <argsstring>()</argsstring>
+        <name>nonMaxSuppression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="30" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="102" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1a0c6b710be023dec7cfd38e55d42066a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::floatThreshold</definition>
+        <argsstring>()</argsstring>
+        <name>floatThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="143" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1ab4bf8eb092943ab7042762ee48aeb0c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::hysteresis</definition>
+        <argsstring>()</argsstring>
+        <name>hysteresis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="32" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="169" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d15/class_canny_edge_detector_1a3f180b6eb26a8afa34a03c8cdd0781ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CannyEdgeDetector::hysteresisRecursive</definition>
+        <argsstring>(uint32 y, uint32 x)</argsstring>
+        <name>hysteresisRecursive</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="33" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp" bodystart="194" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="298">
+        <label>CannyEdgeDetector</label>
+        <link refid="d1/d15/class_canny_edge_detector"/>
+        <childnode refid="299" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>EdgeDetector</label>
+        <link refid="d9/d8a/class_edge_detector"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="300">
+        <label>CannyEdgeDetector</label>
+        <link refid="d1/d15/class_canny_edge_detector"/>
+        <childnode refid="301" relation="public-inheritance">
+        </childnode>
+        <childnode refid="302" relation="usage">
+          <edgelabel>-directions</edgelabel>
+          <edgelabel>-image</edgelabel>
+        </childnode>
+      </node>
+      <node id="302">
+        <label>GrayscaleImage</label>
+        <link refid="dd/d52/class_grayscale_image"/>
+        <childnode refid="303" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>EdgeDetector</label>
+        <link refid="d9/d8a/class_edge_detector"/>
+      </node>
+      <node id="303">
+        <label>ImageBase&lt; uint8 &gt;</label>
+        <link refid="db/d6b/class_image_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h" bodystart="8" bodyend="40"/>
+    <listofallmembers>
+      <member refid="d1/d15/class_canny_edge_detector_1a6f7de6f12f8b52563d28e612a46f7a0d" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>CannyEdgeDetector</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1a96275be60c2ffdc3798384f7a3588684" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>directions</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1a0c6b710be023dec7cfd38e55d42066a3" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>floatThreshold</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1a38218d65e7d450dc226e3bbb0c7043e9" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>getGaussKernelSize</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ac3e362832dcd3e18801bed15856e79b4" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>getGaussSigma</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1aa3cb693f65b9a07e5f245d7ecadf9c5c" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>getMaxThresh</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1aa0ae63194968f376d4ea6e6d7e13f285" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>getMinThresh</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ad5843016a5e861eed74fa24f4abd688b" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>gradients</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ab4bf8eb092943ab7042762ee48aeb0c1" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>hysteresis</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1a3f180b6eb26a8afa34a03c8cdd0781ca" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>hysteresisRecursive</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1a271e3c9036a5cb2611bb1b7da4d7d146" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>image</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ab551b06077d0221f1caa6e5e4cce48d9" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>maxThresh</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ae88472e936f883044b00e8cd50f662c6" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>minThresh</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1a8622531b7410c002284f466df043af13" prot="private" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>nonMaxSuppression</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ae97e095e14e43d763a8fc2563f6e9a87" prot="public" virt="virtual"><scope>CannyEdgeDetector</scope><name>process</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1adb6b71e26f03edea19d3fef041fd6cbd" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>setGaussKernelSize</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1afc77ac77d033264009ea66670eeec9d0" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>setGaussSigma</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ae48e5be375a3a3d23c4dc81a158149c7" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>setMaxThresh</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1a825df00f677a9a949d0dcb87939a99b5" prot="public" virt="non-virtual"><scope>CannyEdgeDetector</scope><name>setMinThresh</name></member>
+      <member refid="d1/d15/class_canny_edge_detector_1ad6f031b85ac2fc2f916ecaa04c536c01" prot="public" virt="virtual"><scope>CannyEdgeDetector</scope><name>~CannyEdgeDetector</name></member>
+      <member refid="d9/d8a/class_edge_detector_1a84d1668be5dd4052278a2cf86802746e" prot="public" virt="virtual"><scope>CannyEdgeDetector</scope><name>~EdgeDetector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

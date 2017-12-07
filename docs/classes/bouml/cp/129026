@@ -1,0 +1,360 @@
+format 215
+"linetransform" // src::algorithm::linetransform
+  revision 1
+  modified_by 2 "nikita"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/nikita/Projects/labs/course_project_cg/src/algorithm/linetransform/"
+  cpp_src_dir "/home/nikita/Projects/labs/course_project_cg/src/algorithm/linetransform/"
+  classview 128898 "linetransform"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 131970 "HoughTransform"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 131458 // <generalisation>
+	relation 131458 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 131458 // <generalisation>
+	  b parent class_ref 132098 // LineTransform
+      end
+
+      class 132226 "Points"
+	visibility package stereotype "template_typedef"
+	cpp_decl "${comment}${template}using ${name} = ${inherit};
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	classrelation 131586 // <generalisation>
+	  relation 131586 ---|>
+	    a public
+	      cpp default "${type}"
+	      classrelation_ref 131586 // <generalisation>
+	    b parent class_ref 132354 // typedef3
+	end
+      end
+
+      class 132354 "typedef3"
+	visibility package stereotype "typedef" explicit_base_type "std::vector<Vec2>"
+	cpp_decl "${comment}typedef ${type} ${name};
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+      end
+
+      operation 139266 "HoughTransform"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "threshold" type class_ref 129154 // uint32
+	    defaultvalue "50"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}:
+    threshold(threshold)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139394 "~HoughTransform"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139522 "process"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type "std::vector<Line>"
+	nparams 1
+	  param inout name "image" type class_ref 131330 // Image
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139650 "fillAccumulator"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139778 "getLines"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139906 "drawLines"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 1
+	  param inout name "color" type class_ref 131330 // Image
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140034 "brezenhem"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 2
+	  param inout name "color" type class_ref 131330 // Image
+	  param in name "line" type class_ref 132482 // Line
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 131714 // threshold (<directional composition>)
+	relation 131714 *-->
+	  a role_name "threshold" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 131714 // threshold (<directional composition>)
+	  b parent class_ref 129154 // uint32
+      end
+
+      classrelation 131842 // image (<directional composition>)
+	relation 131842 *-->
+	  a role_name "image" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 131842 // image (<directional composition>)
+	  b parent class_ref 131842 // GrayscaleImage
+      end
+
+      classrelation 131970 // accumulator (<directional composition>)
+	relation 131970 *-->
+	  stereotype "std::vector"
+	  a role_name "accumulator" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 131970 // accumulator (<directional composition>)
+	  b parent class_ref 132226 // Points
+      end
+
+      classrelation 132098 // lines (<directional composition>)
+	relation 132098 *-->
+	  stereotype "std::vector"
+	  a role_name "lines" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 132098 // lines (<directional composition>)
+	  b parent class_ref 132482 // Line
+      end
+
+      classrelation 132226 // accumulatorWidth (<directional composition>)
+	relation 132226 *-->
+	  a role_name "accumulatorWidth" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 132226 // accumulatorWidth (<directional composition>)
+	  b parent class_ref 129154 // uint32
+      end
+
+      classrelation 132354 // accumulatorHeight (<directional composition>)
+	relation 132354 *-->
+	  a role_name "accumulatorHeight" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 132354 // accumulatorHeight (<directional composition>)
+	  b parent class_ref 129154 // uint32
+      end
+    end
+
+    class 132098 "LineTransform"
+      abstract visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 140162 "~LineTransform"
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140290 "process"
+	abstract cpp_virtual public explicit_return_type "std::vector<Line>"
+	nparams 1
+	  param inout name "image" type class_ref 131330 // Image
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+    end
+
+    classdiagram 128386 "linetransform"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  deploymentview 128642 "linetransform"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 129282 "houghtransform"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 131970 // HoughTransform
+      end
+    end
+
+    artifact 129410 "linetransform"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 132098 // LineTransform
+      end
+    end
+  end
+end

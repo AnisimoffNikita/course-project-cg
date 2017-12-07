@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d01/ambientlight_8cpp" kind="file" language="C++">
+    <compoundname>ambientlight.cpp</compoundname>
+    <includes refid="dc/d87/ambientlight_8h" local="yes">ambientlight.h</includes>
+    <incdepgraph>
+      <node id="2183">
+        <label>functional</label>
+      </node>
+      <node id="2184">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2181" relation="include">
+        </childnode>
+      </node>
+      <node id="2177">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2180" relation="include">
+        </childnode>
+      </node>
+      <node id="2180">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2181" relation="include">
+        </childnode>
+        <childnode refid="2182" relation="include">
+        </childnode>
+      </node>
+      <node id="2181">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2182">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2181" relation="include">
+        </childnode>
+        <childnode refid="2183" relation="include">
+        </childnode>
+      </node>
+      <node id="2178">
+        <label>vector</label>
+      </node>
+      <node id="2176">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="2177" relation="include">
+        </childnode>
+        <childnode refid="2184" relation="include">
+        </childnode>
+      </node>
+      <node id="2174">
+        <label>Projects/labs/course_project_cg/src/animation/ambientlight.cpp</label>
+        <link refid="ambientlight.cpp"/>
+        <childnode refid="2175" relation="include">
+        </childnode>
+      </node>
+      <node id="2179">
+        <label>memory</label>
+      </node>
+      <node id="2175">
+        <label>ambientlight.h</label>
+        <link refid="dc/d87/ambientlight_8h"/>
+        <childnode refid="2176" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d87/ambientlight_8h" kindref="compound">ambientlight.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d4/dd4/class_ambient_light_1a81a7a88347dddaf2fdec12d6d2793f8b" refkind="member"><highlight class="normal"><ref refid="d4/dd4/class_ambient_light_1a81a7a88347dddaf2fdec12d6d2793f8b" kindref="member">AmbientLight::AmbientLight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>intensity)<sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d7c/class_light" kindref="compound">Light</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref>(0,<sp/>0,<sp/>0),<sp/>intensity)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d4/dd4/class_ambient_light_1aebbccf2534a3cbe399ccddc552d1a49d" refkind="member"><highlight class="normal"><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/><ref refid="d4/dd4/class_ambient_light_1aebbccf2534a3cbe399ccddc552d1a49d" kindref="member">AmbientLight::getIntensity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;ka,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="11"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ka<sp/>*<sp/><ref refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" kindref="member">intensity</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d4/dd4/class_ambient_light_1accccb9b3c5f0a9c38dceaef386c2964a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/dd4/class_ambient_light_1accccb9b3c5f0a9c38dceaef386c2964a" kindref="member">AmbientLight::isPoint</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="17"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/ambientlight.cpp"/>
+  </compounddef>
+</doxygen>

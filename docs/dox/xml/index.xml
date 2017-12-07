@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="d7/dca/class_action" kind="class"><name>Action</name>
+    <member refid="d7/dca/class_action_1af26e528eec8ae24e9dfc1ab9d6e809a7" kind="variable"><name>duration</name></member>
+    <member refid="d7/dca/class_action_1a11d29bdc060c2c492d170632507c0635" kind="variable"><name>time</name></member>
+    <member refid="d7/dca/class_action_1a1dfd6b0f501cce2b19d076b7d6b5aec8" kind="variable"><name>object</name></member>
+    <member refid="d7/dca/class_action_1aa456764076858773c74674ba04f25bd8" kind="function"><name>Action</name></member>
+    <member refid="d7/dca/class_action_1abfc040fdc62410622a0e3835a713740f" kind="function"><name>~Action</name></member>
+    <member refid="d7/dca/class_action_1aa6a73e716470c9b573b1afb4025b292d" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="d7/d7b/class_action_manager" kind="class"><name>ActionManager</name>
+    <member refid="d7/d7b/class_action_manager_1a1d425cc776debdc5f32d269ee7e532bb" kind="variable"><name>actions</name></member>
+    <member refid="d7/d7b/class_action_manager_1a7d0c405d568795fba0c51f411e77b821" kind="function"><name>ActionManager</name></member>
+    <member refid="d7/d7b/class_action_manager_1a2fb6c58c581225959d8dfddfd386c9b3" kind="function"><name>~ActionManager</name></member>
+    <member refid="d7/d7b/class_action_manager_1a52f8cabe9b3fd9676e0e082ba8b741c3" kind="function"><name>add</name></member>
+    <member refid="d7/d7b/class_action_manager_1a1f8ccc02cbf26b3659a08d2e7a91fdac" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="d4/dd4/class_ambient_light" kind="class"><name>AmbientLight</name>
+    <member refid="d4/dd4/class_ambient_light_1a81a7a88347dddaf2fdec12d6d2793f8b" kind="function"><name>AmbientLight</name></member>
+    <member refid="d4/dd4/class_ambient_light_1aebbccf2534a3cbe399ccddc552d1a49d" kind="function"><name>getIntensity</name></member>
+    <member refid="d4/dd4/class_ambient_light_1accccb9b3c5f0a9c38dceaef386c2964a" kind="function"><name>isPoint</name></member>
+  </compound>
+  <compound refid="d5/dbd/class_ambient_light_factory" kind="class"><name>AmbientLightFactory</name>
+    <member refid="d5/dbd/class_ambient_light_factory_1a221bc9ca33216eece4eb9878444dbb94" kind="variable"><name>light</name></member>
+    <member refid="d5/dbd/class_ambient_light_factory_1ad4d095b7032ce4d9488d8ce1d845d890" kind="function"><name>AmbientLightFactory</name></member>
+    <member refid="d5/dbd/class_ambient_light_factory_1a160c909523b2e01f63934bc70c25f159" kind="function"><name>~AmbientLightFactory</name></member>
+    <member refid="d5/dbd/class_ambient_light_factory_1a423c2ae34a9ce60c313470a4d1da0eac" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="d3/d30/class_animation_window" kind="class"><name>AnimationWindow</name>
+    <member refid="d3/d30/class_animation_window_1a1db782b4d22aec2376c6db4431c77a80" kind="variable"><name>ui</name></member>
+    <member refid="d3/d30/class_animation_window_1a3473a525d4aa738d2569731e26b95570" kind="function"><name>AnimationWindow</name></member>
+    <member refid="d3/d30/class_animation_window_1a2570db590e94da377cdcfa7088240ab2" kind="function"><name>~AnimationWindow</name></member>
+  </compound>
+  <compound refid="d3/d14/class_blur" kind="class"><name>Blur</name>
+    <member refid="d3/d14/class_blur_1a6b1d2a771f096d933b72f4dff5f07d2d" kind="function"><name>~Blur</name></member>
+    <member refid="d3/d14/class_blur_1a675fd2caa4a262e8140bdff64912bab4" kind="function"><name>process</name></member>
+  </compound>
+  <compound refid="da/dbb/class_camera" kind="class"><name>Camera</name>
+    <member refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" kind="variable"><name>lookAt</name></member>
+    <member refid="da/dbb/class_camera_1a4473532c8bbceefb503a5a7195044bfe" kind="variable"><name>up</name></member>
+    <member refid="da/dbb/class_camera_1a9e4efa2b0bb97699cda8904309873aa9" kind="variable"><name>viewMatrix</name></member>
+    <member refid="da/dbb/class_camera_1a33e328413d91278d44953ccb0adef3ce" kind="variable"><name>projectionMatrix</name></member>
+    <member refid="da/dbb/class_camera_1a2f7d35911a4dcf218a0ef901cc0906dc" kind="function"><name>Camera</name></member>
+    <member refid="da/dbb/class_camera_1a5c5155e999ea54c0385461de3ca0b95a" kind="function"><name>draw</name></member>
+    <member refid="da/dbb/class_camera_1a76d8a9057211e4935405040d8fa154f6" kind="function"><name>transform</name></member>
+    <member refid="da/dbb/class_camera_1a629ebafac4f86f952dad42a0087c344c" kind="function"><name>isCamera</name></member>
+    <member refid="da/dbb/class_camera_1a7209dc5149f4b8af2ed9e8b6297f6c41" kind="function"><name>isLight</name></member>
+    <member refid="da/dbb/class_camera_1a1ba2c3600a8a0f6e231ad9564bdb7359" kind="function"><name>setPosition</name></member>
+    <member refid="da/dbb/class_camera_1a318614134ed9e5182954daaceb17ca47" kind="function"><name>getLookAt</name></member>
+    <member refid="da/dbb/class_camera_1abd0ac1ec8cc6c5ca79798fc61aa4a1fa" kind="function"><name>setLookAt</name></member>
+    <member refid="da/dbb/class_camera_1a49e96c7af94f85b1297fb4184c99fa28" kind="function"><name>getEyeVector</name></member>
+    <member refid="da/dbb/class_camera_1a081e90588c62b55623f22d0477082924" kind="function"><name>getPVMatrix</name></member>
+    <member refid="da/dbb/class_camera_1a0baac3a162f4e3507a5c35c97a2c4236" kind="function"><name>getPMatrix</name></member>
+    <member refid="da/dbb/class_camera_1ac9ca414b8f610584b90486938131aa1e" kind="function"><name>getVMatrix</name></member>
+    <member refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" kind="function"><name>updateViewMatrix</name></member>
+  </compound>
+  <compound refid="d7/ddc/class_camera_factory" kind="class"><name>CameraFactory</name>
+    <member refid="d7/ddc/class_camera_factory_1ad1e2114f133f8489e790a4f42b377de3" kind="variable"><name>camera</name></member>
+    <member refid="d7/ddc/class_camera_factory_1a73bf5c839340ca2a94ce52a1c400d231" kind="function"><name>CameraFactory</name></member>
+    <member refid="d7/ddc/class_camera_factory_1ab63fa4fcfc787465aa1b2d5bf03e9a4d" kind="function"><name>~CameraFactory</name></member>
+    <member refid="d7/ddc/class_camera_factory_1a7a105ab24599d2d48fc03f40a28a1492" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="d1/d15/class_canny_edge_detector" kind="class"><name>CannyEdgeDetector</name>
+    <member refid="d1/d15/class_canny_edge_detector_1ae88472e936f883044b00e8cd50f662c6" kind="variable"><name>minThresh</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1ab551b06077d0221f1caa6e5e4cce48d9" kind="variable"><name>maxThresh</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a271e3c9036a5cb2611bb1b7da4d7d146" kind="variable"><name>image</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a96275be60c2ffdc3798384f7a3588684" kind="variable"><name>directions</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a6f7de6f12f8b52563d28e612a46f7a0d" kind="function"><name>CannyEdgeDetector</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1ad6f031b85ac2fc2f916ecaa04c536c01" kind="function"><name>~CannyEdgeDetector</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1ae97e095e14e43d763a8fc2563f6e9a87" kind="function"><name>process</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a38218d65e7d450dc226e3bbb0c7043e9" kind="function"><name>getGaussKernelSize</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1adb6b71e26f03edea19d3fef041fd6cbd" kind="function"><name>setGaussKernelSize</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1ac3e362832dcd3e18801bed15856e79b4" kind="function"><name>getGaussSigma</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1afc77ac77d033264009ea66670eeec9d0" kind="function"><name>setGaussSigma</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1aa0ae63194968f376d4ea6e6d7e13f285" kind="function"><name>getMinThresh</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a825df00f677a9a949d0dcb87939a99b5" kind="function"><name>setMinThresh</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1aa3cb693f65b9a07e5f245d7ecadf9c5c" kind="function"><name>getMaxThresh</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1ae48e5be375a3a3d23c4dc81a158149c7" kind="function"><name>setMaxThresh</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1ad5843016a5e861eed74fa24f4abd688b" kind="function"><name>gradients</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a8622531b7410c002284f466df043af13" kind="function"><name>nonMaxSuppression</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a0c6b710be023dec7cfd38e55d42066a3" kind="function"><name>floatThreshold</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1ab4bf8eb092943ab7042762ee48aeb0c1" kind="function"><name>hysteresis</name></member>
+    <member refid="d1/d15/class_canny_edge_detector_1a3f180b6eb26a8afa34a03c8cdd0781ca" kind="function"><name>hysteresisRecursive</name></member>
+  </compound>
+  <compound refid="d9/ddd/class_color" kind="class"><name>Color</name>
+    <member refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" kind="variable"><name>r</name></member>
+    <member refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" kind="variable"><name>g</name></member>
+    <member refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" kind="variable"><name>b</name></member>
+    <member refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" kind="function"><name>Color</name></member>
+    <member refid="d9/ddd/class_color_1a9e2a61644848b70eff8103fe538e1b30" kind="function"><name>Color</name></member>
+    <member refid="d9/ddd/class_color_1a7b075d27e3bbdde7cbe648dc3b804261" kind="function"><name>Color</name></member>
+    <member refid="d9/ddd/class_color_1a03aa495dec904466b0986feaa884bb8b" kind="function"><name>Color</name></member>
+    <member refid="d9/ddd/class_color_1aaf34b98c81cfe8ec2682cc38761a4d5c" kind="function"><name>getRed</name></member>
+    <member refid="d9/ddd/class_color_1a0db91f928764aa5fef82e92f55e34a2f" kind="function"><name>setRed</name></member>
+    <member refid="d9/ddd/class_color_1affb4bc39163b1c057e338125ed377494" kind="function"><name>getGreen</name></member>
+    <member refid="d9/ddd/class_color_1a35f06f6d8e5b2e57366ce2b3911b8d34" kind="function"><name>setGreen</name></member>
+    <member refid="d9/ddd/class_color_1ad3adb9f5cc739957f9dbf053d2641de2" kind="function"><name>getBlue</name></member>
+    <member refid="d9/ddd/class_color_1a957be1669566c9422dc48595d21547a1" kind="function"><name>setBlue</name></member>
+    <member refid="d9/ddd/class_color_1a0524f53d56d0e27be194f3c02644c6da" kind="function"><name>setGray</name></member>
+    <member refid="d9/ddd/class_color_1ab9427899af3ac7ef621c81a49633d1cb" kind="function"><name>operator*</name></member>
+    <member refid="d9/ddd/class_color_1a26fc45655619e26ab7606823e39d80eb" kind="function"><name>operator+=</name></member>
+  </compound>
+  <compound refid="d1/d3e/class_common_transformation" kind="class"><name>CommonTransformation</name>
+    <member refid="d1/d3e/class_common_transformation_1a6482f70fab18b0afa41bc9b2f1b56665" kind="function"><name>CommonTransformation</name></member>
+    <member refid="d1/d3e/class_common_transformation_1a7daef5b3ad4576a691b474d888c3dfd5" kind="function"><name>transform</name></member>
+    <member refid="d1/d3e/class_common_transformation_1a8f789aa59517fd1bf553e1846241eacc" kind="function"><name>resetOrigin</name></member>
+  </compound>
+  <compound refid="df/dec/class_composite" kind="class"><name>Composite</name>
+    <member refid="df/dec/class_composite_1ad28832d957183a7f08dec72e6040db0a" kind="function"><name>Composite</name></member>
+    <member refid="df/dec/class_composite_1a95e3d893a3e3ec8bbb2dc449278b64c4" kind="function"><name>draw</name></member>
+    <member refid="df/dec/class_composite_1afaae38bc8ef323cf05bf5710dafbeb39" kind="function"><name>transform</name></member>
+    <member refid="df/dec/class_composite_1a041e0a198c3c2fcc7b16f36a7511f7c3" kind="function"><name>isCamera</name></member>
+    <member refid="df/dec/class_composite_1a704e2e6583b8c553cbc5d1ddedea529d" kind="function"><name>isLight</name></member>
+  </compound>
+  <compound refid="d1/d47/class_cylinder_size" kind="class"><name>CylinderSize</name>
+    <member refid="d1/d47/class_cylinder_size_1a64a31d3ecef008bc999f02797aa73ebf" kind="variable"><name>height</name></member>
+    <member refid="d1/d47/class_cylinder_size_1ac12aa459995c8467cf96d978b05e7ee5" kind="variable"><name>radius</name></member>
+    <member refid="d1/d47/class_cylinder_size_1a9896a88f9cf7b392a72e79d913b7c241" kind="function"><name>CylinderSize</name></member>
+    <member refid="d1/d47/class_cylinder_size_1a69dbd81e8e5bda6a9efb6d0dd621dac4" kind="function"><name>getRadius</name></member>
+    <member refid="d1/d47/class_cylinder_size_1a7598cedd43027dfaea97ad273180ed63" kind="function"><name>setRadius</name></member>
+    <member refid="d1/d47/class_cylinder_size_1aac6bbbc1e12cb65d0ca299eda89f43f0" kind="function"><name>getHeight</name></member>
+    <member refid="d1/d47/class_cylinder_size_1afad35daeb0ed7d9c3b132a23de7412c0" kind="function"><name>setHeight</name></member>
+  </compound>
+  <compound refid="d2/dc7/class_cylinder_size_calculator" kind="class"><name>CylinderSizeCalculator</name>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1a7c30882e5312856d6757dc0022eb231f" kind="typedef"><name>Lines</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1a8a329c2526e67545603769c720d76692" kind="variable"><name>lines</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1a13af96a82c344f22f3d2749d4dafa15c" kind="variable"><name>size</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1a1d88b87623a24582f968bb06acd80b8c" kind="variable"><name>distance</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1ad0ffced643e054737c077c3f654a4608" kind="variable"><name>factor</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1ab4daaa75220e687cca3ce57e9db2fe57" kind="function"><name>CylinderSizeCalculator</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1af8ff9a4ab970aa5fcdca273112789978" kind="function"><name>~CylinderSizeCalculator</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1a979a607bd694c5819355793d231c5df2" kind="function"><name>evaluate</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1a411f74a0f0baa7c393fe53c36d957fd4" kind="function"><name>calibrate</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1ace80de293c2d4626b65e83fcb0fcde54" kind="function"><name>calibrate</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1ad908e8325d6a03c7b4d1b55cf87eade9" kind="function"><name>findEdges</name></member>
+    <member refid="d2/dc7/class_cylinder_size_calculator_1a4afc5d76534bc67a394a0f78d21a4811" kind="function"><name>calculateSize</name></member>
+  </compound>
+  <compound refid="df/d7d/class_cylinder_size_calculator_base" kind="class"><name>CylinderSizeCalculatorBase</name>
+    <member refid="df/d7d/class_cylinder_size_calculator_base_1acddec2ff7cfef169dc7df5ae3a2cc239" kind="function"><name>~CylinderSizeCalculatorBase</name></member>
+    <member refid="df/d7d/class_cylinder_size_calculator_base_1adb5dd331f24a1c78b00266cb051f79ea" kind="function"><name>evaluate</name></member>
+    <member refid="df/d7d/class_cylinder_size_calculator_base_1ad37d6cd0b2746034294ed91e6ae2488e" kind="function"><name>calibrate</name></member>
+    <member refid="df/d7d/class_cylinder_size_calculator_base_1a1713b5dbd13c49aeb2769cebaa24ebdb" kind="function"><name>calibrate</name></member>
+  </compound>
+  <compound refid="d9/d8a/class_edge_detector" kind="class"><name>EdgeDetector</name>
+    <member refid="d9/d8a/class_edge_detector_1a84d1668be5dd4052278a2cf86802746e" kind="function"><name>~EdgeDetector</name></member>
+    <member refid="d9/d8a/class_edge_detector_1aefa2d90e960e7dc3171bccadbed4a13e" kind="function"><name>process</name></member>
+  </compound>
+  <compound refid="d3/d0b/class_gaussian_blur" kind="class"><name>GaussianBlur</name>
+    <member refid="d3/d0b/class_gaussian_blur_1ab43cc1fff30574e2e04876fda4a55441" kind="variable"><name>sigma</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1ab71bceac5e6b8f3f2d2868f40ff0f80b" kind="variable"><name>kernelSize</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1a673756a20ccaacc46de77e6c355276d2" kind="function"><name>GaussianBlur</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1a881b005db6cc737bf1d6a8ab3d32c6b1" kind="function"><name>~GaussianBlur</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1a6af6684bdf5e86e5c9a79fe1f3a8c183" kind="function"><name>process</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1a409c05410353b2bb7abfa0ac0e7e2279" kind="function"><name>getSigma</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1aa4203a493fb56be7dec2af1e90667af1" kind="function"><name>setSigma</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1a47c6c015416e7f0770d2990beb85a48c" kind="function"><name>getKernelSize</name></member>
+    <member refid="d3/d0b/class_gaussian_blur_1ad8b1e0c74123f050daa79d20c3636064" kind="function"><name>setKernelSize</name></member>
+  </compound>
+  <compound refid="dd/d52/class_grayscale_image" kind="class"><name>GrayscaleImage</name>
+    <member refid="dd/d52/class_grayscale_image_1a683b929065aaead03ccce450a7b4ab30" kind="friend"><name>ImageConverter</name></member>
+    <member refid="dd/d52/class_grayscale_image_1a655e20b76703bb6a4e6ecd9ed4a5d9ed" kind="friend"><name>GrayscaleConverter</name></member>
+  </compound>
+  <compound refid="d9/db7/class_homogeneous_vertex_converter" kind="class"><name>HomogeneousVertexConverter</name>
+    <member refid="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" kind="function"><name>ToVertex</name></member>
+    <member refid="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" kind="function"><name>FromVertex</name></member>
+  </compound>
+  <compound refid="d6/dd5/class_hough_transform" kind="class"><name>HoughTransform</name>
+    <member refid="d6/dd5/class_hough_transform_1acca3cb75c9e1a69b38a0ef97a6b3e6ae" kind="typedef"><name>Points</name></member>
+    <member refid="d6/dd5/class_hough_transform_1aa9de5274a062b1725689fbbc6f0799f7" kind="variable"><name>threshold</name></member>
+    <member refid="d6/dd5/class_hough_transform_1a0fe725cb1f0e3078096c3d7e9dee85f7" kind="variable"><name>image</name></member>
+    <member refid="d6/dd5/class_hough_transform_1aaa271ada2195b2f0dba1a4611648fc2f" kind="variable"><name>accumulator</name></member>
+    <member refid="d6/dd5/class_hough_transform_1abb2e77efd0688f3ea508c5f51b480f22" kind="variable"><name>lines</name></member>
+    <member refid="d6/dd5/class_hough_transform_1a1c2b5fa2274a44848f8737f396397137" kind="variable"><name>accumulatorWidth</name></member>
+    <member refid="d6/dd5/class_hough_transform_1aee054a46260dc381123d158617c0e7dc" kind="variable"><name>accumulatorHeight</name></member>
+    <member refid="d6/dd5/class_hough_transform_1aa0129504dee413d479db4f400047e525" kind="function"><name>HoughTransform</name></member>
+    <member refid="d6/dd5/class_hough_transform_1a1bcf9b1138d21afd88db2a96873ff741" kind="function"><name>~HoughTransform</name></member>
+    <member refid="d6/dd5/class_hough_transform_1ab10d9e25f492521d6436701107b93fac" kind="function"><name>process</name></member>
+    <member refid="d6/dd5/class_hough_transform_1a9cbe414b810e761a1b776d268fd13fa5" kind="function"><name>fillAccumulator</name></member>
+    <member refid="d6/dd5/class_hough_transform_1a7292b312db2f7bbf90d52c755b9de28a" kind="function"><name>getLines</name></member>
+    <member refid="d6/dd5/class_hough_transform_1a0eee01dc4d43dc5545b832513aeb6ff4" kind="function"><name>drawLines</name></member>
+    <member refid="d6/dd5/class_hough_transform_1a2ea26ee041bf7dd1e50616d3411138cf" kind="function"><name>brezenhem</name></member>
+  </compound>
+  <compound refid="de/d73/class_image" kind="class"><name>Image</name>
+    <member refid="de/d73/class_image_1a683b929065aaead03ccce450a7b4ab30" kind="friend"><name>ImageConverter</name></member>
+    <member refid="de/d73/class_image_1a655e20b76703bb6a4e6ecd9ed4a5d9ed" kind="friend"><name>GrayscaleConverter</name></member>
+  </compound>
+  <compound refid="db/d6b/class_image_base" kind="class"><name>ImageBase</name>
+    <member refid="db/d6b/class_image_base_1aa619aa7a0b2cf0b5e45b0fbc102329c1" kind="variable"><name>data</name></member>
+    <member refid="db/d6b/class_image_base_1a01be4d15909d029bf4ef23f8ed6f6369" kind="variable"><name>width</name></member>
+    <member refid="db/d6b/class_image_base_1a2f5f532885f040113c198c424cc0ec7f" kind="variable"><name>height</name></member>
+    <member refid="db/d6b/class_image_base_1a683b929065aaead03ccce450a7b4ab30" kind="friend"><name>ImageConverter</name></member>
+    <member refid="db/d6b/class_image_base_1a655e20b76703bb6a4e6ecd9ed4a5d9ed" kind="friend"><name>GrayscaleConverter</name></member>
+    <member refid="db/d6b/class_image_base_1a0d0996266703e4c7bbedf96bc5c6313c" kind="function"><name>ImageBase</name></member>
+    <member refid="db/d6b/class_image_base_1a43a4b975fe25dfca53ce3f0155dd5976" kind="function"><name>ImageBase</name></member>
+    <member refid="db/d6b/class_image_base_1a655bd5b3b40499448b5b204de54de2b2" kind="function"><name>ImageBase</name></member>
+    <member refid="db/d6b/class_image_base_1a6094d4bcf9e48de9b2d66d4f9bbb9db2" kind="function"><name>ImageBase</name></member>
+    <member refid="db/d6b/class_image_base_1a84b330cd4e586ff7bed5beee148c3309" kind="function"><name>operator=</name></member>
+    <member refid="db/d6b/class_image_base_1a0def07d97e63c1448751a70e06c3e370" kind="function"><name>operator=</name></member>
+    <member refid="db/d6b/class_image_base_1acf5042cc5679250825272cb23a4594a1" kind="function"><name>at</name></member>
+    <member refid="db/d6b/class_image_base_1a2ed65bd7506be1b5bf8ff56a5b56d3a2" kind="function"><name>set</name></member>
+    <member refid="db/d6b/class_image_base_1a750ec0d8ff1dd10dfa26467c018cc68c" kind="function"><name>getHeight</name></member>
+    <member refid="db/d6b/class_image_base_1ac26af0c1bfd19f915f19d6b6f85c05c5" kind="function"><name>setHeight</name></member>
+    <member refid="db/d6b/class_image_base_1a576197cd4b79d141bb8bd832511fb26a" kind="function"><name>getWidth</name></member>
+    <member refid="db/d6b/class_image_base_1a1448e596fe52852668baa5caefe23f86" kind="function"><name>setWidth</name></member>
+  </compound>
+  <compound refid="db/db1/class_image_converter" kind="class"><name>ImageConverter</name>
+    <member refid="db/db1/class_image_converter_1a5c0f28c5f9da5f2c64077e8dc7462a03" kind="function"><name>QImageToImage</name></member>
+    <member refid="db/db1/class_image_converter_1a1d4ec9d93d250b7db9dc8fbf28c513cf" kind="function"><name>ImageToQImage</name></member>
+    <member refid="db/db1/class_image_converter_1a58b9e3e65e60d89986327f90bf305069" kind="function"><name>ImageToGrayscalImage</name></member>
+    <member refid="db/db1/class_image_converter_1a43b58fb52b437bad20fb9dbb57f01067" kind="function"><name>GrayscaleImageToImage</name></member>
+    <member refid="db/db1/class_image_converter_1a478c9d613c0591f3a0f0f0db6081b986" kind="function"><name>getGrayscale</name></member>
+  </compound>
+  <compound refid="df/de8/class_image_view" kind="class"><name>ImageView</name>
+    <member refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" kind="variable"><name>scene</name></member>
+    <member refid="df/de8/class_image_view_1ab9dfd4d7ac8503631906b1c35ad2d445" kind="function"><name>ImageView</name></member>
+    <member refid="df/de8/class_image_view_1a450337ded2ce7bb5444b6f249e68d13d" kind="function"><name>setImage</name></member>
+    <member refid="df/de8/class_image_view_1a0bcc3711738a814ce221127d0b7ecf5b" kind="function"><name>resizeEvent</name></member>
+    <member refid="df/de8/class_image_view_1a29a6e4346d585008cf72be75d06e7daa" kind="function"><name>mouseMoveEvent</name></member>
+  </compound>
+  <compound refid="da/d7c/class_light" kind="class"><name>Light</name>
+    <member refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" kind="variable"><name>intensity</name></member>
+    <member refid="da/d7c/class_light_1af49ca6a5dd2fb43fb878a5ad5f0409fe" kind="function"><name>Light</name></member>
+    <member refid="da/d7c/class_light_1adc14c27a60cc0b1d86fdc2f44858c705" kind="function"><name>Light</name></member>
+    <member refid="da/d7c/class_light_1ae3e3209d4b97d0bbbd614ded5e1213d9" kind="function"><name>~Light</name></member>
+    <member refid="da/d7c/class_light_1a5ae4db3ece8e61f53db06e8d3af4cdca" kind="function"><name>draw</name></member>
+    <member refid="da/d7c/class_light_1afb03030e1dd8056c73e813095701d796" kind="function"><name>transform</name></member>
+    <member refid="da/d7c/class_light_1a942b4fb690c63be248ae031723a6148c" kind="function"><name>isCamera</name></member>
+    <member refid="da/d7c/class_light_1af09370083a781d2733247bc2ee2f4c33" kind="function"><name>isLight</name></member>
+    <member refid="da/d7c/class_light_1a81a8d20cdba6692644cda765aced1473" kind="function"><name>getIntensity</name></member>
+    <member refid="da/d7c/class_light_1aa17c9733d1616d8631ed63640344b733" kind="function"><name>isPoint</name></member>
+  </compound>
+  <compound refid="db/d9d/class_light_z_buffer_renderer" kind="class"><name>LightZBufferRenderer</name>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1ad2acd2dd6506b9847a5ab10405b3a856" kind="variable"><name>zbuffer</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1adb59e3ede69cc0d7ebf1c203bd01a8fd" kind="variable"><name>buffer</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a0484f1880ff31e965399a77b8795903f" kind="variable"><name>camera</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1aa656a2afff0d9f793c6f93000fdc6f88" kind="variable"><name>lights</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1ab019713ebac78d9b63039a06900f1c76" kind="variable"><name>meshes</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a7971a31fc4b6ce58e115fa0a3580f46c" kind="variable"><name>currentMesh</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a809ed37dacd61c93f142be3ed674bc6f" kind="variable"><name>projected</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a6b48dd8c2782308bd742cd43f4185a53" kind="function"><name>LightZBufferRenderer</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1ae0d09c94784fc721d926c93a87907a0c" kind="function"><name>LightZBufferRenderer</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a8bc0f947c608e08a7094be1b02a27e13" kind="function"><name>~LightZBufferRenderer</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1acc0d204a38cc6105a7c258b49e5197a4" kind="function"><name>setCamera</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a73f101ddbdbb27eb19d6ee719da9bf9a" kind="function"><name>addLight</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a431be9dc219e4d2706c95ada2aca8af6" kind="function"><name>start</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a258b9e41e648b8f6393a39d2935d4d42" kind="function"><name>renderMesh</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a7e712d8d1b3a7be674efb620ba3ff0ef" kind="function"><name>getRendered</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1ad8084c0d5f0b4555900efbeaa81ec066" kind="function"><name>finish</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a48bc043f59326ca98f2821e96710cd41" kind="function"><name>fillTriangle</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a4fa5b867bf1e51f603713631d674cb06" kind="function"><name>getLeftRightBounds</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a73dff4db530851b997e468bf73eb98ab" kind="function"><name>triangleSort</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1ad22c18963eabaa75aea9e26472e24895" kind="function"><name>calculateIntensity</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a5ab92396f07a122fdd9296d2647d5ba9" kind="function"><name>putPixel</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a8f2e11c38172b8a5da977ab951937055" kind="function"><name>getBrezenhemX</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1ae37535afff9d52ee46c6be7321bca843" kind="function"><name>getNormals</name></member>
+    <member refid="db/d9d/class_light_z_buffer_renderer_1a7ba24d9b0fbd7e05b85bc857d147ff52" kind="function"><name>getZLine</name></member>
+  </compound>
+  <compound refid="dd/db4/class_line" kind="class"><name>Line</name>
+    <member refid="dd/db4/class_line_1a165376d8bc780a0b0ec7ffe8cd0d700a" kind="variable"><name>p1</name></member>
+    <member refid="dd/db4/class_line_1a21d0f4b2e7252e222e9d32921ea0162c" kind="variable"><name>p2</name></member>
+    <member refid="dd/db4/class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kind="function"><name>Line</name></member>
+    <member refid="dd/db4/class_line_1aef33536da5a03c1d95e4b113a9dc4ccf" kind="function"><name>Line</name></member>
+    <member refid="dd/db4/class_line_1aacff829b7404b0f81bd3001d9332b4a7" kind="function"><name>getP1</name></member>
+    <member refid="dd/db4/class_line_1a238346a97b448ae7d1156c24dff41224" kind="function"><name>setP1</name></member>
+    <member refid="dd/db4/class_line_1a51b59fb089fd7a02d3f9d1d9a9a132c7" kind="function"><name>getP2</name></member>
+    <member refid="dd/db4/class_line_1a9be1bb222db100fe5570558a0ab3bb42" kind="function"><name>setP2</name></member>
+    <member refid="dd/db4/class_line_1ae16899b229d209f5fa5d40049937e030" kind="function"><name>length</name></member>
+  </compound>
+  <compound refid="d3/d23/class_line_transform" kind="class"><name>LineTransform</name>
+    <member refid="d3/d23/class_line_transform_1a8398e1a394cfaf6c988c5f2cfc49447d" kind="function"><name>~LineTransform</name></member>
+    <member refid="d3/d23/class_line_transform_1a391ea9da214224bd3fe428a41c271761" kind="function"><name>process</name></member>
+  </compound>
+  <compound refid="de/d31/classobjl_1_1_loader" kind="class"><name>objl::Loader</name>
+    <member refid="de/d31/classobjl_1_1_loader_1aba5e73cc2c1d0a917415498723ea5702" kind="variable"><name>LoadedMeshes</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1ada15ad9ce70b5c457907be7988436ed5" kind="variable"><name>LoadedVertices</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1a29e18c5a09e82ac44106e282d1acf31a" kind="variable"><name>LoadedIndices</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1a302204a43746c96f7fe0c72516019f9f" kind="variable"><name>LoadedMaterials</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1a8ae8d4592c0f727daca80005ae48ea32" kind="function"><name>Loader</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1a40d6e6ce91ce09df26a4042605ef4c4c" kind="function"><name>~Loader</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1a4e3c689962e3ac018d5944f37a791518" kind="function"><name>LoadFile</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1ac7a2017fa9ec1550c00350f87c7ba93a" kind="function"><name>GenVerticesFromRawOBJ</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1a74d527984ea9cb75c7ea1624ee9621b0" kind="function"><name>VertexTriangluation</name></member>
+    <member refid="de/d31/classobjl_1_1_loader_1af2f27d60aeb3833d41aec46c6fce5348" kind="function"><name>LoadMaterials</name></member>
+  </compound>
+  <compound refid="d9/dc6/class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="d9/dc6/class_main_window_1aeb8f8bc8e591c09d7c2bd5d3e4a754dc" kind="variable"><name>w</name></member>
+    <member refid="d9/dc6/class_main_window_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="d9/dc6/class_main_window_1a66a1d5b734bad3d2e9e2db622b9950b4" kind="variable"><name>image</name></member>
+    <member refid="d9/dc6/class_main_window_1ab59b6f62b19d0cd5feef140f71655001" kind="variable"><name>calc</name></member>
+    <member refid="d9/dc6/class_main_window_1aa2b6e7a3cfbc2bffb42aa8c74c37ef2b" kind="variable"><name>state</name></member>
+    <member refid="d9/dc6/class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kind="function"><name>MainWindow</name></member>
+    <member refid="d9/dc6/class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="d9/dc6/class_main_window_1a8851a931482834eeec527490eedaf20e" kind="function"><name>resizeEvent</name></member>
+    <member refid="d9/dc6/class_main_window_1a444b28f9a298e9e256411f3b428f360c" kind="slot"><name>on_actOpenImage_triggered</name></member>
+    <member refid="d9/dc6/class_main_window_1aa8d88789d920fe1a8094bf0124375e37" kind="slot"><name>on_btnCalibrate_clicked</name></member>
+    <member refid="d9/dc6/class_main_window_1ad73256a4d549f57499a168d4ecb29731" kind="slot"><name>on_btnEval_clicked</name></member>
+    <member refid="d9/dc6/class_main_window_1a42f92b00e3336f2efec873fdcb5d612b" kind="slot"><name>on_sldSigma_valueChanged</name></member>
+    <member refid="d9/dc6/class_main_window_1a5f0302c9dadda691baf7db36058dd320" kind="slot"><name>on_sldKernelSize_valueChanged</name></member>
+    <member refid="d9/dc6/class_main_window_1a1cd7c221bd2f97f249b13522bcd05aa2" kind="slot"><name>on_sldMinThresh_valueChanged</name></member>
+    <member refid="d9/dc6/class_main_window_1a03d260c44d11800d1b6f2653e35bc493" kind="slot"><name>on_sldMaxThresh_valueChanged</name></member>
+    <member refid="d9/dc6/class_main_window_1adbd6bf1258b5b2b8fd692542f62f0343" kind="slot"><name>on_sldThresh_valueChanged</name></member>
+    <member refid="d9/dc6/class_main_window_1a05932234bd7e1ce4d84a854bd9b1116f" kind="slot"><name>on_actRestore_triggered</name></member>
+    <member refid="d9/dc6/class_main_window_1a398b215bc771decd945f2f57755c1378" kind="slot"><name>on_btnGaussApply_clicked</name></member>
+    <member refid="d9/dc6/class_main_window_1a0a67f3153d50bd7b6c460e8cd5bb2f2b" kind="slot"><name>on_btnCannyApply_clicked</name></member>
+    <member refid="d9/dc6/class_main_window_1a8475da3b0861fbd81ba3ecdfeabaf706" kind="slot"><name>on_btnHoughApply_clicked</name></member>
+    <member refid="d9/dc6/class_main_window_1a566f53b41639cb820cfdd538de49e6c5" kind="slot"><name>on_rbnStandard_toggled</name></member>
+    <member refid="d9/dc6/class_main_window_1a43e6036500db86ce70ce805fadad4676" kind="slot"><name>on_rbnDiag_toggled</name></member>
+    <member refid="d9/dc6/class_main_window_1adbe7e3decb27c0c8120a92c4946d270a" kind="slot"><name>on_actAnimation_triggered</name></member>
+    <member refid="d9/dc6/class_main_window_1a288b768c3c21a9171bdc56fe845ece8b" kind="function"><name>openFile</name></member>
+    <member refid="d9/dc6/class_main_window_1a1918d23eda34853c378edf6db1d42e34" kind="function"><name>loadFile</name></member>
+    <member refid="d9/dc6/class_main_window_1ad1d392c319d9debb466d46d0764ff2d2" kind="function"><name>setImage</name></member>
+    <member refid="d9/dc6/class_main_window_1a58dcc04f752ebec40b339dc7817b50e4" kind="function"><name>initFileDialog</name></member>
+    <member refid="d9/dc6/class_main_window_1ab435999eabc5f946c138d920a3196ac9" kind="function"><name>fitToWindow</name></member>
+    <member refid="d9/dc6/class_main_window_1aa2ffe303230bdcd17f4ddeafd222ccad" kind="function"><name>updateActions</name></member>
+    <member refid="d9/dc6/class_main_window_1a2cf5c71112c73af4937f1f79eb5723ba" kind="function"><name>debug_setScene</name></member>
+  </compound>
+  <compound refid="dc/dee/class_material" kind="class"><name>Material</name>
+    <member refid="dc/dee/class_material_1a93cc771f8b2e9d1f273465e25504ea7b" kind="variable"><name>ka</name></member>
+    <member refid="dc/dee/class_material_1a42e6838a32f4a6b54a62a01afc4a1cdb" kind="variable"><name>kd</name></member>
+    <member refid="dc/dee/class_material_1a986cb019dc23c99fc139b16793c1ddb5" kind="variable"><name>ks</name></member>
+    <member refid="dc/dee/class_material_1a49335919c5596c4523f71be7f01bdf9d" kind="variable"><name>ns</name></member>
+    <member refid="dc/dee/class_material_1a9132d1f6cc468abe6c40659962e06236" kind="variable"><name>ni</name></member>
+    <member refid="dc/dee/class_material_1a72cb289b8dccb7a08e0b0f7880a92803" kind="variable"><name>d</name></member>
+    <member refid="dc/dee/class_material_1a6059ec72855855b11672ff25962e9336" kind="function"><name>Material</name></member>
+    <member refid="dc/dee/class_material_1ac71c087b6f2dcbf130e19e38067a7a5b" kind="function"><name>Material</name></member>
+    <member refid="dc/dee/class_material_1a58208d6d0a2debccac4739af6ba61b7b" kind="function"><name>getKa</name></member>
+    <member refid="dc/dee/class_material_1af4bc3531d699fb7b7a06253d674d0ede" kind="function"><name>setKa</name></member>
+    <member refid="dc/dee/class_material_1ad89eb0c9b9d729e918a91d7a621afe10" kind="function"><name>getKd</name></member>
+    <member refid="dc/dee/class_material_1ab31df4f79c03f8863c96dd748b9d2069" kind="function"><name>setKd</name></member>
+    <member refid="dc/dee/class_material_1ad03edbeaa265fc4aa796904b7f314e86" kind="function"><name>getKs</name></member>
+    <member refid="dc/dee/class_material_1a0333444c1bfe41998957f56319481f23" kind="function"><name>setKs</name></member>
+    <member refid="dc/dee/class_material_1a8843ba8fa8d3e8fb3e04d6a7553408ea" kind="function"><name>getNs</name></member>
+    <member refid="dc/dee/class_material_1a46bf0fa68e2bf6da38f360eaecc8bd13" kind="function"><name>setNs</name></member>
+    <member refid="dc/dee/class_material_1afe38fa1be1b3f608ff08414ccc99d539" kind="function"><name>getNi</name></member>
+    <member refid="dc/dee/class_material_1a1d41d55723411069d7774c3ae2b33bc8" kind="function"><name>setNi</name></member>
+    <member refid="dc/dee/class_material_1ae8fef701b92d7ca4ddb3761dd2133fec" kind="function"><name>getD</name></member>
+    <member refid="dc/dee/class_material_1a7729d3679891dd4394c1468c0a338a01" kind="function"><name>setD</name></member>
+  </compound>
+  <compound refid="d2/dbb/structobjl_1_1_material" kind="struct"><name>objl::Material</name>
+    <member refid="d2/dbb/structobjl_1_1_material_1ae018ffdcbb8dfa9ed36605b048bbfac1" kind="variable"><name>name</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a13c3660fd7fc3924f7811c46ca3f1272" kind="variable"><name>Ka</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a16b7219d2d20e5f7a58e14f68b663a98" kind="variable"><name>Kd</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1ac1298eff05de5020120a143f21058b83" kind="variable"><name>Ks</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1ad02f64d02fa971cebc3195d90a73748c" kind="variable"><name>Ns</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a9b42dd253954cf9547593831fbbed8bc" kind="variable"><name>Ni</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a40db214eba05836b431e544dd7b920f4" kind="variable"><name>d</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1aa2139e47cf27614acce8c10cc829497a" kind="variable"><name>illum</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a993d3394b3aa0116ac2031f870eda49b" kind="variable"><name>map_Ka</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a84fe6a74e5a48a18a875431519a5c2e9" kind="variable"><name>map_Kd</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a6ec9644f4152d4e60c471cb2df021345" kind="variable"><name>map_Ks</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a02919bada38d25c16ea2e2c4b2f514ec" kind="variable"><name>map_Ns</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a1e3769e9fc62f4ba49e4888428931c9f" kind="variable"><name>map_d</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1af4e42567a2077c6e165f95403fc06c20" kind="variable"><name>map_bump</name></member>
+    <member refid="d2/dbb/structobjl_1_1_material_1a843f0e3ee3a65d2918282969363b76d4" kind="function"><name>Material</name></member>
+  </compound>
+  <compound refid="d4/d34/class_math" kind="class"><name>Math</name>
+    <member refid="d4/d34/class_math_1ab9fef5c7ba3bd81d13008e8a36abc655" kind="typedef"><name>Func</name></member>
+    <member refid="d4/d34/class_math_1acfc7ead6b66a7dce80f1a510df01845c" kind="variable"><name>PI</name></member>
+    <member refid="d4/d34/class_math_1aaa5990513ee0c895f9afd7db51842c5a" kind="function"><name>Gauss2</name></member>
+    <member refid="d4/d34/class_math_1a827e8a0ff76d6f12323a35fbf2e39ea3" kind="function"><name>Clamp</name></member>
+    <member refid="d4/d34/class_math_1a937c65c4813b70c8bb6b0d5b45cecc94" kind="function"><name>ToRadians</name></member>
+    <member refid="d4/d34/class_math_1af1ca146882158b0a43cc096b743b8801" kind="function"><name>ToDegrees</name></member>
+    <member refid="d4/d34/class_math_1ab92f58e6e1f930ada33edf8cdd8aa04b" kind="function"><name>sgn</name></member>
+    <member refid="d4/d34/class_math_1aeb7a861041c7e48f6c0e40a4465d9992" kind="function"><name>Cos</name></member>
+    <member refid="d4/d34/class_math_1aaddefccaf14ac8f30d74d1a833a368dc" kind="function"><name>Sin</name></member>
+    <member refid="d4/d34/class_math_1a60c35e7a78112bb4a5b30b5f409801e3" kind="function"><name>Tan</name></member>
+    <member refid="d4/d34/class_math_1acfac5c3b87f409148813a851b1d8c53e" kind="function"><name>Sqrt</name></member>
+    <member refid="d4/d34/class_math_1acd6df1f0a16f26405026b7840eaf0237" kind="function"><name>Atan</name></member>
+    <member refid="d4/d34/class_math_1aad545cc846717f163d9bd06db85482b6" kind="function"><name>Abs</name></member>
+    <member refid="d4/d34/class_math_1a6b6041a5df8989cd65d28aedd5132236" kind="function"><name>Pow</name></member>
+    <member refid="d4/d34/class_math_1aa6244486e13c3f04c1520cda7e9441b9" kind="function"><name>Ctg</name></member>
+    <member refid="d4/d34/class_math_1aef8d43dd2175c684297b6226192a54f4" kind="function"><name>Bisection</name></member>
+  </compound>
+  <compound refid="d6/d3f/class_matrix" kind="class"><name>Matrix</name>
+    <member refid="d6/d3f/class_matrix_1a9cd751074f76f6d7019834492e30bb5c" kind="variable"><name>m</name></member>
+    <member refid="d6/d3f/class_matrix_1a057b8f4cfbddb0331c0dfb8d6d31310e" kind="function"><name>Matrix</name></member>
+    <member refid="d6/d3f/class_matrix_1a6dd2e82ed0b8ea67ea0519882175bd67" kind="function"><name>Matrix</name></member>
+    <member refid="d6/d3f/class_matrix_1aa093a7de8b27d19e6eb66b09f9da7b87" kind="function"><name>operator()</name></member>
+    <member refid="d6/d3f/class_matrix_1acf0955eccefd5abe0f0a8ea8f5f1582e" kind="function"><name>operator()</name></member>
+    <member refid="d6/d3f/class_matrix_1aa21a8169dde52a31ee25fa40c7b3cbaf" kind="function"><name>isIdentity</name></member>
+    <member refid="d6/d3f/class_matrix_1aa571c8458a34695e88e076b3307cbdeb" kind="function"><name>setToIdentity</name></member>
+    <member refid="d6/d3f/class_matrix_1a77bac0ccf5799c0249fb77f78246bf75" kind="function"><name>fill</name></member>
+    <member refid="d6/d3f/class_matrix_1aa07c344f3ac92f1b1ee9ebc1b42d4973" kind="function"><name>transposed</name></member>
+    <member refid="d6/d3f/class_matrix_1a29caf32b1bacaebe05277f056bbe0229" kind="function"><name>operator+=</name></member>
+    <member refid="d6/d3f/class_matrix_1ae6a824c0ec0f0f067b167f8b45fa1910" kind="function"><name>operator-=</name></member>
+    <member refid="d6/d3f/class_matrix_1a660133e52cdffddc553e2f05c693cd96" kind="function"><name>operator*=</name></member>
+    <member refid="d6/d3f/class_matrix_1a9b870fa2d8a56715f6a9398854cfdb16" kind="function"><name>operator/=</name></member>
+    <member refid="d6/d3f/class_matrix_1a9c9f9ffe07d56bb9a14f7bb89113af9e" kind="function"><name>operator==</name></member>
+    <member refid="d6/d3f/class_matrix_1aea308a4ad5bea479d5607e79792eee96" kind="function"><name>operator!=</name></member>
+    <member refid="d6/d3f/class_matrix_1a5e6ffc416f13f4f14dd8087da2234d40" kind="function"><name>data</name></member>
+    <member refid="d6/d3f/class_matrix_1a8277fe32f0783374b7fea39e6d80ca7c" kind="function"><name>data</name></member>
+    <member refid="d6/d3f/class_matrix_1ade356cdf3e34c2ed51bd20166cd91d58" kind="friend"><name>operator+</name></member>
+    <member refid="d6/d3f/class_matrix_1a012fd845172a7a29f1ace01dd0191962" kind="friend"><name>operator-</name></member>
+    <member refid="d6/d3f/class_matrix_1aac9476d517d9f0c8224e1d17ce52e04d" kind="friend"><name>operator*</name></member>
+    <member refid="d6/d3f/class_matrix_1afacec860ab5322f435b2d1cd4331f477" kind="friend"><name>operator-</name></member>
+    <member refid="d6/d3f/class_matrix_1a47bf9d770ba7d5830a285da8ce5740e9" kind="friend"><name>operator*</name></member>
+    <member refid="d6/d3f/class_matrix_1ab6864ff72e7ba6c207b8aaf18ac6a0f2" kind="friend"><name>operator*</name></member>
+    <member refid="d6/d3f/class_matrix_1a4876d0443c8e8defdc490c265f13c2a6" kind="friend"><name>operator/</name></member>
+  </compound>
+  <compound refid="db/dea/structobjl_1_1_mesh" kind="struct"><name>objl::Mesh</name>
+    <member refid="db/dea/structobjl_1_1_mesh_1adb064651366cfec31fc0886a0ac18b9b" kind="variable"><name>MeshName</name></member>
+    <member refid="db/dea/structobjl_1_1_mesh_1a9c7fcc401666c37b4faa458cd2aac704" kind="variable"><name>Vertices</name></member>
+    <member refid="db/dea/structobjl_1_1_mesh_1a09f7fef5cc1cf491fdfcdbce2ae9c8c5" kind="variable"><name>Indices</name></member>
+    <member refid="db/dea/structobjl_1_1_mesh_1a1c5374b9f1640eada79faa9b98cbdb50" kind="variable"><name>MeshMaterial</name></member>
+    <member refid="db/dea/structobjl_1_1_mesh_1ae0e6cf65fb4d0c413db9bb400e086699" kind="function"><name>Mesh</name></member>
+    <member refid="db/dea/structobjl_1_1_mesh_1a760b29568d67acac05e26e73381fe68d" kind="function"><name>Mesh</name></member>
+  </compound>
+  <compound refid="dc/dbe/class_mesh" kind="class"><name>Mesh</name>
+    <member refid="dc/dbe/class_mesh_1abe5c05c224e47ba1e8b6393759798a9b" kind="variable"><name>vertices</name></member>
+    <member refid="dc/dbe/class_mesh_1a2b30e4823d6d0d17c115018065bd1e91" kind="variable"><name>triangles</name></member>
+    <member refid="dc/dbe/class_mesh_1a3368c3bc60dd176e522df1542b764847" kind="variable"><name>material</name></member>
+    <member refid="dc/dbe/class_mesh_1ae6b6c56f0ebfa2f6b2b10d25a835c865" kind="function"><name>Mesh</name></member>
+    <member refid="dc/dbe/class_mesh_1a1844b662689440a6c5ad761c53be4f94" kind="function"><name>getVertices</name></member>
+    <member refid="dc/dbe/class_mesh_1a5c68963c5e297f561932ae51d1f0e8f5" kind="function"><name>setVertices</name></member>
+    <member refid="dc/dbe/class_mesh_1a7674d50589acad6a336f264d007e71c9" kind="function"><name>getTriangles</name></member>
+    <member refid="dc/dbe/class_mesh_1a26adb872946b00793f84f8cecd48cc56" kind="function"><name>setTriangles</name></member>
+    <member refid="dc/dbe/class_mesh_1add1ff13540509dc02be32fa791c22352" kind="function"><name>getMaterial</name></member>
+    <member refid="dc/dbe/class_mesh_1a16e6aa53eab442ce66381e67259be050" kind="function"><name>setMaterial</name></member>
+    <member refid="dc/dbe/class_mesh_1a6261935dee415d96a87e3db58cdbe6a2" kind="function"><name>transform</name></member>
+  </compound>
+  <compound refid="d0/de3/class_model" kind="class"><name>Model</name>
+    <member refid="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" kind="variable"><name>mesh</name></member>
+    <member refid="d0/de3/class_model_1ab5bdabea36b1d1bee80151e2da913373" kind="function"><name>Model</name></member>
+    <member refid="d0/de3/class_model_1a8dcd35d49dd569537d6f62ee61ade330" kind="function"><name>Model</name></member>
+    <member refid="d0/de3/class_model_1a2efbe4ec768191fa70ad86f260ec2fd6" kind="function"><name>~Model</name></member>
+    <member refid="d0/de3/class_model_1a09879231a804bbc347d6549a5b1ad495" kind="function"><name>draw</name></member>
+    <member refid="d0/de3/class_model_1a0bb5ca842ec53af3dde6918a04eecbca" kind="function"><name>transform</name></member>
+    <member refid="d0/de3/class_model_1a48eee23fb4c5246630fd97e21589f620" kind="function"><name>isCamera</name></member>
+    <member refid="d0/de3/class_model_1a362e8e14db5f0d90cb44759bdad96e13" kind="function"><name>isLight</name></member>
+    <member refid="d0/de3/class_model_1a38ca1ac30254bbf656b44c4dbac46474" kind="function"><name>getMesh</name></member>
+    <member refid="d0/de3/class_model_1a9b279076425cc5296ee501cb28e343ea" kind="function"><name>setMesh</name></member>
+  </compound>
+  <compound refid="db/da7/class_model_factory" kind="class"><name>ModelFactory</name>
+    <member refid="db/da7/class_model_factory_1a145458dc259da4dd2236acb519e998af" kind="variable"><name>model</name></member>
+    <member refid="db/da7/class_model_factory_1acd9b3a20367746edc4a39ae6fc9d4ea8" kind="function"><name>ModelFactory</name></member>
+    <member refid="db/da7/class_model_factory_1afdb5cf1902348dfd9e1cc88626f3ec0e" kind="function"><name>~ModelFactory</name></member>
+    <member refid="db/da7/class_model_factory_1a4dd20bd3b89ef69c366c3e1fe00ebb69" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="d4/d22/class_model_matrix" kind="class"><name>ModelMatrix</name>
+    <member refid="d4/d22/class_model_matrix_1ac7cce9713a0c3f32b297de47efe7a088" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="da/d17/class_model_view" kind="class"><name>ModelView</name>
+    <member refid="da/d17/class_model_view_1ae6374117c710be500a33e57e3561ac8f" kind="variable"><name>graphicsScene</name></member>
+    <member refid="da/d17/class_model_view_1aa428aaa80cb804090b372c39e1c87044" kind="variable"><name>canvas</name></member>
+    <member refid="da/d17/class_model_view_1a02ee08144e27ff6f19d1e26a52cebb87" kind="variable"><name>lastPos</name></member>
+    <member refid="da/d17/class_model_view_1a473071f2a4321959097270980678c863" kind="variable"><name>timer</name></member>
+    <member refid="da/d17/class_model_view_1a41e5d7792517ae9880d9c129026b0c84" kind="variable"><name>scene</name></member>
+    <member refid="da/d17/class_model_view_1a80052c0ef06cceacb0a1fdf3bc045847" kind="variable"><name>renderer</name></member>
+    <member refid="da/d17/class_model_view_1a77f7dded12c094ecfe844809aba9274e" kind="function"><name>ModelView</name></member>
+    <member refid="da/d17/class_model_view_1ab2d171869dfb01218eb5c1956bedb1a2" kind="function"><name>setModelScene</name></member>
+    <member refid="da/d17/class_model_view_1aadae7104e72e31784ad241b648bd5e73" kind="function"><name>resizeEvent</name></member>
+    <member refid="da/d17/class_model_view_1acd6c5305eb70b148fac15c7d1eef37df" kind="function"><name>mousePressEvent</name></member>
+    <member refid="da/d17/class_model_view_1aaa864c638d5ce42eebf8c0af6e884ec6" kind="function"><name>mouseMoveEvent</name></member>
+    <member refid="da/d17/class_model_view_1acf6729149dc1397b67b90b7d19b4319d" kind="function"><name>updateCanvas</name></member>
+    <member refid="da/d17/class_model_view_1a14b2162dc99c4d801b857365d1c11e5b" kind="function"><name>scheduler</name></member>
+  </compound>
+  <compound refid="d5/d8f/class_model_view2" kind="class"><name>ModelView2</name>
+    <member refid="d5/d8f/class_model_view2_1acb280540a8957a2f7a50ebf689608831" kind="variable"><name>scene</name></member>
+    <member refid="d5/d8f/class_model_view2_1ab6f007ccf983cf121c11717f90bfe7a8" kind="variable"><name>renderer</name></member>
+    <member refid="d5/d8f/class_model_view2_1ad4ef1f165c0f1341dd73b7a8c0be357e" kind="variable"><name>actionManager</name></member>
+    <member refid="d5/d8f/class_model_view2_1ab6f5ba3f864092610433f644bdd09540" kind="variable"><name>timer</name></member>
+    <member refid="d5/d8f/class_model_view2_1a2ab7665cf858a630e0c08accf1cad25b" kind="variable"><name>lastPos</name></member>
+    <member refid="d5/d8f/class_model_view2_1acfbdec1f9d732929c211bd7f7fe60132" kind="variable"><name>image</name></member>
+    <member refid="d5/d8f/class_model_view2_1a74993d9390f59b659289765f886e3bfd" kind="variable"><name>time</name></member>
+    <member refid="d5/d8f/class_model_view2_1a49c5f725d0d7540faa5288004c50a867" kind="function"><name>ModelView2</name></member>
+    <member refid="d5/d8f/class_model_view2_1ae59cb67124c0409a250aa17e69aec1bb" kind="function"><name>mousePressEvent</name></member>
+    <member refid="d5/d8f/class_model_view2_1a60d419fe7b9564a83724bbb51ebdb014" kind="function"><name>mouseMoveEvent</name></member>
+    <member refid="d5/d8f/class_model_view2_1a118a304dcb2118dd6d78ff5e3f3cb2f1" kind="function"><name>wheelEvent</name></member>
+    <member refid="d5/d8f/class_model_view2_1a61d9ca903be6a825c0c72b14fc1f5fb0" kind="function"><name>paintEvent</name></member>
+    <member refid="d5/d8f/class_model_view2_1acff1b190997243a07c654af83e7dd4e0" kind="function"><name>updateCanvas</name></member>
+    <member refid="d5/d8f/class_model_view2_1a5ac909e07ab7908e7c9b6e63d92666af" kind="function"><name>scheduler</name></member>
+    <member refid="d5/d8f/class_model_view2_1a27eb4e398dc6506c3896175335d15850" kind="function"><name>sceneSetup</name></member>
+  </compound>
+  <compound refid="da/d5b/class_move_transformation" kind="class"><name>MoveTransformation</name>
+    <member refid="da/d5b/class_move_transformation_1ae2997ff6e97846840ff28ae0b60fe15d" kind="function"><name>MoveTransformation</name></member>
+    <member refid="da/d5b/class_move_transformation_1aecef1d1fab45fef381366c7dd54ced4d" kind="function"><name>transform</name></member>
+    <member refid="da/d5b/class_move_transformation_1a7596e30e79d61ffaaf266ff39e540439" kind="function"><name>resetOrigin</name></member>
+  </compound>
+  <compound refid="d5/dd8/class_obj_loader" kind="class"><name>ObjLoader</name>
+    <member refid="d5/dd8/class_obj_loader_1a19f5e9808f15ad018f6ca66fa047b15c" kind="variable"><name>filename</name></member>
+    <member refid="d5/dd8/class_obj_loader_1a3371efa56723975460455dd7ff14882b" kind="function"><name>ObjLoader</name></member>
+    <member refid="d5/dd8/class_obj_loader_1a8d4e47e1e5c9cf9b96401037f818ae95" kind="function"><name>load</name></member>
+    <member refid="d5/dd8/class_obj_loader_1abe0da9b7f93b7fe357b52b70244d3519" kind="function"><name>Load</name></member>
+  </compound>
+  <compound refid="d2/daa/struct_camera_factory_1_1_perspective_data" kind="struct"><name>CameraFactory::PerspectiveData</name>
+    <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1adad856561ffc92f96a2fe6a834f9baf0" kind="variable"><name>fovX</name></member>
+    <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1aee0e522e300405859de7ef8d32b63249" kind="variable"><name>fovY</name></member>
+    <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a2d3bcbd8b639a6ace7a79f91f0e71952" kind="variable"><name>near</name></member>
+    <member refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a7a69342f752826f9440482ddce959a2f" kind="variable"><name>far</name></member>
+  </compound>
+  <compound refid="d6/d8c/class_perspective_matrix" kind="class"><name>PerspectiveMatrix</name>
+    <member refid="d6/d8c/class_perspective_matrix_1a624dcd9fb919a67e66d5aa7ecf22f3cd" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="dd/d0a/class_point_light" kind="class"><name>PointLight</name>
+    <member refid="dd/d0a/class_point_light_1aea07f7df125d6c2ae1812904d5ddc922" kind="function"><name>PointLight</name></member>
+    <member refid="dd/d0a/class_point_light_1a8965081e292ec53fddeae614165800d6" kind="function"><name>~PointLight</name></member>
+    <member refid="dd/d0a/class_point_light_1a1fc0406a41b9474e7568bf925287fabe" kind="function"><name>getIntensity</name></member>
+    <member refid="dd/d0a/class_point_light_1a002882a80254c1b99bd45f5a97f25e99" kind="function"><name>isPoint</name></member>
+  </compound>
+  <compound refid="de/d1d/class_point_light_factory" kind="class"><name>PointLightFactory</name>
+    <member refid="de/d1d/class_point_light_factory_1a23ff1783d18b5a6274c4e0bc94ad0a3d" kind="variable"><name>light</name></member>
+    <member refid="de/d1d/class_point_light_factory_1a28f83cb24964302de5e1e678c4ba7b7e" kind="function"><name>PointLightFactory</name></member>
+    <member refid="de/d1d/class_point_light_factory_1a069223f14968fb1d3d2e8caff83f30c9" kind="function"><name>~PointLightFactory</name></member>
+    <member refid="de/d1d/class_point_light_factory_1aa7b3093c77ea99fae845932e785504e0" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="da/dce/class_render_data" kind="class"><name>RenderData</name>
+    <member refid="da/dce/class_render_data_1a16b04b2437ea3fa034381a138cbf2f83" kind="function"><name>RenderData</name></member>
+  </compound>
+  <compound refid="d4/d44/class_renderer" kind="class"><name>Renderer</name>
+    <member refid="d4/d44/class_renderer_1aeab228a83d206c55fc73c7a14a0f0761" kind="variable"><name>scale</name></member>
+    <member refid="d4/d44/class_renderer_1ada813defebef120813571bfb6053e88f" kind="variable"><name>width</name></member>
+    <member refid="d4/d44/class_renderer_1ab2e154b790a2d31603f147510c261ac2" kind="variable"><name>height</name></member>
+    <member refid="d4/d44/class_renderer_1a4dddd75ab18573a3686f90225f3f03d4" kind="function"><name>Renderer</name></member>
+    <member refid="d4/d44/class_renderer_1ae0b9551d2d89c7bc08e962eafa43ebb0" kind="function"><name>Renderer</name></member>
+    <member refid="d4/d44/class_renderer_1a832ac0e6a4fe1e840e07bd82a405edd6" kind="function"><name>setCamera</name></member>
+    <member refid="d4/d44/class_renderer_1a000c8a4b55c252ad1353bbd33dc4def9" kind="function"><name>addLight</name></member>
+    <member refid="d4/d44/class_renderer_1a78cc00edca00b08d09121065fb4fc771" kind="function"><name>start</name></member>
+    <member refid="d4/d44/class_renderer_1a40c3fe3b0e46de69ed563d4b4ca13986" kind="function"><name>renderMesh</name></member>
+    <member refid="d4/d44/class_renderer_1ad3a00c526a6765792b02f328e7a7dad1" kind="function"><name>getRendered</name></member>
+    <member refid="d4/d44/class_renderer_1ae8a0a67a993626066a989dbf02ae43f9" kind="function"><name>finish</name></member>
+  </compound>
+  <compound refid="de/dd1/class_repeat_move_action" kind="class"><name>RepeatMoveAction</name>
+    <member refid="de/dd1/class_repeat_move_action_1a2edadba70d6c63c8d6373c821622a6ee" kind="variable"><name>start</name></member>
+    <member refid="de/dd1/class_repeat_move_action_1a26a23d209a989bcc3f634e29f0532652" kind="variable"><name>diff</name></member>
+    <member refid="de/dd1/class_repeat_move_action_1a8717501294f842084a88cb228b4d3687" kind="function"><name>RepeatMoveAction</name></member>
+    <member refid="de/dd1/class_repeat_move_action_1ad2a08b798e2c0ae093d1ae358c8ec3c2" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="dc/d6a/class_rotate_x_transformation" kind="class"><name>RotateXTransformation</name>
+    <member refid="dc/d6a/class_rotate_x_transformation_1a771b16f30e12e307d6fa352f0aeca526" kind="variable"><name>_origin</name></member>
+    <member refid="dc/d6a/class_rotate_x_transformation_1a90758976e184ef89825281c15ad0f71a" kind="function"><name>RotateXTransformation</name></member>
+    <member refid="dc/d6a/class_rotate_x_transformation_1a4ce10fae3f680ab275e996f9a80aed31" kind="function"><name>transform</name></member>
+    <member refid="dc/d6a/class_rotate_x_transformation_1ace8f34cb88796d5a1102387ff55003fd" kind="function"><name>resetOrigin</name></member>
+  </compound>
+  <compound refid="d1/d32/class_rotate_y_transformation" kind="class"><name>RotateYTransformation</name>
+    <member refid="d1/d32/class_rotate_y_transformation_1a682b5e9e50be3147831198697c449733" kind="variable"><name>_origin</name></member>
+    <member refid="d1/d32/class_rotate_y_transformation_1af692fec1a0450a064a5156d926ea05b7" kind="function"><name>RotateYTransformation</name></member>
+    <member refid="d1/d32/class_rotate_y_transformation_1adaed2a21b00aa575007754d15335e7e8" kind="function"><name>transform</name></member>
+    <member refid="d1/d32/class_rotate_y_transformation_1affca7c164fd1385996174e2e58089203" kind="function"><name>resetOrigin</name></member>
+  </compound>
+  <compound refid="d0/dac/class_rotate_z_transformation" kind="class"><name>RotateZTransformation</name>
+    <member refid="d0/dac/class_rotate_z_transformation_1a9b48a86a7982391293b8867f56897efa" kind="variable"><name>_origin</name></member>
+    <member refid="d0/dac/class_rotate_z_transformation_1a27735a3fa38f846b5b2e643a9c5d1ba1" kind="function"><name>RotateZTransformation</name></member>
+    <member refid="d0/dac/class_rotate_z_transformation_1a3f50084c9e113dde3ce12f57dda91d5b" kind="function"><name>transform</name></member>
+    <member refid="d0/dac/class_rotate_z_transformation_1abae96c9cce0479c768e4c0ec80dd60f8" kind="function"><name>resetOrigin</name></member>
+  </compound>
+  <compound refid="dc/d60/class_scale_transformation" kind="class"><name>ScaleTransformation</name>
+    <member refid="dc/d60/class_scale_transformation_1ad2053c743ab2b0d87149c24540aadaaa" kind="variable"><name>_origin</name></member>
+    <member refid="dc/d60/class_scale_transformation_1a439313c9450e0f2a8cb7b6dc30f5c055" kind="function"><name>ScaleTransformation</name></member>
+    <member refid="dc/d60/class_scale_transformation_1a78e8e8f441eea7f39b669ea8bbd1bdc2" kind="function"><name>transform</name></member>
+    <member refid="dc/d60/class_scale_transformation_1a4c23c7d4596a9bb90ee5f854aa3e5a17" kind="function"><name>resetOrigin</name></member>
+  </compound>
+  <compound refid="d6/db5/class_scene" kind="class"><name>Scene</name>
+    <member refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" kind="variable"><name>_children</name></member>
+    <member refid="d6/db5/class_scene_1a6a1ea61cb1fb35cf292c2280195d9dc8" kind="variable"><name>_camera</name></member>
+    <member refid="d6/db5/class_scene_1aa82b5e8b6ba1d05fae6a836962cded02" kind="variable"><name>lights</name></member>
+    <member refid="d6/db5/class_scene_1a93ccc41b0a2f6c24e467d5d9de76ec0d" kind="function"><name>Scene</name></member>
+    <member refid="d6/db5/class_scene_1af6e09d91ebd10ae9cc7c12c39d06386c" kind="function"><name>~Scene</name></member>
+    <member refid="d6/db5/class_scene_1ada0a975a207aa2670498fee329c6c480" kind="function"><name>add</name></member>
+    <member refid="d6/db5/class_scene_1aac8b52a8123b9d4c1dceb417b9360085" kind="function"><name>setActiveCamera</name></member>
+    <member refid="d6/db5/class_scene_1acfa5379bbdff26d3a01fa11dc3791295" kind="function"><name>getActiveCamera</name></member>
+    <member refid="d6/db5/class_scene_1a2fcdd4356401f0bedb6d8b523bc1eaba" kind="function"><name>getChildren</name></member>
+    <member refid="d6/db5/class_scene_1a7f0c78f0935e2f080c6252cc4782ddbf" kind="function"><name>render</name></member>
+  </compound>
+  <compound refid="dc/df8/class_scene_object" kind="class"><name>SceneObject</name>
+    <member refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kind="variable"><name>position</name></member>
+    <member refid="dc/df8/class_scene_object_1a39ac215b0b6183ac251a26a522acde14" kind="function"><name>SceneObject</name></member>
+    <member refid="dc/df8/class_scene_object_1ad7093f7620ca338f97d98651fd6c87a9" kind="function"><name>SceneObject</name></member>
+    <member refid="dc/df8/class_scene_object_1a0b8708ffea012cd61f583103bf84b531" kind="function"><name>~SceneObject</name></member>
+    <member refid="dc/df8/class_scene_object_1a9e5d8a20e5e0123e894c2918b0e39dc3" kind="function"><name>getPosition</name></member>
+    <member refid="dc/df8/class_scene_object_1ae0e79b1773e3e3357d1dcf302463e46a" kind="function"><name>setPosition</name></member>
+    <member refid="dc/df8/class_scene_object_1adc906ce4e4a896a351949ccabfd44016" kind="function"><name>draw</name></member>
+    <member refid="dc/df8/class_scene_object_1a1b8a4b90f1200f1cd025d95964d43630" kind="function"><name>transform</name></member>
+    <member refid="dc/df8/class_scene_object_1a6d7cb8b9a2c29f38fd039731e83167f4" kind="function"><name>isCamera</name></member>
+    <member refid="dc/df8/class_scene_object_1a9c5b006b8a0e457634f15c19eb51ca73" kind="function"><name>isLight</name></member>
+  </compound>
+  <compound refid="d4/df7/class_scene_object_factory" kind="class"><name>SceneObjectFactory</name>
+    <member refid="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" kind="function"><name>SceneObjectFactory</name></member>
+    <member refid="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" kind="function"><name>~SceneObjectFactory</name></member>
+    <member refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="d1/d32/class_transformation" kind="class"><name>Transformation</name>
+    <member refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" kind="variable"><name>_matrix</name></member>
+    <member refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" kind="function"><name>Transformation</name></member>
+    <member refid="d1/d32/class_transformation_1a4e436a0834b3295b8261c38748e8602d" kind="function"><name>~Transformation</name></member>
+    <member refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" kind="function"><name>getMatrix</name></member>
+    <member refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" kind="function"><name>transform</name></member>
+    <member refid="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038" kind="function"><name>resetOrigin</name></member>
+  </compound>
+  <compound refid="d2/d28/class_triangle" kind="class"><name>Triangle</name>
+    <member refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kind="variable"><name>v</name></member>
+    <member refid="d2/d28/class_triangle_1abe6f0d035449cb80a7cc4d79baef9c3f" kind="function"><name>Triangle</name></member>
+    <member refid="d2/d28/class_triangle_1a287c84286a7340a754ee2df0a92af7af" kind="function"><name>Triangle</name></member>
+    <member refid="d2/d28/class_triangle_1a0dd722e3cb9d7ea46e514f8abf76335e" kind="function"><name>getV1</name></member>
+    <member refid="d2/d28/class_triangle_1afece0efdaf53062c218d9bf70291e8ce" kind="function"><name>setV1</name></member>
+    <member refid="d2/d28/class_triangle_1a3c40179262b85e1eab30a10f9c65b898" kind="function"><name>getV2</name></member>
+    <member refid="d2/d28/class_triangle_1a35f9096c0a99c8b8dc6717755bc1ec07" kind="function"><name>setV2</name></member>
+    <member refid="d2/d28/class_triangle_1ae664a58d61cf1d7b966f578b21a7c1db" kind="function"><name>getV3</name></member>
+    <member refid="d2/d28/class_triangle_1aff0abb038d3c9088b5ab59616aeeaaf9" kind="function"><name>setV3</name></member>
+  </compound>
+  <compound refid="d8/dbe/class_vector2" kind="class"><name>Vector2</name>
+    <member refid="d8/dbe/class_vector2_1a78fa1f2ed5e261c7fbeb8f3536a1ee34" kind="variable"><name>x</name></member>
+    <member refid="d8/dbe/class_vector2_1a6cfed8355591aa269f4dba43bd806ef9" kind="variable"><name>y</name></member>
+    <member refid="d8/dbe/class_vector2_1ae2f1223cb0d664aa73afb789086a4174" kind="function"><name>Vector2</name></member>
+    <member refid="d8/dbe/class_vector2_1ae1eb7e93804f74959b1d0e568e4f4bd9" kind="function"><name>Vector2</name></member>
+    <member refid="d8/dbe/class_vector2_1a69063019b8782ab6dbfabe8444fcda94" kind="function"><name>getX</name></member>
+    <member refid="d8/dbe/class_vector2_1ab82c094a0b321e4215e8b4ebae8b64c0" kind="function"><name>setX</name></member>
+    <member refid="d8/dbe/class_vector2_1a84b1507cd108f9bf7d7a75478a3c075f" kind="function"><name>getY</name></member>
+    <member refid="d8/dbe/class_vector2_1a2c8536e6f78e1f51c643c796b65b847d" kind="function"><name>setY</name></member>
+  </compound>
+  <compound refid="df/d1a/structobjl_1_1_vector2" kind="struct"><name>objl::Vector2</name>
+    <member refid="df/d1a/structobjl_1_1_vector2_1a4e6202bf1555b7eb26cf37b5a86ffee7" kind="variable"><name>X</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1a25df0f9690a937dc76b1922b46c0fe7c" kind="variable"><name>Y</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1abca84763e73ad0c32dd10ef1c87a86a4" kind="function"><name>Vector2</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1a011c4cfca74a240d9ac50fbf8400c781" kind="function"><name>Vector2</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1a79a3733f50a038299d4c5adf41d95c2a" kind="function"><name>operator==</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1ab73ea0ab43cbec8b1b75a6a2de60e7df" kind="function"><name>operator!=</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1a7fe3352f0f3e442a047867b79d8cea21" kind="function"><name>operator+</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1ab47d3a9c104a32e72706ebd5089266ef" kind="function"><name>operator-</name></member>
+    <member refid="df/d1a/structobjl_1_1_vector2_1ae0c8bd6d04d2d514b11f6039ff4099ed" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="d3/de7/class_vector3" kind="class"><name>Vector3</name>
+    <member refid="d3/de7/class_vector3_1a7f85df8589147274b76ccea757bc3868" kind="variable"><name>xc</name></member>
+    <member refid="d3/de7/class_vector3_1a0b0084b4c366805a4cf48558fc21c4a8" kind="variable"><name>yc</name></member>
+    <member refid="d3/de7/class_vector3_1a5ba4eecf62db2872046d9e3fe01fb406" kind="variable"><name>zc</name></member>
+    <member refid="d3/de7/class_vector3_1a54f99f4211298d5245ea578bdd5143cc" kind="function"><name>Vector3</name></member>
+    <member refid="d3/de7/class_vector3_1a84c61226b4e2b49a0935a01b84649e6e" kind="function"><name>Vector3</name></member>
+    <member refid="d3/de7/class_vector3_1a55614d2843061b025cb95891339cca0c" kind="function"><name>x</name></member>
+    <member refid="d3/de7/class_vector3_1a342d8918baf44d59b231fad8fed36850" kind="function"><name>setX</name></member>
+    <member refid="d3/de7/class_vector3_1a6dc34e4c9e1491c6bac8dee7350ebbc6" kind="function"><name>y</name></member>
+    <member refid="d3/de7/class_vector3_1a24bf17b5d27fd72ca8c9581800365a5c" kind="function"><name>setY</name></member>
+    <member refid="d3/de7/class_vector3_1a5bc9e3f59440d2f892ac9b1113a0f0cb" kind="function"><name>z</name></member>
+    <member refid="d3/de7/class_vector3_1ae89a4fa1027e5f7c71cfe8b7ec25a0e2" kind="function"><name>setZ</name></member>
+    <member refid="d3/de7/class_vector3_1aeae8eae4d5a0a909aa0129c53c493038" kind="function"><name>length</name></member>
+    <member refid="d3/de7/class_vector3_1a757cacf1c357bb86043b62242b2ea4fd" kind="function"><name>operator+=</name></member>
+    <member refid="d3/de7/class_vector3_1a8c893c8194fb6cec3836e1878a18256b" kind="function"><name>operator-=</name></member>
+    <member refid="d3/de7/class_vector3_1a29d1e4a0f04b39f1eb33fdd4c17840ce" kind="function"><name>operator*=</name></member>
+    <member refid="d3/de7/class_vector3_1a83d8773b281400b251a46312f288b6c2" kind="function"><name>operator+</name></member>
+    <member refid="d3/de7/class_vector3_1aa2759ad6082cb6fcee8514742686b600" kind="function"><name>operator-</name></member>
+    <member refid="d3/de7/class_vector3_1af20828ee3001ba69624cce6ff7153afa" kind="function"><name>operator*</name></member>
+    <member refid="d3/de7/class_vector3_1ade37f1281bae4dab3cfedab423319912" kind="function"><name>operator==</name></member>
+    <member refid="d3/de7/class_vector3_1a18f31710eb03fb10ea8eafd2e8834974" kind="function"><name>operator-</name></member>
+    <member refid="d3/de7/class_vector3_1add47d32a13094de4ff7215296aec0bc6" kind="function"><name>normalized</name></member>
+    <member refid="d3/de7/class_vector3_1adee56adcf1000649a1fcf2265e8b12b5" kind="function"><name>dot</name></member>
+    <member refid="d3/de7/class_vector3_1ab58658d09f875a7fcc2ca98a8112af84" kind="function"><name>cross</name></member>
+  </compound>
+  <compound refid="d0/d73/structobjl_1_1_vector3" kind="struct"><name>objl::Vector3</name>
+    <member refid="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" kind="variable"><name>X</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" kind="variable"><name>Y</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" kind="variable"><name>Z</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1a37f8ca281c0e2097fa2728266ebef56c" kind="function"><name>Vector3</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1afed600f7ee15aa60d8e384da46c2d12a" kind="function"><name>Vector3</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1a429dcb4a13c69cb5975fd5484dd74425" kind="function"><name>operator==</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1ad8aeae2f5387632095757c178efccdab" kind="function"><name>operator!=</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1a71016900e6eb6119fa60f263f428e621" kind="function"><name>operator+</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1ada21925e1b5aef10ccb16a4578f337ca" kind="function"><name>operator-</name></member>
+    <member refid="d0/d73/structobjl_1_1_vector3_1a10de58f83a9512340154a0f84d2d0a06" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="d0/d72/class_vertex" kind="class"><name>Vertex</name>
+    <member refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kind="variable"><name>v</name></member>
+    <member refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kind="variable"><name>n</name></member>
+    <member refid="d0/d72/class_vertex_1ae2152b82b92f1522812a1e2bb8c32ba5" kind="function"><name>Vertex</name></member>
+    <member refid="d0/d72/class_vertex_1a7a9ca1b036b7786403085e35afc2efe3" kind="function"><name>Vertex</name></member>
+    <member refid="d0/d72/class_vertex_1ac923f6352efb5e3ad9458fd03931d00b" kind="function"><name>getV</name></member>
+    <member refid="d0/d72/class_vertex_1a556cc98768f4036f0f7f3458a0211468" kind="function"><name>setV</name></member>
+    <member refid="d0/d72/class_vertex_1a65780983d9f9a29dc13b2099aa3f2996" kind="function"><name>getN</name></member>
+    <member refid="d0/d72/class_vertex_1a471dd2fc5b33a6079c2142d6faad3a2c" kind="function"><name>setN</name></member>
+    <member refid="d0/d72/class_vertex_1acf4d583092aa2bb904c03d378a0c966a" kind="function"><name>transform</name></member>
+    <member refid="d0/d72/class_vertex_1af1ee0c4cbcbf0363ade89e95e2c74f9f" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="d4/dd1/structobjl_1_1_vertex" kind="struct"><name>objl::Vertex</name>
+    <member refid="d4/dd1/structobjl_1_1_vertex_1a08acd50ed3a3a8b7b0b6ca0b78b61c13" kind="variable"><name>Position</name></member>
+    <member refid="d4/dd1/structobjl_1_1_vertex_1a0a5918e142a939241edeec52944b9edf" kind="variable"><name>Normal</name></member>
+    <member refid="d4/dd1/structobjl_1_1_vertex_1af05b2c1ef5f35a15c8ada3e2cd99a9b1" kind="variable"><name>TextureCoordinate</name></member>
+  </compound>
+  <compound refid="d7/d66/class_view_matrix" kind="class"><name>ViewMatrix</name>
+    <member refid="d7/d66/class_view_matrix_1ad8f81cdb7577b980e7c31dd258320db3" kind="function"><name>create</name></member>
+  </compound>
+  <compound refid="d6/d99/class_z_buffer" kind="class"><name>ZBuffer</name>
+    <member refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" kind="variable"><name>buffer</name></member>
+    <member refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" kind="variable"><name>width</name></member>
+    <member refid="d6/d99/class_z_buffer_1a2e0ebf69ff20c3a3c8c6926e812a6275" kind="variable"><name>height</name></member>
+    <member refid="d6/d99/class_z_buffer_1a1ddb4afd219393f425cf06d779cd2db9" kind="function"><name>ZBuffer</name></member>
+    <member refid="d6/d99/class_z_buffer_1afadfadfc332f211cd3596e43dc9bcda0" kind="function"><name>setSize</name></member>
+    <member refid="d6/d99/class_z_buffer_1a6eba663a5e6a64b74f9c6749d0c19437" kind="function"><name>init</name></member>
+    <member refid="d6/d99/class_z_buffer_1a0bcc59480cb2df9ceab776ea0bb415ae" kind="function"><name>get</name></member>
+    <member refid="d6/d99/class_z_buffer_1aed7172a077d6f65d8db289a7b64b2b89" kind="function"><name>set</name></member>
+  </compound>
+  <compound refid="df/d75/namespaceobjl" kind="namespace"><name>objl</name>
+  </compound>
+  <compound refid="d1/ddf/namespaceobjl_1_1algorithm" kind="namespace"><name>objl::algorithm</name>
+    <member refid="d1/ddf/namespaceobjl_1_1algorithm_1a8758a92e7c04767d6259b7efdfacb4e7" kind="function"><name>operator*</name></member>
+    <member refid="d1/ddf/namespaceobjl_1_1algorithm_1aae4725c9c9dcd572cec150c1f2d23510" kind="function"><name>inTriangle</name></member>
+    <member refid="d1/ddf/namespaceobjl_1_1algorithm_1ad8cd3981f833ce390e38119ba6c65be4" kind="function"><name>split</name></member>
+    <member refid="d1/ddf/namespaceobjl_1_1algorithm_1aacb49ff1f3ea308b666279142df6e273" kind="function"><name>tail</name></member>
+    <member refid="d1/ddf/namespaceobjl_1_1algorithm_1a28e5d8a792b5113fb5d1af2132dfb273" kind="function"><name>firstToken</name></member>
+    <member refid="d1/ddf/namespaceobjl_1_1algorithm_1a1619dda5f75e704bde76b902a6636cc2" kind="function"><name>getElement</name></member>
+  </compound>
+  <compound refid="d5/d21/namespaceobjl_1_1math" kind="namespace"><name>objl::math</name>
+    <member refid="d5/d21/namespaceobjl_1_1math_1a0a60e59c13969d1baaff0b393a6d045c" kind="function"><name>CrossV3</name></member>
+    <member refid="d5/d21/namespaceobjl_1_1math_1aafce95377aefa7ef8f6c732bef547333" kind="function"><name>MagnitudeV3</name></member>
+    <member refid="d5/d21/namespaceobjl_1_1math_1a822b1ebd1dc13a06c95a813ff45fd2e7" kind="function"><name>DotV3</name></member>
+    <member refid="d5/d21/namespaceobjl_1_1math_1a2e4951a1ceabb660f63a3b6cc57a051e" kind="function"><name>AngleBetweenV3</name></member>
+  </compound>
+  <compound refid="d8/dcc/namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="dc/df0/namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" kind="file"><name>objloader.h</name>
+  </compound>
+  <compound refid="de/d7c/animation_2objloader_8h" kind="file"><name>objloader.h</name>
+  </compound>
+  <compound refid="de/dc8/blur_8cpp" kind="file"><name>blur.cpp</name>
+  </compound>
+  <compound refid="d4/df5/blur_8h" kind="file"><name>blur.h</name>
+  </compound>
+  <compound refid="d0/d8b/gaussianblur_8cpp" kind="file"><name>gaussianblur.cpp</name>
+  </compound>
+  <compound refid="dc/d32/gaussianblur_8h" kind="file"><name>gaussianblur.h</name>
+  </compound>
+  <compound refid="d3/d57/cylindersizecalculator_8cpp" kind="file"><name>cylindersizecalculator.cpp</name>
+  </compound>
+  <compound refid="d3/dff/cylindersizecalculator_8h" kind="file"><name>cylindersizecalculator.h</name>
+  </compound>
+  <compound refid="df/de2/cylindersizecalculatorbase_8cpp" kind="file"><name>cylindersizecalculatorbase.cpp</name>
+  </compound>
+  <compound refid="db/d0b/cylindersizecalculatorbase_8h" kind="file"><name>cylindersizecalculatorbase.h</name>
+  </compound>
+  <compound refid="d8/d97/cannyedgedetector_8cpp" kind="file"><name>cannyedgedetector.cpp</name>
+  </compound>
+  <compound refid="de/d3b/cannyedgedetector_8h" kind="file"><name>cannyedgedetector.h</name>
+  </compound>
+  <compound refid="da/de5/edgedetector_8cpp" kind="file"><name>edgedetector.cpp</name>
+  </compound>
+  <compound refid="d4/da5/edgedetector_8h" kind="file"><name>edgedetector.h</name>
+  </compound>
+  <compound refid="d0/d3d/houghtransform_8cpp" kind="file"><name>houghtransform.cpp</name>
+  </compound>
+  <compound refid="dd/d54/houghtransform_8h" kind="file"><name>houghtransform.h</name>
+  </compound>
+  <compound refid="dd/d42/linetransform_8cpp" kind="file"><name>linetransform.cpp</name>
+  </compound>
+  <compound refid="d9/d6e/linetransform_8h" kind="file"><name>linetransform.h</name>
+  </compound>
+  <compound refid="d3/df9/actionmanager_8cpp" kind="file"><name>actionmanager.cpp</name>
+  </compound>
+  <compound refid="d7/d86/actionmanager_8h" kind="file"><name>actionmanager.h</name>
+  </compound>
+  <compound refid="d8/dcf/actions_8cpp" kind="file"><name>actions.cpp</name>
+  </compound>
+  <compound refid="d3/de1/actions_8h" kind="file"><name>actions.h</name>
+  </compound>
+  <compound refid="d3/d01/ambientlight_8cpp" kind="file"><name>ambientlight.cpp</name>
+  </compound>
+  <compound refid="dc/d87/ambientlight_8h" kind="file"><name>ambientlight.h</name>
+  </compound>
+  <compound refid="d1/d6b/camera_8cpp" kind="file"><name>camera.cpp</name>
+  </compound>
+  <compound refid="d7/df6/camera_8h" kind="file"><name>camera.h</name>
+    <member refid="d7/df6/camera_8h_1a01f929aec8e912be07dca2c1f8d00f67" kind="typedef"><name>SharedCamera</name></member>
+    <member refid="d7/df6/camera_8h_1a7b9616f276c6529ece2bbfb711f5c756" kind="typedef"><name>WeakCamera</name></member>
+  </compound>
+  <compound refid="de/dc1/commontransformation_8cpp" kind="file"><name>commontransformation.cpp</name>
+  </compound>
+  <compound refid="d0/d18/commontransformation_8h" kind="file"><name>commontransformation.h</name>
+  </compound>
+  <compound refid="d1/d7b/composite_8cpp" kind="file"><name>composite.cpp</name>
+  </compound>
+  <compound refid="de/d72/composite_8h" kind="file"><name>composite.h</name>
+  </compound>
+  <compound refid="dd/dfa/light_8cpp" kind="file"><name>light.cpp</name>
+  </compound>
+  <compound refid="dd/dd3/light_8h" kind="file"><name>light.h</name>
+    <member refid="dd/dd3/light_8h_1ae1ec32369be93ce20c1e9047a8d388c0" kind="typedef"><name>SharedLight</name></member>
+    <member refid="dd/dd3/light_8h_1ad5a9f0d258bb17c6cfc218b80530781f" kind="typedef"><name>WeakLight</name></member>
+  </compound>
+  <compound refid="d8/dc3/lightzbufferrenderer_8cpp" kind="file"><name>lightzbufferrenderer.cpp</name>
+    <member refid="d8/dc3/lightzbufferrenderer_8cpp_1afe05928bb086f3cae2194eb990e25d01" kind="function"><name>toBarycenteric</name></member>
+    <member refid="d8/dc3/lightzbufferrenderer_8cpp_1ac81309394911edeb46d7dc9af43c1f58" kind="function"><name>toCartesian</name></member>
+  </compound>
+  <compound refid="d7/d17/lightzbufferrenderer_8h" kind="file"><name>lightzbufferrenderer.h</name>
+  </compound>
+  <compound refid="da/d36/matrixfactory_8cpp" kind="file"><name>matrixfactory.cpp</name>
+  </compound>
+  <compound refid="df/d3d/matrixfactory_8h" kind="file"><name>matrixfactory.h</name>
+  </compound>
+  <compound refid="d8/dd2/mesh_8cpp" kind="file"><name>mesh.cpp</name>
+  </compound>
+  <compound refid="d8/d3b/mesh_8h" kind="file"><name>mesh.h</name>
+  </compound>
+  <compound refid="dd/dd8/meshdata_8cpp" kind="file"><name>meshdata.cpp</name>
+  </compound>
+  <compound refid="d5/d6a/meshdata_8h" kind="file"><name>meshdata.h</name>
+  </compound>
+  <compound refid="d6/db4/model_8cpp" kind="file"><name>model.cpp</name>
+  </compound>
+  <compound refid="dc/d51/model_8h" kind="file"><name>model.h</name>
+    <member refid="dc/d51/model_8h_1a902725bade779c3d0be9b19e8ce8a1b3" kind="typedef"><name>SharedModel</name></member>
+  </compound>
+  <compound refid="db/dd4/movetransformation_8cpp" kind="file"><name>movetransformation.cpp</name>
+  </compound>
+  <compound refid="d0/dad/movetransformation_8h" kind="file"><name>movetransformation.h</name>
+  </compound>
+  <compound refid="dd/dbb/objloader_8cpp" kind="file"><name>objloader.cpp</name>
+  </compound>
+  <compound refid="d7/d88/pointlight_8cpp" kind="file"><name>pointlight.cpp</name>
+  </compound>
+  <compound refid="d0/d23/pointlight_8h" kind="file"><name>pointlight.h</name>
+  </compound>
+  <compound refid="d6/d54/renderer_8cpp" kind="file"><name>renderer.cpp</name>
+  </compound>
+  <compound refid="d6/d85/renderer_8h" kind="file"><name>renderer.h</name>
+  </compound>
+  <compound refid="da/d5f/rendererdata_8cpp" kind="file"><name>rendererdata.cpp</name>
+  </compound>
+  <compound refid="dc/d7b/rendererdata_8h" kind="file"><name>rendererdata.h</name>
+  </compound>
+  <compound refid="dc/d9f/rotatetransformation_8cpp" kind="file"><name>rotatetransformation.cpp</name>
+  </compound>
+  <compound refid="d5/d2e/rotatetransformation_8h" kind="file"><name>rotatetransformation.h</name>
+  </compound>
+  <compound refid="d3/dc7/scaletransformation_8cpp" kind="file"><name>scaletransformation.cpp</name>
+  </compound>
+  <compound refid="d0/d00/scaletransformation_8h" kind="file"><name>scaletransformation.h</name>
+  </compound>
+  <compound refid="da/d33/scene_8cpp" kind="file"><name>scene.cpp</name>
+  </compound>
+  <compound refid="db/d83/scene_8h" kind="file"><name>scene.h</name>
+  </compound>
+  <compound refid="d0/dfc/sceneobject_8cpp" kind="file"><name>sceneobject.cpp</name>
+  </compound>
+  <compound refid="d5/d69/sceneobject_8h" kind="file"><name>sceneobject.h</name>
+    <member refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kind="typedef"><name>SharedSceneObject</name></member>
+  </compound>
+  <compound refid="da/d15/sceneobjectfactory_8cpp" kind="file"><name>sceneobjectfactory.cpp</name>
+  </compound>
+  <compound refid="d9/d8f/sceneobjectfactory_8h" kind="file"><name>sceneobjectfactory.h</name>
+  </compound>
+  <compound refid="d2/d67/transformation_8cpp" kind="file"><name>transformation.cpp</name>
+  </compound>
+  <compound refid="dc/d53/transformation_8h" kind="file"><name>transformation.h</name>
+  </compound>
+  <compound refid="de/d9a/zbuffer_8cpp" kind="file"><name>zbuffer.cpp</name>
+  </compound>
+  <compound refid="db/dd0/zbuffer_8h" kind="file"><name>zbuffer.h</name>
+  </compound>
+  <compound refid="dc/d49/animationwindow_8cpp" kind="file"><name>animationwindow.cpp</name>
+  </compound>
+  <compound refid="d9/d5e/animationwindow_8h" kind="file"><name>animationwindow.h</name>
+  </compound>
+  <compound refid="d3/d03/color_8cpp" kind="file"><name>color.cpp</name>
+  </compound>
+  <compound refid="da/dec/color_8h" kind="file"><name>color.h</name>
+  </compound>
+  <compound refid="d2/ded/grayscalecolor_8cpp" kind="file"><name>grayscalecolor.cpp</name>
+  </compound>
+  <compound refid="d0/d9c/grayscalecolor_8h" kind="file"><name>grayscalecolor.h</name>
+    <member refid="d0/d9c/grayscalecolor_8h_1ab3aec037eb5e2860ca4bb1fa7d5abe5a" kind="typedef"><name>GrayscaleColor</name></member>
+  </compound>
+  <compound refid="da/d4b/grayscaleimage_8cpp" kind="file"><name>grayscaleimage.cpp</name>
+  </compound>
+  <compound refid="d3/d37/grayscaleimage_8h" kind="file"><name>grayscaleimage.h</name>
+  </compound>
+  <compound refid="db/d11/image_8cpp" kind="file"><name>image.cpp</name>
+  </compound>
+  <compound refid="d5/db2/image_8h" kind="file"><name>image.h</name>
+  </compound>
+  <compound refid="de/da1/imagebase_8cpp" kind="file"><name>imagebase.cpp</name>
+  </compound>
+  <compound refid="de/dd1/imagebase_8h" kind="file"><name>imagebase.h</name>
+  </compound>
+  <compound refid="da/d94/imageconverter_8cpp" kind="file"><name>imageconverter.cpp</name>
+  </compound>
+  <compound refid="d4/d61/imageconverter_8h" kind="file"><name>imageconverter.h</name>
+  </compound>
+  <compound refid="df/d0a/main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="df/d0a/main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d8/dd9/mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="d9/d53/mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="d4/dc0/cylindersize_8cpp" kind="file"><name>cylindersize.cpp</name>
+  </compound>
+  <compound refid="d1/dfa/cylindersize_8h" kind="file"><name>cylindersize.h</name>
+  </compound>
+  <compound refid="d6/def/homogeneousvertex_8cpp" kind="file"><name>homogeneousvertex.cpp</name>
+  </compound>
+  <compound refid="d4/df0/homogeneousvertex_8h" kind="file"><name>homogeneousvertex.h</name>
+    <member refid="d4/df0/homogeneousvertex_8h_1ac57a7e4c1ca5e8ae47858d4ae8e7120d" kind="typedef"><name>HomogeneousVertex</name></member>
+  </compound>
+  <compound refid="dd/da3/line_8cpp" kind="file"><name>line.cpp</name>
+  </compound>
+  <compound refid="d7/d5d/line_8h" kind="file"><name>line.h</name>
+  </compound>
+  <compound refid="dd/d2d/math_8cpp" kind="file"><name>math.cpp</name>
+  </compound>
+  <compound refid="df/db1/math_8h" kind="file"><name>math.h</name>
+  </compound>
+  <compound refid="d5/d84/matrix_8cpp" kind="file"><name>matrix.cpp</name>
+  </compound>
+  <compound refid="dd/df4/matrix_8h" kind="file"><name>matrix.h</name>
+    <member refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kind="typedef"><name>Mat4</name></member>
+    <member refid="dd/df4/matrix_8h_1afc99578cd5a48bbdeaa2457daed7cf1c" kind="function"><name>operator+</name></member>
+    <member refid="dd/df4/matrix_8h_1ae167d8d4563f1cefb01c70a1f11efbb2" kind="function"><name>operator-</name></member>
+    <member refid="dd/df4/matrix_8h_1a4b5dbdac70575aa11430751928c6ac97" kind="function"><name>operator*</name></member>
+    <member refid="dd/df4/matrix_8h_1ab0eff7d7c6b5d5e4c499493cae0dab26" kind="function"><name>operator-</name></member>
+    <member refid="dd/df4/matrix_8h_1aa0d11ffe31c035ea6a38ba95b8407dcb" kind="function"><name>operator*</name></member>
+    <member refid="dd/df4/matrix_8h_1a3666902c6cc04222e4ccf7cb45cdf96e" kind="function"><name>operator*</name></member>
+    <member refid="dd/df4/matrix_8h_1aa29fee384749d934f288c7928a993396" kind="function"><name>operator/</name></member>
+  </compound>
+  <compound refid="da/d32/vec2_8cpp" kind="file"><name>vec2.cpp</name>
+  </compound>
+  <compound refid="d3/dbe/vec2_8h" kind="file"><name>vec2.h</name>
+    <member refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kind="typedef"><name>Vec2</name></member>
+  </compound>
+  <compound refid="d9/d09/vec3_8cpp" kind="file"><name>vec3.cpp</name>
+  </compound>
+  <compound refid="d8/d08/vec3_8h" kind="file"><name>vec3.h</name>
+    <member refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kind="typedef"><name>Vec3</name></member>
+  </compound>
+  <compound refid="d3/d22/number_8h" kind="file"><name>number.h</name>
+    <member refid="d3/d22/number_8h_1a1b956fe1df85f3c132b21edb4e116458" kind="typedef"><name>int8</name></member>
+    <member refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kind="typedef"><name>uint8</name></member>
+    <member refid="d3/d22/number_8h_1a41f41caf786c93add62629142336d1ad" kind="typedef"><name>int16</name></member>
+    <member refid="d3/d22/number_8h_1a2e00abb078d312d1d8c4fbcd6be343d8" kind="typedef"><name>uint16</name></member>
+    <member refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kind="typedef"><name>int32</name></member>
+    <member refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kind="typedef"><name>uint32</name></member>
+    <member refid="d3/d22/number_8h_1a29940ae63ec06c9998bba873e25407ad" kind="typedef"><name>uint64</name></member>
+    <member refid="d3/d22/number_8h_1aecfc3c54bd29ad5964e1c1c3ccbf89df" kind="typedef"><name>int64</name></member>
+    <member refid="d3/d22/number_8h_1ac7b0112291301c17b3d53663ba65487a" kind="typedef"><name>Single</name></member>
+    <member refid="d3/d22/number_8h_1a1f2c5f02159fb28428e23074cc04166d" kind="typedef"><name>Double</name></member>
+    <member refid="d3/d22/number_8h_1ab346505f7c8220bfcad46fb5ff6b249b" kind="typedef"><name>WorkType</name></member>
+  </compound>
+  <compound refid="d9/d17/imageview_8cpp" kind="file"><name>imageview.cpp</name>
+  </compound>
+  <compound refid="df/dd7/imageview_8h" kind="file"><name>imageview.h</name>
+  </compound>
+  <compound refid="d6/d64/modelview_8cpp" kind="file"><name>modelview.cpp</name>
+  </compound>
+  <compound refid="d3/d6a/modelview_8h" kind="file"><name>modelview.h</name>
+  </compound>
+  <compound refid="d1/d5e/modelview2_8cpp" kind="file"><name>modelview2.cpp</name>
+  </compound>
+  <compound refid="d4/d90/modelview2_8h" kind="file"><name>modelview2.h</name>
+  </compound>
+  <compound refid="dir_38710d7c85c0357ca15876da14e36d2e" kind="dir"><name>Projects/labs/course_project_cg/src/3rdparty</name>
+  </compound>
+  <compound refid="dir_b82668e916e017fb161f8813909345a1" kind="dir"><name>Projects/labs/course_project_cg/src/algorithm</name>
+  </compound>
+  <compound refid="dir_1acf6d7c8ce8cb5e459a37a0d36ab35d" kind="dir"><name>Projects/labs/course_project_cg/src/animation</name>
+  </compound>
+  <compound refid="dir_5179f0e1b4ade01a8c45e78f1171086c" kind="dir"><name>Projects/labs/course_project_cg/src/algorithm/blur</name>
+  </compound>
+  <compound refid="dir_baf9f069058bca806156b3af98b1f91f" kind="dir"><name>Projects/labs/course_project_cg</name>
+  </compound>
+  <compound refid="dir_10b8344b8c560a48028f6a1c27889f43" kind="dir"><name>Projects/labs/course_project_cg/src/algorithm/edgedetector</name>
+  </compound>
+  <compound refid="dir_faa6bbdaad12a27e5f3fab6b6907be93" kind="dir"><name>Projects/labs/course_project_cg/src/image</name>
+  </compound>
+  <compound refid="dir_bae5b0473f9d0e31524012638c21b0c7" kind="dir"><name>Projects/labs</name>
+  </compound>
+  <compound refid="dir_d1d6a2882a77ea338bb328f3080a1589" kind="dir"><name>Projects/labs/course_project_cg/src/algorithm/linetransform</name>
+  </compound>
+  <compound refid="dir_73373614dec9400c8130353c6d16a542" kind="dir"><name>Projects/labs/course_project_cg/src/math</name>
+  </compound>
+  <compound refid="dir_7bb5a5ac0f935e40ab936c64c19a29c2" kind="dir"><name>Projects/labs/course_project_cg/src/3rdparty/ObjLoader</name>
+  </compound>
+  <compound refid="dir_7a6499598ddcfcabe96e224cb4a6d834" kind="dir"><name>Projects</name>
+  </compound>
+  <compound refid="dir_581b7ad157500577ff4e2176d03b851c" kind="dir"><name>Projects/labs/course_project_cg/src</name>
+  </compound>
+  <compound refid="dir_7ea7e6b139e7d411ea1a9017c76e2852" kind="dir"><name>Projects/labs/course_project_cg/src/widgets</name>
+  </compound>
+</doxygenindex>

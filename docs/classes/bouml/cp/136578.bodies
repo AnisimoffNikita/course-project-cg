@@ -1,0 +1,17 @@
+class Model
+!!!153602.cpp!!!	draw(inout renderer : std::unique_ptr<Renderer>) : void
+    auto meshToRender = make_shared<Mesh>(mesh);
+    meshToRender->transform(MoveTransformation(position));
+    renderer->renderMesh(meshToRender);
+!!!153730.cpp!!!	transform(inout transformation : Transformation) : void
+    transformation.transform(position);
+    transformation.resetOrigin();
+    mesh.transform(transformation);
+!!!153858.cpp!!!	isCamera() : bool
+    return false;
+!!!153986.cpp!!!	isLight() : bool
+    return false;
+!!!154114.cpp!!!	getMesh() : Mesh
+    return mesh;
+!!!154242.cpp!!!	setMesh(in mesh : Mesh) : void
+    this->mesh = mesh;

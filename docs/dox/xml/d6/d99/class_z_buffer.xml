@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/d99/class_z_buffer" kind="class" language="C++" prot="public">
+    <compoundname>ZBuffer</compoundname>
+    <includes refid="db/dd0/zbuffer_8h" local="no">zbuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" prot="private" static="no" mutable="no">
+        <type>vector&lt; float &gt;</type>
+        <definition>vector&lt;float&gt; ZBuffer::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="21" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 ZBuffer::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d99/class_z_buffer_1a2e0ebf69ff20c3a3c8c6926e812a6275" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 ZBuffer::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d99/class_z_buffer_1a1ddb4afd219393f425cf06d779cd2db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ZBuffer::ZBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>ZBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d99/class_z_buffer_1afadfadfc332f211cd3596e43dc9bcda0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ZBuffer::setSize</definition>
+        <argsstring>(int32 w, int32 h)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d99/class_z_buffer_1a6eba663a5e6a64b74f9c6749d0c19437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ZBuffer::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.cpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d99/class_z_buffer_1a0bcc59480cb2df9ceab776ea0bb415ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ZBuffer::get</definition>
+        <argsstring>(int32 x, int32 y)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d99/class_z_buffer_1aed7172a077d6f65d8db289a7b64b2b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ZBuffer::set</definition>
+        <argsstring>(int32 x, int32 y, float value)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="529">
+        <label>ZBuffer</label>
+        <link refid="d6/d99/class_z_buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/zbuffer.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/zbuffer.h" bodystart="9" bodyend="23"/>
+    <listofallmembers>
+      <member refid="d6/d99/class_z_buffer_1afecaf9e4659207dbf258de9b537663e9" prot="private" virt="non-virtual"><scope>ZBuffer</scope><name>buffer</name></member>
+      <member refid="d6/d99/class_z_buffer_1a0bcc59480cb2df9ceab776ea0bb415ae" prot="public" virt="non-virtual"><scope>ZBuffer</scope><name>get</name></member>
+      <member refid="d6/d99/class_z_buffer_1a2e0ebf69ff20c3a3c8c6926e812a6275" prot="private" virt="non-virtual"><scope>ZBuffer</scope><name>height</name></member>
+      <member refid="d6/d99/class_z_buffer_1a6eba663a5e6a64b74f9c6749d0c19437" prot="public" virt="non-virtual"><scope>ZBuffer</scope><name>init</name></member>
+      <member refid="d6/d99/class_z_buffer_1aed7172a077d6f65d8db289a7b64b2b89" prot="public" virt="non-virtual"><scope>ZBuffer</scope><name>set</name></member>
+      <member refid="d6/d99/class_z_buffer_1afadfadfc332f211cd3596e43dc9bcda0" prot="public" virt="non-virtual"><scope>ZBuffer</scope><name>setSize</name></member>
+      <member refid="d6/d99/class_z_buffer_1a82c7634da3462d8efaeeba321ec36b24" prot="private" virt="non-virtual"><scope>ZBuffer</scope><name>width</name></member>
+      <member refid="d6/d99/class_z_buffer_1a1ddb4afd219393f425cf06d779cd2db9" prot="public" virt="non-virtual"><scope>ZBuffer</scope><name>ZBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

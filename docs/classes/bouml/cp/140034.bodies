@@ -1,0 +1,72 @@
+class Math
+!!!169218.cpp!!!	Gauss2(in sigma : double, in x : int32, in y : int32) : double
+    return (1.0 / (2 * PI * sigma * sigma)) * exp(-(x * x + y * y) /
+            (2 * sigma * sigma));
+!!!169346.cpp!!!	Clamp(in value : T, in min : T, in max : T) : T
+    if (value > max)
+    {
+        return max;
+    }
+
+    if (value < min)
+    {
+        return min;
+    }
+
+    return value;
+!!!169474.cpp!!!	ToRadians(in degrees : double) : double
+    return PI * degrees / 180.0;
+!!!169602.cpp!!!	ToDegrees(in radians : double) : double
+    return 180.0 * radians / PI;
+!!!169730.cpp!!!	sgn(in val : T) : int32
+    return (T(0) < val) - (val < T(0));
+!!!169858.cpp!!!	Cos(in angle : double) : double
+    return cos(angle);
+!!!169986.cpp!!!	Sin(in angle : double) : double
+    return sin(angle);
+!!!170114.cpp!!!	Tan(in angle : double) : double
+    return tan(angle);
+!!!170242.cpp!!!	Sqrt(in value : double) : double
+    return sqrt(value);
+!!!170370.cpp!!!	Atan(in value : double) : double
+    return atan(value);
+!!!170498.cpp!!!	Abs(in value : double) : double
+    return abs(value);
+!!!170626.cpp!!!	Pow(in x : double, in y : double) : double
+    return pow(x, y);
+!!!170754.cpp!!!	Ctg(in x : double) : double
+    return cos(x) / sin(x);
+!!!170882.cpp!!!	Bisection(in a : double, in b : double, in f : Math::Func, in eps : double = 1e-6) : double
+    double x = (a + b) * 0.5;
+    float check = f(x) * f(a);
+
+    if (check != 0)
+    {
+        while (fabs(b - a) > eps * fabs(x) + eps)
+        {
+            if (check < 0)
+            {
+                b = x;
+            }
+            else
+            {
+                a = x;
+            }
+
+            x = (a + b) * 0.5;
+            check = f(x) * f(a);
+        }
+
+        return x;
+    }
+    else
+    {
+        if (f(x) == 0)
+        {
+            return x;
+        }
+        else
+        {
+            return a;
+        }
+    }

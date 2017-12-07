@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d8/dbe/class_vector2" kind="class" language="C++" prot="public">
+    <compoundname>Vector2</compoundname>
+    <includes refid="d3/dbe/vec2_8h" local="no">vec2.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/dbe/class_vector2_1a78fa1f2ed5e261c7fbeb8f3536a1ee34" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Vector2&lt; T &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="34" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbe/class_vector2_1a6cfed8355591aa269f4dba43bd806ef9" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Vector2&lt; T &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/dbe/class_vector2_1ae2f1223cb0d664aa73afb789086a4174" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector2&lt; T &gt;::Vector2</definition>
+        <argsstring>()</argsstring>
+        <name>Vector2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dbe/class_vector2_1ae1eb7e93804f74959b1d0e568e4f4bd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector2&lt; T &gt;::Vector2</definition>
+        <argsstring>(const T &amp;x, const T &amp;y)</argsstring>
+        <name>Vector2</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dbe/class_vector2_1a69063019b8782ab6dbfabe8444fcda94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Vector2&lt; T &gt;::getX</definition>
+        <argsstring>() const </argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dbe/class_vector2_1ab82c094a0b321e4215e8b4ebae8b64c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector2&lt; T &gt;::setX</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dbe/class_vector2_1a84b1507cd108f9bf7d7a75478a3c075f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Vector2&lt; T &gt;::getY</definition>
+        <argsstring>() const </argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dbe/class_vector2_1a2c8536e6f78e1f51c643c796b65b847d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector2&lt; T &gt;::setY</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="510">
+        <label>Vector2&lt; T &gt;</label>
+        <link refid="d8/dbe/class_vector2"/>
+        <childnode refid="511" relation="usage">
+          <edgelabel>-x</edgelabel>
+          <edgelabel>-y</edgelabel>
+        </childnode>
+      </node>
+      <node id="511">
+        <label>T</label>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/math/vec2.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/math/vec2.h" bodystart="7" bodyend="36"/>
+    <listofallmembers>
+      <member refid="d8/dbe/class_vector2_1a69063019b8782ab6dbfabe8444fcda94" prot="public" virt="non-virtual"><scope>Vector2</scope><name>getX</name></member>
+      <member refid="d8/dbe/class_vector2_1a84b1507cd108f9bf7d7a75478a3c075f" prot="public" virt="non-virtual"><scope>Vector2</scope><name>getY</name></member>
+      <member refid="d8/dbe/class_vector2_1ab82c094a0b321e4215e8b4ebae8b64c0" prot="public" virt="non-virtual"><scope>Vector2</scope><name>setX</name></member>
+      <member refid="d8/dbe/class_vector2_1a2c8536e6f78e1f51c643c796b65b847d" prot="public" virt="non-virtual"><scope>Vector2</scope><name>setY</name></member>
+      <member refid="d8/dbe/class_vector2_1ae2f1223cb0d664aa73afb789086a4174" prot="public" virt="non-virtual"><scope>Vector2</scope><name>Vector2</name></member>
+      <member refid="d8/dbe/class_vector2_1ae1eb7e93804f74959b1d0e568e4f4bd9" prot="public" virt="non-virtual"><scope>Vector2</scope><name>Vector2</name></member>
+      <member refid="d8/dbe/class_vector2_1a78fa1f2ed5e261c7fbeb8f3536a1ee34" prot="private" virt="non-virtual"><scope>Vector2</scope><name>x</name></member>
+      <member refid="d8/dbe/class_vector2_1a6cfed8355591aa269f4dba43bd806ef9" prot="private" virt="non-virtual"><scope>Vector2</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

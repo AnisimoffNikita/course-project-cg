@@ -1,0 +1,5 @@
+class Composite
+!!!144386.cpp!!!	isCamera() : bool
+    return false;
+!!!144514.cpp!!!	isLight() : bool
+    return false;

@@ -1,0 +1,5 @@
+digraph objl::Material
+{
+graph [ rankdir="RL" ]
+"d2/dbb/structobjl_1_1_material" [ label="objl::Material\n|+Material (  )\l|+Ka : Vector3\l+Kd : Vector3\l+Ks : Vector3\l+Ni : float\l+Ns : float\l+d : float\l+illum : int\l+map_Ka : std::string\l+map_Kd : std::string\l+map_Ks : std::string\l+map_Ns : std::string\l+map_bump : std::string\l+map_d : std::string\l+name : std::string\l" shape="record" ]
+}

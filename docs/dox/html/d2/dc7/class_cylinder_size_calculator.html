@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Класс CylinderSizeCalculator</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="../../inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="../../functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="../../dc/d83/class_cylinder_size_calculator-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс CylinderSizeCalculator</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:CylinderSizeCalculator:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4d/class_cylinder_size_calculator__inherit__graph.png" border="0" usemap="#_cylinder_size_calculator_inherit__map" alt="Inheritance graph"/></div>
+<map name="_cylinder_size_calculator_inherit__map" id="_cylinder_size_calculator_inherit__map">
+<area shape="rect" id="node2" href="../../df/d7d/class_cylinder_size_calculator_base.html" title="{CylinderSizeCalculatorBase\n||+ ~CylinderSizeCalculatorBase()\l+ evaluate()\l+ calibrate()\l+ calibrate()\l}" alt="" coords="5,5,219,127"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса CylinderSizeCalculator:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d2c/class_cylinder_size_calculator__coll__graph.png" border="0" usemap="#_cylinder_size_calculator_coll__map" alt="Collaboration graph"/></div>
+<map name="_cylinder_size_calculator_coll__map" id="_cylinder_size_calculator_coll__map">
+<area shape="rect" id="node2" href="../../df/d7d/class_cylinder_size_calculator_base.html" title="{CylinderSizeCalculatorBase\n||+ ~CylinderSizeCalculatorBase()\l+ evaluate()\l+ calibrate()\l+ calibrate()\l}" alt="" coords="5,20,219,141"/>
+<area shape="rect" id="node3" href="../../d1/d47/class_cylinder_size.html" title="{CylinderSize\n|&#45; height\l&#45; radius\l|+ CylinderSize()\l+ getRadius()\l+ setRadius()\l+ getHeight()\l+ setHeight()\l}" alt="" coords="243,5,359,156"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab4daaa75220e687cca3ce57e9db2fe57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#ab4daaa75220e687cca3ce57e9db2fe57">CylinderSizeCalculator</a> ()</td></tr>
+<tr class="separator:ab4daaa75220e687cca3ce57e9db2fe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ff9a4ab970aa5fcdca273112789978"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#af8ff9a4ab970aa5fcdca273112789978">~CylinderSizeCalculator</a> ()</td></tr>
+<tr class="separator:af8ff9a4ab970aa5fcdca273112789978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979a607bd694c5819355793d231c5df2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d47/class_cylinder_size.html">CylinderSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a979a607bd694c5819355793d231c5df2">evaluate</a> (const <a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a> &amp;<a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">lines</a>)</td></tr>
+<tr class="separator:a979a607bd694c5819355793d231c5df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411f74a0f0baa7c393fe53c36d957fd4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a411f74a0f0baa7c393fe53c36d957fd4">calibrate</a> (const std::vector&lt; <a class="el" href="../../dd/db4/class_line.html">Line</a> &gt; &amp;<a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">lines</a>, float <a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a1d88b87623a24582f968bb06acd80b8c">distance</a>, float radius, float height)</td></tr>
+<tr class="separator:a411f74a0f0baa7c393fe53c36d957fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace80de293c2d4626b65e83fcb0fcde54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#ace80de293c2d4626b65e83fcb0fcde54">calibrate</a> (float diag, float diagPx)</td></tr>
+<tr class="separator:ace80de293c2d4626b65e83fcb0fcde54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_cylinder_size_calculator_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_cylinder_size_calculator_base')"><img src="../../closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="../../df/d7d/class_cylinder_size_calculator_base.html">CylinderSizeCalculatorBase</a></td></tr>
+<tr class="memitem:acddec2ff7cfef169dc7df5ae3a2cc239 inherit pub_methods_class_cylinder_size_calculator_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7d/class_cylinder_size_calculator_base.html#acddec2ff7cfef169dc7df5ae3a2cc239">~CylinderSizeCalculatorBase</a> ()</td></tr>
+<tr class="separator:acddec2ff7cfef169dc7df5ae3a2cc239 inherit pub_methods_class_cylinder_size_calculator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:a7c30882e5312856d6757dc0022eb231f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a> = std::vector&lt; <a class="el" href="../../dd/db4/class_line.html">Line</a> &gt;</td></tr>
+<tr class="separator:a7c30882e5312856d6757dc0022eb231f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ad908e8325d6a03c7b4d1b55cf87eade9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#ad908e8325d6a03c7b4d1b55cf87eade9">findEdges</a> ()</td></tr>
+<tr class="separator:ad908e8325d6a03c7b4d1b55cf87eade9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afc5d76534bc67a394a0f78d21a4811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a4afc5d76534bc67a394a0f78d21a4811">calculateSize</a> ()</td></tr>
+<tr class="separator:a4afc5d76534bc67a394a0f78d21a4811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a8a329c2526e67545603769c720d76692"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">lines</a></td></tr>
+<tr class="separator:a8a329c2526e67545603769c720d76692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13af96a82c344f22f3d2749d4dafa15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d47/class_cylinder_size.html">CylinderSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a13af96a82c344f22f3d2749d4dafa15c">size</a></td></tr>
+<tr class="separator:a13af96a82c344f22f3d2749d4dafa15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d88b87623a24582f968bb06acd80b8c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a1d88b87623a24582f968bb06acd80b8c">distance</a></td></tr>
+<tr class="separator:a1d88b87623a24582f968bb06acd80b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ffced643e054737c077c3f654a4608"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#ad0ffced643e054737c077c3f654a4608">factor</a></td></tr>
+<tr class="separator:ad0ffced643e054737c077c3f654a4608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p>См. определение в файле <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a> строка <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html#l00006">6</a></p>
+</div><h2 class="groupheader">Определения типов</h2>
+<a class="anchor" id="a7c30882e5312856d6757dc0022eb231f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">CylinderSizeCalculator::Lines</a> =  std::vector&lt;<a class="el" href="../../dd/db4/class_line.html">Line</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a> строка <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html#l00009">9</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ab4daaa75220e687cca3ce57e9db2fe57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CylinderSizeCalculator::CylinderSizeCalculator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a> строка <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00006">6</a></p>
+
+</div>
+</div>
+<a class="anchor" id="af8ff9a4ab970aa5fcdca273112789978"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CylinderSizeCalculator::~CylinderSizeCalculator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a> строка <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00010">10</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a4afc5d76534bc67a394a0f78d21a4811"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CylinderSizeCalculator::calculateSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a> строка <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00089">89</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a411f74a0f0baa7c393fe53c36d957fd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CylinderSizeCalculator::calibrate </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../dd/db4/class_line.html">Line</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../df/d7d/class_cylinder_size_calculator_base.html#ad37d6cd0b2746034294ed91e6ae2488e">CylinderSizeCalculatorBase</a>.</p>
+
+<p>См. определение в файле <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a> строка <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ace80de293c2d4626b65e83fcb0fcde54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CylinderSizeCalculator::calibrate </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>diag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>diagPx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../df/d7d/class_cylinder_size_calculator_base.html#a1713b5dbd13c49aeb2769cebaa24ebdb">CylinderSizeCalculatorBase</a>.</p>
+
+<p>См. определение в файле <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a> строка <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a979a607bd694c5819355793d231c5df2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d47/class_cylinder_size.html">CylinderSize</a> CylinderSizeCalculator::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a> &amp;&#160;</td>
+          <td class="paramname"><em>lines</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../df/d7d/class_cylinder_size_calculator_base.html#adb5dd331f24a1c78b00266cb051f79ea">CylinderSizeCalculatorBase</a>.</p>
+
+<p>См. определение в файле <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a> строка <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00014">14</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad908e8325d6a03c7b4d1b55cf87eade9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CylinderSizeCalculator::findEdges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a> строка <a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a1d88b87623a24582f968bb06acd80b8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CylinderSizeCalculator::distance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a> строка <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ad0ffced643e054737c077c3f654a4608"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CylinderSizeCalculator::factor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a> строка <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a8a329c2526e67545603769c720d76692"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a> CylinderSizeCalculator::lines</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a> строка <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a13af96a82c344f22f3d2749d4dafa15c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d47/class_cylinder_size.html">CylinderSize</a> CylinderSizeCalculator::size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a> строка <a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Projects/labs/course_project_cg/src/algorithm/<a class="el" href="../../d3/dff/cylindersizecalculator_8h_source.html">cylindersizecalculator.h</a></li>
+<li>Projects/labs/course_project_cg/src/algorithm/<a class="el" href="../../d3/d57/cylindersizecalculator_8cpp_source.html">cylindersizecalculator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="CylinderSizeCalculator" name="CylinderSizeCalculator">
+<area shape="rect" id="node2" href="$df/d7d/class_cylinder_size_calculator_base.html" title="{CylinderSizeCalculatorBase\n||+ ~CylinderSizeCalculatorBase()\l+ evaluate()\l+ calibrate()\l+ calibrate()\l}" alt="" coords="5,20,219,141"/>
+<area shape="rect" id="node3" href="$d1/d47/class_cylinder_size.html" title="{CylinderSize\n|&#45; height\l&#45; radius\l|+ CylinderSize()\l+ getRadius()\l+ setRadius()\l+ getHeight()\l+ setHeight()\l}" alt="" coords="243,5,359,156"/>
+</map>

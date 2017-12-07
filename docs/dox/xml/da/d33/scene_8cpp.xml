@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="da/d33/scene_8cpp" kind="file" language="C++">
+    <compoundname>scene.cpp</compoundname>
+    <includes refid="db/d83/scene_8h" local="yes">scene.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="d6/d85/renderer_8h" local="yes">renderer.h</includes>
+    <incdepgraph>
+      <node id="2703">
+        <label>functional</label>
+      </node>
+      <node id="2707">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2701" relation="include">
+        </childnode>
+      </node>
+      <node id="2695">
+        <label>scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="2696" relation="include">
+        </childnode>
+        <childnode refid="2697" relation="include">
+        </childnode>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2708" relation="include">
+        </childnode>
+      </node>
+      <node id="2699">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2696" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+      </node>
+      <node id="2694">
+        <label>Projects/labs/course_project_cg/src/animation/scene.cpp</label>
+        <link refid="scene.cpp"/>
+        <childnode refid="2695" relation="include">
+        </childnode>
+        <childnode refid="2709" relation="include">
+        </childnode>
+        <childnode refid="2710" relation="include">
+        </childnode>
+      </node>
+      <node id="2700">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2702" relation="include">
+        </childnode>
+      </node>
+      <node id="2701">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2715">
+        <label>QImage</label>
+      </node>
+      <node id="2713">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2707" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2714" relation="include">
+        </childnode>
+        <childnode refid="2711" relation="include">
+        </childnode>
+      </node>
+      <node id="2705">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2701" relation="include">
+        </childnode>
+      </node>
+      <node id="2704">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+      </node>
+      <node id="2710">
+        <label>renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2711" relation="include">
+        </childnode>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2712" relation="include">
+        </childnode>
+        <childnode refid="2715" relation="include">
+        </childnode>
+      </node>
+      <node id="2702">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+      </node>
+      <node id="2698">
+        <label>vector</label>
+      </node>
+      <node id="2697">
+        <label>utility</label>
+      </node>
+      <node id="2714">
+        <label>array</label>
+      </node>
+      <node id="2712">
+        <label>mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+        <childnode refid="2711" relation="include">
+        </childnode>
+        <childnode refid="2713" relation="include">
+        </childnode>
+      </node>
+      <node id="2708">
+        <label>QPixmap</label>
+      </node>
+      <node id="2711">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+      </node>
+      <node id="2709">
+        <label>algorithm</label>
+      </node>
+      <node id="2706">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2707" relation="include">
+        </childnode>
+      </node>
+      <node id="2696">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d83/scene_8h" kindref="compound">scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d85/renderer_8h" kindref="compound">renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d6/db5/class_scene_1ada0a975a207aa2670498fee329c6c480" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/db5/class_scene_1ada0a975a207aa2670498fee329c6c480" kindref="member">Scene::add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/>&amp;child)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" kindref="member">_children</ref>.push_back(child);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(child-&gt;isLight())</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/db5/class_scene_1aa82b5e8b6ba1d05fae6a836962cded02" kindref="member">lights</ref>.push_back(static_pointer_cast&lt;Light&gt;(child));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d6/db5/class_scene_1aac8b52a8123b9d4c1dceb417b9360085" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/db5/class_scene_1aac8b52a8123b9d4c1dceb417b9360085" kindref="member">Scene::setActiveCamera</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/>&amp;child)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cameraExist<sp/>=<sp/>std::find(<ref refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" kindref="member">_children</ref>.begin(),<sp/><ref refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" kindref="member">_children</ref>.end(),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child)<sp/>!=<sp/><ref refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" kindref="member">_children</ref>.end();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cameraExist<sp/>&amp;&amp;<sp/>child-&gt;isCamera())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/db5/class_scene_1a6a1ea61cb1fb35cf292c2280195d9dc8" kindref="member">_camera</ref><sp/>=<sp/>static_pointer_cast&lt;<ref refid="da/dbb/class_camera" kindref="compound">Camera</ref>&gt;(child);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d6/db5/class_scene_1acfa5379bbdff26d3a01fa11dc3791295" refkind="member"><highlight class="normal"><ref refid="d7/df6/camera_8h_1a7b9616f276c6529ece2bbfb711f5c756" kindref="member">WeakCamera</ref><sp/><ref refid="d6/db5/class_scene_1acfa5379bbdff26d3a01fa11dc3791295" kindref="member">Scene::getActiveCamera</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="29"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/db5/class_scene_1a6a1ea61cb1fb35cf292c2280195d9dc8" kindref="member">_camera</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d6/db5/class_scene_1a2fcdd4356401f0bedb6d8b523bc1eaba" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;SharedSceneObject&gt;<sp/>&amp;<ref refid="d6/db5/class_scene_1a2fcdd4356401f0bedb6d8b523bc1eaba" kindref="member">Scene::getChildren</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" kindref="member">_children</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d6/db5/class_scene_1a7f0c78f0935e2f080c6252cc4782ddbf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/db5/class_scene_1a7f0c78f0935e2f080c6252cc4782ddbf" kindref="member">Scene::render</ref>(std::unique_ptr&lt;Renderer&gt;<sp/>&amp;renderer)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/db5/class_scene_1a6a1ea61cb1fb35cf292c2280195d9dc8" kindref="member">_camera</ref>.expired())</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>renderer-&gt;setCamera(<ref refid="d6/db5/class_scene_1a6a1ea61cb1fb35cf292c2280195d9dc8" kindref="member">_camera</ref>.lock());</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;light<sp/>:<sp/><ref refid="d6/db5/class_scene_1aa82b5e8b6ba1d05fae6a836962cded02" kindref="member">lights</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!light.expired())</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>renderer-&gt;addLight(light.lock());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;child<sp/>:<sp/><ref refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" kindref="member">_children</ref>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child-&gt;draw(renderer);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/scene.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+digraph ModelView2
+{
+graph [ rankdir="RL" ]
+"d5/d8f/class_model_view2" [ label="ModelView2\n|+ModelView2 ( parent : QWidget * )\l#mouseMoveEvent ( event : QMouseEvent * ) : void\l#mousePressEvent ( event : QMouseEvent * ) : void\l#paintEvent (  : QPaintEvent * ) : void\l#wheelEvent ( event : QWheelEvent * ) : void\l-sceneSetup (  ) : void\l-scheduler (  ) : void\l-updateCanvas (  ) : void\l|-actionManager : unique_ptr\< ActionManager \>\l-image : QImage\l-lastPos : QPoint\l-renderer : unique_ptr\< Renderer \>\l-scene : unique_ptr\< Scene \>\l-time : QTime\l-timer : QTimer *\l" shape="record" ]
+}

@@ -1,0 +1,19 @@
+<map id="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp" name="Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp">
+<area shape="rect" id="node2" href="$d7/d17/lightzbufferrenderer_8h.html" title="lightzbufferrenderer.h" alt="" coords="685,109,829,136"/>
+<area shape="rect" id="node6" href="$d3/d22/number_8h.html" title="src/number.h" alt="" coords="640,632,739,659"/>
+<area shape="rect" id="node22" href="$d0/d18/commontransformation_8h.html" title="commontransformation.h" alt="" coords="62,333,229,360"/>
+<area shape="rect" id="node24" href="$d0/d00/scaletransformation_8h.html" title="scaletransformation.h" alt="" coords="301,184,448,211"/>
+<area shape="rect" id="node3" href="$d6/d85/renderer_8h.html" title="renderer.h" alt="" coords="717,184,797,211"/>
+<area shape="rect" id="node20" href="$db/dd0/zbuffer_8h.html" title="zbuffer.h" alt="" coords="1026,333,1099,360"/>
+<area shape="rect" id="node4" href="$dc/d53/transformation_8h.html" title="transformation.h" alt="" coords="273,408,389,435"/>
+<area shape="rect" id="node10" href="$d7/df6/camera_8h.html" title="camera.h" alt="" coords="674,259,750,285"/>
+<area shape="rect" id="node14" href="$dd/dd3/light_8h.html" title="light.h" alt="" coords="774,259,831,285"/>
+<area shape="rect" id="node16" href="$d8/d3b/mesh_8h.html" title="mesh.h" alt="" coords="491,259,557,285"/>
+<area shape="rect" id="node5" href="$d8/d08/vec3_8h.html" title="src/math/vec3.h" alt="" coords="498,483,614,509"/>
+<area shape="rect" id="node9" href="$dd/df4/matrix_8h.html" title="src/math/matrix.h" alt="" coords="350,483,474,509"/>
+<area shape="rect" id="node7" href="$df/db1/math_8h.html" title="math.h" alt="" coords="531,557,594,584"/>
+<area shape="rect" id="node11" href="$d5/d69/sceneobject_8h.html" title="sceneobject.h" alt="" coords="847,333,950,360"/>
+<area shape="rect" id="node15" href="$da/dec/color_8h.html" title="src/image/color.h" alt="" coords="741,408,864,435"/>
+<area shape="rect" id="node17" href="$d5/d6a/meshdata_8h.html" title="meshdata.h" alt="" coords="520,333,611,360"/>
+<area shape="rect" id="node23" href="$d4/df0/homogeneousvertex_8h.html" title="src/math/homogeneousvertex.h" alt="" coords="43,408,248,435"/>
+</map>

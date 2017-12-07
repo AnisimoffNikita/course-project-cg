@@ -14,7 +14,7 @@ public:
     virtual CylinderSize evaluate(const Lines &lines);
     virtual void calibrate(const std::vector<Line> &lines, float distance,
                            float radius, float height);
-    virtual void calibrate(float diag, float diagPx);
+    virtual void calibrate(float distance, float diag, float diagPx);
 
 private:
     void findEdges();

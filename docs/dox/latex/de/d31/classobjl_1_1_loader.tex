@@ -1,0 +1,165 @@
+\hypertarget{classobjl_1_1_loader}{}\section{Класс objl\+:\+:Loader}
+\label{classobjl_1_1_loader}\index{objl\+::\+Loader@{objl\+::\+Loader}}
+
+
+{\ttfamily \#include $<$objloader.\+h$>$}
+
+
+
+Граф связей класса objl\+:\+:Loader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{dd/d07/classobjl_1_1_loader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classobjl_1_1_loader_a8ae8d4592c0f727daca80005ae48ea32}{Loader} ()
+\item 
+\hyperlink{classobjl_1_1_loader_a40d6e6ce91ce09df26a4042605ef4c4c}{$\sim$\+Loader} ()
+\item 
+bool \hyperlink{classobjl_1_1_loader_a4e3c689962e3ac018d5944f37a791518}{Load\+File} (std\+::string Path)
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structobjl_1_1_mesh}{Mesh} $>$ \hyperlink{classobjl_1_1_loader_aba5e73cc2c1d0a917415498723ea5702}{Loaded\+Meshes}
+\item 
+std\+::vector$<$ \hyperlink{structobjl_1_1_vertex}{Vertex} $>$ \hyperlink{classobjl_1_1_loader_ada15ad9ce70b5c457907be7988436ed5}{Loaded\+Vertices}
+\item 
+std\+::vector$<$ unsigned int $>$ \hyperlink{classobjl_1_1_loader_a29e18c5a09e82ac44106e282d1acf31a}{Loaded\+Indices}
+\item 
+std\+::vector$<$ \hyperlink{structobjl_1_1_material}{Material} $>$ \hyperlink{classobjl_1_1_loader_a302204a43746c96f7fe0c72516019f9f}{Loaded\+Materials}
+\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classobjl_1_1_loader_ac7a2017fa9ec1550c00350f87c7ba93a}{Gen\+Vertices\+From\+Raw\+O\+BJ} (std\+::vector$<$ \hyperlink{structobjl_1_1_vertex}{Vertex} $>$ \&o\+Verts, const std\+::vector$<$ \hyperlink{structobjl_1_1_vector3}{Vector3} $>$ \&i\+Positions, const std\+::vector$<$ \hyperlink{structobjl_1_1_vector2}{Vector2} $>$ \&i\+T\+Coords, const std\+::vector$<$ \hyperlink{structobjl_1_1_vector3}{Vector3} $>$ \&i\+Normals, std\+::string icurline)
+\item 
+void \hyperlink{classobjl_1_1_loader_a74d527984ea9cb75c7ea1624ee9621b0}{Vertex\+Triangluation} (std\+::vector$<$ unsigned int $>$ \&o\+Indices, const std\+::vector$<$ \hyperlink{structobjl_1_1_vertex}{Vertex} $>$ \&i\+Verts)
+\item 
+bool \hyperlink{classobjl_1_1_loader_af2f27d60aeb3833d41aec46c6fce5348}{Load\+Materials} (std\+::string path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле objloader.\+h строка 388
+
+
+
+\subsection{Конструктор(ы)}
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Loader@{Loader}}
+\index{Loader@{Loader}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Loader()}{Loader()}}]{\setlength{\rightskip}{0pt plus 5cm}objl\+::\+Loader\+::\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classobjl_1_1_loader_a8ae8d4592c0f727daca80005ae48ea32}{}\label{classobjl_1_1_loader_a8ae8d4592c0f727daca80005ae48ea32}
+
+
+См. определение в файле objloader.\+h строка 392
+
+\index{objl\+::\+Loader@{objl\+::\+Loader}!````~Loader@{$\sim$\+Loader}}
+\index{````~Loader@{$\sim$\+Loader}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{$\sim$\+Loader()}{~Loader()}}]{\setlength{\rightskip}{0pt plus 5cm}objl\+::\+Loader\+::$\sim$\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classobjl_1_1_loader_a40d6e6ce91ce09df26a4042605ef4c4c}{}\label{classobjl_1_1_loader_a40d6e6ce91ce09df26a4042605ef4c4c}
+
+
+См. определение в файле objloader.\+h строка 395
+
+
+
+\subsection{Методы}
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Gen\+Vertices\+From\+Raw\+O\+BJ@{Gen\+Vertices\+From\+Raw\+O\+BJ}}
+\index{Gen\+Vertices\+From\+Raw\+O\+BJ@{Gen\+Vertices\+From\+Raw\+O\+BJ}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Gen\+Vertices\+From\+Raw\+O\+B\+J(std\+::vector$<$ Vertex $>$ \&o\+Verts, const std\+::vector$<$ Vector3 $>$ \&i\+Positions, const std\+::vector$<$ Vector2 $>$ \&i\+T\+Coords, const std\+::vector$<$ Vector3 $>$ \&i\+Normals, std\+::string icurline)}{GenVerticesFromRawOBJ(std::vector< Vertex > &oVerts, const std::vector< Vector3 > &iPositions, const std::vector< Vector2 > &iTCoords, const std::vector< Vector3 > &iNormals, std::string icurline)}}]{\setlength{\rightskip}{0pt plus 5cm}void objl\+::\+Loader\+::\+Gen\+Vertices\+From\+Raw\+O\+BJ (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Vertex} $>$ \&}]{o\+Verts, }
+\item[{const std\+::vector$<$ {\bf Vector3} $>$ \&}]{i\+Positions, }
+\item[{const std\+::vector$<$ {\bf Vector2} $>$ \&}]{i\+T\+Coords, }
+\item[{const std\+::vector$<$ {\bf Vector3} $>$ \&}]{i\+Normals, }
+\item[{std\+::string}]{icurline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classobjl_1_1_loader_ac7a2017fa9ec1550c00350f87c7ba93a}{}\label{classobjl_1_1_loader_ac7a2017fa9ec1550c00350f87c7ba93a}
+
+
+См. определение в файле objloader.\+h строка 706
+
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Load\+File@{Load\+File}}
+\index{Load\+File@{Load\+File}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Load\+File(std\+::string Path)}{LoadFile(std::string Path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool objl\+::\+Loader\+::\+Load\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classobjl_1_1_loader_a4e3c689962e3ac018d5944f37a791518}{}\label{classobjl_1_1_loader_a4e3c689962e3ac018d5944f37a791518}
+
+
+См. определение в файле objloader.\+h строка 406
+
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Load\+Materials@{Load\+Materials}}
+\index{Load\+Materials@{Load\+Materials}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Load\+Materials(std\+::string path)}{LoadMaterials(std::string path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool objl\+::\+Loader\+::\+Load\+Materials (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classobjl_1_1_loader_af2f27d60aeb3833d41aec46c6fce5348}{}\label{classobjl_1_1_loader_af2f27d60aeb3833d41aec46c6fce5348}
+
+
+См. определение в файле objloader.\+h строка 1035
+
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Vertex\+Triangluation@{Vertex\+Triangluation}}
+\index{Vertex\+Triangluation@{Vertex\+Triangluation}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Vertex\+Triangluation(std\+::vector$<$ unsigned int $>$ \&o\+Indices, const std\+::vector$<$ Vertex $>$ \&i\+Verts)}{VertexTriangluation(std::vector< unsigned int > &oIndices, const std::vector< Vertex > &iVerts)}}]{\setlength{\rightskip}{0pt plus 5cm}void objl\+::\+Loader\+::\+Vertex\+Triangluation (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ unsigned int $>$ \&}]{o\+Indices, }
+\item[{const std\+::vector$<$ {\bf Vertex} $>$ \&}]{i\+Verts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classobjl_1_1_loader_a74d527984ea9cb75c7ea1624ee9621b0}{}\label{classobjl_1_1_loader_a74d527984ea9cb75c7ea1624ee9621b0}
+
+
+См. определение в файле objloader.\+h строка 818
+
+
+
+\subsection{Данные класса}
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Loaded\+Indices@{Loaded\+Indices}}
+\index{Loaded\+Indices@{Loaded\+Indices}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Loaded\+Indices}{LoadedIndices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned int$>$ objl\+::\+Loader\+::\+Loaded\+Indices}\hypertarget{classobjl_1_1_loader_a29e18c5a09e82ac44106e282d1acf31a}{}\label{classobjl_1_1_loader_a29e18c5a09e82ac44106e282d1acf31a}
+
+
+См. определение в файле objloader.\+h строка 699
+
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Loaded\+Materials@{Loaded\+Materials}}
+\index{Loaded\+Materials@{Loaded\+Materials}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Loaded\+Materials}{LoadedMaterials}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Material}$>$ objl\+::\+Loader\+::\+Loaded\+Materials}\hypertarget{classobjl_1_1_loader_a302204a43746c96f7fe0c72516019f9f}{}\label{classobjl_1_1_loader_a302204a43746c96f7fe0c72516019f9f}
+
+
+См. определение в файле objloader.\+h строка 701
+
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Loaded\+Meshes@{Loaded\+Meshes}}
+\index{Loaded\+Meshes@{Loaded\+Meshes}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Loaded\+Meshes}{LoadedMeshes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Mesh}$>$ objl\+::\+Loader\+::\+Loaded\+Meshes}\hypertarget{classobjl_1_1_loader_aba5e73cc2c1d0a917415498723ea5702}{}\label{classobjl_1_1_loader_aba5e73cc2c1d0a917415498723ea5702}
+
+
+См. определение в файле objloader.\+h строка 695
+
+\index{objl\+::\+Loader@{objl\+::\+Loader}!Loaded\+Vertices@{Loaded\+Vertices}}
+\index{Loaded\+Vertices@{Loaded\+Vertices}!objl\+::\+Loader@{objl\+::\+Loader}}
+\subsubsection[{\texorpdfstring{Loaded\+Vertices}{LoadedVertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Vertex}$>$ objl\+::\+Loader\+::\+Loaded\+Vertices}\hypertarget{classobjl_1_1_loader_ada15ad9ce70b5c457907be7988436ed5}{}\label{classobjl_1_1_loader_ada15ad9ce70b5c457907be7988436ed5}
+
+
+См. определение в файле objloader.\+h строка 697
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/3rdparty/\+Obj\+Loader/\hyperlink{3rdparty_2_obj_loader_2objloader_8h}{objloader.\+h}\end{DoxyCompactItemize}

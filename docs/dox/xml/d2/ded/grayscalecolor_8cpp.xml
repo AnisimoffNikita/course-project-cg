@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d2/ded/grayscalecolor_8cpp" kind="file" language="C++">
+    <compoundname>grayscalecolor.cpp</compoundname>
+    <includes refid="d0/d9c/grayscalecolor_8h" local="yes">grayscalecolor.h</includes>
+    <incdepgraph>
+      <node id="2969">
+        <label>Projects/labs/course_project_cg/src/image/grayscalecolor.cpp</label>
+        <link refid="grayscalecolor.cpp"/>
+        <childnode refid="2970" relation="include">
+        </childnode>
+      </node>
+      <node id="2971">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2970">
+        <label>grayscalecolor.h</label>
+        <link refid="d0/d9c/grayscalecolor_8h"/>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d9c/grayscalecolor_8h" kindref="compound">grayscalecolor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/image/grayscalecolor.cpp"/>
+  </compounddef>
+</doxygen>

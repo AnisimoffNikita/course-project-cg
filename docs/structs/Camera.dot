@@ -1,0 +1,5 @@
+digraph Camera
+{
+graph [ rankdir="RL" ]
+"da/dbb/class_camera" [ label="Camera\n|+Camera ( position : const Vec3 &, lookAt : const Vec3 &, up : const Vec3 &, projection : const Mat4 & )\l/+draw (  : std::unique_ptr\< Renderer \> & ) : void \{virtual\}\l+getEyeVector (  ) : Vec3 \{virtual\}\l+getLookAt (  ) : const Vec3 & \{virtual\}\l+getPMatrix (  ) : const Mat4 & \{virtual\}\l+getPVMatrix (  ) : Mat4 \{virtual\}\l+getVMatrix (  ) : const Mat4 & \{virtual\}\l/+isCamera (  ) : bool \{virtual\}\l/+isLight (  ) : bool \{virtual\}\l+setLookAt ( target : const Vec3 & ) : void \{virtual\}\l/+setPosition ( value : const Vec3 & ) : void \{virtual\}\l/+transform ( transformation : Transformation & ) : void \{virtual\}\l#updateViewMatrix (  ) : void\l|#lookAt : Vec3\l#projectionMatrix : Mat4\l#up : Vec3\l#viewMatrix : Mat4\l" shape="record" ]
+}

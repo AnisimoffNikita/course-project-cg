@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/d6a/meshdata_8h" kind="file" language="C++">
+    <compoundname>meshdata.h</compoundname>
+    <includes refid="da/dec/color_8h" local="yes">src/image/color.h</includes>
+    <includes refid="d8/d08/vec3_8h" local="yes">src/math/vec3.h</includes>
+    <includes refid="d3/d22/number_8h" local="yes">src/number.h</includes>
+    <includes local="no">array</includes>
+    <includes refid="dc/d53/transformation_8h" local="yes">transformation.h</includes>
+    <includedby refid="d8/d3b/mesh_8h" local="yes">Projects/labs/course_project_cg/src/animation/mesh.h</includedby>
+    <includedby refid="dd/dd8/meshdata_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/meshdata.cpp</includedby>
+    <incdepgraph>
+      <node id="2457">
+        <label>functional</label>
+      </node>
+      <node id="2453">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2454" relation="include">
+        </childnode>
+      </node>
+      <node id="2455">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2454" relation="include">
+        </childnode>
+        <childnode refid="2456" relation="include">
+        </childnode>
+      </node>
+      <node id="2454">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2452">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.h</label>
+        <link refid="meshdata.h"/>
+        <childnode refid="2453" relation="include">
+        </childnode>
+        <childnode refid="2455" relation="include">
+        </childnode>
+        <childnode refid="2454" relation="include">
+        </childnode>
+        <childnode refid="2458" relation="include">
+        </childnode>
+        <childnode refid="2459" relation="include">
+        </childnode>
+      </node>
+      <node id="2460">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2454" relation="include">
+        </childnode>
+      </node>
+      <node id="2456">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2454" relation="include">
+        </childnode>
+        <childnode refid="2457" relation="include">
+        </childnode>
+      </node>
+      <node id="2458">
+        <label>array</label>
+      </node>
+      <node id="2459">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2455" relation="include">
+        </childnode>
+        <childnode refid="2460" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2482">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.cpp</label>
+        <link refid="dd/dd8/meshdata_8cpp"/>
+      </node>
+      <node id="2464">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="2465" relation="include">
+        </childnode>
+        <childnode refid="2466" relation="include">
+        </childnode>
+        <childnode refid="2467" relation="include">
+        </childnode>
+      </node>
+      <node id="2481">
+        <label>Projects/labs/course_project_cg/src/animation/objloader.cpp</label>
+        <link refid="dd/dbb/objloader_8cpp"/>
+      </node>
+      <node id="2470">
+        <label>Projects/labs/course_project_cg/src/animation/scene.cpp</label>
+        <link refid="da/d33/scene_8cpp"/>
+      </node>
+      <node id="2473">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2475">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="2467" relation="include">
+        </childnode>
+      </node>
+      <node id="2474">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.h</label>
+        <link refid="d3/d6a/modelview_8h"/>
+        <childnode refid="2466" relation="include">
+        </childnode>
+      </node>
+      <node id="2479">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="2461">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.h</label>
+        <link refid="meshdata.h"/>
+        <childnode refid="2462" relation="include">
+        </childnode>
+        <childnode refid="2482" relation="include">
+        </childnode>
+      </node>
+      <node id="2480">
+        <label>Projects/labs/course_project_cg/src/animation/objloader.h</label>
+        <link refid="de/d7c/animation_2objloader_8h"/>
+        <childnode refid="2481" relation="include">
+        </childnode>
+        <childnode refid="2466" relation="include">
+        </childnode>
+        <childnode refid="2467" relation="include">
+        </childnode>
+      </node>
+      <node id="2477">
+        <label>Projects/labs/course_project_cg/src/animation/model.h</label>
+        <link refid="dc/d51/model_8h"/>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2478" relation="include">
+        </childnode>
+      </node>
+      <node id="2476">
+        <label>Projects/labs/course_project_cg/src/animation/mesh.cpp</label>
+        <link refid="d8/dd2/mesh_8cpp"/>
+      </node>
+      <node id="2468">
+        <label>Projects/labs/course_project_cg/src/animation/model.cpp</label>
+        <link refid="d6/db4/model_8cpp"/>
+      </node>
+      <node id="2466">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2472">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2463">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2464" relation="include">
+        </childnode>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2469" relation="include">
+        </childnode>
+        <childnode refid="2470" relation="include">
+        </childnode>
+        <childnode refid="2471" relation="include">
+        </childnode>
+        <childnode refid="2474" relation="include">
+        </childnode>
+        <childnode refid="2466" relation="include">
+        </childnode>
+        <childnode refid="2475" relation="include">
+        </childnode>
+        <childnode refid="2467" relation="include">
+        </childnode>
+      </node>
+      <node id="2478">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="d9/d8f/sceneobjectfactory_8h"/>
+        <childnode refid="2479" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+        <childnode refid="2466" relation="include">
+        </childnode>
+        <childnode refid="2467" relation="include">
+        </childnode>
+      </node>
+      <node id="2467">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2469">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.cpp</label>
+        <link refid="d6/d54/renderer_8cpp"/>
+      </node>
+      <node id="2462">
+        <label>Projects/labs/course_project_cg/src/animation/mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2463" relation="include">
+        </childnode>
+        <childnode refid="2476" relation="include">
+        </childnode>
+        <childnode refid="2477" relation="include">
+        </childnode>
+        <childnode refid="2480" relation="include">
+        </childnode>
+      </node>
+      <node id="2465">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+      <node id="2471">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2472" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d0/d72/class_vertex" prot="public">Vertex</innerclass>
+    <innerclass refid="d2/d28/class_triangle" prot="public">Triangle</innerclass>
+    <innerclass refid="dc/dee/class_material" prot="public">Material</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MESHDATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MESHDATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="da/dec/color_8h" kindref="compound">src/image/color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d08/vec3_8h" kindref="compound">src/math/vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d22/number_8h" kindref="compound">src/number.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d53/transformation_8h" kindref="compound">transformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d0/d72/class_vertex" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>n);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;getV()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;getN();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setN(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref><sp/>&amp;other);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="30" refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d2/d28/class_triangle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;v2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;v3);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>getV1()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setV1(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>getV2()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setV2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>getV3()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setV3(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>array&lt;int,<sp/>3&gt;<sp/><ref refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="dc/dee/class_material" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/dee/class_material" kindref="compound">Material</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material" kindref="compound">Material</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material" kindref="compound">Material</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;ka,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;kd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;ks,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ns,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ni,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;getKa();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setKa(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;getKd();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setKd(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;getKs();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setKs(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getNs()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setNs(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getNi()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setNi(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getD()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setD(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78" refid="dc/dee/class_material_1a93cc771f8b2e9d1f273465e25504ea7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/><ref refid="dc/dee/class_material_1a93cc771f8b2e9d1f273465e25504ea7b" kindref="member">ka</ref>;</highlight></codeline>
+<codeline lineno="79" refid="dc/dee/class_material_1a42e6838a32f4a6b54a62a01afc4a1cdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/><ref refid="dc/dee/class_material_1a42e6838a32f4a6b54a62a01afc4a1cdb" kindref="member">kd</ref>;</highlight></codeline>
+<codeline lineno="80" refid="dc/dee/class_material_1a986cb019dc23c99fc139b16793c1ddb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/><ref refid="dc/dee/class_material_1a986cb019dc23c99fc139b16793c1ddb5" kindref="member">ks</ref>;</highlight></codeline>
+<codeline lineno="81" refid="dc/dee/class_material_1a49335919c5596c4523f71be7f01bdf9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a49335919c5596c4523f71be7f01bdf9d" kindref="member">ns</ref>;</highlight></codeline>
+<codeline lineno="82" refid="dc/dee/class_material_1a9132d1f6cc468abe6c40659962e06236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a9132d1f6cc468abe6c40659962e06236" kindref="member">ni</ref>;</highlight></codeline>
+<codeline lineno="83" refid="dc/dee/class_material_1a72cb289b8dccb7a08e0b0f7880a92803" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a72cb289b8dccb7a08e0b0f7880a92803" kindref="member">d</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MESHDATA_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/meshdata.h"/>
+  </compounddef>
+</doxygen>

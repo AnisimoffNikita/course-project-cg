@@ -1,0 +1,5 @@
+digraph Transformation
+{
+graph [ rankdir="RL" ]
+"d1/d32/class_transformation" [ label="Transformation\nabstract\n|+Transformation (  )\l+getMatrix (  ) : const Mat4 &\l+resetOrigin (  ) : void \{pure-virtual\}\l+transform ( vertex : Vec3 & ) : void \{pure-virtual\}\l+~Transformation (  ) \{virtual\}\l|#_matrix : Mat4\l" shape="record" ]
+}

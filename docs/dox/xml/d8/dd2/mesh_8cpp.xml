@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d8/dd2/mesh_8cpp" kind="file" language="C++">
+    <compoundname>mesh.cpp</compoundname>
+    <includes refid="d8/d3b/mesh_8h" local="yes">mesh.h</includes>
+    <incdepgraph>
+      <node id="2403">
+        <label>functional</label>
+      </node>
+      <node id="2407">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2401" relation="include">
+        </childnode>
+      </node>
+      <node id="2400">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2401" relation="include">
+        </childnode>
+        <childnode refid="2402" relation="include">
+        </childnode>
+      </node>
+      <node id="2401">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2406">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2407" relation="include">
+        </childnode>
+        <childnode refid="2400" relation="include">
+        </childnode>
+        <childnode refid="2401" relation="include">
+        </childnode>
+        <childnode refid="2408" relation="include">
+        </childnode>
+        <childnode refid="2405" relation="include">
+        </childnode>
+      </node>
+      <node id="2404">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2401" relation="include">
+        </childnode>
+      </node>
+      <node id="2397">
+        <label>Projects/labs/course_project_cg/src/animation/mesh.cpp</label>
+        <link refid="mesh.cpp"/>
+        <childnode refid="2398" relation="include">
+        </childnode>
+      </node>
+      <node id="2402">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2401" relation="include">
+        </childnode>
+        <childnode refid="2403" relation="include">
+        </childnode>
+      </node>
+      <node id="2399">
+        <label>vector</label>
+      </node>
+      <node id="2408">
+        <label>array</label>
+      </node>
+      <node id="2398">
+        <label>mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2399" relation="include">
+        </childnode>
+        <childnode refid="2400" relation="include">
+        </childnode>
+        <childnode refid="2404" relation="include">
+        </childnode>
+        <childnode refid="2405" relation="include">
+        </childnode>
+        <childnode refid="2406" relation="include">
+        </childnode>
+      </node>
+      <node id="2405">
+        <label>src/animation/transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2400" relation="include">
+        </childnode>
+        <childnode refid="2404" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d3b/mesh_8h" kindref="compound">mesh.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="dc/dbe/class_mesh_1a1844b662689440a6c5ad761c53be4f94" refkind="member"><highlight class="normal">vector&lt;Vertex&gt;<sp/>&amp;<ref refid="dc/dbe/class_mesh_1a1844b662689440a6c5ad761c53be4f94" kindref="member">Mesh::getVertices</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh_1abe5c05c224e47ba1e8b6393759798a9b" kindref="member">vertices</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="dc/dbe/class_mesh_1a5c68963c5e297f561932ae51d1f0e8f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh_1a5c68963c5e297f561932ae51d1f0e8f5" kindref="member">Mesh::setVertices</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Vertex&gt;<sp/>&amp;value)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dbe/class_mesh_1abe5c05c224e47ba1e8b6393759798a9b" kindref="member">vertices</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="dc/dbe/class_mesh_1a7674d50589acad6a336f264d007e71c9" refkind="member"><highlight class="normal">vector&lt;Triangle&gt;<sp/>&amp;<ref refid="dc/dbe/class_mesh_1a7674d50589acad6a336f264d007e71c9" kindref="member">Mesh::getTriangles</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh_1a2b30e4823d6d0d17c115018065bd1e91" kindref="member">triangles</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="dc/dbe/class_mesh_1a26adb872946b00793f84f8cecd48cc56" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh_1a26adb872946b00793f84f8cecd48cc56" kindref="member">Mesh::setTriangles</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Triangle&gt;<sp/>&amp;value)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dbe/class_mesh_1a2b30e4823d6d0d17c115018065bd1e91" kindref="member">triangles</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="dc/dbe/class_mesh_1add1ff13540509dc02be32fa791c22352" refkind="member"><highlight class="normal"><ref refid="dc/dee/class_material" kindref="compound">Material</ref><sp/>&amp;<ref refid="dc/dbe/class_mesh_1add1ff13540509dc02be32fa791c22352" kindref="member">Mesh::getMaterial</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh_1a3368c3bc60dd176e522df1542b764847" kindref="member">material</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="dc/dbe/class_mesh_1a16e6aa53eab442ce66381e67259be050" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh_1a16e6aa53eab442ce66381e67259be050" kindref="member">Mesh::setMaterial</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material" kindref="compound">Material</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dbe/class_mesh_1a3368c3bc60dd176e522df1542b764847" kindref="member">material</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="dc/dbe/class_mesh_1a6261935dee415d96a87e3db58cdbe6a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh_1a6261935dee415d96a87e3db58cdbe6a2" kindref="member">Mesh::transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;vertex<sp/>:<sp/><ref refid="dc/dbe/class_mesh_1abe5c05c224e47ba1e8b6393759798a9b" kindref="member">vertices</ref>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertex.transform(transformation);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/mesh.cpp"/>
+  </compounddef>
+</doxygen>

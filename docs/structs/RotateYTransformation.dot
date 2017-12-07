@@ -1,0 +1,5 @@
+digraph RotateYTransformation
+{
+graph [ rankdir="RL" ]
+"d1/d32/class_rotate_y_transformation" [ label="RotateYTransformation\n|+RotateYTransformation ( angle : float, origin : const Vec3 & )\l/+resetOrigin (  ) : void \{virtual\}\l/+transform ( vertex : Vec3 & ) : void \{virtual\}\l|#_origin : Vec3\l" shape="record" ]
+}

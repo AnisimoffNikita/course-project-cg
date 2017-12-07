@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/d3f/class_matrix" kind="class" language="C++" prot="public">
+    <compoundname>Matrix</compoundname>
+    <includes refid="dd/df4/matrix_8h" local="no">matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <declname>M</declname>
+        <defname>M</defname>
+      </param>
+      <param>
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d3f/class_matrix_1a9cd751074f76f6d7019834492e30bb5c" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Matrix&lt; M, N, T &gt;::m[M][N]</definition>
+        <argsstring>[M][N]</argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="61" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a057b8f4cfbddb0331c0dfb8d6d31310e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; M, N, T &gt;::Matrix</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a6dd2e82ed0b8ea67ea0519882175bd67" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; M, N, T &gt;::Matrix</definition>
+        <argsstring>(const T *values)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const T *</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1aa093a7de8b27d19e6eb66b09f9da7b87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; Matrix&lt; M, N, T &gt;::operator()</definition>
+        <argsstring>(int32 row, int32 column) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1acf0955eccefd5abe0f0a8ea8f5f1582e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; Matrix&lt; M, N, T &gt;::operator()</definition>
+        <argsstring>(int32 row, int32 column)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1aa21a8169dde52a31ee25fa40c7b3cbaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix&lt; M, N, T &gt;::isIdentity</definition>
+        <argsstring>() const </argsstring>
+        <name>isIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="95" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1aa571c8458a34695e88e076b3307cbdeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; M, N, T &gt;::setToIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>setToIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="112" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a77bac0ccf5799c0249fb77f78246bf75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; M, N, T &gt;::fill</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>fill</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="127" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1aa07c344f3ac92f1b1ee9ebc1b42d4973" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; N, M, T &gt;</type>
+        <definition>Matrix&lt; N, M, T &gt; Matrix&lt; M, N, T &gt;::transposed</definition>
+        <argsstring>() const </argsstring>
+        <name>transposed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="21" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="137" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a29caf32b1bacaebe05277f056bbe0229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+        <definition>Matrix&lt; M, N, T &gt; &amp; Matrix&lt; M, N, T &gt;::operator+=</definition>
+        <argsstring>(const Matrix&lt; M, N, T &gt; &amp;other)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="151" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1ae6a824c0ec0f0f067b167f8b45fa1910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+        <definition>Matrix&lt; M, N, T &gt; &amp; Matrix&lt; M, N, T &gt;::operator-=</definition>
+        <argsstring>(const Matrix&lt; M, N, T &gt; &amp;other)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="24" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="163" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a660133e52cdffddc553e2f05c693cd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+        <definition>Matrix&lt; M, N, T &gt; &amp; Matrix&lt; M, N, T &gt;::operator*=</definition>
+        <argsstring>(T factor)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>T</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="175" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a9b870fa2d8a56715f6a9398854cfdb16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+        <definition>Matrix&lt; M, N, T &gt; &amp; Matrix&lt; M, N, T &gt;::operator/=</definition>
+        <argsstring>(T divisor)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>T</type>
+          <declname>divisor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="213" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a9c9f9ffe07d56bb9a14f7bb89113af9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix&lt; M, N, T &gt;::operator==</definition>
+        <argsstring>(const Matrix&lt; M, N, T &gt; &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="27" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="187" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1aea308a4ad5bea479d5607e79792eee96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix&lt; M, N, T &gt;::operator!=</definition>
+        <argsstring>(const Matrix&lt; M, N, T &gt; &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M, N, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="200" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a5e6ffc416f13f4f14dd8087da2234d40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Matrix&lt; M, N, T &gt;::data</definition>
+        <argsstring>()</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="30" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/class_matrix_1a8277fe32f0783374b7fea39e6d80ca7c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* Matrix&lt; M, N, T &gt;::data</definition>
+        <argsstring>() const </argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="34" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d6/d3f/class_matrix_1ade356cdf3e34c2ed51bd20166cd91d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>MM</declname>
+            <defname>MM</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>NN</declname>
+            <defname>NN</defname>
+          </param>
+          <param>
+            <type>typename TT</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt;</type>
+        <definition>Matrix&lt;MM, NN, TT&gt; operator+</definition>
+        <argsstring>(const Matrix&lt; MM, NN, TT &gt; &amp;m1, const Matrix&lt; MM, NN, TT &gt; &amp;m2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>m2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d6/d3f/class_matrix_1a012fd845172a7a29f1ace01dd0191962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>MM</declname>
+            <defname>MM</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>NN</declname>
+            <defname>NN</defname>
+          </param>
+          <param>
+            <type>typename TT</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt;</type>
+        <definition>Matrix&lt;MM, NN, TT&gt; operator-</definition>
+        <argsstring>(const Matrix&lt; MM, NN, TT &gt; &amp;m1, const Matrix&lt; MM, NN, TT &gt; &amp;m2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>m2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d6/d3f/class_matrix_1aac9476d517d9f0c8224e1d17ce52e04d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>NN</declname>
+            <defname>NN</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>M1</declname>
+            <defname>M1</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>M2</declname>
+            <defname>M2</defname>
+          </param>
+          <param>
+            <type>typename TT</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M1, M2, TT &gt;</type>
+        <definition>Matrix&lt;M1, M2, TT&gt; operator*</definition>
+        <argsstring>(const Matrix&lt; M1, NN, TT &gt; &amp;m1, const Matrix&lt; NN, M2, TT &gt; &amp;m2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; M1, NN, TT &gt; &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; NN, M2, TT &gt; &amp;</type>
+          <declname>m2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d6/d3f/class_matrix_1afacec860ab5322f435b2d1cd4331f477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>MM</declname>
+            <defname>MM</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>NN</declname>
+            <defname>NN</defname>
+          </param>
+          <param>
+            <type>typename TT</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt;</type>
+        <definition>Matrix&lt;MM, NN, TT&gt; operator-</definition>
+        <argsstring>(const Matrix&lt; MM, NN, TT &gt; &amp;matrix)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d6/d3f/class_matrix_1a47bf9d770ba7d5830a285da8ce5740e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>MM</declname>
+            <defname>MM</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>NN</declname>
+            <defname>NN</defname>
+          </param>
+          <param>
+            <type>typename TT</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt;</type>
+        <definition>Matrix&lt;MM, NN, TT&gt; operator*</definition>
+        <argsstring>(TT factor, const Matrix&lt; MM, NN, TT &gt; &amp;matrix)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>TT</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d6/d3f/class_matrix_1ab6864ff72e7ba6c207b8aaf18ac6a0f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>MM</declname>
+            <defname>MM</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>NN</declname>
+            <defname>NN</defname>
+          </param>
+          <param>
+            <type>typename TT</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt;</type>
+        <definition>Matrix&lt;MM, NN, TT&gt; operator*</definition>
+        <argsstring>(const Matrix&lt; MM, NN, TT &gt; &amp;matrix, TT factor)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>TT</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d6/d3f/class_matrix_1a4876d0443c8e8defdc490c265f13c2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>MM</declname>
+            <defname>MM</defname>
+          </param>
+          <param>
+            <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+            <declname>NN</declname>
+            <defname>NN</defname>
+          </param>
+          <param>
+            <type>typename TT</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt;</type>
+        <definition>Matrix&lt;MM, NN, TT&gt; operator/</definition>
+        <argsstring>(const Matrix&lt; MM, NN, TT &gt; &amp;matrix, TT divisor)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="d6/d3f/class_matrix" kindref="compound">Matrix</ref>&lt; MM, NN, TT &gt; &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>TT</type>
+          <declname>divisor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="394">
+        <label>Matrix&lt; M, N, T &gt;</label>
+        <link refid="d6/d3f/class_matrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/math/matrix.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/math/matrix.h" bodystart="7" bodyend="63"/>
+    <listofallmembers>
+      <member refid="d6/d3f/class_matrix_1a5e6ffc416f13f4f14dd8087da2234d40" prot="public" virt="non-virtual"><scope>Matrix</scope><name>data</name></member>
+      <member refid="d6/d3f/class_matrix_1a8277fe32f0783374b7fea39e6d80ca7c" prot="public" virt="non-virtual"><scope>Matrix</scope><name>data</name></member>
+      <member refid="d6/d3f/class_matrix_1a77bac0ccf5799c0249fb77f78246bf75" prot="public" virt="non-virtual"><scope>Matrix</scope><name>fill</name></member>
+      <member refid="d6/d3f/class_matrix_1aa21a8169dde52a31ee25fa40c7b3cbaf" prot="public" virt="non-virtual"><scope>Matrix</scope><name>isIdentity</name></member>
+      <member refid="d6/d3f/class_matrix_1a9cd751074f76f6d7019834492e30bb5c" prot="private" virt="non-virtual"><scope>Matrix</scope><name>m</name></member>
+      <member refid="d6/d3f/class_matrix_1a057b8f4cfbddb0331c0dfb8d6d31310e" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="d6/d3f/class_matrix_1a6dd2e82ed0b8ea67ea0519882175bd67" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="d6/d3f/class_matrix_1aea308a4ad5bea479d5607e79792eee96" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator!=</name></member>
+      <member refid="d6/d3f/class_matrix_1aa093a7de8b27d19e6eb66b09f9da7b87" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator()</name></member>
+      <member refid="d6/d3f/class_matrix_1acf0955eccefd5abe0f0a8ea8f5f1582e" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator()</name></member>
+      <member refid="d6/d3f/class_matrix_1aac9476d517d9f0c8224e1d17ce52e04d" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="d6/d3f/class_matrix_1a47bf9d770ba7d5830a285da8ce5740e9" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="d6/d3f/class_matrix_1ab6864ff72e7ba6c207b8aaf18ac6a0f2" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="d6/d3f/class_matrix_1a660133e52cdffddc553e2f05c693cd96" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*=</name></member>
+      <member refid="d6/d3f/class_matrix_1ade356cdf3e34c2ed51bd20166cd91d58" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+</name></member>
+      <member refid="d6/d3f/class_matrix_1a29caf32b1bacaebe05277f056bbe0229" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+=</name></member>
+      <member refid="d6/d3f/class_matrix_1a012fd845172a7a29f1ace01dd0191962" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-</name></member>
+      <member refid="d6/d3f/class_matrix_1afacec860ab5322f435b2d1cd4331f477" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-</name></member>
+      <member refid="d6/d3f/class_matrix_1ae6a824c0ec0f0f067b167f8b45fa1910" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-=</name></member>
+      <member refid="d6/d3f/class_matrix_1a4876d0443c8e8defdc490c265f13c2a6" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator/</name></member>
+      <member refid="d6/d3f/class_matrix_1a9b870fa2d8a56715f6a9398854cfdb16" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator/=</name></member>
+      <member refid="d6/d3f/class_matrix_1a9c9f9ffe07d56bb9a14f7bb89113af9e" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator==</name></member>
+      <member refid="d6/d3f/class_matrix_1aa571c8458a34695e88e076b3307cbdeb" prot="public" virt="non-virtual"><scope>Matrix</scope><name>setToIdentity</name></member>
+      <member refid="d6/d3f/class_matrix_1aa07c344f3ac92f1b1ee9ebc1b42d4973" prot="public" virt="non-virtual"><scope>Matrix</scope><name>transposed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

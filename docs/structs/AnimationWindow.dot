@@ -1,0 +1,5 @@
+digraph AnimationWindow
+{
+graph [ rankdir="RL" ]
+"d3/d30/class_animation_window" [ label="AnimationWindow\n|+AnimationWindow ( parent : QWidget * )\l+~AnimationWindow (  )\l|-ui : Ui::AnimationWindow *\l" shape="record" ]
+}

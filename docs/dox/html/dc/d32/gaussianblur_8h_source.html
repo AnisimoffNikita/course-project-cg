@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_b82668e916e017fb161f8813909345a1.html">algorithm</a></li><li class="navelem"><a class="el" href="../../dir_5179f0e1b4ade01a8c45e78f1171086c.html">blur</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">gaussianblur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dc/d32/gaussianblur_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAUSSBLUR_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAUSSBLUR_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/df5/blur_8h.html">blur.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d22/number_8h.html">src/number.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d3/d0b/class_gaussian_blur.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a> : <span class="keyword">public</span> <a class="code" href="../../d3/d14/class_blur.html">Blur</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../d3/d0b/class_gaussian_blur.html#a673756a20ccaacc46de77e6c355276d2">GaussianBlur</a>(<span class="keywordtype">float</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#ab43cc1fff30574e2e04876fda4a55441">sigma</a> = 1.4, <a class="code" href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#ab71bceac5e6b8f3f2d2868f40ff0f80b">kernelSize</a> = 3);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#a881b005db6cc737bf1d6a8ab3d32c6b1">~GaussianBlur</a>();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#a6af6684bdf5e86e5c9a79fe1f3a8c183">process</a>(<a class="code" href="../../de/d73/class_image.html">Image</a> &amp;image);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#a409c05410353b2bb7abfa0ac0e7e2279">getSigma</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#aa4203a493fb56be7dec2af1e90667af1">setSigma</a>(<span class="keywordtype">float</span> value);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#a47c6c015416e7f0770d2990beb85a48c">getKernelSize</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#ad8b1e0c74123f050daa79d20c3636064">setKernelSize</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> &amp;value);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d3/d0b/class_gaussian_blur.html#ab43cc1fff30574e2e04876fda4a55441">   21</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#ab43cc1fff30574e2e04876fda4a55441">sigma</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d3/d0b/class_gaussian_blur.html#ab71bceac5e6b8f3f2d2868f40ff0f80b">   22</a></span>&#160;    <a class="code" href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#ab71bceac5e6b8f3f2d2868f40ff0f80b">kernelSize</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif // GAUSSBLUR_H</span></div><div class="ttc" id="number_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d22/number_8h_source.html#l00005">number.h:5</a></div></div>
+<div class="ttc" id="class_image_html"><div class="ttname"><a href="../../de/d73/class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db2/image_8h_source.html#l00015">image.h:15</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_a673756a20ccaacc46de77e6c355276d2"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#a673756a20ccaacc46de77e6c355276d2">GaussianBlur::GaussianBlur</a></div><div class="ttdeci">GaussianBlur(float sigma=1.4, uint8 kernelSize=3)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00006">gaussianblur.cpp:6</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_a6af6684bdf5e86e5c9a79fe1f3a8c183"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#a6af6684bdf5e86e5c9a79fe1f3a8c183">GaussianBlur::process</a></div><div class="ttdeci">virtual void process(Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00016">gaussianblur.cpp:16</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_a409c05410353b2bb7abfa0ac0e7e2279"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#a409c05410353b2bb7abfa0ac0e7e2279">GaussianBlur::getSigma</a></div><div class="ttdeci">float getSigma() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00073">gaussianblur.cpp:73</a></div></div>
+<div class="ttc" id="number_8h_html"><div class="ttname"><a href="../../d3/d22/number_8h.html">number.h</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_ad8b1e0c74123f050daa79d20c3636064"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#ad8b1e0c74123f050daa79d20c3636064">GaussianBlur::setKernelSize</a></div><div class="ttdeci">void setKernelSize(const uint8 &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00088">gaussianblur.cpp:88</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_ab71bceac5e6b8f3f2d2868f40ff0f80b"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#ab71bceac5e6b8f3f2d2868f40ff0f80b">GaussianBlur::kernelSize</a></div><div class="ttdeci">uint8 kernelSize</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d32/gaussianblur_8h_source.html#l00022">gaussianblur.h:22</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d32/gaussianblur_8h_source.html#l00007">gaussianblur.h:7</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_a881b005db6cc737bf1d6a8ab3d32c6b1"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#a881b005db6cc737bf1d6a8ab3d32c6b1">GaussianBlur::~GaussianBlur</a></div><div class="ttdeci">virtual ~GaussianBlur()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00012">gaussianblur.cpp:12</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_a47c6c015416e7f0770d2990beb85a48c"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#a47c6c015416e7f0770d2990beb85a48c">GaussianBlur::getKernelSize</a></div><div class="ttdeci">uint8 getKernelSize() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00083">gaussianblur.cpp:83</a></div></div>
+<div class="ttc" id="blur_8h_html"><div class="ttname"><a href="../../d4/df5/blur_8h.html">blur.h</a></div></div>
+<div class="ttc" id="class_blur_html"><div class="ttname"><a href="../../d3/d14/class_blur.html">Blur</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/df5/blur_8h_source.html#l00006">blur.h:6</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_aa4203a493fb56be7dec2af1e90667af1"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#aa4203a493fb56be7dec2af1e90667af1">GaussianBlur::setSigma</a></div><div class="ttdeci">void setSigma(float value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00078">gaussianblur.cpp:78</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_ab43cc1fff30574e2e04876fda4a55441"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#ab43cc1fff30574e2e04876fda4a55441">GaussianBlur::sigma</a></div><div class="ttdeci">float sigma</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d32/gaussianblur_8h_source.html#l00021">gaussianblur.h:21</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

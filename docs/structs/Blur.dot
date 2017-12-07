@@ -1,0 +1,5 @@
+digraph Blur
+{
+graph [ rankdir="RL" ]
+"d3/d14/class_blur" [ label="Blur\nabstract\n|+process ( image : Image & ) : void \{pure-virtual\}\l+~Blur (  ) \{virtual\}\l|" shape="record" ]
+}

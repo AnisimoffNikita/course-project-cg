@@ -1,0 +1,5 @@
+digraph Triangle
+{
+graph [ rankdir="RL" ]
+"d2/d28/class_triangle" [ label="Triangle\n|+Triangle (  )\l+Triangle ( v1 : const int32 &, v2 : const int32 &, v3 : const int32 & )\l+getV1 (  ) : int32\l+getV2 (  ) : int32\l+getV3 (  ) : int32\l+setV1 ( value : const int32 & ) : void\l+setV2 ( value : const int32 & ) : void\l+setV3 ( value : const int32 & ) : void\l|-v : array\< int, 3 \>\l" shape="record" ]
+}

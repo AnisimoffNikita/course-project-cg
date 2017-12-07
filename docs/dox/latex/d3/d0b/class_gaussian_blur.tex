@@ -1,0 +1,168 @@
+\hypertarget{class_gaussian_blur}{}\section{Класс Gaussian\+Blur}
+\label{class_gaussian_blur}\index{Gaussian\+Blur@{Gaussian\+Blur}}
+
+
+{\ttfamily \#include $<$gaussianblur.\+h$>$}
+
+
+
+Граф наследования\+:Gaussian\+Blur\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{d4/d1f/class_gaussian_blur__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Gaussian\+Blur\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{d0/df8/class_gaussian_blur__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gaussian_blur_a673756a20ccaacc46de77e6c355276d2}{Gaussian\+Blur} (float \hyperlink{class_gaussian_blur_ab43cc1fff30574e2e04876fda4a55441}{sigma}=1.\+4, \hyperlink{number_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8} \hyperlink{class_gaussian_blur_ab71bceac5e6b8f3f2d2868f40ff0f80b}{kernel\+Size}=3)
+\item 
+virtual \hyperlink{class_gaussian_blur_a881b005db6cc737bf1d6a8ab3d32c6b1}{$\sim$\+Gaussian\+Blur} ()
+\item 
+virtual void \hyperlink{class_gaussian_blur_a6af6684bdf5e86e5c9a79fe1f3a8c183}{process} (\hyperlink{class_image}{Image} \&image)
+\item 
+float \hyperlink{class_gaussian_blur_a409c05410353b2bb7abfa0ac0e7e2279}{get\+Sigma} () const 
+\item 
+void \hyperlink{class_gaussian_blur_aa4203a493fb56be7dec2af1e90667af1}{set\+Sigma} (float value)
+\item 
+\hyperlink{number_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8} \hyperlink{class_gaussian_blur_a47c6c015416e7f0770d2990beb85a48c}{get\+Kernel\+Size} () const 
+\item 
+void \hyperlink{class_gaussian_blur_ad8b1e0c74123f050daa79d20c3636064}{set\+Kernel\+Size} (const \hyperlink{number_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8} \&value)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_gaussian_blur_ab43cc1fff30574e2e04876fda4a55441}{sigma}
+\item 
+\hyperlink{number_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8} \hyperlink{class_gaussian_blur_ab71bceac5e6b8f3f2d2868f40ff0f80b}{kernel\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле gaussianblur.\+h строка 7
+
+
+
+\subsection{Конструктор(ы)}
+\index{Gaussian\+Blur@{Gaussian\+Blur}!Gaussian\+Blur@{Gaussian\+Blur}}
+\index{Gaussian\+Blur@{Gaussian\+Blur}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{Gaussian\+Blur(float sigma=1.\+4, uint8 kernel\+Size=3)}{GaussianBlur(float sigma=1.4, uint8 kernelSize=3)}}]{\setlength{\rightskip}{0pt plus 5cm}Gaussian\+Blur\+::\+Gaussian\+Blur (
+\begin{DoxyParamCaption}
+\item[{float}]{sigma = {\ttfamily 1.4}, }
+\item[{{\bf uint8}}]{kernel\+Size = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gaussian_blur_a673756a20ccaacc46de77e6c355276d2}{}\label{class_gaussian_blur_a673756a20ccaacc46de77e6c355276d2}
+
+
+См. определение в файле gaussianblur.\+cpp строка 6
+
+\index{Gaussian\+Blur@{Gaussian\+Blur}!````~Gaussian\+Blur@{$\sim$\+Gaussian\+Blur}}
+\index{````~Gaussian\+Blur@{$\sim$\+Gaussian\+Blur}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{$\sim$\+Gaussian\+Blur()}{~GaussianBlur()}}]{\setlength{\rightskip}{0pt plus 5cm}Gaussian\+Blur\+::$\sim$\+Gaussian\+Blur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gaussian_blur_a881b005db6cc737bf1d6a8ab3d32c6b1}{}\label{class_gaussian_blur_a881b005db6cc737bf1d6a8ab3d32c6b1}
+
+
+См. определение в файле gaussianblur.\+cpp строка 12
+
+
+
+\subsection{Методы}
+\index{Gaussian\+Blur@{Gaussian\+Blur}!get\+Kernel\+Size@{get\+Kernel\+Size}}
+\index{get\+Kernel\+Size@{get\+Kernel\+Size}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{get\+Kernel\+Size() const }{getKernelSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} Gaussian\+Blur\+::get\+Kernel\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_gaussian_blur_a47c6c015416e7f0770d2990beb85a48c}{}\label{class_gaussian_blur_a47c6c015416e7f0770d2990beb85a48c}
+
+
+См. определение в файле gaussianblur.\+cpp строка 83
+
+\index{Gaussian\+Blur@{Gaussian\+Blur}!get\+Sigma@{get\+Sigma}}
+\index{get\+Sigma@{get\+Sigma}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{get\+Sigma() const }{getSigma() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Gaussian\+Blur\+::get\+Sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_gaussian_blur_a409c05410353b2bb7abfa0ac0e7e2279}{}\label{class_gaussian_blur_a409c05410353b2bb7abfa0ac0e7e2279}
+
+
+См. определение в файле gaussianblur.\+cpp строка 73
+
+\index{Gaussian\+Blur@{Gaussian\+Blur}!process@{process}}
+\index{process@{process}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{process(\+Image \&image)}{process(Image &image)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gaussian\+Blur\+::process (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} \&}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gaussian_blur_a6af6684bdf5e86e5c9a79fe1f3a8c183}{}\label{class_gaussian_blur_a6af6684bdf5e86e5c9a79fe1f3a8c183}
+
+
+Замещает \hyperlink{class_blur_a675fd2caa4a262e8140bdff64912bab4}{Blur}.
+
+
+
+См. определение в файле gaussianblur.\+cpp строка 16
+
+\index{Gaussian\+Blur@{Gaussian\+Blur}!set\+Kernel\+Size@{set\+Kernel\+Size}}
+\index{set\+Kernel\+Size@{set\+Kernel\+Size}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{set\+Kernel\+Size(const uint8 \&value)}{setKernelSize(const uint8 &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gaussian\+Blur\+::set\+Kernel\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf uint8} \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gaussian_blur_ad8b1e0c74123f050daa79d20c3636064}{}\label{class_gaussian_blur_ad8b1e0c74123f050daa79d20c3636064}
+
+
+См. определение в файле gaussianblur.\+cpp строка 88
+
+\index{Gaussian\+Blur@{Gaussian\+Blur}!set\+Sigma@{set\+Sigma}}
+\index{set\+Sigma@{set\+Sigma}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{set\+Sigma(float value)}{setSigma(float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gaussian\+Blur\+::set\+Sigma (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gaussian_blur_aa4203a493fb56be7dec2af1e90667af1}{}\label{class_gaussian_blur_aa4203a493fb56be7dec2af1e90667af1}
+
+
+См. определение в файле gaussianblur.\+cpp строка 78
+
+
+
+\subsection{Данные класса}
+\index{Gaussian\+Blur@{Gaussian\+Blur}!kernel\+Size@{kernel\+Size}}
+\index{kernel\+Size@{kernel\+Size}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{kernel\+Size}{kernelSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} Gaussian\+Blur\+::kernel\+Size\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gaussian_blur_ab71bceac5e6b8f3f2d2868f40ff0f80b}{}\label{class_gaussian_blur_ab71bceac5e6b8f3f2d2868f40ff0f80b}
+
+
+См. определение в файле gaussianblur.\+h строка 22
+
+\index{Gaussian\+Blur@{Gaussian\+Blur}!sigma@{sigma}}
+\index{sigma@{sigma}!Gaussian\+Blur@{Gaussian\+Blur}}
+\subsubsection[{\texorpdfstring{sigma}{sigma}}]{\setlength{\rightskip}{0pt plus 5cm}float Gaussian\+Blur\+::sigma\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gaussian_blur_ab43cc1fff30574e2e04876fda4a55441}{}\label{class_gaussian_blur_ab43cc1fff30574e2e04876fda4a55441}
+
+
+См. определение в файле gaussianblur.\+h строка 21
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/blur/\hyperlink{gaussianblur_8h}{gaussianblur.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/blur/\hyperlink{gaussianblur_8cpp}{gaussianblur.\+cpp}\end{DoxyCompactItemize}

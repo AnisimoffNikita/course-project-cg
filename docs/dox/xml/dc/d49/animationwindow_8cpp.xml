@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dc/d49/animationwindow_8cpp" kind="file" language="C++">
+    <compoundname>animationwindow.cpp</compoundname>
+    <includes refid="d9/d5e/animationwindow_8h" local="yes">animationwindow.h</includes>
+    <includes local="yes">ui_animationwindow.h</includes>
+    <incdepgraph>
+      <node id="2898">
+        <label>Projects/labs/course_project_cg/src/animationwindow.cpp</label>
+        <link refid="animationwindow.cpp"/>
+        <childnode refid="2899" relation="include">
+        </childnode>
+        <childnode refid="2901" relation="include">
+        </childnode>
+      </node>
+      <node id="2901">
+        <label>ui_animationwindow.h</label>
+      </node>
+      <node id="2900">
+        <label>QMainWindow</label>
+      </node>
+      <node id="2899">
+        <label>animationwindow.h</label>
+        <link refid="d9/d5e/animationwindow_8h"/>
+        <childnode refid="2900" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d5e/animationwindow_8h" kindref="compound">animationwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_animationwindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d3/d30/class_animation_window_1a3473a525d4aa738d2569731e26b95570" refkind="member"><highlight class="normal"><ref refid="d3/d30/class_animation_window_1a3473a525d4aa738d2569731e26b95570" kindref="member">AnimationWindow::AnimationWindow</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>QMainWindow(parent),</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/><ref refid="dc/df0/namespace_ui" kindref="compound">Ui</ref>::<ref refid="d3/d30/class_animation_window" kindref="compound">AnimationWindow</ref>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d30/class_animation_window_1a1db782b4d22aec2376c6db4431c77a80" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="d3/d30/class_animation_window_1a2570db590e94da377cdcfa7088240ab2" refkind="member"><highlight class="normal"><ref refid="d3/d30/class_animation_window_1a2570db590e94da377cdcfa7088240ab2" kindref="member">AnimationWindow::~AnimationWindow</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="d3/d30/class_animation_window_1a1db782b4d22aec2376c6db4431c77a80" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animationwindow.cpp"/>
+  </compounddef>
+</doxygen>

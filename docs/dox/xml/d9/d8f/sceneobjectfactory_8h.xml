@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/d8f/sceneobjectfactory_8h" kind="file" language="C++">
+    <compoundname>sceneobjectfactory.h</compoundname>
+    <includes refid="d5/d69/sceneobject_8h" local="yes">sceneobject.h</includes>
+    <includes refid="d7/df6/camera_8h" local="yes">camera.h</includes>
+    <includes refid="dc/d51/model_8h" local="yes">model.h</includes>
+    <includes refid="dc/d87/ambientlight_8h" local="yes">ambientlight.h</includes>
+    <includes refid="d0/d23/pointlight_8h" local="yes">pointlight.h</includes>
+    <includedby refid="da/d15/sceneobjectfactory_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</includedby>
+    <includedby refid="d8/dd9/mainwindow_8cpp" local="yes">Projects/labs/course_project_cg/src/mainwindow.cpp</includedby>
+    <includedby refid="d6/d64/modelview_8cpp" local="yes">Projects/labs/course_project_cg/src/widgets/modelview.cpp</includedby>
+    <includedby refid="d1/d5e/modelview2_8cpp" local="yes">Projects/labs/course_project_cg/src/widgets/modelview2.cpp</includedby>
+    <incdepgraph>
+      <node id="2818">
+        <label>functional</label>
+      </node>
+      <node id="2825">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2816" relation="include">
+        </childnode>
+      </node>
+      <node id="2812">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2813" relation="include">
+        </childnode>
+        <childnode refid="2814" relation="include">
+        </childnode>
+        <childnode refid="2815" relation="include">
+        </childnode>
+      </node>
+      <node id="2815">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2816" relation="include">
+        </childnode>
+        <childnode refid="2817" relation="include">
+        </childnode>
+      </node>
+      <node id="2816">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2829">
+        <label>pointlight.h</label>
+        <link refid="d0/d23/pointlight_8h"/>
+        <childnode refid="2828" relation="include">
+        </childnode>
+      </node>
+      <node id="2824">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2825" relation="include">
+        </childnode>
+        <childnode refid="2815" relation="include">
+        </childnode>
+        <childnode refid="2816" relation="include">
+        </childnode>
+        <childnode refid="2826" relation="include">
+        </childnode>
+        <childnode refid="2823" relation="include">
+        </childnode>
+      </node>
+      <node id="2820">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2816" relation="include">
+        </childnode>
+      </node>
+      <node id="2821">
+        <label>model.h</label>
+        <link refid="dc/d51/model_8h"/>
+        <childnode refid="2812" relation="include">
+        </childnode>
+        <childnode refid="2822" relation="include">
+        </childnode>
+        <childnode refid="2823" relation="include">
+        </childnode>
+      </node>
+      <node id="2819">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="2812" relation="include">
+        </childnode>
+        <childnode refid="2820" relation="include">
+        </childnode>
+      </node>
+      <node id="2817">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2816" relation="include">
+        </childnode>
+        <childnode refid="2818" relation="include">
+        </childnode>
+      </node>
+      <node id="2813">
+        <label>vector</label>
+      </node>
+      <node id="2811">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="sceneobjectfactory.h"/>
+        <childnode refid="2812" relation="include">
+        </childnode>
+        <childnode refid="2819" relation="include">
+        </childnode>
+        <childnode refid="2821" relation="include">
+        </childnode>
+        <childnode refid="2827" relation="include">
+        </childnode>
+        <childnode refid="2829" relation="include">
+        </childnode>
+      </node>
+      <node id="2826">
+        <label>array</label>
+      </node>
+      <node id="2822">
+        <label>src/animation/mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2813" relation="include">
+        </childnode>
+        <childnode refid="2815" relation="include">
+        </childnode>
+        <childnode refid="2820" relation="include">
+        </childnode>
+        <childnode refid="2823" relation="include">
+        </childnode>
+        <childnode refid="2824" relation="include">
+        </childnode>
+      </node>
+      <node id="2823">
+        <label>src/animation/transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2815" relation="include">
+        </childnode>
+        <childnode refid="2820" relation="include">
+        </childnode>
+      </node>
+      <node id="2828">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="2812" relation="include">
+        </childnode>
+        <childnode refid="2825" relation="include">
+        </childnode>
+      </node>
+      <node id="2814">
+        <label>memory</label>
+      </node>
+      <node id="2827">
+        <label>ambientlight.h</label>
+        <link refid="dc/d87/ambientlight_8h"/>
+        <childnode refid="2828" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2832">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2831">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="2833">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2830">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="sceneobjectfactory.h"/>
+        <childnode refid="2831" relation="include">
+        </childnode>
+        <childnode refid="2832" relation="include">
+        </childnode>
+        <childnode refid="2833" relation="include">
+        </childnode>
+        <childnode refid="2834" relation="include">
+        </childnode>
+      </node>
+      <node id="2834">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/df7/class_scene_object_factory" prot="public">SceneObjectFactory</innerclass>
+    <innerclass refid="d7/ddc/class_camera_factory" prot="public">CameraFactory</innerclass>
+    <innerclass refid="d2/daa/struct_camera_factory_1_1_perspective_data" prot="public">CameraFactory::PerspectiveData</innerclass>
+    <innerclass refid="db/da7/class_model_factory" prot="public">ModelFactory</innerclass>
+    <innerclass refid="d5/dbd/class_ambient_light_factory" prot="public">AmbientLightFactory</innerclass>
+    <innerclass refid="de/d1d/class_point_light_factory" prot="public">PointLightFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SCENEOBJECTFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCENEOBJECTFACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d69/sceneobject_8h" kindref="compound">sceneobject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/df6/camera_8h" kindref="compound">camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d51/model_8h" kindref="compound">model.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d87/ambientlight_8h" kindref="compound">ambientlight.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d23/pointlight_8h" kindref="compound">pointlight.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="d4/df7/class_scene_object_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/df7/class_scene_object_factory" kindref="compound">SceneObjectFactory</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" kindref="member">SceneObjectFactory</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" kindref="member">~SceneObjectFactory</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/><ref refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" kindref="member">create</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>move<sp/>to<sp/>own<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d7/ddc/class_camera_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/ddc/class_camera_factory" kindref="compound">CameraFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d4/df7/class_scene_object_factory" kindref="compound">SceneObjectFactory</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="d2/daa/struct_camera_factory_1_1_perspective_data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d2/daa/struct_camera_factory_1_1_perspective_data" kindref="compound">PerspectiveData</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="d2/daa/struct_camera_factory_1_1_perspective_data_1adad856561ffc92f96a2fe6a834f9baf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d2/daa/struct_camera_factory_1_1_perspective_data_1adad856561ffc92f96a2fe6a834f9baf0" kindref="member">fovX</ref>;</highlight></codeline>
+<codeline lineno="27" refid="d2/daa/struct_camera_factory_1_1_perspective_data_1aee0e522e300405859de7ef8d32b63249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d2/daa/struct_camera_factory_1_1_perspective_data_1aee0e522e300405859de7ef8d32b63249" kindref="member">fovY</ref>;</highlight></codeline>
+<codeline lineno="28" refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a2d3bcbd8b639a6ace7a79f91f0e71952" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a2d3bcbd8b639a6ace7a79f91f0e71952" kindref="member">near</ref>;</highlight></codeline>
+<codeline lineno="29" refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a7a69342f752826f9440482ddce959a2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d2/daa/struct_camera_factory_1_1_perspective_data_1a7a69342f752826f9440482ddce959a2f" kindref="member">far</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/ddc/class_camera_factory" kindref="compound">CameraFactory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;lookAt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;up,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/daa/struct_camera_factory_1_1_perspective_data" kindref="compound">PerspectiveData</ref><sp/>&amp;data);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>CameraFactory(const<sp/>Vertex<sp/>&amp;position,<sp/>const<sp/>Vertex<sp/>&amp;target,<sp/>const<sp/>OrthographicData<sp/>&amp;data);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d7/ddc/class_camera_factory" kindref="compound">CameraFactory</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/><ref refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" kindref="member">create</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="d7/ddc/class_camera_factory_1ad1e2114f133f8489e790a4f42b377de3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Camera&gt;<sp/><ref refid="d7/ddc/class_camera_factory_1ad1e2114f133f8489e790a4f42b377de3" kindref="member">camera</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="db/da7/class_model_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/da7/class_model_factory" kindref="compound">ModelFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d4/df7/class_scene_object_factory" kindref="compound">SceneObjectFactory</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/da7/class_model_factory" kindref="compound">ModelFactory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref><sp/>&amp;mesh);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="db/da7/class_model_factory" kindref="compound">ModelFactory</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/><ref refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" kindref="member">create</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52" refid="db/da7/class_model_factory_1a145458dc259da4dd2236acb519e998af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Model&gt;<sp/><ref refid="db/da7/class_model_factory_1a145458dc259da4dd2236acb519e998af" kindref="member">model</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="d5/dbd/class_ambient_light_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/dbd/class_ambient_light_factory" kindref="compound">AmbientLightFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d4/df7/class_scene_object_factory" kindref="compound">SceneObjectFactory</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/dbd/class_ambient_light_factory" kindref="compound">AmbientLightFactory</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>intensity);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d5/dbd/class_ambient_light_factory" kindref="compound">AmbientLightFactory</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/><ref refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" kindref="member">create</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="d5/dbd/class_ambient_light_factory_1a221bc9ca33216eece4eb9878444dbb94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;AmbientLight&gt;<sp/><ref refid="d5/dbd/class_ambient_light_factory_1a221bc9ca33216eece4eb9878444dbb94" kindref="member">light</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="de/d1d/class_point_light_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/d1d/class_point_light_factory" kindref="compound">PointLightFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d4/df7/class_scene_object_factory" kindref="compound">SceneObjectFactory</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d1d/class_point_light_factory" kindref="compound">PointLightFactory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;position,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>intensity);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="de/d1d/class_point_light_factory" kindref="compound">PointLightFactory</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/><ref refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" kindref="member">create</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74" refid="de/d1d/class_point_light_factory_1a23ff1783d18b5a6274c4e0bc94ad0a3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;PointLight&gt;<sp/><ref refid="de/d1d/class_point_light_factory_1a23ff1783d18b5a6274c4e0bc94ad0a3d" kindref="member">light</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SCENEOBJECTFACTORY_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h"/>
+  </compounddef>
+</doxygen>

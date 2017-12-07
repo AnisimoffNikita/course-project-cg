@@ -1,0 +1,31 @@
+<map id="Projects/labs/course_project_cg/src/mainwindow.h" name="Projects/labs/course_project_cg/src/mainwindow.h">
+<area shape="rect" id="node6" href="$de/d3b/cannyedgedetector_8h.html" title="algorithm/edgedetector\l/cannyedgedetector.h" alt="" coords="500,95,655,136"/>
+<area shape="rect" id="node15" href="$dd/d54/houghtransform_8h.html" title="algorithm/linetransform\l/houghtransform.h" alt="" coords="752,95,907,136"/>
+<area shape="rect" id="node19" href="$dc/d32/gaussianblur_8h.html" title="algorithm/blur/gaussianblur.h" alt="" coords="939,102,1127,129"/>
+<area shape="rect" id="node21" href="$d3/dff/cylindersizecalculator_8h.html" title="algorithm/cylindersizecalculator.h" alt="" coords="1162,102,1377,129"/>
+<area shape="rect" id="node26" href="$db/d83/scene_8h.html" title="animation/scene.h" alt="" coords="1572,184,1700,211"/>
+<area shape="rect" id="node35" href="$d6/d85/renderer_8h.html" title="animation/renderer.h" alt="" coords="1805,102,1945,129"/>
+<area shape="rect" id="node40" href="$d9/d5e/animationwindow_8h.html" title="src/animationwindow.h" alt="" coords="140,102,295,129"/>
+<area shape="rect" id="node7" href="$d4/da5/edgedetector_8h.html" title="edgedetector.h" alt="" coords="587,184,695,211"/>
+<area shape="rect" id="node11" href="$d3/d22/number_8h.html" title="src/number.h" alt="" coords="1179,557,1277,584"/>
+<area shape="rect" id="node13" href="$d3/d37/grayscaleimage_8h.html" title="src/image/grayscaleimage.h" alt="" coords="486,259,671,285"/>
+<area shape="rect" id="node8" href="$d5/db2/image_8h.html" title="src/image/image.h" alt="" coords="747,259,877,285"/>
+<area shape="rect" id="node10" href="$de/dd1/imagebase_8h.html" title="imagebase.h" alt="" coords="761,333,857,360"/>
+<area shape="rect" id="node12" href="$da/dec/color_8h.html" title="color.h" alt="" coords="1236,408,1297,435"/>
+<area shape="rect" id="node14" href="$d0/d9c/grayscalecolor_8h.html" title="grayscalecolor.h" alt="" coords="457,483,575,509"/>
+<area shape="rect" id="node16" href="$d9/d6e/linetransform_8h.html" title="linetransform.h" alt="" coords="822,184,930,211"/>
+<area shape="rect" id="node17" href="$d7/d5d/line_8h.html" title="src/math/line.h" alt="" coords="953,259,1061,285"/>
+<area shape="rect" id="node18" href="$d3/dbe/vec2_8h.html" title="vec2.h" alt="" coords="1185,333,1247,360"/>
+<area shape="rect" id="node20" href="$d4/df5/blur_8h.html" title="blur.h" alt="" coords="1006,184,1061,211"/>
+<area shape="rect" id="node22" href="$db/d0b/cylindersizecalculatorbase_8h.html" title="cylindersizecalculatorbase.h" alt="" coords="1187,184,1373,211"/>
+<area shape="rect" id="node25" href="$d1/dfa/cylindersize_8h.html" title="src/math/cylindersize.h" alt="" coords="1187,259,1344,285"/>
+<area shape="rect" id="node27" href="$d5/d69/sceneobject_8h.html" title="sceneobject.h" alt="" coords="1754,333,1857,360"/>
+<area shape="rect" id="node31" href="$d7/df6/camera_8h.html" title="camera.h" alt="" coords="1882,259,1958,285"/>
+<area shape="rect" id="node33" href="$dd/dd3/light_8h.html" title="light.h" alt="" coords="1801,259,1858,285"/>
+<area shape="rect" id="node28" href="$d8/d08/vec3_8h.html" title="src/math/vec3.h" alt="" coords="2222,408,2338,435"/>
+<area shape="rect" id="node29" href="$df/db1/math_8h.html" title="math.h" alt="" coords="2261,483,2323,509"/>
+<area shape="rect" id="node32" href="$dd/df4/matrix_8h.html" title="src/math/matrix.h" alt="" coords="1922,408,2046,435"/>
+<area shape="rect" id="node36" href="$dc/d53/transformation_8h.html" title="transformation.h" alt="" coords="2261,333,2377,360"/>
+<area shape="rect" id="node37" href="$d8/d3b/mesh_8h.html" title="mesh.h" alt="" coords="2066,184,2131,211"/>
+<area shape="rect" id="node38" href="$d5/d6a/meshdata_8h.html" title="meshdata.h" alt="" coords="2105,259,2196,285"/>
+</map>

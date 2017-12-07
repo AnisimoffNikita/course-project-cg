@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d23/class_line_transform" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>LineTransform</compoundname>
+    <derivedcompoundref refid="d6/dd5/class_hough_transform" prot="public" virt="non-virtual">HoughTransform</derivedcompoundref>
+    <includes refid="d9/d6e/linetransform_8h" local="no">linetransform.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d23/class_line_transform_1a8398e1a394cfaf6c988c5f2cfc49447d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>LineTransform::~LineTransform</definition>
+        <argsstring>()</argsstring>
+        <name>~LineTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d23/class_line_transform_1a391ea9da214224bd3fe428a41c271761" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; <ref refid="dd/db4/class_line" kindref="compound">Line</ref> &gt;</type>
+        <definition>virtual std::vector&lt;Line&gt; LineTransform::process</definition>
+        <argsstring>(Image &amp;image)=0</argsstring>
+        <name>process</name>
+        <reimplementedby refid="d6/dd5/class_hough_transform_1ab10d9e25f492521d6436701107b93fac">process</reimplementedby>
+        <param>
+          <type><ref refid="de/d73/class_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.h" line="12" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="372">
+        <label>LineTransform</label>
+        <link refid="d3/d23/class_line_transform"/>
+      </node>
+      <node id="373">
+        <label>HoughTransform</label>
+        <link refid="d6/dd5/class_hough_transform"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="374">
+        <label>LineTransform</label>
+        <link refid="d3/d23/class_line_transform"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.h" bodystart="7" bodyend="13"/>
+    <listofallmembers>
+      <member refid="d3/d23/class_line_transform_1a391ea9da214224bd3fe428a41c271761" prot="public" virt="pure-virtual"><scope>LineTransform</scope><name>process</name></member>
+      <member refid="d3/d23/class_line_transform_1a8398e1a394cfaf6c988c5f2cfc49447d" prot="public" virt="virtual"><scope>LineTransform</scope><name>~LineTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dd/dd8/meshdata_8cpp" kind="file" language="C++">
+    <compoundname>meshdata.cpp</compoundname>
+    <includes refid="d5/d6a/meshdata_8h" local="yes">meshdata.h</includes>
+    <incdepgraph>
+      <node id="2447">
+        <label>functional</label>
+      </node>
+      <node id="2443">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2444" relation="include">
+        </childnode>
+      </node>
+      <node id="2441">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.cpp</label>
+        <link refid="meshdata.cpp"/>
+        <childnode refid="2442" relation="include">
+        </childnode>
+      </node>
+      <node id="2445">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2446" relation="include">
+        </childnode>
+      </node>
+      <node id="2444">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2442">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2443" relation="include">
+        </childnode>
+        <childnode refid="2445" relation="include">
+        </childnode>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2448" relation="include">
+        </childnode>
+        <childnode refid="2449" relation="include">
+        </childnode>
+      </node>
+      <node id="2450">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2444" relation="include">
+        </childnode>
+      </node>
+      <node id="2446">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2447" relation="include">
+        </childnode>
+      </node>
+      <node id="2448">
+        <label>array</label>
+      </node>
+      <node id="2449">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2445" relation="include">
+        </childnode>
+        <childnode refid="2450" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d6a/meshdata_8h" kindref="compound">meshdata.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d0/d72/class_vertex_1a7a9ca1b036b7786403085e35afc2efe3" refkind="member"><highlight class="normal"><ref refid="d0/d72/class_vertex_1ae2152b82b92f1522812a1e2bb8c32ba5" kindref="member">Vertex::Vertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>n)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>v(v)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>n(n)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d0/d72/class_vertex_1ac923f6352efb5e3ad9458fd03931d00b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="d0/d72/class_vertex_1ac923f6352efb5e3ad9458fd03931d00b" kindref="member">Vertex::getV</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="10"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d0/d72/class_vertex_1a556cc98768f4036f0f7f3458a0211468" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex_1a556cc98768f4036f0f7f3458a0211468" kindref="member">Vertex::setV</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d0/d72/class_vertex_1a65780983d9f9a29dc13b2099aa3f2996" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="d0/d72/class_vertex_1a65780983d9f9a29dc13b2099aa3f2996" kindref="member">Vertex::getN</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d0/d72/class_vertex_1a471dd2fc5b33a6079c2142d6faad3a2c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex_1a471dd2fc5b33a6079c2142d6faad3a2c" kindref="member">Vertex::setN</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d0/d72/class_vertex_1acf4d583092aa2bb904c03d378a0c966a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex_1acf4d583092aa2bb904c03d378a0c966a" kindref="member">Vertex::transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref><sp/>+=<sp/><ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>transformation.<ref refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" kindref="member">transform</ref>(<ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>transformation.<ref refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" kindref="member">transform</ref>(<ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref><sp/>-=<sp/><ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d0/d72/class_vertex_1af1ee0c4cbcbf0363ade89e95e2c74f9f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex_1af1ee0c4cbcbf0363ade89e95e2c74f9f" kindref="member">Vertex::operator ==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref><sp/>&amp;other)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref><sp/>==<sp/>other.<ref refid="d0/d72/class_vertex_1ab747b8661900312711237a2e055f4058" kindref="member">n</ref><sp/>&amp;&amp;<sp/><ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref><sp/>==<sp/>other.<ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d2/d28/class_triangle_1a287c84286a7340a754ee2df0a92af7af" refkind="member"><highlight class="normal"><ref refid="d2/d28/class_triangle_1abe6f0d035449cb80a7cc4d79baef9c3f" kindref="member">Triangle::Triangle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;v2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;v3)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d0/d72/class_vertex_1a74530e6e784db7cfa08df21c219f4b2b" kindref="member">v</ref>{v1,<sp/>v2,<sp/>v3}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d2/d28/class_triangle_1a0dd722e3cb9d7ea46e514f8abf76335e" refkind="member"><highlight class="normal"><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d2/d28/class_triangle_1a0dd722e3cb9d7ea46e514f8abf76335e" kindref="member">Triangle::getV1</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="49"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kindref="member">v</ref>[0];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d2/d28/class_triangle_1afece0efdaf53062c218d9bf70291e8ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d28/class_triangle_1afece0efdaf53062c218d9bf70291e8ce" kindref="member">Triangle::setV1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kindref="member">v</ref>[0]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d2/d28/class_triangle_1a3c40179262b85e1eab30a10f9c65b898" refkind="member"><highlight class="normal"><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d2/d28/class_triangle_1a3c40179262b85e1eab30a10f9c65b898" kindref="member">Triangle::getV2</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="59"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kindref="member">v</ref>[1];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d2/d28/class_triangle_1a35f9096c0a99c8b8dc6717755bc1ec07" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d28/class_triangle_1a35f9096c0a99c8b8dc6717755bc1ec07" kindref="member">Triangle::setV2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kindref="member">v</ref>[1]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d2/d28/class_triangle_1ae664a58d61cf1d7b966f578b21a7c1db" refkind="member"><highlight class="normal"><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/><ref refid="d2/d28/class_triangle_1ae664a58d61cf1d7b966f578b21a7c1db" kindref="member">Triangle::getV3</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="69"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kindref="member">v</ref>[2];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="d2/d28/class_triangle_1aff0abb038d3c9088b5ab59616aeeaaf9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d28/class_triangle_1aff0abb038d3c9088b5ab59616aeeaaf9" kindref="member">Triangle::setV3</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" kindref="member">v</ref>[2]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="dc/dee/class_material_1ac71c087b6f2dcbf130e19e38067a7a5b" refkind="member"><highlight class="normal"><ref refid="dc/dee/class_material_1a6059ec72855855b11672ff25962e9336" kindref="member">Material::Material</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;ka,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;kd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;ks,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ns,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ni,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>ka(ka)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>kd(kd)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>ks(ks)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>ns(ns)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>ni(ni)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>d(d)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="dc/dee/class_material_1a58208d6d0a2debccac4739af6ba61b7b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;<ref refid="dc/dee/class_material_1a58208d6d0a2debccac4739af6ba61b7b" kindref="member">Material::getKa</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a93cc771f8b2e9d1f273465e25504ea7b" kindref="member">ka</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="dc/dee/class_material_1af4bc3531d699fb7b7a06253d674d0ede" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1af4bc3531d699fb7b7a06253d674d0ede" kindref="member">Material::setKa</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material_1a93cc771f8b2e9d1f273465e25504ea7b" kindref="member">ka</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="dc/dee/class_material_1ad89eb0c9b9d729e918a91d7a621afe10" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;<ref refid="dc/dee/class_material_1ad89eb0c9b9d729e918a91d7a621afe10" kindref="member">Material::getKd</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a42e6838a32f4a6b54a62a01afc4a1cdb" kindref="member">kd</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="dc/dee/class_material_1ab31df4f79c03f8863c96dd748b9d2069" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1ab31df4f79c03f8863c96dd748b9d2069" kindref="member">Material::setKd</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material_1a42e6838a32f4a6b54a62a01afc4a1cdb" kindref="member">kd</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="dc/dee/class_material_1ad03edbeaa265fc4aa796904b7f314e86" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;<ref refid="dc/dee/class_material_1ad03edbeaa265fc4aa796904b7f314e86" kindref="member">Material::getKs</ref>()</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a986cb019dc23c99fc139b16793c1ddb5" kindref="member">ks</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="dc/dee/class_material_1a0333444c1bfe41998957f56319481f23" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a0333444c1bfe41998957f56319481f23" kindref="member">Material::setKs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material_1a986cb019dc23c99fc139b16793c1ddb5" kindref="member">ks</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="dc/dee/class_material_1ae8fef701b92d7ca4ddb3761dd2133fec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1ae8fef701b92d7ca4ddb3761dd2133fec" kindref="member">Material::getD</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="120"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a72cb289b8dccb7a08e0b0f7880a92803" kindref="member">d</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="dc/dee/class_material_1a7729d3679891dd4394c1468c0a338a01" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a7729d3679891dd4394c1468c0a338a01" kindref="member">Material::setD</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material_1a72cb289b8dccb7a08e0b0f7880a92803" kindref="member">d</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="dc/dee/class_material_1afe38fa1be1b3f608ff08414ccc99d539" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1afe38fa1be1b3f608ff08414ccc99d539" kindref="member">Material::getNi</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="130"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a9132d1f6cc468abe6c40659962e06236" kindref="member">ni</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="dc/dee/class_material_1a1d41d55723411069d7774c3ae2b33bc8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a1d41d55723411069d7774c3ae2b33bc8" kindref="member">Material::setNi</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material_1a9132d1f6cc468abe6c40659962e06236" kindref="member">ni</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="dc/dee/class_material_1a8843ba8fa8d3e8fb3e04d6a7553408ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a8843ba8fa8d3e8fb3e04d6a7553408ea" kindref="member">Material::getNs</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="140"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a49335919c5596c4523f71be7f01bdf9d" kindref="member">ns</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="dc/dee/class_material_1a46bf0fa68e2bf6da38f360eaecc8bd13" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dee/class_material_1a46bf0fa68e2bf6da38f360eaecc8bd13" kindref="member">Material::setNs</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material_1a49335919c5596c4523f71be7f01bdf9d" kindref="member">ns</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/meshdata.cpp"/>
+  </compounddef>
+</doxygen>

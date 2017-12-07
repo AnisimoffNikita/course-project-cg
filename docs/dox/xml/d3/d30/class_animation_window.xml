@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d30/class_animation_window" kind="class" language="C++" prot="public">
+    <compoundname>AnimationWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="d9/d5e/animationwindow_8h" local="no">animationwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d30/class_animation_window_1a1db782b4d22aec2376c6db4431c77a80" prot="private" static="no" mutable="no">
+        <type>Ui::AnimationWindow *</type>
+        <definition>Ui::AnimationWindow* AnimationWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animationwindow.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/animationwindow.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d30/class_animation_window_1a3473a525d4aa738d2569731e26b95570" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AnimationWindow::AnimationWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>AnimationWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animationwindow.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animationwindow.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d30/class_animation_window_1a2570db590e94da377cdcfa7088240ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AnimationWindow::~AnimationWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~AnimationWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animationwindow.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/animationwindow.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="282">
+        <label>QMainWindow</label>
+      </node>
+      <node id="281">
+        <label>AnimationWindow</label>
+        <link refid="d3/d30/class_animation_window"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="284">
+        <label>QMainWindow</label>
+      </node>
+      <node id="283">
+        <label>AnimationWindow</label>
+        <link refid="d3/d30/class_animation_window"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animationwindow.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/animationwindow.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="d3/d30/class_animation_window_1a3473a525d4aa738d2569731e26b95570" prot="public" virt="non-virtual"><scope>AnimationWindow</scope><name>AnimationWindow</name></member>
+      <member refid="d3/d30/class_animation_window_1a1db782b4d22aec2376c6db4431c77a80" prot="private" virt="non-virtual"><scope>AnimationWindow</scope><name>ui</name></member>
+      <member refid="d3/d30/class_animation_window_1a2570db590e94da377cdcfa7088240ab2" prot="public" virt="non-virtual"><scope>AnimationWindow</scope><name>~AnimationWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

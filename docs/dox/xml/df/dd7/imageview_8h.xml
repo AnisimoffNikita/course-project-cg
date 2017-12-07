@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="df/dd7/imageview_8h" kind="file" language="C++">
+    <compoundname>imageview.h</compoundname>
+    <includes local="no">QWidget</includes>
+    <includes local="no">QImage</includes>
+    <includes local="no">QGraphicsView</includes>
+    <includes local="no">QGraphicsScene</includes>
+    <includes local="no">QResizeEvent</includes>
+    <includes local="no">QMouseEvent</includes>
+    <includedby refid="d9/d17/imageview_8cpp" local="yes">Projects/labs/course_project_cg/src/widgets/imageview.cpp</includedby>
+    <incdepgraph>
+      <node id="3623">
+        <label>Projects/labs/course_project_cg/src/widgets/imageview.h</label>
+        <link refid="imageview.h"/>
+        <childnode refid="3624" relation="include">
+        </childnode>
+        <childnode refid="3625" relation="include">
+        </childnode>
+        <childnode refid="3626" relation="include">
+        </childnode>
+        <childnode refid="3627" relation="include">
+        </childnode>
+        <childnode refid="3628" relation="include">
+        </childnode>
+        <childnode refid="3629" relation="include">
+        </childnode>
+      </node>
+      <node id="3626">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="3625">
+        <label>QImage</label>
+      </node>
+      <node id="3629">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="3628">
+        <label>QResizeEvent</label>
+      </node>
+      <node id="3627">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="3624">
+        <label>QWidget</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3630">
+        <label>Projects/labs/course_project_cg/src/widgets/imageview.h</label>
+        <link refid="imageview.h"/>
+        <childnode refid="3631" relation="include">
+        </childnode>
+      </node>
+      <node id="3631">
+        <label>Projects/labs/course_project_cg/src/widgets/imageview.cpp</label>
+        <link refid="d9/d17/imageview_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/de8/class_image_view" prot="public">ImageView</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>IMAGEVIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGEVIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsView&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsScene&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QResizeEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMouseEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="df/de8/class_image_view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/de8/class_image_view" kindref="compound">ImageView</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGraphicsView</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="df/de8/class_image_view_1ab9dfd4d7ac8503631906b1c35ad2d445" kindref="member">ImageView</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/de8/class_image_view_1a450337ded2ce7bb5444b6f249e68d13d" kindref="member">setImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage<sp/>&amp;image);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/de8/class_image_view_1a0bcc3711738a814ce221127d0b7ecf5b" kindref="member">resizeEvent</ref>(QResizeEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/de8/class_image_view_1a29a6e4346d585008cf72be75d06e7daa" kindref="member">mouseMoveEvent</ref>(QMouseEvent<sp/>*);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsScene<sp/>*<ref refid="df/de8/class_image_view_1a371e669523a21ae10284613a0d84ff6b" kindref="member">scene</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>IMAGEVIEW_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/widgets/imageview.h"/>
+  </compounddef>
+</doxygen>

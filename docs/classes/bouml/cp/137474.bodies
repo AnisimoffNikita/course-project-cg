@@ -1,0 +1,17 @@
+class RotateXTransformation
+!!!156802.cpp!!!	RotateXTransformation(in angle : float, in origin : Vec3)
+    float data[16] = {1, 0, 0, 0,
+                      0, (float)Math::Cos(angle), (float)Math::Sin(angle), 0,
+                      0, (float) - Math::Sin(angle), (float)Math::Cos(angle), 0,
+                      0, 0, 0, 1
+                     };
+    _matrix = Mat4(data);
+    _origin = origin;
+!!!156930.cpp!!!	transform(inout vertex : Vec3) : void
+    vertex -= _origin;
+    HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
+    hvec = _matrix * hvec;
+    vertex = HomogeneousVertexConverter::ToVertex(hvec);
+    vertex += _origin;
+!!!157058.cpp!!!	resetOrigin() : void
+    _origin = Vec3(0, 0, 0);

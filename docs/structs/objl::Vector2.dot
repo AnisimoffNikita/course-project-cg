@@ -1,0 +1,5 @@
+digraph objl::Vector2
+{
+graph [ rankdir="RL" ]
+"df/d1a/structobjl_1_1_vector2" [ label="objl::Vector2\n|+Vector2 (  )\l+Vector2 ( X_ : float, Y_ : float )\l+operator!= ( other : const Vector2 & ) : bool\l+operator* ( other : const float & ) : Vector2\l+operator+ ( right : const Vector2 & ) : Vector2\l+operator- ( right : const Vector2 & ) : Vector2\l+operator== ( other : const Vector2 & ) : bool\l|+X : float\l+Y : float\l" shape="record" ]
+}

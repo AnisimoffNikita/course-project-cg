@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="da/d5f/rendererdata_8cpp" kind="file" language="C++">
+    <compoundname>rendererdata.cpp</compoundname>
+    <includes local="yes">renderdata.h</includes>
+    <incdepgraph>
+      <node id="2647">
+        <label>Projects/labs/course_project_cg/src/animation/rendererdata.cpp</label>
+        <link refid="rendererdata.cpp"/>
+        <childnode refid="2648" relation="include">
+        </childnode>
+      </node>
+      <node id="2648">
+        <label>renderdata.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;renderdata.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="da/dce/class_render_data_1a16b04b2437ea3fa034381a138cbf2f83" refkind="member"><highlight class="normal"><ref refid="da/dce/class_render_data_1a16b04b2437ea3fa034381a138cbf2f83" kindref="member">RenderData::RenderData</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/rendererdata.cpp"/>
+  </compounddef>
+</doxygen>

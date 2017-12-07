@@ -1,0 +1,5 @@
+digraph HomogeneousVertexConverter
+{
+graph [ rankdir="RL" ]
+"d9/db7/class_homogeneous_vertex_converter" [ label="HomogeneousVertexConverter\n|+FromVertex ( vec : const Vec3 & ) : HomogeneousVertex \{static\}\l+ToVertex ( hvec : const HomogeneousVertex & ) : Vec3 \{static\}\l|" shape="record" ]
+}

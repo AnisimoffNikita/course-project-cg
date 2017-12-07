@@ -1,0 +1,940 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d22/number_8h" kind="file" language="C++">
+    <compoundname>number.h</compoundname>
+    <includedby refid="dc/d32/gaussianblur_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h</includedby>
+    <includedby refid="de/d3b/cannyedgedetector_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</includedby>
+    <includedby refid="d5/d6a/meshdata_8h" local="yes">Projects/labs/course_project_cg/src/animation/meshdata.h</includedby>
+    <includedby refid="d7/d17/lightzbufferrenderer_8h" local="yes">Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</includedby>
+    <includedby refid="db/dd0/zbuffer_8h" local="yes">Projects/labs/course_project_cg/src/animation/zbuffer.h</includedby>
+    <includedby refid="d8/dc3/lightzbufferrenderer_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</includedby>
+    <includedby refid="db/d83/scene_8h" local="yes">Projects/labs/course_project_cg/src/animation/scene.h</includedby>
+    <includedby refid="da/dec/color_8h" local="yes">Projects/labs/course_project_cg/src/image/color.h</includedby>
+    <includedby refid="d0/d9c/grayscalecolor_8h" local="yes">Projects/labs/course_project_cg/src/image/grayscalecolor.h</includedby>
+    <includedby refid="de/dd1/imagebase_8h" local="yes">Projects/labs/course_project_cg/src/image/imagebase.h</includedby>
+    <includedby refid="d3/d37/grayscaleimage_8h" local="yes">Projects/labs/course_project_cg/src/image/grayscaleimage.h</includedby>
+    <includedby refid="d5/db2/image_8h" local="yes">Projects/labs/course_project_cg/src/image/image.h</includedby>
+    <includedby refid="d7/d5d/line_8h" local="yes">Projects/labs/course_project_cg/src/math/line.h</includedby>
+    <includedby refid="d3/dbe/vec2_8h" local="yes">Projects/labs/course_project_cg/src/math/vec2.h</includedby>
+    <includedby refid="df/db1/math_8h" local="yes">Projects/labs/course_project_cg/src/math/math.h</includedby>
+    <includedby refid="dd/df4/matrix_8h" local="no">Projects/labs/course_project_cg/src/math/matrix.h</includedby>
+    <includedby refid="d8/d08/vec3_8h" local="yes">Projects/labs/course_project_cg/src/math/vec3.h</includedby>
+    <invincdepgraph>
+      <node id="3606">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.h</label>
+        <link refid="d5/d2e/rotatetransformation_8h"/>
+        <childnode refid="3584" relation="include">
+        </childnode>
+        <childnode refid="3532" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3525">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</label>
+        <link refid="de/d3b/cannyedgedetector_8h"/>
+        <childnode refid="3526" relation="include">
+        </childnode>
+        <childnode refid="3522" relation="include">
+        </childnode>
+      </node>
+      <node id="3582">
+        <label>Projects/labs/course_project_cg/src/math/vec2.cpp</label>
+        <link refid="da/d32/vec2_8cpp"/>
+      </node>
+      <node id="3603">
+        <label>Projects/labs/course_project_cg/src/animation/scaletransformation.cpp</label>
+        <link refid="d3/dc7/scaletransformation_8cpp"/>
+      </node>
+      <node id="3588">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.h</label>
+        <link refid="d7/d86/actionmanager_8h"/>
+        <childnode refid="3589" relation="include">
+        </childnode>
+        <childnode refid="3538" relation="include">
+        </childnode>
+      </node>
+      <node id="3600">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.h</label>
+        <link refid="d0/d18/commontransformation_8h"/>
+        <childnode refid="3601" relation="include">
+        </childnode>
+        <childnode refid="3531" relation="include">
+        </childnode>
+      </node>
+      <node id="3561">
+        <label>Projects/labs/course_project_cg/src/image/grayscaleimage.cpp</label>
+        <link refid="da/d4b/grayscaleimage_8cpp"/>
+      </node>
+      <node id="3557">
+        <label>Projects/labs/course_project_cg/src/image/imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="3558" relation="include">
+        </childnode>
+        <childnode refid="3564" relation="include">
+        </childnode>
+        <childnode refid="3572" relation="include">
+        </childnode>
+      </node>
+      <node id="3574">
+        <label>Projects/labs/course_project_cg/src/image/grayscalecolor.cpp</label>
+        <link refid="d2/ded/grayscalecolor_8cpp"/>
+      </node>
+      <node id="3549">
+        <label>Projects/labs/course_project_cg/src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="3550" relation="include">
+        </childnode>
+        <childnode refid="3527" relation="include">
+        </childnode>
+        <childnode refid="3556" relation="include">
+        </childnode>
+        <childnode refid="3557" relation="include">
+        </childnode>
+        <childnode refid="3564" relation="include">
+        </childnode>
+      </node>
+      <node id="3545">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.cpp</label>
+        <link refid="dd/dd8/meshdata_8cpp"/>
+      </node>
+      <node id="3610">
+        <label>Projects/labs/course_project_cg/src/math/vec3.cpp</label>
+        <link refid="d9/d09/vec3_8cpp"/>
+      </node>
+      <node id="3530">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="3531" relation="include">
+        </childnode>
+        <childnode refid="3532" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3580">
+        <label>Projects/labs/course_project_cg/src/math/line.cpp</label>
+        <link refid="dd/da3/line_8cpp"/>
+      </node>
+      <node id="3548">
+        <label>Projects/labs/course_project_cg/src/animation/scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="3536" relation="include">
+        </childnode>
+        <childnode refid="3522" relation="include">
+        </childnode>
+        <childnode refid="3537" relation="include">
+        </childnode>
+        <childnode refid="3532" relation="include">
+        </childnode>
+        <childnode refid="3538" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3577">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.h</label>
+        <link refid="d3/dff/cylindersizecalculator_8h"/>
+        <childnode refid="3578" relation="include">
+        </childnode>
+        <childnode refid="3522" relation="include">
+        </childnode>
+      </node>
+      <node id="3587">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="3588" relation="include">
+        </childnode>
+        <childnode refid="3590" relation="include">
+        </childnode>
+        <childnode refid="3550" relation="include">
+        </childnode>
+        <childnode refid="3592" relation="include">
+        </childnode>
+        <childnode refid="3594" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+        <childnode refid="3548" relation="include">
+        </childnode>
+        <childnode refid="3596" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+      </node>
+      <node id="3598">
+        <label>Projects/labs/course_project_cg/src/animation/matrixfactory.cpp</label>
+        <link refid="da/d36/matrixfactory_8cpp"/>
+      </node>
+      <node id="3559">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.h</label>
+        <link refid="dd/d54/houghtransform_8h"/>
+        <childnode refid="3560" relation="include">
+        </childnode>
+        <childnode refid="3522" relation="include">
+        </childnode>
+      </node>
+      <node id="3569">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.h</label>
+        <link refid="d9/d6e/linetransform_8h"/>
+        <childnode refid="3559" relation="include">
+        </childnode>
+        <childnode refid="3570" relation="include">
+        </childnode>
+      </node>
+      <node id="3575">
+        <label>Projects/labs/course_project_cg/src/math/line.h</label>
+        <link refid="d7/d5d/line_8h"/>
+        <childnode refid="3576" relation="include">
+        </childnode>
+        <childnode refid="3569" relation="include">
+        </childnode>
+        <childnode refid="3559" relation="include">
+        </childnode>
+        <childnode refid="3580" relation="include">
+        </childnode>
+      </node>
+      <node id="3566">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/blur.cpp</label>
+        <link refid="de/dc8/blur_8cpp"/>
+      </node>
+      <node id="3570">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.cpp</label>
+        <link refid="dd/d42/linetransform_8cpp"/>
+      </node>
+      <node id="3547">
+        <label>Projects/labs/course_project_cg/src/animation/zbuffer.cpp</label>
+        <link refid="de/d9a/zbuffer_8cpp"/>
+      </node>
+      <node id="3546">
+        <label>Projects/labs/course_project_cg/src/animation/zbuffer.h</label>
+        <link refid="db/dd0/zbuffer_8h"/>
+        <childnode refid="3530" relation="include">
+        </childnode>
+        <childnode refid="3547" relation="include">
+        </childnode>
+      </node>
+      <node id="3567">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h</label>
+        <link refid="d4/da5/edgedetector_8h"/>
+        <childnode refid="3525" relation="include">
+        </childnode>
+        <childnode refid="3568" relation="include">
+        </childnode>
+      </node>
+      <node id="3544">
+        <label>Projects/labs/course_project_cg/src/animation/objloader.cpp</label>
+        <link refid="dd/dbb/objloader_8cpp"/>
+      </node>
+      <node id="3591">
+        <label>Projects/labs/course_project_cg/src/animation/actions.cpp</label>
+        <link refid="d8/dcf/actions_8cpp"/>
+      </node>
+      <node id="3536">
+        <label>Projects/labs/course_project_cg/src/animation/scene.cpp</label>
+        <link refid="da/d33/scene_8cpp"/>
+      </node>
+      <node id="3571">
+        <label>Projects/labs/course_project_cg/src/image/image.cpp</label>
+        <link refid="db/d11/image_8cpp"/>
+      </node>
+      <node id="3524">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="3612">
+        <label>Projects/labs/course_project_cg/src/math/matrix.cpp</label>
+        <link refid="d5/d84/matrix_8cpp"/>
+      </node>
+      <node id="3586">
+        <label>Projects/labs/course_project_cg/src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="3587" relation="include">
+        </childnode>
+        <childnode refid="3590" relation="include">
+        </childnode>
+        <childnode refid="3597" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+        <childnode refid="3528" relation="include">
+        </childnode>
+        <childnode refid="3527" relation="include">
+        </childnode>
+        <childnode refid="3608" relation="include">
+        </childnode>
+        <childnode refid="3610" relation="include">
+        </childnode>
+      </node>
+      <node id="3597">
+        <label>Projects/labs/course_project_cg/src/animation/matrixfactory.h</label>
+        <link refid="df/d3d/matrixfactory_8h"/>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3598" relation="include">
+        </childnode>
+        <childnode refid="3542" relation="include">
+        </childnode>
+      </node>
+      <node id="3519">
+        <label>Projects/labs/course_project_cg/src/number.h</label>
+        <link refid="number.h"/>
+        <childnode refid="3520" relation="include">
+        </childnode>
+        <childnode refid="3525" relation="include">
+        </childnode>
+        <childnode refid="3527" relation="include">
+        </childnode>
+        <childnode refid="3530" relation="include">
+        </childnode>
+        <childnode refid="3546" relation="include">
+        </childnode>
+        <childnode refid="3531" relation="include">
+        </childnode>
+        <childnode refid="3548" relation="include">
+        </childnode>
+        <childnode refid="3549" relation="include">
+        </childnode>
+        <childnode refid="3573" relation="include">
+        </childnode>
+        <childnode refid="3557" relation="include">
+        </childnode>
+        <childnode refid="3558" relation="include">
+        </childnode>
+        <childnode refid="3564" relation="include">
+        </childnode>
+        <childnode refid="3575" relation="include">
+        </childnode>
+        <childnode refid="3581" relation="include">
+        </childnode>
+        <childnode refid="3583" relation="include">
+        </childnode>
+        <childnode refid="3611" relation="include">
+        </childnode>
+        <childnode refid="3586" relation="include">
+        </childnode>
+      </node>
+      <node id="3576">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h</label>
+        <link refid="db/d0b/cylindersizecalculatorbase_8h"/>
+        <childnode refid="3577" relation="include">
+        </childnode>
+        <childnode refid="3579" relation="include">
+        </childnode>
+      </node>
+      <node id="3538">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3537">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.h</label>
+        <link refid="d3/d6a/modelview_8h"/>
+        <childnode refid="3532" relation="include">
+        </childnode>
+      </node>
+      <node id="3542">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="3562">
+        <label>Projects/labs/course_project_cg/src/image/imageconverter.h</label>
+        <link refid="d4/d61/imageconverter_8h"/>
+        <childnode refid="3521" relation="include">
+        </childnode>
+        <childnode refid="3526" relation="include">
+        </childnode>
+        <childnode refid="3560" relation="include">
+        </childnode>
+        <childnode refid="3563" relation="include">
+        </childnode>
+        <childnode refid="3524" relation="include">
+        </childnode>
+      </node>
+      <node id="3608">
+        <label>Projects/labs/course_project_cg/src/math/homogeneousvertex.h</label>
+        <link refid="d4/df0/homogeneousvertex_8h"/>
+        <childnode refid="3600" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+        <childnode refid="3584" relation="include">
+        </childnode>
+        <childnode refid="3603" relation="include">
+        </childnode>
+        <childnode refid="3523" relation="include">
+        </childnode>
+        <childnode refid="3609" relation="include">
+        </childnode>
+      </node>
+      <node id="3555">
+        <label>Projects/labs/course_project_cg/src/animation/pointlight.cpp</label>
+        <link refid="d7/d88/pointlight_8cpp"/>
+      </node>
+      <node id="3526">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp</label>
+        <link refid="d8/d97/cannyedgedetector_8cpp"/>
+      </node>
+      <node id="3521">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp</label>
+        <link refid="d0/d8b/gaussianblur_8cpp"/>
+      </node>
+      <node id="3604">
+        <label>Projects/labs/course_project_cg/src/animation/movetransformation.h</label>
+        <link refid="d0/dad/movetransformation_8h"/>
+        <childnode refid="3534" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3554">
+        <label>Projects/labs/course_project_cg/src/animation/pointlight.h</label>
+        <link refid="d0/d23/pointlight_8h"/>
+        <childnode refid="3555" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+      </node>
+      <node id="3564">
+        <label>Projects/labs/course_project_cg/src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="3565" relation="include">
+        </childnode>
+        <childnode refid="3567" relation="include">
+        </childnode>
+        <childnode refid="3569" relation="include">
+        </childnode>
+        <childnode refid="3571" relation="include">
+        </childnode>
+        <childnode refid="3562" relation="include">
+        </childnode>
+      </node>
+      <node id="3584">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp</label>
+        <link refid="dc/d9f/rotatetransformation_8cpp"/>
+      </node>
+      <node id="3527">
+        <label>Projects/labs/course_project_cg/src/animation/meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="3528" relation="include">
+        </childnode>
+        <childnode refid="3545" relation="include">
+        </childnode>
+      </node>
+      <node id="3611">
+        <label>Projects/labs/course_project_cg/src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="3592" relation="include">
+        </childnode>
+        <childnode refid="3597" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+        <childnode refid="3528" relation="include">
+        </childnode>
+        <childnode refid="3608" relation="include">
+        </childnode>
+        <childnode refid="3612" relation="include">
+        </childnode>
+      </node>
+      <node id="3543">
+        <label>Projects/labs/course_project_cg/src/animation/objloader.h</label>
+        <link refid="de/d7c/animation_2objloader_8h"/>
+        <childnode refid="3544" relation="include">
+        </childnode>
+        <childnode refid="3532" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3540">
+        <label>Projects/labs/course_project_cg/src/animation/model.h</label>
+        <link refid="dc/d51/model_8h"/>
+        <childnode refid="3534" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+      </node>
+      <node id="3568">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.cpp</label>
+        <link refid="da/de5/edgedetector_8cpp"/>
+      </node>
+      <node id="3592">
+        <label>Projects/labs/course_project_cg/src/animation/camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3529" relation="include">
+        </childnode>
+        <childnode refid="3548" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+      </node>
+      <node id="3539">
+        <label>Projects/labs/course_project_cg/src/animation/mesh.cpp</label>
+        <link refid="d8/dd2/mesh_8cpp"/>
+      </node>
+      <node id="3596">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobject.cpp</label>
+        <link refid="d0/dfc/sceneobject_8cpp"/>
+      </node>
+      <node id="3534">
+        <label>Projects/labs/course_project_cg/src/animation/model.cpp</label>
+        <link refid="d6/db4/model_8cpp"/>
+      </node>
+      <node id="3532">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="3572">
+        <label>Projects/labs/course_project_cg/src/image/imagebase.cpp</label>
+        <link refid="de/da1/imagebase_8cpp"/>
+      </node>
+      <node id="3609">
+        <label>Projects/labs/course_project_cg/src/math/homogeneousvertex.cpp</label>
+        <link refid="d6/def/homogeneousvertex_8cpp"/>
+      </node>
+      <node id="3523">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="3563">
+        <label>Projects/labs/course_project_cg/src/image/imageconverter.cpp</label>
+        <link refid="da/d94/imageconverter_8cpp"/>
+      </node>
+      <node id="3581">
+        <label>Projects/labs/course_project_cg/src/math/vec2.h</label>
+        <link refid="d3/dbe/vec2_8h"/>
+        <childnode refid="3559" relation="include">
+        </childnode>
+        <childnode refid="3575" relation="include">
+        </childnode>
+        <childnode refid="3582" relation="include">
+        </childnode>
+      </node>
+      <node id="3553">
+        <label>Projects/labs/course_project_cg/src/animation/light.cpp</label>
+        <link refid="dd/dfa/light_8cpp"/>
+      </node>
+      <node id="3529">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="3530" relation="include">
+        </childnode>
+        <childnode refid="3534" relation="include">
+        </childnode>
+        <childnode refid="3535" relation="include">
+        </childnode>
+        <childnode refid="3536" relation="include">
+        </childnode>
+        <childnode refid="3522" relation="include">
+        </childnode>
+        <childnode refid="3537" relation="include">
+        </childnode>
+        <childnode refid="3532" relation="include">
+        </childnode>
+        <childnode refid="3538" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3578">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.cpp</label>
+        <link refid="d3/d57/cylindersizecalculator_8cpp"/>
+      </node>
+      <node id="3583">
+        <label>Projects/labs/course_project_cg/src/math/math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="3521" relation="include">
+        </childnode>
+        <childnode refid="3578" relation="include">
+        </childnode>
+        <childnode refid="3526" relation="include">
+        </childnode>
+        <childnode refid="3560" relation="include">
+        </childnode>
+        <childnode refid="3584" relation="include">
+        </childnode>
+        <childnode refid="3556" relation="include">
+        </childnode>
+        <childnode refid="3585" relation="include">
+        </childnode>
+        <childnode refid="3586" relation="include">
+        </childnode>
+      </node>
+      <node id="3541">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="d9/d8f/sceneobjectfactory_8h"/>
+        <childnode refid="3542" relation="include">
+        </childnode>
+        <childnode refid="3524" relation="include">
+        </childnode>
+        <childnode refid="3532" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3602">
+        <label>Projects/labs/course_project_cg/src/animation/scaletransformation.h</label>
+        <link refid="d0/d00/scaletransformation_8h"/>
+        <childnode refid="3531" relation="include">
+        </childnode>
+        <childnode refid="3603" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3573">
+        <label>Projects/labs/course_project_cg/src/image/grayscalecolor.h</label>
+        <link refid="d0/d9c/grayscalecolor_8h"/>
+        <childnode refid="3574" relation="include">
+        </childnode>
+        <childnode refid="3558" relation="include">
+        </childnode>
+      </node>
+      <node id="3594">
+        <label>Projects/labs/course_project_cg/src/animation/composite.h</label>
+        <link refid="de/d72/composite_8h"/>
+        <childnode refid="3595" relation="include">
+        </childnode>
+      </node>
+      <node id="3533">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="3593">
+        <label>Projects/labs/course_project_cg/src/animation/camera.cpp</label>
+        <link refid="d1/d6b/camera_8cpp"/>
+      </node>
+      <node id="3558">
+        <label>Projects/labs/course_project_cg/src/image/grayscaleimage.h</label>
+        <link refid="d3/d37/grayscaleimage_8h"/>
+        <childnode refid="3525" relation="include">
+        </childnode>
+        <childnode refid="3559" relation="include">
+        </childnode>
+        <childnode refid="3561" relation="include">
+        </childnode>
+        <childnode refid="3562" relation="include">
+        </childnode>
+      </node>
+      <node id="3560">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.cpp</label>
+        <link refid="d0/d3d/houghtransform_8cpp"/>
+      </node>
+      <node id="3535">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.cpp</label>
+        <link refid="d6/d54/renderer_8cpp"/>
+      </node>
+      <node id="3607">
+        <label>Projects/labs/course_project_cg/src/animation/transformation.cpp</label>
+        <link refid="d2/d67/transformation_8cpp"/>
+      </node>
+      <node id="3585">
+        <label>Projects/labs/course_project_cg/src/math/math.cpp</label>
+        <link refid="dd/d2d/math_8cpp"/>
+      </node>
+      <node id="3556">
+        <label>Projects/labs/course_project_cg/src/image/color.cpp</label>
+        <link refid="d3/d03/color_8cpp"/>
+      </node>
+      <node id="3601">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.cpp</label>
+        <link refid="de/dc1/commontransformation_8cpp"/>
+      </node>
+      <node id="3528">
+        <label>Projects/labs/course_project_cg/src/animation/mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="3529" relation="include">
+        </childnode>
+        <childnode refid="3539" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+        <childnode refid="3543" relation="include">
+        </childnode>
+      </node>
+      <node id="3531">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+      <node id="3522">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="3523" relation="include">
+        </childnode>
+        <childnode refid="3524" relation="include">
+        </childnode>
+      </node>
+      <node id="3605">
+        <label>Projects/labs/course_project_cg/src/animation/movetransformation.cpp</label>
+        <link refid="db/dd4/movetransformation_8cpp"/>
+      </node>
+      <node id="3599">
+        <label>Projects/labs/course_project_cg/src/animation/transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3600" relation="include">
+        </childnode>
+        <childnode refid="3553" relation="include">
+        </childnode>
+        <childnode refid="3529" relation="include">
+        </childnode>
+        <childnode refid="3528" relation="include">
+        </childnode>
+        <childnode refid="3527" relation="include">
+        </childnode>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+        <childnode refid="3604" relation="include">
+        </childnode>
+        <childnode refid="3606" relation="include">
+        </childnode>
+        <childnode refid="3607" relation="include">
+        </childnode>
+      </node>
+      <node id="3589">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.cpp</label>
+        <link refid="d3/df9/actionmanager_8cpp"/>
+      </node>
+      <node id="3520">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h</label>
+        <link refid="dc/d32/gaussianblur_8h"/>
+        <childnode refid="3521" relation="include">
+        </childnode>
+        <childnode refid="3522" relation="include">
+        </childnode>
+      </node>
+      <node id="3595">
+        <label>Projects/labs/course_project_cg/src/animation/composite.cpp</label>
+        <link refid="d1/d7b/composite_8cpp"/>
+      </node>
+      <node id="3590">
+        <label>Projects/labs/course_project_cg/src/animation/actions.h</label>
+        <link refid="d3/de1/actions_8h"/>
+        <childnode refid="3588" relation="include">
+        </childnode>
+        <childnode refid="3591" relation="include">
+        </childnode>
+        <childnode refid="3533" relation="include">
+        </childnode>
+      </node>
+      <node id="3550">
+        <label>Projects/labs/course_project_cg/src/animation/light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="3551" relation="include">
+        </childnode>
+        <childnode refid="3553" relation="include">
+        </childnode>
+        <childnode refid="3529" relation="include">
+        </childnode>
+        <childnode refid="3554" relation="include">
+        </childnode>
+        <childnode refid="3548" relation="include">
+        </childnode>
+      </node>
+      <node id="3552">
+        <label>Projects/labs/course_project_cg/src/animation/ambientlight.cpp</label>
+        <link refid="d3/d01/ambientlight_8cpp"/>
+      </node>
+      <node id="3551">
+        <label>Projects/labs/course_project_cg/src/animation/ambientlight.h</label>
+        <link refid="dc/d87/ambientlight_8h"/>
+        <childnode refid="3552" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+      </node>
+      <node id="3579">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.cpp</label>
+        <link refid="df/de2/cylindersizecalculatorbase_8cpp"/>
+      </node>
+      <node id="3565">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/blur.h</label>
+        <link refid="d4/df5/blur_8h"/>
+        <childnode refid="3566" relation="include">
+        </childnode>
+        <childnode refid="3520" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d3/d22/number_8h_1a1b956fe1df85f3c132b21edb4e116458" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char int8</definition>
+        <argsstring></argsstring>
+        <name>int8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="4" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char uint8</definition>
+        <argsstring></argsstring>
+        <name>uint8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="5" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1a41f41caf786c93add62629142336d1ad" prot="public" static="no">
+        <type>signed short int</type>
+        <definition>typedef signed short int int16</definition>
+        <argsstring></argsstring>
+        <name>int16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="6" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1a2e00abb078d312d1d8c4fbcd6be343d8" prot="public" static="no">
+        <type>unsigned short int</type>
+        <definition>typedef unsigned short int uint16</definition>
+        <argsstring></argsstring>
+        <name>uint16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" prot="public" static="no">
+        <type>signed int</type>
+        <definition>typedef signed int int32</definition>
+        <argsstring></argsstring>
+        <name>int32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int uint32</definition>
+        <argsstring></argsstring>
+        <name>uint32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1a29940ae63ec06c9998bba873e25407ad" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long uint64</definition>
+        <argsstring></argsstring>
+        <name>uint64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1aecfc3c54bd29ad5964e1c1c3ccbf89df" prot="public" static="no">
+        <type>long long</type>
+        <definition>typedef long long int64</definition>
+        <argsstring></argsstring>
+        <name>int64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1ac7b0112291301c17b3d53663ba65487a" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float Single</definition>
+        <argsstring></argsstring>
+        <name>Single</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1a1f2c5f02159fb28428e23074cc04166d" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double Double</definition>
+        <argsstring></argsstring>
+        <name>Double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d22/number_8h_1ab346505f7c8220bfcad46fb5ff6b249b" prot="public" static="no">
+        <type><ref refid="d3/d22/number_8h_1ac7b0112291301c17b3d53663ba65487a" kindref="member">Single</ref></type>
+        <definition>typedef Single WorkType</definition>
+        <argsstring></argsstring>
+        <name>WorkType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/number.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/number.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WRAPPERES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WRAPPERES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d3/d22/number_8h_1a1b956fe1df85f3c132b21edb4e116458" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a1b956fe1df85f3c132b21edb4e116458" kindref="member">int8</ref>;</highlight></codeline>
+<codeline lineno="5" refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref>;</highlight></codeline>
+<codeline lineno="6" refid="d3/d22/number_8h_1a41f41caf786c93add62629142336d1ad" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a41f41caf786c93add62629142336d1ad" kindref="member">int16</ref>;</highlight></codeline>
+<codeline lineno="7" refid="d3/d22/number_8h_1a2e00abb078d312d1d8c4fbcd6be343d8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a2e00abb078d312d1d8c4fbcd6be343d8" kindref="member">uint16</ref>;</highlight></codeline>
+<codeline lineno="8" refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref>;</highlight></codeline>
+<codeline lineno="9" refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref>;</highlight></codeline>
+<codeline lineno="10" refid="d3/d22/number_8h_1a29940ae63ec06c9998bba873e25407ad" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a29940ae63ec06c9998bba873e25407ad" kindref="member">uint64</ref>;</highlight></codeline>
+<codeline lineno="11" refid="d3/d22/number_8h_1aecfc3c54bd29ad5964e1c1c3ccbf89df" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1aecfc3c54bd29ad5964e1c1c3ccbf89df" kindref="member">int64</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d3/d22/number_8h_1ac7b0112291301c17b3d53663ba65487a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1ac7b0112291301c17b3d53663ba65487a" kindref="member">Single</ref>;</highlight></codeline>
+<codeline lineno="14" refid="d3/d22/number_8h_1a1f2c5f02159fb28428e23074cc04166d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1a1f2c5f02159fb28428e23074cc04166d" kindref="member">Double</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d3/d22/number_8h_1ab346505f7c8220bfcad46fb5ff6b249b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1ac7b0112291301c17b3d53663ba65487a" kindref="member">Single</ref><sp/><ref refid="d3/d22/number_8h_1ab346505f7c8220bfcad46fb5ff6b249b" kindref="member">WorkType</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>WRAPPERES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/number.h"/>
+  </compounddef>
+</doxygen>

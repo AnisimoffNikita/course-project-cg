@@ -1,0 +1,5 @@
+digraph Action
+{
+graph [ rankdir="RL" ]
+"d7/dca/class_action" [ label="Action\nabstract\n|+Action ( duration : float, object : weak_ptr\< SceneObject \> )\l+update ( delta : float ) : bool \{pure-virtual\}\l+~Action (  ) \{virtual\}\l|#duration : float\l#object : weak_ptr\< SceneObject \>\l#time : float\l" shape="record" ]
+}

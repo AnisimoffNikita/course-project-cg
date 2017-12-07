@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/d8a/class_edge_detector" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>EdgeDetector</compoundname>
+    <derivedcompoundref refid="d1/d15/class_canny_edge_detector" prot="public" virt="non-virtual">CannyEdgeDetector</derivedcompoundref>
+    <includes refid="d4/da5/edgedetector_8h" local="no">edgedetector.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d8a/class_edge_detector_1a84d1668be5dd4052278a2cf86802746e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>EdgeDetector::~EdgeDetector</definition>
+        <argsstring>()</argsstring>
+        <name>~EdgeDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d8a/class_edge_detector_1aefa2d90e960e7dc3171bccadbed4a13e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void EdgeDetector::process</definition>
+        <argsstring>(Image &amp;image)=0</argsstring>
+        <name>process</name>
+        <reimplementedby refid="d1/d15/class_canny_edge_detector_1ae97e095e14e43d763a8fc2563f6e9a87">process</reimplementedby>
+        <param>
+          <type><ref refid="de/d73/class_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h" line="11" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="327">
+        <label>CannyEdgeDetector</label>
+        <link refid="d1/d15/class_canny_edge_detector"/>
+        <childnode refid="326" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>EdgeDetector</label>
+        <link refid="d9/d8a/class_edge_detector"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="328">
+        <label>EdgeDetector</label>
+        <link refid="d9/d8a/class_edge_detector"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.h" bodystart="6" bodyend="12"/>
+    <listofallmembers>
+      <member refid="d9/d8a/class_edge_detector_1aefa2d90e960e7dc3171bccadbed4a13e" prot="public" virt="pure-virtual"><scope>EdgeDetector</scope><name>process</name></member>
+      <member refid="d9/d8a/class_edge_detector_1a84d1668be5dd4052278a2cf86802746e" prot="public" virt="virtual"><scope>EdgeDetector</scope><name>~EdgeDetector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

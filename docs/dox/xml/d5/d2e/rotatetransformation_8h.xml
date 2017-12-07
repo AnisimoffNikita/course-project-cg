@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/d2e/rotatetransformation_8h" kind="file" language="C++">
+    <compoundname>rotatetransformation.h</compoundname>
+    <includes refid="dc/d53/transformation_8h" local="yes">transformation.h</includes>
+    <includedby refid="dc/d9f/rotatetransformation_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp</includedby>
+    <includedby refid="d6/d64/modelview_8cpp" local="yes">Projects/labs/course_project_cg/src/widgets/modelview.cpp</includedby>
+    <includedby refid="d1/d5e/modelview2_8cpp" local="yes">Projects/labs/course_project_cg/src/widgets/modelview2.cpp</includedby>
+    <incdepgraph>
+      <node id="2662">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.h</label>
+        <link refid="rotatetransformation.h"/>
+        <childnode refid="2663" relation="include">
+        </childnode>
+      </node>
+      <node id="2667">
+        <label>functional</label>
+      </node>
+      <node id="2664">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2666" relation="include">
+        </childnode>
+      </node>
+      <node id="2665">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2668">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2665" relation="include">
+        </childnode>
+      </node>
+      <node id="2666">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2667" relation="include">
+        </childnode>
+      </node>
+      <node id="2663">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2664" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2669">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.h</label>
+        <link refid="rotatetransformation.h"/>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2671" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+      </node>
+      <node id="2670">
+        <label>Projects/labs/course_project_cg/src/animation/rotatetransformation.cpp</label>
+        <link refid="dc/d9f/rotatetransformation_8cpp"/>
+      </node>
+      <node id="2671">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2672">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dc/d6a/class_rotate_x_transformation" prot="public">RotateXTransformation</innerclass>
+    <innerclass refid="d1/d32/class_rotate_y_transformation" prot="public">RotateYTransformation</innerclass>
+    <innerclass refid="d0/dac/class_rotate_z_transformation" prot="public">RotateZTransformation</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ROTATETRANSFORM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROTATETRANSFORM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d53/transformation_8h" kindref="compound">transformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="dc/d6a/class_rotate_x_transformation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/d6a/class_rotate_x_transformation" kindref="compound">RotateXTransformation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1a90758976e184ef89825281c15ad0f71a" kindref="member">RotateXTransformation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;origin);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1a4ce10fae3f680ab275e996f9a80aed31" kindref="member">transform</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1ace8f34cb88796d5a1102387ff55003fd" kindref="member">resetOrigin</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="dc/d6a/class_rotate_x_transformation_1a771b16f30e12e307d6fa352f0aeca526" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1a771b16f30e12e307d6fa352f0aeca526" kindref="member">_origin</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d1/d32/class_rotate_y_transformation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d32/class_rotate_y_transformation" kindref="compound">RotateYTransformation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d32/class_rotate_y_transformation" kindref="compound">RotateYTransformation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;origin);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1a4ce10fae3f680ab275e996f9a80aed31" kindref="member">transform</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1ace8f34cb88796d5a1102387ff55003fd" kindref="member">resetOrigin</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="d1/d32/class_rotate_y_transformation_1a682b5e9e50be3147831198697c449733" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="d1/d32/class_rotate_y_transformation_1a682b5e9e50be3147831198697c449733" kindref="member">_origin</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d0/dac/class_rotate_z_transformation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/dac/class_rotate_z_transformation" kindref="compound">RotateZTransformation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dac/class_rotate_z_transformation" kindref="compound">RotateZTransformation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;origin);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1a4ce10fae3f680ab275e996f9a80aed31" kindref="member">transform</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d6a/class_rotate_x_transformation_1ace8f34cb88796d5a1102387ff55003fd" kindref="member">resetOrigin</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="d0/dac/class_rotate_z_transformation_1a9b48a86a7982391293b8867f56897efa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="d0/dac/class_rotate_z_transformation_1a9b48a86a7982391293b8867f56897efa" kindref="member">_origin</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROTATETRANSFORM_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/rotatetransformation.h"/>
+  </compounddef>
+</doxygen>

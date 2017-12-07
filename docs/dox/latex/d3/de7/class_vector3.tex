@@ -1,0 +1,335 @@
+\hypertarget{class_vector3}{}\section{Шаблон класса Vector3$<$ T $>$}
+\label{class_vector3}\index{Vector3$<$ T $>$@{Vector3$<$ T $>$}}
+
+
+{\ttfamily \#include $<$vec3.\+h$>$}
+
+
+
+Граф связей класса Vector3$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{db/d13/class_vector3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector3_a54f99f4211298d5245ea578bdd5143cc}{Vector3} ()
+\item 
+\hyperlink{class_vector3_a84c61226b4e2b49a0935a01b84649e6e}{Vector3} (const T \&\hyperlink{class_vector3_a55614d2843061b025cb95891339cca0c}{x}, const T \&\hyperlink{class_vector3_a6dc34e4c9e1491c6bac8dee7350ebbc6}{y}, const T \&\hyperlink{class_vector3_a5bc9e3f59440d2f892ac9b1113a0f0cb}{z})
+\item 
+T \hyperlink{class_vector3_a55614d2843061b025cb95891339cca0c}{x} () const 
+\item 
+void \hyperlink{class_vector3_a342d8918baf44d59b231fad8fed36850}{setX} (const T \&value)
+\item 
+T \hyperlink{class_vector3_a6dc34e4c9e1491c6bac8dee7350ebbc6}{y} () const 
+\item 
+void \hyperlink{class_vector3_a24bf17b5d27fd72ca8c9581800365a5c}{setY} (const T \&value)
+\item 
+T \hyperlink{class_vector3_a5bc9e3f59440d2f892ac9b1113a0f0cb}{z} () const 
+\item 
+void \hyperlink{class_vector3_ae89a4fa1027e5f7c71cfe8b7ec25a0e2}{setZ} (const T \&value)
+\item 
+float \hyperlink{class_vector3_aeae8eae4d5a0a909aa0129c53c493038}{length} () const 
+\item 
+\hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_a757cacf1c357bb86043b62242b2ea4fd}{operator+=} (const \hyperlink{class_vector3}{Vector3} \&value)
+\item 
+\hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_a8c893c8194fb6cec3836e1878a18256b}{operator-\/=} (const \hyperlink{class_vector3}{Vector3} \&value)
+\item 
+\hyperlink{class_vector3}{Vector3} \& \hyperlink{class_vector3_a29d1e4a0f04b39f1eb33fdd4c17840ce}{operator$\ast$=} (float factor)
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_a83d8773b281400b251a46312f288b6c2}{operator+} (const \hyperlink{class_vector3}{Vector3} \&value) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_aa2759ad6082cb6fcee8514742686b600}{operator-\/} (const \hyperlink{class_vector3}{Vector3} \&value) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_af20828ee3001ba69624cce6ff7153afa}{operator$\ast$} (float factor) const 
+\item 
+bool \hyperlink{class_vector3_ade37f1281bae4dab3cfedab423319912}{operator==} (const \hyperlink{class_vector3}{Vector3} \&value) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_a18f31710eb03fb10ea8eafd2e8834974}{operator-\/} () const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_add47d32a13094de4ff7215296aec0bc6}{normalized} () const 
+\item 
+T \hyperlink{class_vector3_adee56adcf1000649a1fcf2265e8b12b5}{dot} (const \hyperlink{class_vector3}{Vector3} \&value) const 
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{class_vector3_ab58658d09f875a7fcc2ca98a8112af84}{cross} (const \hyperlink{class_vector3}{Vector3} \&value) const 
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{class_vector3_a7f85df8589147274b76ccea757bc3868}{xc}
+\item 
+T \hyperlink{class_vector3_a0b0084b4c366805a4cf48558fc21c4a8}{yc}
+\item 
+T \hyperlink{class_vector3_a5ba4eecf62db2872046d9e3fe01fb406}{zc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$class T$>$\\*
+class Vector3$<$ T $>$}
+
+
+
+См. определение в файле vec3.\+h строка 8
+
+
+
+\subsection{Конструктор(ы)}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{Vector3()}{Vector3()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3}$<$ T $>$\+::{\bf Vector3} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a54f99f4211298d5245ea578bdd5143cc}{}\label{class_vector3_a54f99f4211298d5245ea578bdd5143cc}
+
+
+См. определение в файле vec3.\+h строка 11
+
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{Vector3(const T \&x, const T \&y, const T \&z)}{Vector3(const T &x, const T &y, const T &z)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3}$<$ T $>$\+::{\bf Vector3} (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x, }
+\item[{const T \&}]{y, }
+\item[{const T \&}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a84c61226b4e2b49a0935a01b84649e6e}{}\label{class_vector3_a84c61226b4e2b49a0935a01b84649e6e}
+
+
+См. определение в файле vec3.\+h строка 12
+
+
+
+\subsection{Методы}
+\index{Vector3@{Vector3}!cross@{cross}}
+\index{cross@{cross}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{cross(const Vector3 \&value) const }{cross(const Vector3 &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3} {\bf Vector3}$<$ T $>$\+::cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ T $>$ \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_ab58658d09f875a7fcc2ca98a8112af84}{}\label{class_vector3_ab58658d09f875a7fcc2ca98a8112af84}
+
+
+См. определение в файле vec3.\+h строка 110
+
+\index{Vector3@{Vector3}!dot@{dot}}
+\index{dot@{dot}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{dot(const Vector3 \&value) const }{dot(const Vector3 &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vector3}$<$ T $>$\+::dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ T $>$ \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_adee56adcf1000649a1fcf2265e8b12b5}{}\label{class_vector3_adee56adcf1000649a1fcf2265e8b12b5}
+
+
+См. определение в файле vec3.\+h строка 105
+
+\index{Vector3@{Vector3}!length@{length}}
+\index{length@{length}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{length() const }{length() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ float {\bf Vector3}$<$ T $>$\+::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_aeae8eae4d5a0a909aa0129c53c493038}{}\label{class_vector3_aeae8eae4d5a0a909aa0129c53c493038}
+
+
+См. определение в файле vec3.\+h строка 44
+
+\index{Vector3@{Vector3}!normalized@{normalized}}
+\index{normalized@{normalized}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{normalized() const }{normalized() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3} {\bf Vector3}$<$ T $>$\+::normalized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_add47d32a13094de4ff7215296aec0bc6}{}\label{class_vector3_add47d32a13094de4ff7215296aec0bc6}
+
+
+См. определение в файле vec3.\+h строка 99
+
+\index{Vector3@{Vector3}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator$\ast$(float factor) const }{operator*(float factor) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3} {\bf Vector3}$<$ T $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_af20828ee3001ba69624cce6ff7153afa}{}\label{class_vector3_af20828ee3001ba69624cce6ff7153afa}
+
+
+См. определение в файле vec3.\+h строка 81
+
+\index{Vector3@{Vector3}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator$\ast$=(float factor)}{operator*=(float factor)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3}\& {\bf Vector3}$<$ T $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a29d1e4a0f04b39f1eb33fdd4c17840ce}{}\label{class_vector3_a29d1e4a0f04b39f1eb33fdd4c17840ce}
+
+
+См. определение в файле vec3.\+h строка 63
+
+\index{Vector3@{Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator+(const Vector3 \&value) const }{operator+(const Vector3 &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3} {\bf Vector3}$<$ T $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ T $>$ \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a83d8773b281400b251a46312f288b6c2}{}\label{class_vector3_a83d8773b281400b251a46312f288b6c2}
+
+
+См. определение в файле vec3.\+h строка 71
+
+\index{Vector3@{Vector3}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator+=(const Vector3 \&value)}{operator+=(const Vector3 &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3}\& {\bf Vector3}$<$ T $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ T $>$ \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a757cacf1c357bb86043b62242b2ea4fd}{}\label{class_vector3_a757cacf1c357bb86043b62242b2ea4fd}
+
+
+См. определение в файле vec3.\+h строка 49
+
+\index{Vector3@{Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator-\/(const Vector3 \&value) const }{operator-(const Vector3 &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3} {\bf Vector3}$<$ T $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ T $>$ \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_aa2759ad6082cb6fcee8514742686b600}{}\label{class_vector3_aa2759ad6082cb6fcee8514742686b600}
+
+
+См. определение в файле vec3.\+h строка 76
+
+\index{Vector3@{Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator-\/() const }{operator-() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3} {\bf Vector3}$<$ T $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a18f31710eb03fb10ea8eafd2e8834974}{}\label{class_vector3_a18f31710eb03fb10ea8eafd2e8834974}
+
+
+См. определение в файле vec3.\+h строка 94
+
+\index{Vector3@{Vector3}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator-\/=(const Vector3 \&value)}{operator-=(const Vector3 &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector3}\& {\bf Vector3}$<$ T $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ T $>$ \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a8c893c8194fb6cec3836e1878a18256b}{}\label{class_vector3_a8c893c8194fb6cec3836e1878a18256b}
+
+
+См. определение в файле vec3.\+h строка 56
+
+\index{Vector3@{Vector3}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{operator==(const Vector3 \&value) const }{operator==(const Vector3 &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Vector3}$<$ T $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3}$<$ T $>$ \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_ade37f1281bae4dab3cfedab423319912}{}\label{class_vector3_ade37f1281bae4dab3cfedab423319912}
+
+
+См. определение в файле vec3.\+h строка 86
+
+\index{Vector3@{Vector3}!setX@{setX}}
+\index{setX@{setX}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{set\+X(const T \&value)}{setX(const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Vector3}$<$ T $>$\+::setX (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a342d8918baf44d59b231fad8fed36850}{}\label{class_vector3_a342d8918baf44d59b231fad8fed36850}
+
+
+См. определение в файле vec3.\+h строка 19
+
+\index{Vector3@{Vector3}!setY@{setY}}
+\index{setY@{setY}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{set\+Y(const T \&value)}{setY(const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Vector3}$<$ T $>$\+::setY (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a24bf17b5d27fd72ca8c9581800365a5c}{}\label{class_vector3_a24bf17b5d27fd72ca8c9581800365a5c}
+
+
+См. определение в файле vec3.\+h строка 29
+
+\index{Vector3@{Vector3}!setZ@{setZ}}
+\index{setZ@{setZ}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{set\+Z(const T \&value)}{setZ(const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Vector3}$<$ T $>$\+::setZ (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_ae89a4fa1027e5f7c71cfe8b7ec25a0e2}{}\label{class_vector3_ae89a4fa1027e5f7c71cfe8b7ec25a0e2}
+
+
+См. определение в файле vec3.\+h строка 39
+
+\index{Vector3@{Vector3}!x@{x}}
+\index{x@{x}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{x() const }{x() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vector3}$<$ T $>$\+::x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a55614d2843061b025cb95891339cca0c}{}\label{class_vector3_a55614d2843061b025cb95891339cca0c}
+
+
+См. определение в файле vec3.\+h строка 14
+
+\index{Vector3@{Vector3}!y@{y}}
+\index{y@{y}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{y() const }{y() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vector3}$<$ T $>$\+::y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a6dc34e4c9e1491c6bac8dee7350ebbc6}{}\label{class_vector3_a6dc34e4c9e1491c6bac8dee7350ebbc6}
+
+
+См. определение в файле vec3.\+h строка 24
+
+\index{Vector3@{Vector3}!z@{z}}
+\index{z@{z}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{z() const }{z() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vector3}$<$ T $>$\+::z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector3_a5bc9e3f59440d2f892ac9b1113a0f0cb}{}\label{class_vector3_a5bc9e3f59440d2f892ac9b1113a0f0cb}
+
+
+См. определение в файле vec3.\+h строка 34
+
+
+
+\subsection{Данные класса}
+\index{Vector3@{Vector3}!xc@{xc}}
+\index{xc@{xc}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{xc}{xc}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vector3}$<$ T $>$\+::xc\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector3_a7f85df8589147274b76ccea757bc3868}{}\label{class_vector3_a7f85df8589147274b76ccea757bc3868}
+
+
+См. определение в файле vec3.\+h строка 118
+
+\index{Vector3@{Vector3}!yc@{yc}}
+\index{yc@{yc}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{yc}{yc}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vector3}$<$ T $>$\+::yc\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector3_a0b0084b4c366805a4cf48558fc21c4a8}{}\label{class_vector3_a0b0084b4c366805a4cf48558fc21c4a8}
+
+
+См. определение в файле vec3.\+h строка 119
+
+\index{Vector3@{Vector3}!zc@{zc}}
+\index{zc@{zc}!Vector3@{Vector3}}
+\subsubsection[{\texorpdfstring{zc}{zc}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf Vector3}$<$ T $>$\+::zc\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector3_a5ba4eecf62db2872046d9e3fe01fb406}{}\label{class_vector3_a5ba4eecf62db2872046d9e3fe01fb406}
+
+
+См. определение в файле vec3.\+h строка 120
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/math/\hyperlink{vec3_8h}{vec3.\+h}\end{DoxyCompactItemize}

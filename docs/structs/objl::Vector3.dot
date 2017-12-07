@@ -1,0 +1,5 @@
+digraph objl::Vector3
+{
+graph [ rankdir="RL" ]
+"d0/d73/structobjl_1_1_vector3" [ label="objl::Vector3\n|+Vector3 (  )\l+Vector3 ( X_ : float, Y_ : float, Z_ : float )\l+operator!= ( other : const Vector3 & ) : bool\l+operator* ( other : const float & ) : Vector3\l+operator+ ( right : const Vector3 & ) : Vector3\l+operator- ( right : const Vector3 & ) : Vector3\l+operator== ( other : const Vector3 & ) : bool\l|+X : float\l+Y : float\l+Z : float\l" shape="record" ]
+}

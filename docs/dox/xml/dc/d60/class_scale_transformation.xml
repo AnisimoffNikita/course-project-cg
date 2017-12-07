@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dc/d60/class_scale_transformation" kind="class" language="C++" prot="public">
+    <compoundname>ScaleTransformation</compoundname>
+    <basecompoundref refid="d1/d32/class_transformation" prot="public" virt="non-virtual">Transformation</basecompoundref>
+    <includes refid="d0/d00/scaletransformation_8h" local="no">scaletransformation.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="dc/d60/class_scale_transformation_1ad2053c743ab2b0d87149c24540aadaaa" prot="protected" static="no" mutable="no">
+        <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref></type>
+        <definition>Vec3 ScaleTransformation::_origin</definition>
+        <argsstring></argsstring>
+        <name>_origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scaletransformation.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scaletransformation.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d60/class_scale_transformation_1a439313c9450e0f2a8cb7b6dc30f5c055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScaleTransformation::ScaleTransformation</definition>
+        <argsstring>(const Vec3 &amp;scale, const Vec3 &amp;setOrigin)</argsstring>
+        <name>ScaleTransformation</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>setOrigin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scaletransformation.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scaletransformation.cpp" bodystart="5" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d60/class_scale_transformation_1a78e8e8f441eea7f39b669ea8bbd1bdc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ScaleTransformation::transform</definition>
+        <argsstring>(Vec3 &amp;vertex) const override</argsstring>
+        <name>transform</name>
+        <reimplements refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee">transform</reimplements>
+        <param>
+          <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scaletransformation.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scaletransformation.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d60/class_scale_transformation_1a4c23c7d4596a9bb90ee5f854aa3e5a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ScaleTransformation::resetOrigin</definition>
+        <argsstring>() override</argsstring>
+        <name>resetOrigin</name>
+        <reimplements refid="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038">resetOrigin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scaletransformation.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scaletransformation.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="476">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+      </node>
+      <node id="475">
+        <label>ScaleTransformation</label>
+        <link refid="dc/d60/class_scale_transformation"/>
+        <childnode refid="476" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="478">
+        <label>Transformation</label>
+        <link refid="d1/d32/class_transformation"/>
+        <childnode refid="479" relation="usage">
+          <edgelabel>#_matrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="480">
+        <label>Vector3&lt; float &gt;</label>
+        <link refid="d3/de7/class_vector3"/>
+      </node>
+      <node id="477">
+        <label>ScaleTransformation</label>
+        <link refid="dc/d60/class_scale_transformation"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+        <childnode refid="480" relation="usage">
+          <edgelabel>#_origin</edgelabel>
+        </childnode>
+      </node>
+      <node id="479">
+        <label>Matrix&lt; 4, 4, float &gt;</label>
+        <link refid="d6/d3f/class_matrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/scaletransformation.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scaletransformation.h" bodystart="6" bodyend="15"/>
+    <listofallmembers>
+      <member refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" prot="protected" virt="non-virtual"><scope>ScaleTransformation</scope><name>_matrix</name></member>
+      <member refid="dc/d60/class_scale_transformation_1ad2053c743ab2b0d87149c24540aadaaa" prot="protected" virt="non-virtual"><scope>ScaleTransformation</scope><name>_origin</name></member>
+      <member refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" prot="public" virt="non-virtual"><scope>ScaleTransformation</scope><name>getMatrix</name></member>
+      <member refid="dc/d60/class_scale_transformation_1a4c23c7d4596a9bb90ee5f854aa3e5a17" prot="public" virt="virtual"><scope>ScaleTransformation</scope><name>resetOrigin</name></member>
+      <member refid="dc/d60/class_scale_transformation_1a439313c9450e0f2a8cb7b6dc30f5c055" prot="public" virt="non-virtual"><scope>ScaleTransformation</scope><name>ScaleTransformation</name></member>
+      <member refid="dc/d60/class_scale_transformation_1a78e8e8f441eea7f39b669ea8bbd1bdc2" prot="public" virt="virtual"><scope>ScaleTransformation</scope><name>transform</name></member>
+      <member refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" prot="public" virt="non-virtual"><scope>ScaleTransformation</scope><name>Transformation</name></member>
+      <member refid="d1/d32/class_transformation_1a4e436a0834b3295b8261c38748e8602d" prot="public" virt="virtual"><scope>ScaleTransformation</scope><name>~Transformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

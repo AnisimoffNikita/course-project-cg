@@ -1,0 +1,5 @@
+digraph Vector2
+{
+graph [ rankdir="RL" ]
+"d8/dbe/class_vector2" [ label="Vector2\n|+Vector2 (  )\l+Vector2 ( x : const T &, y : const T & )\l+getX (  ) : T\l+getY (  ) : T\l+setX ( value : const T & ) : void\l+setY ( value : const T & ) : void\l|-x : T\l-y : T\l" shape="record" ]
+}

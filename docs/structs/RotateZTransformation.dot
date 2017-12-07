@@ -1,0 +1,5 @@
+digraph RotateZTransformation
+{
+graph [ rankdir="RL" ]
+"d0/dac/class_rotate_z_transformation" [ label="RotateZTransformation\n|+RotateZTransformation ( angle : float, origin : const Vec3 & )\l/+resetOrigin (  ) : void \{virtual\}\l/+transform ( vertex : Vec3 & ) : void \{virtual\}\l|#_origin : Vec3\l" shape="record" ]
+}

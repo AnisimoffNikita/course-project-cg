@@ -1,0 +1,5 @@
+digraph PointLight
+{
+graph [ rankdir="RL" ]
+"dd/d0a/class_point_light" [ label="PointLight\n|+PointLight ( position : const Vec3 &, intensity : float )\l/+getIntensity ( n : const Vec3 &, p : const Vec3 &, c : const Vec3 &,  : const Color &, kd : const Color &, ks : const ... ) : Color \{virtual\}\l/+isPoint (  ) : bool \{virtual\}\l+~PointLight (  ) \{virtual\}\l|" shape="record" ]
+}

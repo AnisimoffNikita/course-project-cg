@@ -1,0 +1,9 @@
+class CylinderSize
+!!!167554.cpp!!!	getRadius() : float
+    return radius;
+!!!167682.cpp!!!	setRadius(in value : float) : void
+    radius = value;
+!!!167810.cpp!!!	getHeight() : float
+    return height;
+!!!167938.cpp!!!	setHeight(in value : float) : void
+    height = value;

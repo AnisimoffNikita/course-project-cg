@@ -1,0 +1,5 @@
+digraph Mesh
+{
+graph [ rankdir="RL" ]
+"dc/dbe/class_mesh" [ label="Mesh\n|+Mesh (  )\l+getMaterial (  ) : Material &\l+getTriangles (  ) : vector\< Triangle \> &\l+getVertices (  ) : vector\< Vertex \> &\l+setMaterial ( value : const Material & ) : void\l+setTriangles ( value : const vector\< Triangle \> & ) : void\l+setVertices ( value : const vector\< Vertex \> & ) : void\l+transform ( transformation : const Transformation & ) : void\l|-material : Material\l-triangles : vector\< Triangle \>\l-vertices : vector\< Vertex \>\l" shape="record" ]
+}

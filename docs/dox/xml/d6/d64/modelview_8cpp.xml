@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/d64/modelview_8cpp" kind="file" language="C++">
+    <compoundname>modelview.cpp</compoundname>
+    <includes refid="d3/d6a/modelview_8h" local="yes">modelview.h</includes>
+    <includes local="no">QStyle</includes>
+    <includes refid="d5/d2e/rotatetransformation_8h" local="yes">src/animation/rotatetransformation.h</includes>
+    <includes refid="db/d83/scene_8h" local="yes">src/animation/scene.h</includes>
+    <includes refid="d6/d85/renderer_8h" local="yes">src/animation/renderer.h</includes>
+    <includes refid="d9/d8f/sceneobjectfactory_8h" local="yes">src/animation/sceneobjectfactory.h</includes>
+    <includes refid="d7/d17/lightzbufferrenderer_8h" local="yes">src/animation/lightzbufferrenderer.h</includes>
+    <includes refid="de/d7c/animation_2objloader_8h" local="yes">src/animation/objloader.h</includes>
+    <incdepgraph>
+      <node id="3661">
+        <label>src/animation/rotatetransformation.h</label>
+        <link refid="d5/d2e/rotatetransformation_8h"/>
+        <childnode refid="3656" relation="include">
+        </childnode>
+      </node>
+      <node id="3650">
+        <label>functional</label>
+      </node>
+      <node id="3654">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="3648" relation="include">
+        </childnode>
+      </node>
+      <node id="3666">
+        <label>src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="3655" relation="include">
+        </childnode>
+        <childnode refid="3648" relation="include">
+        </childnode>
+        <childnode refid="3667" relation="include">
+        </childnode>
+        <childnode refid="3640" relation="include">
+        </childnode>
+      </node>
+      <node id="3643">
+        <label>src/animation/scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="3642" relation="include">
+        </childnode>
+        <childnode refid="3644" relation="include">
+        </childnode>
+        <childnode refid="3645" relation="include">
+        </childnode>
+        <childnode refid="3646" relation="include">
+        </childnode>
+        <childnode refid="3651" relation="include">
+        </childnode>
+        <childnode refid="3653" relation="include">
+        </childnode>
+        <childnode refid="3648" relation="include">
+        </childnode>
+        <childnode refid="3640" relation="include">
+        </childnode>
+      </node>
+      <node id="3646">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="3645" relation="include">
+        </childnode>
+        <childnode refid="3642" relation="include">
+        </childnode>
+        <childnode refid="3647" relation="include">
+        </childnode>
+      </node>
+      <node id="3667">
+        <label>zbuffer.h</label>
+        <link refid="db/dd0/zbuffer_8h"/>
+        <childnode refid="3645" relation="include">
+        </childnode>
+        <childnode refid="3648" relation="include">
+        </childnode>
+      </node>
+      <node id="3636">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="3669">
+        <label>string</label>
+      </node>
+      <node id="3647">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="3648" relation="include">
+        </childnode>
+        <childnode refid="3649" relation="include">
+        </childnode>
+      </node>
+      <node id="3648">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3633">
+        <label>modelview.h</label>
+        <link refid="d3/d6a/modelview_8h"/>
+        <childnode refid="3634" relation="include">
+        </childnode>
+        <childnode refid="3635" relation="include">
+        </childnode>
+        <childnode refid="3636" relation="include">
+        </childnode>
+        <childnode refid="3637" relation="include">
+        </childnode>
+        <childnode refid="3638" relation="include">
+        </childnode>
+        <childnode refid="3639" relation="include">
+        </childnode>
+        <childnode refid="3640" relation="include">
+        </childnode>
+        <childnode refid="3641" relation="include">
+        </childnode>
+        <childnode refid="3642" relation="include">
+        </childnode>
+        <childnode refid="3643" relation="include">
+        </childnode>
+        <childnode refid="3655" relation="include">
+        </childnode>
+      </node>
+      <node id="3635">
+        <label>QImage</label>
+      </node>
+      <node id="3665">
+        <label>pointlight.h</label>
+        <link refid="d0/d23/pointlight_8h"/>
+        <childnode refid="3653" relation="include">
+        </childnode>
+      </node>
+      <node id="3658">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="3654" relation="include">
+        </childnode>
+        <childnode refid="3647" relation="include">
+        </childnode>
+        <childnode refid="3648" relation="include">
+        </childnode>
+        <childnode refid="3659" relation="include">
+        </childnode>
+        <childnode refid="3656" relation="include">
+        </childnode>
+      </node>
+      <node id="3652">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="3648" relation="include">
+        </childnode>
+      </node>
+      <node id="3668">
+        <label>src/animation/objloader.h</label>
+        <link refid="de/d7c/animation_2objloader_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+        <childnode refid="3669" relation="include">
+        </childnode>
+      </node>
+      <node id="3663">
+        <label>model.h</label>
+        <link refid="dc/d51/model_8h"/>
+        <childnode refid="3646" relation="include">
+        </childnode>
+        <childnode refid="3657" relation="include">
+        </childnode>
+        <childnode refid="3656" relation="include">
+        </childnode>
+      </node>
+      <node id="3651">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="3646" relation="include">
+        </childnode>
+        <childnode refid="3652" relation="include">
+        </childnode>
+      </node>
+      <node id="3632">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="modelview.cpp"/>
+        <childnode refid="3633" relation="include">
+        </childnode>
+        <childnode refid="3660" relation="include">
+        </childnode>
+        <childnode refid="3661" relation="include">
+        </childnode>
+        <childnode refid="3643" relation="include">
+        </childnode>
+        <childnode refid="3655" relation="include">
+        </childnode>
+        <childnode refid="3662" relation="include">
+        </childnode>
+        <childnode refid="3666" relation="include">
+        </childnode>
+        <childnode refid="3668" relation="include">
+        </childnode>
+      </node>
+      <node id="3660">
+        <label>QStyle</label>
+      </node>
+      <node id="3639">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="3638">
+        <label>QResizeEvent</label>
+      </node>
+      <node id="3655">
+        <label>src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="3656" relation="include">
+        </childnode>
+        <childnode refid="3651" relation="include">
+        </childnode>
+        <childnode refid="3653" relation="include">
+        </childnode>
+        <childnode refid="3657" relation="include">
+        </childnode>
+        <childnode refid="3635" relation="include">
+        </childnode>
+      </node>
+      <node id="3649">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="3648" relation="include">
+        </childnode>
+        <childnode refid="3650" relation="include">
+        </childnode>
+      </node>
+      <node id="3637">
+        <label>QGraphicsScene</label>
+      </node>
+      <node id="3641">
+        <label>QTimer</label>
+      </node>
+      <node id="3645">
+        <label>vector</label>
+      </node>
+      <node id="3662">
+        <label>src/animation/sceneobjectfactory.h</label>
+        <link refid="d9/d8f/sceneobjectfactory_8h"/>
+        <childnode refid="3646" relation="include">
+        </childnode>
+        <childnode refid="3651" relation="include">
+        </childnode>
+        <childnode refid="3663" relation="include">
+        </childnode>
+        <childnode refid="3664" relation="include">
+        </childnode>
+        <childnode refid="3665" relation="include">
+        </childnode>
+      </node>
+      <node id="3634">
+        <label>QWidget</label>
+      </node>
+      <node id="3644">
+        <label>utility</label>
+      </node>
+      <node id="3659">
+        <label>array</label>
+      </node>
+      <node id="3657">
+        <label>mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="3645" relation="include">
+        </childnode>
+        <childnode refid="3647" relation="include">
+        </childnode>
+        <childnode refid="3652" relation="include">
+        </childnode>
+        <childnode refid="3656" relation="include">
+        </childnode>
+        <childnode refid="3658" relation="include">
+        </childnode>
+      </node>
+      <node id="3640">
+        <label>QPixmap</label>
+      </node>
+      <node id="3656">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="3647" relation="include">
+        </childnode>
+        <childnode refid="3652" relation="include">
+        </childnode>
+      </node>
+      <node id="3653">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="3646" relation="include">
+        </childnode>
+        <childnode refid="3654" relation="include">
+        </childnode>
+      </node>
+      <node id="3642">
+        <label>memory</label>
+      </node>
+      <node id="3664">
+        <label>ambientlight.h</label>
+        <link refid="dc/d87/ambientlight_8h"/>
+        <childnode refid="3653" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d6a/modelview_8h" kindref="compound">modelview.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStyle&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d2e/rotatetransformation_8h" kindref="compound">src/animation/rotatetransformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d83/scene_8h" kindref="compound">src/animation/scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d85/renderer_8h" kindref="compound">src/animation/renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d8f/sceneobjectfactory_8h" kindref="compound">src/animation/sceneobjectfactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d17/lightzbufferrenderer_8h" kindref="compound">src/animation/lightzbufferrenderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/d7c/animation_2objloader_8h" kindref="compound">src/animation/objloader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="da/d17/class_model_view_1a77f7dded12c094ecfe844809aba9274e" refkind="member"><highlight class="normal"><ref refid="da/d17/class_model_view_1a77f7dded12c094ecfe844809aba9274e" kindref="member">ModelView::ModelView</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsView(parent),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>graphicsScene(new<sp/>QGraphicsScene()),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>canvas(640,<sp/>480),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>scene(<ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>::make_unique&lt;<ref refid="d6/db5/class_scene" kindref="compound">Scene</ref>&gt;())</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="da/d17/class_model_view_1aadae7104e72e31784ad241b648bd5e73" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d17/class_model_view_1aadae7104e72e31784ad241b648bd5e73" kindref="member">ModelView::resizeEvent</ref>(QResizeEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>QGraphicsView::resizeEvent(event);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;fitInView(<ref refid="da/d17/class_model_view_1ae6374117c710be500a33e57e3561ac8f" kindref="member">graphicsScene</ref>-&gt;itemsBoundingRect(),<sp/>Qt::KeepAspectRatio);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="da/d17/class_model_view_1acd6c5305eb70b148fac15c7d1eef37df" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d17/class_model_view_1acd6c5305eb70b148fac15c7d1eef37df" kindref="member">ModelView::mousePressEvent</ref>(QMouseEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d17/class_model_view_1a02ee08144e27ff6f19d1e26a52cebb87" kindref="member">lastPos</ref><sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;pos();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="da/d17/class_model_view_1aaa864c638d5ce42eebf8c0af6e884ec6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d17/class_model_view_1aaa864c638d5ce42eebf8c0af6e884ec6" kindref="member">ModelView::mouseMoveEvent</ref>(QMouseEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dx<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;pos().x()<sp/>-<sp/><ref refid="da/d17/class_model_view_1a02ee08144e27ff6f19d1e26a52cebb87" kindref="member">lastPos</ref>.x();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>camera<sp/>=<sp/><ref refid="da/d17/class_model_view_1a41e5d7792517ae9880d9c129026b0c84" kindref="member">scene</ref>-&gt;getActiveCamera();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(camera.expired())</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>workCamera<sp/>=<sp/>camera.lock();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d32/class_rotate_y_transformation" kindref="compound">RotateYTransformation</ref><sp/>y(<ref refid="d4/d34/class_math_1a937c65c4813b70c8bb6b0d5b45cecc94" kindref="member">Math::ToRadians</ref>(dx)<sp/>/<sp/>2,<sp/><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref>(0,<sp/>0,<sp/>0));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>workCamera-&gt;transform(y);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d17/class_model_view_1a02ee08144e27ff6f19d1e26a52cebb87" kindref="member">lastPos</ref><sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;pos();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="da/d17/class_model_view_1acf6729149dc1397b67b90b7d19b4319d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d17/class_model_view_1acf6729149dc1397b67b90b7d19b4319d" kindref="member">ModelView::updateCanvas</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d17/class_model_view_1ae6374117c710be500a33e57e3561ac8f" kindref="member">graphicsScene</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d17/class_model_view_1ae6374117c710be500a33e57e3561ac8f" kindref="member">graphicsScene</ref>-&gt;addPixmap(<ref refid="da/d17/class_model_view_1aa428aaa80cb804090b372c39e1c87044" kindref="member">canvas</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;fitInView(<ref refid="da/d17/class_model_view_1ae6374117c710be500a33e57e3561ac8f" kindref="member">graphicsScene</ref>-&gt;itemsBoundingRect(),<sp/>Qt::KeepAspectRatio);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="da/d17/class_model_view_1a14b2162dc99c4d801b857365d1c11e5b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d17/class_model_view_1a14b2162dc99c4d801b857365d1c11e5b" kindref="member">ModelView::scheduler</ref>()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>scene-&gt;render(renderer);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>canvas<sp/>=<sp/>QPixmap::fromImage(renderer-&gt;getRendered());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>updateCanvas();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="da/d17/class_model_view_1ab2d171869dfb01218eb5c1956bedb1a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d17/class_model_view_1ab2d171869dfb01218eb5c1956bedb1a2" kindref="member">ModelView::setModelScene</ref>(std::unique_ptr&lt;Scene&gt;<sp/>&amp;&amp;value)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d17/class_model_view_1a41e5d7792517ae9880d9c129026b0c84" kindref="member">scene</ref><sp/>=<sp/>std::move(value);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/widgets/modelview.cpp"/>
+  </compounddef>
+</doxygen>

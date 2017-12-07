@@ -1,0 +1,69 @@
+\hypertarget{3rdparty_2_obj_loader_2objloader_8h}{}\section{Файл Projects/labs/course\+\_\+project\+\_\+cg/src/3rdparty/\+Obj\+Loader/objloader.h}
+\label{3rdparty_2_obj_loader_2objloader_8h}\index{Projects/labs/course\+\_\+project\+\_\+cg/src/3rdparty/\+Obj\+Loader/objloader.\+h@{Projects/labs/course\+\_\+project\+\_\+cg/src/3rdparty/\+Obj\+Loader/objloader.\+h}}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$Q\+File$>$}\\*
+{\ttfamily \#include $<$Q\+Text\+Stream$>$}\\*
+Граф включаемых заголовочных файлов для objloader.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d24/3rdparty_2_obj_loader_2objloader_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{dd/dba/3rdparty_2_obj_loader_2objloader_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structobjl_1_1_vector2}{objl\+::\+Vector2}
+\item 
+struct \hyperlink{structobjl_1_1_vector3}{objl\+::\+Vector3}
+\item 
+struct \hyperlink{structobjl_1_1_vertex}{objl\+::\+Vertex}
+\item 
+struct \hyperlink{structobjl_1_1_material}{objl\+::\+Material}
+\item 
+struct \hyperlink{structobjl_1_1_mesh}{objl\+::\+Mesh}
+\item 
+class \hyperlink{classobjl_1_1_loader}{objl\+::\+Loader}
+\end{DoxyCompactItemize}
+\subsection*{Пространства имен}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceobjl}{objl}
+\item 
+ \hyperlink{namespaceobjl_1_1math}{objl\+::math}
+\item 
+ \hyperlink{namespaceobjl_1_1algorithm}{objl\+::algorithm}
+\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{namespaceobjl_1_1math_a0a60e59c13969d1baaff0b393a6d045c}{objl\+::math\+::\+Cross\+V3} (const \hyperlink{class_vector3}{Vector3} a, const \hyperlink{class_vector3}{Vector3} b)
+\item 
+float \hyperlink{namespaceobjl_1_1math_aafce95377aefa7ef8f6c732bef547333}{objl\+::math\+::\+Magnitude\+V3} (const \hyperlink{class_vector3}{Vector3} in)
+\item 
+float \hyperlink{namespaceobjl_1_1math_a822b1ebd1dc13a06c95a813ff45fd2e7}{objl\+::math\+::\+Dot\+V3} (const \hyperlink{class_vector3}{Vector3} a, const \hyperlink{class_vector3}{Vector3} b)
+\item 
+float \hyperlink{namespaceobjl_1_1math_a2e4951a1ceabb660f63a3b6cc57a051e}{objl\+::math\+::\+Angle\+Between\+V3} (const \hyperlink{class_vector3}{Vector3} a, const \hyperlink{class_vector3}{Vector3} b)
+\item 
+\hyperlink{class_vector3}{Vector3} \hyperlink{namespaceobjl_1_1algorithm_a8758a92e7c04767d6259b7efdfacb4e7}{objl\+::algorithm\+::operator$\ast$} (const float \&left, const \hyperlink{class_vector3}{Vector3} \&right)
+\item 
+bool \hyperlink{namespaceobjl_1_1algorithm_aae4725c9c9dcd572cec150c1f2d23510}{objl\+::algorithm\+::in\+Triangle} (\hyperlink{class_vector3}{Vector3} point, \hyperlink{class_vector3}{Vector3} tri1, \hyperlink{class_vector3}{Vector3} tri2, \hyperlink{class_vector3}{Vector3} tri3)
+\item 
+void \hyperlink{namespaceobjl_1_1algorithm_ad8cd3981f833ce390e38119ba6c65be4}{objl\+::algorithm\+::split} (const std\+::string \&in, std\+::vector$<$ std\+::string $>$ \&out, std\+::string token)
+\item 
+std\+::string \hyperlink{namespaceobjl_1_1algorithm_aacb49ff1f3ea308b666279142df6e273}{objl\+::algorithm\+::tail} (const std\+::string \&in)
+\item 
+std\+::string \hyperlink{namespaceobjl_1_1algorithm_a28e5d8a792b5113fb5d1af2132dfb273}{objl\+::algorithm\+::first\+Token} (const std\+::string \&in)
+\item 
+{\footnotesize template$<$class T $>$ }\\const T \& \hyperlink{namespaceobjl_1_1algorithm_a1619dda5f75e704bde76b902a6636cc2}{objl\+::algorithm\+::get\+Element} (const std\+::vector$<$ T $>$ \&elements, std\+::string \&index)
+\end{DoxyCompactItemize}

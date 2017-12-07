@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_7ea7e6b139e7d411ea1a9017c76e2852" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/widgets</compoundname>
+    <innerfile refid="d9/d17/imageview_8cpp">imageview.cpp</innerfile>
+    <innerfile refid="df/dd7/imageview_8h">imageview.h</innerfile>
+    <innerfile refid="d6/d64/modelview_8cpp">modelview.cpp</innerfile>
+    <innerfile refid="d3/d6a/modelview_8h">modelview.h</innerfile>
+    <innerfile refid="d1/d5e/modelview2_8cpp">modelview2.cpp</innerfile>
+    <innerfile refid="d4/d90/modelview2_8h">modelview2.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/widgets/"/>
+  </compounddef>
+</doxygen>

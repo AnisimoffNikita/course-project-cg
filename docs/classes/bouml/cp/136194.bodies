@@ -1,0 +1,8 @@
+class PerspectiveMatrix
+!!!148226.cpp!!!	create(in fovx : float, in fovy : float, in zNear : float, in zFar : float) : Mat4
+    float data[] = {(float)Math::Atan(fovx / 2), 0, 0, 0,
+                    0, (float)Math::Atan(fovy / 2), 0, 0,
+                    0, 0, (zFar + zNear) / (zFar - zNear), -(2 * zFar * zNear) / (zFar - zNear),
+                    0, 0, 1, 0
+                   };
+    return Mat4(data);

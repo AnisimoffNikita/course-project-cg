@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dc/dbe/class_mesh" kind="class" language="C++" prot="public">
+    <compoundname>Mesh</compoundname>
+    <includes refid="d8/d3b/mesh_8h" local="no">mesh.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/dbe/class_mesh_1abe5c05c224e47ba1e8b6393759798a9b" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>vector&lt;Vertex&gt; Mesh::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dbe/class_mesh_1a2b30e4823d6d0d17c115018065bd1e91" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref> &gt;</type>
+        <definition>vector&lt;Triangle&gt; Mesh::triangles</definition>
+        <argsstring></argsstring>
+        <name>triangles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="32" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dbe/class_mesh_1a3368c3bc60dd176e522df1542b764847" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/dee/class_material" kindref="compound">Material</ref></type>
+        <definition>Material Mesh::material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="33" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/dbe/class_mesh_1ae6b6c56f0ebfa2f6b2b10d25a835c865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mesh::Mesh</definition>
+        <argsstring>()=default</argsstring>
+        <name>Mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbe/class_mesh_1a1844b662689440a6c5ad761c53be4f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref> &gt; &amp;</type>
+        <definition>vector&lt; Vertex &gt; &amp; Mesh::getVertices</definition>
+        <argsstring>()</argsstring>
+        <name>getVertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbe/class_mesh_1a5c68963c5e297f561932ae51d1f0e8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mesh::setVertices</definition>
+        <argsstring>(const vector&lt; Vertex &gt; &amp;value)</argsstring>
+        <name>setVertices</name>
+        <param>
+          <type>const vector&lt; <ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref> &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="20" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbe/class_mesh_1a7674d50589acad6a336f264d007e71c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref> &gt; &amp;</type>
+        <definition>vector&lt; Triangle &gt; &amp; Mesh::getTriangles</definition>
+        <argsstring>()</argsstring>
+        <name>getTriangles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbe/class_mesh_1a26adb872946b00793f84f8cecd48cc56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mesh::setTriangles</definition>
+        <argsstring>(const vector&lt; Triangle &gt; &amp;value)</argsstring>
+        <name>setTriangles</name>
+        <param>
+          <type>const vector&lt; <ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref> &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbe/class_mesh_1add1ff13540509dc02be32fa791c22352" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/dee/class_material" kindref="compound">Material</ref> &amp;</type>
+        <definition>Material &amp; Mesh::getMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>getMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbe/class_mesh_1a16e6aa53eab442ce66381e67259be050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mesh::setMaterial</definition>
+        <argsstring>(const Material &amp;value)</argsstring>
+        <name>setMaterial</name>
+        <param>
+          <type>const <ref refid="dc/dee/class_material" kindref="compound">Material</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbe/class_mesh_1a6261935dee415d96a87e3db58cdbe6a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mesh::transform</definition>
+        <argsstring>(const Transformation &amp;transformation)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const <ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref> &amp;</type>
+          <declname>transformation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.cpp" bodystart="36" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="400">
+        <label>Mesh</label>
+        <link refid="dc/dbe/class_mesh"/>
+        <childnode refid="401" relation="usage">
+          <edgelabel>-material</edgelabel>
+        </childnode>
+      </node>
+      <node id="401">
+        <label>Material</label>
+        <link refid="dc/dee/class_material"/>
+        <childnode refid="402" relation="usage">
+          <edgelabel>-ka</edgelabel>
+          <edgelabel>-ks</edgelabel>
+          <edgelabel>-kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="402">
+        <label>Color</label>
+        <link refid="d9/ddd/class_color"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/mesh.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/mesh.h" bodystart="14" bodyend="34"/>
+    <listofallmembers>
+      <member refid="dc/dbe/class_mesh_1add1ff13540509dc02be32fa791c22352" prot="public" virt="non-virtual"><scope>Mesh</scope><name>getMaterial</name></member>
+      <member refid="dc/dbe/class_mesh_1a7674d50589acad6a336f264d007e71c9" prot="public" virt="non-virtual"><scope>Mesh</scope><name>getTriangles</name></member>
+      <member refid="dc/dbe/class_mesh_1a1844b662689440a6c5ad761c53be4f94" prot="public" virt="non-virtual"><scope>Mesh</scope><name>getVertices</name></member>
+      <member refid="dc/dbe/class_mesh_1a3368c3bc60dd176e522df1542b764847" prot="private" virt="non-virtual"><scope>Mesh</scope><name>material</name></member>
+      <member refid="dc/dbe/class_mesh_1ae6b6c56f0ebfa2f6b2b10d25a835c865" prot="public" virt="non-virtual"><scope>Mesh</scope><name>Mesh</name></member>
+      <member refid="dc/dbe/class_mesh_1a16e6aa53eab442ce66381e67259be050" prot="public" virt="non-virtual"><scope>Mesh</scope><name>setMaterial</name></member>
+      <member refid="dc/dbe/class_mesh_1a26adb872946b00793f84f8cecd48cc56" prot="public" virt="non-virtual"><scope>Mesh</scope><name>setTriangles</name></member>
+      <member refid="dc/dbe/class_mesh_1a5c68963c5e297f561932ae51d1f0e8f5" prot="public" virt="non-virtual"><scope>Mesh</scope><name>setVertices</name></member>
+      <member refid="dc/dbe/class_mesh_1a6261935dee415d96a87e3db58cdbe6a2" prot="public" virt="non-virtual"><scope>Mesh</scope><name>transform</name></member>
+      <member refid="dc/dbe/class_mesh_1a2b30e4823d6d0d17c115018065bd1e91" prot="private" virt="non-virtual"><scope>Mesh</scope><name>triangles</name></member>
+      <member refid="dc/dbe/class_mesh_1abe5c05c224e47ba1e8b6393759798a9b" prot="private" virt="non-virtual"><scope>Mesh</scope><name>vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

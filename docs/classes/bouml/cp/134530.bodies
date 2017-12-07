@@ -1,0 +1,7 @@
+class CommonTransformation
+!!!143618.cpp!!!	CommonTransformation(in matrix : Mat4)
+    _matrix = matrix;
+!!!143746.cpp!!!	transform(inout vertex : Vec3) : void
+    HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
+    hvec = _matrix * hvec;
+    vertex = HomogeneousVertexConverter::ToVertex(hvec);

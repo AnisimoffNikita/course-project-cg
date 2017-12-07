@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="da/d7c/class_light" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Light</compoundname>
+    <basecompoundref refid="dc/df8/class_scene_object" prot="public" virt="non-virtual">SceneObject</basecompoundref>
+    <derivedcompoundref refid="d4/dd4/class_ambient_light" prot="public" virt="non-virtual">AmbientLight</derivedcompoundref>
+    <derivedcompoundref refid="dd/d0a/class_point_light" prot="public" virt="non-virtual">PointLight</derivedcompoundref>
+    <includes refid="dd/dd3/light_8h" local="no">light.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Light::intensity</definition>
+        <argsstring></argsstring>
+        <name>intensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d7c/class_light_1af49ca6a5dd2fb43fb878a5ad5f0409fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Light::Light</definition>
+        <argsstring>()=default</argsstring>
+        <name>Light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1adc14c27a60cc0b1d86fdc2f44858c705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Light::Light</definition>
+        <argsstring>(const Vec3 &amp;position, float intensity)</argsstring>
+        <name>Light</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.cpp" bodystart="4" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1ae3e3209d4b97d0bbbd614ded5e1213d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Light::~Light</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1a5ae4db3ece8e61f53db06e8d3af4cdca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Light::draw</definition>
+        <argsstring>(std::unique_ptr&lt; Renderer &gt; &amp;) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="dc/df8/class_scene_object_1adc906ce4e4a896a351949ccabfd44016">draw</reimplements>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="d4/d44/class_renderer" kindref="compound">Renderer</ref> &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1afb03030e1dd8056c73e813095701d796" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Light::transform</definition>
+        <argsstring>(Transformation &amp;transformation) override</argsstring>
+        <name>transform</name>
+        <reimplements refid="dc/df8/class_scene_object_1a1b8a4b90f1200f1cd025d95964d43630">transform</reimplements>
+        <param>
+          <type><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref> &amp;</type>
+          <declname>transformation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1a942b4fb690c63be248ae031723a6148c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Light::isCamera</definition>
+        <argsstring>() override</argsstring>
+        <name>isCamera</name>
+        <reimplements refid="dc/df8/class_scene_object_1a6d7cb8b9a2c29f38fd039731e83167f4">isCamera</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1af09370083a781d2733247bc2ee2f4c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Light::isLight</definition>
+        <argsstring>() override</argsstring>
+        <name>isLight</name>
+        <reimplements refid="dc/df8/class_scene_object_1a9c5b006b8a0e457634f15c19eb51ca73">isLight</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1a81a8d20cdba6692644cda765aced1473" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>virtual Color Light::getIntensity</definition>
+        <argsstring>(const Vec3 &amp;normal, const Vec3 &amp;position, const Vec3 &amp;camera, const Color &amp;ka, const Color &amp;kd, const Color &amp;ks, float ns) const =0</argsstring>
+        <name>getIntensity</name>
+        <reimplementedby refid="d4/dd4/class_ambient_light_1aebbccf2534a3cbe399ccddc552d1a49d">getIntensity</reimplementedby>
+        <reimplementedby refid="dd/d0a/class_point_light_1a1fc0406a41b9474e7568bf925287fabe">getIntensity</reimplementedby>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>normal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ka</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>kd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ks</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7c/class_light_1aa17c9733d1616d8631ed63640344b733" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Light::isPoint</definition>
+        <argsstring>() const =0</argsstring>
+        <name>isPoint</name>
+        <reimplementedby refid="d4/dd4/class_ambient_light_1accccb9b3c5f0a9c38dceaef386c2964a">isPoint</reimplementedby>
+        <reimplementedby refid="dd/d0a/class_point_light_1a002882a80254c1b99bd45f5a97f25e99">isPoint</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/light.h" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="360">
+        <label>PointLight</label>
+        <link refid="dd/d0a/class_point_light"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+      </node>
+      <node id="357">
+        <label>Light</label>
+        <link refid="da/d7c/class_light"/>
+        <childnode refid="358" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>AmbientLight</label>
+        <link refid="d4/dd4/class_ambient_light"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="362">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+        <childnode refid="363" relation="usage">
+          <edgelabel>#position</edgelabel>
+        </childnode>
+      </node>
+      <node id="361">
+        <label>Light</label>
+        <link refid="da/d7c/class_light"/>
+        <childnode refid="362" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>Vector3&lt; float &gt;</label>
+        <link refid="d3/de7/class_vector3"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/light.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/light.h" bodystart="7" bodyend="27"/>
+    <listofallmembers>
+      <member refid="da/d7c/class_light_1a5ae4db3ece8e61f53db06e8d3af4cdca" prot="public" virt="virtual"><scope>Light</scope><name>draw</name></member>
+      <member refid="da/d7c/class_light_1a81a8d20cdba6692644cda765aced1473" prot="public" virt="pure-virtual"><scope>Light</scope><name>getIntensity</name></member>
+      <member refid="dc/df8/class_scene_object_1a9e5d8a20e5e0123e894c2918b0e39dc3" prot="public" virt="virtual"><scope>Light</scope><name>getPosition</name></member>
+      <member refid="da/d7c/class_light_1a1071eaa556f4bb2a9345fdfba7e6f220" prot="protected" virt="non-virtual"><scope>Light</scope><name>intensity</name></member>
+      <member refid="da/d7c/class_light_1a942b4fb690c63be248ae031723a6148c" prot="public" virt="virtual"><scope>Light</scope><name>isCamera</name></member>
+      <member refid="da/d7c/class_light_1af09370083a781d2733247bc2ee2f4c33" prot="public" virt="virtual"><scope>Light</scope><name>isLight</name></member>
+      <member refid="da/d7c/class_light_1aa17c9733d1616d8631ed63640344b733" prot="public" virt="pure-virtual"><scope>Light</scope><name>isPoint</name></member>
+      <member refid="da/d7c/class_light_1af49ca6a5dd2fb43fb878a5ad5f0409fe" prot="public" virt="non-virtual"><scope>Light</scope><name>Light</name></member>
+      <member refid="da/d7c/class_light_1adc14c27a60cc0b1d86fdc2f44858c705" prot="public" virt="non-virtual"><scope>Light</scope><name>Light</name></member>
+      <member refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" prot="protected" virt="non-virtual"><scope>Light</scope><name>position</name></member>
+      <member refid="dc/df8/class_scene_object_1a39ac215b0b6183ac251a26a522acde14" prot="public" virt="non-virtual"><scope>Light</scope><name>SceneObject</name></member>
+      <member refid="dc/df8/class_scene_object_1ad7093f7620ca338f97d98651fd6c87a9" prot="public" virt="non-virtual"><scope>Light</scope><name>SceneObject</name></member>
+      <member refid="dc/df8/class_scene_object_1ae0e79b1773e3e3357d1dcf302463e46a" prot="public" virt="virtual"><scope>Light</scope><name>setPosition</name></member>
+      <member refid="da/d7c/class_light_1afb03030e1dd8056c73e813095701d796" prot="public" virt="virtual"><scope>Light</scope><name>transform</name></member>
+      <member refid="da/d7c/class_light_1ae3e3209d4b97d0bbbd614ded5e1213d9" prot="public" virt="virtual"><scope>Light</scope><name>~Light</name></member>
+      <member refid="dc/df8/class_scene_object_1a0b8708ffea012cd61f583103bf84b531" prot="public" virt="virtual"><scope>Light</scope><name>~SceneObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

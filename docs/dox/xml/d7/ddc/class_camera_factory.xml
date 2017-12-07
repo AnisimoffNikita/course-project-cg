@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d7/ddc/class_camera_factory" kind="class" language="C++" prot="public">
+    <compoundname>CameraFactory</compoundname>
+    <basecompoundref refid="d4/df7/class_scene_object_factory" prot="public" virt="non-virtual">SceneObjectFactory</basecompoundref>
+    <includes refid="d9/d8f/sceneobjectfactory_8h" local="no">sceneobjectfactory.h</includes>
+    <innerclass refid="d2/daa/struct_camera_factory_1_1_perspective_data" prot="public">CameraFactory::PerspectiveData</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/ddc/class_camera_factory_1ad1e2114f133f8489e790a4f42b377de3" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="da/dbb/class_camera" kindref="compound">Camera</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Camera&gt; CameraFactory::camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="41" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/ddc/class_camera_factory_1a73bf5c839340ca2a94ce52a1c400d231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CameraFactory::CameraFactory</definition>
+        <argsstring>(const Vec3 &amp;position, const Vec3 &amp;lookAt, const Vec3 &amp;up, const PerspectiveData &amp;data)</argsstring>
+        <name>CameraFactory</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>lookAt</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>up</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/daa/struct_camera_factory_1_1_perspective_data" kindref="compound">PerspectiveData</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="33" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/ddc/class_camera_factory_1ab63fa4fcfc787465aa1b2d5bf03e9a4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual CameraFactory::~CameraFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CameraFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/ddc/class_camera_factory_1a7a105ab24599d2d48fc03f40a28a1492" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref></type>
+        <definition>SharedSceneObject CameraFactory::create</definition>
+        <argsstring>() override</argsstring>
+        <name>create</name>
+        <reimplements refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993">create</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="295">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+      <node id="294">
+        <label>CameraFactory</label>
+        <link refid="d7/ddc/class_camera_factory"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="297">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+      <node id="296">
+        <label>CameraFactory</label>
+        <link refid="d7/ddc/class_camera_factory"/>
+        <childnode refid="297" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="21" bodyend="42"/>
+    <listofallmembers>
+      <member refid="d7/ddc/class_camera_factory_1ad1e2114f133f8489e790a4f42b377de3" prot="private" virt="non-virtual"><scope>CameraFactory</scope><name>camera</name></member>
+      <member refid="d7/ddc/class_camera_factory_1a73bf5c839340ca2a94ce52a1c400d231" prot="public" virt="non-virtual"><scope>CameraFactory</scope><name>CameraFactory</name></member>
+      <member refid="d7/ddc/class_camera_factory_1a7a105ab24599d2d48fc03f40a28a1492" prot="public" virt="virtual"><scope>CameraFactory</scope><name>create</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" prot="public" virt="non-virtual"><scope>CameraFactory</scope><name>SceneObjectFactory</name></member>
+      <member refid="d7/ddc/class_camera_factory_1ab63fa4fcfc787465aa1b2d5bf03e9a4d" prot="public" virt="virtual"><scope>CameraFactory</scope><name>~CameraFactory</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" prot="public" virt="virtual"><scope>CameraFactory</scope><name>~SceneObjectFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

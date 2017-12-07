@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/d44/class_renderer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Renderer</compoundname>
+    <derivedcompoundref refid="db/d9d/class_light_z_buffer_renderer" prot="public" virt="non-virtual">LightZBufferRenderer</derivedcompoundref>
+    <includes refid="d6/d85/renderer_8h" local="no">renderer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d4/d44/class_renderer_1aeab228a83d206c55fc73c7a14a0f0761" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Renderer::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/renderer.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d44/class_renderer_1ada813defebef120813571bfb6053e88f" prot="protected" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 Renderer::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="32" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/renderer.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d44/class_renderer_1ab2e154b790a2d31603f147510c261ac2" prot="protected" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 Renderer::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="33" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/renderer.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d44/class_renderer_1a4dddd75ab18573a3686f90225f3f03d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Renderer::Renderer</definition>
+        <argsstring>()=default</argsstring>
+        <name>Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d44/class_renderer_1ae0b9551d2d89c7bc08e962eafa43ebb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Renderer::Renderer</definition>
+        <argsstring>(float scale, int32 width, int32 height)</argsstring>
+        <name>Renderer</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/renderer.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d44/class_renderer_1a832ac0e6a4fe1e840e07bd82a405edd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Renderer::setCamera</definition>
+        <argsstring>(SharedCamera value)=0</argsstring>
+        <name>setCamera</name>
+        <reimplementedby refid="db/d9d/class_light_z_buffer_renderer_1acc0d204a38cc6105a7c258b49e5197a4">setCamera</reimplementedby>
+        <param>
+          <type><ref refid="d7/df6/camera_8h_1a01f929aec8e912be07dca2c1f8d00f67" kindref="member">SharedCamera</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d44/class_renderer_1a000c8a4b55c252ad1353bbd33dc4def9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Renderer::addLight</definition>
+        <argsstring>(SharedLight value)=0</argsstring>
+        <name>addLight</name>
+        <reimplementedby refid="db/d9d/class_light_z_buffer_renderer_1a73f101ddbdbb27eb19d6ee719da9bf9a">addLight</reimplementedby>
+        <param>
+          <type><ref refid="dd/dd3/light_8h_1ae1ec32369be93ce20c1e9047a8d388c0" kindref="member">SharedLight</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d44/class_renderer_1a78cc00edca00b08d09121065fb4fc771" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Renderer::start</definition>
+        <argsstring>(int32 width, int32 height)=0</argsstring>
+        <name>start</name>
+        <reimplementedby refid="db/d9d/class_light_z_buffer_renderer_1a431be9dc219e4d2706c95ada2aca8af6">start</reimplementedby>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d44/class_renderer_1a40c3fe3b0e46de69ed563d4b4ca13986" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Renderer::renderMesh</definition>
+        <argsstring>(shared_ptr&lt; Mesh &gt; mesh)=0</argsstring>
+        <name>renderMesh</name>
+        <reimplementedby refid="db/d9d/class_light_z_buffer_renderer_1a258b9e41e648b8f6393a39d2935d4d42">renderMesh</reimplementedby>
+        <param>
+          <type>shared_ptr&lt; <ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref> &gt;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d44/class_renderer_1ad3a00c526a6765792b02f328e7a7dad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uchar *</type>
+        <definition>virtual uchar* Renderer::getRendered</definition>
+        <argsstring>()=0</argsstring>
+        <name>getRendered</name>
+        <reimplementedby refid="db/d9d/class_light_z_buffer_renderer_1a7e712d8d1b3a7be674efb620ba3ff0ef">getRendered</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d44/class_renderer_1ae8a0a67a993626066a989dbf02ae43f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Renderer::finish</definition>
+        <argsstring>()=0</argsstring>
+        <name>finish</name>
+        <reimplementedby refid="db/d9d/class_light_z_buffer_renderer_1ad8084c0d5f0b4555900efbeaa81ec066">finish</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="449">
+        <label>Renderer</label>
+        <link refid="d4/d44/class_renderer"/>
+      </node>
+      <node id="450">
+        <label>LightZBufferRenderer</label>
+        <link refid="db/d9d/class_light_z_buffer_renderer"/>
+        <childnode refid="449" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="451">
+        <label>Renderer</label>
+        <link refid="d4/d44/class_renderer"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/renderer.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/renderer.h" bodystart="11" bodyend="34"/>
+    <listofallmembers>
+      <member refid="d4/d44/class_renderer_1a000c8a4b55c252ad1353bbd33dc4def9" prot="public" virt="pure-virtual"><scope>Renderer</scope><name>addLight</name></member>
+      <member refid="d4/d44/class_renderer_1ae8a0a67a993626066a989dbf02ae43f9" prot="public" virt="pure-virtual"><scope>Renderer</scope><name>finish</name></member>
+      <member refid="d4/d44/class_renderer_1ad3a00c526a6765792b02f328e7a7dad1" prot="public" virt="pure-virtual"><scope>Renderer</scope><name>getRendered</name></member>
+      <member refid="d4/d44/class_renderer_1ab2e154b790a2d31603f147510c261ac2" prot="protected" virt="non-virtual"><scope>Renderer</scope><name>height</name></member>
+      <member refid="d4/d44/class_renderer_1a4dddd75ab18573a3686f90225f3f03d4" prot="public" virt="non-virtual"><scope>Renderer</scope><name>Renderer</name></member>
+      <member refid="d4/d44/class_renderer_1ae0b9551d2d89c7bc08e962eafa43ebb0" prot="public" virt="non-virtual"><scope>Renderer</scope><name>Renderer</name></member>
+      <member refid="d4/d44/class_renderer_1a40c3fe3b0e46de69ed563d4b4ca13986" prot="public" virt="pure-virtual"><scope>Renderer</scope><name>renderMesh</name></member>
+      <member refid="d4/d44/class_renderer_1aeab228a83d206c55fc73c7a14a0f0761" prot="protected" virt="non-virtual"><scope>Renderer</scope><name>scale</name></member>
+      <member refid="d4/d44/class_renderer_1a832ac0e6a4fe1e840e07bd82a405edd6" prot="public" virt="pure-virtual"><scope>Renderer</scope><name>setCamera</name></member>
+      <member refid="d4/d44/class_renderer_1a78cc00edca00b08d09121065fb4fc771" prot="public" virt="pure-virtual"><scope>Renderer</scope><name>start</name></member>
+      <member refid="d4/d44/class_renderer_1ada813defebef120813571bfb6053e88f" prot="protected" virt="non-virtual"><scope>Renderer</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

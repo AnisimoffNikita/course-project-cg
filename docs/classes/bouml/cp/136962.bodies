@@ -1,0 +1,12 @@
+class MoveTransformation
+!!!154370.cpp!!!	MoveTransformation(in delta : Vec3)
+    float data[16] = {1, 0, 0, delta.x(),
+                      0, 1, 0, delta.y(),
+                      0, 0, 1, delta.z(),
+                      0, 0, 0, 1
+                     };
+    _matrix = Mat4(data);
+!!!154498.cpp!!!	transform(inout vertex : Vec3) : void
+    HomogeneousVertex hvec = HomogeneousVertexConverter::FromVertex(vertex);
+    hvec = _matrix * hvec;
+    vertex = HomogeneousVertexConverter::ToVertex(hvec);

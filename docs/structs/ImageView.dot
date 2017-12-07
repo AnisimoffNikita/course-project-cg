@@ -1,0 +1,5 @@
+digraph ImageView
+{
+graph [ rankdir="RL" ]
+"df/de8/class_image_view" [ label="ImageView\n|+ImageView ( parent : QWidget * )\l+setImage ( image : const QImage & ) : void\l#mouseMoveEvent (  : QMouseEvent * ) : void\l#resizeEvent ( event : QResizeEvent * ) : void\l|-scene : QGraphicsScene *\l" shape="record" ]
+}

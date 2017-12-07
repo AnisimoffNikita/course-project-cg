@@ -1,0 +1,40 @@
+class Scene
+!!!158594.cpp!!!	add(in child : SharedSceneObject) : void
+    _children.push_back(child);
+
+    if (child->isLight())
+    {
+        lights.push_back(static_pointer_cast<Light>(child));
+    }
+!!!158722.cpp!!!	setActiveCamera(in child : SharedSceneObject) : void
+    bool cameraExist = std::find(_children.begin(), _children.end(),
+                                 child) != _children.end();
+
+    if (cameraExist && child->isCamera())
+    {
+        _camera = static_pointer_cast<Camera>(child);
+    }
+!!!158850.cpp!!!	getActiveCamera() : WeakCamera
+    return _camera;
+!!!158978.cpp!!!	getChildren() : vector<SharedSceneObject>
+    return _children;
+!!!159106.cpp!!!	render(inout renderer : std::unique_ptr<Renderer>) : void
+    if (_camera.expired())
+    {
+        return;
+    }
+
+    renderer->setCamera(_camera.lock());
+
+    for (const auto &light : lights)
+    {
+        if (!light.expired())
+        {
+            renderer->addLight(light.lock());
+        }
+    }
+
+    for (const auto &child : _children)
+    {
+        child->draw(renderer);
+    }

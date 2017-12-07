@@ -1,0 +1,4 @@
+<map id="objl::Mesh" name="objl::Mesh">
+<area shape="rect" id="node2" href="$d2/dbb/structobjl_1_1_material.html" title="{objl::Material\n|+ name\l+ Ns\l+ Ni\l+ d\l+ illum\l+ map_Ka\l+ map_Kd\l+ map_Ks\l+ map_Ns\l+ map_d\l+ map_bump\l|+ Material()\l}" alt="" coords="9,292,107,516"/>
+<area shape="rect" id="node3" href="$d0/d73/structobjl_1_1_vector3.html" title="{objl::Vector3\n|+ X\l+ Y\l+ Z\l|+ Vector3()\l+ Vector3()\l+ operator==()\l+ operator!=()\l+ operator+()\l+ operator&#45;()\l+ operator*()\l}" alt="" coords="5,5,111,200"/>
+</map>

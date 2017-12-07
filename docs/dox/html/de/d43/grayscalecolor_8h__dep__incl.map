@@ -1,0 +1,15 @@
+<map id="Projects/labs/course_project_cg/src/image/grayscalecolor.h" name="Projects/labs/course_project_cg/src/image/grayscalecolor.h">
+<area shape="rect" id="node2" href="$d2/ded/grayscalecolor_8cpp.html" title="Projects/labs/course\l_project_cg/src/image\l/grayscalecolor.cpp" alt="" coords="400,109,551,165"/>
+<area shape="rect" id="node3" href="$d3/d37/grayscaleimage_8h.html" title="Projects/labs/course\l_project_cg/src/image\l/grayscaleimage.h" alt="" coords="575,109,725,165"/>
+<area shape="rect" id="node4" href="$de/d3b/cannyedgedetector_8h.html" title="Projects/labs/course\l_project_cg/src/algorithm\l/edgedetector/cannyedgedetector.h" alt="" coords="194,213,421,269"/>
+<area shape="rect" id="node9" href="$dd/d54/houghtransform_8h.html" title="Projects/labs/course\l_project_cg/src/algorithm\l/linetransform/houghtransform.h" alt="" coords="445,213,652,269"/>
+<area shape="rect" id="node11" href="$da/d4b/grayscaleimage_8cpp.html" title="Projects/labs/course\l_project_cg/src/image\l/grayscaleimage.cpp" alt="" coords="851,213,1001,269"/>
+<area shape="rect" id="node12" href="$d4/d61/imageconverter_8h.html" title="Projects/labs/course\l_project_cg/src/image\l/imageconverter.h" alt="" coords="676,213,827,269"/>
+<area shape="rect" id="node5" href="$d8/d97/cannyedgedetector_8cpp.html" title="Projects/labs/course\l_project_cg/src/algorithm\l/edgedetector/cannyedgedetector.cpp" alt="" coords="229,317,469,373"/>
+<area shape="rect" id="node6" href="$d9/d53/mainwindow_8h.html" title="Projects/labs/course\l_project_cg/src/mainwindow.h" alt="" coords="5,325,204,366"/>
+<area shape="rect" id="node7" href="$df/d0a/main_8cpp.html" title="Projects/labs/course\l_project_cg/src/main.cpp" alt="" coords="21,421,189,463"/>
+<area shape="rect" id="node8" href="$d8/dd9/mainwindow_8cpp.html" title="Projects/labs/course\l_project_cg/src/mainwindow.cpp" alt="" coords="429,421,641,463"/>
+<area shape="rect" id="node10" href="$d0/d3d/houghtransform_8cpp.html" title="Projects/labs/course\l_project_cg/src/algorithm\l/linetransform/houghtransform.cpp" alt="" coords="493,317,713,373"/>
+<area shape="rect" id="node13" href="$d0/d8b/gaussianblur_8cpp.html" title="Projects/labs/course\l_project_cg/src/algorithm\l/blur/gaussianblur.cpp" alt="" coords="789,317,957,373"/>
+<area shape="rect" id="node14" href="$da/d94/imageconverter_8cpp.html" title="Projects/labs/course\l_project_cg/src/image\l/imageconverter.cpp" alt="" coords="981,317,1132,373"/>
+</map>

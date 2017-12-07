@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d2/d67/transformation_8cpp" kind="file" language="C++">
+    <compoundname>transformation.cpp</compoundname>
+    <includes refid="dc/d53/transformation_8h" local="yes">transformation.h</includes>
+    <incdepgraph>
+      <node id="2840">
+        <label>functional</label>
+      </node>
+      <node id="2837">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2838" relation="include">
+        </childnode>
+        <childnode refid="2839" relation="include">
+        </childnode>
+      </node>
+      <node id="2838">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2841">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2838" relation="include">
+        </childnode>
+      </node>
+      <node id="2839">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2838" relation="include">
+        </childnode>
+        <childnode refid="2840" relation="include">
+        </childnode>
+      </node>
+      <node id="2835">
+        <label>Projects/labs/course_project_cg/src/animation/transformation.cpp</label>
+        <link refid="transformation.cpp"/>
+        <childnode refid="2836" relation="include">
+        </childnode>
+      </node>
+      <node id="2836">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2837" relation="include">
+        </childnode>
+        <childnode refid="2841" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d53/transformation_8h" kindref="compound">transformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" refkind="member"><highlight class="normal"><ref refid="d1/d32/class_transformation_1a40ab64d41c752804740e972ef5f2479f" kindref="member">Transformation::Transformation</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;<ref refid="d1/d32/class_transformation_1ab817400a6baee8d5fb93dd9f4f1db824" kindref="member">Transformation::getMatrix</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" kindref="member">_matrix</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/transformation.cpp"/>
+  </compounddef>
+</doxygen>

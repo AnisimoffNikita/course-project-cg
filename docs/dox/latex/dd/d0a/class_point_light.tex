@@ -1,0 +1,112 @@
+\hypertarget{class_point_light}{}\section{Класс Point\+Light}
+\label{class_point_light}\index{Point\+Light@{Point\+Light}}
+
+
+{\ttfamily \#include $<$pointlight.\+h$>$}
+
+
+
+Граф наследования\+:Point\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{d0/d65/class_point_light__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Point\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/ddf/class_point_light__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point_light_aea07f7df125d6c2ae1812904d5ddc922}{Point\+Light} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&\hyperlink{class_scene_object_af190cdf9b9449f96f73d836848ce4ad3}{position}, float \hyperlink{class_light_a1071eaa556f4bb2a9345fdfba7e6f220}{intensity})
+\item 
+virtual \hyperlink{class_point_light_a8965081e292ec53fddeae614165800d6}{$\sim$\+Point\+Light} ()=default
+\item 
+virtual \hyperlink{class_color}{Color} \hyperlink{class_point_light_a1fc0406a41b9474e7568bf925287fabe}{get\+Intensity} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&n, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&p, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&c, const \hyperlink{class_color}{Color} \&, const \hyperlink{class_color}{Color} \&kd, const \hyperlink{class_color}{Color} \&ks, float ns) const override
+\item 
+virtual bool \hyperlink{class_point_light_a002882a80254c1b99bd45f5a97f25e99}{is\+Point} () const override
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле pointlight.\+h строка 6
+
+
+
+\subsection{Конструктор(ы)}
+\index{Point\+Light@{Point\+Light}!Point\+Light@{Point\+Light}}
+\index{Point\+Light@{Point\+Light}!Point\+Light@{Point\+Light}}
+\subsubsection[{\texorpdfstring{Point\+Light(const Vec3 \&position, float intensity)}{PointLight(const Vec3 &position, float intensity)}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+Light\+::\+Point\+Light (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{float}]{intensity}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_light_aea07f7df125d6c2ae1812904d5ddc922}{}\label{class_point_light_aea07f7df125d6c2ae1812904d5ddc922}
+
+
+См. определение в файле pointlight.\+cpp строка 5
+
+\index{Point\+Light@{Point\+Light}!````~Point\+Light@{$\sim$\+Point\+Light}}
+\index{````~Point\+Light@{$\sim$\+Point\+Light}!Point\+Light@{Point\+Light}}
+\subsubsection[{\texorpdfstring{$\sim$\+Point\+Light()=default}{~PointLight()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Point\+Light\+::$\sim$\+Point\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_point_light_a8965081e292ec53fddeae614165800d6}{}\label{class_point_light_a8965081e292ec53fddeae614165800d6}
+
+
+\subsection{Методы}
+\index{Point\+Light@{Point\+Light}!get\+Intensity@{get\+Intensity}}
+\index{get\+Intensity@{get\+Intensity}!Point\+Light@{Point\+Light}}
+\subsubsection[{\texorpdfstring{get\+Intensity(const Vec3 \&n, const Vec3 \&p, const Vec3 \&c, const Color \&, const Color \&kd, const Color \&ks, float ns) const override}{getIntensity(const Vec3 &n, const Vec3 &p, const Vec3 &c, const Color &, const Color &kd, const Color &ks, float ns) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Point\+Light\+::get\+Intensity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{n, }
+\item[{const {\bf Vec3} \&}]{p, }
+\item[{const {\bf Vec3} \&}]{c, }
+\item[{const {\bf Color} \&}]{, }
+\item[{const {\bf Color} \&}]{kd, }
+\item[{const {\bf Color} \&}]{ks, }
+\item[{float}]{ns}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_point_light_a1fc0406a41b9474e7568bf925287fabe}{}\label{class_point_light_a1fc0406a41b9474e7568bf925287fabe}
+
+
+Замещает \hyperlink{class_light_a81a8d20cdba6692644cda765aced1473}{Light}.
+
+
+
+См. определение в файле pointlight.\+cpp строка 11
+
+\index{Point\+Light@{Point\+Light}!is\+Point@{is\+Point}}
+\index{is\+Point@{is\+Point}!Point\+Light@{Point\+Light}}
+\subsubsection[{\texorpdfstring{is\+Point() const override}{isPoint() const override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Point\+Light\+::is\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_point_light_a002882a80254c1b99bd45f5a97f25e99}{}\label{class_point_light_a002882a80254c1b99bd45f5a97f25e99}
+
+
+Замещает \hyperlink{class_light_aa17c9733d1616d8631ed63640344b733}{Light}.
+
+
+
+См. определение в файле pointlight.\+cpp строка 49
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{pointlight_8h}{pointlight.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{pointlight_8cpp}{pointlight.\+cpp}\end{DoxyCompactItemize}

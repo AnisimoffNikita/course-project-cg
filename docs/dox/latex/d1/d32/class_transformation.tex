@@ -1,0 +1,124 @@
+\hypertarget{class_transformation}{}\section{Класс Transformation}
+\label{class_transformation}\index{Transformation@{Transformation}}
+
+
+{\ttfamily \#include $<$transformation.\+h$>$}
+
+
+
+Граф наследования\+:Transformation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/deb/class_transformation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Transformation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{df/dce/class_transformation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_transformation_a40ab64d41c752804740e972ef5f2479f}{Transformation} ()
+\item 
+virtual \hyperlink{class_transformation_a4e436a0834b3295b8261c38748e8602d}{$\sim$\+Transformation} ()=default
+\item 
+const \hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \& \hyperlink{class_transformation_ab817400a6baee8d5fb93dd9f4f1db824}{get\+Matrix} ()
+\item 
+virtual void \hyperlink{class_transformation_a3800376d1f4a64ec6ba6abfa3e22c8ee}{transform} (\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&vertex) const =0
+\item 
+virtual void \hyperlink{class_transformation_a2bc354a92aeda699c7c12c54eb120038}{reset\+Origin} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \hyperlink{class_transformation_a88b601bf5613460d361ada4b7a9208e3}{\+\_\+matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле transformation.\+h строка 7
+
+
+
+\subsection{Конструктор(ы)}
+\index{Transformation@{Transformation}!Transformation@{Transformation}}
+\index{Transformation@{Transformation}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{Transformation()}{Transformation()}}]{\setlength{\rightskip}{0pt plus 5cm}Transformation\+::\+Transformation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_transformation_a40ab64d41c752804740e972ef5f2479f}{}\label{class_transformation_a40ab64d41c752804740e972ef5f2479f}
+
+
+См. определение в файле transformation.\+cpp строка 4
+
+\index{Transformation@{Transformation}!````~Transformation@{$\sim$\+Transformation}}
+\index{````~Transformation@{$\sim$\+Transformation}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{$\sim$\+Transformation()=default}{~Transformation()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Transformation\+::$\sim$\+Transformation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_transformation_a4e436a0834b3295b8261c38748e8602d}{}\label{class_transformation_a4e436a0834b3295b8261c38748e8602d}
+
+
+\subsection{Методы}
+\index{Transformation@{Transformation}!get\+Matrix@{get\+Matrix}}
+\index{get\+Matrix@{get\+Matrix}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{get\+Matrix()}{getMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Mat4} \& Transformation\+::get\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_transformation_ab817400a6baee8d5fb93dd9f4f1db824}{}\label{class_transformation_ab817400a6baee8d5fb93dd9f4f1db824}
+
+
+См. определение в файле transformation.\+cpp строка 8
+
+\index{Transformation@{Transformation}!reset\+Origin@{reset\+Origin}}
+\index{reset\+Origin@{reset\+Origin}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{reset\+Origin()=0}{resetOrigin()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Transformation\+::reset\+Origin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_transformation_a2bc354a92aeda699c7c12c54eb120038}{}\label{class_transformation_a2bc354a92aeda699c7c12c54eb120038}
+
+
+Замещается в \hyperlink{class_rotate_z_transformation_abae96c9cce0479c768e4c0ec80dd60f8}{Rotate\+Z\+Transformation}, \hyperlink{class_rotate_y_transformation_affca7c164fd1385996174e2e58089203}{Rotate\+Y\+Transformation}, \hyperlink{class_common_transformation_a8f789aa59517fd1bf553e1846241eacc}{Common\+Transformation}, \hyperlink{class_rotate_x_transformation_ace8f34cb88796d5a1102387ff55003fd}{Rotate\+X\+Transformation}, \hyperlink{class_move_transformation_a7596e30e79d61ffaaf266ff39e540439}{Move\+Transformation} и \hyperlink{class_scale_transformation_a4c23c7d4596a9bb90ee5f854aa3e5a17}{Scale\+Transformation}.
+
+\index{Transformation@{Transformation}!transform@{transform}}
+\index{transform@{transform}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{transform(\+Vec3 \&vertex) const =0}{transform(Vec3 &vertex) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Transformation\+::transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Vec3} \&}]{vertex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_transformation_a3800376d1f4a64ec6ba6abfa3e22c8ee}{}\label{class_transformation_a3800376d1f4a64ec6ba6abfa3e22c8ee}
+
+
+Замещается в \hyperlink{class_rotate_z_transformation_a3f50084c9e113dde3ce12f57dda91d5b}{Rotate\+Z\+Transformation}, \hyperlink{class_rotate_y_transformation_adaed2a21b00aa575007754d15335e7e8}{Rotate\+Y\+Transformation}, \hyperlink{class_common_transformation_a7daef5b3ad4576a691b474d888c3dfd5}{Common\+Transformation}, \hyperlink{class_rotate_x_transformation_a4ce10fae3f680ab275e996f9a80aed31}{Rotate\+X\+Transformation}, \hyperlink{class_move_transformation_aecef1d1fab45fef381366c7dd54ced4d}{Move\+Transformation} и \hyperlink{class_scale_transformation_a78e8e8f441eea7f39b669ea8bbd1bdc2}{Scale\+Transformation}.
+
+
+
+\subsection{Данные класса}
+\index{Transformation@{Transformation}!\+\_\+matrix@{\+\_\+matrix}}
+\index{\+\_\+matrix@{\+\_\+matrix}!Transformation@{Transformation}}
+\subsubsection[{\texorpdfstring{\+\_\+matrix}{_matrix}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat4} Transformation\+::\+\_\+matrix\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_transformation_a88b601bf5613460d361ada4b7a9208e3}{}\label{class_transformation_a88b601bf5613460d361ada4b7a9208e3}
+
+
+См. определение в файле transformation.\+h строка 19
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{transformation_8h}{transformation.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{transformation_8cpp}{transformation.\+cpp}\end{DoxyCompactItemize}

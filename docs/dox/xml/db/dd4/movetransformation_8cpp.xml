@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/dd4/movetransformation_8cpp" kind="file" language="C++">
+    <compoundname>movetransformation.cpp</compoundname>
+    <includes refid="d0/dad/movetransformation_8h" local="yes">movetransformation.h</includes>
+    <includes refid="d4/df0/homogeneousvertex_8h" local="yes">src/math/homogeneousvertex.h</includes>
+    <incdepgraph>
+      <node id="2531">
+        <label>functional</label>
+      </node>
+      <node id="2528">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2529" relation="include">
+        </childnode>
+        <childnode refid="2530" relation="include">
+        </childnode>
+      </node>
+      <node id="2529">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2533">
+        <label>src/math/homogeneousvertex.h</label>
+        <link refid="d4/df0/homogeneousvertex_8h"/>
+        <childnode refid="2528" relation="include">
+        </childnode>
+        <childnode refid="2532" relation="include">
+        </childnode>
+      </node>
+      <node id="2526">
+        <label>movetransformation.h</label>
+        <link refid="d0/dad/movetransformation_8h"/>
+        <childnode refid="2527" relation="include">
+        </childnode>
+      </node>
+      <node id="2532">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2529" relation="include">
+        </childnode>
+      </node>
+      <node id="2530">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2529" relation="include">
+        </childnode>
+        <childnode refid="2531" relation="include">
+        </childnode>
+      </node>
+      <node id="2525">
+        <label>Projects/labs/course_project_cg/src/animation/movetransformation.cpp</label>
+        <link refid="movetransformation.cpp"/>
+        <childnode refid="2526" relation="include">
+        </childnode>
+        <childnode refid="2533" relation="include">
+        </childnode>
+      </node>
+      <node id="2527">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2528" relation="include">
+        </childnode>
+        <childnode refid="2532" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/dad/movetransformation_8h" kindref="compound">movetransformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/df0/homogeneousvertex_8h" kindref="compound">src/math/homogeneousvertex.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="da/d5b/class_move_transformation_1ae2997ff6e97846840ff28ae0b60fe15d" refkind="member"><highlight class="normal"><ref refid="da/d5b/class_move_transformation_1ae2997ff6e97846840ff28ae0b60fe15d" kindref="member">MoveTransformation::MoveTransformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;delta)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>data[16]<sp/>=<sp/>{1,<sp/>0,<sp/>0,<sp/>delta.<ref refid="d3/de7/class_vector3_1a55614d2843061b025cb95891339cca0c" kindref="member">x</ref>(),</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>1,<sp/>0,<sp/>delta.<ref refid="d3/de7/class_vector3_1a6dc34e4c9e1491c6bac8dee7350ebbc6" kindref="member">y</ref>(),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>0,<sp/>1,<sp/>delta.<ref refid="d3/de7/class_vector3_1a5bc9e3f59440d2f892ac9b1113a0f0cb" kindref="member">z</ref>(),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>0,<sp/>0,<sp/>1</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" kindref="member">_matrix</ref><sp/>=<sp/><ref refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kindref="member">Mat4</ref>(data);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="da/d5b/class_move_transformation_1aecef1d1fab45fef381366c7dd54ced4d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d5b/class_move_transformation_1aecef1d1fab45fef381366c7dd54ced4d" kindref="member">MoveTransformation::transform</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="17"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">HomogeneousVertex</ref><sp/>hvec<sp/>=<sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" kindref="member">HomogeneousVertexConverter::FromVertex</ref>(vertex);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>hvec<sp/>=<sp/><ref refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" kindref="member">_matrix</ref><sp/>*<sp/>hvec;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>vertex<sp/>=<sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" kindref="member">HomogeneousVertexConverter::ToVertex</ref>(hvec);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="da/d5b/class_move_transformation_1a7596e30e79d61ffaaf266ff39e540439" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d5b/class_move_transformation_1a7596e30e79d61ffaaf266ff39e540439" kindref="member">MoveTransformation::resetOrigin</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/movetransformation.cpp"/>
+  </compounddef>
+</doxygen>

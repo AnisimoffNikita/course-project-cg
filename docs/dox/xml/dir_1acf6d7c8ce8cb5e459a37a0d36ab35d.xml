@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_1acf6d7c8ce8cb5e459a37a0d36ab35d" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/animation</compoundname>
+    <innerfile refid="d3/df9/actionmanager_8cpp">actionmanager.cpp</innerfile>
+    <innerfile refid="d7/d86/actionmanager_8h">actionmanager.h</innerfile>
+    <innerfile refid="d8/dcf/actions_8cpp">actions.cpp</innerfile>
+    <innerfile refid="d3/de1/actions_8h">actions.h</innerfile>
+    <innerfile refid="d3/d01/ambientlight_8cpp">ambientlight.cpp</innerfile>
+    <innerfile refid="dc/d87/ambientlight_8h">ambientlight.h</innerfile>
+    <innerfile refid="d1/d6b/camera_8cpp">camera.cpp</innerfile>
+    <innerfile refid="d7/df6/camera_8h">camera.h</innerfile>
+    <innerfile refid="de/dc1/commontransformation_8cpp">commontransformation.cpp</innerfile>
+    <innerfile refid="d0/d18/commontransformation_8h">commontransformation.h</innerfile>
+    <innerfile refid="d1/d7b/composite_8cpp">composite.cpp</innerfile>
+    <innerfile refid="de/d72/composite_8h">composite.h</innerfile>
+    <innerfile refid="dd/dfa/light_8cpp">light.cpp</innerfile>
+    <innerfile refid="dd/dd3/light_8h">light.h</innerfile>
+    <innerfile refid="d8/dc3/lightzbufferrenderer_8cpp">lightzbufferrenderer.cpp</innerfile>
+    <innerfile refid="d7/d17/lightzbufferrenderer_8h">lightzbufferrenderer.h</innerfile>
+    <innerfile refid="da/d36/matrixfactory_8cpp">matrixfactory.cpp</innerfile>
+    <innerfile refid="df/d3d/matrixfactory_8h">matrixfactory.h</innerfile>
+    <innerfile refid="d8/dd2/mesh_8cpp">mesh.cpp</innerfile>
+    <innerfile refid="d8/d3b/mesh_8h">mesh.h</innerfile>
+    <innerfile refid="dd/dd8/meshdata_8cpp">meshdata.cpp</innerfile>
+    <innerfile refid="d5/d6a/meshdata_8h">meshdata.h</innerfile>
+    <innerfile refid="d6/db4/model_8cpp">model.cpp</innerfile>
+    <innerfile refid="dc/d51/model_8h">model.h</innerfile>
+    <innerfile refid="db/dd4/movetransformation_8cpp">movetransformation.cpp</innerfile>
+    <innerfile refid="d0/dad/movetransformation_8h">movetransformation.h</innerfile>
+    <innerfile refid="dd/dbb/objloader_8cpp">objloader.cpp</innerfile>
+    <innerfile refid="de/d7c/animation_2objloader_8h">objloader.h</innerfile>
+    <innerfile refid="d7/d88/pointlight_8cpp">pointlight.cpp</innerfile>
+    <innerfile refid="d0/d23/pointlight_8h">pointlight.h</innerfile>
+    <innerfile refid="d6/d54/renderer_8cpp">renderer.cpp</innerfile>
+    <innerfile refid="d6/d85/renderer_8h">renderer.h</innerfile>
+    <innerfile refid="da/d5f/rendererdata_8cpp">rendererdata.cpp</innerfile>
+    <innerfile refid="dc/d7b/rendererdata_8h">rendererdata.h</innerfile>
+    <innerfile refid="dc/d9f/rotatetransformation_8cpp">rotatetransformation.cpp</innerfile>
+    <innerfile refid="d5/d2e/rotatetransformation_8h">rotatetransformation.h</innerfile>
+    <innerfile refid="d3/dc7/scaletransformation_8cpp">scaletransformation.cpp</innerfile>
+    <innerfile refid="d0/d00/scaletransformation_8h">scaletransformation.h</innerfile>
+    <innerfile refid="da/d33/scene_8cpp">scene.cpp</innerfile>
+    <innerfile refid="db/d83/scene_8h">scene.h</innerfile>
+    <innerfile refid="d0/dfc/sceneobject_8cpp">sceneobject.cpp</innerfile>
+    <innerfile refid="d5/d69/sceneobject_8h">sceneobject.h</innerfile>
+    <innerfile refid="da/d15/sceneobjectfactory_8cpp">sceneobjectfactory.cpp</innerfile>
+    <innerfile refid="d9/d8f/sceneobjectfactory_8h">sceneobjectfactory.h</innerfile>
+    <innerfile refid="d2/d67/transformation_8cpp">transformation.cpp</innerfile>
+    <innerfile refid="dc/d53/transformation_8h">transformation.h</innerfile>
+    <innerfile refid="de/d9a/zbuffer_8cpp">zbuffer.cpp</innerfile>
+    <innerfile refid="db/dd0/zbuffer_8h">zbuffer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/animation/"/>
+  </compounddef>
+</doxygen>

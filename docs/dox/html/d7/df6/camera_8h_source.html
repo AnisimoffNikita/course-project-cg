@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/animation/camera.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_1acf6d7c8ce8cb5e459a37a0d36ab35d.html">animation</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">camera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/df6/camera_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CAMERA_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CAMERA_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d69/sceneobject_8h.html">sceneobject.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/df4/matrix_8h.html">src/math/matrix.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../da/dbb/class_camera.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/dbb/class_camera.html">Camera</a> : <span class="keyword">public</span> <a class="code" href="../../dc/df8/class_scene_object.html">SceneObject</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../da/dbb/class_camera.html#a2f7d35911a4dcf218a0ef901cc0906dc">Camera</a>(<span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;<a class="code" href="../../dc/df8/class_scene_object.html#af190cdf9b9449f96f73d836848ce4ad3">position</a>, <span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;<a class="code" href="../../da/dbb/class_camera.html#a7aa44d09547fc7407002dc32b1891207">lookAt</a>, <span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;<a class="code" href="../../da/dbb/class_camera.html#a4473532c8bbceefb503a5a7195044bfe">up</a>,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;           <span class="keyword">const</span> <a class="code" href="../../d6/d3f/class_matrix.html">Mat4</a> &amp;projection);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../da/dbb/class_camera.html#a5c5155e999ea54c0385461de3ca0b95a">draw</a>(std::unique_ptr&lt;Renderer&gt; &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../da/dbb/class_camera.html#a76d8a9057211e4935405040d8fa154f6">transform</a>(<a class="code" href="../../d1/d32/class_transformation.html">Transformation</a> &amp;transformation) <span class="keyword">override</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../da/dbb/class_camera.html#a629ebafac4f86f952dad42a0087c344c">isCamera</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../da/dbb/class_camera.html#a7209dc5149f4b8af2ed9e8b6297f6c41">isLight</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../da/dbb/class_camera.html#a1ba2c3600a8a0f6e231ad9564bdb7359">setPosition</a>(<span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;value) <span class="keyword">override</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;<a class="code" href="../../da/dbb/class_camera.html#a318614134ed9e5182954daaceb17ca47">getLookAt</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../da/dbb/class_camera.html#abd0ac1ec8cc6c5ca79798fc61aa4a1fa">setLookAt</a>(<span class="keyword">const</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> &amp;target);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> <a class="code" href="../../da/dbb/class_camera.html#a49e96c7af94f85b1297fb4184c99fa28">getEyeVector</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d6/d3f/class_matrix.html">Mat4</a> <a class="code" href="../../da/dbb/class_camera.html#a081e90588c62b55623f22d0477082924">getPVMatrix</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d6/d3f/class_matrix.html">Mat4</a> &amp;<a class="code" href="../../da/dbb/class_camera.html#a0baac3a162f4e3507a5c35c97a2c4236">getPMatrix</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d6/d3f/class_matrix.html">Mat4</a> &amp;<a class="code" href="../../da/dbb/class_camera.html#ac9ca414b8f610584b90486938131aa1e">getVMatrix</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/dbb/class_camera.html#a8fe5c71a390571a861ad8afd99dfdea3">updateViewMatrix</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../da/dbb/class_camera.html#a7aa44d09547fc7407002dc32b1891207">   30</a></span>&#160;    <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> <a class="code" href="../../da/dbb/class_camera.html#a7aa44d09547fc7407002dc32b1891207">lookAt</a>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../da/dbb/class_camera.html#a4473532c8bbceefb503a5a7195044bfe">   31</a></span>&#160;    <a class="code" href="../../d3/de7/class_vector3.html">Vec3</a> <a class="code" href="../../da/dbb/class_camera.html#a4473532c8bbceefb503a5a7195044bfe">up</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../da/dbb/class_camera.html#a9e4efa2b0bb97699cda8904309873aa9">   32</a></span>&#160;    <a class="code" href="../../d6/d3f/class_matrix.html">Mat4</a> <a class="code" href="../../da/dbb/class_camera.html#a9e4efa2b0bb97699cda8904309873aa9">viewMatrix</a>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../da/dbb/class_camera.html#a33e328413d91278d44953ccb0adef3ce">   33</a></span>&#160;    <a class="code" href="../../d6/d3f/class_matrix.html">Mat4</a> <a class="code" href="../../da/dbb/class_camera.html#a33e328413d91278d44953ccb0adef3ce">projectionMatrix</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d7/df6/camera_8h.html#a01f929aec8e912be07dca2c1f8d00f67">   37</a></span>&#160;<span class="keyword">using</span> <a class="code" href="../../d7/df6/camera_8h.html#a01f929aec8e912be07dca2c1f8d00f67">SharedCamera</a> = std::shared_ptr&lt;Camera&gt;;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d7/df6/camera_8h.html#a7b9616f276c6529ece2bbfb711f5c756">   38</a></span>&#160;<span class="keyword">using</span> <a class="code" href="../../d7/df6/camera_8h.html#a7b9616f276c6529ece2bbfb711f5c756">WeakCamera</a> = std::weak_ptr&lt;Camera&gt;;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // CAMERA_H</span></div><div class="ttc" id="class_camera_html_a76d8a9057211e4935405040d8fa154f6"><div class="ttname"><a href="../../da/dbb/class_camera.html#a76d8a9057211e4935405040d8fa154f6">Camera::transform</a></div><div class="ttdeci">virtual void transform(Transformation &amp;transformation) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00022">camera.cpp:22</a></div></div>
+<div class="ttc" id="class_camera_html_a7aa44d09547fc7407002dc32b1891207"><div class="ttname"><a href="../../da/dbb/class_camera.html#a7aa44d09547fc7407002dc32b1891207">Camera::lookAt</a></div><div class="ttdeci">Vec3 lookAt</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df6/camera_8h_source.html#l00030">camera.h:30</a></div></div>
+<div class="ttc" id="class_camera_html_ac9ca414b8f610584b90486938131aa1e"><div class="ttname"><a href="../../da/dbb/class_camera.html#ac9ca414b8f610584b90486938131aa1e">Camera::getVMatrix</a></div><div class="ttdeci">virtual const Mat4 &amp; getVMatrix() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00059">camera.cpp:59</a></div></div>
+<div class="ttc" id="class_camera_html_a8fe5c71a390571a861ad8afd99dfdea3"><div class="ttname"><a href="../../da/dbb/class_camera.html#a8fe5c71a390571a861ad8afd99dfdea3">Camera::updateViewMatrix</a></div><div class="ttdeci">void updateViewMatrix()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00064">camera.cpp:64</a></div></div>
+<div class="ttc" id="class_camera_html"><div class="ttname"><a href="../../da/dbb/class_camera.html">Camera</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df6/camera_8h_source.html#l00007">camera.h:7</a></div></div>
+<div class="ttc" id="sceneobject_8h_html"><div class="ttname"><a href="../../d5/d69/sceneobject_8h.html">sceneobject.h</a></div></div>
+<div class="ttc" id="camera_8h_html_a01f929aec8e912be07dca2c1f8d00f67"><div class="ttname"><a href="../../d7/df6/camera_8h.html#a01f929aec8e912be07dca2c1f8d00f67">SharedCamera</a></div><div class="ttdeci">std::shared_ptr&lt; Camera &gt; SharedCamera</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df6/camera_8h_source.html#l00037">camera.h:37</a></div></div>
+<div class="ttc" id="class_camera_html_a629ebafac4f86f952dad42a0087c344c"><div class="ttname"><a href="../../da/dbb/class_camera.html#a629ebafac4f86f952dad42a0087c344c">Camera::isCamera</a></div><div class="ttdeci">virtual bool isCamera() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00028">camera.cpp:28</a></div></div>
+<div class="ttc" id="class_camera_html_a4473532c8bbceefb503a5a7195044bfe"><div class="ttname"><a href="../../da/dbb/class_camera.html#a4473532c8bbceefb503a5a7195044bfe">Camera::up</a></div><div class="ttdeci">Vec3 up</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df6/camera_8h_source.html#l00031">camera.h:31</a></div></div>
+<div class="ttc" id="class_camera_html_a49e96c7af94f85b1297fb4184c99fa28"><div class="ttname"><a href="../../da/dbb/class_camera.html#a49e96c7af94f85b1297fb4184c99fa28">Camera::getEyeVector</a></div><div class="ttdeci">virtual Vec3 getEyeVector()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00044">camera.cpp:44</a></div></div>
+<div class="ttc" id="camera_8h_html_a7b9616f276c6529ece2bbfb711f5c756"><div class="ttname"><a href="../../d7/df6/camera_8h.html#a7b9616f276c6529ece2bbfb711f5c756">WeakCamera</a></div><div class="ttdeci">std::weak_ptr&lt; Camera &gt; WeakCamera</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df6/camera_8h_source.html#l00038">camera.h:38</a></div></div>
+<div class="ttc" id="class_camera_html_a2f7d35911a4dcf218a0ef901cc0906dc"><div class="ttname"><a href="../../da/dbb/class_camera.html#a2f7d35911a4dcf218a0ef901cc0906dc">Camera::Camera</a></div><div class="ttdeci">Camera(const Vec3 &amp;position, const Vec3 &amp;lookAt, const Vec3 &amp;up, const Mat4 &amp;projection)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00006">camera.cpp:6</a></div></div>
+<div class="ttc" id="class_transformation_html"><div class="ttname"><a href="../../d1/d32/class_transformation.html">Transformation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d53/transformation_8h_source.html#l00007">transformation.h:7</a></div></div>
+<div class="ttc" id="matrix_8h_html"><div class="ttname"><a href="../../dd/df4/matrix_8h.html">matrix.h</a></div></div>
+<div class="ttc" id="class_camera_html_a33e328413d91278d44953ccb0adef3ce"><div class="ttname"><a href="../../da/dbb/class_camera.html#a33e328413d91278d44953ccb0adef3ce">Camera::projectionMatrix</a></div><div class="ttdeci">Mat4 projectionMatrix</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df6/camera_8h_source.html#l00033">camera.h:33</a></div></div>
+<div class="ttc" id="class_camera_html_a7209dc5149f4b8af2ed9e8b6297f6c41"><div class="ttname"><a href="../../da/dbb/class_camera.html#a7209dc5149f4b8af2ed9e8b6297f6c41">Camera::isLight</a></div><div class="ttdeci">virtual bool isLight() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00033">camera.cpp:33</a></div></div>
+<div class="ttc" id="class_matrix_html"><div class="ttname"><a href="../../d6/d3f/class_matrix.html">Matrix&lt; 4, 4, float &gt;</a></div></div>
+<div class="ttc" id="class_camera_html_abd0ac1ec8cc6c5ca79798fc61aa4a1fa"><div class="ttname"><a href="../../da/dbb/class_camera.html#abd0ac1ec8cc6c5ca79798fc61aa4a1fa">Camera::setLookAt</a></div><div class="ttdeci">virtual void setLookAt(const Vec3 &amp;target)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00038">camera.cpp:38</a></div></div>
+<div class="ttc" id="class_vector3_html"><div class="ttname"><a href="../../d3/de7/class_vector3.html">Vector3&lt; float &gt;</a></div></div>
+<div class="ttc" id="class_scene_object_html"><div class="ttname"><a href="../../dc/df8/class_scene_object.html">SceneObject</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d69/sceneobject_8h_source.html#l00012">sceneobject.h:12</a></div></div>
+<div class="ttc" id="class_camera_html_a0baac3a162f4e3507a5c35c97a2c4236"><div class="ttname"><a href="../../da/dbb/class_camera.html#a0baac3a162f4e3507a5c35c97a2c4236">Camera::getPMatrix</a></div><div class="ttdeci">virtual const Mat4 &amp; getPMatrix() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00054">camera.cpp:54</a></div></div>
+<div class="ttc" id="class_camera_html_a5c5155e999ea54c0385461de3ca0b95a"><div class="ttname"><a href="../../da/dbb/class_camera.html#a5c5155e999ea54c0385461de3ca0b95a">Camera::draw</a></div><div class="ttdeci">virtual void draw(std::unique_ptr&lt; Renderer &gt; &amp;) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00017">camera.cpp:17</a></div></div>
+<div class="ttc" id="class_scene_object_html_af190cdf9b9449f96f73d836848ce4ad3"><div class="ttname"><a href="../../dc/df8/class_scene_object.html#af190cdf9b9449f96f73d836848ce4ad3">SceneObject::position</a></div><div class="ttdeci">Vec3 position</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d69/sceneobject_8h_source.html#l00031">sceneobject.h:31</a></div></div>
+<div class="ttc" id="class_camera_html_a1ba2c3600a8a0f6e231ad9564bdb7359"><div class="ttname"><a href="../../da/dbb/class_camera.html#a1ba2c3600a8a0f6e231ad9564bdb7359">Camera::setPosition</a></div><div class="ttdeci">virtual void setPosition(const Vec3 &amp;value) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00070">camera.cpp:70</a></div></div>
+<div class="ttc" id="class_camera_html_a9e4efa2b0bb97699cda8904309873aa9"><div class="ttname"><a href="../../da/dbb/class_camera.html#a9e4efa2b0bb97699cda8904309873aa9">Camera::viewMatrix</a></div><div class="ttdeci">Mat4 viewMatrix</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df6/camera_8h_source.html#l00032">camera.h:32</a></div></div>
+<div class="ttc" id="class_camera_html_a318614134ed9e5182954daaceb17ca47"><div class="ttname"><a href="../../da/dbb/class_camera.html#a318614134ed9e5182954daaceb17ca47">Camera::getLookAt</a></div><div class="ttdeci">virtual const Vec3 &amp; getLookAt()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00076">camera.cpp:76</a></div></div>
+<div class="ttc" id="class_camera_html_a081e90588c62b55623f22d0477082924"><div class="ttname"><a href="../../da/dbb/class_camera.html#a081e90588c62b55623f22d0477082924">Camera::getPVMatrix</a></div><div class="ttdeci">virtual Mat4 getPVMatrix()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6b/camera_8cpp_source.html#l00049">camera.cpp:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

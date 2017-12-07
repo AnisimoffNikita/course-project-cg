@@ -1,0 +1,5 @@
+digraph GaussianBlur
+{
+graph [ rankdir="RL" ]
+"d3/d0b/class_gaussian_blur" [ label="GaussianBlur\n|+GaussianBlur ( sigma : float, kernelSize : uint8 )\l+getKernelSize (  ) : uint8\l+getSigma (  ) : float\l/+process ( image : Image & ) : void \{virtual\}\l+setKernelSize ( value : const uint8 & ) : void\l+setSigma ( value : float ) : void\l+~GaussianBlur (  ) \{virtual\}\l|-kernelSize : uint8\l-sigma : float\l" shape="record" ]
+}

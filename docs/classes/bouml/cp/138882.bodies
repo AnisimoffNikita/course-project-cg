@@ -1,0 +1,5 @@
+class AmbientLightFactory
+!!!161538.cpp!!!	AmbientLightFactory(in intensity : float)
+    light = std::make_unique<AmbientLight>(intensity);
+!!!161794.cpp!!!	create() : SharedSceneObject
+    return std::move(light);

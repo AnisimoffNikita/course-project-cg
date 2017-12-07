@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d2/dbb/structobjl_1_1_material" kind="struct" language="C++" prot="public">
+    <compoundname>objl::Material</compoundname>
+    <includes refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" local="no">objloader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1ae018ffdcbb8dfa9ed36605b048bbfac1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Material::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="158" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a13c3660fd7fc3924f7811c46ca3f1272" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Material::Ka</definition>
+        <argsstring></argsstring>
+        <name>Ka</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="160" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a16b7219d2d20e5f7a58e14f68b663a98" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Material::Kd</definition>
+        <argsstring></argsstring>
+        <name>Kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="162" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1ac1298eff05de5020120a143f21058b83" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Material::Ks</definition>
+        <argsstring></argsstring>
+        <name>Ks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="164" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1ad02f64d02fa971cebc3195d90a73748c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Material::Ns</definition>
+        <argsstring></argsstring>
+        <name>Ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="166" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a9b42dd253954cf9547593831fbbed8bc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Material::Ni</definition>
+        <argsstring></argsstring>
+        <name>Ni</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="168" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a40db214eba05836b431e544dd7b920f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Material::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="170" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1aa2139e47cf27614acce8c10cc829497a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int objl::Material::illum</definition>
+        <argsstring></argsstring>
+        <name>illum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="172" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a993d3394b3aa0116ac2031f870eda49b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Material::map_Ka</definition>
+        <argsstring></argsstring>
+        <name>map_Ka</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="174" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a84fe6a74e5a48a18a875431519a5c2e9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Material::map_Kd</definition>
+        <argsstring></argsstring>
+        <name>map_Kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="176" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a6ec9644f4152d4e60c471cb2df021345" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Material::map_Ks</definition>
+        <argsstring></argsstring>
+        <name>map_Ks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="178" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a02919bada38d25c16ea2e2c4b2f514ec" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Material::map_Ns</definition>
+        <argsstring></argsstring>
+        <name>map_Ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="180" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1a1e3769e9fc62f4ba49e4888428931c9f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Material::map_d</definition>
+        <argsstring></argsstring>
+        <name>map_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="182" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbb/structobjl_1_1_material_1af4e42567a2077c6e165f95403fc06c20" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Material::map_bump</definition>
+        <argsstring></argsstring>
+        <name>map_bump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="184" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/dbb/structobjl_1_1_material_1a843f0e3ee3a65d2918282969363b76d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Material::Material</definition>
+        <argsstring>()</argsstring>
+        <name>Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="148" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="148" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="389">
+        <label>objl::Material</label>
+        <link refid="d2/dbb/structobjl_1_1_material"/>
+        <childnode refid="390" relation="usage">
+          <edgelabel>+Kd</edgelabel>
+          <edgelabel>+Ka</edgelabel>
+          <edgelabel>+Ks</edgelabel>
+        </childnode>
+      </node>
+      <node id="390">
+        <label>objl::Vector3</label>
+        <link refid="d0/d73/structobjl_1_1_vector3"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="147" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="146" bodyend="185"/>
+    <listofallmembers>
+      <member refid="d2/dbb/structobjl_1_1_material_1a40db214eba05836b431e544dd7b920f4" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>d</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1aa2139e47cf27614acce8c10cc829497a" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>illum</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a13c3660fd7fc3924f7811c46ca3f1272" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>Ka</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a16b7219d2d20e5f7a58e14f68b663a98" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>Kd</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1ac1298eff05de5020120a143f21058b83" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>Ks</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1af4e42567a2077c6e165f95403fc06c20" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>map_bump</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a1e3769e9fc62f4ba49e4888428931c9f" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>map_d</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a993d3394b3aa0116ac2031f870eda49b" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>map_Ka</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a84fe6a74e5a48a18a875431519a5c2e9" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>map_Kd</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a6ec9644f4152d4e60c471cb2df021345" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>map_Ks</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a02919bada38d25c16ea2e2c4b2f514ec" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>map_Ns</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a843f0e3ee3a65d2918282969363b76d4" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>Material</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1ae018ffdcbb8dfa9ed36605b048bbfac1" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>name</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1a9b42dd253954cf9547593831fbbed8bc" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>Ni</name></member>
+      <member refid="d2/dbb/structobjl_1_1_material_1ad02f64d02fa971cebc3195d90a73748c" prot="public" virt="non-virtual"><scope>objl::Material</scope><name>Ns</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+digraph CameraFactory::PerspectiveData
+{
+graph [ rankdir="RL" ]
+"d2/daa/struct_camera_factory_1_1_perspective_data" [ label="CameraFactory::PerspectiveData\n||+far : float\l+fovX : float\l+fovY : float\l+near : float\l" shape="record" ]
+}

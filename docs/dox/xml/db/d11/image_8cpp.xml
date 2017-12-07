@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/d11/image_8cpp" kind="file" language="C++">
+    <compoundname>image.cpp</compoundname>
+    <includes refid="d5/db2/image_8h" local="yes">image.h</includes>
+    <incdepgraph>
+      <node id="3021">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="3019" relation="include">
+        </childnode>
+        <childnode refid="3020" relation="include">
+        </childnode>
+        <childnode refid="3022" relation="include">
+        </childnode>
+        <childnode refid="3023" relation="include">
+        </childnode>
+      </node>
+      <node id="3023">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="3022" relation="include">
+        </childnode>
+      </node>
+      <node id="3017">
+        <label>Projects/labs/course_project_cg/src/image/image.cpp</label>
+        <link refid="image.cpp"/>
+        <childnode refid="3018" relation="include">
+        </childnode>
+      </node>
+      <node id="3022">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3019">
+        <label>QImage</label>
+      </node>
+      <node id="3018">
+        <label>image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="3019" relation="include">
+        </childnode>
+        <childnode refid="3020" relation="include">
+        </childnode>
+        <childnode refid="3021" relation="include">
+        </childnode>
+        <childnode refid="3022" relation="include">
+        </childnode>
+        <childnode refid="3023" relation="include">
+        </childnode>
+      </node>
+      <node id="3020">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/db2/image_8h" kindref="compound">image.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/image/image.cpp"/>
+  </compounddef>
+</doxygen>

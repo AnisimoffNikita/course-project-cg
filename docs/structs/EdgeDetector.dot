@@ -1,0 +1,5 @@
+digraph EdgeDetector
+{
+graph [ rankdir="RL" ]
+"d9/d8a/class_edge_detector" [ label="EdgeDetector\nabstract\n|+process ( image : Image & ) : void \{pure-virtual\}\l+~EdgeDetector (  ) \{virtual\}\l|" shape="record" ]
+}

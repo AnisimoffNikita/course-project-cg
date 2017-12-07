@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="da/d4b/grayscaleimage_8cpp" kind="file" language="C++">
+    <compoundname>grayscaleimage.cpp</compoundname>
+    <includes refid="d3/d37/grayscaleimage_8h" local="yes">grayscaleimage.h</includes>
+    <incdepgraph>
+      <node id="2989">
+        <label>Projects/labs/course_project_cg/src/image/grayscaleimage.cpp</label>
+        <link refid="grayscaleimage.cpp"/>
+        <childnode refid="2990" relation="include">
+        </childnode>
+      </node>
+      <node id="2993">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="2991" relation="include">
+        </childnode>
+        <childnode refid="2992" relation="include">
+        </childnode>
+        <childnode refid="2994" relation="include">
+        </childnode>
+        <childnode refid="2995" relation="include">
+        </childnode>
+      </node>
+      <node id="2995">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2994" relation="include">
+        </childnode>
+      </node>
+      <node id="2994">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2991">
+        <label>QImage</label>
+      </node>
+      <node id="2996">
+        <label>grayscalecolor.h</label>
+        <link refid="d0/d9c/grayscalecolor_8h"/>
+        <childnode refid="2994" relation="include">
+        </childnode>
+      </node>
+      <node id="2990">
+        <label>grayscaleimage.h</label>
+        <link refid="d3/d37/grayscaleimage_8h"/>
+        <childnode refid="2991" relation="include">
+        </childnode>
+        <childnode refid="2992" relation="include">
+        </childnode>
+        <childnode refid="2993" relation="include">
+        </childnode>
+        <childnode refid="2994" relation="include">
+        </childnode>
+        <childnode refid="2996" relation="include">
+        </childnode>
+      </node>
+      <node id="2992">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d37/grayscaleimage_8h" kindref="compound">grayscaleimage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/image/grayscaleimage.cpp"/>
+  </compounddef>
+</doxygen>

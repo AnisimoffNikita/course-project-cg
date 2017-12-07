@@ -1,0 +1,24 @@
+class RepeatMoveAction
+!!!141314.cpp!!!	RepeatMoveAction(in duration : float, in object : weak_ptr<SceneObject>, in finish : Vec3)
+    if (!object.expired())
+    {
+        start = object.lock()->getPosition();
+        diff = finish - start;
+    }
+!!!141442.cpp!!!	update(in delta : float) : bool
+    if (object.expired())
+    {
+        return true;
+    }
+
+    auto work = object.lock();
+    time += delta;
+
+    if (time >= duration)
+    {
+        time -= duration;
+    }
+
+    float fraction = time / duration;
+    work->setPosition(start + diff * fraction);
+    return false;

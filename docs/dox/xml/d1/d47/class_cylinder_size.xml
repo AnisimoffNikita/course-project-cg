@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/d47/class_cylinder_size" kind="class" language="C++" prot="public">
+    <compoundname>CylinderSize</compoundname>
+    <includes refid="d1/dfa/cylindersize_8h" local="no">cylindersize.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d47/class_cylinder_size_1a64a31d3ecef008bc999f02797aa73ebf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CylinderSize::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d47/class_cylinder_size_1ac12aa459995c8467cf96d978b05e7ee5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CylinderSize::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d47/class_cylinder_size_1a9896a88f9cf7b392a72e79d913b7c241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CylinderSize::CylinderSize</definition>
+        <argsstring>(float height=0, float radius=0)</argsstring>
+        <name>CylinderSize</name>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d47/class_cylinder_size_1a69dbd81e8e5bda6a9efb6d0dd621dac4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CylinderSize::getRadius</definition>
+        <argsstring>() const </argsstring>
+        <name>getRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d47/class_cylinder_size_1a7598cedd43027dfaea97ad273180ed63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CylinderSize::setRadius</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setRadius</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d47/class_cylinder_size_1aac6bbbc1e12cb65d0ca299eda89f43f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CylinderSize::getHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d47/class_cylinder_size_1afad35daeb0ed7d9c3b132a23de7412c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CylinderSize::setHeight</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setHeight</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="317">
+        <label>CylinderSize</label>
+        <link refid="d1/d47/class_cylinder_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/math/cylindersize.h" line="6" column="1" bodyfile="Projects/labs/course_project_cg/src/math/cylindersize.h" bodystart="5" bodyend="19"/>
+    <listofallmembers>
+      <member refid="d1/d47/class_cylinder_size_1a9896a88f9cf7b392a72e79d913b7c241" prot="public" virt="non-virtual"><scope>CylinderSize</scope><name>CylinderSize</name></member>
+      <member refid="d1/d47/class_cylinder_size_1aac6bbbc1e12cb65d0ca299eda89f43f0" prot="public" virt="non-virtual"><scope>CylinderSize</scope><name>getHeight</name></member>
+      <member refid="d1/d47/class_cylinder_size_1a69dbd81e8e5bda6a9efb6d0dd621dac4" prot="public" virt="non-virtual"><scope>CylinderSize</scope><name>getRadius</name></member>
+      <member refid="d1/d47/class_cylinder_size_1a64a31d3ecef008bc999f02797aa73ebf" prot="private" virt="non-virtual"><scope>CylinderSize</scope><name>height</name></member>
+      <member refid="d1/d47/class_cylinder_size_1ac12aa459995c8467cf96d978b05e7ee5" prot="private" virt="non-virtual"><scope>CylinderSize</scope><name>radius</name></member>
+      <member refid="d1/d47/class_cylinder_size_1afad35daeb0ed7d9c3b132a23de7412c0" prot="public" virt="non-virtual"><scope>CylinderSize</scope><name>setHeight</name></member>
+      <member refid="d1/d47/class_cylinder_size_1a7598cedd43027dfaea97ad273180ed63" prot="public" virt="non-virtual"><scope>CylinderSize</scope><name>setRadius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

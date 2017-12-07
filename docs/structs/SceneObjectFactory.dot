@@ -1,0 +1,5 @@
+digraph SceneObjectFactory
+{
+graph [ rankdir="RL" ]
+"d4/df7/class_scene_object_factory" [ label="SceneObjectFactory\nabstract\n|+SceneObjectFactory (  )\l+create (  ) : SharedSceneObject \{pure-virtual\}\l+~SceneObjectFactory (  ) \{virtual\}\l|" shape="record" ]
+}

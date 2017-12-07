@@ -1,0 +1,63 @@
+class GaussianBlur
+!!!136322.cpp!!!	process(inout image : Image) : void
+    if (kernelSize == 1)
+    {
+        return;
+    }
+
+    Image saved(image);
+    float sum = 0;
+    float kernel[kernelSize][kernelSize];
+
+    for (int32 i = 0; i < kernelSize; i++)
+        for (int32 j = 0; j < kernelSize; j++)
+        {
+            kernel[i][j] = Math::Gauss2(sigma, i - kernelSize / 2, j - kernelSize / 2);
+            sum += kernel[i][j];
+        }
+
+    for (int32 i = 0; i < kernelSize; i++)
+        for (int32 j = 0; j < kernelSize; j++)
+        {
+            kernel[i][j] /= sum;
+        }
+
+    uint32 height = image.getHeight();
+    uint32 width = image.getWidth();
+    uint32 pixelPosX;
+    uint32 pixelPosY;
+    float resultR, resultG, resultB;
+
+    for (uint32 y = 0; y < height; y++)
+    {
+        for (uint32 x = 0; x < width; x++)
+        {
+            resultR = resultG = resultB = 0;
+
+            for (int32 i = 0; i < kernelSize; i++)
+            {
+                for (int32 j = 0; j < kernelSize; j++)
+                {
+                    pixelPosX = (x + j - kernelSize / 2 + width) % width;
+                    pixelPosY = (y + i - kernelSize / 2 + height) % height;
+                    Color color = saved.at(pixelPosY, pixelPosX);
+                    float kernelVal = kernel[i][j];
+                    resultR += color.getRed() * kernelVal;
+                    resultG += color.getGreen() * kernelVal;
+                    resultB += color.getBlue() * kernelVal;
+                }
+            }
+
+            image.set(y, x, Color(static_cast<uint8>(resultR),
+                                  static_cast<uint8>(resultG),
+                                  static_cast<uint8>(resultB)));
+        }
+    }
+!!!136450.cpp!!!	getSigma() : float
+    return sigma;
+!!!136578.cpp!!!	setSigma(in value : float) : void
+    sigma = value;
+!!!136706.cpp!!!	getKernelSize() : uint8
+    return kernelSize;
+!!!136834.cpp!!!	setKernelSize(in value : uint8) : void
+    kernelSize = value;

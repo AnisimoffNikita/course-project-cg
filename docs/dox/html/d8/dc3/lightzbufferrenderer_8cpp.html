@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Файл Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_1acf6d7c8ce8cb5e459a37a0d36ab35d.html">animation</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл lightzbufferrenderer.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d17/lightzbufferrenderer_8h_source.html">lightzbufferrenderer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d18/commontransformation_8h_source.html">commontransformation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d00/scaletransformation_8h_source.html">scaletransformation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d22/number_8h_source.html">src/number.h</a>&quot;</code><br />
+<code>#include &lt;omp.h&gt;</code><br />
+<code>#include &lt;QPainter&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для lightzbufferrenderer.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/da8/lightzbufferrenderer_8cpp__incl.png" border="0" usemap="#_projects_2labs_2course__project__cg_2src_2animation_2lightzbufferrenderer_8cpp" alt=""/></div>
+<map name="_projects_2labs_2course__project__cg_2src_2animation_2lightzbufferrenderer_8cpp" id="_projects_2labs_2course__project__cg_2src_2animation_2lightzbufferrenderer_8cpp">
+<area shape="rect" id="node2" href="../../d7/d17/lightzbufferrenderer_8h.html" title="lightzbufferrenderer.h" alt="" coords="685,109,829,136"/>
+<area shape="rect" id="node6" href="../../d3/d22/number_8h.html" title="src/number.h" alt="" coords="640,632,739,659"/>
+<area shape="rect" id="node22" href="../../d0/d18/commontransformation_8h.html" title="commontransformation.h" alt="" coords="62,333,229,360"/>
+<area shape="rect" id="node24" href="../../d0/d00/scaletransformation_8h.html" title="scaletransformation.h" alt="" coords="301,184,448,211"/>
+<area shape="rect" id="node3" href="../../d6/d85/renderer_8h.html" title="renderer.h" alt="" coords="717,184,797,211"/>
+<area shape="rect" id="node20" href="../../db/dd0/zbuffer_8h.html" title="zbuffer.h" alt="" coords="1026,333,1099,360"/>
+<area shape="rect" id="node4" href="../../dc/d53/transformation_8h.html" title="transformation.h" alt="" coords="273,408,389,435"/>
+<area shape="rect" id="node10" href="../../d7/df6/camera_8h.html" title="camera.h" alt="" coords="674,259,750,285"/>
+<area shape="rect" id="node14" href="../../dd/dd3/light_8h.html" title="light.h" alt="" coords="774,259,831,285"/>
+<area shape="rect" id="node16" href="../../d8/d3b/mesh_8h.html" title="mesh.h" alt="" coords="491,259,557,285"/>
+<area shape="rect" id="node5" href="../../d8/d08/vec3_8h.html" title="src/math/vec3.h" alt="" coords="498,483,614,509"/>
+<area shape="rect" id="node9" href="../../dd/df4/matrix_8h.html" title="src/math/matrix.h" alt="" coords="350,483,474,509"/>
+<area shape="rect" id="node7" href="../../df/db1/math_8h.html" title="math.h" alt="" coords="531,557,594,584"/>
+<area shape="rect" id="node11" href="../../d5/d69/sceneobject_8h.html" title="sceneobject.h" alt="" coords="847,333,950,360"/>
+<area shape="rect" id="node15" href="../../da/dec/color_8h.html" title="src/image/color.h" alt="" coords="741,408,864,435"/>
+<area shape="rect" id="node17" href="../../d5/d6a/meshdata_8h.html" title="meshdata.h" alt="" coords="520,333,611,360"/>
+<area shape="rect" id="node23" href="../../d4/df0/homogeneousvertex_8h.html" title="src/math/homogeneousvertex.h" alt="" coords="43,408,248,435"/>
+</map>
+</div>
+</div>
+<p><a href="../../d8/dc3/lightzbufferrenderer_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:afe05928bb086f3cae2194eb990e25d01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc3/lightzbufferrenderer_8cpp.html#afe05928bb086f3cae2194eb990e25d01">toBarycenteric</a> (const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;p, const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;a, const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;b, const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;c)</td></tr>
+<tr class="separator:afe05928bb086f3cae2194eb990e25d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81309394911edeb46d7dc9af43c1f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc3/lightzbufferrenderer_8cpp.html#ac81309394911edeb46d7dc9af43c1f58">toCartesian</a> (const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;barycentric, const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;a, const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;b, const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;c)</td></tr>
+<tr class="separator:ac81309394911edeb46d7dc9af43c1f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="afe05928bb086f3cae2194eb990e25d01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> toBarycenteric </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dc3/lightzbufferrenderer_8cpp_source.html">lightzbufferrenderer.cpp</a> строка <a class="el" href="../../d8/dc3/lightzbufferrenderer_8cpp_source.html#l00124">124</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ac81309394911edeb46d7dc9af43c1f58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> toCartesian </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>barycentric</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d08/vec3_8h.html#a221ad8ea4d9be4111628ee1ca22ee3ba">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../d8/dc3/lightzbufferrenderer_8cpp_source.html">lightzbufferrenderer.cpp</a> строка <a class="el" href="../../d8/dc3/lightzbufferrenderer_8cpp_source.html#l00138">138</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

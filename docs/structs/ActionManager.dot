@@ -1,0 +1,5 @@
+digraph ActionManager
+{
+graph [ rankdir="RL" ]
+"d7/d7b/class_action_manager" [ label="ActionManager\n|+ActionManager (  )\l+add ( action : unique_ptr\< Action \> && ) : void\l+update ( delta : float ) : void\l+~ActionManager (  ) \{virtual\}\l|-actions : vector\< unique_ptr\< Action \> \>\l" shape="record" ]
+}

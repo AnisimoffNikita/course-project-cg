@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="da/de5/edgedetector_8cpp" kind="file" language="C++">
+    <compoundname>edgedetector.cpp</compoundname>
+    <includes refid="d4/da5/edgedetector_8h" local="yes">edgedetector.h</includes>
+    <incdepgraph>
+      <node id="2047">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="2045" relation="include">
+        </childnode>
+        <childnode refid="2046" relation="include">
+        </childnode>
+        <childnode refid="2048" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+      </node>
+      <node id="2049">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2048" relation="include">
+        </childnode>
+      </node>
+      <node id="2043">
+        <label>edgedetector.h</label>
+        <link refid="d4/da5/edgedetector_8h"/>
+        <childnode refid="2044" relation="include">
+        </childnode>
+      </node>
+      <node id="2048">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2045">
+        <label>QImage</label>
+      </node>
+      <node id="2044">
+        <label>src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="2045" relation="include">
+        </childnode>
+        <childnode refid="2046" relation="include">
+        </childnode>
+        <childnode refid="2047" relation="include">
+        </childnode>
+        <childnode refid="2048" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+      </node>
+      <node id="2042">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.cpp</label>
+        <link refid="edgedetector.cpp"/>
+        <childnode refid="2043" relation="include">
+        </childnode>
+      </node>
+      <node id="2046">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/da5/edgedetector_8h" kindref="compound">edgedetector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d9/d8a/class_edge_detector_1a84d1668be5dd4052278a2cf86802746e" refkind="member"><highlight class="normal"><ref refid="d9/d8a/class_edge_detector_1a84d1668be5dd4052278a2cf86802746e" kindref="member">EdgeDetector::~EdgeDetector</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/edgedetector.cpp"/>
+  </compounddef>
+</doxygen>

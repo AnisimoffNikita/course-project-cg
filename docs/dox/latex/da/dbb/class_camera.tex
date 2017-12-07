@@ -1,0 +1,285 @@
+\hypertarget{class_camera}{}\section{Класс Camera}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+
+
+Граф наследования\+:Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{db/d34/class_camera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/dcb/class_camera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_a2f7d35911a4dcf218a0ef901cc0906dc}{Camera} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&\hyperlink{class_scene_object_af190cdf9b9449f96f73d836848ce4ad3}{position}, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&\hyperlink{class_camera_a7aa44d09547fc7407002dc32b1891207}{look\+At}, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&\hyperlink{class_camera_a4473532c8bbceefb503a5a7195044bfe}{up}, const \hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \&projection)
+\item 
+virtual void \hyperlink{class_camera_a5c5155e999ea54c0385461de3ca0b95a}{draw} (std\+::unique\+\_\+ptr$<$ \hyperlink{class_renderer}{Renderer} $>$ \&) override
+\item 
+virtual void \hyperlink{class_camera_a76d8a9057211e4935405040d8fa154f6}{transform} (\hyperlink{class_transformation}{Transformation} \&transformation) override
+\item 
+virtual bool \hyperlink{class_camera_a629ebafac4f86f952dad42a0087c344c}{is\+Camera} () override
+\item 
+virtual bool \hyperlink{class_camera_a7209dc5149f4b8af2ed9e8b6297f6c41}{is\+Light} () override
+\item 
+virtual void \hyperlink{class_camera_a1ba2c3600a8a0f6e231ad9564bdb7359}{set\+Position} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&value) override
+\item 
+virtual const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \& \hyperlink{class_camera_a318614134ed9e5182954daaceb17ca47}{get\+Look\+At} ()
+\item 
+virtual void \hyperlink{class_camera_abd0ac1ec8cc6c5ca79798fc61aa4a1fa}{set\+Look\+At} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&target)
+\item 
+virtual \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_camera_a49e96c7af94f85b1297fb4184c99fa28}{get\+Eye\+Vector} ()
+\item 
+virtual \hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \hyperlink{class_camera_a081e90588c62b55623f22d0477082924}{get\+P\+V\+Matrix} ()
+\item 
+virtual const \hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \& \hyperlink{class_camera_a0baac3a162f4e3507a5c35c97a2c4236}{get\+P\+Matrix} () const 
+\item 
+virtual const \hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \& \hyperlink{class_camera_ac9ca414b8f610584b90486938131aa1e}{get\+V\+Matrix} () const 
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_camera_a8fe5c71a390571a861ad8afd99dfdea3}{update\+View\+Matrix} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_camera_a7aa44d09547fc7407002dc32b1891207}{look\+At}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_camera_a4473532c8bbceefb503a5a7195044bfe}{up}
+\item 
+\hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \hyperlink{class_camera_a9e4efa2b0bb97699cda8904309873aa9}{view\+Matrix}
+\item 
+\hyperlink{matrix_8h_a077dce9756976f552e5703c34475d5e3}{Mat4} \hyperlink{class_camera_a33e328413d91278d44953ccb0adef3ce}{projection\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле camera.\+h строка 7
+
+
+
+\subsection{Конструктор(ы)}
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Camera(const Vec3 \&position, const Vec3 \&look\+At, const Vec3 \&up, const Mat4 \&projection)}{Camera(const Vec3 &position, const Vec3 &lookAt, const Vec3 &up, const Mat4 &projection)}}]{\setlength{\rightskip}{0pt plus 5cm}Camera\+::\+Camera (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{const {\bf Vec3} \&}]{look\+At, }
+\item[{const {\bf Vec3} \&}]{up, }
+\item[{const {\bf Mat4} \&}]{projection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_camera_a2f7d35911a4dcf218a0ef901cc0906dc}{}\label{class_camera_a2f7d35911a4dcf218a0ef901cc0906dc}
+
+
+См. определение в файле camera.\+cpp строка 6
+
+
+
+\subsection{Методы}
+\index{Camera@{Camera}!draw@{draw}}
+\index{draw@{draw}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{draw(std\+::unique\+\_\+ptr$<$ Renderer $>$ \&) override}{draw(std::unique_ptr< Renderer > &) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Renderer} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_camera_a5c5155e999ea54c0385461de3ca0b95a}{}\label{class_camera_a5c5155e999ea54c0385461de3ca0b95a}
+
+
+Замещает \hyperlink{class_scene_object_adc906ce4e4a896a351949ccabfd44016}{Scene\+Object}.
+
+
+
+См. определение в файле camera.\+cpp строка 17
+
+\index{Camera@{Camera}!get\+Eye\+Vector@{get\+Eye\+Vector}}
+\index{get\+Eye\+Vector@{get\+Eye\+Vector}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{get\+Eye\+Vector()}{getEyeVector()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Camera\+::get\+Eye\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_camera_a49e96c7af94f85b1297fb4184c99fa28}{}\label{class_camera_a49e96c7af94f85b1297fb4184c99fa28}
+
+
+См. определение в файле camera.\+cpp строка 44
+
+\index{Camera@{Camera}!get\+Look\+At@{get\+Look\+At}}
+\index{get\+Look\+At@{get\+Look\+At}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{get\+Look\+At()}{getLookAt()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vec3} \& Camera\+::get\+Look\+At (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_camera_a318614134ed9e5182954daaceb17ca47}{}\label{class_camera_a318614134ed9e5182954daaceb17ca47}
+
+
+См. определение в файле camera.\+cpp строка 76
+
+\index{Camera@{Camera}!get\+P\+Matrix@{get\+P\+Matrix}}
+\index{get\+P\+Matrix@{get\+P\+Matrix}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{get\+P\+Matrix() const }{getPMatrix() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Mat4} \& Camera\+::get\+P\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_camera_a0baac3a162f4e3507a5c35c97a2c4236}{}\label{class_camera_a0baac3a162f4e3507a5c35c97a2c4236}
+
+
+См. определение в файле camera.\+cpp строка 54
+
+\index{Camera@{Camera}!get\+P\+V\+Matrix@{get\+P\+V\+Matrix}}
+\index{get\+P\+V\+Matrix@{get\+P\+V\+Matrix}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{get\+P\+V\+Matrix()}{getPVMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat4} Camera\+::get\+P\+V\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_camera_a081e90588c62b55623f22d0477082924}{}\label{class_camera_a081e90588c62b55623f22d0477082924}
+
+
+См. определение в файле camera.\+cpp строка 49
+
+\index{Camera@{Camera}!get\+V\+Matrix@{get\+V\+Matrix}}
+\index{get\+V\+Matrix@{get\+V\+Matrix}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{get\+V\+Matrix() const }{getVMatrix() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Mat4} \& Camera\+::get\+V\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_camera_ac9ca414b8f610584b90486938131aa1e}{}\label{class_camera_ac9ca414b8f610584b90486938131aa1e}
+
+
+См. определение в файле camera.\+cpp строка 59
+
+\index{Camera@{Camera}!is\+Camera@{is\+Camera}}
+\index{is\+Camera@{is\+Camera}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{is\+Camera() override}{isCamera() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Camera\+::is\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_camera_a629ebafac4f86f952dad42a0087c344c}{}\label{class_camera_a629ebafac4f86f952dad42a0087c344c}
+
+
+Замещает \hyperlink{class_scene_object_a6d7cb8b9a2c29f38fd039731e83167f4}{Scene\+Object}.
+
+
+
+См. определение в файле camera.\+cpp строка 28
+
+\index{Camera@{Camera}!is\+Light@{is\+Light}}
+\index{is\+Light@{is\+Light}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{is\+Light() override}{isLight() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Camera\+::is\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_camera_a7209dc5149f4b8af2ed9e8b6297f6c41}{}\label{class_camera_a7209dc5149f4b8af2ed9e8b6297f6c41}
+
+
+Замещает \hyperlink{class_scene_object_a9c5b006b8a0e457634f15c19eb51ca73}{Scene\+Object}.
+
+
+
+См. определение в файле camera.\+cpp строка 33
+
+\index{Camera@{Camera}!set\+Look\+At@{set\+Look\+At}}
+\index{set\+Look\+At@{set\+Look\+At}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{set\+Look\+At(const Vec3 \&target)}{setLookAt(const Vec3 &target)}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::set\+Look\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_camera_abd0ac1ec8cc6c5ca79798fc61aa4a1fa}{}\label{class_camera_abd0ac1ec8cc6c5ca79798fc61aa4a1fa}
+
+
+См. определение в файле camera.\+cpp строка 38
+
+\index{Camera@{Camera}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{set\+Position(const Vec3 \&value) override}{setPosition(const Vec3 &value) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_camera_a1ba2c3600a8a0f6e231ad9564bdb7359}{}\label{class_camera_a1ba2c3600a8a0f6e231ad9564bdb7359}
+
+
+Переопределяет метод предка \hyperlink{class_scene_object_ae0e79b1773e3e3357d1dcf302463e46a}{Scene\+Object}.
+
+
+
+См. определение в файле camera.\+cpp строка 70
+
+\index{Camera@{Camera}!transform@{transform}}
+\index{transform@{transform}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{transform(\+Transformation \&transformation) override}{transform(Transformation &transformation) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Transformation} \&}]{transformation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_camera_a76d8a9057211e4935405040d8fa154f6}{}\label{class_camera_a76d8a9057211e4935405040d8fa154f6}
+
+
+Замещает \hyperlink{class_scene_object_a1b8a4b90f1200f1cd025d95964d43630}{Scene\+Object}.
+
+
+
+См. определение в файле camera.\+cpp строка 22
+
+\index{Camera@{Camera}!update\+View\+Matrix@{update\+View\+Matrix}}
+\index{update\+View\+Matrix@{update\+View\+Matrix}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{update\+View\+Matrix()}{updateViewMatrix()}}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::update\+View\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_camera_a8fe5c71a390571a861ad8afd99dfdea3}{}\label{class_camera_a8fe5c71a390571a861ad8afd99dfdea3}
+
+
+См. определение в файле camera.\+cpp строка 64
+
+
+
+\subsection{Данные класса}
+\index{Camera@{Camera}!look\+At@{look\+At}}
+\index{look\+At@{look\+At}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{look\+At}{lookAt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Camera\+::look\+At\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_camera_a7aa44d09547fc7407002dc32b1891207}{}\label{class_camera_a7aa44d09547fc7407002dc32b1891207}
+
+
+См. определение в файле camera.\+h строка 30
+
+\index{Camera@{Camera}!projection\+Matrix@{projection\+Matrix}}
+\index{projection\+Matrix@{projection\+Matrix}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{projection\+Matrix}{projectionMatrix}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat4} Camera\+::projection\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_camera_a33e328413d91278d44953ccb0adef3ce}{}\label{class_camera_a33e328413d91278d44953ccb0adef3ce}
+
+
+См. определение в файле camera.\+h строка 33
+
+\index{Camera@{Camera}!up@{up}}
+\index{up@{up}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{up}{up}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Camera\+::up\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_camera_a4473532c8bbceefb503a5a7195044bfe}{}\label{class_camera_a4473532c8bbceefb503a5a7195044bfe}
+
+
+См. определение в файле camera.\+h строка 31
+
+\index{Camera@{Camera}!view\+Matrix@{view\+Matrix}}
+\index{view\+Matrix@{view\+Matrix}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{view\+Matrix}{viewMatrix}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat4} Camera\+::view\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_camera_a9e4efa2b0bb97699cda8904309873aa9}{}\label{class_camera_a9e4efa2b0bb97699cda8904309873aa9}
+
+
+См. определение в файле camera.\+h строка 32
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{camera_8h}{camera.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{camera_8cpp}{camera.\+cpp}\end{DoxyCompactItemize}

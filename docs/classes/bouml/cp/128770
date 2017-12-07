@@ -1,0 +1,928 @@
+format 215
+"image" // src::image
+  revision 1
+  modified_by 2 "nikita"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/nikita/Projects/labs/course_project_cg/src/image/"
+  cpp_src_dir "/home/nikita/Projects/labs/course_project_cg/src/image/"
+  classview 128642 "image"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 131330 "Image"
+      visibility package 
+      nactuals 1
+      actual class class_ref 139266 // ImageBase
+        rank 0 value class_ref 133506 // Color
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 141186 // <realization>
+	relation 141186 -_-|>
+	  stereotype "bind"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 141186 // <realization>
+	  b parent class_ref 139266 // ImageBase
+      end
+
+      extra_member 128642 "using"
+	
+	cpp "  using ImageBase<Color>::ImageBase;" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      classrelation 141314 // <dependency>
+	relation 141314 -_->
+	  stereotype "friend"
+	  a public
+	    cpp default "Generated"
+	    classrelation_ref 141314 // <dependency>
+	  b parent class_ref 139394 // ImageConverter
+      end
+
+      extra_member 128770 "friend"
+	
+	cpp "    friend class GrayscaleConverter;" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+    end
+
+    class 131842 "GrayscaleImage"
+      visibility package 
+      nactuals 1
+      actual class class_ref 139266 // ImageBase
+        rank 0 value class_ref 128642 // uint8
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 140930 // <realization>
+	relation 140930 -_-|>
+	  stereotype "bind"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 140930 // <realization>
+	  b parent class_ref 139266 // ImageBase
+      end
+
+      extra_member 128386 "using"
+	
+	cpp "  using ImageBase<uint8>::ImageBase;" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      classrelation 141058 // <dependency>
+	relation 141058 -_->
+	  stereotype "friend"
+	  a public
+	    cpp default "Generated"
+	    classrelation_ref 141058 // <dependency>
+	  b parent class_ref 139394 // ImageConverter
+      end
+
+      extra_member 128514 "friend"
+	
+	cpp "    friend class GrayscaleConverter;" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+    end
+
+    class 133506 "Color"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 163586 "Color"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}:
+    r(0),
+    g(0),
+    b(0)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 163714 "Color"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 3
+	  param in name "r" type class_ref 128642 // uint8
+	  param in name "g" type class_ref 128642 // uint8
+	  param in name "b" type class_ref 128642 // uint8
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}:
+    r(r),
+    g(g),
+    b(b)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 163842 "Color"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "color" type class_ref 133506 // Color
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} & ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} & ${p0}${)}:
+    r(color.r),
+    g(color.g),
+    b(color.b)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 163970 "Color"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "gray" type class_ref 128642 // uint8
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)} :
+    r(gray),
+    g(gray),
+    b(gray)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164098 "getRed"
+	preserve_cpp_body_indent const public return_type class_ref 128642 // uint8
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164226 "setRed"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "value" type class_ref 128642 // uint8
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164354 "getGreen"
+	preserve_cpp_body_indent const public return_type class_ref 128642 // uint8
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164482 "setGreen"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "value" type class_ref 128642 // uint8
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164610 "getBlue"
+	preserve_cpp_body_indent const public return_type class_ref 128642 // uint8
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164738 "setBlue"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "value" type class_ref 128642 // uint8
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164866 "setGray"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "gray" type class_ref 128642 // uint8
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 164994 "operator *"
+	preserve_cpp_body_indent const public return_type class_ref 133506 // Color
+	nparams 1
+	  param in name "factor" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 165122 "operator +="
+	preserve_cpp_body_indent public return_type class_ref 133506 // Color
+	nparams 1
+	  param in name "other" type class_ref 133506 // Color
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 140418 // r (<directional composition>)
+	relation 140418 *-->
+	  a role_name "r" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 140418 // r (<directional composition>)
+	  b parent class_ref 128642 // uint8
+      end
+
+      classrelation 140546 // g (<directional composition>)
+	relation 140546 *-->
+	  a role_name "g" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 140546 // g (<directional composition>)
+	  b parent class_ref 128642 // uint8
+      end
+
+      classrelation 140674 // b (<directional composition>)
+	relation 140674 *-->
+	  a role_name "b" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 140674 // b (<directional composition>)
+	  b parent class_ref 128642 // uint8
+      end
+    end
+
+    class 139138 "GrayscaleColor"
+      visibility package stereotype "template_typedef"
+      cpp_decl "${comment}${template}using ${name} = ${inherit};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 140802 // <generalisation>
+	relation 140802 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 140802 // <generalisation>
+	  b parent class_ref 128642 // uint8
+      end
+    end
+
+    class 139266 "ImageBase"
+      visibility package 
+      nformals 1
+      formal name "T" type "class" explicit_default_value ""
+        explicit_extends ""
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 165250 "ImageBase"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)} :
+    data(nullptr),
+    width(0),
+    height(0)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 165378 "ImageBase"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type ""
+	nparams 1
+	  param in name "image" type class_ref 139266 // ImageBase
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} & ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} & ${p0}${)} :
+    data(std::make_unique<T[]>(image.width * image.height)),
+    width(image.width),
+    height(image.height)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 165506 "ImageBase"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type ""
+	nparams 1
+	  param inout name "image" type class_ref 139266 // ImageBase
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} && ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} && ${p0}${)} :
+    data(std::move(image.data)),
+    width(image.width),
+    height(image.height)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 165634 "ImageBase"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type ""
+	nparams 2
+	  param in name "height" type class_ref 129154 // uint32
+	  param in name "width" type class_ref 129154 // uint32
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)} :
+    data(std::make_unique<T[]>(width * height)),
+    width(width),
+    height(height)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 165762 "operator ="
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 139266 // ImageBase
+	nparams 1
+	  param in name "image" type class_ref 139266 // ImageBase
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 165890 "operator ="
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 139266 // ImageBase
+	nparams 1
+	  param inout name "image" type class_ref 139266 // ImageBase
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} && ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166018 "at"
+	preserve_cpp_body_indent const cpp_inline public explicit_return_type "T"
+	nparams 2
+	  param in name "i" type class_ref 129154 // uint32
+	  param in name "j" type class_ref 129154 // uint32
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} & ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166146 "set"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type "void"
+	nparams 3
+	  param in name "i" type class_ref 129154 // uint32
+	  param in name "j" type class_ref 129154 // uint32
+	  param in name "color" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, const ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166274 "getHeight"
+	preserve_cpp_body_indent const cpp_inline public return_type class_ref 129154 // uint32
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166402 "setHeight"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" type class_ref 129154 // uint32
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166530 "getWidth"
+	preserve_cpp_body_indent const cpp_inline public return_type class_ref 129154 // uint32
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166658 "setWidth"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" type class_ref 129154 // uint32
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 133506 "data"
+	private explicit_type "T[]"
+	stereotype "std::unique_ptr"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 141442 // width (<directional composition>)
+	relation 141442 *-->
+	  a role_name "width" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 141442 // width (<directional composition>)
+	  b parent class_ref 129154 // uint32
+      end
+
+      classrelation 141570 // height (<directional composition>)
+	relation 141570 *-->
+	  a role_name "height" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 141570 // height (<directional composition>)
+	  b parent class_ref 129154 // uint32
+      end
+
+      classrelation 141698 // <dependency>
+	relation 141698 -_->
+	  stereotype "friend"
+	  a public
+	    cpp default "Generated"
+	    classrelation_ref 141698 // <dependency>
+	  b parent class_ref 139394 // ImageConverter
+      end
+
+      extra_member 128898 "friend"
+	
+	cpp "    friend class GrayscaleConverter;" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+    end
+
+    class 139394 "ImageConverter"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 166786 "QImageToImage"
+	class_operation preserve_cpp_body_indent public return_type class_ref 131330 // Image
+	nparams 1
+	  param in name "qImage" explicit_type "QImage"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166914 "ImageToQImage"
+	class_operation preserve_cpp_body_indent public explicit_return_type "QImage"
+	nparams 1
+	  param in name "image" type class_ref 131330 // Image
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 167042 "ImageToGrayscalImage"
+	class_operation preserve_cpp_body_indent public return_type class_ref 131842 // GrayscaleImage
+	nparams 1
+	  param in name "image" type class_ref 131330 // Image
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 167170 "GrayscaleImageToImage"
+	class_operation preserve_cpp_body_indent public return_type class_ref 131330 // Image
+	nparams 1
+	  param in name "grayscaleImage" type class_ref 131842 // GrayscaleImage
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 167298 "getGrayscale"
+	class_operation preserve_cpp_body_indent private return_type class_ref 128642 // uint8
+	nparams 1
+	  param in name "color" type class_ref 133506 // Color
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    classdiagram 128514 "image"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  deploymentview 128898 "image"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 132610 "color"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 133506 // Color
+      end
+    end
+
+    artifact 132738 "grayscalecolor"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 139138 // GrayscaleColor
+      end
+    end
+
+    artifact 132866 "grayscaleimage"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 131842 // GrayscaleImage
+      end
+    end
+
+    artifact 132994 "image"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 131330 // Image
+      end
+    end
+
+    artifact 133122 "imagebase"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 139266 // ImageBase
+      end
+    end
+
+    artifact 133250 "imageconverter"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 139394 // ImageConverter
+      end
+    end
+  end
+end

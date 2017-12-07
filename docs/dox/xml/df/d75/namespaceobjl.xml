@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="df/d75/namespaceobjl" kind="namespace" language="C++">
+    <compoundname>objl</compoundname>
+    <innerclass refid="de/d31/classobjl_1_1_loader" prot="public">objl::Loader</innerclass>
+    <innerclass refid="d2/dbb/structobjl_1_1_material" prot="public">objl::Material</innerclass>
+    <innerclass refid="db/dea/structobjl_1_1_mesh" prot="public">objl::Mesh</innerclass>
+    <innerclass refid="df/d1a/structobjl_1_1_vector2" prot="public">objl::Vector2</innerclass>
+    <innerclass refid="d0/d73/structobjl_1_1_vector3" prot="public">objl::Vector3</innerclass>
+    <innerclass refid="d4/dd1/structobjl_1_1_vertex" prot="public">objl::Vertex</innerclass>
+    <innernamespace refid="d1/ddf/namespaceobjl_1_1algorithm">objl::algorithm</innernamespace>
+    <innernamespace refid="d5/d21/namespaceobjl_1_1math">objl::math</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="30" column="1"/>
+  </compounddef>
+</doxygen>

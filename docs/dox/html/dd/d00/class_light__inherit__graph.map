@@ -1,0 +1,5 @@
+<map id="Light" name="Light">
+<area shape="rect" id="node3" href="$d4/dd4/class_ambient_light.html" title="{AmbientLight\n||+ AmbientLight()\l+ getIntensity()\l+ isPoint()\l}" alt="" coords="5,498,124,605"/>
+<area shape="rect" id="node4" href="$dd/d0a/class_point_light.html" title="{PointLight\n||+ PointLight()\l+ ~PointLight()\l+ getIntensity()\l+ isPoint()\l}" alt="" coords="148,491,259,612"/>
+<area shape="rect" id="node2" href="$dc/df8/class_scene_object.html" title="{SceneObject\n|# position\l|+ SceneObject()\l+ SceneObject()\l+ ~SceneObject()\l+ getPosition()\l+ setPosition()\l+ draw()\l+ transform()\l+ isCamera()\l+ isLight()\l}" alt="" coords="71,5,197,200"/>
+</map>

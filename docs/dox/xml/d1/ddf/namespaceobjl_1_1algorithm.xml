@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/ddf/namespaceobjl_1_1algorithm" kind="namespace" language="C++">
+    <compoundname>objl::algorithm</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d1/ddf/namespaceobjl_1_1algorithm_1a8758a92e7c04767d6259b7efdfacb4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::algorithm::operator*</definition>
+        <argsstring>(const float &amp;left, const Vector3 &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="256" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/ddf/namespaceobjl_1_1algorithm_1aae4725c9c9dcd572cec150c1f2d23510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool objl::algorithm::inTriangle</definition>
+        <argsstring>(Vector3 point, Vector3 tri1, Vector3 tri2, Vector3 tri3)</argsstring>
+        <name>inTriangle</name>
+        <param>
+          <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>tri1</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>tri2</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+          <declname>tri3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="262" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="262" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/ddf/namespaceobjl_1_1algorithm_1ad8cd3981f833ce390e38119ba6c65be4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void objl::algorithm::split</definition>
+        <argsstring>(const std::string &amp;in, std::vector&lt; std::string &gt; &amp;out, std::string token)</argsstring>
+        <name>split</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="288" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="288" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/ddf/namespaceobjl_1_1algorithm_1aacb49ff1f3ea308b666279142df6e273" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string objl::algorithm::tail</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>tail</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="326" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="326" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/ddf/namespaceobjl_1_1algorithm_1a28e5d8a792b5113fb5d1af2132dfb273" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string objl::algorithm::firstToken</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>firstToken</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="346" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="346" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/ddf/namespaceobjl_1_1algorithm_1a1619dda5f75e704bde76b902a6636cc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T&amp; objl::algorithm::getElement</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;elements, std::string &amp;index)</argsstring>
+        <name>getElement</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="368" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="368" bodyend="382"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="254" column="1"/>
+  </compounddef>
+</doxygen>

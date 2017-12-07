@@ -1,0 +1,5 @@
+digraph PointLightFactory
+{
+graph [ rankdir="RL" ]
+"de/d1d/class_point_light_factory" [ label="PointLightFactory\n|+PointLightFactory ( position : const Vec3 &, intensity : float )\l/+create (  ) : SharedSceneObject \{virtual\}\l+~PointLightFactory (  ) \{virtual\}\l|-light : std::unique_ptr\< PointLight \>\l" shape="record" ]
+}

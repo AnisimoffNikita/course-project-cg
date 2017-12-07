@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/db4/model_8cpp" kind="file" language="C++">
+    <compoundname>model.cpp</compoundname>
+    <includes refid="dc/d51/model_8h" local="yes">model.h</includes>
+    <includes refid="d6/d85/renderer_8h" local="yes">renderer.h</includes>
+    <includes refid="d0/dad/movetransformation_8h" local="yes">movetransformation.h</includes>
+    <incdepgraph>
+      <node id="2491">
+        <label>functional</label>
+      </node>
+      <node id="2496">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2489" relation="include">
+        </childnode>
+      </node>
+      <node id="2485">
+        <label>src/animation/sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2486" relation="include">
+        </childnode>
+        <childnode refid="2487" relation="include">
+        </childnode>
+        <childnode refid="2488" relation="include">
+        </childnode>
+      </node>
+      <node id="2488">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2489" relation="include">
+        </childnode>
+        <childnode refid="2490" relation="include">
+        </childnode>
+      </node>
+      <node id="2489">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2501">
+        <label>QImage</label>
+      </node>
+      <node id="2502">
+        <label>movetransformation.h</label>
+        <link refid="d0/dad/movetransformation_8h"/>
+        <childnode refid="2494" relation="include">
+        </childnode>
+      </node>
+      <node id="2495">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2496" relation="include">
+        </childnode>
+        <childnode refid="2488" relation="include">
+        </childnode>
+        <childnode refid="2489" relation="include">
+        </childnode>
+        <childnode refid="2497" relation="include">
+        </childnode>
+        <childnode refid="2494" relation="include">
+        </childnode>
+      </node>
+      <node id="2493">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2489" relation="include">
+        </childnode>
+      </node>
+      <node id="2484">
+        <label>model.h</label>
+        <link refid="dc/d51/model_8h"/>
+        <childnode refid="2485" relation="include">
+        </childnode>
+        <childnode refid="2492" relation="include">
+        </childnode>
+        <childnode refid="2494" relation="include">
+        </childnode>
+      </node>
+      <node id="2499">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="2485" relation="include">
+        </childnode>
+        <childnode refid="2493" relation="include">
+        </childnode>
+      </node>
+      <node id="2483">
+        <label>Projects/labs/course_project_cg/src/animation/model.cpp</label>
+        <link refid="model.cpp"/>
+        <childnode refid="2484" relation="include">
+        </childnode>
+        <childnode refid="2498" relation="include">
+        </childnode>
+        <childnode refid="2502" relation="include">
+        </childnode>
+      </node>
+      <node id="2498">
+        <label>renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2494" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2500" relation="include">
+        </childnode>
+        <childnode refid="2492" relation="include">
+        </childnode>
+        <childnode refid="2501" relation="include">
+        </childnode>
+      </node>
+      <node id="2490">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2489" relation="include">
+        </childnode>
+        <childnode refid="2491" relation="include">
+        </childnode>
+      </node>
+      <node id="2486">
+        <label>vector</label>
+      </node>
+      <node id="2497">
+        <label>array</label>
+      </node>
+      <node id="2492">
+        <label>src/animation/mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2486" relation="include">
+        </childnode>
+        <childnode refid="2488" relation="include">
+        </childnode>
+        <childnode refid="2493" relation="include">
+        </childnode>
+        <childnode refid="2494" relation="include">
+        </childnode>
+        <childnode refid="2495" relation="include">
+        </childnode>
+      </node>
+      <node id="2494">
+        <label>src/animation/transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2488" relation="include">
+        </childnode>
+        <childnode refid="2493" relation="include">
+        </childnode>
+      </node>
+      <node id="2500">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="2485" relation="include">
+        </childnode>
+        <childnode refid="2496" relation="include">
+        </childnode>
+      </node>
+      <node id="2487">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d51/model_8h" kindref="compound">model.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d85/renderer_8h" kindref="compound">renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/dad/movetransformation_8h" kindref="compound">movetransformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d0/de3/class_model_1a8dcd35d49dd569537d6f62ee61ade330" refkind="member"><highlight class="normal"><ref refid="d0/de3/class_model_1ab5bdabea36b1d1bee80151e2da913373" kindref="member">Model::Model</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref><sp/>&amp;mesh)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref>(position)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>mesh(mesh)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d0/de3/class_model_1a09879231a804bbc347d6549a5b1ad495" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/de3/class_model_1a09879231a804bbc347d6549a5b1ad495" kindref="member">Model::draw</ref>(std::unique_ptr&lt;Renderer&gt;<sp/>&amp;renderer)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>meshToRender<sp/>=<sp/>make_shared&lt;Mesh&gt;(<ref refid="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" kindref="member">mesh</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>meshToRender-&gt;transform(<ref refid="da/d5b/class_move_transformation" kindref="compound">MoveTransformation</ref>(<ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>renderer-&gt;renderMesh(meshToRender);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d0/de3/class_model_1a0bb5ca842ec53af3dde6918a04eecbca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/de3/class_model_1a0bb5ca842ec53af3dde6918a04eecbca" kindref="member">Model::transform</ref>(<ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>transformation.<ref refid="d1/d32/class_transformation_1a3800376d1f4a64ec6ba6abfa3e22c8ee" kindref="member">transform</ref>(<ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>transformation.<ref refid="d1/d32/class_transformation_1a2bc354a92aeda699c7c12c54eb120038" kindref="member">resetOrigin</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" kindref="member">mesh</ref>.<ref refid="dc/dbe/class_mesh_1a6261935dee415d96a87e3db58cdbe6a2" kindref="member">transform</ref>(transformation);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d0/de3/class_model_1a48eee23fb4c5246630fd97e21589f620" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/de3/class_model_1a48eee23fb4c5246630fd97e21589f620" kindref="member">Model::isCamera</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d0/de3/class_model_1a362e8e14db5f0d90cb44759bdad96e13" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/de3/class_model_1a362e8e14db5f0d90cb44759bdad96e13" kindref="member">Model::isLight</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d0/de3/class_model_1a38ca1ac30254bbf656b44c4dbac46474" refkind="member"><highlight class="normal"><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref><sp/><ref refid="d0/de3/class_model_1a38ca1ac30254bbf656b44c4dbac46474" kindref="member">Model::getMesh</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="37"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" kindref="member">mesh</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d0/de3/class_model_1a9b279076425cc5296ee501cb28e343ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/de3/class_model_1a9b279076425cc5296ee501cb28e343ea" kindref="member">Model::setMesh</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref><sp/>&amp;<ref refid="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" kindref="member">mesh</ref>)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;mesh<sp/>=<sp/><ref refid="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" kindref="member">mesh</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/model.cpp"/>
+  </compounddef>
+</doxygen>

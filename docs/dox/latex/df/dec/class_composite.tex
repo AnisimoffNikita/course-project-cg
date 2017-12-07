@@ -1,0 +1,130 @@
+\hypertarget{class_composite}{}\section{Класс Composite}
+\label{class_composite}\index{Composite@{Composite}}
+
+
+{\ttfamily \#include $<$composite.\+h$>$}
+
+
+
+Граф наследования\+:Composite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{d5/d8c/class_composite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Composite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/db3/class_composite__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_composite_ad28832d957183a7f08dec72e6040db0a}{Composite} ()
+\item 
+virtual void \hyperlink{class_composite_a95e3d893a3e3ec8bbb2dc449278b64c4}{draw} (std\+::unique\+\_\+ptr$<$ \hyperlink{class_renderer}{Renderer} $>$ \&) override
+\item 
+virtual void \hyperlink{class_composite_afaae38bc8ef323cf05bf5710dafbeb39}{transform} (\hyperlink{class_transformation}{Transformation} \&) override
+\item 
+virtual bool \hyperlink{class_composite_a041e0a198c3c2fcc7b16f36a7511f7c3}{is\+Camera} () override
+\item 
+virtual bool \hyperlink{class_composite_a704e2e6583b8c553cbc5d1ddedea529d}{is\+Light} () override
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле composite.\+h строка 6
+
+
+
+\subsection{Конструктор(ы)}
+\index{Composite@{Composite}!Composite@{Composite}}
+\index{Composite@{Composite}!Composite@{Composite}}
+\subsubsection[{\texorpdfstring{Composite()}{Composite()}}]{\setlength{\rightskip}{0pt plus 5cm}Composite\+::\+Composite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_composite_ad28832d957183a7f08dec72e6040db0a}{}\label{class_composite_ad28832d957183a7f08dec72e6040db0a}
+
+
+См. определение в файле composite.\+cpp строка 3
+
+
+
+\subsection{Методы}
+\index{Composite@{Composite}!draw@{draw}}
+\index{draw@{draw}!Composite@{Composite}}
+\subsubsection[{\texorpdfstring{draw(std\+::unique\+\_\+ptr$<$ Renderer $>$ \&) override}{draw(std::unique_ptr< Renderer > &) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Composite\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ {\bf Renderer} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_composite_a95e3d893a3e3ec8bbb2dc449278b64c4}{}\label{class_composite_a95e3d893a3e3ec8bbb2dc449278b64c4}
+
+
+Замещает \hyperlink{class_scene_object_adc906ce4e4a896a351949ccabfd44016}{Scene\+Object}.
+
+
+
+См. определение в файле composite.\+cpp строка 8
+
+\index{Composite@{Composite}!is\+Camera@{is\+Camera}}
+\index{is\+Camera@{is\+Camera}!Composite@{Composite}}
+\subsubsection[{\texorpdfstring{is\+Camera() override}{isCamera() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Composite\+::is\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_composite_a041e0a198c3c2fcc7b16f36a7511f7c3}{}\label{class_composite_a041e0a198c3c2fcc7b16f36a7511f7c3}
+
+
+Замещает \hyperlink{class_scene_object_a6d7cb8b9a2c29f38fd039731e83167f4}{Scene\+Object}.
+
+
+
+См. определение в файле composite.\+cpp строка 16
+
+\index{Composite@{Composite}!is\+Light@{is\+Light}}
+\index{is\+Light@{is\+Light}!Composite@{Composite}}
+\subsubsection[{\texorpdfstring{is\+Light() override}{isLight() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Composite\+::is\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_composite_a704e2e6583b8c553cbc5d1ddedea529d}{}\label{class_composite_a704e2e6583b8c553cbc5d1ddedea529d}
+
+
+Замещает \hyperlink{class_scene_object_a9c5b006b8a0e457634f15c19eb51ca73}{Scene\+Object}.
+
+
+
+См. определение в файле composite.\+cpp строка 21
+
+\index{Composite@{Composite}!transform@{transform}}
+\index{transform@{transform}!Composite@{Composite}}
+\subsubsection[{\texorpdfstring{transform(\+Transformation \&) override}{transform(Transformation &) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Composite\+::transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Transformation} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_composite_afaae38bc8ef323cf05bf5710dafbeb39}{}\label{class_composite_afaae38bc8ef323cf05bf5710dafbeb39}
+
+
+Замещает \hyperlink{class_scene_object_a1b8a4b90f1200f1cd025d95964d43630}{Scene\+Object}.
+
+
+
+См. определение в файле composite.\+cpp строка 12
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{composite_8h}{composite.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{composite_8cpp}{composite.\+cpp}\end{DoxyCompactItemize}

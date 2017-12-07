@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/def/homogeneousvertex_8cpp" kind="file" language="C++">
+    <compoundname>homogeneousvertex.cpp</compoundname>
+    <includes refid="d4/df0/homogeneousvertex_8h" local="yes">homogeneousvertex.h</includes>
+    <incdepgraph>
+      <node id="3273">
+        <label>functional</label>
+      </node>
+      <node id="3270">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="3271" relation="include">
+        </childnode>
+        <childnode refid="3272" relation="include">
+        </childnode>
+      </node>
+      <node id="3271">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3269">
+        <label>homogeneousvertex.h</label>
+        <link refid="d4/df0/homogeneousvertex_8h"/>
+        <childnode refid="3270" relation="include">
+        </childnode>
+        <childnode refid="3274" relation="include">
+        </childnode>
+      </node>
+      <node id="3274">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="3271" relation="include">
+        </childnode>
+      </node>
+      <node id="3268">
+        <label>Projects/labs/course_project_cg/src/math/homogeneousvertex.cpp</label>
+        <link refid="homogeneousvertex.cpp"/>
+        <childnode refid="3269" relation="include">
+        </childnode>
+      </node>
+      <node id="3272">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="3271" relation="include">
+        </childnode>
+        <childnode refid="3273" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/df0/homogeneousvertex_8h" kindref="compound">homogeneousvertex.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" refkind="member"><highlight class="normal"><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" kindref="member">HomogeneousVertexConverter::ToVertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">HomogeneousVertex</ref><sp/>&amp;hvec)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>Vertex(hvec(0,0)/hvec(0,3),<sp/>hvec(0,1)/hvec(0,3),<sp/>hvec(0,2)/hvec(0,3));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref>(hvec(0,<sp/>0)<sp/>/<sp/>hvec(3,<sp/>0),<sp/>hvec(1,<sp/>0)<sp/>/<sp/>hvec(3,<sp/>0),<sp/>hvec(2,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0)<sp/>/<sp/>hvec(3,<sp/>0));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>Vertex(hvec(0,0),<sp/>hvec(1,0),<sp/>hvec(2,0));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" refkind="member"><highlight class="normal"><ref refid="d6/d3f/class_matrix" kindref="compound">HomogeneousVertex</ref><sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" kindref="member">HomogeneousVertexConverter::FromVertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vec)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>values[]<sp/>=<sp/>{vec.<ref refid="d3/de7/class_vector3_1a55614d2843061b025cb95891339cca0c" kindref="member">x</ref>(),<sp/>vec.<ref refid="d3/de7/class_vector3_1a6dc34e4c9e1491c6bac8dee7350ebbc6" kindref="member">y</ref>(),<sp/>vec.<ref refid="d3/de7/class_vector3_1a5bc9e3f59440d2f892ac9b1113a0f0cb" kindref="member">z</ref>(),<sp/>1.0};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/df0/homogeneousvertex_8h_1ac57a7e4c1ca5e8ae47858d4ae8e7120d" kindref="member">HomogeneousVertex</ref>(values);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/math/homogeneousvertex.cpp"/>
+  </compounddef>
+</doxygen>

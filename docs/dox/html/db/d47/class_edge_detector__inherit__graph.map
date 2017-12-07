@@ -1,0 +1,3 @@
+<map id="EdgeDetector" name="EdgeDetector">
+<area shape="rect" id="node2" href="$d1/d15/class_canny_edge_detector.html" title="{CannyEdgeDetector\n|&#45; minThresh\l&#45; maxThresh\l&#45; image\l&#45; directions\l|+ CannyEdgeDetector()\l+ ~CannyEdgeDetector()\l+ process()\l+ getGaussKernelSize()\l+ setGaussKernelSize()\l+ getGaussSigma()\l+ setGaussSigma()\l+ getMinThresh()\l+ setMinThresh()\l+ getMaxThresh()\l+ setMaxThresh()\l&#45; gradients()\l&#45; nonMaxSuppression()\l&#45; floatThreshold()\l&#45; hysteresis()\l&#45; hysteresisRecursive()\l}" alt="" coords="5,145,173,487"/>
+</map>

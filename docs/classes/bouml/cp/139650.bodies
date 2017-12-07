@@ -1,0 +1,101 @@
+class Matrix
+!!!171138.cpp!!!	Matrix(in values : T)
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+        {
+            m[row][col] = values[row * N + col];
+        }
+!!!171266.cpp!!!	operator ()(in row : int32, in col : int32) : T
+    return m[row][col];
+!!!171394.cpp!!!	operator ()(in row : int32, in col : int32) : T
+    return m[row][col];
+!!!171522.cpp!!!	isIdentity() : bool
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+            if (row == col && m[row][col] != 1.0f)
+            {
+                return false;
+            }
+            else if (m[row][col] != 0.0f)
+            {
+                return false;
+            }
+
+    return true;
+!!!171650.cpp!!!	setToIdentity() : void
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+            if (row == col)
+            {
+                m[row][col] = 1.0f;
+            }
+            else
+            {
+                m[row][col] = 0.0f;
+            }
+!!!171778.cpp!!!	fill(in value : T) : void
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+        {
+            m[row][col] = value;
+        }
+!!!171906.cpp!!!	transposed() : Matrix<N, M, T>
+    Matrix<N, M, T> result;
+
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+        {
+            result.m[col][row] = m[row][col];
+        }
+
+    return result;
+!!!172034.cpp!!!	operator +=(in other : Matrix) : Matrix
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+        {
+            m[row][col] += other.m[row][row];
+        }
+
+    return *this;
+!!!172162.cpp!!!	operator -=(in other : Matrix) : Matrix
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+        {
+            m[row][col] -= other.m[row][row];
+        }
+
+    return *this;
+!!!172290.cpp!!!	operator *=(in factor : T) : Matrix
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+        {
+            m[row][col] *= factor;
+        }
+
+    return *this;
+!!!172418.cpp!!!	operator /=(in divisor : T) : Matrix
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+        {
+            m[row][col] /= divisor;
+        }
+
+    return *this;
+!!!172546.cpp!!!	operator ==(in other : Matrix) : bool
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+            if (m[row][col] != other.m[row][col])
+            {
+                return false;
+            }
+
+    return true;
+!!!172674.cpp!!!	operator !=(in other : Matrix) : bool
+    for (int32 row = 0; row < M; ++row)
+        for (int32 col = 0; col < N; ++col)
+            if (m[row][col] == other.m[row][col])
+            {
+                return false;
+            }
+
+    return true;

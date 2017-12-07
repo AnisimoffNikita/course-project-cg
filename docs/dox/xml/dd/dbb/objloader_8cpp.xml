@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dd/dbb/objloader_8cpp" kind="file" language="C++">
+    <compoundname>objloader.cpp</compoundname>
+    <includes refid="de/d7c/animation_2objloader_8h" local="yes">objloader.h</includes>
+    <includes local="no">regex</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" local="yes">src/3rdparty/ObjLoader/objloader.h</includes>
+    <incdepgraph>
+      <node id="2553">
+        <label>functional</label>
+      </node>
+      <node id="2557">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2551" relation="include">
+        </childnode>
+      </node>
+      <node id="2546">
+        <label>Projects/labs/course_project_cg/src/animation/objloader.cpp</label>
+        <link refid="objloader.cpp"/>
+        <childnode refid="2547" relation="include">
+        </childnode>
+        <childnode refid="2560" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+      </node>
+      <node id="2563">
+        <label>src/3rdparty/ObjLoader/objloader.h</label>
+        <link refid="de/da6/3rdparty_2_obj_loader_2objloader_8h"/>
+        <childnode refid="2549" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+        <childnode refid="2565" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+      </node>
+      <node id="2559">
+        <label>string</label>
+      </node>
+      <node id="2550">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2551" relation="include">
+        </childnode>
+        <childnode refid="2552" relation="include">
+        </childnode>
+      </node>
+      <node id="2551">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2560">
+        <label>regex</label>
+      </node>
+      <node id="2556">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="2557" relation="include">
+        </childnode>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2551" relation="include">
+        </childnode>
+        <childnode refid="2558" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+      </node>
+      <node id="2554">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2551" relation="include">
+        </childnode>
+      </node>
+      <node id="2562">
+        <label>fstream</label>
+      </node>
+      <node id="2547">
+        <label>objloader.h</label>
+        <link refid="de/d7c/animation_2objloader_8h"/>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+      </node>
+      <node id="2552">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2551" relation="include">
+        </childnode>
+        <childnode refid="2553" relation="include">
+        </childnode>
+      </node>
+      <node id="2549">
+        <label>vector</label>
+      </node>
+      <node id="2558">
+        <label>array</label>
+      </node>
+      <node id="2565">
+        <label>QFile</label>
+      </node>
+      <node id="2564">
+        <label>iostream</label>
+      </node>
+      <node id="2548">
+        <label>mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="2549" relation="include">
+        </childnode>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2554" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+      </node>
+      <node id="2555">
+        <label>src/animation/transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2554" relation="include">
+        </childnode>
+      </node>
+      <node id="2566">
+        <label>QTextStream</label>
+      </node>
+      <node id="2561">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" kindref="compound">objloader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;regex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" kindref="compound">src/3rdparty/ObjLoader/objloader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d5/dd8/class_obj_loader_1a3371efa56723975460455dd7ff14882b" refkind="member"><highlight class="normal"><ref refid="d5/dd8/class_obj_loader_1a3371efa56723975460455dd7ff14882b" kindref="member">ObjLoader::ObjLoader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;filename)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>filename(filename)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d5/dd8/class_obj_loader_1abe0da9b7f93b7fe357b52b70244d3519" refkind="member"><highlight class="normal"><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref><sp/><ref refid="d5/dd8/class_obj_loader_1abe0da9b7f93b7fe357b52b70244d3519" kindref="member">ObjLoader::Load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<ref refid="d5/dd8/class_obj_loader_1a19f5e9808f15ad018f6ca66fa047b15c" kindref="member">filename</ref>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>ifstream<sp/>file(filename);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>if<sp/>(!file.is_open())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>Mesh();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>vector&lt;Vec3&gt;<sp/>vertices;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>vector&lt;Vec3&gt;<sp/>normals;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>vector&lt;Triangle&gt;<sp/>triangles;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>regex<sp/>vertexRe(&quot;v\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>regex<sp/>normalRe(&quot;vn\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)\\s+([\\d\\.\\+\\-eE]+)&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>regex<sp/>triangleRe(&quot;f\\s+(-?\\d+)\\/(-?\\d+)?\\/(-?\\d+)?\\s+(-?\\d+)\\/(-?\\d+)?\\/(-?\\d+)?\\s+(-?\\d+)\\/(-?\\d+)?\\/(-?\\d+)?(?:\\s+(-?\\d+)\\/(-?\\d+)\\/(-?\\d+))?&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>regex<sp/>materialRe(&quot;mtllib\\s+\\w+\\.\\w+&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>string<sp/>line;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>while<sp/>(getline(file,<sp/>line))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smatch<sp/>match;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(std::regex_search(line,<sp/>match,<sp/>vertexRe))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>x<sp/>=<sp/>stod(match[1].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>y<sp/>=<sp/>stod(match[2].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>z<sp/>=<sp/>stod(match[3].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertices.push_back(Vec3(x,<sp/>y,<sp/>z));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(std::regex_search(line,<sp/>match,<sp/>normalRe))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>x<sp/>=<sp/>stod(match[1].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>y<sp/>=<sp/>stod(match[2].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>z<sp/>=<sp/>stod(match[3].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>normals.push_back(Vec3(x,<sp/>y,<sp/>z));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(std::regex_search(line,<sp/>match,<sp/>triangleRe))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>v1<sp/>=<sp/>stod(match[1].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>n1<sp/>=<sp/>stod(match[3].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>v2<sp/>=<sp/>stod(match[4].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>n2<sp/>=<sp/>stod(match[6].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>v3<sp/>=<sp/>stod(match[7].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>n3<sp/>=<sp/>stod(match[9].str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>triangles.push_back(Triangle(v1,<sp/>v2,<sp/>v3,<sp/>n1,<sp/>n2,<sp/>n3));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(std::regex_search(line,<sp/>match,<sp/>materialRe))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>v1<sp/>=<sp/>match[1].str();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>v2<sp/>=<sp/>match[0].str();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>v4<sp/>=<sp/>match[0].str();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>file.close();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Mesh<sp/>mesh;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>mesh.setVertices(vertices);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>mesh.setNormals(normals);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>mesh.setTriangles(triangles);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>mesh;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d5/dd8/class_obj_loader_1a8d4e47e1e5c9cf9b96401037f818ae95" refkind="member"><highlight class="normal"><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref><sp/><ref refid="d5/dd8/class_obj_loader_1a8d4e47e1e5c9cf9b96401037f818ae95" kindref="member">ObjLoader::load</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d31/classobjl_1_1_loader" kindref="compound">objl::Loader</ref><sp/>loader;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loadout<sp/>=<sp/>loader.<ref refid="de/d31/classobjl_1_1_loader_1a4e3c689962e3ac018d5944f37a791518" kindref="member">LoadFile</ref>(<ref refid="d5/dd8/class_obj_loader_1a19f5e9808f15ad018f6ca66fa047b15c" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!loadout)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/dea/structobjl_1_1_mesh" kindref="compound">objl::Mesh</ref><sp/>omesh<sp/>=<sp/>loader.<ref refid="de/d31/classobjl_1_1_loader_1aba5e73cc2c1d0a917415498723ea5702" kindref="member">LoadedMeshes</ref>[0];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Vertex&gt;<sp/>vertices;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Triangle&gt;<sp/>triangles;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>omesh.<ref refid="db/dea/structobjl_1_1_mesh_1a9c7fcc401666c37b4faa458cd2aac704" kindref="member">Vertices</ref>.size();<sp/>i<sp/>+=<sp/>3)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array&lt;int,<sp/>3&gt;<sp/>v;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>3;<sp/>j++)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/dd1/structobjl_1_1_vertex" kindref="compound">objl::Vertex</ref><sp/>ov<sp/>=<sp/>omesh.<ref refid="db/dea/structobjl_1_1_mesh_1a9c7fcc401666c37b4faa458cd2aac704" kindref="member">Vertices</ref>[i<sp/>+<sp/>j];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d72/class_vertex" kindref="compound">Vertex</ref><sp/>cv(<ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref>(ov.<ref refid="d4/dd1/structobjl_1_1_vertex_1a08acd50ed3a3a8b7b0b6ca0b78b61c13" kindref="member">Position</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" kindref="member">X</ref>,<sp/>ov.<ref refid="d4/dd1/structobjl_1_1_vertex_1a08acd50ed3a3a8b7b0b6ca0b78b61c13" kindref="member">Position</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" kindref="member">Y</ref>,<sp/>ov.<ref refid="d4/dd1/structobjl_1_1_vertex_1a08acd50ed3a3a8b7b0b6ca0b78b61c13" kindref="member">Position</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" kindref="member">Z</ref>),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref>(ov.<ref refid="d4/dd1/structobjl_1_1_vertex_1a0a5918e142a939241edeec52944b9edf" kindref="member">Normal</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" kindref="member">X</ref>,<sp/>ov.<ref refid="d4/dd1/structobjl_1_1_vertex_1a0a5918e142a939241edeec52944b9edf" kindref="member">Normal</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" kindref="member">Y</ref>,<sp/>ov.<ref refid="d4/dd1/structobjl_1_1_vertex_1a0a5918e142a939241edeec52944b9edf" kindref="member">Normal</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" kindref="member">Z</ref>));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>find(begin(vertices),<sp/>end(vertices),<sp/>cv);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/>end(vertices))</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v[j]<sp/>=<sp/>distance(begin(vertices),<sp/>it);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertices.push_back(cv);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v[j]<sp/>=<sp/>vertices.size()<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>triangles.push_back(<ref refid="d2/d28/class_triangle" kindref="compound">Triangle</ref>(v[0],<sp/>v[1],<sp/>v[2]));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref><sp/>mesh;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>mesh.<ref refid="dc/dbe/class_mesh_1a5c68963c5e297f561932ae51d1f0e8f5" kindref="member">setVertices</ref>(vertices);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>mesh.<ref refid="dc/dbe/class_mesh_1a26adb872946b00793f84f8cecd48cc56" kindref="member">setTriangles</ref>(triangles);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dbb/structobjl_1_1_material" kindref="compound">objl::Material</ref><sp/>omat<sp/>=<sp/>omesh.<ref refid="db/dea/structobjl_1_1_mesh_1a1c5374b9f1640eada79faa9b98cbdb50" kindref="member">MeshMaterial</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>ka(omat.<ref refid="d2/dbb/structobjl_1_1_material_1a13c3660fd7fc3924f7811c46ca3f1272" kindref="member">Ka</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" kindref="member">X</ref><sp/>*<sp/>255,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1a13c3660fd7fc3924f7811c46ca3f1272" kindref="member">Ka</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" kindref="member">Y</ref><sp/>*<sp/>255,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1a13c3660fd7fc3924f7811c46ca3f1272" kindref="member">Ka</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" kindref="member">Z</ref><sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>kd(omat.<ref refid="d2/dbb/structobjl_1_1_material_1a16b7219d2d20e5f7a58e14f68b663a98" kindref="member">Kd</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" kindref="member">X</ref><sp/>*<sp/>255,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1a16b7219d2d20e5f7a58e14f68b663a98" kindref="member">Kd</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" kindref="member">Y</ref><sp/>*<sp/>255,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1a16b7219d2d20e5f7a58e14f68b663a98" kindref="member">Kd</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" kindref="member">Z</ref><sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/ddd/class_color" kindref="compound">Color</ref><sp/>ks(omat.<ref refid="d2/dbb/structobjl_1_1_material_1ac1298eff05de5020120a143f21058b83" kindref="member">Ks</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" kindref="member">X</ref><sp/>*<sp/>255,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1ac1298eff05de5020120a143f21058b83" kindref="member">Ks</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" kindref="member">Y</ref><sp/>*<sp/>255,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1ac1298eff05de5020120a143f21058b83" kindref="member">Ks</ref>.<ref refid="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" kindref="member">Z</ref><sp/>*<sp/>255);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dee/class_material" kindref="compound">Material</ref><sp/>material(ka,<sp/>kd,<sp/>ks,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1ad02f64d02fa971cebc3195d90a73748c" kindref="member">Ns</ref>,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1a9b42dd253954cf9547593831fbbed8bc" kindref="member">Ni</ref>,<sp/>omat.<ref refid="d2/dbb/structobjl_1_1_material_1a40db214eba05836b431e544dd7b920f4" kindref="member">d</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>mesh.<ref refid="dc/dbe/class_mesh_1a16e6aa53eab442ce66381e67259be050" kindref="member">setMaterial</ref>(material);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mesh;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/objloader.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+\hypertarget{class_renderer}{}\section{Класс Renderer}
+\label{class_renderer}\index{Renderer@{Renderer}}
+
+
+{\ttfamily \#include $<$renderer.\+h$>$}
+
+
+
+Граф наследования\+:Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/d70/class_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{d4/d74/class_renderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_renderer_a4dddd75ab18573a3686f90225f3f03d4}{Renderer} ()=default
+\item 
+\hyperlink{class_renderer_ae0b9551d2d89c7bc08e962eafa43ebb0}{Renderer} (float \hyperlink{class_renderer_aeab228a83d206c55fc73c7a14a0f0761}{scale}, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ada813defebef120813571bfb6053e88f}{width}, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ab2e154b790a2d31603f147510c261ac2}{height})
+\item 
+virtual void \hyperlink{class_renderer_a832ac0e6a4fe1e840e07bd82a405edd6}{set\+Camera} (\hyperlink{camera_8h_a01f929aec8e912be07dca2c1f8d00f67}{Shared\+Camera} value)=0
+\item 
+virtual void \hyperlink{class_renderer_a000c8a4b55c252ad1353bbd33dc4def9}{add\+Light} (\hyperlink{light_8h_ae1ec32369be93ce20c1e9047a8d388c0}{Shared\+Light} value)=0
+\item 
+virtual void \hyperlink{class_renderer_a78cc00edca00b08d09121065fb4fc771}{start} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ada813defebef120813571bfb6053e88f}{width}, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ab2e154b790a2d31603f147510c261ac2}{height})=0
+\item 
+virtual void \hyperlink{class_renderer_a40c3fe3b0e46de69ed563d4b4ca13986}{render\+Mesh} (shared\+\_\+ptr$<$ \hyperlink{class_mesh}{Mesh} $>$ mesh)=0
+\item 
+virtual uchar $\ast$ \hyperlink{class_renderer_ad3a00c526a6765792b02f328e7a7dad1}{get\+Rendered} ()=0
+\item 
+virtual void \hyperlink{class_renderer_ae8a0a67a993626066a989dbf02ae43f9}{finish} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_renderer_aeab228a83d206c55fc73c7a14a0f0761}{scale}
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ada813defebef120813571bfb6053e88f}{width}
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ab2e154b790a2d31603f147510c261ac2}{height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле renderer.\+h строка 11
+
+
+
+\subsection{Конструктор(ы)}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{Renderer()=default}{Renderer()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Renderer\+::\+Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_renderer_a4dddd75ab18573a3686f90225f3f03d4}{}\label{class_renderer_a4dddd75ab18573a3686f90225f3f03d4}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{Renderer(float scale, int32 width, int32 height)}{Renderer(float scale, int32 width, int32 height)}}]{\setlength{\rightskip}{0pt plus 5cm}Renderer\+::\+Renderer (
+\begin{DoxyParamCaption}
+\item[{float}]{scale, }
+\item[{{\bf int32}}]{width, }
+\item[{{\bf int32}}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_renderer_ae0b9551d2d89c7bc08e962eafa43ebb0}{}\label{class_renderer_ae0b9551d2d89c7bc08e962eafa43ebb0}
+
+
+См. определение в файле renderer.\+cpp строка 3
+
+
+
+\subsection{Методы}
+\index{Renderer@{Renderer}!add\+Light@{add\+Light}}
+\index{add\+Light@{add\+Light}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{add\+Light(\+Shared\+Light value)=0}{addLight(SharedLight value)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Renderer\+::add\+Light (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Light}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_renderer_a000c8a4b55c252ad1353bbd33dc4def9}{}\label{class_renderer_a000c8a4b55c252ad1353bbd33dc4def9}
+
+
+Замещается в \hyperlink{class_light_z_buffer_renderer_a73f101ddbdbb27eb19d6ee719da9bf9a}{Light\+Z\+Buffer\+Renderer}.
+
+\index{Renderer@{Renderer}!finish@{finish}}
+\index{finish@{finish}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{finish()=0}{finish()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Renderer\+::finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_renderer_ae8a0a67a993626066a989dbf02ae43f9}{}\label{class_renderer_ae8a0a67a993626066a989dbf02ae43f9}
+
+
+Замещается в \hyperlink{class_light_z_buffer_renderer_ad8084c0d5f0b4555900efbeaa81ec066}{Light\+Z\+Buffer\+Renderer}.
+
+\index{Renderer@{Renderer}!get\+Rendered@{get\+Rendered}}
+\index{get\+Rendered@{get\+Rendered}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{get\+Rendered()=0}{getRendered()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual uchar$\ast$ Renderer\+::get\+Rendered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_renderer_ad3a00c526a6765792b02f328e7a7dad1}{}\label{class_renderer_ad3a00c526a6765792b02f328e7a7dad1}
+
+
+Замещается в \hyperlink{class_light_z_buffer_renderer_a7e712d8d1b3a7be674efb620ba3ff0ef}{Light\+Z\+Buffer\+Renderer}.
+
+\index{Renderer@{Renderer}!render\+Mesh@{render\+Mesh}}
+\index{render\+Mesh@{render\+Mesh}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{render\+Mesh(shared\+\_\+ptr$<$ Mesh $>$ mesh)=0}{renderMesh(shared_ptr< Mesh > mesh)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Renderer\+::render\+Mesh (
+\begin{DoxyParamCaption}
+\item[{shared\+\_\+ptr$<$ {\bf Mesh} $>$}]{mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_renderer_a40c3fe3b0e46de69ed563d4b4ca13986}{}\label{class_renderer_a40c3fe3b0e46de69ed563d4b4ca13986}
+
+
+Замещается в \hyperlink{class_light_z_buffer_renderer_a258b9e41e648b8f6393a39d2935d4d42}{Light\+Z\+Buffer\+Renderer}.
+
+\index{Renderer@{Renderer}!set\+Camera@{set\+Camera}}
+\index{set\+Camera@{set\+Camera}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{set\+Camera(\+Shared\+Camera value)=0}{setCamera(SharedCamera value)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Renderer\+::set\+Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Camera}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_renderer_a832ac0e6a4fe1e840e07bd82a405edd6}{}\label{class_renderer_a832ac0e6a4fe1e840e07bd82a405edd6}
+
+
+Замещается в \hyperlink{class_light_z_buffer_renderer_acc0d204a38cc6105a7c258b49e5197a4}{Light\+Z\+Buffer\+Renderer}.
+
+\index{Renderer@{Renderer}!start@{start}}
+\index{start@{start}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{start(int32 width, int32 height)=0}{start(int32 width, int32 height)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Renderer\+::start (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{width, }
+\item[{{\bf int32}}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_renderer_a78cc00edca00b08d09121065fb4fc771}{}\label{class_renderer_a78cc00edca00b08d09121065fb4fc771}
+
+
+Замещается в \hyperlink{class_light_z_buffer_renderer_a431be9dc219e4d2706c95ada2aca8af6}{Light\+Z\+Buffer\+Renderer}.
+
+
+
+\subsection{Данные класса}
+\index{Renderer@{Renderer}!height@{height}}
+\index{height@{height}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Renderer\+::height\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_renderer_ab2e154b790a2d31603f147510c261ac2}{}\label{class_renderer_ab2e154b790a2d31603f147510c261ac2}
+
+
+См. определение в файле renderer.\+h строка 33
+
+\index{Renderer@{Renderer}!scale@{scale}}
+\index{scale@{scale}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{scale}{scale}}]{\setlength{\rightskip}{0pt plus 5cm}float Renderer\+::scale\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_renderer_aeab228a83d206c55fc73c7a14a0f0761}{}\label{class_renderer_aeab228a83d206c55fc73c7a14a0f0761}
+
+
+См. определение в файле renderer.\+h строка 31
+
+\index{Renderer@{Renderer}!width@{width}}
+\index{width@{width}!Renderer@{Renderer}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Renderer\+::width\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_renderer_ada813defebef120813571bfb6053e88f}{}\label{class_renderer_ada813defebef120813571bfb6053e88f}
+
+
+См. определение в файле renderer.\+h строка 32
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{renderer_8h}{renderer.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{renderer_8cpp}{renderer.\+cpp}\end{DoxyCompactItemize}

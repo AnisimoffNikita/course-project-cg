@@ -1,0 +1,5 @@
+digraph ModelFactory
+{
+graph [ rankdir="RL" ]
+"db/da7/class_model_factory" [ label="ModelFactory\n|+ModelFactory ( position : const Vec3 &, mesh : const Mesh & )\l/+create (  ) : SharedSceneObject \{virtual\}\l+~ModelFactory (  ) \{virtual\}\l|-model : std::unique_ptr\< Model \>\l" shape="record" ]
+}

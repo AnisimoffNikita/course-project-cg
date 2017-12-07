@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/d6b/class_image_base" kind="class" language="C++" prot="public">
+    <compoundname>ImageBase</compoundname>
+    <includes refid="de/dd1/imagebase_8h" local="no">imagebase.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d6b/class_image_base_1aa619aa7a0b2cf0b5e45b0fbc102329c1" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; T[]&gt;</type>
+        <definition>std::unique_ptr&lt;T[]&gt; ImageBase&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d6b/class_image_base_1a01be4d15909d029bf4ef23f8ed6f6369" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+        <definition>uint32 ImageBase&lt; T &gt;::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="36" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d6b/class_image_base_1a2f5f532885f040113c198c424cc0ec7f" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+        <definition>uint32 ImageBase&lt; T &gt;::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="36" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="db/d6b/class_image_base_1a683b929065aaead03ccce450a7b4ab30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ImageConverter</definition>
+        <argsstring></argsstring>
+        <name>ImageConverter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="db/d6b/class_image_base_1a655e20b76703bb6a4e6ecd9ed4a5d9ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GrayscaleConverter</definition>
+        <argsstring></argsstring>
+        <name>GrayscaleConverter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="39" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d6b/class_image_base_1a0d0996266703e4c7bbedf96bc5c6313c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageBase&lt; T &gt;::ImageBase</definition>
+        <argsstring>()</argsstring>
+        <name>ImageBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a43a4b975fe25dfca53ce3f0155dd5976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageBase&lt; T &gt;::ImageBase</definition>
+        <argsstring>(const ImageBase &amp;image)</argsstring>
+        <name>ImageBase</name>
+        <param>
+          <type>const <ref refid="db/d6b/class_image_base" kindref="compound">ImageBase</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a655bd5b3b40499448b5b204de54de2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageBase&lt; T &gt;::ImageBase</definition>
+        <argsstring>(ImageBase &amp;&amp;image)</argsstring>
+        <name>ImageBase</name>
+        <param>
+          <type><ref refid="db/d6b/class_image_base" kindref="compound">ImageBase</ref> &amp;&amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a6094d4bcf9e48de9b2d66d4f9bbb9db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageBase&lt; T &gt;::ImageBase</definition>
+        <argsstring>(uint32 height, uint32 width)</argsstring>
+        <name>ImageBase</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a84b330cd4e586ff7bed5beee148c3309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/d6b/class_image_base" kindref="compound">ImageBase</ref> &amp;</type>
+        <definition>ImageBase&lt; T &gt; &amp; ImageBase&lt; T &gt;::operator=</definition>
+        <argsstring>(const ImageBase &amp;image)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="db/d6b/class_image_base" kindref="compound">ImageBase</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="21" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="85" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a0def07d97e63c1448751a70e06c3e370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/d6b/class_image_base" kindref="compound">ImageBase</ref> &amp;</type>
+        <definition>ImageBase&lt; T &gt; &amp; ImageBase&lt; T &gt;::operator=</definition>
+        <argsstring>(ImageBase &amp;&amp;image)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="db/d6b/class_image_base" kindref="compound">ImageBase</ref> &amp;&amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1acf5042cc5679250825272cb23a4594a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ImageBase&lt; T &gt;::at</definition>
+        <argsstring>(uint32 i, uint32 j) const </argsstring>
+        <name>at</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a2ed65bd7506be1b5bf8ff56a5b56d3a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageBase&lt; T &gt;::set</definition>
+        <argsstring>(uint32 i, uint32 j, const T &amp;color)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a750ec0d8ff1dd10dfa26467c018cc68c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+        <definition>uint32 ImageBase&lt; T &gt;::getHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1ac26af0c1bfd19f915f19d6b6f85c05c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageBase&lt; T &gt;::setHeight</definition>
+        <argsstring>(uint32 value)</argsstring>
+        <name>setHeight</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a576197cd4b79d141bb8bd832511fb26a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+        <definition>uint32 ImageBase&lt; T &gt;::getWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d6b/class_image_base_1a1448e596fe52852668baa5caefe23f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageBase&lt; T &gt;::setWidth</definition>
+        <argsstring>(uint32 value)</argsstring>
+        <name>setWidth</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="32" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="350">
+        <label>ImageBase&lt; T &gt;</label>
+        <link refid="db/d6b/class_image_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/image/imagebase.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/image/imagebase.h" bodystart="13" bodyend="40"/>
+    <listofallmembers>
+      <member refid="db/d6b/class_image_base_1acf5042cc5679250825272cb23a4594a1" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>at</name></member>
+      <member refid="db/d6b/class_image_base_1aa619aa7a0b2cf0b5e45b0fbc102329c1" prot="private" virt="non-virtual"><scope>ImageBase</scope><name>data</name></member>
+      <member refid="db/d6b/class_image_base_1a750ec0d8ff1dd10dfa26467c018cc68c" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>getHeight</name></member>
+      <member refid="db/d6b/class_image_base_1a576197cd4b79d141bb8bd832511fb26a" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>getWidth</name></member>
+      <member refid="db/d6b/class_image_base_1a655e20b76703bb6a4e6ecd9ed4a5d9ed" prot="private" virt="non-virtual"><scope>ImageBase</scope><name>GrayscaleConverter</name></member>
+      <member refid="db/d6b/class_image_base_1a2f5f532885f040113c198c424cc0ec7f" prot="private" virt="non-virtual"><scope>ImageBase</scope><name>height</name></member>
+      <member refid="db/d6b/class_image_base_1a0d0996266703e4c7bbedf96bc5c6313c" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>ImageBase</name></member>
+      <member refid="db/d6b/class_image_base_1a43a4b975fe25dfca53ce3f0155dd5976" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>ImageBase</name></member>
+      <member refid="db/d6b/class_image_base_1a655bd5b3b40499448b5b204de54de2b2" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>ImageBase</name></member>
+      <member refid="db/d6b/class_image_base_1a6094d4bcf9e48de9b2d66d4f9bbb9db2" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>ImageBase</name></member>
+      <member refid="db/d6b/class_image_base_1a683b929065aaead03ccce450a7b4ab30" prot="private" virt="non-virtual"><scope>ImageBase</scope><name>ImageConverter</name></member>
+      <member refid="db/d6b/class_image_base_1a84b330cd4e586ff7bed5beee148c3309" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>operator=</name></member>
+      <member refid="db/d6b/class_image_base_1a0def07d97e63c1448751a70e06c3e370" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>operator=</name></member>
+      <member refid="db/d6b/class_image_base_1a2ed65bd7506be1b5bf8ff56a5b56d3a2" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>set</name></member>
+      <member refid="db/d6b/class_image_base_1ac26af0c1bfd19f915f19d6b6f85c05c5" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>setHeight</name></member>
+      <member refid="db/d6b/class_image_base_1a1448e596fe52852668baa5caefe23f86" prot="public" virt="non-virtual"><scope>ImageBase</scope><name>setWidth</name></member>
+      <member refid="db/d6b/class_image_base_1a01be4d15909d029bf4ef23f8ed6f6369" prot="private" virt="non-virtual"><scope>ImageBase</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

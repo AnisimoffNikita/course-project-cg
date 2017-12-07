@@ -1,0 +1,7 @@
+class CameraFactory
+!!!160770.cpp!!!	CameraFactory(in position : Vec3, in lookAt : Vec3, in up : Vec3, in data : CameraFactory::PerspectiveData)
+    Mat4 projection = PerspectiveMatrix::create(data.fovX, data.fovY, data.near,
+                      data.far);
+    camera = std::make_unique<Camera>(position, lookAt, up, projection);
+!!!161026.cpp!!!	create() : SharedSceneObject
+    return std::move(camera);

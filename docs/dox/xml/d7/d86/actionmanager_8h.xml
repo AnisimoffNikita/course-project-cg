@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d7/d86/actionmanager_8h" kind="file" language="C++">
+    <compoundname>actionmanager.h</compoundname>
+    <includes refid="d5/d69/sceneobject_8h" local="yes">sceneobject.h</includes>
+    <includes refid="d3/de1/actions_8h" local="yes">actions.h</includes>
+    <includedby refid="d3/df9/actionmanager_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/actionmanager.cpp</includedby>
+    <includedby refid="d4/d90/modelview2_8h" local="yes">Projects/labs/course_project_cg/src/widgets/modelview2.h</includedby>
+    <incdepgraph>
+      <node id="2137">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.h</label>
+        <link refid="actionmanager.h"/>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2145" relation="include">
+        </childnode>
+      </node>
+      <node id="2144">
+        <label>functional</label>
+      </node>
+      <node id="2138">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+      </node>
+      <node id="2141">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2143" relation="include">
+        </childnode>
+      </node>
+      <node id="2142">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2143">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+      </node>
+      <node id="2139">
+        <label>vector</label>
+      </node>
+      <node id="2145">
+        <label>actions.h</label>
+        <link refid="d3/de1/actions_8h"/>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+      </node>
+      <node id="2140">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2146">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.h</label>
+        <link refid="actionmanager.h"/>
+        <childnode refid="2147" relation="include">
+        </childnode>
+        <childnode refid="2148" relation="include">
+        </childnode>
+      </node>
+      <node id="2148">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="2149" relation="include">
+        </childnode>
+      </node>
+      <node id="2149">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2147">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.cpp</label>
+        <link refid="d3/df9/actionmanager_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/d7b/class_action_manager" prot="public">ActionManager</innerclass>
+    <innernamespace refid="d8/dcc/namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ACTIONMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACTIONMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d69/sceneobject_8h" kindref="compound">sceneobject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/de1/actions_8h" kindref="compound">actions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d7/d7b/class_action_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d7b/class_action_manager" kindref="compound">ActionManager</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d7b/class_action_manager" kindref="compound">ActionManager</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d7/d7b/class_action_manager" kindref="compound">ActionManager</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add(unique_ptr&lt;Action&gt;<sp/>&amp;&amp;action);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>delta);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="d7/d7b/class_action_manager_1a1d425cc776debdc5f32d269ee7e532bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;unique_ptr&lt;Action&gt;&gt;<sp/><ref refid="d7/d7b/class_action_manager_1a1d425cc776debdc5f32d269ee7e532bb" kindref="member">actions</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ACTIONMANAGER_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/actionmanager.h"/>
+  </compounddef>
+</doxygen>

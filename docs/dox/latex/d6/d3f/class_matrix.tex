@@ -1,0 +1,340 @@
+\hypertarget{class_matrix}{}\section{Шаблон класса Matrix$<$ M, N, T $>$}
+\label{class_matrix}\index{Matrix$<$ M, N, T $>$@{Matrix$<$ M, N, T $>$}}
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+
+
+Граф связей класса Matrix$<$ M, N, T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{dd/dec/class_matrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matrix_a057b8f4cfbddb0331c0dfb8d6d31310e}{Matrix} ()
+\item 
+\hyperlink{class_matrix_a6dd2e82ed0b8ea67ea0519882175bd67}{Matrix} (const T $\ast$values)
+\item 
+const T \& \hyperlink{class_matrix_aa093a7de8b27d19e6eb66b09f9da7b87}{operator()} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} row, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} column) const 
+\item 
+T \& \hyperlink{class_matrix_acf0955eccefd5abe0f0a8ea8f5f1582e}{operator()} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} row, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} column)
+\item 
+bool \hyperlink{class_matrix_aa21a8169dde52a31ee25fa40c7b3cbaf}{is\+Identity} () const 
+\item 
+void \hyperlink{class_matrix_aa571c8458a34695e88e076b3307cbdeb}{set\+To\+Identity} ()
+\item 
+void \hyperlink{class_matrix_a77bac0ccf5799c0249fb77f78246bf75}{fill} (const T \&value)
+\item 
+\hyperlink{class_matrix}{Matrix}$<$ N, M, T $>$ \hyperlink{class_matrix_aa07c344f3ac92f1b1ee9ebc1b42d4973}{transposed} () const 
+\item 
+\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \& \hyperlink{class_matrix_a29caf32b1bacaebe05277f056bbe0229}{operator+=} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&other)
+\item 
+\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \& \hyperlink{class_matrix_ae6a824c0ec0f0f067b167f8b45fa1910}{operator-\/=} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&other)
+\item 
+\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \& \hyperlink{class_matrix_a660133e52cdffddc553e2f05c693cd96}{operator$\ast$=} (T factor)
+\item 
+\hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \& \hyperlink{class_matrix_a9b870fa2d8a56715f6a9398854cfdb16}{operator/=} (T divisor)
+\item 
+bool \hyperlink{class_matrix_a9c9f9ffe07d56bb9a14f7bb89113af9e}{operator==} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&other) const 
+\item 
+bool \hyperlink{class_matrix_aea308a4ad5bea479d5607e79792eee96}{operator!=} (const \hyperlink{class_matrix}{Matrix}$<$ M, N, T $>$ \&other) const 
+\item 
+T $\ast$ \hyperlink{class_matrix_a5e6ffc416f13f4f14dd8087da2234d40}{data} ()
+\item 
+const T $\ast$ \hyperlink{class_matrix_a8277fe32f0783374b7fea39e6d80ca7c}{data} () const 
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{class_matrix_a9cd751074f76f6d7019834492e30bb5c}{m} \mbox{[}M\mbox{]}\mbox{[}N\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int32 MM, int32 NN, typename TT $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \hyperlink{class_matrix_ade356cdf3e34c2ed51bd20166cd91d58}{operator+} (const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&m1, const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&m2)
+\item 
+{\footnotesize template$<$int32 MM, int32 NN, typename TT $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \hyperlink{class_matrix_a012fd845172a7a29f1ace01dd0191962}{operator-\/} (const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&m1, const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&m2)
+\item 
+{\footnotesize template$<$int32 NN, int32 M1, int32 M2, typename TT $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ M1, M2, TT $>$ \hyperlink{class_matrix_aac9476d517d9f0c8224e1d17ce52e04d}{operator$\ast$} (const \hyperlink{class_matrix}{Matrix}$<$ M1, NN, TT $>$ \&m1, const \hyperlink{class_matrix}{Matrix}$<$ NN, M2, TT $>$ \&m2)
+\item 
+{\footnotesize template$<$int32 MM, int32 NN, typename TT $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \hyperlink{class_matrix_afacec860ab5322f435b2d1cd4331f477}{operator-\/} (const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&matrix)
+\item 
+{\footnotesize template$<$int32 MM, int32 NN, typename TT $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \hyperlink{class_matrix_a47bf9d770ba7d5830a285da8ce5740e9}{operator$\ast$} (TT factor, const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&matrix)
+\item 
+{\footnotesize template$<$int32 MM, int32 NN, typename TT $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \hyperlink{class_matrix_ab6864ff72e7ba6c207b8aaf18ac6a0f2}{operator$\ast$} (const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&matrix, TT factor)
+\item 
+{\footnotesize template$<$int32 MM, int32 NN, typename TT $>$ }\\\hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \hyperlink{class_matrix_a4876d0443c8e8defdc490c265f13c2a6}{operator/} (const \hyperlink{class_matrix}{Matrix}$<$ MM, NN, TT $>$ \&matrix, TT divisor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$int32 M, int32 N, typename T$>$\\*
+class Matrix$<$ M, N, T $>$}
+
+
+
+См. определение в файле matrix.\+h строка 7
+
+
+
+\subsection{Конструктор(ы)}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{Matrix()}{Matrix()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$ M, N, T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_a057b8f4cfbddb0331c0dfb8d6d31310e}{}\label{class_matrix_a057b8f4cfbddb0331c0dfb8d6d31310e}
+
+
+См. определение в файле matrix.\+h строка 68
+
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{Matrix(const T $\ast$values)}{Matrix(const T *values)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ {\bf Matrix}$<$ M, N, T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const T $\ast$}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_matrix_a6dd2e82ed0b8ea67ea0519882175bd67}{}\label{class_matrix_a6dd2e82ed0b8ea67ea0519882175bd67}
+
+
+См. определение в файле matrix.\+h строка 73
+
+
+
+\subsection{Методы}
+\index{Matrix@{Matrix}!data@{data}}
+\index{data@{data}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{data()}{data()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ T$\ast$ {\bf Matrix}$<$ M, N, T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_a5e6ffc416f13f4f14dd8087da2234d40}{}\label{class_matrix_a5e6ffc416f13f4f14dd8087da2234d40}
+
+
+См. определение в файле matrix.\+h строка 30
+
+\index{Matrix@{Matrix}!data@{data}}
+\index{data@{data}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ const T$\ast$ {\bf Matrix}$<$ M, N, T $>$\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_a8277fe32f0783374b7fea39e6d80ca7c}{}\label{class_matrix_a8277fe32f0783374b7fea39e6d80ca7c}
+
+
+См. определение в файле matrix.\+h строка 34
+
+\index{Matrix@{Matrix}!fill@{fill}}
+\index{fill@{fill}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{fill(const T \&value)}{fill(const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ void {\bf Matrix}$<$ M, N, T $>$\+::fill (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_a77bac0ccf5799c0249fb77f78246bf75}{}\label{class_matrix_a77bac0ccf5799c0249fb77f78246bf75}
+
+
+См. определение в файле matrix.\+h строка 127
+
+\index{Matrix@{Matrix}!is\+Identity@{is\+Identity}}
+\index{is\+Identity@{is\+Identity}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{is\+Identity() const }{isIdentity() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ bool {\bf Matrix}$<$ M, N, T $>$\+::is\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matrix_aa21a8169dde52a31ee25fa40c7b3cbaf}{}\label{class_matrix_aa21a8169dde52a31ee25fa40c7b3cbaf}
+
+
+См. определение в файле matrix.\+h строка 95
+
+\index{Matrix@{Matrix}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator"!=(const Matrix$<$ M, N, T $>$ \&other) const }{operator!=(const Matrix< M, N, T > &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ bool {\bf Matrix}$<$ M, N, T $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matrix_aea308a4ad5bea479d5607e79792eee96}{}\label{class_matrix_aea308a4ad5bea479d5607e79792eee96}
+
+
+См. определение в файле matrix.\+h строка 200
+
+\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator()(int32 row, int32 column) const }{operator()(int32 row, int32 column) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ const T \& {\bf Matrix}$<$ M, N, T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{row, }
+\item[{{\bf int32}}]{column}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matrix_aa093a7de8b27d19e6eb66b09f9da7b87}{}\label{class_matrix_aa093a7de8b27d19e6eb66b09f9da7b87}
+
+
+См. определение в файле matrix.\+h строка 83
+
+\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator()(int32 row, int32 column)}{operator()(int32 row, int32 column)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ T \& {\bf Matrix}$<$ M, N, T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{row, }
+\item[{{\bf int32}}]{column}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_acf0955eccefd5abe0f0a8ea8f5f1582e}{}\label{class_matrix_acf0955eccefd5abe0f0a8ea8f5f1582e}
+
+
+См. определение в файле matrix.\+h строка 89
+
+\index{Matrix@{Matrix}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$=(\+T factor)}{operator*=(T factor)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ {\bf Matrix}$<$ M, N, T $>$ \& {\bf Matrix}$<$ M, N, T $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{T}]{factor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_a660133e52cdffddc553e2f05c693cd96}{}\label{class_matrix_a660133e52cdffddc553e2f05c693cd96}
+
+
+См. определение в файле matrix.\+h строка 175
+
+\index{Matrix@{Matrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator+=(const Matrix$<$ M, N, T $>$ \&other)}{operator+=(const Matrix< M, N, T > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ {\bf Matrix}$<$ M, N, T $>$ \& {\bf Matrix}$<$ M, N, T $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_a29caf32b1bacaebe05277f056bbe0229}{}\label{class_matrix_a29caf32b1bacaebe05277f056bbe0229}
+
+
+См. определение в файле matrix.\+h строка 151
+
+\index{Matrix@{Matrix}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator-\/=(const Matrix$<$ M, N, T $>$ \&other)}{operator-=(const Matrix< M, N, T > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ {\bf Matrix}$<$ M, N, T $>$ \& {\bf Matrix}$<$ M, N, T $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_ae6a824c0ec0f0f067b167f8b45fa1910}{}\label{class_matrix_ae6a824c0ec0f0f067b167f8b45fa1910}
+
+
+См. определение в файле matrix.\+h строка 163
+
+\index{Matrix@{Matrix}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator/=(\+T divisor)}{operator/=(T divisor)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ {\bf Matrix}$<$ M, N, T $>$ \& {\bf Matrix}$<$ M, N, T $>$\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{T}]{divisor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_a9b870fa2d8a56715f6a9398854cfdb16}{}\label{class_matrix_a9b870fa2d8a56715f6a9398854cfdb16}
+
+
+См. определение в файле matrix.\+h строка 213
+
+\index{Matrix@{Matrix}!operator==@{operator==}}
+\index{operator==@{operator==}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator==(const Matrix$<$ M, N, T $>$ \&other) const }{operator==(const Matrix< M, N, T > &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ bool {\bf Matrix}$<$ M, N, T $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M, N, T $>$ \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matrix_a9c9f9ffe07d56bb9a14f7bb89113af9e}{}\label{class_matrix_a9c9f9ffe07d56bb9a14f7bb89113af9e}
+
+
+См. определение в файле matrix.\+h строка 187
+
+\index{Matrix@{Matrix}!set\+To\+Identity@{set\+To\+Identity}}
+\index{set\+To\+Identity@{set\+To\+Identity}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{set\+To\+Identity()}{setToIdentity()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ void {\bf Matrix}$<$ M, N, T $>$\+::set\+To\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_matrix_aa571c8458a34695e88e076b3307cbdeb}{}\label{class_matrix_aa571c8458a34695e88e076b3307cbdeb}
+
+
+См. определение в файле matrix.\+h строка 112
+
+\index{Matrix@{Matrix}!transposed@{transposed}}
+\index{transposed@{transposed}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{transposed() const }{transposed() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T $>$ {\bf Matrix}$<$ N, M, T $>$ {\bf Matrix}$<$ M, N, T $>$\+::transposed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_matrix_aa07c344f3ac92f1b1ee9ebc1b42d4973}{}\label{class_matrix_aa07c344f3ac92f1b1ee9ebc1b42d4973}
+
+
+См. определение в файле matrix.\+h строка 137
+
+
+
+\subsection{Документация по друзьям класса и функциям, относящимся к классу}
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ template$<$int32 NN, int32 M1, int32 M2, typename TT $>$ {\bf Matrix}$<$M1, M2, TT$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ M1, NN, TT $>$ \&}]{m1, }
+\item[{const {\bf Matrix}$<$ NN, M2, TT $>$ \&}]{m2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_matrix_aac9476d517d9f0c8224e1d17ce52e04d}{}\label{class_matrix_aac9476d517d9f0c8224e1d17ce52e04d}
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ template$<$int32 MM, int32 NN, typename TT $>$ {\bf Matrix}$<$MM, NN, TT$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{TT}]{factor, }
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_matrix_a47bf9d770ba7d5830a285da8ce5740e9}{}\label{class_matrix_a47bf9d770ba7d5830a285da8ce5740e9}
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ template$<$int32 MM, int32 NN, typename TT $>$ {\bf Matrix}$<$MM, NN, TT$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{matrix, }
+\item[{TT}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_matrix_ab6864ff72e7ba6c207b8aaf18ac6a0f2}{}\label{class_matrix_ab6864ff72e7ba6c207b8aaf18ac6a0f2}
+\index{Matrix@{Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ template$<$int32 MM, int32 NN, typename TT $>$ {\bf Matrix}$<$MM, NN, TT$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{m1, }
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{m2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_matrix_ade356cdf3e34c2ed51bd20166cd91d58}{}\label{class_matrix_ade356cdf3e34c2ed51bd20166cd91d58}
+\index{Matrix@{Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator-\/}{operator-}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ template$<$int32 MM, int32 NN, typename TT $>$ {\bf Matrix}$<$MM, NN, TT$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{m1, }
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{m2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_matrix_a012fd845172a7a29f1ace01dd0191962}{}\label{class_matrix_a012fd845172a7a29f1ace01dd0191962}
+\index{Matrix@{Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator-\/}{operator-}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ template$<$int32 MM, int32 NN, typename TT $>$ {\bf Matrix}$<$MM, NN, TT$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_matrix_afacec860ab5322f435b2d1cd4331f477}{}\label{class_matrix_afacec860ab5322f435b2d1cd4331f477}
+\index{Matrix@{Matrix}!operator/@{operator/}}
+\index{operator/@{operator/}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator/}{operator/}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ template$<$int32 MM, int32 NN, typename TT $>$ {\bf Matrix}$<$MM, NN, TT$>$ operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ MM, NN, TT $>$ \&}]{matrix, }
+\item[{TT}]{divisor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_matrix_a4876d0443c8e8defdc490c265f13c2a6}{}\label{class_matrix_a4876d0443c8e8defdc490c265f13c2a6}
+
+
+\subsection{Данные класса}
+\index{Matrix@{Matrix}!m@{m}}
+\index{m@{m}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{m}{m}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int32 M, int32 N, typename T$>$ T {\bf Matrix}$<$ M, N, T $>$\+::m\mbox{[}M\mbox{]}\mbox{[}N\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matrix_a9cd751074f76f6d7019834492e30bb5c}{}\label{class_matrix_a9cd751074f76f6d7019834492e30bb5c}
+
+
+См. определение в файле matrix.\+h строка 61
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/math/\hyperlink{matrix_8h}{matrix.\+h}\end{DoxyCompactItemize}

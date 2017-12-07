@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d0/d9c/grayscalecolor_8h" kind="file" language="C++">
+    <compoundname>grayscalecolor.h</compoundname>
+    <includes refid="d3/d22/number_8h" local="yes">src/number.h</includes>
+    <includedby refid="d2/ded/grayscalecolor_8cpp" local="yes">Projects/labs/course_project_cg/src/image/grayscalecolor.cpp</includedby>
+    <includedby refid="d3/d37/grayscaleimage_8h" local="yes">Projects/labs/course_project_cg/src/image/grayscaleimage.h</includedby>
+    <incdepgraph>
+      <node id="2974">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2973">
+        <label>Projects/labs/course_project_cg/src/image/grayscalecolor.h</label>
+        <link refid="grayscalecolor.h"/>
+        <childnode refid="2974" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2978">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.h</label>
+        <link refid="de/d3b/cannyedgedetector_8h"/>
+        <childnode refid="2979" relation="include">
+        </childnode>
+        <childnode refid="2980" relation="include">
+        </childnode>
+      </node>
+      <node id="2985">
+        <label>Projects/labs/course_project_cg/src/image/grayscaleimage.cpp</label>
+        <link refid="da/d4b/grayscaleimage_8cpp"/>
+      </node>
+      <node id="2976">
+        <label>Projects/labs/course_project_cg/src/image/grayscalecolor.cpp</label>
+        <link refid="d2/ded/grayscalecolor_8cpp"/>
+      </node>
+      <node id="2983">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.h</label>
+        <link refid="dd/d54/houghtransform_8h"/>
+        <childnode refid="2984" relation="include">
+        </childnode>
+        <childnode refid="2980" relation="include">
+        </childnode>
+      </node>
+      <node id="2982">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2986">
+        <label>Projects/labs/course_project_cg/src/image/imageconverter.h</label>
+        <link refid="d4/d61/imageconverter_8h"/>
+        <childnode refid="2987" relation="include">
+        </childnode>
+        <childnode refid="2979" relation="include">
+        </childnode>
+        <childnode refid="2984" relation="include">
+        </childnode>
+        <childnode refid="2988" relation="include">
+        </childnode>
+        <childnode refid="2982" relation="include">
+        </childnode>
+      </node>
+      <node id="2979">
+        <label>Projects/labs/course_project_cg/src/algorithm/edgedetector/cannyedgedetector.cpp</label>
+        <link refid="d8/d97/cannyedgedetector_8cpp"/>
+      </node>
+      <node id="2987">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp</label>
+        <link refid="d0/d8b/gaussianblur_8cpp"/>
+      </node>
+      <node id="2981">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2988">
+        <label>Projects/labs/course_project_cg/src/image/imageconverter.cpp</label>
+        <link refid="da/d94/imageconverter_8cpp"/>
+      </node>
+      <node id="2975">
+        <label>Projects/labs/course_project_cg/src/image/grayscalecolor.h</label>
+        <link refid="grayscalecolor.h"/>
+        <childnode refid="2976" relation="include">
+        </childnode>
+        <childnode refid="2977" relation="include">
+        </childnode>
+      </node>
+      <node id="2977">
+        <label>Projects/labs/course_project_cg/src/image/grayscaleimage.h</label>
+        <link refid="d3/d37/grayscaleimage_8h"/>
+        <childnode refid="2978" relation="include">
+        </childnode>
+        <childnode refid="2983" relation="include">
+        </childnode>
+        <childnode refid="2985" relation="include">
+        </childnode>
+        <childnode refid="2986" relation="include">
+        </childnode>
+      </node>
+      <node id="2984">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.cpp</label>
+        <link refid="d0/d3d/houghtransform_8cpp"/>
+      </node>
+      <node id="2980">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2981" relation="include">
+        </childnode>
+        <childnode refid="2982" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d0/d9c/grayscalecolor_8h_1ab3aec037eb5e2860ca4bb1fa7d5abe5a" prot="public" static="no">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>using GrayscaleColor =  uint8</definition>
+        <argsstring></argsstring>
+        <name>GrayscaleColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/grayscalecolor.h" line="6" column="1" bodyfile="Projects/labs/course_project_cg/src/image/grayscalecolor.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GRAYSCALECOLOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GRAYSCALECOLOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d22/number_8h" kindref="compound">src/number.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d0/d9c/grayscalecolor_8h_1ab3aec037eb5e2860ca4bb1fa7d5abe5a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d0/d9c/grayscalecolor_8h_1ab3aec037eb5e2860ca4bb1fa7d5abe5a" kindref="member">GrayscaleColor</ref><sp/>=<sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GRAYSCALECOLOR_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/image/grayscalecolor.h"/>
+  </compounddef>
+</doxygen>

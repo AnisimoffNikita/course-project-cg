@@ -1,0 +1,13 @@
+class Line
+!!!168578.cpp!!!	getP1() : Vec2
+    return p1;
+!!!168706.cpp!!!	setP1(in value : Vec2) : void
+    p1 = value;
+!!!168834.cpp!!!	getP2() : Vec2
+    return p2;
+!!!168962.cpp!!!	setP2(in value : Vec2) : void
+    p2 = value;
+!!!169090.cpp!!!	length() : float
+    int32 dx = p1.getX() - p2.getX();
+    int32 dy = p1.getY() - p2.getY();
+    return sqrt(dx * dx + dy * dy);

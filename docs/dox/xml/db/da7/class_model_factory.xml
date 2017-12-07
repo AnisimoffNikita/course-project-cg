@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/da7/class_model_factory" kind="class" language="C++" prot="public">
+    <compoundname>ModelFactory</compoundname>
+    <basecompoundref refid="d4/df7/class_scene_object_factory" prot="public" virt="non-virtual">SceneObjectFactory</basecompoundref>
+    <includes refid="d9/d8f/sceneobjectfactory_8h" local="no">sceneobjectfactory.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/da7/class_model_factory_1a145458dc259da4dd2236acb519e998af" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d0/de3/class_model" kindref="compound">Model</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Model&gt; ModelFactory::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="52" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/da7/class_model_factory_1acd9b3a20367746edc4a39ae6fc9d4ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModelFactory::ModelFactory</definition>
+        <argsstring>(const Vec3 &amp;position, const Mesh &amp;mesh)</argsstring>
+        <name>ModelFactory</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="47" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="db/da7/class_model_factory_1afdb5cf1902348dfd9e1cc88626f3ec0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ModelFactory::~ModelFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ModelFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/da7/class_model_factory_1a4dd20bd3b89ef69c366c3e1fe00ebb69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref></type>
+        <definition>SharedSceneObject ModelFactory::create</definition>
+        <argsstring>() override</argsstring>
+        <name>create</name>
+        <reimplements refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993">create</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="50" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="411">
+        <label>ModelFactory</label>
+        <link refid="db/da7/class_model_factory"/>
+        <childnode refid="412" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="413">
+        <label>ModelFactory</label>
+        <link refid="db/da7/class_model_factory"/>
+        <childnode refid="414" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="45" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="44" bodyend="53"/>
+    <listofallmembers>
+      <member refid="db/da7/class_model_factory_1a4dd20bd3b89ef69c366c3e1fe00ebb69" prot="public" virt="virtual"><scope>ModelFactory</scope><name>create</name></member>
+      <member refid="db/da7/class_model_factory_1a145458dc259da4dd2236acb519e998af" prot="private" virt="non-virtual"><scope>ModelFactory</scope><name>model</name></member>
+      <member refid="db/da7/class_model_factory_1acd9b3a20367746edc4a39ae6fc9d4ea8" prot="public" virt="non-virtual"><scope>ModelFactory</scope><name>ModelFactory</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" prot="public" virt="non-virtual"><scope>ModelFactory</scope><name>SceneObjectFactory</name></member>
+      <member refid="db/da7/class_model_factory_1afdb5cf1902348dfd9e1cc88626f3ec0e" prot="public" virt="virtual"><scope>ModelFactory</scope><name>~ModelFactory</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" prot="public" virt="virtual"><scope>ModelFactory</scope><name>~SceneObjectFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

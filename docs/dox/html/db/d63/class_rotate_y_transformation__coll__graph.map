@@ -1,0 +1,5 @@
+<map id="RotateYTransformation" name="RotateYTransformation">
+<area shape="rect" id="node2" href="$d1/d32/class_transformation.html" title="{Transformation\n||+ Transformation()\l+ ~Transformation()\l+ getMatrix()\l+ transform()\l+ resetOrigin()\l}" alt="" coords="5,490,143,626"/>
+<area shape="rect" id="node3" href="$d6/d3f/class_matrix.html" title="{Matrix\&lt; 4, 4, float \&gt;\n|&#45; m\l|+ Matrix()\l+ Matrix()\l+ operator()()\l+ operator()()\l+ isIdentity()\l+ setToIdentity()\l+ fill()\l+ transposed()\l+ operator+=()\l+ operator&#45;=()\l+ operator*=()\l+ operator/=()\l+ operator==()\l+ operator!=()\l+ data()\l+ data()\l}" alt="" coords="5,5,143,303"/>
+<area shape="rect" id="node4" href="$d3/de7/class_vector3.html" title="{Vector3\&lt; float \&gt;\n|&#45; xc\l&#45; yc\l&#45; zc\l|+ Vector3()\l+ Vector3()\l+ x()\l+ setX()\l+ y()\l+ setY()\l+ z()\l+ setZ()\l+ length()\l+ operator+=()\l+ operator&#45;=()\l+ operator*=()\l+ operator+()\l+ operator&#45;()\l+ operator&#45;()\l+ operator*()\l+ operator==()\l+ normalized()\l+ dot()\l+ cross()\l}" alt="" coords="167,365,283,751"/>
+</map>

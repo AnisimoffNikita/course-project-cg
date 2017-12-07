@@ -1,0 +1,5 @@
+digraph CylinderSizeCalculatorBase
+{
+graph [ rankdir="RL" ]
+"df/d7d/class_cylinder_size_calculator_base" [ label="CylinderSizeCalculatorBase\nabstract\n|+calibrate ( lines : const std::vector\< Line \> &, distance : float, radius : float, height : float ) : void \{pure-virtual\}\l+calibrate ( daig : float, diagPx : float ) : void \{pure-virtual\}\l+evaluate ( lines : const std::vector\< Line \> & ) : CylinderSize \{pure-virtual\}\l+~CylinderSizeCalculatorBase (  ) \{virtual\}\l|" shape="record" ]
+}

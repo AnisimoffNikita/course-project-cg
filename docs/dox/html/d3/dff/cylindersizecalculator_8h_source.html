@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_b82668e916e017fb161f8813909345a1.html">algorithm</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cylindersizecalculator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/dff/cylindersizecalculator_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SIZECALCULATOR_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SIZECALCULATOR_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d0b/cylindersizecalculatorbase_8h.html">cylindersizecalculatorbase.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d2/dc7/class_cylinder_size_calculator.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html">CylinderSizeCalculator</a> : <span class="keyword">public</span> <a class="code" href="../../df/d7d/class_cylinder_size_calculator_base.html">CylinderSizeCalculatorBase</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">    9</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a> = std::vector&lt;Line&gt;;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#ab4daaa75220e687cca3ce57e9db2fe57">CylinderSizeCalculator</a>();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#af8ff9a4ab970aa5fcdca273112789978">~CylinderSizeCalculator</a>();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d1/d47/class_cylinder_size.html">CylinderSize</a> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a979a607bd694c5819355793d231c5df2">evaluate</a>(<span class="keyword">const</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a> &amp;<a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">lines</a>);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a411f74a0f0baa7c393fe53c36d957fd4">calibrate</a>(<span class="keyword">const</span> std::vector&lt;Line&gt; &amp;<a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">lines</a>, <span class="keywordtype">float</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a1d88b87623a24582f968bb06acd80b8c">distance</a>,</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                           <span class="keywordtype">float</span> radius, <span class="keywordtype">float</span> height);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a411f74a0f0baa7c393fe53c36d957fd4">calibrate</a>(<span class="keywordtype">float</span> diag, <span class="keywordtype">float</span> diagPx);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#ad908e8325d6a03c7b4d1b55cf87eade9">findEdges</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a4afc5d76534bc67a394a0f78d21a4811">calculateSize</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">   23</a></span>&#160;    <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">Lines</a> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">lines</a>;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d2/dc7/class_cylinder_size_calculator.html#a13af96a82c344f22f3d2749d4dafa15c">   24</a></span>&#160;    <a class="code" href="../../d1/d47/class_cylinder_size.html">CylinderSize</a> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a13af96a82c344f22f3d2749d4dafa15c">size</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d2/dc7/class_cylinder_size_calculator.html#a1d88b87623a24582f968bb06acd80b8c">   26</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#a1d88b87623a24582f968bb06acd80b8c">distance</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/dc7/class_cylinder_size_calculator.html#ad0ffced643e054737c077c3f654a4608">   27</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d2/dc7/class_cylinder_size_calculator.html#ad0ffced643e054737c077c3f654a4608">factor</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // SIZECALCULATOR_H</span></div><div class="ttc" id="class_cylinder_size_calculator_html_ad908e8325d6a03c7b4d1b55cf87eade9"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#ad908e8325d6a03c7b4d1b55cf87eade9">CylinderSizeCalculator::findEdges</a></div><div class="ttdeci">void findEdges()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00039">cylindersizecalculator.cpp:39</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_a7c30882e5312856d6757dc0022eb231f"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#a7c30882e5312856d6757dc0022eb231f">CylinderSizeCalculator::Lines</a></div><div class="ttdeci">std::vector&lt; Line &gt; Lines</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/cylindersizecalculator_8h_source.html#l00009">cylindersizecalculator.h:9</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_a411f74a0f0baa7c393fe53c36d957fd4"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#a411f74a0f0baa7c393fe53c36d957fd4">CylinderSizeCalculator::calibrate</a></div><div class="ttdeci">virtual void calibrate(const std::vector&lt; Line &gt; &amp;lines, float distance, float radius, float height)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00022">cylindersizecalculator.cpp:22</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_af8ff9a4ab970aa5fcdca273112789978"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#af8ff9a4ab970aa5fcdca273112789978">CylinderSizeCalculator::~CylinderSizeCalculator</a></div><div class="ttdeci">virtual ~CylinderSizeCalculator()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00010">cylindersizecalculator.cpp:10</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_a979a607bd694c5819355793d231c5df2"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#a979a607bd694c5819355793d231c5df2">CylinderSizeCalculator::evaluate</a></div><div class="ttdeci">virtual CylinderSize evaluate(const Lines &amp;lines)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00014">cylindersizecalculator.cpp:14</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_base_html"><div class="ttname"><a href="../../df/d7d/class_cylinder_size_calculator_base.html">CylinderSizeCalculatorBase</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0b/cylindersizecalculatorbase_8h_source.html#l00010">cylindersizecalculatorbase.h:10</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_a1d88b87623a24582f968bb06acd80b8c"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#a1d88b87623a24582f968bb06acd80b8c">CylinderSizeCalculator::distance</a></div><div class="ttdeci">float distance</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/cylindersizecalculator_8h_source.html#l00026">cylindersizecalculator.h:26</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_ad0ffced643e054737c077c3f654a4608"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#ad0ffced643e054737c077c3f654a4608">CylinderSizeCalculator::factor</a></div><div class="ttdeci">float factor</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/cylindersizecalculator_8h_source.html#l00027">cylindersizecalculator.h:27</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_a4afc5d76534bc67a394a0f78d21a4811"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#a4afc5d76534bc67a394a0f78d21a4811">CylinderSizeCalculator::calculateSize</a></div><div class="ttdeci">void calculateSize()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00089">cylindersizecalculator.cpp:89</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_a8a329c2526e67545603769c720d76692"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#a8a329c2526e67545603769c720d76692">CylinderSizeCalculator::lines</a></div><div class="ttdeci">Lines lines</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/cylindersizecalculator_8h_source.html#l00023">cylindersizecalculator.h:23</a></div></div>
+<div class="ttc" id="class_cylinder_size_html"><div class="ttname"><a href="../../d1/d47/class_cylinder_size.html">CylinderSize</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dfa/cylindersize_8h_source.html#l00005">cylindersize.h:5</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html">CylinderSizeCalculator</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/cylindersizecalculator_8h_source.html#l00006">cylindersizecalculator.h:6</a></div></div>
+<div class="ttc" id="cylindersizecalculatorbase_8h_html"><div class="ttname"><a href="../../db/d0b/cylindersizecalculatorbase_8h.html">cylindersizecalculatorbase.h</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_ab4daaa75220e687cca3ce57e9db2fe57"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#ab4daaa75220e687cca3ce57e9db2fe57">CylinderSizeCalculator::CylinderSizeCalculator</a></div><div class="ttdeci">CylinderSizeCalculator()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d57/cylindersizecalculator_8cpp_source.html#l00006">cylindersizecalculator.cpp:6</a></div></div>
+<div class="ttc" id="class_cylinder_size_calculator_html_a13af96a82c344f22f3d2749d4dafa15c"><div class="ttname"><a href="../../d2/dc7/class_cylinder_size_calculator.html#a13af96a82c344f22f3d2749d4dafa15c">CylinderSizeCalculator::size</a></div><div class="ttdeci">CylinderSize size</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/cylindersizecalculator_8h_source.html#l00024">cylindersizecalculator.h:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

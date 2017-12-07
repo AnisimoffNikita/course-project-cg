@@ -1,0 +1,5 @@
+digraph PerspectiveMatrix
+{
+graph [ rankdir="RL" ]
+"d6/d8c/class_perspective_matrix" [ label="PerspectiveMatrix\n|+create ( fovy : float, aspect : float, zNear : float, zFar : float ) : Mat4 \{static\}\l|" shape="record" ]
+}

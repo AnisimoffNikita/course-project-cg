@@ -1,0 +1,5 @@
+digraph CameraFactory
+{
+graph [ rankdir="RL" ]
+"d7/ddc/class_camera_factory" [ label="CameraFactory\n|+CameraFactory ( position : const Vec3 &, lookAt : const Vec3 &, up : const Vec3 &, data : const PerspectiveData & )\l/+create (  ) : SharedSceneObject \{virtual\}\l+~CameraFactory (  ) \{virtual\}\l|-camera : std::unique_ptr\< Camera \>\l" shape="record" ]
+}

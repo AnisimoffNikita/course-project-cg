@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d3/d0b/class_gaussian_blur" kind="class" language="C++" prot="public">
+    <compoundname>GaussianBlur</compoundname>
+    <basecompoundref refid="d3/d14/class_blur" prot="public" virt="non-virtual">Blur</basecompoundref>
+    <includes refid="dc/d32/gaussianblur_8h" local="no">gaussianblur.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d0b/class_gaussian_blur_1ab43cc1fff30574e2e04876fda4a55441" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float GaussianBlur::sigma</definition>
+        <argsstring></argsstring>
+        <name>sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="21" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d0b/class_gaussian_blur_1ab71bceac5e6b8f3f2d2868f40ff0f80b" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 GaussianBlur::kernelSize</definition>
+        <argsstring></argsstring>
+        <name>kernelSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d0b/class_gaussian_blur_1a673756a20ccaacc46de77e6c355276d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GaussianBlur::GaussianBlur</definition>
+        <argsstring>(float sigma=1.4, uint8 kernelSize=3)</argsstring>
+        <name>GaussianBlur</name>
+        <param>
+          <type>float</type>
+          <declname>sigma</declname>
+          <defval>1.4</defval>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>kernelSize</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d0b/class_gaussian_blur_1a881b005db6cc737bf1d6a8ab3d32c6b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>GaussianBlur::~GaussianBlur</definition>
+        <argsstring>()</argsstring>
+        <name>~GaussianBlur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d0b/class_gaussian_blur_1a6af6684bdf5e86e5c9a79fe1f3a8c183" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GaussianBlur::process</definition>
+        <argsstring>(Image &amp;image)</argsstring>
+        <name>process</name>
+        <reimplements refid="d3/d14/class_blur_1a675fd2caa4a262e8140bdff64912bab4">process</reimplements>
+        <param>
+          <type><ref refid="de/d73/class_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp" bodystart="16" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d0b/class_gaussian_blur_1a409c05410353b2bb7abfa0ac0e7e2279" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float GaussianBlur::getSigma</definition>
+        <argsstring>() const </argsstring>
+        <name>getSigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d0b/class_gaussian_blur_1aa4203a493fb56be7dec2af1e90667af1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GaussianBlur::setSigma</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setSigma</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d0b/class_gaussian_blur_1a47c6c015416e7f0770d2990beb85a48c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 GaussianBlur::getKernelSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getKernelSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d0b/class_gaussian_blur_1ad8b1e0c74123f050daa79d20c3636064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GaussianBlur::setKernelSize</definition>
+        <argsstring>(const uint8 &amp;value)</argsstring>
+        <name>setKernelSize</name>
+        <param>
+          <type>const <ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="330">
+        <label>Blur</label>
+        <link refid="d3/d14/class_blur"/>
+      </node>
+      <node id="329">
+        <label>GaussianBlur</label>
+        <link refid="d3/d0b/class_gaussian_blur"/>
+        <childnode refid="330" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="332">
+        <label>Blur</label>
+        <link refid="d3/d14/class_blur"/>
+      </node>
+      <node id="331">
+        <label>GaussianBlur</label>
+        <link refid="d3/d0b/class_gaussian_blur"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h" bodystart="7" bodyend="23"/>
+    <listofallmembers>
+      <member refid="d3/d0b/class_gaussian_blur_1a673756a20ccaacc46de77e6c355276d2" prot="public" virt="non-virtual"><scope>GaussianBlur</scope><name>GaussianBlur</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1a47c6c015416e7f0770d2990beb85a48c" prot="public" virt="non-virtual"><scope>GaussianBlur</scope><name>getKernelSize</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1a409c05410353b2bb7abfa0ac0e7e2279" prot="public" virt="non-virtual"><scope>GaussianBlur</scope><name>getSigma</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1ab71bceac5e6b8f3f2d2868f40ff0f80b" prot="private" virt="non-virtual"><scope>GaussianBlur</scope><name>kernelSize</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1a6af6684bdf5e86e5c9a79fe1f3a8c183" prot="public" virt="virtual"><scope>GaussianBlur</scope><name>process</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1ad8b1e0c74123f050daa79d20c3636064" prot="public" virt="non-virtual"><scope>GaussianBlur</scope><name>setKernelSize</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1aa4203a493fb56be7dec2af1e90667af1" prot="public" virt="non-virtual"><scope>GaussianBlur</scope><name>setSigma</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1ab43cc1fff30574e2e04876fda4a55441" prot="private" virt="non-virtual"><scope>GaussianBlur</scope><name>sigma</name></member>
+      <member refid="d3/d14/class_blur_1a6b1d2a771f096d933b72f4dff5f07d2d" prot="public" virt="virtual"><scope>GaussianBlur</scope><name>~Blur</name></member>
+      <member refid="d3/d0b/class_gaussian_blur_1a881b005db6cc737bf1d6a8ab3d32c6b1" prot="public" virt="virtual"><scope>GaussianBlur</scope><name>~GaussianBlur</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,291 @@
+\hypertarget{class_canny_edge_detector}{}\section{Класс Canny\+Edge\+Detector}
+\label{class_canny_edge_detector}\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+
+
+{\ttfamily \#include $<$cannyedgedetector.\+h$>$}
+
+
+
+Граф наследования\+:Canny\+Edge\+Detector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d3/d83/class_canny_edge_detector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Canny\+Edge\+Detector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/dd8/class_canny_edge_detector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_canny_edge_detector_a6f7de6f12f8b52563d28e612a46f7a0d}{Canny\+Edge\+Detector} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_canny_edge_detector_ae88472e936f883044b00e8cd50f662c6}{min\+Thresh}=80, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_canny_edge_detector_ab551b06077d0221f1caa6e5e4cce48d9}{max\+Thresh}=100)
+\item 
+virtual \hyperlink{class_canny_edge_detector_ad6f031b85ac2fc2f916ecaa04c536c01}{$\sim$\+Canny\+Edge\+Detector} ()
+\item 
+virtual void \hyperlink{class_canny_edge_detector_ae97e095e14e43d763a8fc2563f6e9a87}{process} (\hyperlink{class_image}{Image} \&\hyperlink{class_canny_edge_detector_a271e3c9036a5cb2611bb1b7da4d7d146}{image})
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_canny_edge_detector_a38218d65e7d450dc226e3bbb0c7043e9}{get\+Gauss\+Kernel\+Size} () const 
+\item 
+void \hyperlink{class_canny_edge_detector_adb6b71e26f03edea19d3fef041fd6cbd}{set\+Gauss\+Kernel\+Size} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} value)
+\item 
+float \hyperlink{class_canny_edge_detector_ac3e362832dcd3e18801bed15856e79b4}{get\+Gauss\+Sigma} () const 
+\item 
+void \hyperlink{class_canny_edge_detector_afc77ac77d033264009ea66670eeec9d0}{set\+Gauss\+Sigma} (float value)
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_canny_edge_detector_aa0ae63194968f376d4ea6e6d7e13f285}{get\+Min\+Thresh} () const 
+\item 
+void \hyperlink{class_canny_edge_detector_a825df00f677a9a949d0dcb87939a99b5}{set\+Min\+Thresh} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} value)
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_canny_edge_detector_aa3cb693f65b9a07e5f245d7ecadf9c5c}{get\+Max\+Thresh} () const 
+\item 
+void \hyperlink{class_canny_edge_detector_ae48e5be375a3a3d23c4dc81a158149c7}{set\+Max\+Thresh} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} value)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_canny_edge_detector_ad5843016a5e861eed74fa24f4abd688b}{gradients} ()
+\item 
+void \hyperlink{class_canny_edge_detector_a8622531b7410c002284f466df043af13}{non\+Max\+Suppression} ()
+\item 
+void \hyperlink{class_canny_edge_detector_a0c6b710be023dec7cfd38e55d42066a3}{float\+Threshold} ()
+\item 
+void \hyperlink{class_canny_edge_detector_ab4bf8eb092943ab7042762ee48aeb0c1}{hysteresis} ()
+\item 
+void \hyperlink{class_canny_edge_detector_a3f180b6eb26a8afa34a03c8cdd0781ca}{hysteresis\+Recursive} (\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} y, \hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} x)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_canny_edge_detector_ae88472e936f883044b00e8cd50f662c6}{min\+Thresh}
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_canny_edge_detector_ab551b06077d0221f1caa6e5e4cce48d9}{max\+Thresh}
+\item 
+\hyperlink{class_grayscale_image}{Grayscale\+Image} \hyperlink{class_canny_edge_detector_a271e3c9036a5cb2611bb1b7da4d7d146}{image}
+\item 
+\hyperlink{class_grayscale_image}{Grayscale\+Image} \hyperlink{class_canny_edge_detector_a96275be60c2ffdc3798384f7a3588684}{directions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле cannyedgedetector.\+h строка 8
+
+
+
+\subsection{Конструктор(ы)}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{Canny\+Edge\+Detector(int32 min\+Thresh=80, int32 max\+Thresh=100)}{CannyEdgeDetector(int32 minThresh=80, int32 maxThresh=100)}}]{\setlength{\rightskip}{0pt plus 5cm}Canny\+Edge\+Detector\+::\+Canny\+Edge\+Detector (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{min\+Thresh = {\ttfamily 80}, }
+\item[{{\bf int32}}]{max\+Thresh = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_canny_edge_detector_a6f7de6f12f8b52563d28e612a46f7a0d}{}\label{class_canny_edge_detector_a6f7de6f12f8b52563d28e612a46f7a0d}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 6
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!````~Canny\+Edge\+Detector@{$\sim$\+Canny\+Edge\+Detector}}
+\index{````~Canny\+Edge\+Detector@{$\sim$\+Canny\+Edge\+Detector}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{$\sim$\+Canny\+Edge\+Detector()}{~CannyEdgeDetector()}}]{\setlength{\rightskip}{0pt plus 5cm}Canny\+Edge\+Detector\+::$\sim$\+Canny\+Edge\+Detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_canny_edge_detector_ad6f031b85ac2fc2f916ecaa04c536c01}{}\label{class_canny_edge_detector_ad6f031b85ac2fc2f916ecaa04c536c01}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 12
+
+
+
+\subsection{Методы}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!float\+Threshold@{float\+Threshold}}
+\index{float\+Threshold@{float\+Threshold}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{float\+Threshold()}{floatThreshold()}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::float\+Threshold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_a0c6b710be023dec7cfd38e55d42066a3}{}\label{class_canny_edge_detector_a0c6b710be023dec7cfd38e55d42066a3}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 143
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!get\+Gauss\+Kernel\+Size@{get\+Gauss\+Kernel\+Size}}
+\index{get\+Gauss\+Kernel\+Size@{get\+Gauss\+Kernel\+Size}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{get\+Gauss\+Kernel\+Size() const }{getGaussKernelSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Canny\+Edge\+Detector\+::get\+Gauss\+Kernel\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_canny_edge_detector_a38218d65e7d450dc226e3bbb0c7043e9}{}\label{class_canny_edge_detector_a38218d65e7d450dc226e3bbb0c7043e9}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!get\+Gauss\+Sigma@{get\+Gauss\+Sigma}}
+\index{get\+Gauss\+Sigma@{get\+Gauss\+Sigma}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{get\+Gauss\+Sigma() const }{getGaussSigma() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Canny\+Edge\+Detector\+::get\+Gauss\+Sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_canny_edge_detector_ac3e362832dcd3e18801bed15856e79b4}{}\label{class_canny_edge_detector_ac3e362832dcd3e18801bed15856e79b4}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!get\+Max\+Thresh@{get\+Max\+Thresh}}
+\index{get\+Max\+Thresh@{get\+Max\+Thresh}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{get\+Max\+Thresh() const }{getMaxThresh() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Canny\+Edge\+Detector\+::get\+Max\+Thresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_canny_edge_detector_aa3cb693f65b9a07e5f245d7ecadf9c5c}{}\label{class_canny_edge_detector_aa3cb693f65b9a07e5f245d7ecadf9c5c}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 243
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!get\+Min\+Thresh@{get\+Min\+Thresh}}
+\index{get\+Min\+Thresh@{get\+Min\+Thresh}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{get\+Min\+Thresh() const }{getMinThresh() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Canny\+Edge\+Detector\+::get\+Min\+Thresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_canny_edge_detector_aa0ae63194968f376d4ea6e6d7e13f285}{}\label{class_canny_edge_detector_aa0ae63194968f376d4ea6e6d7e13f285}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 253
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!gradients@{gradients}}
+\index{gradients@{gradients}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{gradients()}{gradients()}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::gradients (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_ad5843016a5e861eed74fa24f4abd688b}{}\label{class_canny_edge_detector_ad5843016a5e861eed74fa24f4abd688b}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 28
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!hysteresis@{hysteresis}}
+\index{hysteresis@{hysteresis}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{hysteresis()}{hysteresis()}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::hysteresis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_ab4bf8eb092943ab7042762ee48aeb0c1}{}\label{class_canny_edge_detector_ab4bf8eb092943ab7042762ee48aeb0c1}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 169
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!hysteresis\+Recursive@{hysteresis\+Recursive}}
+\index{hysteresis\+Recursive@{hysteresis\+Recursive}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{hysteresis\+Recursive(uint32 y, uint32 x)}{hysteresisRecursive(uint32 y, uint32 x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::hysteresis\+Recursive (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32}}]{y, }
+\item[{{\bf uint32}}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_a3f180b6eb26a8afa34a03c8cdd0781ca}{}\label{class_canny_edge_detector_a3f180b6eb26a8afa34a03c8cdd0781ca}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 194
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!non\+Max\+Suppression@{non\+Max\+Suppression}}
+\index{non\+Max\+Suppression@{non\+Max\+Suppression}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{non\+Max\+Suppression()}{nonMaxSuppression()}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::non\+Max\+Suppression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_a8622531b7410c002284f466df043af13}{}\label{class_canny_edge_detector_a8622531b7410c002284f466df043af13}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 102
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!process@{process}}
+\index{process@{process}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{process(\+Image \&image)}{process(Image &image)}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::process (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} \&}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_canny_edge_detector_ae97e095e14e43d763a8fc2563f6e9a87}{}\label{class_canny_edge_detector_ae97e095e14e43d763a8fc2563f6e9a87}
+
+
+Замещает \hyperlink{class_edge_detector_aefa2d90e960e7dc3171bccadbed4a13e}{Edge\+Detector}.
+
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 16
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!set\+Gauss\+Kernel\+Size@{set\+Gauss\+Kernel\+Size}}
+\index{set\+Gauss\+Kernel\+Size@{set\+Gauss\+Kernel\+Size}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Gauss\+Kernel\+Size(int32 value)}{setGaussKernelSize(int32 value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::set\+Gauss\+Kernel\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_canny_edge_detector_adb6b71e26f03edea19d3fef041fd6cbd}{}\label{class_canny_edge_detector_adb6b71e26f03edea19d3fef041fd6cbd}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!set\+Gauss\+Sigma@{set\+Gauss\+Sigma}}
+\index{set\+Gauss\+Sigma@{set\+Gauss\+Sigma}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Gauss\+Sigma(float value)}{setGaussSigma(float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::set\+Gauss\+Sigma (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_canny_edge_detector_afc77ac77d033264009ea66670eeec9d0}{}\label{class_canny_edge_detector_afc77ac77d033264009ea66670eeec9d0}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!set\+Max\+Thresh@{set\+Max\+Thresh}}
+\index{set\+Max\+Thresh@{set\+Max\+Thresh}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Max\+Thresh(int32 value)}{setMaxThresh(int32 value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::set\+Max\+Thresh (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_canny_edge_detector_ae48e5be375a3a3d23c4dc81a158149c7}{}\label{class_canny_edge_detector_ae48e5be375a3a3d23c4dc81a158149c7}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 248
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!set\+Min\+Thresh@{set\+Min\+Thresh}}
+\index{set\+Min\+Thresh@{set\+Min\+Thresh}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Min\+Thresh(int32 value)}{setMinThresh(int32 value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Canny\+Edge\+Detector\+::set\+Min\+Thresh (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_canny_edge_detector_a825df00f677a9a949d0dcb87939a99b5}{}\label{class_canny_edge_detector_a825df00f677a9a949d0dcb87939a99b5}
+
+
+См. определение в файле cannyedgedetector.\+cpp строка 258
+
+
+
+\subsection{Данные класса}
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!directions@{directions}}
+\index{directions@{directions}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{directions}{directions}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Grayscale\+Image} Canny\+Edge\+Detector\+::directions\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_a96275be60c2ffdc3798384f7a3588684}{}\label{class_canny_edge_detector_a96275be60c2ffdc3798384f7a3588684}
+
+
+См. определение в файле cannyedgedetector.\+h строка 39
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!image@{image}}
+\index{image@{image}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{image}{image}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Grayscale\+Image} Canny\+Edge\+Detector\+::image\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_a271e3c9036a5cb2611bb1b7da4d7d146}{}\label{class_canny_edge_detector_a271e3c9036a5cb2611bb1b7da4d7d146}
+
+
+См. определение в файле cannyedgedetector.\+h строка 38
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!max\+Thresh@{max\+Thresh}}
+\index{max\+Thresh@{max\+Thresh}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{max\+Thresh}{maxThresh}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Canny\+Edge\+Detector\+::max\+Thresh\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_ab551b06077d0221f1caa6e5e4cce48d9}{}\label{class_canny_edge_detector_ab551b06077d0221f1caa6e5e4cce48d9}
+
+
+См. определение в файле cannyedgedetector.\+h строка 36
+
+\index{Canny\+Edge\+Detector@{Canny\+Edge\+Detector}!min\+Thresh@{min\+Thresh}}
+\index{min\+Thresh@{min\+Thresh}!Canny\+Edge\+Detector@{Canny\+Edge\+Detector}}
+\subsubsection[{\texorpdfstring{min\+Thresh}{minThresh}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Canny\+Edge\+Detector\+::min\+Thresh\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_canny_edge_detector_ae88472e936f883044b00e8cd50f662c6}{}\label{class_canny_edge_detector_ae88472e936f883044b00e8cd50f662c6}
+
+
+См. определение в файле cannyedgedetector.\+h строка 35
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/edgedetector/\hyperlink{cannyedgedetector_8h}{cannyedgedetector.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/edgedetector/\hyperlink{cannyedgedetector_8cpp}{cannyedgedetector.\+cpp}\end{DoxyCompactItemize}

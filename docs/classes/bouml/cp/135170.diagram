@@ -1,0 +1,66 @@
+format 215
+
+classcanvas 128002 class_ref 137986 // Scene
+  classdiagramsettings member_max_width 0 end
+  xyz 264 153 2000
+end
+classcanvas 128386 class_ref 132610 // ActionManager
+  classdiagramsettings member_max_width 0 end
+  xyz 541 479 2000
+end
+classcanvas 128642 class_ref 135042 // WeakLight
+  classdiagramsettings member_max_width 0 end
+  xyz 509 216 2006
+end
+classcanvas 129282 class_ref 134274 // WeakCamera
+  classdiagramsettings member_max_width 0 end
+  xyz 260 41 2006
+end
+classcanvas 130050 class_ref 135426 // Renderer
+  classdiagramsettings member_max_width 0 end
+  xyz 32 432 2018
+end
+classcanvas 130306 class_ref 141058 // ModelView2
+  classdiagramsettings member_max_width 0 end
+  xyz 261 400 3005
+end
+classcanvas 130946 class_ref 138114 // SharedSceneObject
+  classdiagramsettings member_max_width 0 end
+  xyz 19 217 2006
+end
+relationcanvas 128898 relation_ref 138626 // <directional composition>
+  decenter_end 550
+  from ref 128002 z 2007 stereotype "<<vector>>" xyz 421.5 252 2007 to ref 128642
+  role_a_pos 464 224 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 138498 // <directional composition>
+  from ref 128002 z 2007 to ref 129282
+  role_a_pos 347 120 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130562 relation_ref 143362 // <directional composition>
+  decenter_begin 483
+  from ref 130306 z 3006 stereotype "<<unique_ptr>>" xyz 341 380 3006 to ref 128002
+  role_a_pos 344 368 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130690 relation_ref 143490 // <directional composition>
+  decenter_end 514
+  from ref 130306 z 3006 stereotype "<<unique_ptr>>" xyz 153 557 3006 to ref 130050
+  role_a_pos 160 529 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130818 relation_ref 143618 // <directional composition>
+  decenter_end 523
+  from ref 130306 z 3006 stereotype "<<unique_ptr>>" xyz 424.5 556.5 3006 to ref 128386
+  role_a_pos 433 528 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131202 relation_ref 138370 // <directional composition>
+  decenter_end 550
+  from ref 128002 z 2007 stereotype "<<vector>>" xyz 180.5 253.5 2007 to ref 130946
+  role_a_pos 183 225 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

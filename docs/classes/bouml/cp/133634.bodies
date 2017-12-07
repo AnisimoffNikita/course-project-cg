@@ -1,0 +1,30 @@
+class Camera
+!!!141954.cpp!!!	Camera(in position : Vec3, in lookAt : Vec3, in up : Vec3, in projection : Mat4)
+    updateViewMatrix();
+!!!142082.cpp!!!	draw(inout  : std::unique_ptr<Renderer>) : void
+    return;
+!!!142210.cpp!!!	transform(inout transformation : Transformation) : void
+    transformation.transform(position);
+    updateViewMatrix();
+!!!142338.cpp!!!	isCamera() : bool
+    return true;
+!!!142466.cpp!!!	isLight() : bool
+    return false;
+!!!142594.cpp!!!	setPosition(in value : Vec3) : void
+    position = value;
+    updateViewMatrix();
+!!!142722.cpp!!!	getLookAt() : Vec3
+    return lookAt;
+!!!142850.cpp!!!	setLookAt(in target : Vec3) : void
+    lookAt = target;
+    updateViewMatrix();
+!!!142978.cpp!!!	getEyeVector() : Vec3
+    return lookAt - position;
+!!!143106.cpp!!!	getPVMatrix() : Mat4
+    return projectionMatrix * viewMatrix;
+!!!143234.cpp!!!	getPMatrix() : Mat4
+    return projectionMatrix;
+!!!143362.cpp!!!	getVMatrix() : Mat4
+    return viewMatrix;
+!!!143490.cpp!!!	updateViewMatrix() : void
+    viewMatrix = ViewMatrix::create(position, lookAt, up);

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dc/d32/gaussianblur_8h" kind="file" language="C++">
+    <compoundname>gaussianblur.h</compoundname>
+    <includes refid="d4/df5/blur_8h" local="yes">blur.h</includes>
+    <includes refid="d3/d22/number_8h" local="yes">src/number.h</includes>
+    <includedby refid="d0/d8b/gaussianblur_8cpp" local="yes">Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp</includedby>
+    <includedby refid="d9/d53/mainwindow_8h" local="yes">Projects/labs/course_project_cg/src/mainwindow.h</includedby>
+    <incdepgraph>
+      <node id="1955">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1954" relation="include">
+        </childnode>
+        <childnode refid="1956" relation="include">
+        </childnode>
+        <childnode refid="1957" relation="include">
+        </childnode>
+      </node>
+      <node id="1957">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="1956" relation="include">
+        </childnode>
+      </node>
+      <node id="1956">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="1953">
+        <label>QImage</label>
+      </node>
+      <node id="1952">
+        <label>src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1954" relation="include">
+        </childnode>
+        <childnode refid="1955" relation="include">
+        </childnode>
+        <childnode refid="1956" relation="include">
+        </childnode>
+        <childnode refid="1957" relation="include">
+        </childnode>
+      </node>
+      <node id="1950">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h</label>
+        <link refid="gaussianblur.h"/>
+        <childnode refid="1951" relation="include">
+        </childnode>
+        <childnode refid="1956" relation="include">
+        </childnode>
+      </node>
+      <node id="1954">
+        <label>memory</label>
+      </node>
+      <node id="1951">
+        <label>blur.h</label>
+        <link refid="d4/df5/blur_8h"/>
+        <childnode refid="1952" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1962">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="1959">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.cpp</label>
+        <link refid="d0/d8b/gaussianblur_8cpp"/>
+      </node>
+      <node id="1961">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="1960">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="1961" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+      </node>
+      <node id="1958">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h</label>
+        <link refid="gaussianblur.h"/>
+        <childnode refid="1959" relation="include">
+        </childnode>
+        <childnode refid="1960" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d3/d0b/class_gaussian_blur" prot="public">GaussianBlur</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GAUSSBLUR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAUSSBLUR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/df5/blur_8h" kindref="compound">blur.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d22/number_8h" kindref="compound">src/number.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d3/d0b/class_gaussian_blur" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/d0b/class_gaussian_blur" kindref="compound">GaussianBlur</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d3/d14/class_blur" kindref="compound">Blur</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d0b/class_gaussian_blur_1a673756a20ccaacc46de77e6c355276d2" kindref="member">GaussianBlur</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d3/d0b/class_gaussian_blur_1ab43cc1fff30574e2e04876fda4a55441" kindref="member">sigma</ref><sp/>=<sp/>1.4,<sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d3/d0b/class_gaussian_blur_1ab71bceac5e6b8f3f2d2868f40ff0f80b" kindref="member">kernelSize</ref><sp/>=<sp/>3);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d3/d0b/class_gaussian_blur_1a881b005db6cc737bf1d6a8ab3d32c6b1" kindref="member">~GaussianBlur</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d0b/class_gaussian_blur_1a6af6684bdf5e86e5c9a79fe1f3a8c183" kindref="member">process</ref>(<ref refid="de/d73/class_image" kindref="compound">Image</ref><sp/>&amp;image);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d3/d0b/class_gaussian_blur_1a409c05410353b2bb7abfa0ac0e7e2279" kindref="member">getSigma</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d0b/class_gaussian_blur_1aa4203a493fb56be7dec2af1e90667af1" kindref="member">setSigma</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d3/d0b/class_gaussian_blur_1a47c6c015416e7f0770d2990beb85a48c" kindref="member">getKernelSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d0b/class_gaussian_blur_1ad8b1e0c74123f050daa79d20c3636064" kindref="member">setKernelSize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="d3/d0b/class_gaussian_blur_1ab43cc1fff30574e2e04876fda4a55441" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d3/d0b/class_gaussian_blur_1ab43cc1fff30574e2e04876fda4a55441" kindref="member">sigma</ref>;</highlight></codeline>
+<codeline lineno="22" refid="d3/d0b/class_gaussian_blur_1ab71bceac5e6b8f3f2d2868f40ff0f80b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="d3/d0b/class_gaussian_blur_1ab71bceac5e6b8f3f2d2868f40ff0f80b" kindref="member">kernelSize</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GAUSSBLUR_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/blur/gaussianblur.h"/>
+  </compounddef>
+</doxygen>

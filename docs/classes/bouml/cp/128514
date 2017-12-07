@@ -1,0 +1,1733 @@
+format 215
+"math" // src::math
+  revision 1
+  modified_by 2 "nikita"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/nikita/Projects/labs/course_project_cg/src/math/"
+  cpp_src_dir "/home/nikita/Projects/labs/course_project_cg/src/math/"
+  classview 128386 "math"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 131074 "CylinderSize"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 167426 "CylinderSize"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param in name "height" explicit_type "float"
+	    defaultvalue "0"
+	  param in name "radius" explicit_type "float"
+	    defaultvalue "0"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)} :
+    height(height),
+    radius(radius)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 167554 "getRadius"
+	preserve_cpp_body_indent const public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 167682 "setRadius"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 167810 "getHeight"
+	preserve_cpp_body_indent const public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 167938 "setHeight"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 133634 "height"
+	private explicit_type "float"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133762 "radius"
+	private explicit_type "float"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 132482 "Line"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 168322 "Line"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 168450 "Line"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param in name "p1" type class_ref 139906 // Vec2
+	  param in name "p2" type class_ref 139906 // Vec2
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} & ${p0}, const ${t1} & ${p1}${)} :
+    p1(p1),
+    p2(p2)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 168578 "getP1"
+	preserve_cpp_body_indent const public return_type class_ref 139906 // Vec2
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 168706 "setP1"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "value" type class_ref 139906 // Vec2
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 168834 "getP2"
+	preserve_cpp_body_indent const public return_type class_ref 139906 // Vec2
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 168962 "setP2"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "value" type class_ref 139906 // Vec2
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 169090 "length"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 141954 // p1 (<directional composition>)
+	relation 141954 *-->
+	  a role_name "p1" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 141954 // p1 (<directional composition>)
+	  b parent class_ref 139906 // Vec2
+      end
+
+      classrelation 142082 // p2 (<directional composition>)
+	relation 142082 *-->
+	  a role_name "p2" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 142082 // p2 (<directional composition>)
+	  b parent class_ref 139906 // Vec2
+      end
+    end
+
+    class 133122 "Vec3"
+      visibility package stereotype "template_typedef"
+      nactuals 1
+      actual class class_ref 140546 // Vector3
+        rank 0 explicit_value "float"
+      cpp_decl "${comment}${template}using ${name} = ${inherit};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 142594 // <realization>
+	relation 142594 -_-|>
+	  stereotype "bind"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 142594 // <realization>
+	  b parent class_ref 140546 // Vector3
+      end
+    end
+
+    class 133762 "Mat4"
+      visibility package stereotype "template_typedef"
+      nactuals 3
+      actual class class_ref 139650 // Matrix
+        rank 0 explicit_value "4"
+      actual class class_ref 139650 // Matrix
+        rank 1 explicit_value "4"
+      actual class class_ref 139650 // Matrix
+        rank 2 explicit_value "float"
+      cpp_decl "${comment}${template}using ${name} = ${inherit};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 142338 // <realization>
+	relation 142338 -_-|>
+	  stereotype "bind"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 142338 // <realization>
+	  b parent class_ref 139650 // Matrix
+      end
+    end
+
+    class 139522 "HomogeneousVertex"
+      visibility package stereotype "template_typedef"
+      nactuals 3
+      actual class class_ref 139650 // Matrix
+        rank 0 explicit_value "4"
+      actual class class_ref 139650 // Matrix
+        rank 1 explicit_value "1"
+      actual class class_ref 139650 // Matrix
+        rank 2 explicit_value "float"
+      cpp_decl "${comment}${template}using ${name} = ${inherit};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 141826 // <realization>
+	relation 141826 -_-|>
+	  stereotype "bind"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 141826 // <realization>
+	  b parent class_ref 139650 // Matrix
+      end
+    end
+
+    class 139650 "Matrix"
+      visibility package 
+      nformals 3
+      formal name "M" type "int32" explicit_default_value ""
+        explicit_extends ""
+      formal name "N" type " int32" explicit_default_value ""
+        explicit_extends ""
+      formal name "T" type "typename" explicit_default_value ""
+        explicit_extends ""
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 171010 "Matrix"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 171138 "Matrix"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type ""
+	nparams 1
+	  param in name "values" explicit_type "T"
+	cpp_decl "    ${comment}${inline}explicit ${name}${(}const ${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 171266 "operator ()"
+	preserve_cpp_body_indent const cpp_inline public explicit_return_type "T"
+	nparams 2
+	  param in name "row" type class_ref 129026 // int32
+	  param in name "col" type class_ref 129026 // int32
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} & ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 171394 "operator ()"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type "T"
+	nparams 2
+	  param in name "row" type class_ref 129026 // int32
+	  param in name "col" type class_ref 129026 // int32
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 171522 "isIdentity"
+	preserve_cpp_body_indent const cpp_inline public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 171650 "setToIdentity"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 171778 "fill"
+	preserve_cpp_body_indent cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 171906 "transposed"
+	preserve_cpp_body_indent const cpp_inline public explicit_return_type "Matrix<N, M, T>"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 172034 "operator +="
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 139650 // Matrix
+	nparams 1
+	  param in name "other" type class_ref 139650 // Matrix
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 172162 "operator -="
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 139650 // Matrix
+	nparams 1
+	  param in name "other" type class_ref 139650 // Matrix
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 172290 "operator *="
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 139650 // Matrix
+	nparams 1
+	  param in name "factor" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 172418 "operator /="
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 139650 // Matrix
+	nparams 1
+	  param in name "divisor" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 172546 "operator =="
+	preserve_cpp_body_indent const cpp_inline public explicit_return_type "bool"
+	nparams 1
+	  param in name "other" type class_ref 139650 // Matrix
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 172674 "operator !="
+	preserve_cpp_body_indent const cpp_inline public explicit_return_type "bool"
+	nparams 1
+	  param in name "other" type class_ref 139650 // Matrix
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 172802 "data"
+	cpp_inline public explicit_return_type "T"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} * ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return *m;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 172930 "data"
+	const cpp_inline public explicit_return_type "T"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} * ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return *m;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 173058 "operator +"
+	stereotype "template"
+	friend public explicit_return_type "Matrix<MM, NN, TT>"
+	nparams 2
+	  param in name "m1" explicit_type "Matrix<MM, NN, TT>"
+	  param in name "m2" explicit_type "Matrix<MM, NN, TT>"
+	cpp_decl "    ${comment}template<int32 MM,  int32 NN, typename TT>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 173186 "operator -"
+	stereotype "template"
+	friend public explicit_return_type "Matrix<MM, NN, TT>"
+	nparams 2
+	  param in name "m1" explicit_type "Matrix<MM, NN, TT>"
+	  param in name "m2" explicit_type "Matrix<MM, NN, TT>"
+	cpp_decl "    ${comment}template<int32 MM,  int32 NN, typename TT>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 173314 "operator *"
+	stereotype "template"
+	friend public explicit_return_type "Matrix<M1, M2, TT>"
+	nparams 2
+	  param in name "m1" explicit_type "Matrix<M1, NN, TT>"
+	  param in name "m2" explicit_type "Matrix<NN, M2, TT>"
+	cpp_decl "    ${comment}template<int32 NN,  int32 M1,  int32 M2, typename TT>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 173442 "operator -"
+	stereotype "template"
+	friend public explicit_return_type "Matrix<MM, NN, TT>"
+	nparams 1
+	  param in name "matrix" explicit_type "Matrix<MM, NN, TT>"
+	cpp_decl "    ${comment}template<int32 MM,  int32 NN, typename TT>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 173570 "operator *"
+	stereotype "template"
+	friend public explicit_return_type "Matrix<MM, NN, TT>"
+	nparams 2
+	  param in name "factor" explicit_type "TT"
+	  param in name "matrix" explicit_type "Matrix<MM, NN, TT>"
+	cpp_decl "    ${comment}template<int32 MM,  int32 NN, typename TT>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 173698 "operator *"
+	stereotype "template"
+	friend public explicit_return_type "Matrix<MM, NN, TT>"
+	nparams 2
+	  param in name "matrix" explicit_type "Matrix<MM, NN, TT>"
+	  param in name "factor" explicit_type "TT"
+	cpp_decl "    ${comment}template<int32 MM,  int32 NN, typename TT>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 173826 "operator /"
+	stereotype "template"
+	friend public explicit_return_type "Matrix<MM, NN, TT>"
+	nparams 2
+	  param in name "matrix" explicit_type "Matrix<MM, NN, TT>"
+	  param in name "divisor" explicit_type "TT"
+	cpp_decl "    ${comment}template<int32 MM,  int32 NN, typename TT>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      attribute 134018 "m"
+	private explicit_type "T"
+	multiplicity "[M][N]"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 139778 "HomogeneousVertexConverter"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 168066 "ToVertex"
+	class_operation preserve_cpp_body_indent public return_type class_ref 133122 // Vec3
+	nparams 1
+	  param in name "hvec" type class_ref 139522 // HomogeneousVertex
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 168194 "FromVertex"
+	class_operation preserve_cpp_body_indent public return_type class_ref 139522 // HomogeneousVertex
+	nparams 1
+	  param in name "vec" type class_ref 133122 // Vec3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 139906 "Vec2"
+      visibility package stereotype "template_typedef"
+      nactuals 1
+      actual class class_ref 140418 // Vector2
+        rank 0 value class_ref 129026 // int32
+      cpp_decl "${comment}${template}using ${name} = ${inherit};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 142466 // <realization>
+	relation 142466 -_-|>
+	  stereotype "bind"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 142466 // <realization>
+	  b parent class_ref 140418 // Vector2
+      end
+    end
+
+    class 140034 "Math"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      class 140162 "Func"
+	visibility package stereotype "template_typedef"
+	cpp_decl "${comment}${template}using ${name} = ${inherit};
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	classrelation 142210 // <generalisation>
+	  relation 142210 ---|>
+	    a public
+	      cpp default "${type}"
+	      classrelation_ref 142210 // <generalisation>
+	    b parent class_ref 140290 // typedef10
+	end
+      end
+
+      class 140290 "typedef10"
+	visibility package stereotype "typedef" explicit_base_type "std::function<double(double)>"
+	cpp_decl "${comment}typedef ${type} ${name};
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+      end
+
+      attribute 133890 "PI"
+	class_attribute public explicit_type "double"
+	init_value "=  3.14159265358979323846"
+	cpp_constexpr cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 169218 "Gauss2"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 3
+	  param in name "sigma" explicit_type "double"
+	  param in name "x" type class_ref 129026 // int32
+	  param in name "y" type class_ref 129026 // int32
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 169346 "Clamp"
+	stereotype "template"
+	class_operation preserve_cpp_body_indent cpp_inline public explicit_return_type "T"
+	nparams 3
+	  param in name "value" explicit_type "T"
+	  param in name "min" explicit_type "T"
+	  param in name "max" explicit_type "T"
+	cpp_decl "    ${comment}template<class T>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}, const ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}template<class T>
+${inline}${type} ${class}::${name}${(}const ${t0} & ${p0}, const ${t1} & ${p1}, const ${t2} & ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 169474 "ToRadians"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "degrees" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 169602 "ToDegrees"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "radians" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 169730 "sgn"
+	stereotype "template"
+	class_operation preserve_cpp_body_indent cpp_inline public return_type class_ref 129026 // int32
+	nparams 1
+	  param in name "val" explicit_type "T"
+	cpp_decl "    ${comment}template<typename T>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}template<typename T>
+${inline}${type} ${class}::${name}${(}const ${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 169858 "Cos"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "angle" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 169986 "Sin"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "angle" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 170114 "Tan"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "angle" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 170242 "Sqrt"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "value" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 170370 "Atan"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "value" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 170498 "Abs"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "value" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 170626 "Pow"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 2
+	  param in name "x" explicit_type "double"
+	  param in name "y" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 170754 "Ctg"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 1
+	  param in name "x" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 170882 "Bisection"
+	class_operation preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 4
+	  param in name "a" explicit_type "double"
+	  param in name "b" explicit_type "double"
+	  param in name "f" type class_ref 140162 // Func
+	  param in name "eps" explicit_type "double"
+	    defaultvalue "1e-6"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, const ${t2} & ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 140418 "Vector2"
+      visibility package 
+      nformals 1
+      formal name "T" type "class" explicit_default_value ""
+        explicit_extends ""
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 173954 "Vector2"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} : x(0), y(0) {};
+"
+	
+	
+	
+	
+      end
+
+      operation 174082 "Vector2"
+	cpp_inline public explicit_return_type ""
+	nparams 2
+	  param in name "x" explicit_type "T"
+	  param in name "y" explicit_type "T"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract} : x(x), y(y) {};
+"
+	
+	
+	
+	
+      end
+
+      operation 174210 "getX"
+	const cpp_inline public explicit_return_type "T"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return x;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 174338 "setX"
+	cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        x = value;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 174466 "getY"
+	const cpp_inline public explicit_return_type "T"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return y;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 174594 "setY"
+	cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        y = value;
+    };
+"
+	
+	
+	
+	
+      end
+
+      attribute 134146 "x"
+	private explicit_type "T"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 134274 "y"
+	private explicit_type "T"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 140546 "Vector3"
+      visibility package 
+      nformals 1
+      formal name "T" type "class" explicit_default_value ""
+        explicit_extends ""
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 174722 "Vector3"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} : xc(0), yc(0), zc(0) {};
+"
+	
+	
+	
+	
+      end
+
+      operation 174850 "Vector3"
+	cpp_inline public explicit_return_type ""
+	nparams 3
+	  param in name "x" explicit_type "T"
+	  param in name "y" explicit_type "T"
+	  param in name "z" explicit_type "T"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}, const ${t2} & ${p2}${v2}${)}${volatile}${throw}${abstract} : xc(x), yc(y), zc(z) {};
+"
+	
+	
+	
+	
+      end
+
+      operation 174978 "x"
+	const cpp_inline public explicit_return_type "T"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return xc;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 175106 "setX"
+	cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        xc = value;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 175234 "y"
+	const cpp_inline public explicit_return_type "T"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return yc;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 175362 "setY"
+	cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        yc = value;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 175490 "z"
+	const cpp_inline public explicit_return_type "T"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return zc;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 175618 "setZ"
+	cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "T"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        zc = value;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 175746 "length"
+	const cpp_inline public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return Math::Sqrt(xc * xc + yc * yc + zc * zc);
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 175874 "operator +="
+	cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 1
+	  param in name "value" type class_ref 140546 // Vector3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        xc += value.xc;
+        yc += value.yc;
+        zc += value.zc;
+        return *this;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176002 "operator -="
+	cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 1
+	  param in name "value" type class_ref 140546 // Vector3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        xc -= value.xc;
+        yc -= value.yc;
+        zc -= value.zc;
+        return *this;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176130 "operator *="
+	cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 1
+	  param in name "factor" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        xc *= factor;
+        yc *= factor;
+        zc *= factor;
+        return *this;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176258 "operator +"
+	const cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 1
+	  param in name "value" type class_ref 140546 // Vector3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        return Vector3(xc + value.xc, yc + value.yc, zc + value.zc);
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176386 "operator -"
+	const cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 1
+	  param in name "value" type class_ref 140546 // Vector3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        return Vector3(xc - value.xc, yc - value.yc, zc - value.zc);
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176514 "operator *"
+	const cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 1
+	  param in name "factor" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        return Vector3(xc * factor, yc * factor, zc * factor);
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176642 "operator =="
+	const cpp_inline public explicit_return_type "bool"
+	nparams 1
+	  param in name "value" type class_ref 140546 // Vector3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        return xc == value.xc &&
+               yc == value.yc &&
+               zc == value.zc;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176770 "operator -"
+	const cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        return Vector3(-xc, -yc, -zc);
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 176898 "normalized"
+	const cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+        float l = Math::Sqrt(xc * xc + yc * yc + zc * zc);
+        return Vector3(xc / l, yc / l, zc / l);
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 177026 "dot"
+	const cpp_inline public explicit_return_type "T"
+	nparams 1
+	  param in name "value" type class_ref 140546 // Vector3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        return xc * value.xc + yc * value.yc + zc * value.zc;
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 177154 "cross"
+	const cpp_inline public return_type class_ref 140546 // Vector3
+	nparams 1
+	  param in name "value" type class_ref 140546 // Vector3
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {
+        return Vector3(yc * value.zc - zc * value.yc,
+                       -xc * value.zc + zc * value.xc,
+                       xc * value.yc - yc * value.xc);
+    };
+"
+	
+	
+	
+	
+      end
+
+      attribute 134402 "xc"
+	private explicit_type "T"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 134530 "yc"
+	private explicit_type "T"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 134658 "zc"
+	private explicit_type "T"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+  end
+
+  deploymentview 129026 "math"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 133378 "cylindersize"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 131074 // CylinderSize
+      end
+    end
+
+    artifact 133506 "homogeneousvertex"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 139522 // HomogeneousVertex
+	class_ref 139778 // HomogeneousVertexConverter
+      end
+    end
+
+    artifact 133634 "line"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 132482 // Line
+      end
+    end
+
+    artifact 133762 "math"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 140034 // Math
+      end
+    end
+
+    artifact 133890 "matrix"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 139650 // Matrix
+	class_ref 133762 // Mat4
+      end
+    end
+
+    artifact 134018 "vec2"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 140418 // Vector2
+	class_ref 139906 // Vec2
+      end
+    end
+
+    artifact 134146 "vec3"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 140546 // Vector3
+	class_ref 133122 // Vec3
+      end
+    end
+  end
+end

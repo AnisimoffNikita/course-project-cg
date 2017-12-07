@@ -1,0 +1,9 @@
+class HomogeneousVertexConverter
+!!!168066.cpp!!!	ToVertex(in hvec : HomogeneousVertex) : Vec3
+    //    return Vertex(hvec(0,0)/hvec(0,3), hvec(0,1)/hvec(0,3), hvec(0,2)/hvec(0,3));
+    return Vec3(hvec(0, 0) / hvec(3, 0), hvec(1, 0) / hvec(3, 0), hvec(2,
+                  0) / hvec(3, 0));
+    //    return Vertex(hvec(0,0), hvec(1,0), hvec(2,0));
+!!!168194.cpp!!!	FromVertex(in vec : Vec3) : HomogeneousVertex
+    float values[] = {vec.x(), vec.y(), vec.z(), 1.0};
+    return HomogeneousVertex(values);

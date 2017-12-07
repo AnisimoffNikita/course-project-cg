@@ -1,0 +1,5 @@
+digraph AmbientLightFactory
+{
+graph [ rankdir="RL" ]
+"d5/dbd/class_ambient_light_factory" [ label="AmbientLightFactory\n|+AmbientLightFactory ( intensity : float )\l/+create (  ) : SharedSceneObject \{virtual\}\l+~AmbientLightFactory (  ) \{virtual\}\l|-light : std::unique_ptr\< AmbientLight \>\l" shape="record" ]
+}

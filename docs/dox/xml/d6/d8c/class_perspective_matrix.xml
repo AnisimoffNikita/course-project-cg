@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/d8c/class_perspective_matrix" kind="class" language="C++" prot="public">
+    <compoundname>PerspectiveMatrix</compoundname>
+    <includes refid="df/d3d/matrixfactory_8h" local="no">matrixfactory.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d6/d8c/class_perspective_matrix_1a624dcd9fb919a67e66d5aa7ecf22f3cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kindref="member">Mat4</ref></type>
+        <definition>Mat4 PerspectiveMatrix::create</definition>
+        <argsstring>(float fovy, float aspect, float zNear, float zFar)</argsstring>
+        <name>create</name>
+        <param>
+          <type>float</type>
+          <declname>fovy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zNear</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zFar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/matrixfactory.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/matrixfactory.cpp" bodystart="28" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="435">
+        <label>PerspectiveMatrix</label>
+        <link refid="d6/d8c/class_perspective_matrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/matrixfactory.h" line="21" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/matrixfactory.h" bodystart="20" bodyend="24"/>
+    <listofallmembers>
+      <member refid="d6/d8c/class_perspective_matrix_1a624dcd9fb919a67e66d5aa7ecf22f3cd" prot="public" virt="non-virtual"><scope>PerspectiveMatrix</scope><name>create</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

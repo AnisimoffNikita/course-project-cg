@@ -1,0 +1,5 @@
+class AnimationWindow
+!!!128002.cpp!!!	AnimationWindow(inout parent : QWidget = 0)
+    ui->setupUi(this);
+!!!128130.cpp!!!	~AnimationWindow()
+    delete ui;

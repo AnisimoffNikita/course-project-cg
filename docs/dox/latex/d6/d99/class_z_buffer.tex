@@ -1,0 +1,140 @@
+\hypertarget{class_z_buffer}{}\section{Класс Z\+Buffer}
+\label{class_z_buffer}\index{Z\+Buffer@{Z\+Buffer}}
+
+
+{\ttfamily \#include $<$zbuffer.\+h$>$}
+
+
+
+Граф связей класса Z\+Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{dc/deb/class_z_buffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_z_buffer_a1ddb4afd219393f425cf06d779cd2db9}{Z\+Buffer} ()
+\item 
+void \hyperlink{class_z_buffer_afadfadfc332f211cd3596e43dc9bcda0}{set\+Size} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} w, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} h)
+\item 
+void \hyperlink{class_z_buffer_a6eba663a5e6a64b74f9c6749d0c19437}{init} ()
+\item 
+float \hyperlink{class_z_buffer_a0bcc59480cb2df9ceab776ea0bb415ae}{get} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} x, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} y)
+\item 
+void \hyperlink{class_z_buffer_aed7172a077d6f65d8db289a7b64b2b89}{set} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} x, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} y, float value)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ float $>$ \hyperlink{class_z_buffer_afecaf9e4659207dbf258de9b537663e9}{buffer}
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_z_buffer_a82c7634da3462d8efaeeba321ec36b24}{width}
+\item 
+\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_z_buffer_a2e0ebf69ff20c3a3c8c6926e812a6275}{height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле zbuffer.\+h строка 9
+
+
+
+\subsection{Конструктор(ы)}
+\index{Z\+Buffer@{Z\+Buffer}!Z\+Buffer@{Z\+Buffer}}
+\index{Z\+Buffer@{Z\+Buffer}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{Z\+Buffer()}{ZBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}Z\+Buffer\+::\+Z\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_z_buffer_a1ddb4afd219393f425cf06d779cd2db9}{}\label{class_z_buffer_a1ddb4afd219393f425cf06d779cd2db9}
+
+
+См. определение в файле zbuffer.\+cpp строка 5
+
+
+
+\subsection{Методы}
+\index{Z\+Buffer@{Z\+Buffer}!get@{get}}
+\index{get@{get}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{get(int32 x, int32 y)}{get(int32 x, int32 y)}}]{\setlength{\rightskip}{0pt plus 5cm}float Z\+Buffer\+::get (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{x, }
+\item[{{\bf int32}}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_z_buffer_a0bcc59480cb2df9ceab776ea0bb415ae}{}\label{class_z_buffer_a0bcc59480cb2df9ceab776ea0bb415ae}
+
+
+См. определение в файле zbuffer.\+cpp строка 26
+
+\index{Z\+Buffer@{Z\+Buffer}!init@{init}}
+\index{init@{init}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void Z\+Buffer\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_z_buffer_a6eba663a5e6a64b74f9c6749d0c19437}{}\label{class_z_buffer_a6eba663a5e6a64b74f9c6749d0c19437}
+
+
+См. определение в файле zbuffer.\+cpp строка 16
+
+\index{Z\+Buffer@{Z\+Buffer}!set@{set}}
+\index{set@{set}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{set(int32 x, int32 y, float value)}{set(int32 x, int32 y, float value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Z\+Buffer\+::set (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{x, }
+\item[{{\bf int32}}]{y, }
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_z_buffer_aed7172a077d6f65d8db289a7b64b2b89}{}\label{class_z_buffer_aed7172a077d6f65d8db289a7b64b2b89}
+
+
+См. определение в файле zbuffer.\+cpp строка 31
+
+\index{Z\+Buffer@{Z\+Buffer}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{set\+Size(int32 w, int32 h)}{setSize(int32 w, int32 h)}}]{\setlength{\rightskip}{0pt plus 5cm}void Z\+Buffer\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{w, }
+\item[{{\bf int32}}]{h}
+\end{DoxyParamCaption}
+)}\hypertarget{class_z_buffer_afadfadfc332f211cd3596e43dc9bcda0}{}\label{class_z_buffer_afadfadfc332f211cd3596e43dc9bcda0}
+
+
+См. определение в файле zbuffer.\+cpp строка 9
+
+
+
+\subsection{Данные класса}
+\index{Z\+Buffer@{Z\+Buffer}!buffer@{buffer}}
+\index{buffer@{buffer}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{buffer}{buffer}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$ Z\+Buffer\+::buffer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_z_buffer_afecaf9e4659207dbf258de9b537663e9}{}\label{class_z_buffer_afecaf9e4659207dbf258de9b537663e9}
+
+
+См. определение в файле zbuffer.\+h строка 21
+
+\index{Z\+Buffer@{Z\+Buffer}!height@{height}}
+\index{height@{height}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Z\+Buffer\+::height\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_z_buffer_a2e0ebf69ff20c3a3c8c6926e812a6275}{}\label{class_z_buffer_a2e0ebf69ff20c3a3c8c6926e812a6275}
+
+
+См. определение в файле zbuffer.\+h строка 22
+
+\index{Z\+Buffer@{Z\+Buffer}!width@{width}}
+\index{width@{width}!Z\+Buffer@{Z\+Buffer}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int32} Z\+Buffer\+::width\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_z_buffer_a82c7634da3462d8efaeeba321ec36b24}{}\label{class_z_buffer_a82c7634da3462d8efaeeba321ec36b24}
+
+
+См. определение в файле zbuffer.\+h строка 22
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{zbuffer_8h}{zbuffer.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{zbuffer_8cpp}{zbuffer.\+cpp}\end{DoxyCompactItemize}

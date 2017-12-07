@@ -1,0 +1,6 @@
+<map id="SceneObjectFactory" name="SceneObjectFactory">
+<area shape="rect" id="node2" href="$d5/dbd/class_ambient_light_factory.html" title="{AmbientLightFactory\n|&#45; light\l|+ AmbientLightFactory()\l+ ~AmbientLightFactory()\l+ create()\l}" alt="" coords="5,160,176,267"/>
+<area shape="rect" id="node3" href="$d7/ddc/class_camera_factory.html" title="{CameraFactory\n|&#45; camera\l|+ CameraFactory()\l+ ~CameraFactory()\l+ create()\l}" alt="" coords="201,160,341,267"/>
+<area shape="rect" id="node4" href="$db/da7/class_model_factory.html" title="{ModelFactory\n|&#45; model\l|+ ModelFactory()\l+ ~ModelFactory()\l+ create()\l}" alt="" coords="365,160,494,267"/>
+<area shape="rect" id="node5" href="$de/d1d/class_point_light_factory.html" title="{PointLightFactory\n|&#45; light\l|+ PointLightFactory()\l+ ~PointLightFactory()\l+ create()\l}" alt="" coords="519,160,671,267"/>
+</map>

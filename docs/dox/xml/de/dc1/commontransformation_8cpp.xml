@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/dc1/commontransformation_8cpp" kind="file" language="C++">
+    <compoundname>commontransformation.cpp</compoundname>
+    <includes refid="d0/d18/commontransformation_8h" local="yes">commontransformation.h</includes>
+    <incdepgraph>
+      <node id="2244">
+        <label>commontransformation.h</label>
+        <link refid="d0/d18/commontransformation_8h"/>
+        <childnode refid="2245" relation="include">
+        </childnode>
+        <childnode refid="2251" relation="include">
+        </childnode>
+      </node>
+      <node id="2249">
+        <label>functional</label>
+      </node>
+      <node id="2246">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2247" relation="include">
+        </childnode>
+        <childnode refid="2248" relation="include">
+        </childnode>
+      </node>
+      <node id="2247">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2251">
+        <label>src/math/homogeneousvertex.h</label>
+        <link refid="d4/df0/homogeneousvertex_8h"/>
+        <childnode refid="2246" relation="include">
+        </childnode>
+        <childnode refid="2250" relation="include">
+        </childnode>
+      </node>
+      <node id="2250">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2247" relation="include">
+        </childnode>
+      </node>
+      <node id="2248">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2247" relation="include">
+        </childnode>
+        <childnode refid="2249" relation="include">
+        </childnode>
+      </node>
+      <node id="2243">
+        <label>Projects/labs/course_project_cg/src/animation/commontransformation.cpp</label>
+        <link refid="commontransformation.cpp"/>
+        <childnode refid="2244" relation="include">
+        </childnode>
+      </node>
+      <node id="2245">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="2246" relation="include">
+        </childnode>
+        <childnode refid="2250" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d18/commontransformation_8h" kindref="compound">commontransformation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d1/d3e/class_common_transformation_1a6482f70fab18b0afa41bc9b2f1b56665" refkind="member"><highlight class="normal"><ref refid="d1/d3e/class_common_transformation_1a6482f70fab18b0afa41bc9b2f1b56665" kindref="member">CommonTransformation::CommonTransformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;matrix)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" kindref="member">_matrix</ref><sp/>=<sp/>matrix;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d1/d3e/class_common_transformation_1a7daef5b3ad4576a691b474d888c3dfd5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d3e/class_common_transformation_1a7daef5b3ad4576a691b474d888c3dfd5" kindref="member">CommonTransformation::transform</ref>(<ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;vertex)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="10"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">HomogeneousVertex</ref><sp/>hvec<sp/>=<sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" kindref="member">HomogeneousVertexConverter::FromVertex</ref>(vertex);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>hvec<sp/>=<sp/><ref refid="d1/d32/class_transformation_1a88b601bf5613460d361ada4b7a9208e3" kindref="member">_matrix</ref><sp/>*<sp/>hvec;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>vertex<sp/>=<sp/><ref refid="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" kindref="member">HomogeneousVertexConverter::ToVertex</ref>(hvec);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d1/d3e/class_common_transformation_1a8f789aa59517fd1bf553e1846241eacc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d3e/class_common_transformation_1a8f789aa59517fd1bf553e1846241eacc" kindref="member">CommonTransformation::resetOrigin</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/commontransformation.cpp"/>
+  </compounddef>
+</doxygen>

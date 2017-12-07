@@ -1,0 +1,5 @@
+digraph ViewMatrix
+{
+graph [ rankdir="RL" ]
+"d7/d66/class_view_matrix" [ label="ViewMatrix\n|+create ( eye : const Vec3 &, target : const Vec3 &, up : const Vec3 & ) : Mat4 \{static\}\l|" shape="record" ]
+}

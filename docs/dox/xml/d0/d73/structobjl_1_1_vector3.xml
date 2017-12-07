@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d0/d73/structobjl_1_1_vector3" kind="struct" language="C++" prot="public">
+    <compoundname>objl::Vector3</compoundname>
+    <includes refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" local="no">objloader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Vector3::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="125" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Vector3::Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="126" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float objl::Vector3::Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="127" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d73/structobjl_1_1_vector3_1a37f8ca281c0e2097fa2728266ebef56c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Vector3::Vector3</definition>
+        <argsstring>()</argsstring>
+        <name>Vector3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="85" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="85" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d73/structobjl_1_1_vector3_1afed600f7ee15aa60d8e384da46c2d12a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Vector3::Vector3</definition>
+        <argsstring>(float X_, float Y_, float Z_)</argsstring>
+        <name>Vector3</name>
+        <param>
+          <type>float</type>
+          <declname>X_</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Y_</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Z_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="92" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="92" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d73/structobjl_1_1_vector3_1a429dcb4a13c69cb5975fd5484dd74425" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool objl::Vector3::operator==</definition>
+        <argsstring>(const Vector3 &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="99" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d73/structobjl_1_1_vector3_1ad8aeae2f5387632095757c178efccdab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool objl::Vector3::operator!=</definition>
+        <argsstring>(const Vector3 &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="104" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d73/structobjl_1_1_vector3_1a71016900e6eb6119fa60f263f428e621" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Vector3::operator+</definition>
+        <argsstring>(const Vector3 &amp;right) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="109" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d73/structobjl_1_1_vector3_1ada21925e1b5aef10ccb16a4578f337ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Vector3::operator-</definition>
+        <argsstring>(const Vector3 &amp;right) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="114" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d73/structobjl_1_1_vector3_1a10de58f83a9512340154a0f84d2d0a06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 objl::Vector3::operator*</definition>
+        <argsstring>(const float &amp;other) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="119" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="119" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="518">
+        <label>objl::Vector3</label>
+        <link refid="d0/d73/structobjl_1_1_vector3"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="83" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="82" bodyend="128"/>
+    <listofallmembers>
+      <member refid="d0/d73/structobjl_1_1_vector3_1ad8aeae2f5387632095757c178efccdab" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>operator!=</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1a10de58f83a9512340154a0f84d2d0a06" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>operator*</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1a71016900e6eb6119fa60f263f428e621" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>operator+</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1ada21925e1b5aef10ccb16a4578f337ca" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>operator-</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1a429dcb4a13c69cb5975fd5484dd74425" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>operator==</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1a37f8ca281c0e2097fa2728266ebef56c" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>Vector3</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1afed600f7ee15aa60d8e384da46c2d12a" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>Vector3</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1a8f662ed887b2e50d37f728aea7573d2a" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>X</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1a2d214055c5afbf6a5fc12d983a10e1e3" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>Y</name></member>
+      <member refid="d0/d73/structobjl_1_1_vector3_1a88dcef85136079e5483e532691e9853c" prot="public" virt="non-virtual"><scope>objl::Vector3</scope><name>Z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

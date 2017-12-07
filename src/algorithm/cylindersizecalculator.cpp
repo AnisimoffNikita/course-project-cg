@@ -26,13 +26,14 @@ void CylinderSizeCalculator::calibrate(const std::vector<Line> &inLines,
     this->distance = distance;
     findEdges();
     float visibleEdge = distance - (radius + radius * radius /
-                                     (distance - radius));
+                                    (distance - radius));
     float localFactor = height / lines[0].length();
-    factor = localFactor / visibleEdge;
+    factor = localFactor * (distance / visibleEdge);
 }
 
-void CylinderSizeCalculator::calibrate(float diag, float diagPx)
+void CylinderSizeCalculator::calibrate(float distance, float diag, float diagPx)
 {
+    this->distance = distance;
     factor = diag / diagPx;
 }
 
@@ -93,15 +94,15 @@ void CylinderSizeCalculator::calculateSize()
     float inDiam = sqrt(dx * dx + dy * dy);
     Math::Func f = [inDiam, this](float r)
     {
-        auto visibleDiam = 2 * r * pow((1 - pow((r / (distance - r)), 2)), 0.5);
+        auto visibleDiam = 2 * r * pow(1 - pow(r / (distance - r), 2), 0.5);
         auto visibleDist = distance - (r + r * r / (distance - r));
-        auto localFactor = factor * visibleDist;
+        auto localFactor = factor * (visibleDist / distance);
         auto evalDiam = visibleDiam / localFactor;
         return evalDiam - inDiam;
     };
     float radius = Math::Bisection(0.01, 0.3, f);
-    auto localFactor = factor * (distance - (radius + radius * radius /
-                                 (distance - radius)));
+    auto localFactor = factor * ((distance - (radius + radius * radius /
+                                  (distance - radius))) / distance);
     float height = localFactor * lines[0].length();
     size.setHeight(height);
     size.setRadius(radius);

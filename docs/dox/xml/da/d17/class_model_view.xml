@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="da/d17/class_model_view" kind="class" language="C++" prot="public">
+    <compoundname>ModelView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsView</basecompoundref>
+    <includes refid="d3/d6a/modelview_8h" local="no">modelview.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d17/class_model_view_1ae6374117c710be500a33e57e3561ac8f" prot="private" static="no" mutable="no">
+        <type>QGraphicsScene *</type>
+        <definition>QGraphicsScene* ModelView::graphicsScene</definition>
+        <argsstring></argsstring>
+        <name>graphicsScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d17/class_model_view_1aa428aaa80cb804090b372c39e1c87044" prot="private" static="no" mutable="no">
+        <type>QPixmap</type>
+        <definition>QPixmap ModelView::canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="36" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d17/class_model_view_1a02ee08144e27ff6f19d1e26a52cebb87" prot="private" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint ModelView::lastPos</definition>
+        <argsstring></argsstring>
+        <name>lastPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d17/class_model_view_1a473071f2a4321959097270980678c863" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* ModelView::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="39" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d17/class_model_view_1a41e5d7792517ae9880d9c129026b0c84" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d6/db5/class_scene" kindref="compound">Scene</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Scene&gt; ModelView::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="41" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d17/class_model_view_1a80052c0ef06cceacb0a1fdf3bc045847" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d4/d44/class_renderer" kindref="compound">Renderer</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Renderer&gt; ModelView::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="42" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d17/class_model_view_1a77f7dded12c094ecfe844809aba9274e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModelView::ModelView</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>ModelView</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.cpp" bodystart="13" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d17/class_model_view_1ab2d171869dfb01218eb5c1956bedb1a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView::setModelScene</definition>
+        <argsstring>(std::unique_ptr&lt; Scene &gt; &amp;&amp;value)</argsstring>
+        <name>setModelScene</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="d6/db5/class_scene" kindref="compound">Scene</ref> &gt; &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="24" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="da/d17/class_model_view_1aadae7104e72e31784ad241b648bd5e73" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView::resizeEvent</definition>
+        <argsstring>(QResizeEvent *event)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="27" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d17/class_model_view_1acd6c5305eb70b148fac15c7d1eef37df" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mousePressEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d17/class_model_view_1aaa864c638d5ce42eebf8c0af6e884ec6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseMoveEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.cpp" bodystart="32" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/d17/class_model_view_1acf6729149dc1397b67b90b7d19b4319d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView::updateCanvas</definition>
+        <argsstring>()</argsstring>
+        <name>updateCanvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="32" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.cpp" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d17/class_model_view_1a14b2162dc99c4d801b857365d1c11e5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelView::scheduler</definition>
+        <argsstring>()</argsstring>
+        <name>scheduler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="33" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.cpp" bodystart="55" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="418">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="417">
+        <label>ModelView</label>
+        <link refid="da/d17/class_model_view"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="420">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="419">
+        <label>ModelView</label>
+        <link refid="da/d17/class_model_view"/>
+        <childnode refid="420" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/widgets/modelview.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/widgets/modelview.h" bodystart="18" bodyend="43"/>
+    <listofallmembers>
+      <member refid="da/d17/class_model_view_1aa428aaa80cb804090b372c39e1c87044" prot="private" virt="non-virtual"><scope>ModelView</scope><name>canvas</name></member>
+      <member refid="da/d17/class_model_view_1ae6374117c710be500a33e57e3561ac8f" prot="private" virt="non-virtual"><scope>ModelView</scope><name>graphicsScene</name></member>
+      <member refid="da/d17/class_model_view_1a02ee08144e27ff6f19d1e26a52cebb87" prot="private" virt="non-virtual"><scope>ModelView</scope><name>lastPos</name></member>
+      <member refid="da/d17/class_model_view_1a77f7dded12c094ecfe844809aba9274e" prot="public" virt="non-virtual"><scope>ModelView</scope><name>ModelView</name></member>
+      <member refid="da/d17/class_model_view_1aaa864c638d5ce42eebf8c0af6e884ec6" prot="protected" virt="non-virtual"><scope>ModelView</scope><name>mouseMoveEvent</name></member>
+      <member refid="da/d17/class_model_view_1acd6c5305eb70b148fac15c7d1eef37df" prot="protected" virt="non-virtual"><scope>ModelView</scope><name>mousePressEvent</name></member>
+      <member refid="da/d17/class_model_view_1a80052c0ef06cceacb0a1fdf3bc045847" prot="private" virt="non-virtual"><scope>ModelView</scope><name>renderer</name></member>
+      <member refid="da/d17/class_model_view_1aadae7104e72e31784ad241b648bd5e73" prot="protected" virt="non-virtual"><scope>ModelView</scope><name>resizeEvent</name></member>
+      <member refid="da/d17/class_model_view_1a41e5d7792517ae9880d9c129026b0c84" prot="private" virt="non-virtual"><scope>ModelView</scope><name>scene</name></member>
+      <member refid="da/d17/class_model_view_1a14b2162dc99c4d801b857365d1c11e5b" prot="private" virt="non-virtual"><scope>ModelView</scope><name>scheduler</name></member>
+      <member refid="da/d17/class_model_view_1ab2d171869dfb01218eb5c1956bedb1a2" prot="public" virt="non-virtual"><scope>ModelView</scope><name>setModelScene</name></member>
+      <member refid="da/d17/class_model_view_1a473071f2a4321959097270980678c863" prot="private" virt="non-virtual"><scope>ModelView</scope><name>timer</name></member>
+      <member refid="da/d17/class_model_view_1acf6729149dc1397b67b90b7d19b4319d" prot="private" virt="non-virtual"><scope>ModelView</scope><name>updateCanvas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

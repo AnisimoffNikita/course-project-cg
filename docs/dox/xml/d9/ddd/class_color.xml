@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/ddd/class_color" kind="class" language="C++" prot="public">
+    <compoundname>Color</compoundname>
+    <includes refid="da/dec/color_8h" local="no">color.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 Color::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 Color::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 Color::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="29" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Color::Color</definition>
+        <argsstring>()</argsstring>
+        <name>Color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="5" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a9e2a61644848b70eff8103fe538e1b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Color::Color</definition>
+        <argsstring>(uint8 r, uint8 g, uint8 b)</argsstring>
+        <name>Color</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a7b075d27e3bbdde7cbe648dc3b804261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Color::Color</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>Color</name>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a03aa495dec904466b0986feaa884bb8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Color::Color</definition>
+        <argsstring>(uint8 gray)</argsstring>
+        <name>Color</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>gray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1aaf34b98c81cfe8ec2682cc38761a4d5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 Color::getRed</definition>
+        <argsstring>() const </argsstring>
+        <name>getRed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a0db91f928764aa5fef82e92f55e34a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Color::setRed</definition>
+        <argsstring>(uint8 value)</argsstring>
+        <name>setRed</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="15" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1affb4bc39163b1c057e338125ed377494" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 Color::getGreen</definition>
+        <argsstring>() const </argsstring>
+        <name>getGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a35f06f6d8e5b2e57366ce2b3911b8d34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Color::setGreen</definition>
+        <argsstring>(uint8 value)</argsstring>
+        <name>setGreen</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1ad3adb9f5cc739957f9dbf053d2641de2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 Color::getBlue</definition>
+        <argsstring>() const </argsstring>
+        <name>getBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="20" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a957be1669566c9422dc48595d21547a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Color::setBlue</definition>
+        <argsstring>(uint8 value)</argsstring>
+        <name>setBlue</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="21" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a0524f53d56d0e27be194f3c02644c6da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Color::setGray</definition>
+        <argsstring>(uint8 gray)</argsstring>
+        <name>setGray</name>
+        <param>
+          <type><ref refid="d3/d22/number_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+          <declname>gray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1ab9427899af3ac7ef621c81a49633d1cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>Color Color::operator*</definition>
+        <argsstring>(float factor) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/ddd/class_color_1a26fc45655619e26ab7606823e39d80eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+        <definition>Color &amp; Color::operator+=</definition>
+        <argsstring>(const Color &amp;other)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/image/color.h" line="26" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.cpp" bodystart="75" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="305">
+        <label>Color</label>
+        <link refid="d9/ddd/class_color"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/image/color.h" line="7" column="1" bodyfile="Projects/labs/course_project_cg/src/image/color.h" bodystart="6" bodyend="30"/>
+    <listofallmembers>
+      <member refid="d9/ddd/class_color_1a177ce5853f9bb12fda1c545dfb6f4ddf" prot="private" virt="non-virtual"><scope>Color</scope><name>b</name></member>
+      <member refid="d9/ddd/class_color_1a9a742cbe9f9f4037f5d9f4e81a9b2428" prot="public" virt="non-virtual"><scope>Color</scope><name>Color</name></member>
+      <member refid="d9/ddd/class_color_1a9e2a61644848b70eff8103fe538e1b30" prot="public" virt="non-virtual"><scope>Color</scope><name>Color</name></member>
+      <member refid="d9/ddd/class_color_1a7b075d27e3bbdde7cbe648dc3b804261" prot="public" virt="non-virtual"><scope>Color</scope><name>Color</name></member>
+      <member refid="d9/ddd/class_color_1a03aa495dec904466b0986feaa884bb8b" prot="public" virt="non-virtual"><scope>Color</scope><name>Color</name></member>
+      <member refid="d9/ddd/class_color_1a895f2e61ca018a91877f52021f8748bd" prot="private" virt="non-virtual"><scope>Color</scope><name>g</name></member>
+      <member refid="d9/ddd/class_color_1ad3adb9f5cc739957f9dbf053d2641de2" prot="public" virt="non-virtual"><scope>Color</scope><name>getBlue</name></member>
+      <member refid="d9/ddd/class_color_1affb4bc39163b1c057e338125ed377494" prot="public" virt="non-virtual"><scope>Color</scope><name>getGreen</name></member>
+      <member refid="d9/ddd/class_color_1aaf34b98c81cfe8ec2682cc38761a4d5c" prot="public" virt="non-virtual"><scope>Color</scope><name>getRed</name></member>
+      <member refid="d9/ddd/class_color_1ab9427899af3ac7ef621c81a49633d1cb" prot="public" virt="non-virtual"><scope>Color</scope><name>operator*</name></member>
+      <member refid="d9/ddd/class_color_1a26fc45655619e26ab7606823e39d80eb" prot="public" virt="non-virtual"><scope>Color</scope><name>operator+=</name></member>
+      <member refid="d9/ddd/class_color_1ac25ae2b764ad9bbf8b8c79141f84d4ae" prot="private" virt="non-virtual"><scope>Color</scope><name>r</name></member>
+      <member refid="d9/ddd/class_color_1a957be1669566c9422dc48595d21547a1" prot="public" virt="non-virtual"><scope>Color</scope><name>setBlue</name></member>
+      <member refid="d9/ddd/class_color_1a0524f53d56d0e27be194f3c02644c6da" prot="public" virt="non-virtual"><scope>Color</scope><name>setGray</name></member>
+      <member refid="d9/ddd/class_color_1a35f06f6d8e5b2e57366ce2b3911b8d34" prot="public" virt="non-virtual"><scope>Color</scope><name>setGreen</name></member>
+      <member refid="d9/ddd/class_color_1a0db91f928764aa5fef82e92f55e34a2f" prot="public" virt="non-virtual"><scope>Color</scope><name>setRed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

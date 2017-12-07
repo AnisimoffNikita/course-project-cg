@@ -1,0 +1,5 @@
+digraph RotateXTransformation
+{
+graph [ rankdir="RL" ]
+"dc/d6a/class_rotate_x_transformation" [ label="RotateXTransformation\n|+RotateXTransformation ( angle : float, origin : const Vec3 & )\l/+resetOrigin (  ) : void \{virtual\}\l/+transform ( vertex : Vec3 & ) : void \{virtual\}\l|#_origin : Vec3\l" shape="record" ]
+}

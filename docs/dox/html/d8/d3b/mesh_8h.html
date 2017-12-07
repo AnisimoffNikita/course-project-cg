@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Файл Projects/labs/course_project_cg/src/animation/mesh.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_1acf6d7c8ce8cb5e459a37a0d36ab35d.html">animation</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mesh.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d08/vec3_8h_source.html">src/math/vec3.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/df4/matrix_8h_source.html">src/math/matrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d53/transformation_8h_source.html">src/animation/transformation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d6a/meshdata_8h_source.html">meshdata.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для mesh.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d74/mesh_8h__incl.png" border="0" usemap="#_projects_2labs_2course__project__cg_2src_2animation_2mesh_8h" alt=""/></div>
+<map name="_projects_2labs_2course__project__cg_2src_2animation_2mesh_8h" id="_projects_2labs_2course__project__cg_2src_2animation_2mesh_8h">
+<area shape="rect" id="node3" href="../../d8/d08/vec3_8h.html" title="src/math/vec3.h" alt="" coords="49,259,165,285"/>
+<area shape="rect" id="node7" href="../../dd/df4/matrix_8h.html" title="src/math/matrix.h" alt="" coords="402,259,526,285"/>
+<area shape="rect" id="node8" href="../../dc/d53/transformation_8h.html" title="src/animation/transformation.h" alt="" coords="365,184,563,211"/>
+<area shape="rect" id="node9" href="../../d5/d6a/meshdata_8h.html" title="meshdata.h" alt="" coords="220,109,311,136"/>
+<area shape="rect" id="node4" href="../../d3/d22/number_8h.html" title="src/number.h" alt="" coords="153,408,252,435"/>
+<area shape="rect" id="node5" href="../../df/db1/math_8h.html" title="math.h" alt="" coords="51,333,114,360"/>
+<area shape="rect" id="node10" href="../../da/dec/color_8h.html" title="src/image/color.h" alt="" coords="253,333,376,360"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/db2/mesh_8h__dep__incl.png" border="0" usemap="#_projects_2labs_2course__project__cg_2src_2animation_2mesh_8hdep" alt=""/></div>
+<map name="_projects_2labs_2course__project__cg_2src_2animation_2mesh_8hdep" id="_projects_2labs_2course__project__cg_2src_2animation_2mesh_8hdep">
+<area shape="rect" id="node2" href="../../d6/d85/renderer_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/renderer.h" alt="" coords="769,109,940,165"/>
+<area shape="rect" id="node15" href="../../d8/dd2/mesh_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/mesh.cpp" alt="" coords="1351,109,1521,165"/>
+<area shape="rect" id="node16" href="../../dc/d51/model_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/model.h" alt="" coords="1156,109,1327,165"/>
+<area shape="rect" id="node19" href="../../de/d7c/animation_2objloader_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/objloader.h" alt="" coords="5,213,176,269"/>
+<area shape="rect" id="node3" href="../../d7/d17/lightzbufferrenderer_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/lightzbufferrenderer.h" alt="" coords="435,213,605,269"/>
+<area shape="rect" id="node5" href="../../d6/d64/modelview_8cpp.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview.cpp" alt="" coords="251,317,411,373"/>
+<area shape="rect" id="node6" href="../../d1/d5e/modelview2_8cpp.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview2.cpp" alt="" coords="629,317,789,373"/>
+<area shape="rect" id="node7" href="../../d6/db4/model_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/model.cpp" alt="" coords="1253,213,1424,269"/>
+<area shape="rect" id="node8" href="../../d6/d54/renderer_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/renderer.cpp" alt="" coords="864,213,1035,269"/>
+<area shape="rect" id="node9" href="../../da/d33/scene_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/scene.cpp" alt="" coords="1059,213,1229,269"/>
+<area shape="rect" id="node10" href="../../d9/d53/mainwindow_8h.html" title="Projects/labs/course\l_project_cg/src/mainwindow.h" alt="" coords="1643,221,1842,262"/>
+<area shape="rect" id="node13" href="../../d3/d6a/modelview_8h.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview.h" alt="" coords="251,213,411,269"/>
+<area shape="rect" id="node14" href="../../d4/d90/modelview2_8h.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview2.h" alt="" coords="680,213,840,269"/>
+<area shape="rect" id="node4" href="../../d8/dc3/lightzbufferrenderer_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/lightzbufferrenderer.cpp" alt="" coords="435,317,605,373"/>
+<area shape="rect" id="node11" href="../../df/d0a/main_8cpp.html" title="Projects/labs/course\l_project_cg/src/main.cpp" alt="" coords="1768,325,1936,366"/>
+<area shape="rect" id="node12" href="../../d8/dd9/mainwindow_8cpp.html" title="Projects/labs/course\l_project_cg/src/mainwindow.cpp" alt="" coords="1531,325,1743,366"/>
+<area shape="rect" id="node17" href="../../d9/d8f/sceneobjectfactory_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/sceneobjectfactory.h" alt="" coords="1448,213,1619,269"/>
+<area shape="rect" id="node18" href="../../da/d15/sceneobjectfactory_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/sceneobjectfactory.cpp" alt="" coords="1336,317,1507,373"/>
+<area shape="rect" id="node20" href="../../dd/dbb/objloader_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/objloader.cpp" alt="" coords="5,317,176,373"/>
+</map>
+</div>
+</div>
+<p><a href="../../d8/d3b/mesh_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dbe/class_mesh.html">Mesh</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

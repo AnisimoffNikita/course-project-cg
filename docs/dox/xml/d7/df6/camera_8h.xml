@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d7/df6/camera_8h" kind="file" language="C++">
+    <compoundname>camera.h</compoundname>
+    <includes refid="d5/d69/sceneobject_8h" local="yes">sceneobject.h</includes>
+    <includes refid="dd/df4/matrix_8h" local="yes">src/math/matrix.h</includes>
+    <includedby refid="d1/d6b/camera_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/camera.cpp</includedby>
+    <includedby refid="d6/d85/renderer_8h" local="yes">Projects/labs/course_project_cg/src/animation/renderer.h</includedby>
+    <includedby refid="db/d83/scene_8h" local="yes">Projects/labs/course_project_cg/src/animation/scene.h</includedby>
+    <includedby refid="d9/d8f/sceneobjectfactory_8h" local="yes">Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</includedby>
+    <incdepgraph>
+      <node id="2223">
+        <label>functional</label>
+      </node>
+      <node id="2217">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2218" relation="include">
+        </childnode>
+        <childnode refid="2219" relation="include">
+        </childnode>
+        <childnode refid="2220" relation="include">
+        </childnode>
+      </node>
+      <node id="2220">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2221" relation="include">
+        </childnode>
+        <childnode refid="2222" relation="include">
+        </childnode>
+      </node>
+      <node id="2221">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2224">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="2221" relation="include">
+        </childnode>
+      </node>
+      <node id="2216">
+        <label>Projects/labs/course_project_cg/src/animation/camera.h</label>
+        <link refid="camera.h"/>
+        <childnode refid="2217" relation="include">
+        </childnode>
+        <childnode refid="2224" relation="include">
+        </childnode>
+      </node>
+      <node id="2222">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2221" relation="include">
+        </childnode>
+        <childnode refid="2223" relation="include">
+        </childnode>
+      </node>
+      <node id="2218">
+        <label>vector</label>
+      </node>
+      <node id="2219">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2228">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="2229" relation="include">
+        </childnode>
+        <childnode refid="2230" relation="include">
+        </childnode>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2240">
+        <label>Projects/labs/course_project_cg/src/animation/scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="2234" relation="include">
+        </childnode>
+        <childnode refid="2235" relation="include">
+        </childnode>
+        <childnode refid="2238" relation="include">
+        </childnode>
+        <childnode refid="2230" relation="include">
+        </childnode>
+        <childnode refid="2239" relation="include">
+        </childnode>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2234">
+        <label>Projects/labs/course_project_cg/src/animation/scene.cpp</label>
+        <link refid="da/d33/scene_8cpp"/>
+      </node>
+      <node id="2237">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2239">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2238">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.h</label>
+        <link refid="d3/d6a/modelview_8h"/>
+        <childnode refid="2230" relation="include">
+        </childnode>
+      </node>
+      <node id="2242">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="2225">
+        <label>Projects/labs/course_project_cg/src/animation/camera.h</label>
+        <link refid="camera.h"/>
+        <childnode refid="2226" relation="include">
+        </childnode>
+        <childnode refid="2227" relation="include">
+        </childnode>
+        <childnode refid="2240" relation="include">
+        </childnode>
+        <childnode refid="2241" relation="include">
+        </childnode>
+      </node>
+      <node id="2232">
+        <label>Projects/labs/course_project_cg/src/animation/model.cpp</label>
+        <link refid="d6/db4/model_8cpp"/>
+      </node>
+      <node id="2230">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2236">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2227">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2228" relation="include">
+        </childnode>
+        <childnode refid="2232" relation="include">
+        </childnode>
+        <childnode refid="2233" relation="include">
+        </childnode>
+        <childnode refid="2234" relation="include">
+        </childnode>
+        <childnode refid="2235" relation="include">
+        </childnode>
+        <childnode refid="2238" relation="include">
+        </childnode>
+        <childnode refid="2230" relation="include">
+        </childnode>
+        <childnode refid="2239" relation="include">
+        </childnode>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2241">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="d9/d8f/sceneobjectfactory_8h"/>
+        <childnode refid="2242" relation="include">
+        </childnode>
+        <childnode refid="2237" relation="include">
+        </childnode>
+        <childnode refid="2230" relation="include">
+        </childnode>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2231">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2226">
+        <label>Projects/labs/course_project_cg/src/animation/camera.cpp</label>
+        <link refid="d1/d6b/camera_8cpp"/>
+      </node>
+      <node id="2233">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.cpp</label>
+        <link refid="d6/d54/renderer_8cpp"/>
+      </node>
+      <node id="2229">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+      <node id="2235">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2236" relation="include">
+        </childnode>
+        <childnode refid="2237" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/dbb/class_camera" prot="public">Camera</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d7/df6/camera_8h_1a01f929aec8e912be07dca2c1f8d00f67" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="da/dbb/class_camera" kindref="compound">Camera</ref> &gt;</type>
+        <definition>using SharedCamera =  std::shared_ptr&lt;Camera&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/camera.h" line="37" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/camera.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d7/df6/camera_8h_1a7b9616f276c6529ece2bbfb711f5c756" prot="public" static="no">
+        <type>std::weak_ptr&lt; <ref refid="da/dbb/class_camera" kindref="compound">Camera</ref> &gt;</type>
+        <definition>using WeakCamera =  std::weak_ptr&lt;Camera&gt;</definition>
+        <argsstring></argsstring>
+        <name>WeakCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/camera.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/camera.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d69/sceneobject_8h" kindref="compound">sceneobject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/df4/matrix_8h" kindref="compound">src/math/matrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="da/dbb/class_camera" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/dbb/class_camera" kindref="compound">Camera</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dbb/class_camera_1a2f7d35911a4dcf218a0ef901cc0906dc" kindref="member">Camera</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" kindref="member">lookAt</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1a4473532c8bbceefb503a5a7195044bfe" kindref="member">up</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;projection);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a5c5155e999ea54c0385461de3ca0b95a" kindref="member">draw</ref>(std::unique_ptr&lt;Renderer&gt;<sp/>&amp;)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a76d8a9057211e4935405040d8fa154f6" kindref="member">transform</ref>(<ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a629ebafac4f86f952dad42a0087c344c" kindref="member">isCamera</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a7209dc5149f4b8af2ed9e8b6297f6c41" kindref="member">isLight</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a1ba2c3600a8a0f6e231ad9564bdb7359" kindref="member">setPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;value)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1a318614134ed9e5182954daaceb17ca47" kindref="member">getLookAt</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1abd0ac1ec8cc6c5ca79798fc61aa4a1fa" kindref="member">setLookAt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;target);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="da/dbb/class_camera_1a49e96c7af94f85b1297fb4184c99fa28" kindref="member">getEyeVector</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="da/dbb/class_camera_1a081e90588c62b55623f22d0477082924" kindref="member">getPVMatrix</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1a0baac3a162f4e3507a5c35c97a2c4236" kindref="member">getPMatrix</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/>&amp;<ref refid="da/dbb/class_camera_1ac9ca414b8f610584b90486938131aa1e" kindref="member">getVMatrix</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dbb/class_camera_1a8fe5c71a390571a861ad8afd99dfdea3" kindref="member">updateViewMatrix</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="da/dbb/class_camera_1a7aa44d09547fc7407002dc32b1891207" kindref="member">lookAt</ref>;</highlight></codeline>
+<codeline lineno="31" refid="da/dbb/class_camera_1a4473532c8bbceefb503a5a7195044bfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="da/dbb/class_camera_1a4473532c8bbceefb503a5a7195044bfe" kindref="member">up</ref>;</highlight></codeline>
+<codeline lineno="32" refid="da/dbb/class_camera_1a9e4efa2b0bb97699cda8904309873aa9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="da/dbb/class_camera_1a9e4efa2b0bb97699cda8904309873aa9" kindref="member">viewMatrix</ref>;</highlight></codeline>
+<codeline lineno="33" refid="da/dbb/class_camera_1a33e328413d91278d44953ccb0adef3ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d3f/class_matrix" kindref="compound">Mat4</ref><sp/><ref refid="da/dbb/class_camera_1a33e328413d91278d44953ccb0adef3ce" kindref="member">projectionMatrix</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d7/df6/camera_8h_1a01f929aec8e912be07dca2c1f8d00f67" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d7/df6/camera_8h_1a01f929aec8e912be07dca2c1f8d00f67" kindref="member">SharedCamera</ref><sp/>=<sp/>std::shared_ptr&lt;Camera&gt;;</highlight></codeline>
+<codeline lineno="38" refid="d7/df6/camera_8h_1a7b9616f276c6529ece2bbfb711f5c756" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d7/df6/camera_8h_1a7b9616f276c6529ece2bbfb711f5c756" kindref="member">WeakCamera</ref><sp/>=<sp/>std::weak_ptr&lt;Camera&gt;;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CAMERA_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/camera.h"/>
+  </compounddef>
+</doxygen>

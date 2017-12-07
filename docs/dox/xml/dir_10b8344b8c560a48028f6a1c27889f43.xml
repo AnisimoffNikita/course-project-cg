@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_10b8344b8c560a48028f6a1c27889f43" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/algorithm/edgedetector</compoundname>
+    <innerfile refid="d8/d97/cannyedgedetector_8cpp">cannyedgedetector.cpp</innerfile>
+    <innerfile refid="de/d3b/cannyedgedetector_8h">cannyedgedetector.h</innerfile>
+    <innerfile refid="da/de5/edgedetector_8cpp">edgedetector.cpp</innerfile>
+    <innerfile refid="d4/da5/edgedetector_8h">edgedetector.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/algorithm/edgedetector/"/>
+  </compounddef>
+</doxygen>

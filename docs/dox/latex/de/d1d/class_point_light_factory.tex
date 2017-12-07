@@ -1,0 +1,103 @@
+\hypertarget{class_point_light_factory}{}\section{Класс Point\+Light\+Factory}
+\label{class_point_light_factory}\index{Point\+Light\+Factory@{Point\+Light\+Factory}}
+
+
+{\ttfamily \#include $<$sceneobjectfactory.\+h$>$}
+
+
+
+Граф наследования\+:Point\+Light\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{d0/de9/class_point_light_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Point\+Light\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{d9/df4/class_point_light_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point_light_factory_a28f83cb24964302de5e1e678c4ba7b7e}{Point\+Light\+Factory} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&position, float intensity)
+\item 
+virtual \hyperlink{class_point_light_factory_a069223f14968fb1d3d2e8caff83f30c9}{$\sim$\+Point\+Light\+Factory} ()=default
+\item 
+virtual \hyperlink{sceneobject_8h_af9afe0f4fe2038e305b8b22ff495305f}{Shared\+Scene\+Object} \hyperlink{class_point_light_factory_aa7b3093c77ea99fae845932e785504e0}{create} () override
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_point_light}{Point\+Light} $>$ \hyperlink{class_point_light_factory_a23ff1783d18b5a6274c4e0bc94ad0a3d}{light}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле sceneobjectfactory.\+h строка 66
+
+
+
+\subsection{Конструктор(ы)}
+\index{Point\+Light\+Factory@{Point\+Light\+Factory}!Point\+Light\+Factory@{Point\+Light\+Factory}}
+\index{Point\+Light\+Factory@{Point\+Light\+Factory}!Point\+Light\+Factory@{Point\+Light\+Factory}}
+\subsubsection[{\texorpdfstring{Point\+Light\+Factory(const Vec3 \&position, float intensity)}{PointLightFactory(const Vec3 &position, float intensity)}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+Light\+Factory\+::\+Point\+Light\+Factory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{position, }
+\item[{float}]{intensity}
+\end{DoxyParamCaption}
+)}\hypertarget{class_point_light_factory_a28f83cb24964302de5e1e678c4ba7b7e}{}\label{class_point_light_factory_a28f83cb24964302de5e1e678c4ba7b7e}
+
+
+См. определение в файле sceneobjectfactory.\+cpp строка 38
+
+\index{Point\+Light\+Factory@{Point\+Light\+Factory}!````~Point\+Light\+Factory@{$\sim$\+Point\+Light\+Factory}}
+\index{````~Point\+Light\+Factory@{$\sim$\+Point\+Light\+Factory}!Point\+Light\+Factory@{Point\+Light\+Factory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Point\+Light\+Factory()=default}{~PointLightFactory()=default}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Point\+Light\+Factory\+::$\sim$\+Point\+Light\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}\hypertarget{class_point_light_factory_a069223f14968fb1d3d2e8caff83f30c9}{}\label{class_point_light_factory_a069223f14968fb1d3d2e8caff83f30c9}
+
+
+\subsection{Методы}
+\index{Point\+Light\+Factory@{Point\+Light\+Factory}!create@{create}}
+\index{create@{create}!Point\+Light\+Factory@{Point\+Light\+Factory}}
+\subsubsection[{\texorpdfstring{create() override}{create() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shared\+Scene\+Object} Point\+Light\+Factory\+::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_point_light_factory_aa7b3093c77ea99fae845932e785504e0}{}\label{class_point_light_factory_aa7b3093c77ea99fae845932e785504e0}
+
+
+Замещает \hyperlink{class_scene_object_factory_a9b90daaddbc34b747c072f770bc6b993}{Scene\+Object\+Factory}.
+
+
+
+См. определение в файле sceneobjectfactory.\+cpp строка 43
+
+
+
+\subsection{Данные класса}
+\index{Point\+Light\+Factory@{Point\+Light\+Factory}!light@{light}}
+\index{light@{light}!Point\+Light\+Factory@{Point\+Light\+Factory}}
+\subsubsection[{\texorpdfstring{light}{light}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Point\+Light}$>$ Point\+Light\+Factory\+::light\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_point_light_factory_a23ff1783d18b5a6274c4e0bc94ad0a3d}{}\label{class_point_light_factory_a23ff1783d18b5a6274c4e0bc94ad0a3d}
+
+
+См. определение в файле sceneobjectfactory.\+h строка 74
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{sceneobjectfactory_8h}{sceneobjectfactory.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{sceneobjectfactory_8cpp}{sceneobjectfactory.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,257 @@
+\hypertarget{class_image_base}{}\section{Шаблон класса Image\+Base$<$ T $>$}
+\label{class_image_base}\index{Image\+Base$<$ T $>$@{Image\+Base$<$ T $>$}}
+
+
+{\ttfamily \#include $<$imagebase.\+h$>$}
+
+
+
+Граф связей класса Image\+Base$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{d4/d41/class_image_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_image_base_a0d0996266703e4c7bbedf96bc5c6313c}{Image\+Base} ()
+\item 
+\hyperlink{class_image_base_a43a4b975fe25dfca53ce3f0155dd5976}{Image\+Base} (const \hyperlink{class_image_base}{Image\+Base} \&image)
+\item 
+\hyperlink{class_image_base_a655bd5b3b40499448b5b204de54de2b2}{Image\+Base} (\hyperlink{class_image_base}{Image\+Base} \&\&image)
+\item 
+\hyperlink{class_image_base_a6094d4bcf9e48de9b2d66d4f9bbb9db2}{Image\+Base} (\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_image_base_a2f5f532885f040113c198c424cc0ec7f}{height}, \hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_image_base_a01be4d15909d029bf4ef23f8ed6f6369}{width})
+\item 
+\hyperlink{class_image_base}{Image\+Base} \& \hyperlink{class_image_base_a84b330cd4e586ff7bed5beee148c3309}{operator=} (const \hyperlink{class_image_base}{Image\+Base} \&image)
+\item 
+\hyperlink{class_image_base}{Image\+Base} \& \hyperlink{class_image_base_a0def07d97e63c1448751a70e06c3e370}{operator=} (\hyperlink{class_image_base}{Image\+Base} \&\&image)
+\item 
+const T \& \hyperlink{class_image_base_acf5042cc5679250825272cb23a4594a1}{at} (\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} i, \hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} j) const 
+\item 
+void \hyperlink{class_image_base_a2ed65bd7506be1b5bf8ff56a5b56d3a2}{set} (\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} i, \hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} j, const T \&color)
+\item 
+\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_image_base_a750ec0d8ff1dd10dfa26467c018cc68c}{get\+Height} () const 
+\item 
+void \hyperlink{class_image_base_ac26af0c1bfd19f915f19d6b6f85c05c5}{set\+Height} (\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} value)
+\item 
+\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_image_base_a576197cd4b79d141bb8bd832511fb26a}{get\+Width} () const 
+\item 
+void \hyperlink{class_image_base_a1448e596fe52852668baa5caefe23f86}{set\+Width} (\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} value)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ T\mbox{[}$\,$\mbox{]}$>$ \hyperlink{class_image_base_aa619aa7a0b2cf0b5e45b0fbc102329c1}{data}
+\item 
+\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_image_base_a01be4d15909d029bf4ef23f8ed6f6369}{width}
+\item 
+\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_image_base_a2f5f532885f040113c198c424cc0ec7f}{height}
+\end{DoxyCompactItemize}
+\subsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_image_base_a683b929065aaead03ccce450a7b4ab30}{Image\+Converter}
+\item 
+class \hyperlink{class_image_base_a655e20b76703bb6a4e6ecd9ed4a5d9ed}{Grayscale\+Converter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\subsubsection*{template$<$class T$>$\\*
+class Image\+Base$<$ T $>$}
+
+
+
+См. определение в файле imagebase.\+h строка 13
+
+
+
+\subsection{Конструктор(ы)}
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{Image\+Base()}{ImageBase()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Image\+Base}$<$ T $>$\+::{\bf Image\+Base} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a0d0996266703e4c7bbedf96bc5c6313c}{}\label{class_image_base_a0d0996266703e4c7bbedf96bc5c6313c}
+
+
+См. определение в файле imagebase.\+h строка 43
+
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{Image\+Base(const Image\+Base \&image)}{ImageBase(const ImageBase &image)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Image\+Base}$<$ T $>$\+::{\bf Image\+Base} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Base}$<$ T $>$ \&}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a43a4b975fe25dfca53ce3f0155dd5976}{}\label{class_image_base_a43a4b975fe25dfca53ce3f0155dd5976}
+
+
+См. определение в файле imagebase.\+h строка 51
+
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{Image\+Base(\+Image\+Base \&\&image)}{ImageBase(ImageBase &&image)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Image\+Base}$<$ T $>$\+::{\bf Image\+Base} (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Base}$<$ T $>$ \&\&}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a655bd5b3b40499448b5b204de54de2b2}{}\label{class_image_base_a655bd5b3b40499448b5b204de54de2b2}
+
+
+См. определение в файле imagebase.\+h строка 63
+
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\index{Image\+Base@{Image\+Base}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{Image\+Base(uint32 height, uint32 width)}{ImageBase(uint32 height, uint32 width)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Image\+Base}$<$ T $>$\+::{\bf Image\+Base} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32}}]{height, }
+\item[{{\bf uint32}}]{width}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a6094d4bcf9e48de9b2d66d4f9bbb9db2}{}\label{class_image_base_a6094d4bcf9e48de9b2d66d4f9bbb9db2}
+
+
+См. определение в файле imagebase.\+h строка 72
+
+
+
+\subsection{Методы}
+\index{Image\+Base@{Image\+Base}!at@{at}}
+\index{at@{at}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{at(uint32 i, uint32 j) const }{at(uint32 i, uint32 j) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ const T \& {\bf Image\+Base}$<$ T $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32}}]{i, }
+\item[{{\bf uint32}}]{j}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_image_base_acf5042cc5679250825272cb23a4594a1}{}\label{class_image_base_acf5042cc5679250825272cb23a4594a1}
+
+
+См. определение в файле imagebase.\+h строка 111
+
+\index{Image\+Base@{Image\+Base}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{get\+Height() const }{getHeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf uint32} {\bf Image\+Base}$<$ T $>$\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_image_base_a750ec0d8ff1dd10dfa26467c018cc68c}{}\label{class_image_base_a750ec0d8ff1dd10dfa26467c018cc68c}
+
+
+См. определение в файле imagebase.\+h строка 123
+
+\index{Image\+Base@{Image\+Base}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{get\+Width() const }{getWidth() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf uint32} {\bf Image\+Base}$<$ T $>$\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_image_base_a576197cd4b79d141bb8bd832511fb26a}{}\label{class_image_base_a576197cd4b79d141bb8bd832511fb26a}
+
+
+См. определение в файле imagebase.\+h строка 135
+
+\index{Image\+Base@{Image\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{operator=(const Image\+Base \&image)}{operator=(const ImageBase &image)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Image\+Base}$<$ T $>$ \& {\bf Image\+Base}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Base}$<$ T $>$ \&}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a84b330cd4e586ff7bed5beee148c3309}{}\label{class_image_base_a84b330cd4e586ff7bed5beee148c3309}
+
+
+См. определение в файле imagebase.\+h строка 85
+
+\index{Image\+Base@{Image\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{operator=(\+Image\+Base \&\&image)}{operator=(ImageBase &&image)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Image\+Base}$<$ T $>$ \& {\bf Image\+Base}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Base}$<$ T $>$ \&\&}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a0def07d97e63c1448751a70e06c3e370}{}\label{class_image_base_a0def07d97e63c1448751a70e06c3e370}
+
+
+См. определение в файле imagebase.\+h строка 100
+
+\index{Image\+Base@{Image\+Base}!set@{set}}
+\index{set@{set}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{set(uint32 i, uint32 j, const T \&color)}{set(uint32 i, uint32 j, const T &color)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Image\+Base}$<$ T $>$\+::set (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32}}]{i, }
+\item[{{\bf uint32}}]{j, }
+\item[{const T \&}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a2ed65bd7506be1b5bf8ff56a5b56d3a2}{}\label{class_image_base_a2ed65bd7506be1b5bf8ff56a5b56d3a2}
+
+
+См. определение в файле imagebase.\+h строка 117
+
+\index{Image\+Base@{Image\+Base}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{set\+Height(uint32 value)}{setHeight(uint32 value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Image\+Base}$<$ T $>$\+::set\+Height (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_ac26af0c1bfd19f915f19d6b6f85c05c5}{}\label{class_image_base_ac26af0c1bfd19f915f19d6b6f85c05c5}
+
+
+См. определение в файле imagebase.\+h строка 129
+
+\index{Image\+Base@{Image\+Base}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{set\+Width(uint32 value)}{setWidth(uint32 value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Image\+Base}$<$ T $>$\+::set\+Width (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_image_base_a1448e596fe52852668baa5caefe23f86}{}\label{class_image_base_a1448e596fe52852668baa5caefe23f86}
+
+
+См. определение в файле imagebase.\+h строка 141
+
+
+
+\subsection{Документация по друзьям класса и функциям, относящимся к классу}
+\index{Image\+Base@{Image\+Base}!Grayscale\+Converter@{Grayscale\+Converter}}
+\index{Grayscale\+Converter@{Grayscale\+Converter}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{Grayscale\+Converter}{GrayscaleConverter}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ friend class Grayscale\+Converter\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_image_base_a655e20b76703bb6a4e6ecd9ed4a5d9ed}{}\label{class_image_base_a655e20b76703bb6a4e6ecd9ed4a5d9ed}
+
+
+См. определение в файле imagebase.\+h строка 39
+
+\index{Image\+Base@{Image\+Base}!Image\+Converter@{Image\+Converter}}
+\index{Image\+Converter@{Image\+Converter}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{Image\+Converter}{ImageConverter}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ friend class {\bf Image\+Converter}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_image_base_a683b929065aaead03ccce450a7b4ab30}{}\label{class_image_base_a683b929065aaead03ccce450a7b4ab30}
+
+
+См. определение в файле imagebase.\+h строка 38
+
+
+
+\subsection{Данные класса}
+\index{Image\+Base@{Image\+Base}!data@{data}}
+\index{data@{data}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ std\+::unique\+\_\+ptr$<$T\mbox{[}$\,$\mbox{]}$>$ {\bf Image\+Base}$<$ T $>$\+::data\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_image_base_aa619aa7a0b2cf0b5e45b0fbc102329c1}{}\label{class_image_base_aa619aa7a0b2cf0b5e45b0fbc102329c1}
+
+
+См. определение в файле imagebase.\+h строка 35
+
+\index{Image\+Base@{Image\+Base}!height@{height}}
+\index{height@{height}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf uint32} {\bf Image\+Base}$<$ T $>$\+::height\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_image_base_a2f5f532885f040113c198c424cc0ec7f}{}\label{class_image_base_a2f5f532885f040113c198c424cc0ec7f}
+
+
+См. определение в файле imagebase.\+h строка 36
+
+\index{Image\+Base@{Image\+Base}!width@{width}}
+\index{width@{width}!Image\+Base@{Image\+Base}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf uint32} {\bf Image\+Base}$<$ T $>$\+::width\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_image_base_a01be4d15909d029bf4ef23f8ed6f6369}{}\label{class_image_base_a01be4d15909d029bf4ef23f8ed6f6369}
+
+
+См. определение в файле imagebase.\+h строка 36
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/image/\hyperlink{imagebase_8h}{imagebase.\+h}\end{DoxyCompactItemize}

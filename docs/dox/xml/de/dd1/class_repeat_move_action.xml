@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/dd1/class_repeat_move_action" kind="class" language="C++" prot="public">
+    <compoundname>RepeatMoveAction</compoundname>
+    <basecompoundref refid="d7/dca/class_action" prot="public" virt="non-virtual">Action</basecompoundref>
+    <includes refid="d3/de1/actions_8h" local="no">actions.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="de/dd1/class_repeat_move_action_1a2edadba70d6c63c8d6373c821622a6ee" prot="protected" static="no" mutable="no">
+        <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref></type>
+        <definition>Vec3 RepeatMoveAction::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="30" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd1/class_repeat_move_action_1a26a23d209a989bcc3f634e29f0532652" prot="protected" static="no" mutable="no">
+        <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref></type>
+        <definition>Vec3 RepeatMoveAction::diff</definition>
+        <argsstring></argsstring>
+        <name>diff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dd1/class_repeat_move_action_1a8717501294f842084a88cb228b4d3687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RepeatMoveAction::RepeatMoveAction</definition>
+        <argsstring>(float duration, weak_ptr&lt; SceneObject &gt; object, const Vec3 &amp;finish)</argsstring>
+        <name>RepeatMoveAction</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>weak_ptr&lt; <ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>finish</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.cpp" bodystart="10" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd1/class_repeat_move_action_1ad2a08b798e2c0ae093d1ae358c8ec3c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool RepeatMoveAction::update</definition>
+        <argsstring>(float delta)</argsstring>
+        <name>update</name>
+        <reimplements refid="d7/dca/class_action_1aa6a73e716470c9b573b1afb4025b292d">update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.cpp" bodystart="21" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="453">
+        <label>Action</label>
+        <link refid="d7/dca/class_action"/>
+      </node>
+      <node id="452">
+        <label>RepeatMoveAction</label>
+        <link refid="de/dd1/class_repeat_move_action"/>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="455">
+        <label>Action</label>
+        <link refid="d7/dca/class_action"/>
+      </node>
+      <node id="454">
+        <label>RepeatMoveAction</label>
+        <link refid="de/dd1/class_repeat_move_action"/>
+        <childnode refid="455" relation="public-inheritance">
+        </childnode>
+        <childnode refid="456" relation="usage">
+          <edgelabel>#diff</edgelabel>
+          <edgelabel>#start</edgelabel>
+        </childnode>
+      </node>
+      <node id="456">
+        <label>Vector3&lt; float &gt;</label>
+        <link refid="d3/de7/class_vector3"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/actions.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/actions.h" bodystart="22" bodyend="32"/>
+    <listofallmembers>
+      <member refid="d7/dca/class_action_1aa456764076858773c74674ba04f25bd8" prot="public" virt="non-virtual"><scope>RepeatMoveAction</scope><name>Action</name></member>
+      <member refid="de/dd1/class_repeat_move_action_1a26a23d209a989bcc3f634e29f0532652" prot="protected" virt="non-virtual"><scope>RepeatMoveAction</scope><name>diff</name></member>
+      <member refid="d7/dca/class_action_1af26e528eec8ae24e9dfc1ab9d6e809a7" prot="protected" virt="non-virtual"><scope>RepeatMoveAction</scope><name>duration</name></member>
+      <member refid="d7/dca/class_action_1a1dfd6b0f501cce2b19d076b7d6b5aec8" prot="protected" virt="non-virtual"><scope>RepeatMoveAction</scope><name>object</name></member>
+      <member refid="de/dd1/class_repeat_move_action_1a8717501294f842084a88cb228b4d3687" prot="public" virt="non-virtual"><scope>RepeatMoveAction</scope><name>RepeatMoveAction</name></member>
+      <member refid="de/dd1/class_repeat_move_action_1a2edadba70d6c63c8d6373c821622a6ee" prot="protected" virt="non-virtual"><scope>RepeatMoveAction</scope><name>start</name></member>
+      <member refid="d7/dca/class_action_1a11d29bdc060c2c492d170632507c0635" prot="protected" virt="non-virtual"><scope>RepeatMoveAction</scope><name>time</name></member>
+      <member refid="de/dd1/class_repeat_move_action_1ad2a08b798e2c0ae093d1ae358c8ec3c2" prot="public" virt="virtual"><scope>RepeatMoveAction</scope><name>update</name></member>
+      <member refid="d7/dca/class_action_1abfc040fdc62410622a0e3835a713740f" prot="public" virt="virtual"><scope>RepeatMoveAction</scope><name>~Action</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

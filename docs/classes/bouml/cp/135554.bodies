@@ -1,0 +1,13 @@
+class Triangle
+!!!150658.cpp!!!	getV1() : int32
+    return v[0];
+!!!150786.cpp!!!	setV1(in value : int32) : void
+    v[0] = value;
+!!!150914.cpp!!!	getV2() : int32
+    return v[1];
+!!!151042.cpp!!!	setV2(in value : int32) : void
+    v[1] = value;
+!!!151170.cpp!!!	getV3() : int32
+    return v[2];
+!!!151298.cpp!!!	setV3(in value : int32) : void
+    v[2] = value;

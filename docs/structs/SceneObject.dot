@@ -1,0 +1,5 @@
+digraph SceneObject
+{
+graph [ rankdir="RL" ]
+"dc/df8/class_scene_object" [ label="SceneObject\nabstract\n|+SceneObject (  )\l+SceneObject ( position : const Vec3 & )\l+draw ( render : std::unique_ptr\< Renderer \> & ) : void \{pure-virtual\}\l+getPosition (  ) : const Vec3 & \{virtual\}\l+isCamera (  ) : bool \{pure-virtual\}\l+isLight (  ) : bool \{pure-virtual\}\l+setPosition ( value : const Vec3 & ) : void \{virtual\}\l+transform ( transformation : Transformation & ) : void \{pure-virtual\}\l+~SceneObject (  ) \{virtual\}\l|#position : Vec3\l" shape="record" ]
+}

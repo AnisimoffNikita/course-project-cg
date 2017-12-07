@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/d7b/composite_8cpp" kind="file" language="C++">
+    <compoundname>composite.cpp</compoundname>
+    <includes refid="de/d72/composite_8h" local="yes">composite.h</includes>
+    <incdepgraph>
+      <node id="2272">
+        <label>functional</label>
+      </node>
+      <node id="2266">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="2267" relation="include">
+        </childnode>
+        <childnode refid="2268" relation="include">
+        </childnode>
+        <childnode refid="2269" relation="include">
+        </childnode>
+      </node>
+      <node id="2269">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+      </node>
+      <node id="2270">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2271">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2272" relation="include">
+        </childnode>
+      </node>
+      <node id="2267">
+        <label>vector</label>
+      </node>
+      <node id="2265">
+        <label>composite.h</label>
+        <link refid="de/d72/composite_8h"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2264">
+        <label>Projects/labs/course_project_cg/src/animation/composite.cpp</label>
+        <link refid="composite.cpp"/>
+        <childnode refid="2265" relation="include">
+        </childnode>
+      </node>
+      <node id="2268">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/d72/composite_8h" kindref="compound">composite.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="df/dec/class_composite_1ad28832d957183a7f08dec72e6040db0a" refkind="member"><highlight class="normal"><ref refid="df/dec/class_composite_1ad28832d957183a7f08dec72e6040db0a" kindref="member">Composite::Composite</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="df/dec/class_composite_1a95e3d893a3e3ec8bbb2dc449278b64c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/dec/class_composite_1a95e3d893a3e3ec8bbb2dc449278b64c4" kindref="member">Composite::draw</ref>(std::unique_ptr&lt;Renderer&gt;<sp/>&amp;)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="df/dec/class_composite_1afaae38bc8ef323cf05bf5710dafbeb39" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/dec/class_composite_1afaae38bc8ef323cf05bf5710dafbeb39" kindref="member">Composite::transform</ref>(<ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="df/dec/class_composite_1a041e0a198c3c2fcc7b16f36a7511f7c3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/dec/class_composite_1a041e0a198c3c2fcc7b16f36a7511f7c3" kindref="member">Composite::isCamera</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="df/dec/class_composite_1a704e2e6583b8c553cbc5d1ddedea529d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/dec/class_composite_1a704e2e6583b8c553cbc5d1ddedea529d" kindref="member">Composite::isLight</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/composite.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,32 @@
+format 215
+"3rdparty" // src::3rdparty
+  revision 1
+  modified_by 2 "nikita"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/nikita/Projects/labs/course_project_cg/src/3rdparty/"
+  cpp_src_dir "/home/nikita/Projects/labs/course_project_cg/src/3rdparty/"
+  package_ref 128386 // ObjLoader
+end

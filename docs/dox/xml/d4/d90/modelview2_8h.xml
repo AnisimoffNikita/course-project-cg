@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/d90/modelview2_8h" kind="file" language="C++">
+    <compoundname>modelview2.h</compoundname>
+    <includes local="no">QWidget</includes>
+    <includes local="no">QMouseEvent</includes>
+    <includes local="no">QWheelEvent</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">QImage</includes>
+    <includes local="no">QTime</includes>
+    <includes refid="db/d83/scene_8h" local="yes">src/animation/scene.h</includes>
+    <includes refid="d6/d85/renderer_8h" local="yes">src/animation/renderer.h</includes>
+    <includes refid="d7/d86/actionmanager_8h" local="yes">src/animation/actionmanager.h</includes>
+    <includedby refid="d1/d5e/modelview2_8cpp" local="yes">Projects/labs/course_project_cg/src/widgets/modelview2.cpp</includedby>
+    <incdepgraph>
+      <node id="3768">
+        <label>src/animation/actionmanager.h</label>
+        <link refid="d7/d86/actionmanager_8h"/>
+        <childnode refid="3753" relation="include">
+        </childnode>
+        <childnode refid="3769" relation="include">
+        </childnode>
+      </node>
+      <node id="3757">
+        <label>functional</label>
+      </node>
+      <node id="3761">
+        <label>src/image/color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="3755" relation="include">
+        </childnode>
+      </node>
+      <node id="3749">
+        <label>src/animation/scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="3750" relation="include">
+        </childnode>
+        <childnode refid="3751" relation="include">
+        </childnode>
+        <childnode refid="3752" relation="include">
+        </childnode>
+        <childnode refid="3753" relation="include">
+        </childnode>
+        <childnode refid="3758" relation="include">
+        </childnode>
+        <childnode refid="3760" relation="include">
+        </childnode>
+        <childnode refid="3755" relation="include">
+        </childnode>
+        <childnode refid="3762" relation="include">
+        </childnode>
+      </node>
+      <node id="3753">
+        <label>sceneobject.h</label>
+        <link refid="d5/d69/sceneobject_8h"/>
+        <childnode refid="3752" relation="include">
+        </childnode>
+        <childnode refid="3750" relation="include">
+        </childnode>
+        <childnode refid="3754" relation="include">
+        </childnode>
+      </node>
+      <node id="3745">
+        <label>QWheelEvent</label>
+      </node>
+      <node id="3754">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="3755" relation="include">
+        </childnode>
+        <childnode refid="3756" relation="include">
+        </childnode>
+      </node>
+      <node id="3755">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3742">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="modelview2.h"/>
+        <childnode refid="3743" relation="include">
+        </childnode>
+        <childnode refid="3744" relation="include">
+        </childnode>
+        <childnode refid="3745" relation="include">
+        </childnode>
+        <childnode refid="3746" relation="include">
+        </childnode>
+        <childnode refid="3747" relation="include">
+        </childnode>
+        <childnode refid="3748" relation="include">
+        </childnode>
+        <childnode refid="3749" relation="include">
+        </childnode>
+        <childnode refid="3763" relation="include">
+        </childnode>
+        <childnode refid="3768" relation="include">
+        </childnode>
+      </node>
+      <node id="3747">
+        <label>QImage</label>
+      </node>
+      <node id="3766">
+        <label>meshdata.h</label>
+        <link refid="d5/d6a/meshdata_8h"/>
+        <childnode refid="3761" relation="include">
+        </childnode>
+        <childnode refid="3754" relation="include">
+        </childnode>
+        <childnode refid="3755" relation="include">
+        </childnode>
+        <childnode refid="3767" relation="include">
+        </childnode>
+        <childnode refid="3764" relation="include">
+        </childnode>
+      </node>
+      <node id="3759">
+        <label>src/math/matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="3755" relation="include">
+        </childnode>
+      </node>
+      <node id="3758">
+        <label>camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="3753" relation="include">
+        </childnode>
+        <childnode refid="3759" relation="include">
+        </childnode>
+      </node>
+      <node id="3744">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="3748">
+        <label>QTime</label>
+      </node>
+      <node id="3763">
+        <label>src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="3764" relation="include">
+        </childnode>
+        <childnode refid="3758" relation="include">
+        </childnode>
+        <childnode refid="3760" relation="include">
+        </childnode>
+        <childnode refid="3765" relation="include">
+        </childnode>
+        <childnode refid="3747" relation="include">
+        </childnode>
+      </node>
+      <node id="3756">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="3755" relation="include">
+        </childnode>
+        <childnode refid="3757" relation="include">
+        </childnode>
+      </node>
+      <node id="3746">
+        <label>QTimer</label>
+      </node>
+      <node id="3752">
+        <label>vector</label>
+      </node>
+      <node id="3743">
+        <label>QWidget</label>
+      </node>
+      <node id="3751">
+        <label>utility</label>
+      </node>
+      <node id="3767">
+        <label>array</label>
+      </node>
+      <node id="3765">
+        <label>mesh.h</label>
+        <link refid="d8/d3b/mesh_8h"/>
+        <childnode refid="3752" relation="include">
+        </childnode>
+        <childnode refid="3754" relation="include">
+        </childnode>
+        <childnode refid="3759" relation="include">
+        </childnode>
+        <childnode refid="3764" relation="include">
+        </childnode>
+        <childnode refid="3766" relation="include">
+        </childnode>
+      </node>
+      <node id="3762">
+        <label>QPixmap</label>
+      </node>
+      <node id="3764">
+        <label>transformation.h</label>
+        <link refid="dc/d53/transformation_8h"/>
+        <childnode refid="3754" relation="include">
+        </childnode>
+        <childnode refid="3759" relation="include">
+        </childnode>
+      </node>
+      <node id="3769">
+        <label>actions.h</label>
+        <link refid="d3/de1/actions_8h"/>
+        <childnode refid="3753" relation="include">
+        </childnode>
+        <childnode refid="3754" relation="include">
+        </childnode>
+      </node>
+      <node id="3760">
+        <label>light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="3753" relation="include">
+        </childnode>
+        <childnode refid="3761" relation="include">
+        </childnode>
+      </node>
+      <node id="3750">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3770">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="modelview2.h"/>
+        <childnode refid="3771" relation="include">
+        </childnode>
+      </node>
+      <node id="3771">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d5/d8f/class_model_view2" prot="public">ModelView2</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MODELVIEW2_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODELVIEW2_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMouseEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QWheelEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d83/scene_8h" kindref="compound">src/animation/scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d85/renderer_8h" kindref="compound">src/animation/renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d86/actionmanager_8h" kindref="compound">src/animation/actionmanager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d5/d8f/class_model_view2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d8f/class_model_view2" kindref="compound">ModelView2</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1a49c5f725d0d7540faa5288004c50a867" kindref="member">ModelView2</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1ae59cb67124c0409a250aa17e69aec1bb" kindref="member">mousePressEvent</ref>(QMouseEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1a60d419fe7b9564a83724bbb51ebdb014" kindref="member">mouseMoveEvent</ref>(QMouseEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1a118a304dcb2118dd6d78ff5e3f3cb2f1" kindref="member">wheelEvent</ref>(QWheelEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1a61d9ca903be6a825c0c72b14fc1f5fb0" kindref="member">paintEvent</ref>(QPaintEvent<sp/>*);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1acff1b190997243a07c654af83e7dd4e0" kindref="member">updateCanvas</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1a5ac909e07ab7908e7c9b6e63d92666af" kindref="member">scheduler</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d8f/class_model_view2_1a27eb4e398dc6506c3896175335d15850" kindref="member">sceneSetup</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d5/d8f/class_model_view2_1acb280540a8957a2f7a50ebf689608831" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_ptr&lt;Scene&gt;<sp/><ref refid="d5/d8f/class_model_view2_1acb280540a8957a2f7a50ebf689608831" kindref="member">scene</ref>;</highlight></codeline>
+<codeline lineno="35" refid="d5/d8f/class_model_view2_1ab6f007ccf983cf121c11717f90bfe7a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_ptr&lt;Renderer&gt;<sp/><ref refid="d5/d8f/class_model_view2_1ab6f007ccf983cf121c11717f90bfe7a8" kindref="member">renderer</ref>;</highlight></codeline>
+<codeline lineno="36" refid="d5/d8f/class_model_view2_1ad4ef1f165c0f1341dd73b7a8c0be357e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_ptr&lt;ActionManager&gt;<sp/><ref refid="d5/d8f/class_model_view2_1ad4ef1f165c0f1341dd73b7a8c0be357e" kindref="member">actionManager</ref>;</highlight></codeline>
+<codeline lineno="37" refid="d5/d8f/class_model_view2_1ab6f5ba3f864092610433f644bdd09540" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTimer<sp/>*<ref refid="d5/d8f/class_model_view2_1ab6f5ba3f864092610433f644bdd09540" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="38" refid="d5/d8f/class_model_view2_1a2ab7665cf858a630e0c08accf1cad25b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/><ref refid="d5/d8f/class_model_view2_1a2ab7665cf858a630e0c08accf1cad25b" kindref="member">lastPos</ref>;</highlight></codeline>
+<codeline lineno="39" refid="d5/d8f/class_model_view2_1acfbdec1f9d732929c211bd7f7fe60132" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="d5/d8f/class_model_view2_1acfbdec1f9d732929c211bd7f7fe60132" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="40" refid="d5/d8f/class_model_view2_1a74993d9390f59b659289765f886e3bfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTime<sp/><ref refid="d5/d8f/class_model_view2_1a74993d9390f59b659289765f886e3bfd" kindref="member">time</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MODELVIEW2_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/widgets/modelview2.h"/>
+  </compounddef>
+</doxygen>

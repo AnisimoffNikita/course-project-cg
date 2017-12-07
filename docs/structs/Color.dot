@@ -1,0 +1,5 @@
+digraph Color
+{
+graph [ rankdir="RL" ]
+"d9/ddd/class_color" [ label="Color\n|+Color (  )\l+Color ( color : const Color & )\l+Color ( gray : uint8 )\l+Color ( r : uint8, g : uint8, b : uint8 )\l+getBlue (  ) : uint8\l+getGreen (  ) : uint8\l+getRed (  ) : uint8\l+operator* ( factor : float ) : Color\l+operator+= ( other : const Color & ) : Color &\l+setBlue ( value : uint8 ) : void\l+setGray ( gray : uint8 ) : void\l+setGreen ( value : uint8 ) : void\l+setRed ( value : uint8 ) : void\l|-b : uint8\l-g : uint8\l-r : uint8\l" shape="record" ]
+}

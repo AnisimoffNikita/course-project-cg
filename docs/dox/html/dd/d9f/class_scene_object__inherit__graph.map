@@ -1,0 +1,8 @@
+<map id="SceneObject" name="SceneObject">
+<area shape="rect" id="node2" href="$da/dbb/class_camera.html" title="{Camera\n|# lookAt\l# up\l# viewMatrix\l# projectionMatrix\l|+ Camera()\l+ draw()\l+ transform()\l+ isCamera()\l+ isLight()\l+ setPosition()\l+ getLookAt()\l+ setLookAt()\l+ getEyeVector()\l+ getPVMatrix()\l+ getPMatrix()\l+ getVMatrix()\l# updateViewMatrix()\l}" alt="" coords="5,248,151,545"/>
+<area shape="rect" id="node3" href="$df/dec/class_composite.html" title="{Composite\n||+ Composite()\l+ draw()\l+ transform()\l+ isCamera()\l+ isLight()\l}" alt="" coords="175,329,280,465"/>
+<area shape="rect" id="node4" href="$da/d7c/class_light.html" title="{Light\n|# intensity\l|+ Light()\l+ Light()\l+ ~Light()\l+ draw()\l+ transform()\l+ isCamera()\l+ isLight()\l+ getIntensity()\l+ isPoint()\l}" alt="" coords="304,299,415,494"/>
+<area shape="rect" id="node7" href="$d0/de3/class_model.html" title="{Model\n|&#45; mesh\l|+ Model()\l+ Model()\l+ ~Model()\l+ draw()\l+ transform()\l+ isCamera()\l+ isLight()\l+ getMesh()\l+ setMesh()\l}" alt="" coords="439,299,538,494"/>
+<area shape="rect" id="node5" href="$d4/dd4/class_ambient_light.html" title="{AmbientLight\n||+ AmbientLight()\l+ getIntensity()\l+ isPoint()\l}" alt="" coords="231,601,349,707"/>
+<area shape="rect" id="node6" href="$dd/d0a/class_point_light.html" title="{PointLight\n||+ PointLight()\l+ ~PointLight()\l+ getIntensity()\l+ isPoint()\l}" alt="" coords="373,593,484,715"/>
+</map>

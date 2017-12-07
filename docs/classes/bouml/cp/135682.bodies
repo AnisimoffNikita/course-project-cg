@@ -1,0 +1,16 @@
+class ZBuffer
+!!!163074.cpp!!!	setSize(in w : int32, in h : int32) : void
+    width = w;
+    height = h;
+    buffer.resize(height * width);
+!!!163202.cpp!!!	init() : void
+    unsigned min = ~0;
+
+    for (int32 i = 0; i < height * width; i++)
+    {
+        buffer[i] = min;
+    }
+!!!163330.cpp!!!	get(in x : int32, in y : int32) : float
+    return buffer[y * width + x];
+!!!163458.cpp!!!	set(in x : int32, in y : int32, in value : float) : void
+    buffer[y * width + x] = value;

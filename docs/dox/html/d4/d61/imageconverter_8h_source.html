@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Исходный файл Projects/labs/course_project_cg/src/image/imageconverter.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_faa6bbdaad12a27e5f3fab6b6907be93.html">image</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imageconverter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d61/imageconverter_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IMAGECONVERTER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IMAGECONVERTER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/db2/image_8h.html">image.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d37/grayscaleimage_8h.html">grayscaleimage.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../db/db1/class_image_converter.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/db1/class_image_converter.html">ImageConverter</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../de/d73/class_image.html">Image</a> <a class="code" href="../../db/db1/class_image_converter.html#a5c0f28c5f9da5f2c64077e8dc7462a03">QImageToImage</a>(<span class="keyword">const</span> QImage &amp;qImage);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> QImage <a class="code" href="../../db/db1/class_image_converter.html#a1d4ec9d93d250b7db9dc8fbf28c513cf">ImageToQImage</a>(<span class="keyword">const</span> <a class="code" href="../../de/d73/class_image.html">Image</a> &amp;image);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a> <a class="code" href="../../db/db1/class_image_converter.html#a58b9e3e65e60d89986327f90bf305069">ImageToGrayscalImage</a>(<span class="keyword">const</span> <a class="code" href="../../de/d73/class_image.html">Image</a> &amp;image);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../de/d73/class_image.html">Image</a> <a class="code" href="../../db/db1/class_image_converter.html#a43b58fb52b437bad20fb9dbb57f01067">GrayscaleImageToImage</a>(<span class="keyword">const</span> <a class="code" href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a> &amp;image);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> <a class="code" href="../../db/db1/class_image_converter.html#a478c9d613c0591f3a0f0f0db6081b986">getGrayscale</a>(<span class="keyword">const</span> <a class="code" href="../../d9/ddd/class_color.html">Color</a> &amp;color);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // IMAGECONVERTER_H</span></div><div class="ttc" id="class_grayscale_image_html"><div class="ttname"><a href="../../dd/d52/class_grayscale_image.html">GrayscaleImage</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/grayscaleimage_8h_source.html#l00014">grayscaleimage.h:14</a></div></div>
+<div class="ttc" id="number_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d3/d22/number_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d22/number_8h_source.html#l00005">number.h:5</a></div></div>
+<div class="ttc" id="class_image_converter_html_a5c0f28c5f9da5f2c64077e8dc7462a03"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a5c0f28c5f9da5f2c64077e8dc7462a03">ImageConverter::QImageToImage</a></div><div class="ttdeci">static Image QImageToImage(const QImage &amp;qImage)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00004">imageconverter.cpp:4</a></div></div>
+<div class="ttc" id="class_color_html"><div class="ttname"><a href="../../d9/ddd/class_color.html">Color</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/color_8h_source.html#l00006">color.h:6</a></div></div>
+<div class="ttc" id="class_image_html"><div class="ttname"><a href="../../de/d73/class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db2/image_8h_source.html#l00015">image.h:15</a></div></div>
+<div class="ttc" id="class_image_converter_html_a478c9d613c0591f3a0f0f0db6081b986"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a478c9d613c0591f3a0f0f0db6081b986">ImageConverter::getGrayscale</a></div><div class="ttdeci">static uint8 getGrayscale(const Color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00053">imageconverter.cpp:53</a></div></div>
+<div class="ttc" id="image_8h_html"><div class="ttname"><a href="../../d5/db2/image_8h.html">image.h</a></div></div>
+<div class="ttc" id="class_image_converter_html_a1d4ec9d93d250b7db9dc8fbf28c513cf"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a1d4ec9d93d250b7db9dc8fbf28c513cf">ImageConverter::ImageToQImage</a></div><div class="ttdeci">static QImage ImageToQImage(const Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00024">imageconverter.cpp:24</a></div></div>
+<div class="ttc" id="class_image_converter_html"><div class="ttname"><a href="../../db/db1/class_image_converter.html">ImageConverter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d61/imageconverter_8h_source.html#l00009">imageconverter.h:9</a></div></div>
+<div class="ttc" id="grayscaleimage_8h_html"><div class="ttname"><a href="../../d3/d37/grayscaleimage_8h.html">grayscaleimage.h</a></div></div>
+<div class="ttc" id="class_image_converter_html_a58b9e3e65e60d89986327f90bf305069"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a58b9e3e65e60d89986327f90bf305069">ImageConverter::ImageToGrayscalImage</a></div><div class="ttdeci">static GrayscaleImage ImageToGrayscalImage(const Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00041">imageconverter.cpp:41</a></div></div>
+<div class="ttc" id="class_image_converter_html_a43b58fb52b437bad20fb9dbb57f01067"><div class="ttname"><a href="../../db/db1/class_image_converter.html#a43b58fb52b437bad20fb9dbb57f01067">ImageConverter::GrayscaleImageToImage</a></div><div class="ttdeci">static Image GrayscaleImageToImage(const GrayscaleImage &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d94/imageconverter_8cpp_source.html#l00061">imageconverter.cpp:61</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

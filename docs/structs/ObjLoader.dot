@@ -1,0 +1,5 @@
+digraph ObjLoader
+{
+graph [ rankdir="RL" ]
+"d5/dd8/class_obj_loader" [ label="ObjLoader\n|+Load ( filename : const string & ) : Mesh \{static\}\l+ObjLoader ( filename : const string & )\l+load (  ) : Mesh\l|-filename : string\l" shape="record" ]
+}

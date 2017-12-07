@@ -1,0 +1,5 @@
+class AmbientLight
+!!!141698.cpp!!!	getIntensity(in  : Vec3, in  : Vec3, in  : Vec3, in ka : Color, in  : Color, in  : Color, in  : float) : Color
+    return ka * intensity;
+!!!141826.cpp!!!	isPoint() : bool
+    return false;

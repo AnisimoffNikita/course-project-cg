@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: Файл Projects/labs/course_project_cg/src/math/matrix.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_7a6499598ddcfcabe96e224cb4a6d834.html">Projects</a></li><li class="navelem"><a class="el" href="../../dir_bae5b0473f9d0e31524012638c21b0c7.html">labs</a></li><li class="navelem"><a class="el" href="../../dir_baf9f069058bca806156b3af98b1f91f.html">course_project_cg</a></li><li class="navelem"><a class="el" href="../../dir_581b7ad157500577ff4e2176d03b851c.html">src</a></li><li class="navelem"><a class="el" href="../../dir_73373614dec9400c8130353c6d16a542.html">math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл matrix.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d3/d22/number_8h_source.html">src/number.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для matrix.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/dd7/matrix_8h__incl.png" border="0" usemap="#_projects_2labs_2course__project__cg_2src_2math_2matrix_8h" alt=""/></div>
+<map name="_projects_2labs_2course__project__cg_2src_2math_2matrix_8h" id="_projects_2labs_2course__project__cg_2src_2math_2matrix_8h">
+<area shape="rect" id="node2" href="../../d3/d22/number_8h.html" title="src/number.h" alt="" coords="28,109,127,136"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d78/matrix_8h__dep__incl.png" border="0" usemap="#_projects_2labs_2course__project__cg_2src_2math_2matrix_8hdep" alt=""/></div>
+<map name="_projects_2labs_2course__project__cg_2src_2math_2matrix_8hdep" id="_projects_2labs_2course__project__cg_2src_2math_2matrix_8hdep">
+<area shape="rect" id="node2" href="../../d7/df6/camera_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/camera.h" alt="" coords="787,317,957,373"/>
+<area shape="rect" id="node20" href="../../df/d3d/matrixfactory_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/matrixfactory.h" alt="" coords="400,317,571,373"/>
+<area shape="rect" id="node22" href="../../dc/d53/transformation_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/transformation.h" alt="" coords="1655,109,1825,165"/>
+<area shape="rect" id="node26" href="../../d8/d3b/mesh_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/mesh.h" alt="" coords="1276,317,1447,373"/>
+<area shape="rect" id="node40" href="../../d4/df0/homogeneousvertex_8h.html" title="Projects/labs/course\l_project_cg/src/math\l/homogeneousvertex.h" alt="" coords="2443,421,2597,477"/>
+<area shape="rect" id="node42" href="../../d5/d84/matrix_8cpp.html" title="Projects/labs/course\l_project_cg/src/math\l/matrix.cpp" alt="" coords="2573,109,2717,165"/>
+<area shape="rect" id="node3" href="../../d1/d6b/camera_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/camera.cpp" alt="" coords="541,421,712,477"/>
+<area shape="rect" id="node4" href="../../d6/d85/renderer_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/renderer.h" alt="" coords="1276,421,1447,477"/>
+<area shape="rect" id="node17" href="../../db/d83/scene_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/scene.h" alt="" coords="787,421,957,477"/>
+<area shape="rect" id="node18" href="../../d9/d8f/sceneobjectfactory_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/sceneobjectfactory.h" alt="" coords="67,525,237,581"/>
+<area shape="rect" id="node5" href="../../d7/d17/lightzbufferrenderer_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/lightzbufferrenderer.h" alt="" coords="1833,525,2004,581"/>
+<area shape="rect" id="node7" href="../../d6/d64/modelview_8cpp.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview.cpp" alt="" coords="469,629,629,685"/>
+<area shape="rect" id="node8" href="../../d1/d5e/modelview2_8cpp.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview2.cpp" alt="" coords="1839,629,1999,685"/>
+<area shape="rect" id="node9" href="../../d6/db4/model_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/model.cpp" alt="" coords="1393,525,1564,581"/>
+<area shape="rect" id="node10" href="../../d6/d54/renderer_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/renderer.cpp" alt="" coords="1588,525,1759,581"/>
+<area shape="rect" id="node11" href="../../da/d33/scene_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/scene.cpp" alt="" coords="925,525,1096,581"/>
+<area shape="rect" id="node12" href="../../d9/d53/mainwindow_8h.html" title="Projects/labs/course\l_project_cg/src/mainwindow.h" alt="" coords="1121,533,1319,574"/>
+<area shape="rect" id="node15" href="../../d3/d6a/modelview_8h.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview.h" alt="" coords="312,525,472,581"/>
+<area shape="rect" id="node16" href="../../d4/d90/modelview2_8h.html" title="Projects/labs/course\l_project_cg/src/widgets\l/modelview2.h" alt="" coords="741,525,901,581"/>
+<area shape="rect" id="node6" href="../../d8/dc3/lightzbufferrenderer_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/lightzbufferrenderer.cpp" alt="" coords="2548,629,2719,685"/>
+<area shape="rect" id="node13" href="../../df/d0a/main_8cpp.html" title="Projects/labs/course\l_project_cg/src/main.cpp" alt="" coords="2189,637,2357,678"/>
+<area shape="rect" id="node14" href="../../d8/dd9/mainwindow_8cpp.html" title="Projects/labs/course\l_project_cg/src/mainwindow.cpp" alt="" coords="218,637,430,678"/>
+<area shape="rect" id="node19" href="../../da/d15/sceneobjectfactory_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/sceneobjectfactory.cpp" alt="" coords="5,629,176,685"/>
+<area shape="rect" id="node21" href="../../da/d36/matrixfactory_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/matrixfactory.cpp" alt="" coords="347,421,517,477"/>
+<area shape="rect" id="node23" href="../../d0/d18/commontransformation_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/commontransformation.h" alt="" coords="3108,525,3279,581"/>
+<area shape="rect" id="node25" href="../../dd/dfa/light_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/light.cpp" alt="" coords="2063,213,2233,269"/>
+<area shape="rect" id="node28" href="../../dc/d51/model_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/model.h" alt="" coords="1031,421,1201,477"/>
+<area shape="rect" id="node31" href="../../d5/d6a/meshdata_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/meshdata.h" alt="" coords="1471,213,1641,269"/>
+<area shape="rect" id="node33" href="../../d0/d00/scaletransformation_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/scaletransformation.h" alt="" coords="2247,421,2417,477"/>
+<area shape="rect" id="node35" href="../../d0/dad/movetransformation_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/movetransformation.h" alt="" coords="1847,421,2017,477"/>
+<area shape="rect" id="node37" href="../../d5/d2e/rotatetransformation_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/rotatetransformation.h" alt="" coords="2048,421,2219,477"/>
+<area shape="rect" id="node39" href="../../d2/d67/transformation_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/transformation.cpp" alt="" coords="1716,213,1887,269"/>
+<area shape="rect" id="node24" href="../../de/dc1/commontransformation_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/commontransformation.cpp" alt="" coords="3101,629,3285,685"/>
+<area shape="rect" id="node27" href="../../d8/dd2/mesh_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/mesh.cpp" alt="" coords="1471,421,1641,477"/>
+<area shape="rect" id="node29" href="../../de/d7c/animation_2objloader_8h.html" title="Projects/labs/course\l_project_cg/src/animation\l/objloader.h" alt="" coords="496,525,667,581"/>
+<area shape="rect" id="node30" href="../../dd/dbb/objloader_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/objloader.cpp" alt="" coords="653,629,824,685"/>
+<area shape="rect" id="node32" href="../../dd/dd8/meshdata_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/meshdata.cpp" alt="" coords="1471,317,1641,373"/>
+<area shape="rect" id="node34" href="../../d3/dc7/scaletransformation_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/scaletransformation.cpp" alt="" coords="2671,525,2841,581"/>
+<area shape="rect" id="node36" href="../../db/dd4/movetransformation_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/movetransformation.cpp" alt="" coords="2231,525,2401,581"/>
+<area shape="rect" id="node38" href="../../dc/d9f/rotatetransformation_8cpp.html" title="Projects/labs/course\l_project_cg/src/animation\l/rotatetransformation.cpp" alt="" coords="2425,525,2596,581"/>
+<area shape="rect" id="node41" href="../../d6/def/homogeneousvertex_8cpp.html" title="Projects/labs/course\l_project_cg/src/math\l/homogeneousvertex.cpp" alt="" coords="2916,525,3084,581"/>
+</map>
+</div>
+</div>
+<p><a href="../../dd/df4/matrix_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix&lt; M, N, T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a077dce9756976f552e5703c34475d5e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#a077dce9756976f552e5703c34475d5e3">Mat4</a> = <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; 4, 4, float &gt;</td></tr>
+<tr class="separator:a077dce9756976f552e5703c34475d5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:afc99578cd5a48bbdeaa2457daed7cf1c"><td class="memTemplParams" colspan="2">template&lt;int32 M, int32 N, typename T &gt; </td></tr>
+<tr class="memitem:afc99578cd5a48bbdeaa2457daed7cf1c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#afc99578cd5a48bbdeaa2457daed7cf1c">operator+</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;m1, const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;m2)</td></tr>
+<tr class="separator:afc99578cd5a48bbdeaa2457daed7cf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae167d8d4563f1cefb01c70a1f11efbb2"><td class="memTemplParams" colspan="2">template&lt;int32 M, int32 N, typename T &gt; </td></tr>
+<tr class="memitem:ae167d8d4563f1cefb01c70a1f11efbb2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#ae167d8d4563f1cefb01c70a1f11efbb2">operator-</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;m1, const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;m2)</td></tr>
+<tr class="separator:ae167d8d4563f1cefb01c70a1f11efbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5dbdac70575aa11430751928c6ac97"><td class="memTemplParams" colspan="2">template&lt;int32 N, int32 M1, int32 M2, typename T &gt; </td></tr>
+<tr class="memitem:a4b5dbdac70575aa11430751928c6ac97"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M1, M2, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#a4b5dbdac70575aa11430751928c6ac97">operator*</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M1, N, T &gt; &amp;m1, const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; N, M2, T &gt; &amp;m2)</td></tr>
+<tr class="separator:a4b5dbdac70575aa11430751928c6ac97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0eff7d7c6b5d5e4c499493cae0dab26"><td class="memTemplParams" colspan="2">template&lt;int32 M, int32 N, typename T &gt; </td></tr>
+<tr class="memitem:ab0eff7d7c6b5d5e4c499493cae0dab26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#ab0eff7d7c6b5d5e4c499493cae0dab26">operator-</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;matrix)</td></tr>
+<tr class="separator:ab0eff7d7c6b5d5e4c499493cae0dab26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d11ffe31c035ea6a38ba95b8407dcb"><td class="memTemplParams" colspan="2">template&lt;int32 M, int32 N, typename T &gt; </td></tr>
+<tr class="memitem:aa0d11ffe31c035ea6a38ba95b8407dcb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#aa0d11ffe31c035ea6a38ba95b8407dcb">operator*</a> (T factor, const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;matrix)</td></tr>
+<tr class="separator:aa0d11ffe31c035ea6a38ba95b8407dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3666902c6cc04222e4ccf7cb45cdf96e"><td class="memTemplParams" colspan="2">template&lt;int32 M, int32 N, typename T &gt; </td></tr>
+<tr class="memitem:a3666902c6cc04222e4ccf7cb45cdf96e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#a3666902c6cc04222e4ccf7cb45cdf96e">operator*</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;matrix, T factor)</td></tr>
+<tr class="separator:a3666902c6cc04222e4ccf7cb45cdf96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29fee384749d934f288c7928a993396"><td class="memTemplParams" colspan="2">template&lt;int32 M, int32 N, typename T &gt; </td></tr>
+<tr class="memitem:aa29fee384749d934f288c7928a993396"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df4/matrix_8h.html#aa29fee384749d934f288c7928a993396">operator/</a> (const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;matrix, T divisor)</td></tr>
+<tr class="separator:aa29fee384749d934f288c7928a993396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Типы</h2>
+<a class="anchor" id="a077dce9756976f552e5703c34475d5e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dd/df4/matrix_8h.html#a077dce9756976f552e5703c34475d5e3">Mat4</a> =  <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;4, 4, float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00065">65</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="a4b5dbdac70575aa11430751928c6ac97"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int32 N, int32 M1, int32 M2, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;M1, M2, T&gt; operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M1, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; N, M2, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00253">253</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aa0d11ffe31c035ea6a38ba95b8407dcb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int32 M, int32 N, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;M, N, T&gt; operator* </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00289">289</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a3666902c6cc04222e4ccf7cb45cdf96e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int32 M, int32 N, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;M, N, T&gt; operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00303">303</a></p>
+
+</div>
+</div>
+<a class="anchor" id="afc99578cd5a48bbdeaa2457daed7cf1c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int32 M, int32 N, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;M, N, T&gt; operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00225">225</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ae167d8d4563f1cefb01c70a1f11efbb2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int32 M, int32 N, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;M, N, T&gt; operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00239">239</a></p>
+
+</div>
+</div>
+<a class="anchor" id="ab0eff7d7c6b5d5e4c499493cae0dab26"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int32 M, int32 N, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;M, N, T&gt; operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00275">275</a></p>
+
+</div>
+</div>
+<a class="anchor" id="aa29fee384749d934f288c7928a993396"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int32 M, int32 N, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt;M, N, T&gt; operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d3f/class_matrix.html">Matrix</a>&lt; M, N, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>divisor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="../../dd/df4/matrix_8h_source.html">matrix.h</a> строка <a class="el" href="../../dd/df4/matrix_8h_source.html#l00317">317</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

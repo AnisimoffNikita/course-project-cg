@@ -1,0 +1,193 @@
+class MainWindow
+!!!128258.cpp!!!	MainWindow(inout parent : QWidget = 0)
+    ui->setupUi(this);
+    resize(QGuiApplication::primaryScreen()->availableSize() * 0.8);
+    updateActions();
+    debug_setScene();
+!!!128386.cpp!!!	~MainWindow()
+    delete ui;
+!!!128642.cpp!!!	on_actOpenImage_triggered() : void
+    openFile();
+!!!128770.cpp!!!	on_btnCalibrate_clicked() : void
+    if (ui->rbnStandard->isChecked())
+    {
+        Image work = ImageConverter::QImageToImage(image);
+        GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                           ui->lblKernel->text().toInt());
+        CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                                ui->lblMaxThresh->text().toInt());
+        HoughTransform hough(ui->lblThresh->text().toInt());
+        gauss.process(work);
+        canny.process(work);
+        auto lines = hough.process(work);
+        calc.calibrate(lines,
+                       ui->edtDist->text().toDouble(),
+                       ui->edtR->text().toDouble(),
+                       ui->edtH->text().toDouble());
+        ui->imageView->setImage(ImageConverter::ImageToQImage(work));
+    }
+    else if (ui->rbnDiag->isChecked())
+    {
+        calc.calibrate(ui->edtDiag->text().toDouble(),
+                       ui->edtDiagPx->text().toDouble());
+    }
+!!!128898.cpp!!!	on_btnEval_clicked() : void
+    Image work = ImageConverter::QImageToImage(image);
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+    CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                            ui->lblMaxThresh->text().toInt());
+    HoughTransform hough(ui->lblThresh->text().toInt());
+    gauss.process(work);
+    canny.process(work);
+    auto lines = hough.process(work);
+    auto temp = ImageConverter::ImageToQImage(work);
+    auto size = calc.evaluate(lines);
+    ui->lblResH->setText(QString::number(size.getHeight()));
+    ui->lblResR->setText(QString::number(size.getRadius()));
+    ui->imageView->setImage(temp);
+!!!129026.cpp!!!	on_sldSigma_valueChanged(in value : int) : void
+    ui->lblSigma->setText(QString::number(value / 10.0, 'g', 2));
+    bool flag = state == 1;
+    on_btnGaussApply_clicked();
+
+    if (flag)
+    {
+        on_btnCannyApply_clicked();
+    }
+!!!129154.cpp!!!	on_sldKernelSize_valueChanged(in value : int) : void
+    ui->lblKernel->setText(QString::number(value * 2 - 1));
+    bool flag = state == 1;
+    on_btnGaussApply_clicked();
+
+    if (flag)
+    {
+        on_btnCannyApply_clicked();
+    }
+!!!129282.cpp!!!	on_sldMinThresh_valueChanged(in value : int) : void
+    ui->lblMinThresh->setText(QString::number(value));
+
+    if (value > ui->sldMaxThresh->value())
+    {
+        ui->lblMaxThresh->setText(QString::number(value + 1));
+        ui->sldMaxThresh->setValue(value + 1);
+    }
+
+    on_btnCannyApply_clicked();
+!!!129410.cpp!!!	on_sldMaxThresh_valueChanged(in value : int) : void
+    ui->lblMaxThresh->setText(QString::number(value));
+
+    if (value < ui->sldMinThresh->value())
+    {
+        ui->lblMinThresh->setText(QString::number(value - 1));
+        ui->sldMinThresh->setValue(value - 1);
+    }
+
+    on_btnCannyApply_clicked();
+!!!129538.cpp!!!	on_sldThresh_valueChanged(in value : int) : void
+    ui->lblThresh->setText(QString::number(value));
+    on_btnHoughApply_clicked();
+!!!129666.cpp!!!	on_actRestore_triggered() : void
+    ui->imageView->setImage(image);
+!!!129794.cpp!!!	on_btnGaussApply_clicked() : void
+    Image work = ImageConverter::QImageToImage(image);
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+    gauss.process(work);
+    auto temp = ImageConverter::ImageToQImage(work);
+    ui->imageView->setImage(temp);
+    state = 0;
+!!!129922.cpp!!!	on_btnCannyApply_clicked() : void
+    Image work = ImageConverter::QImageToImage(image);
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+    CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                            ui->lblMaxThresh->text().toInt());
+    gauss.process(work);
+    canny.process(work);
+    auto temp = ImageConverter::ImageToQImage(work);
+    ui->imageView->setImage(temp);
+    state = 1;
+!!!130050.cpp!!!	on_btnHoughApply_clicked() : void
+    Image work = ImageConverter::QImageToImage(image);
+    GaussianBlur gauss(ui->lblSigma->text().toDouble(),
+                       ui->lblKernel->text().toInt());
+    CannyEdgeDetector canny(ui->lblMinThresh->text().toInt(),
+                            ui->lblMaxThresh->text().toInt());
+    HoughTransform hough(ui->lblThresh->text().toInt());
+    gauss.process(work);
+    canny.process(work);
+    hough.process(work);
+    auto temp = ImageConverter::ImageToQImage(work);
+    ui->imageView->setImage(temp);
+!!!130178.cpp!!!	on_rbnStandard_toggled(in checked : bool) : void
+    ui->edtDist->setEnabled(checked);
+    ui->edtH->setEnabled(checked);
+    ui->edtR->setEnabled(checked);
+    ui->edtDiag->setEnabled(!checked);
+    ui->edtDiagPx->setEnabled(!checked);
+!!!130306.cpp!!!	on_rbnDiag_toggled(in checked : bool) : void
+    ui->edtDist->setEnabled(!checked);
+    ui->edtH->setEnabled(!checked);
+    ui->edtR->setEnabled(!checked);
+    ui->edtDiag->setEnabled(checked);
+    ui->edtDiagPx->setEnabled(checked);
+!!!130434.cpp!!!	on_actAnimation_triggered() : void
+    w.show();
+!!!130562.cpp!!!	openFile() : void
+    QFileDialog dialog(this, tr("Open File"));
+    initFileDialog(dialog, QFileDialog::AcceptOpen);
+
+    while (dialog.exec() == QDialog::Accepted &&
+            !loadFile(dialog.selectedFiles().first())) {}
+!!!130690.cpp!!!	loadFile(in filename : QString) : bool
+    QImageReader reader(filename);
+    reader.setAutoTransform(true);
+    const QImage newImage = reader.read();
+
+    if (newImage.isNull())
+    {
+        QMessageBox::information(this, QGuiApplication::applicationDisplayName(),
+                                 tr("Cannot load %1: %2")
+                                 .arg(QDir::toNativeSeparators(filename), reader.errorString()));
+        return false;
+    }
+
+    setImage(newImage);
+    const QString message = tr("Opened \"%1\", %2x%3")
+                            .arg(QDir::toNativeSeparators(filename)).arg(image.width()).arg(image.height());
+    statusBar()->showMessage(message);
+    return true;
+!!!130818.cpp!!!	setImage(in newImage : QImage) : void
+    image = newImage;
+    ui->imageView->setImage(image);
+    updateActions();
+!!!130946.cpp!!!	initFileDialog(inout dialog : QFileDialog, in acceptMode : QFileDialog::AcceptMode) : void
+    static bool firstDialog = true;
+
+    if (firstDialog)
+    {
+        firstDialog = false;
+        const QStringList picturesLocations = QStandardPaths::standardLocations(
+                QStandardPaths::PicturesLocation);
+        dialog.setDirectory(picturesLocations.isEmpty() ? QDir::currentPath() :
+                            picturesLocations.last());
+    }
+
+    QStringList mimeTypeFilters;
+    const QByteArrayList supportedMimeTypes = acceptMode == QFileDialog::AcceptOpen
+            ? QImageReader::supportedMimeTypes() : QImageWriter::supportedMimeTypes();
+
+    foreach (const QByteArray &mimeTypeName, supportedMimeTypes)
+    {
+        mimeTypeFilters.append(mimeTypeName);
+    }
+
+    mimeTypeFilters.sort();
+    dialog.setMimeTypeFilters(mimeTypeFilters);
+    dialog.selectMimeTypeFilter("image/png");
+
+    if (acceptMode == QFileDialog::AcceptSave)
+    {
+        dialog.setDefaultSuffix("png");
+    }

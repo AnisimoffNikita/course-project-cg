@@ -1,0 +1,5 @@
+digraph MoveTransformation
+{
+graph [ rankdir="RL" ]
+"da/d5b/class_move_transformation" [ label="MoveTransformation\n|+MoveTransformation ( delta : const Vec3 & )\l/+resetOrigin (  ) : void \{virtual\}\l/+transform ( vertex : Vec3 & ) : void \{virtual\}\l|" shape="record" ]
+}

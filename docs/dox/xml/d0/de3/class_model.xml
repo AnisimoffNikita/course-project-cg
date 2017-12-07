@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d0/de3/class_model" kind="class" language="C++" prot="public">
+    <compoundname>Model</compoundname>
+    <basecompoundref refid="dc/df8/class_scene_object" prot="public" virt="non-virtual">SceneObject</basecompoundref>
+    <includes refid="dc/d51/model_8h" local="no">model.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref></type>
+        <definition>Mesh Model::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="25" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/de3/class_model_1ab5bdabea36b1d1bee80151e2da913373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Model::Model</definition>
+        <argsstring>()=default</argsstring>
+        <name>Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a8dcd35d49dd569537d6f62ee61ade330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Model::Model</definition>
+        <argsstring>(const Vec3 &amp;position, const Mesh &amp;mesh)</argsstring>
+        <name>Model</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a2efbe4ec768191fa70ad86f260ec2fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Model::~Model</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a09879231a804bbc347d6549a5b1ad495" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Model::draw</definition>
+        <argsstring>(std::unique_ptr&lt; Renderer &gt; &amp;renderer) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="dc/df8/class_scene_object_1adc906ce4e4a896a351949ccabfd44016">draw</reimplements>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="d4/d44/class_renderer" kindref="compound">Renderer</ref> &gt; &amp;</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a0bb5ca842ec53af3dde6918a04eecbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Model::transform</definition>
+        <argsstring>(Transformation &amp;transformation) override</argsstring>
+        <name>transform</name>
+        <reimplements refid="dc/df8/class_scene_object_1a1b8a4b90f1200f1cd025d95964d43630">transform</reimplements>
+        <param>
+          <type><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref> &amp;</type>
+          <declname>transformation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.cpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a48eee23fb4c5246630fd97e21589f620" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Model::isCamera</definition>
+        <argsstring>() override</argsstring>
+        <name>isCamera</name>
+        <reimplements refid="dc/df8/class_scene_object_1a6d7cb8b9a2c29f38fd039731e83167f4">isCamera</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="18" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a362e8e14db5f0d90cb44759bdad96e13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Model::isLight</definition>
+        <argsstring>() override</argsstring>
+        <name>isLight</name>
+        <reimplements refid="dc/df8/class_scene_object_1a9c5b006b8a0e457634f15c19eb51ca73">isLight</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a38ca1ac30254bbf656b44c4dbac46474" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref></type>
+        <definition>Mesh Model::getMesh</definition>
+        <argsstring>() const </argsstring>
+        <name>getMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="21" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/de3/class_model_1a9b279076425cc5296ee501cb28e343ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Model::setMesh</definition>
+        <argsstring>(const Mesh &amp;mesh)</argsstring>
+        <name>setMesh</name>
+        <param>
+          <type>const <ref refid="dc/dbe/class_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/model.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="404">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+      </node>
+      <node id="403">
+        <label>Model</label>
+        <link refid="d0/de3/class_model"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="406">
+        <label>SceneObject</label>
+        <link refid="dc/df8/class_scene_object"/>
+        <childnode refid="407" relation="usage">
+          <edgelabel>#position</edgelabel>
+        </childnode>
+      </node>
+      <node id="408">
+        <label>Mesh</label>
+        <link refid="dc/dbe/class_mesh"/>
+        <childnode refid="409" relation="usage">
+          <edgelabel>-material</edgelabel>
+        </childnode>
+      </node>
+      <node id="409">
+        <label>Material</label>
+        <link refid="dc/dee/class_material"/>
+        <childnode refid="410" relation="usage">
+          <edgelabel>-ka</edgelabel>
+          <edgelabel>-ks</edgelabel>
+          <edgelabel>-kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="407">
+        <label>Vector3&lt; float &gt;</label>
+        <link refid="d3/de7/class_vector3"/>
+      </node>
+      <node id="410">
+        <label>Color</label>
+        <link refid="d9/ddd/class_color"/>
+      </node>
+      <node id="405">
+        <label>Model</label>
+        <link refid="d0/de3/class_model"/>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>-mesh</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/model.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/model.h" bodystart="8" bodyend="26"/>
+    <listofallmembers>
+      <member refid="d0/de3/class_model_1a09879231a804bbc347d6549a5b1ad495" prot="public" virt="virtual"><scope>Model</scope><name>draw</name></member>
+      <member refid="d0/de3/class_model_1a38ca1ac30254bbf656b44c4dbac46474" prot="public" virt="non-virtual"><scope>Model</scope><name>getMesh</name></member>
+      <member refid="dc/df8/class_scene_object_1a9e5d8a20e5e0123e894c2918b0e39dc3" prot="public" virt="virtual"><scope>Model</scope><name>getPosition</name></member>
+      <member refid="d0/de3/class_model_1a48eee23fb4c5246630fd97e21589f620" prot="public" virt="virtual"><scope>Model</scope><name>isCamera</name></member>
+      <member refid="d0/de3/class_model_1a362e8e14db5f0d90cb44759bdad96e13" prot="public" virt="virtual"><scope>Model</scope><name>isLight</name></member>
+      <member refid="d0/de3/class_model_1a3d4bb8dadc8b8fa5513cd052ccc2276e" prot="private" virt="non-virtual"><scope>Model</scope><name>mesh</name></member>
+      <member refid="d0/de3/class_model_1ab5bdabea36b1d1bee80151e2da913373" prot="public" virt="non-virtual"><scope>Model</scope><name>Model</name></member>
+      <member refid="d0/de3/class_model_1a8dcd35d49dd569537d6f62ee61ade330" prot="public" virt="non-virtual"><scope>Model</scope><name>Model</name></member>
+      <member refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" prot="protected" virt="non-virtual"><scope>Model</scope><name>position</name></member>
+      <member refid="dc/df8/class_scene_object_1a39ac215b0b6183ac251a26a522acde14" prot="public" virt="non-virtual"><scope>Model</scope><name>SceneObject</name></member>
+      <member refid="dc/df8/class_scene_object_1ad7093f7620ca338f97d98651fd6c87a9" prot="public" virt="non-virtual"><scope>Model</scope><name>SceneObject</name></member>
+      <member refid="d0/de3/class_model_1a9b279076425cc5296ee501cb28e343ea" prot="public" virt="non-virtual"><scope>Model</scope><name>setMesh</name></member>
+      <member refid="dc/df8/class_scene_object_1ae0e79b1773e3e3357d1dcf302463e46a" prot="public" virt="virtual"><scope>Model</scope><name>setPosition</name></member>
+      <member refid="d0/de3/class_model_1a0bb5ca842ec53af3dde6918a04eecbca" prot="public" virt="virtual"><scope>Model</scope><name>transform</name></member>
+      <member refid="d0/de3/class_model_1a2efbe4ec768191fa70ad86f260ec2fd6" prot="public" virt="virtual"><scope>Model</scope><name>~Model</name></member>
+      <member refid="dc/df8/class_scene_object_1a0b8708ffea012cd61f583103bf84b531" prot="public" virt="virtual"><scope>Model</scope><name>~SceneObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

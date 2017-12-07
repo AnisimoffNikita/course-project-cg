@@ -1,0 +1,5 @@
+digraph Renderer
+{
+graph [ rankdir="RL" ]
+"d4/d44/class_renderer" [ label="Renderer\nabstract\n|+Renderer (  )\l+Renderer ( scale : float, width : int32, height : int32 )\l+addLight ( value : SharedLight ) : void \{pure-virtual\}\l+finish (  ) : void \{pure-virtual\}\l+getRendered (  ) : uchar * \{pure-virtual\}\l+renderMesh ( mesh : shared_ptr\< Mesh \> ) : void \{pure-virtual\}\l+setCamera ( value : SharedCamera ) : void \{pure-virtual\}\l+start ( width : int32, height : int32 ) : void \{pure-virtual\}\l|#height : int32\l#scale : float\l#width : int32\l" shape="record" ]
+}

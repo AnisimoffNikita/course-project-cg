@@ -1,0 +1,24 @@
+class Color
+!!!164098.cpp!!!	getRed() : uint8
+    return r;
+!!!164226.cpp!!!	setRed(in value : uint8) : void
+    r = value;
+!!!164354.cpp!!!	getGreen() : uint8
+    return g;
+!!!164482.cpp!!!	setGreen(in value : uint8) : void
+    g = value;
+!!!164610.cpp!!!	getBlue() : uint8
+    return b;
+!!!164738.cpp!!!	setBlue(in value : uint8) : void
+    b = value;
+!!!164866.cpp!!!	setGray(in gray : uint8) : void
+    r = g = b = gray;
+!!!164994.cpp!!!	operator *(in factor : float) : Color
+    return Color(Math::Clamp(r * factor, 0.0f, 255.0f),
+                 Math::Clamp(g * factor, 0.0f, 255.0f),
+                 Math::Clamp(b * factor, 0.0f, 255.0f));
+!!!165122.cpp!!!	operator +=(in other : Color) : Color
+    r = Math::Clamp(r + other.r, 0, 255);
+    g = Math::Clamp(g + other.g, 0, 255);
+    b = Math::Clamp(b + other.b, 0, 255);
+    return *this;

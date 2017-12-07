@@ -1,0 +1,5 @@
+digraph objl::Mesh
+{
+graph [ rankdir="RL" ]
+"db/dea/structobjl_1_1_mesh" [ label="objl::Mesh\n|+Mesh (  )\l+Mesh ( _Vertices : std::vector\< Vertex \> &, _Indices : std::vector\< unsigned int \> & )\l|+Indices : std::vector\< unsigned int \>\l+MeshMaterial : Material\l+MeshName : std::string\l+Vertices : std::vector\< Vertex \>\l" shape="record" ]
+}

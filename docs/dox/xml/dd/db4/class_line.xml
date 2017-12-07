@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dd/db4/class_line" kind="class" language="C++" prot="public">
+    <compoundname>Line</compoundname>
+    <includes refid="d7/d5d/line_8h" local="no">line.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/db4/class_line_1a165376d8bc780a0b0ec7ffe8cd0d700a" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref></type>
+        <definition>Vec2 Line::p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/db4/class_line_1a21d0f4b2e7252e222e9d32921ea0162c" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref></type>
+        <definition>Vec2 Line::p2</definition>
+        <argsstring></argsstring>
+        <name>p2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="23" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/db4/class_line_1acc11b8a429d8cdd63ba6803dff5602b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>()</argsstring>
+        <name>Line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db4/class_line_1aef33536da5a03c1d95e4b113a9dc4ccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>(const Vec2 &amp;p1, const Vec2 &amp;p2)</argsstring>
+        <name>Line</name>
+        <param>
+          <type>const <ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db4/class_line_1aacff829b7404b0f81bd3001d9332b4a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref></type>
+        <definition>Vec2 Line::getP1</definition>
+        <argsstring>() const </argsstring>
+        <name>getP1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db4/class_line_1a238346a97b448ae7d1156c24dff41224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setP1</definition>
+        <argsstring>(const Vec2 &amp;value)</argsstring>
+        <name>setP1</name>
+        <param>
+          <type>const <ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="14" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db4/class_line_1a51b59fb089fd7a02d3f9d1d9a9a132c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref></type>
+        <definition>Vec2 Line::getP2</definition>
+        <argsstring>() const </argsstring>
+        <name>getP2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="16" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db4/class_line_1a9be1bb222db100fe5570558a0ab3bb42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setP2</definition>
+        <argsstring>(const Vec2 &amp;value)</argsstring>
+        <name>setP2</name>
+        <param>
+          <type>const <ref refid="d3/dbe/vec2_8h_1a056bf34213a36593f50f333d7653fe1c" kindref="member">Vec2</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="17" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/db4/class_line_1ae16899b229d209f5fa5d40049937e030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Line::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/line.h" line="19" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.cpp" bodystart="35" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="370">
+        <label>Line</label>
+        <link refid="dd/db4/class_line"/>
+        <childnode refid="371" relation="usage">
+          <edgelabel>-p2</edgelabel>
+          <edgelabel>-p1</edgelabel>
+        </childnode>
+      </node>
+      <node id="371">
+        <label>Vector2&lt; int32 &gt;</label>
+        <link refid="d8/dbe/class_vector2"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/math/line.h" line="8" column="1" bodyfile="Projects/labs/course_project_cg/src/math/line.h" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="dd/db4/class_line_1aacff829b7404b0f81bd3001d9332b4a7" prot="public" virt="non-virtual"><scope>Line</scope><name>getP1</name></member>
+      <member refid="dd/db4/class_line_1a51b59fb089fd7a02d3f9d1d9a9a132c7" prot="public" virt="non-virtual"><scope>Line</scope><name>getP2</name></member>
+      <member refid="dd/db4/class_line_1ae16899b229d209f5fa5d40049937e030" prot="public" virt="non-virtual"><scope>Line</scope><name>length</name></member>
+      <member refid="dd/db4/class_line_1acc11b8a429d8cdd63ba6803dff5602b3" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="dd/db4/class_line_1aef33536da5a03c1d95e4b113a9dc4ccf" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="dd/db4/class_line_1a165376d8bc780a0b0ec7ffe8cd0d700a" prot="private" virt="non-virtual"><scope>Line</scope><name>p1</name></member>
+      <member refid="dd/db4/class_line_1a21d0f4b2e7252e222e9d32921ea0162c" prot="private" virt="non-virtual"><scope>Line</scope><name>p2</name></member>
+      <member refid="dd/db4/class_line_1a238346a97b448ae7d1156c24dff41224" prot="public" virt="non-virtual"><scope>Line</scope><name>setP1</name></member>
+      <member refid="dd/db4/class_line_1a9be1bb222db100fe5570558a0ab3bb42" prot="public" virt="non-virtual"><scope>Line</scope><name>setP2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

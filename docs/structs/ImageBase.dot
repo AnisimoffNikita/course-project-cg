@@ -1,0 +1,5 @@
+digraph ImageBase
+{
+graph [ rankdir="RL" ]
+"db/d6b/class_image_base" [ label="ImageBase\n|+ImageBase (  )\l+ImageBase ( image : ImageBase && )\l+ImageBase ( image : const ImageBase & )\l+ImageBase ( height : uint32, width : uint32 )\l+at ( i : uint32, j : uint32 ) : const T &\l+getHeight (  ) : uint32\l+getWidth (  ) : uint32\l+operator= ( image : ImageBase && ) : ImageBase &\l+operator= ( image : const ImageBase & ) : ImageBase &\l+set ( i : uint32, j : uint32, color : const T & ) : void\l+setHeight ( value : uint32 ) : void\l+setWidth ( value : uint32 ) : void\l-GrayscaleConverter (  ) : friend class\l-ImageConverter (  ) : friend class\l|-data : std::unique_ptr\< T[]\>\l-height : uint32\l-width : uint32\l" shape="record" ]
+}

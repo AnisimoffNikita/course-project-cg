@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/dbd/class_ambient_light_factory" kind="class" language="C++" prot="public">
+    <compoundname>AmbientLightFactory</compoundname>
+    <basecompoundref refid="d4/df7/class_scene_object_factory" prot="public" virt="non-virtual">SceneObjectFactory</basecompoundref>
+    <includes refid="d9/d8f/sceneobjectfactory_8h" local="no">sceneobjectfactory.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/dbd/class_ambient_light_factory_1a221bc9ca33216eece4eb9878444dbb94" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d4/dd4/class_ambient_light" kindref="compound">AmbientLight</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;AmbientLight&gt; AmbientLightFactory::light</definition>
+        <argsstring></argsstring>
+        <name>light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="63" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/dbd/class_ambient_light_factory_1ad4d095b7032ce4d9488d8ce1d845d890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AmbientLightFactory::AmbientLightFactory</definition>
+        <argsstring>(float intensity)</argsstring>
+        <name>AmbientLightFactory</name>
+        <param>
+          <type>float</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="58" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dbd/class_ambient_light_factory_1a160c909523b2e01f63934bc70c25f159" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual AmbientLightFactory::~AmbientLightFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~AmbientLightFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dbd/class_ambient_light_factory_1a423c2ae34a9ce60c313470a4d1da0eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref></type>
+        <definition>SharedSceneObject AmbientLightFactory::create</definition>
+        <argsstring>() override</argsstring>
+        <name>create</name>
+        <reimplements refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993">create</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="61" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="278">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+      <node id="277">
+        <label>AmbientLightFactory</label>
+        <link refid="d5/dbd/class_ambient_light_factory"/>
+        <childnode refid="278" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="280">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+      <node id="279">
+        <label>AmbientLightFactory</label>
+        <link refid="d5/dbd/class_ambient_light_factory"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="56" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="55" bodyend="64"/>
+    <listofallmembers>
+      <member refid="d5/dbd/class_ambient_light_factory_1ad4d095b7032ce4d9488d8ce1d845d890" prot="public" virt="non-virtual"><scope>AmbientLightFactory</scope><name>AmbientLightFactory</name></member>
+      <member refid="d5/dbd/class_ambient_light_factory_1a423c2ae34a9ce60c313470a4d1da0eac" prot="public" virt="virtual"><scope>AmbientLightFactory</scope><name>create</name></member>
+      <member refid="d5/dbd/class_ambient_light_factory_1a221bc9ca33216eece4eb9878444dbb94" prot="private" virt="non-virtual"><scope>AmbientLightFactory</scope><name>light</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" prot="public" virt="non-virtual"><scope>AmbientLightFactory</scope><name>SceneObjectFactory</name></member>
+      <member refid="d5/dbd/class_ambient_light_factory_1a160c909523b2e01f63934bc70c25f159" prot="public" virt="virtual"><scope>AmbientLightFactory</scope><name>~AmbientLightFactory</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" prot="public" virt="virtual"><scope>AmbientLightFactory</scope><name>~SceneObjectFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

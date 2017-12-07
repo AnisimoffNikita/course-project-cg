@@ -1,0 +1,3 @@
+class Transformation
+!!!162562.cpp!!!	getMatrix() : Mat4
+    return _matrix;

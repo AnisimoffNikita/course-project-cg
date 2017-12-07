@@ -1,0 +1,5 @@
+digraph CommonTransformation
+{
+graph [ rankdir="RL" ]
+"d1/d3e/class_common_transformation" [ label="CommonTransformation\n|+CommonTransformation ( matrix : const Mat4 & )\l/+resetOrigin (  ) : void \{virtual\}\l/+transform ( vertex : Vec3 & ) : void \{virtual\}\l|" shape="record" ]
+}

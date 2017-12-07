@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dc/dee/class_material" kind="class" language="C++" prot="public">
+    <compoundname>Material</compoundname>
+    <includes refid="d5/d6a/meshdata_8h" local="no">meshdata.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/dee/class_material_1a93cc771f8b2e9d1f273465e25504ea7b" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>Color Material::ka</definition>
+        <argsstring></argsstring>
+        <name>ka</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="78" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dee/class_material_1a42e6838a32f4a6b54a62a01afc4a1cdb" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>Color Material::kd</definition>
+        <argsstring></argsstring>
+        <name>kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="79" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dee/class_material_1a986cb019dc23c99fc139b16793c1ddb5" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/ddd/class_color" kindref="compound">Color</ref></type>
+        <definition>Color Material::ks</definition>
+        <argsstring></argsstring>
+        <name>ks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="80" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dee/class_material_1a49335919c5596c4523f71be7f01bdf9d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Material::ns</definition>
+        <argsstring></argsstring>
+        <name>ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="81" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dee/class_material_1a9132d1f6cc468abe6c40659962e06236" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Material::ni</definition>
+        <argsstring></argsstring>
+        <name>ni</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="82" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dee/class_material_1a72cb289b8dccb7a08e0b0f7880a92803" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Material::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="83" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/dee/class_material_1a6059ec72855855b11672ff25962e9336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Material::Material</definition>
+        <argsstring>()=default</argsstring>
+        <name>Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1ac71c087b6f2dcbf130e19e38067a7a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Material::Material</definition>
+        <argsstring>(const Color &amp;ka, const Color &amp;kd, const Color &amp;ks, float ns, float ni, float d)</argsstring>
+        <name>Material</name>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ka</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>kd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>ks</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ns</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ni</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="56" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="78" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1a58208d6d0a2debccac4739af6ba61b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color &amp; Material::getKa</definition>
+        <argsstring>()</argsstring>
+        <name>getKa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="59" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1af4bc3531d699fb7b7a06253d674d0ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Material::setKa</definition>
+        <argsstring>(const Color &amp;value)</argsstring>
+        <name>setKa</name>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="60" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1ad89eb0c9b9d729e918a91d7a621afe10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color &amp; Material::getKd</definition>
+        <argsstring>()</argsstring>
+        <name>getKd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="62" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1ab31df4f79c03f8863c96dd748b9d2069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Material::setKd</definition>
+        <argsstring>(const Color &amp;value)</argsstring>
+        <name>setKd</name>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="63" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1ad03edbeaa265fc4aa796904b7f314e86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color &amp; Material::getKs</definition>
+        <argsstring>()</argsstring>
+        <name>getKs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="65" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1a0333444c1bfe41998957f56319481f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Material::setKs</definition>
+        <argsstring>(const Color &amp;value)</argsstring>
+        <name>setKs</name>
+        <param>
+          <type>const <ref refid="d9/ddd/class_color" kindref="compound">Color</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="66" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1a8843ba8fa8d3e8fb3e04d6a7553408ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Material::getNs</definition>
+        <argsstring>() const </argsstring>
+        <name>getNs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="68" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1a46bf0fa68e2bf6da38f360eaecc8bd13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Material::setNs</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setNs</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="69" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1afe38fa1be1b3f608ff08414ccc99d539" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Material::getNi</definition>
+        <argsstring>() const </argsstring>
+        <name>getNi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="71" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1a1d41d55723411069d7774c3ae2b33bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Material::setNi</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setNi</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="72" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1ae8fef701b92d7ca4ddb3761dd2133fec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Material::getD</definition>
+        <argsstring>() const </argsstring>
+        <name>getD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="74" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dee/class_material_1a7729d3679891dd4394c1468c0a338a01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Material::setD</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setD</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="75" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="386">
+        <label>Material</label>
+        <link refid="dc/dee/class_material"/>
+        <childnode refid="387" relation="usage">
+          <edgelabel>-ka</edgelabel>
+          <edgelabel>-ks</edgelabel>
+          <edgelabel>-kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="387">
+        <label>Color</label>
+        <link refid="d9/ddd/class_color"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="53" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="52" bodyend="84"/>
+    <listofallmembers>
+      <member refid="dc/dee/class_material_1a72cb289b8dccb7a08e0b0f7880a92803" prot="private" virt="non-virtual"><scope>Material</scope><name>d</name></member>
+      <member refid="dc/dee/class_material_1ae8fef701b92d7ca4ddb3761dd2133fec" prot="public" virt="non-virtual"><scope>Material</scope><name>getD</name></member>
+      <member refid="dc/dee/class_material_1a58208d6d0a2debccac4739af6ba61b7b" prot="public" virt="non-virtual"><scope>Material</scope><name>getKa</name></member>
+      <member refid="dc/dee/class_material_1ad89eb0c9b9d729e918a91d7a621afe10" prot="public" virt="non-virtual"><scope>Material</scope><name>getKd</name></member>
+      <member refid="dc/dee/class_material_1ad03edbeaa265fc4aa796904b7f314e86" prot="public" virt="non-virtual"><scope>Material</scope><name>getKs</name></member>
+      <member refid="dc/dee/class_material_1afe38fa1be1b3f608ff08414ccc99d539" prot="public" virt="non-virtual"><scope>Material</scope><name>getNi</name></member>
+      <member refid="dc/dee/class_material_1a8843ba8fa8d3e8fb3e04d6a7553408ea" prot="public" virt="non-virtual"><scope>Material</scope><name>getNs</name></member>
+      <member refid="dc/dee/class_material_1a93cc771f8b2e9d1f273465e25504ea7b" prot="private" virt="non-virtual"><scope>Material</scope><name>ka</name></member>
+      <member refid="dc/dee/class_material_1a42e6838a32f4a6b54a62a01afc4a1cdb" prot="private" virt="non-virtual"><scope>Material</scope><name>kd</name></member>
+      <member refid="dc/dee/class_material_1a986cb019dc23c99fc139b16793c1ddb5" prot="private" virt="non-virtual"><scope>Material</scope><name>ks</name></member>
+      <member refid="dc/dee/class_material_1a6059ec72855855b11672ff25962e9336" prot="public" virt="non-virtual"><scope>Material</scope><name>Material</name></member>
+      <member refid="dc/dee/class_material_1ac71c087b6f2dcbf130e19e38067a7a5b" prot="public" virt="non-virtual"><scope>Material</scope><name>Material</name></member>
+      <member refid="dc/dee/class_material_1a9132d1f6cc468abe6c40659962e06236" prot="private" virt="non-virtual"><scope>Material</scope><name>ni</name></member>
+      <member refid="dc/dee/class_material_1a49335919c5596c4523f71be7f01bdf9d" prot="private" virt="non-virtual"><scope>Material</scope><name>ns</name></member>
+      <member refid="dc/dee/class_material_1a7729d3679891dd4394c1468c0a338a01" prot="public" virt="non-virtual"><scope>Material</scope><name>setD</name></member>
+      <member refid="dc/dee/class_material_1af4bc3531d699fb7b7a06253d674d0ede" prot="public" virt="non-virtual"><scope>Material</scope><name>setKa</name></member>
+      <member refid="dc/dee/class_material_1ab31df4f79c03f8863c96dd748b9d2069" prot="public" virt="non-virtual"><scope>Material</scope><name>setKd</name></member>
+      <member refid="dc/dee/class_material_1a0333444c1bfe41998957f56319481f23" prot="public" virt="non-virtual"><scope>Material</scope><name>setKs</name></member>
+      <member refid="dc/dee/class_material_1a1d41d55723411069d7774c3ae2b33bc8" prot="public" virt="non-virtual"><scope>Material</scope><name>setNi</name></member>
+      <member refid="dc/dee/class_material_1a46bf0fa68e2bf6da38f360eaecc8bd13" prot="public" virt="non-virtual"><scope>Material</scope><name>setNs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d9/db7/class_homogeneous_vertex_converter" kind="class" language="C++" prot="public">
+    <compoundname>HomogeneousVertexConverter</compoundname>
+    <includes refid="d4/df0/homogeneousvertex_8h" local="no">homogeneousvertex.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref></type>
+        <definition>Vec3 HomogeneousVertexConverter::ToVertex</definition>
+        <argsstring>(const HomogeneousVertex &amp;hvec)</argsstring>
+        <name>ToVertex</name>
+        <param>
+          <type>const <ref refid="d4/df0/homogeneousvertex_8h_1ac57a7e4c1ca5e8ae47858d4ae8e7120d" kindref="member">HomogeneousVertex</ref> &amp;</type>
+          <declname>hvec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/homogeneousvertex.h" line="12" column="1" bodyfile="Projects/labs/course_project_cg/src/math/homogeneousvertex.cpp" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/df0/homogeneousvertex_8h_1ac57a7e4c1ca5e8ae47858d4ae8e7120d" kindref="member">HomogeneousVertex</ref></type>
+        <definition>HomogeneousVertex HomogeneousVertexConverter::FromVertex</definition>
+        <argsstring>(const Vec3 &amp;vec)</argsstring>
+        <name>FromVertex</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/math/homogeneousvertex.h" line="13" column="1" bodyfile="Projects/labs/course_project_cg/src/math/homogeneousvertex.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="338">
+        <label>HomogeneousVertexConverter</label>
+        <link refid="d9/db7/class_homogeneous_vertex_converter"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/math/homogeneousvertex.h" line="10" column="1" bodyfile="Projects/labs/course_project_cg/src/math/homogeneousvertex.h" bodystart="9" bodyend="14"/>
+    <listofallmembers>
+      <member refid="d9/db7/class_homogeneous_vertex_converter_1a2e43c599f3a88f27316d098548430978" prot="public" virt="non-virtual"><scope>HomogeneousVertexConverter</scope><name>FromVertex</name></member>
+      <member refid="d9/db7/class_homogeneous_vertex_converter_1a5ee9db87aeed48aec688c3ce53ae4e4c" prot="public" virt="non-virtual"><scope>HomogeneousVertexConverter</scope><name>ToVertex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

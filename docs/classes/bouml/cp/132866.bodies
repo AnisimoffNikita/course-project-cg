@@ -1,0 +1,5 @@
+class SceneObject
+!!!159618.cpp!!!	getPosition() : Vec3
+    return position;
+!!!159746.cpp!!!	setPosition(in value : Vec3) : void
+    position = value;

@@ -1,0 +1,5 @@
+digraph Light
+{
+graph [ rankdir="RL" ]
+"da/d7c/class_light" [ label="Light\nabstract\n|+Light (  )\l+Light ( position : const Vec3 &, intensity : float )\l/+draw (  : std::unique_ptr\< Renderer \> & ) : void \{virtual\}\l+getIntensity ( normal : const Vec3 &, position : const Vec3 &, camera : const Vec3 &... ) : Color \{pure-virtual\}\l/+isCamera (  ) : bool \{virtual\}\l/+isLight (  ) : bool \{virtual\}\l+isPoint (  ) : bool \{pure-virtual\}\l/+transform ( transformation : Transformation & ) : void \{virtual\}\l+~Light (  ) \{virtual\}\l|#intensity : float\l" shape="record" ]
+}

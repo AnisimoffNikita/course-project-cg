@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d2/d28/class_triangle" kind="class" language="C++" prot="public">
+    <compoundname>Triangle</compoundname>
+    <includes refid="d5/d6a/meshdata_8h" local="no">meshdata.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" prot="private" static="no" mutable="no">
+        <type>array&lt; int, 3 &gt;</type>
+        <definition>array&lt;int, 3&gt; Triangle::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="49" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d28/class_triangle_1abe6f0d035449cb80a7cc4d79baef9c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Triangle::Triangle</definition>
+        <argsstring>()=default</argsstring>
+        <name>Triangle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d28/class_triangle_1a287c84286a7340a754ee2df0a92af7af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Triangle::Triangle</definition>
+        <argsstring>(const int32 &amp;v1, const int32 &amp;v2, const int32 &amp;v3)</argsstring>
+        <name>Triangle</name>
+        <param>
+          <type>const <ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref> &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d28/class_triangle_1a0dd722e3cb9d7ea46e514f8abf76335e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 Triangle::getV1</definition>
+        <argsstring>() const </argsstring>
+        <name>getV1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="40" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d28/class_triangle_1afece0efdaf53062c218d9bf70291e8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Triangle::setV1</definition>
+        <argsstring>(const int32 &amp;value)</argsstring>
+        <name>setV1</name>
+        <param>
+          <type>const <ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="41" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d28/class_triangle_1a3c40179262b85e1eab30a10f9c65b898" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 Triangle::getV2</definition>
+        <argsstring>() const </argsstring>
+        <name>getV2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="43" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d28/class_triangle_1a35f9096c0a99c8b8dc6717755bc1ec07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Triangle::setV2</definition>
+        <argsstring>(const int32 &amp;value)</argsstring>
+        <name>setV2</name>
+        <param>
+          <type>const <ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="44" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d28/class_triangle_1ae664a58d61cf1d7b966f578b21a7c1db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref></type>
+        <definition>int32 Triangle::getV3</definition>
+        <argsstring>() const </argsstring>
+        <name>getV3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="46" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d28/class_triangle_1aff0abb038d3c9088b5ab59616aeeaaf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Triangle::setV3</definition>
+        <argsstring>(const int32 &amp;value)</argsstring>
+        <name>setV3</name>
+        <param>
+          <type>const <ref refid="d3/d22/number_8h_1a43d43196463bde49cb067f5c20ab8481" kindref="member">int32</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="47" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="508">
+        <label>Triangle</label>
+        <link refid="d2/d28/class_triangle"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/meshdata.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/meshdata.h" bodystart="34" bodyend="50"/>
+    <listofallmembers>
+      <member refid="d2/d28/class_triangle_1a0dd722e3cb9d7ea46e514f8abf76335e" prot="public" virt="non-virtual"><scope>Triangle</scope><name>getV1</name></member>
+      <member refid="d2/d28/class_triangle_1a3c40179262b85e1eab30a10f9c65b898" prot="public" virt="non-virtual"><scope>Triangle</scope><name>getV2</name></member>
+      <member refid="d2/d28/class_triangle_1ae664a58d61cf1d7b966f578b21a7c1db" prot="public" virt="non-virtual"><scope>Triangle</scope><name>getV3</name></member>
+      <member refid="d2/d28/class_triangle_1afece0efdaf53062c218d9bf70291e8ce" prot="public" virt="non-virtual"><scope>Triangle</scope><name>setV1</name></member>
+      <member refid="d2/d28/class_triangle_1a35f9096c0a99c8b8dc6717755bc1ec07" prot="public" virt="non-virtual"><scope>Triangle</scope><name>setV2</name></member>
+      <member refid="d2/d28/class_triangle_1aff0abb038d3c9088b5ab59616aeeaaf9" prot="public" virt="non-virtual"><scope>Triangle</scope><name>setV3</name></member>
+      <member refid="d2/d28/class_triangle_1abe6f0d035449cb80a7cc4d79baef9c3f" prot="public" virt="non-virtual"><scope>Triangle</scope><name>Triangle</name></member>
+      <member refid="d2/d28/class_triangle_1a287c84286a7340a754ee2df0a92af7af" prot="public" virt="non-virtual"><scope>Triangle</scope><name>Triangle</name></member>
+      <member refid="d2/d28/class_triangle_1abfe7a6f1dcde5b737bf0aa67aa348b8d" prot="private" virt="non-virtual"><scope>Triangle</scope><name>v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

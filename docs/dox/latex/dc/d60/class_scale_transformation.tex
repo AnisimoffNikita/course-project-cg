@@ -1,0 +1,111 @@
+\hypertarget{class_scale_transformation}{}\section{Класс Scale\+Transformation}
+\label{class_scale_transformation}\index{Scale\+Transformation@{Scale\+Transformation}}
+
+
+{\ttfamily \#include $<$scaletransformation.\+h$>$}
+
+
+
+Граф наследования\+:Scale\+Transformation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{dd/dcf/class_scale_transformation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Scale\+Transformation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d3f/class_scale_transformation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scale_transformation_a439313c9450e0f2a8cb7b6dc30f5c055}{Scale\+Transformation} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&scale, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&set\+Origin)
+\item 
+virtual void \hyperlink{class_scale_transformation_a78e8e8f441eea7f39b669ea8bbd1bdc2}{transform} (\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&vertex) const override
+\item 
+virtual void \hyperlink{class_scale_transformation_a4c23c7d4596a9bb90ee5f854aa3e5a17}{reset\+Origin} () override
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_scale_transformation_ad2053c743ab2b0d87149c24540aadaaa}{\+\_\+origin}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле scaletransformation.\+h строка 6
+
+
+
+\subsection{Конструктор(ы)}
+\index{Scale\+Transformation@{Scale\+Transformation}!Scale\+Transformation@{Scale\+Transformation}}
+\index{Scale\+Transformation@{Scale\+Transformation}!Scale\+Transformation@{Scale\+Transformation}}
+\subsubsection[{\texorpdfstring{Scale\+Transformation(const Vec3 \&scale, const Vec3 \&set\+Origin)}{ScaleTransformation(const Vec3 &scale, const Vec3 &setOrigin)}}]{\setlength{\rightskip}{0pt plus 5cm}Scale\+Transformation\+::\+Scale\+Transformation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{scale, }
+\item[{const {\bf Vec3} \&}]{set\+Origin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scale_transformation_a439313c9450e0f2a8cb7b6dc30f5c055}{}\label{class_scale_transformation_a439313c9450e0f2a8cb7b6dc30f5c055}
+
+
+См. определение в файле scaletransformation.\+cpp строка 5
+
+
+
+\subsection{Методы}
+\index{Scale\+Transformation@{Scale\+Transformation}!reset\+Origin@{reset\+Origin}}
+\index{reset\+Origin@{reset\+Origin}!Scale\+Transformation@{Scale\+Transformation}}
+\subsubsection[{\texorpdfstring{reset\+Origin() override}{resetOrigin() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Scale\+Transformation\+::reset\+Origin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_scale_transformation_a4c23c7d4596a9bb90ee5f854aa3e5a17}{}\label{class_scale_transformation_a4c23c7d4596a9bb90ee5f854aa3e5a17}
+
+
+Замещает \hyperlink{class_transformation_a2bc354a92aeda699c7c12c54eb120038}{Transformation}.
+
+
+
+См. определение в файле scaletransformation.\+cpp строка 27
+
+\index{Scale\+Transformation@{Scale\+Transformation}!transform@{transform}}
+\index{transform@{transform}!Scale\+Transformation@{Scale\+Transformation}}
+\subsubsection[{\texorpdfstring{transform(\+Vec3 \&vertex) const override}{transform(Vec3 &vertex) const override}}]{\setlength{\rightskip}{0pt plus 5cm}void Scale\+Transformation\+::transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Vec3} \&}]{vertex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_scale_transformation_a78e8e8f441eea7f39b669ea8bbd1bdc2}{}\label{class_scale_transformation_a78e8e8f441eea7f39b669ea8bbd1bdc2}
+
+
+Замещает \hyperlink{class_transformation_a3800376d1f4a64ec6ba6abfa3e22c8ee}{Transformation}.
+
+
+
+См. определение в файле scaletransformation.\+cpp строка 18
+
+
+
+\subsection{Данные класса}
+\index{Scale\+Transformation@{Scale\+Transformation}!\+\_\+origin@{\+\_\+origin}}
+\index{\+\_\+origin@{\+\_\+origin}!Scale\+Transformation@{Scale\+Transformation}}
+\subsubsection[{\texorpdfstring{\+\_\+origin}{_origin}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Scale\+Transformation\+::\+\_\+origin\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_scale_transformation_ad2053c743ab2b0d87149c24540aadaaa}{}\label{class_scale_transformation_ad2053c743ab2b0d87149c24540aadaaa}
+
+
+См. определение в файле scaletransformation.\+h строка 14
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{scaletransformation_8h}{scaletransformation.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{scaletransformation_8cpp}{scaletransformation.\+cpp}\end{DoxyCompactItemize}

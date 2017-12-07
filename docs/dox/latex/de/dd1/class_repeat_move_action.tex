@@ -1,0 +1,104 @@
+\hypertarget{class_repeat_move_action}{}\section{Класс Repeat\+Move\+Action}
+\label{class_repeat_move_action}\index{Repeat\+Move\+Action@{Repeat\+Move\+Action}}
+
+
+{\ttfamily \#include $<$actions.\+h$>$}
+
+
+
+Граф наследования\+:Repeat\+Move\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{d2/d69/class_repeat_move_action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Repeat\+Move\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{d6/d16/class_repeat_move_action__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_repeat_move_action_a8717501294f842084a88cb228b4d3687}{Repeat\+Move\+Action} (float \hyperlink{class_action_af26e528eec8ae24e9dfc1ab9d6e809a7}{duration}, weak\+\_\+ptr$<$ \hyperlink{class_scene_object}{Scene\+Object} $>$ \hyperlink{class_action_a1dfd6b0f501cce2b19d076b7d6b5aec8}{object}, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&finish)
+\item 
+virtual bool \hyperlink{class_repeat_move_action_ad2a08b798e2c0ae093d1ae358c8ec3c2}{update} (float delta)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_repeat_move_action_a2edadba70d6c63c8d6373c821622a6ee}{start}
+\item 
+\hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \hyperlink{class_repeat_move_action_a26a23d209a989bcc3f634e29f0532652}{diff}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле actions.\+h строка 22
+
+
+
+\subsection{Конструктор(ы)}
+\index{Repeat\+Move\+Action@{Repeat\+Move\+Action}!Repeat\+Move\+Action@{Repeat\+Move\+Action}}
+\index{Repeat\+Move\+Action@{Repeat\+Move\+Action}!Repeat\+Move\+Action@{Repeat\+Move\+Action}}
+\subsubsection[{\texorpdfstring{Repeat\+Move\+Action(float duration, weak\+\_\+ptr$<$ Scene\+Object $>$ object, const Vec3 \&finish)}{RepeatMoveAction(float duration, weak_ptr< SceneObject > object, const Vec3 &finish)}}]{\setlength{\rightskip}{0pt plus 5cm}Repeat\+Move\+Action\+::\+Repeat\+Move\+Action (
+\begin{DoxyParamCaption}
+\item[{float}]{duration, }
+\item[{weak\+\_\+ptr$<$ {\bf Scene\+Object} $>$}]{object, }
+\item[{const {\bf Vec3} \&}]{finish}
+\end{DoxyParamCaption}
+)}\hypertarget{class_repeat_move_action_a8717501294f842084a88cb228b4d3687}{}\label{class_repeat_move_action_a8717501294f842084a88cb228b4d3687}
+
+
+См. определение в файле actions.\+cpp строка 10
+
+
+
+\subsection{Методы}
+\index{Repeat\+Move\+Action@{Repeat\+Move\+Action}!update@{update}}
+\index{update@{update}!Repeat\+Move\+Action@{Repeat\+Move\+Action}}
+\subsubsection[{\texorpdfstring{update(float delta)}{update(float delta)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Repeat\+Move\+Action\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_repeat_move_action_ad2a08b798e2c0ae093d1ae358c8ec3c2}{}\label{class_repeat_move_action_ad2a08b798e2c0ae093d1ae358c8ec3c2}
+
+
+Замещает \hyperlink{class_action_aa6a73e716470c9b573b1afb4025b292d}{Action}.
+
+
+
+См. определение в файле actions.\+cpp строка 21
+
+
+
+\subsection{Данные класса}
+\index{Repeat\+Move\+Action@{Repeat\+Move\+Action}!diff@{diff}}
+\index{diff@{diff}!Repeat\+Move\+Action@{Repeat\+Move\+Action}}
+\subsubsection[{\texorpdfstring{diff}{diff}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Repeat\+Move\+Action\+::diff\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_repeat_move_action_a26a23d209a989bcc3f634e29f0532652}{}\label{class_repeat_move_action_a26a23d209a989bcc3f634e29f0532652}
+
+
+См. определение в файле actions.\+h строка 31
+
+\index{Repeat\+Move\+Action@{Repeat\+Move\+Action}!start@{start}}
+\index{start@{start}!Repeat\+Move\+Action@{Repeat\+Move\+Action}}
+\subsubsection[{\texorpdfstring{start}{start}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Repeat\+Move\+Action\+::start\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_repeat_move_action_a2edadba70d6c63c8d6373c821622a6ee}{}\label{class_repeat_move_action_a2edadba70d6c63c8d6373c821622a6ee}
+
+
+См. определение в файле actions.\+h строка 30
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{actions_8h}{actions.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{actions_8cpp}{actions.\+cpp}\end{DoxyCompactItemize}

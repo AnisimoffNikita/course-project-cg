@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/d22/class_model_matrix" kind="class" language="C++" prot="public">
+    <compoundname>ModelMatrix</compoundname>
+    <includes refid="df/d3d/matrixfactory_8h" local="no">matrixfactory.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d4/d22/class_model_matrix_1ac7cce9713a0c3f32b297de47efe7a088" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/df4/matrix_8h_1a077dce9756976f552e5703c34475d5e3" kindref="member">Mat4</ref></type>
+        <definition>Mat4 ModelMatrix::create</definition>
+        <argsstring>(const Vec3 &amp;vertex)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="d8/d08/vec3_8h_1a221ad8ea4d9be4111628ee1ca22ee3ba" kindref="member">Vec3</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/matrixfactory.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/matrixfactory.cpp" bodystart="4" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="416">
+        <label>ModelMatrix</label>
+        <link refid="d4/d22/class_model_matrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/matrixfactory.h" line="9" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/matrixfactory.h" bodystart="8" bodyend="12"/>
+    <listofallmembers>
+      <member refid="d4/d22/class_model_matrix_1ac7cce9713a0c3f32b297de47efe7a088" prot="public" virt="non-virtual"><scope>ModelMatrix</scope><name>create</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

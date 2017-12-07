@@ -1,0 +1,42 @@
+class ImageBase
+!!!165378.cpp!!!	ImageBase(in image : ImageBase)
+    for (uint32 i = 0; i < width * height; i++)
+    {
+        data[i] = image.data[i];
+    }
+!!!165506.cpp!!!	ImageBase(inout image : ImageBase)
+    image.data = nullptr;
+!!!165634.cpp!!!	ImageBase(in height : uint32, in width : uint32)
+    for (uint32 i = 0; i < width * height; i++)
+    {
+        data[i] = T(0);
+    }
+!!!165762.cpp!!!	operator =(in image : ImageBase) : ImageBase
+    width = image.width;
+    height = image.height;
+    data = std::make_unique<T[]>(width * height);
+
+    for (uint32 i = 0; i < width * height; i++)
+    {
+        data[i] = image.data[i];
+    }
+
+    return *this;
+!!!165890.cpp!!!	operator =(inout image : ImageBase) : ImageBase
+    data = std::move(image.data);
+    width = image.width;
+    height = image.height;
+    image.data = nullptr;
+    return *this;
+!!!166018.cpp!!!	at(in i : uint32, in j : uint32) : T
+    return data[i * width + j];
+!!!166146.cpp!!!	set(in i : uint32, in j : uint32, in color : T) : void
+    data[i * width + j] = color;
+!!!166274.cpp!!!	getHeight() : uint32
+    return height;
+!!!166402.cpp!!!	setHeight(in value : uint32) : void
+    height = value;
+!!!166530.cpp!!!	getWidth() : uint32
+    return width;
+!!!166658.cpp!!!	setWidth(in value : uint32) : void
+    width = value;

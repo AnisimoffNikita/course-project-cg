@@ -1,0 +1,5 @@
+digraph CannyEdgeDetector
+{
+graph [ rankdir="RL" ]
+"d1/d15/class_canny_edge_detector" [ label="CannyEdgeDetector\n|+CannyEdgeDetector ( minThresh : int32, maxThresh : int32 )\l+getGaussKernelSize (  ) : int32\l+getGaussSigma (  ) : float\l+getMaxThresh (  ) : int32\l+getMinThresh (  ) : int32\l/+process ( image : Image & ) : void \{virtual\}\l+setGaussKernelSize ( value : int32 ) : void\l+setGaussSigma ( value : float ) : void\l+setMaxThresh ( value : int32 ) : void\l+setMinThresh ( value : int32 ) : void\l+~CannyEdgeDetector (  ) \{virtual\}\l-floatThreshold (  ) : void\l-gradients (  ) : void\l-hysteresis (  ) : void\l-hysteresisRecursive ( y : uint32, x : uint32 ) : void\l-nonMaxSuppression (  ) : void\l|-directions : GrayscaleImage\l-image : GrayscaleImage\l-maxThresh : int32\l-minThresh : int32\l" shape="record" ]
+}

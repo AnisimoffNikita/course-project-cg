@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_faa6bbdaad12a27e5f3fab6b6907be93" kind="dir">
+    <compoundname>Projects/labs/course_project_cg/src/image</compoundname>
+    <innerfile refid="d3/d03/color_8cpp">color.cpp</innerfile>
+    <innerfile refid="da/dec/color_8h">color.h</innerfile>
+    <innerfile refid="d2/ded/grayscalecolor_8cpp">grayscalecolor.cpp</innerfile>
+    <innerfile refid="d0/d9c/grayscalecolor_8h">grayscalecolor.h</innerfile>
+    <innerfile refid="da/d4b/grayscaleimage_8cpp">grayscaleimage.cpp</innerfile>
+    <innerfile refid="d3/d37/grayscaleimage_8h">grayscaleimage.h</innerfile>
+    <innerfile refid="db/d11/image_8cpp">image.cpp</innerfile>
+    <innerfile refid="d5/db2/image_8h">image.h</innerfile>
+    <innerfile refid="de/da1/imagebase_8cpp">imagebase.cpp</innerfile>
+    <innerfile refid="de/dd1/imagebase_8h">imagebase.h</innerfile>
+    <innerfile refid="da/d94/imageconverter_8cpp">imageconverter.cpp</innerfile>
+    <innerfile refid="d4/d61/imageconverter_8h">imageconverter.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Projects/labs/course_project_cg/src/image/"/>
+  </compounddef>
+</doxygen>

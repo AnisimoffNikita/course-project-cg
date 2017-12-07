@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/d69/sceneobject_8h" kind="file" language="C++">
+    <compoundname>sceneobject.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includes refid="d8/d08/vec3_8h" local="yes">src/math/vec3.h</includes>
+    <includedby refid="d7/d86/actionmanager_8h" local="yes">Projects/labs/course_project_cg/src/animation/actionmanager.h</includedby>
+    <includedby refid="d3/de1/actions_8h" local="yes">Projects/labs/course_project_cg/src/animation/actions.h</includedby>
+    <includedby refid="dd/dd3/light_8h" local="yes">Projects/labs/course_project_cg/src/animation/light.h</includedby>
+    <includedby refid="d7/df6/camera_8h" local="yes">Projects/labs/course_project_cg/src/animation/camera.h</includedby>
+    <includedby refid="de/d72/composite_8h" local="yes">Projects/labs/course_project_cg/src/animation/composite.h</includedby>
+    <includedby refid="dc/d51/model_8h" local="yes">Projects/labs/course_project_cg/src/animation/model.h</includedby>
+    <includedby refid="db/d83/scene_8h" local="yes">Projects/labs/course_project_cg/src/animation/scene.h</includedby>
+    <includedby refid="d0/dfc/sceneobject_8cpp" local="yes">Projects/labs/course_project_cg/src/animation/sceneobject.cpp</includedby>
+    <includedby refid="d9/d8f/sceneobjectfactory_8h" local="yes">Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</includedby>
+    <incdepgraph>
+      <node id="2755">
+        <label>functional</label>
+      </node>
+      <node id="2749">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobject.h</label>
+        <link refid="sceneobject.h"/>
+        <childnode refid="2750" relation="include">
+        </childnode>
+        <childnode refid="2751" relation="include">
+        </childnode>
+        <childnode refid="2752" relation="include">
+        </childnode>
+      </node>
+      <node id="2752">
+        <label>src/math/vec3.h</label>
+        <link refid="d8/d08/vec3_8h"/>
+        <childnode refid="2753" relation="include">
+        </childnode>
+        <childnode refid="2754" relation="include">
+        </childnode>
+      </node>
+      <node id="2753">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2754">
+        <label>math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="2753" relation="include">
+        </childnode>
+        <childnode refid="2755" relation="include">
+        </childnode>
+      </node>
+      <node id="2750">
+        <label>vector</label>
+      </node>
+      <node id="2751">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2757">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.h</label>
+        <link refid="d7/d86/actionmanager_8h"/>
+        <childnode refid="2758" relation="include">
+        </childnode>
+        <childnode refid="2759" relation="include">
+        </childnode>
+      </node>
+      <node id="2772">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.h</label>
+        <link refid="d7/d17/lightzbufferrenderer_8h"/>
+        <childnode refid="2773" relation="include">
+        </childnode>
+        <childnode refid="2769" relation="include">
+        </childnode>
+        <childnode refid="2760" relation="include">
+        </childnode>
+      </node>
+      <node id="2782">
+        <label>Projects/labs/course_project_cg/src/animation/scene.h</label>
+        <link refid="db/d83/scene_8h"/>
+        <childnode refid="2776" relation="include">
+        </childnode>
+        <childnode refid="2777" relation="include">
+        </childnode>
+        <childnode refid="2779" relation="include">
+        </childnode>
+        <childnode refid="2769" relation="include">
+        </childnode>
+        <childnode refid="2759" relation="include">
+        </childnode>
+        <childnode refid="2760" relation="include">
+        </childnode>
+      </node>
+      <node id="2756">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobject.h</label>
+        <link refid="sceneobject.h"/>
+        <childnode refid="2757" relation="include">
+        </childnode>
+        <childnode refid="2761" relation="include">
+        </childnode>
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2783" relation="include">
+        </childnode>
+        <childnode refid="2785" relation="include">
+        </childnode>
+        <childnode refid="2787" relation="include">
+        </childnode>
+        <childnode refid="2782" relation="include">
+        </childnode>
+        <childnode refid="2788" relation="include">
+        </childnode>
+        <childnode refid="2766" relation="include">
+        </childnode>
+      </node>
+      <node id="2762">
+        <label>Projects/labs/course_project_cg/src/animation/actions.cpp</label>
+        <link refid="d8/dcf/actions_8cpp"/>
+      </node>
+      <node id="2776">
+        <label>Projects/labs/course_project_cg/src/animation/scene.cpp</label>
+        <link refid="da/d33/scene_8cpp"/>
+      </node>
+      <node id="2768">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="2779">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.h</label>
+        <link refid="d3/d6a/modelview_8h"/>
+        <childnode refid="2769" relation="include">
+        </childnode>
+      </node>
+      <node id="2759">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.h</label>
+        <link refid="d4/d90/modelview2_8h"/>
+        <childnode refid="2760" relation="include">
+        </childnode>
+      </node>
+      <node id="2767">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.cpp</label>
+        <link refid="da/d15/sceneobjectfactory_8cpp"/>
+      </node>
+      <node id="2781">
+        <label>Projects/labs/course_project_cg/src/animation/pointlight.cpp</label>
+        <link refid="d7/d88/pointlight_8cpp"/>
+      </node>
+      <node id="2780">
+        <label>Projects/labs/course_project_cg/src/animation/pointlight.h</label>
+        <link refid="d0/d23/pointlight_8h"/>
+        <childnode refid="2781" relation="include">
+        </childnode>
+        <childnode refid="2766" relation="include">
+        </childnode>
+      </node>
+      <node id="2787">
+        <label>Projects/labs/course_project_cg/src/animation/model.h</label>
+        <link refid="dc/d51/model_8h"/>
+        <childnode refid="2774" relation="include">
+        </childnode>
+        <childnode refid="2766" relation="include">
+        </childnode>
+      </node>
+      <node id="2783">
+        <label>Projects/labs/course_project_cg/src/animation/camera.h</label>
+        <link refid="d7/df6/camera_8h"/>
+        <childnode refid="2784" relation="include">
+        </childnode>
+        <childnode refid="2771" relation="include">
+        </childnode>
+        <childnode refid="2782" relation="include">
+        </childnode>
+        <childnode refid="2766" relation="include">
+        </childnode>
+      </node>
+      <node id="2788">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobject.cpp</label>
+        <link refid="d0/dfc/sceneobject_8cpp"/>
+      </node>
+      <node id="2774">
+        <label>Projects/labs/course_project_cg/src/animation/model.cpp</label>
+        <link refid="d6/db4/model_8cpp"/>
+      </node>
+      <node id="2769">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview.cpp</label>
+        <link refid="d6/d64/modelview_8cpp"/>
+      </node>
+      <node id="2778">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="2770">
+        <label>Projects/labs/course_project_cg/src/animation/light.cpp</label>
+        <link refid="dd/dfa/light_8cpp"/>
+      </node>
+      <node id="2771">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.h</label>
+        <link refid="d6/d85/renderer_8h"/>
+        <childnode refid="2772" relation="include">
+        </childnode>
+        <childnode refid="2774" relation="include">
+        </childnode>
+        <childnode refid="2775" relation="include">
+        </childnode>
+        <childnode refid="2776" relation="include">
+        </childnode>
+        <childnode refid="2777" relation="include">
+        </childnode>
+        <childnode refid="2779" relation="include">
+        </childnode>
+        <childnode refid="2769" relation="include">
+        </childnode>
+        <childnode refid="2759" relation="include">
+        </childnode>
+        <childnode refid="2760" relation="include">
+        </childnode>
+      </node>
+      <node id="2766">
+        <label>Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h</label>
+        <link refid="d9/d8f/sceneobjectfactory_8h"/>
+        <childnode refid="2767" relation="include">
+        </childnode>
+        <childnode refid="2768" relation="include">
+        </childnode>
+        <childnode refid="2769" relation="include">
+        </childnode>
+        <childnode refid="2760" relation="include">
+        </childnode>
+      </node>
+      <node id="2785">
+        <label>Projects/labs/course_project_cg/src/animation/composite.h</label>
+        <link refid="de/d72/composite_8h"/>
+        <childnode refid="2786" relation="include">
+        </childnode>
+      </node>
+      <node id="2760">
+        <label>Projects/labs/course_project_cg/src/widgets/modelview2.cpp</label>
+        <link refid="d1/d5e/modelview2_8cpp"/>
+      </node>
+      <node id="2784">
+        <label>Projects/labs/course_project_cg/src/animation/camera.cpp</label>
+        <link refid="d1/d6b/camera_8cpp"/>
+      </node>
+      <node id="2775">
+        <label>Projects/labs/course_project_cg/src/animation/renderer.cpp</label>
+        <link refid="d6/d54/renderer_8cpp"/>
+      </node>
+      <node id="2773">
+        <label>Projects/labs/course_project_cg/src/animation/lightzbufferrenderer.cpp</label>
+        <link refid="d8/dc3/lightzbufferrenderer_8cpp"/>
+      </node>
+      <node id="2777">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="2778" relation="include">
+        </childnode>
+        <childnode refid="2768" relation="include">
+        </childnode>
+      </node>
+      <node id="2758">
+        <label>Projects/labs/course_project_cg/src/animation/actionmanager.cpp</label>
+        <link refid="d3/df9/actionmanager_8cpp"/>
+      </node>
+      <node id="2786">
+        <label>Projects/labs/course_project_cg/src/animation/composite.cpp</label>
+        <link refid="d1/d7b/composite_8cpp"/>
+      </node>
+      <node id="2761">
+        <label>Projects/labs/course_project_cg/src/animation/actions.h</label>
+        <link refid="d3/de1/actions_8h"/>
+        <childnode refid="2757" relation="include">
+        </childnode>
+        <childnode refid="2762" relation="include">
+        </childnode>
+        <childnode refid="2760" relation="include">
+        </childnode>
+      </node>
+      <node id="2763">
+        <label>Projects/labs/course_project_cg/src/animation/light.h</label>
+        <link refid="dd/dd3/light_8h"/>
+        <childnode refid="2764" relation="include">
+        </childnode>
+        <childnode refid="2770" relation="include">
+        </childnode>
+        <childnode refid="2771" relation="include">
+        </childnode>
+        <childnode refid="2780" relation="include">
+        </childnode>
+        <childnode refid="2782" relation="include">
+        </childnode>
+      </node>
+      <node id="2765">
+        <label>Projects/labs/course_project_cg/src/animation/ambientlight.cpp</label>
+        <link refid="d3/d01/ambientlight_8cpp"/>
+      </node>
+      <node id="2764">
+        <label>Projects/labs/course_project_cg/src/animation/ambientlight.h</label>
+        <link refid="dc/d87/ambientlight_8h"/>
+        <childnode refid="2765" relation="include">
+        </childnode>
+        <childnode refid="2766" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dc/df8/class_scene_object" prot="public">SceneObject</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref> &gt;</type>
+        <definition>using SharedSceneObject =  std::shared_ptr&lt;SceneObject&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedSceneObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobject.h" line="34" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobject.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SCENEOBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCENEOBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d08/vec3_8h" kindref="compound">src/math/vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/d44/class_renderer" kindref="compound">Renderer</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="dc/df8/class_scene_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/df8/class_scene_object" kindref="compound">SceneObject</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/df8/class_scene_object_1a39ac215b0b6183ac251a26a522acde14" kindref="member">SceneObject</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/df8/class_scene_object_1a39ac215b0b6183ac251a26a522acde14" kindref="member">SceneObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object_1a0b8708ffea012cd61f583103bf84b531" kindref="member">~SceneObject</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;<ref refid="dc/df8/class_scene_object_1a9e5d8a20e5e0123e894c2918b0e39dc3" kindref="member">getPosition</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object_1ae0e79b1773e3e3357d1dcf302463e46a" kindref="member">setPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object_1adc906ce4e4a896a351949ccabfd44016" kindref="member">draw</ref>(std::unique_ptr&lt;Renderer&gt;<sp/>&amp;render)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object_1a1b8a4b90f1200f1cd025d95964d43630" kindref="member">transform</ref>(<ref refid="d1/d32/class_transformation" kindref="compound">Transformation</ref><sp/>&amp;transformation)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object_1a6d7cb8b9a2c29f38fd039731e83167f4" kindref="member">isCamera</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/df8/class_scene_object_1a9c5b006b8a0e457634f15c19eb51ca73" kindref="member">isLight</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de7/class_vector3" kindref="compound">Vec3</ref><sp/><ref refid="dc/df8/class_scene_object_1af190cdf9b9449f96f73d836848ce4ad3" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref><sp/>=<sp/>std::shared_ptr&lt;SceneObject&gt;;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SCENEOBJECT_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobject.h"/>
+  </compounddef>
+</doxygen>

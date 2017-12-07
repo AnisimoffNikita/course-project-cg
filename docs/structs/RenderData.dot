@@ -1,0 +1,5 @@
+digraph RenderData
+{
+graph [ rankdir="RL" ]
+"da/dce/class_render_data" [ label="RenderData\n|+RenderData (  )\l|" shape="record" ]
+}

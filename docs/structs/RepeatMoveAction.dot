@@ -1,0 +1,5 @@
+digraph RepeatMoveAction
+{
+graph [ rankdir="RL" ]
+"de/dd1/class_repeat_move_action" [ label="RepeatMoveAction\n|+RepeatMoveAction ( duration : float, object : weak_ptr\< SceneObject \>, finish : const Vec3 & )\l/+update ( delta : float ) : bool \{virtual\}\l|#diff : Vec3\l#start : Vec3\l" shape="record" ]
+}

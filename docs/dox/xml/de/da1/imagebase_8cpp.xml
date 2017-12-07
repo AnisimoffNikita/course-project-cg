@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/da1/imagebase_8cpp" kind="file" language="C++">
+    <compoundname>imagebase.cpp</compoundname>
+    <includes refid="de/dd1/imagebase_8h" local="yes">imagebase.h</includes>
+    <incdepgraph>
+      <node id="3051">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="3052" relation="include">
+        </childnode>
+        <childnode refid="3053" relation="include">
+        </childnode>
+        <childnode refid="3054" relation="include">
+        </childnode>
+        <childnode refid="3055" relation="include">
+        </childnode>
+      </node>
+      <node id="3055">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="3054" relation="include">
+        </childnode>
+      </node>
+      <node id="3054">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3052">
+        <label>QImage</label>
+      </node>
+      <node id="3050">
+        <label>Projects/labs/course_project_cg/src/image/imagebase.cpp</label>
+        <link refid="imagebase.cpp"/>
+        <childnode refid="3051" relation="include">
+        </childnode>
+      </node>
+      <node id="3053">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/dd1/imagebase_8h" kindref="compound">imagebase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/image/imagebase.cpp"/>
+  </compounddef>
+</doxygen>

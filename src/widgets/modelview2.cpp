@@ -106,11 +106,11 @@ void ModelView2::scheduler()
 void ModelView2::sceneSetup()
 {
     CameraFactory::PerspectiveData data;
-    data.fovX = Math::ToRadians(120);
-    data.fovY = Math::ToRadians(120);
+    data.fovX = Math::ToRadians(145);
+    data.fovY = Math::ToRadians(145);
     data.near = 0.1;
     data.far = 100;
-    CameraFactory cameraFactory(Vec3(4.5, 4.5, 0), Vec3(0, 0, 0), Vec3(0, -1, 0),
+    CameraFactory cameraFactory(Vec3(6, 6, 0), Vec3(0, 0, 0), Vec3(0, -1, 0),
                                 data);
     auto camera = cameraFactory.create();
     scene->add(camera);
@@ -134,7 +134,7 @@ void ModelView2::sceneSetup()
         Mesh mesh = loader.load();
         ModelFactory modelFactory(Vec3(3.5, 1.01, 0.3), mesh);
         auto model = modelFactory.create();
-        RotateYTransformation rot(40, Vec3(3.5, 1.01, 0.3));
+        RotateYTransformation rot(0, Vec3(3.5, 1.01, 0.3));
         model->transform(rot);
         scene->add(model);
         auto act = make_unique<RepeatMoveAction>(7, model, Vec3(-3.5, 1.01,

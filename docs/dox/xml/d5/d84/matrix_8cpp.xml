@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d5/d84/matrix_8cpp" kind="file" language="C++">
+    <compoundname>matrix.cpp</compoundname>
+    <includes refid="dd/df4/matrix_8h" local="yes">matrix.h</includes>
+    <incdepgraph>
+      <node id="3384">
+        <label>Projects/labs/course_project_cg/src/math/matrix.cpp</label>
+        <link refid="matrix.cpp"/>
+        <childnode refid="3385" relation="include">
+        </childnode>
+      </node>
+      <node id="3386">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3385">
+        <label>matrix.h</label>
+        <link refid="dd/df4/matrix_8h"/>
+        <childnode refid="3386" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/df4/matrix_8h" kindref="compound">matrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/math/matrix.cpp"/>
+  </compounddef>
+</doxygen>

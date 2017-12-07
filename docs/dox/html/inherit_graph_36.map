@@ -1,0 +1,7 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$d4/df7/class_scene_object_factory.html" title="SceneObjectFactory" alt="" coords="5,81,147,108"/>
+<area shape="rect" id="node2" href="$d5/dbd/class_ambient_light_factory.html" title="AmbientLightFactory" alt="" coords="195,5,337,32"/>
+<area shape="rect" id="node3" href="$d7/ddc/class_camera_factory.html" title="CameraFactory" alt="" coords="210,56,322,83"/>
+<area shape="rect" id="node4" href="$db/da7/class_model_factory.html" title="ModelFactory" alt="" coords="215,107,317,133"/>
+<area shape="rect" id="node5" href="$de/d1d/class_point_light_factory.html" title="PointLightFactory" alt="" coords="204,157,328,184"/>
+</map>

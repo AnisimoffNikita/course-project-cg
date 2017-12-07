@@ -1,0 +1,5 @@
+digraph Composite
+{
+graph [ rankdir="RL" ]
+"df/dec/class_composite" [ label="Composite\n|+Composite (  )\l/+draw (  : std::unique_ptr\< Renderer \> & ) : void \{virtual\}\l/+isCamera (  ) : bool \{virtual\}\l/+isLight (  ) : bool \{virtual\}\l/+transform (  : Transformation & ) : void \{virtual\}\l|" shape="record" ]
+}

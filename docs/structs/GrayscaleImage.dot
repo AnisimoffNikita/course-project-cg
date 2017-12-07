@@ -1,0 +1,5 @@
+digraph GrayscaleImage
+{
+graph [ rankdir="RL" ]
+"dd/d52/class_grayscale_image" [ label="GrayscaleImage\n|+GrayscaleConverter (  ) : friend class\l+ImageConverter (  ) : friend class\l|" shape="record" ]
+}

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db/dea/structobjl_1_1_mesh" kind="struct" language="C++" prot="public">
+    <compoundname>objl::Mesh</compoundname>
+    <includes refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" local="no">objloader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/dea/structobjl_1_1_mesh_1adb064651366cfec31fc0886a0ac18b9b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string objl::Mesh::MeshName</definition>
+        <argsstring></argsstring>
+        <name>MeshName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="204" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dea/structobjl_1_1_mesh_1a9c7fcc401666c37b4faa458cd2aac704" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d4/dd1/structobjl_1_1_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt;Vertex&gt; objl::Mesh::Vertices</definition>
+        <argsstring></argsstring>
+        <name>Vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="206" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dea/structobjl_1_1_mesh_1a09f7fef5cc1cf491fdfcdbce2ae9c8c5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; objl::Mesh::Indices</definition>
+        <argsstring></argsstring>
+        <name>Indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="208" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dea/structobjl_1_1_mesh_1a1c5374b9f1640eada79faa9b98cbdb50" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/dbb/structobjl_1_1_material" kindref="compound">Material</ref></type>
+        <definition>Material objl::Mesh::MeshMaterial</definition>
+        <argsstring></argsstring>
+        <name>MeshMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="211" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/dea/structobjl_1_1_mesh_1ae0e6cf65fb4d0c413db9bb400e086699" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Mesh::Mesh</definition>
+        <argsstring>()</argsstring>
+        <name>Mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="194" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="194" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dea/structobjl_1_1_mesh_1a760b29568d67acac05e26e73381fe68d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Mesh::Mesh</definition>
+        <argsstring>(std::vector&lt; Vertex &gt; &amp;_Vertices, std::vector&lt; unsigned int &gt; &amp;_Indices)</argsstring>
+        <name>Mesh</name>
+        <param>
+          <type>std::vector&lt; <ref refid="d4/dd1/structobjl_1_1_vertex" kindref="compound">Vertex</ref> &gt; &amp;</type>
+          <declname>_Vertices</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>_Indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="198" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="198" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="397">
+        <label>objl::Material</label>
+        <link refid="d2/dbb/structobjl_1_1_material"/>
+        <childnode refid="398" relation="usage">
+          <edgelabel>+Kd</edgelabel>
+          <edgelabel>+Ka</edgelabel>
+          <edgelabel>+Ks</edgelabel>
+        </childnode>
+      </node>
+      <node id="398">
+        <label>objl::Vector3</label>
+        <link refid="d0/d73/structobjl_1_1_vector3"/>
+      </node>
+      <node id="396">
+        <label>objl::Mesh</label>
+        <link refid="db/dea/structobjl_1_1_mesh"/>
+        <childnode refid="397" relation="usage">
+          <edgelabel>+MeshMaterial</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="192" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="191" bodyend="212"/>
+    <listofallmembers>
+      <member refid="db/dea/structobjl_1_1_mesh_1a09f7fef5cc1cf491fdfcdbce2ae9c8c5" prot="public" virt="non-virtual"><scope>objl::Mesh</scope><name>Indices</name></member>
+      <member refid="db/dea/structobjl_1_1_mesh_1ae0e6cf65fb4d0c413db9bb400e086699" prot="public" virt="non-virtual"><scope>objl::Mesh</scope><name>Mesh</name></member>
+      <member refid="db/dea/structobjl_1_1_mesh_1a760b29568d67acac05e26e73381fe68d" prot="public" virt="non-virtual"><scope>objl::Mesh</scope><name>Mesh</name></member>
+      <member refid="db/dea/structobjl_1_1_mesh_1a1c5374b9f1640eada79faa9b98cbdb50" prot="public" virt="non-virtual"><scope>objl::Mesh</scope><name>MeshMaterial</name></member>
+      <member refid="db/dea/structobjl_1_1_mesh_1adb064651366cfec31fc0886a0ac18b9b" prot="public" virt="non-virtual"><scope>objl::Mesh</scope><name>MeshName</name></member>
+      <member refid="db/dea/structobjl_1_1_mesh_1a9c7fcc401666c37b4faa458cd2aac704" prot="public" virt="non-virtual"><scope>objl::Mesh</scope><name>Vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

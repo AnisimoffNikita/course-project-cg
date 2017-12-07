@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dd/d42/linetransform_8cpp" kind="file" language="C++">
+    <compoundname>linetransform.cpp</compoundname>
+    <includes refid="d9/d6e/linetransform_8h" local="yes">linetransform.h</includes>
+    <incdepgraph>
+      <node id="2104">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2103" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+      </node>
+      <node id="2106">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="2105" relation="include">
+        </childnode>
+      </node>
+      <node id="2100">
+        <label>linetransform.h</label>
+        <link refid="d9/d6e/linetransform_8h"/>
+        <childnode refid="2101" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+      </node>
+      <node id="2107">
+        <label>src/math/line.h</label>
+        <link refid="d7/d5d/line_8h"/>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2108" relation="include">
+        </childnode>
+      </node>
+      <node id="2099">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.cpp</label>
+        <link refid="linetransform.cpp"/>
+        <childnode refid="2100" relation="include">
+        </childnode>
+      </node>
+      <node id="2105">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="2102">
+        <label>QImage</label>
+      </node>
+      <node id="2101">
+        <label>src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2103" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+      </node>
+      <node id="2108">
+        <label>vec2.h</label>
+        <link refid="d3/dbe/vec2_8h"/>
+        <childnode refid="2105" relation="include">
+        </childnode>
+      </node>
+      <node id="2103">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d6e/linetransform_8h" kindref="compound">linetransform.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d3/d23/class_line_transform_1a8398e1a394cfaf6c988c5f2cfc49447d" refkind="member"><highlight class="normal"><ref refid="d3/d23/class_line_transform_1a8398e1a394cfaf6c988c5f2cfc49447d" kindref="member">LineTransform::~LineTransform</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.cpp"/>
+  </compounddef>
+</doxygen>

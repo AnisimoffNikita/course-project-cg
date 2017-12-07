@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d1/dfa/cylindersize_8h" kind="file" language="C++">
+    <compoundname>cylindersize.h</compoundname>
+    <includedby refid="db/d0b/cylindersizecalculatorbase_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h</includedby>
+    <includedby refid="d4/dc0/cylindersize_8cpp" local="yes">Projects/labs/course_project_cg/src/math/cylindersize.cpp</includedby>
+    <invincdepgraph>
+      <node id="3261">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.h</label>
+        <link refid="d3/dff/cylindersizecalculator_8h"/>
+        <childnode refid="3262" relation="include">
+        </childnode>
+        <childnode refid="3263" relation="include">
+        </childnode>
+      </node>
+      <node id="3265">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="3260">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h</label>
+        <link refid="db/d0b/cylindersizecalculatorbase_8h"/>
+        <childnode refid="3261" relation="include">
+        </childnode>
+        <childnode refid="3266" relation="include">
+        </childnode>
+      </node>
+      <node id="3259">
+        <label>Projects/labs/course_project_cg/src/math/cylindersize.h</label>
+        <link refid="cylindersize.h"/>
+        <childnode refid="3260" relation="include">
+        </childnode>
+        <childnode refid="3267" relation="include">
+        </childnode>
+      </node>
+      <node id="3264">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="3262">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.cpp</label>
+        <link refid="d3/d57/cylindersizecalculator_8cpp"/>
+      </node>
+      <node id="3267">
+        <label>Projects/labs/course_project_cg/src/math/cylindersize.cpp</label>
+        <link refid="d4/dc0/cylindersize_8cpp"/>
+      </node>
+      <node id="3263">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="3264" relation="include">
+        </childnode>
+        <childnode refid="3265" relation="include">
+        </childnode>
+      </node>
+      <node id="3266">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.cpp</label>
+        <link refid="df/de2/cylindersizecalculatorbase_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d47/class_cylinder_size" prot="public">CylinderSize</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CYLINDERSIZE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CYLINDERSIZE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d1/d47/class_cylinder_size" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d47/class_cylinder_size" kindref="compound">CylinderSize</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d47/class_cylinder_size_1a9896a88f9cf7b392a72e79d913b7c241" kindref="member">CylinderSize</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1a64a31d3ecef008bc999f02797aa73ebf" kindref="member">height</ref><sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1ac12aa459995c8467cf96d978b05e7ee5" kindref="member">radius</ref><sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1a69dbd81e8e5bda6a9efb6d0dd621dac4" kindref="member">getRadius</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1a7598cedd43027dfaea97ad273180ed63" kindref="member">setRadius</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1aac6bbbc1e12cb65d0ca299eda89f43f0" kindref="member">getHeight</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1afad35daeb0ed7d9c3b132a23de7412c0" kindref="member">setHeight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="d1/d47/class_cylinder_size_1a64a31d3ecef008bc999f02797aa73ebf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1a64a31d3ecef008bc999f02797aa73ebf" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="18" refid="d1/d47/class_cylinder_size_1ac12aa459995c8467cf96d978b05e7ee5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="d1/d47/class_cylinder_size_1ac12aa459995c8467cf96d978b05e7ee5" kindref="member">radius</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CYLINDERSIZE_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/math/cylindersize.h"/>
+  </compounddef>
+</doxygen>

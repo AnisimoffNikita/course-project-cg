@@ -1,0 +1,102 @@
+\hypertarget{class_ambient_light}{}\section{Класс Ambient\+Light}
+\label{class_ambient_light}\index{Ambient\+Light@{Ambient\+Light}}
+
+
+{\ttfamily \#include $<$ambientlight.\+h$>$}
+
+
+
+Граф наследования\+:Ambient\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{de/dd5/class_ambient_light__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Ambient\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d59/class_ambient_light__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ambient_light_a81a7a88347dddaf2fdec12d6d2793f8b}{Ambient\+Light} (float \hyperlink{class_light_a1071eaa556f4bb2a9345fdfba7e6f220}{intensity})
+\item 
+virtual \hyperlink{class_color}{Color} \hyperlink{class_ambient_light_aebbccf2534a3cbe399ccddc552d1a49d}{get\+Intensity} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&, const \hyperlink{class_color}{Color} \&ka, const \hyperlink{class_color}{Color} \&, const \hyperlink{class_color}{Color} \&, float) const override
+\item 
+virtual bool \hyperlink{class_ambient_light_accccb9b3c5f0a9c38dceaef386c2964a}{is\+Point} () const override
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле ambientlight.\+h строка 6
+
+
+
+\subsection{Конструктор(ы)}
+\index{Ambient\+Light@{Ambient\+Light}!Ambient\+Light@{Ambient\+Light}}
+\index{Ambient\+Light@{Ambient\+Light}!Ambient\+Light@{Ambient\+Light}}
+\subsubsection[{\texorpdfstring{Ambient\+Light(float intensity)}{AmbientLight(float intensity)}}]{\setlength{\rightskip}{0pt plus 5cm}Ambient\+Light\+::\+Ambient\+Light (
+\begin{DoxyParamCaption}
+\item[{float}]{intensity}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ambient_light_a81a7a88347dddaf2fdec12d6d2793f8b}{}\label{class_ambient_light_a81a7a88347dddaf2fdec12d6d2793f8b}
+
+
+См. определение в файле ambientlight.\+cpp строка 3
+
+
+
+\subsection{Методы}
+\index{Ambient\+Light@{Ambient\+Light}!get\+Intensity@{get\+Intensity}}
+\index{get\+Intensity@{get\+Intensity}!Ambient\+Light@{Ambient\+Light}}
+\subsubsection[{\texorpdfstring{get\+Intensity(const Vec3 \&, const Vec3 \&, const Vec3 \&, const Color \&ka, const Color \&, const Color \&, float) const override}{getIntensity(const Vec3 &, const Vec3 &, const Vec3 &, const Color &ka, const Color &, const Color &, float) const override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Ambient\+Light\+::get\+Intensity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{, }
+\item[{const {\bf Vec3} \&}]{, }
+\item[{const {\bf Vec3} \&}]{, }
+\item[{const {\bf Color} \&}]{ka, }
+\item[{const {\bf Color} \&}]{, }
+\item[{const {\bf Color} \&}]{, }
+\item[{float}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_ambient_light_aebbccf2534a3cbe399ccddc552d1a49d}{}\label{class_ambient_light_aebbccf2534a3cbe399ccddc552d1a49d}
+
+
+Замещает \hyperlink{class_light_a81a8d20cdba6692644cda765aced1473}{Light}.
+
+
+
+См. определение в файле ambientlight.\+cpp строка 9
+
+\index{Ambient\+Light@{Ambient\+Light}!is\+Point@{is\+Point}}
+\index{is\+Point@{is\+Point}!Ambient\+Light@{Ambient\+Light}}
+\subsubsection[{\texorpdfstring{is\+Point() const override}{isPoint() const override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ambient\+Light\+::is\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_ambient_light_accccb9b3c5f0a9c38dceaef386c2964a}{}\label{class_ambient_light_accccb9b3c5f0a9c38dceaef386c2964a}
+
+
+Замещает \hyperlink{class_light_aa17c9733d1616d8631ed63640344b733}{Light}.
+
+
+
+См. определение в файле ambientlight.\+cpp строка 16
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{ambientlight_8h}{ambientlight.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{ambientlight_8cpp}{ambientlight.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+format 215
+
+classcanvas 128002 class_ref 132866 // SceneObject
+  classdiagramsettings member_max_width 0 end
+  xyz 361 42 2000
+end
+classcanvas 128130 class_ref 133378 // Light
+  classdiagramsettings member_max_width 0 end
+  xyz 202 363 2006
+end
+classcanvas 128642 class_ref 133634 // Camera
+  classdiagramsettings member_max_width 0 end
+  xyz 350 364 2006
+end
+classcanvas 129666 class_ref 136578 // Model
+  classdiagramsettings member_max_width 0 end
+  xyz 541 363 2006
+end
+classcanvas 129922 class_ref 137218 // PointLight
+  classdiagramsettings member_max_width 0 end
+  xyz 35 432 2012
+end
+classcanvas 130178 class_ref 133250 // AmbientLight
+  classdiagramsettings member_max_width 0 end
+  xyz 28 572 2012
+end
+classcanvas 130690 class_ref 135810 // Mesh
+  classdiagramsettings member_max_width 0 end
+  xyz 666 374 2012
+end
+relationcanvas 128258 relation_ref 134274 // <generalisation>
+  geometry VHV unfixed
+  from ref 128130 z 2007 to point 248 336
+  line 130946 z 2007 to point 422 336
+  line 131074 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 133122 // <generalisation>
+  from ref 128642 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129794 relation_ref 136450 // <generalisation>
+  geometry VHV unfixed
+  from ref 129666 z 2007 to point 581 336
+  line 131202 z 2007 to point 422 336
+  line 131330 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130050 relation_ref 136962 // <generalisation>
+  from ref 129922 z 2013 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130306 relation_ref 132994 // <generalisation>
+  decenter_begin 529
+  from ref 130178 z 2013 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130818 relation_ref 136578 // <directional composition>
+  from ref 129666 z 2013 to ref 130690
+  role_a_pos 619 459 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

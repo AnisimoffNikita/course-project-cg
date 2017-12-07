@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d6/db5/class_scene" kind="class" language="C++" prot="public">
+    <compoundname>Scene</compoundname>
+    <includes refid="db/d83/scene_8h" local="no">scene.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref> &gt;</type>
+        <definition>vector&lt;SharedSceneObject&gt; Scene::_children</definition>
+        <argsstring></argsstring>
+        <name>_children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="37" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/db5/class_scene_1a6a1ea61cb1fb35cf292c2280195d9dc8" prot="protected" static="no" mutable="no">
+        <type><ref refid="d7/df6/camera_8h_1a7b9616f276c6529ece2bbfb711f5c756" kindref="member">WeakCamera</ref></type>
+        <definition>WeakCamera Scene::_camera</definition>
+        <argsstring></argsstring>
+        <name>_camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="38" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/db5/class_scene_1aa82b5e8b6ba1d05fae6a836962cded02" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="dd/dd3/light_8h_1ad5a9f0d258bb17c6cfc218b80530781f" kindref="member">WeakLight</ref> &gt;</type>
+        <definition>vector&lt;WeakLight&gt; Scene::lights</definition>
+        <argsstring></argsstring>
+        <name>lights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="39" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/db5/class_scene_1a93ccc41b0a2f6c24e467d5d9de76ec0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Scene::Scene</definition>
+        <argsstring>()=default</argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/db5/class_scene_1af6e09d91ebd10ae9cc7c12c39d06386c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Scene::~Scene</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/db5/class_scene_1ada0a975a207aa2670498fee329c6c480" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Scene::add</definition>
+        <argsstring>(const SharedSceneObject &amp;child)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref> &amp;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="28" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.cpp" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/db5/class_scene_1aac8b52a8123b9d4c1dceb417b9360085" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Scene::setActiveCamera</definition>
+        <argsstring>(const SharedSceneObject &amp;child)</argsstring>
+        <name>setActiveCamera</name>
+        <param>
+          <type>const <ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref> &amp;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="30" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.cpp" bodystart="17" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/db5/class_scene_1acfa5379bbdff26d3a01fa11dc3791295" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d7/df6/camera_8h_1a7b9616f276c6529ece2bbfb711f5c756" kindref="member">WeakCamera</ref></type>
+        <definition>WeakCamera Scene::getActiveCamera</definition>
+        <argsstring>() const </argsstring>
+        <name>getActiveCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="31" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/db5/class_scene_1a2fcdd4356401f0bedb6d8b523bc1eaba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const vector&lt; <ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref> &gt; &amp;</type>
+        <definition>const vector&lt; SharedSceneObject &gt; &amp; Scene::getChildren</definition>
+        <argsstring>() const </argsstring>
+        <name>getChildren</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="33" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/db5/class_scene_1a7f0c78f0935e2f080c6252cc4782ddbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Scene::render</definition>
+        <argsstring>(std::unique_ptr&lt; Renderer &gt; &amp;renderer)</argsstring>
+        <name>render</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="d4/d44/class_renderer" kindref="compound">Renderer</ref> &gt; &amp;</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="35" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.cpp" bodystart="39" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="482">
+        <label>Scene</label>
+        <link refid="d6/db5/class_scene"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/scene.h" line="22" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/scene.h" bodystart="21" bodyend="40"/>
+    <listofallmembers>
+      <member refid="d6/db5/class_scene_1a6a1ea61cb1fb35cf292c2280195d9dc8" prot="protected" virt="non-virtual"><scope>Scene</scope><name>_camera</name></member>
+      <member refid="d6/db5/class_scene_1a14327127e1a055c38eacc5b524d293c5" prot="protected" virt="non-virtual"><scope>Scene</scope><name>_children</name></member>
+      <member refid="d6/db5/class_scene_1ada0a975a207aa2670498fee329c6c480" prot="public" virt="virtual"><scope>Scene</scope><name>add</name></member>
+      <member refid="d6/db5/class_scene_1acfa5379bbdff26d3a01fa11dc3791295" prot="public" virt="virtual"><scope>Scene</scope><name>getActiveCamera</name></member>
+      <member refid="d6/db5/class_scene_1a2fcdd4356401f0bedb6d8b523bc1eaba" prot="public" virt="virtual"><scope>Scene</scope><name>getChildren</name></member>
+      <member refid="d6/db5/class_scene_1aa82b5e8b6ba1d05fae6a836962cded02" prot="protected" virt="non-virtual"><scope>Scene</scope><name>lights</name></member>
+      <member refid="d6/db5/class_scene_1a7f0c78f0935e2f080c6252cc4782ddbf" prot="public" virt="virtual"><scope>Scene</scope><name>render</name></member>
+      <member refid="d6/db5/class_scene_1a93ccc41b0a2f6c24e467d5d9de76ec0d" prot="public" virt="non-virtual"><scope>Scene</scope><name>Scene</name></member>
+      <member refid="d6/db5/class_scene_1aac8b52a8123b9d4c1dceb417b9360085" prot="public" virt="virtual"><scope>Scene</scope><name>setActiveCamera</name></member>
+      <member refid="d6/db5/class_scene_1af6e09d91ebd10ae9cc7c12c39d06386c" prot="public" virt="virtual"><scope>Scene</scope><name>~Scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,384 @@
+\hypertarget{class_light_z_buffer_renderer}{}\section{Класс Light\+Z\+Buffer\+Renderer}
+\label{class_light_z_buffer_renderer}\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+
+
+{\ttfamily \#include $<$lightzbufferrenderer.\+h$>$}
+
+
+
+Граф наследования\+:Light\+Z\+Buffer\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/dd8/class_light_z_buffer_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Light\+Z\+Buffer\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/d8f/class_light_z_buffer_renderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_light_z_buffer_renderer_a6b48dd8c2782308bd742cd43f4185a53}{Light\+Z\+Buffer\+Renderer} ()=default
+\item 
+\hyperlink{class_light_z_buffer_renderer_ae0d09c94784fc721d926c93a87907a0c}{Light\+Z\+Buffer\+Renderer} (float \hyperlink{class_renderer_aeab228a83d206c55fc73c7a14a0f0761}{scale}, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ada813defebef120813571bfb6053e88f}{width}, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ab2e154b790a2d31603f147510c261ac2}{height})
+\item 
+virtual \hyperlink{class_light_z_buffer_renderer_a8bc0f947c608e08a7094be1b02a27e13}{$\sim$\+Light\+Z\+Buffer\+Renderer} ()
+\item 
+virtual void \hyperlink{class_light_z_buffer_renderer_acc0d204a38cc6105a7c258b49e5197a4}{set\+Camera} (\hyperlink{camera_8h_a01f929aec8e912be07dca2c1f8d00f67}{Shared\+Camera} value) override
+\item 
+virtual void \hyperlink{class_light_z_buffer_renderer_a73f101ddbdbb27eb19d6ee719da9bf9a}{add\+Light} (\hyperlink{light_8h_ae1ec32369be93ce20c1e9047a8d388c0}{Shared\+Light}) override
+\item 
+virtual void \hyperlink{class_light_z_buffer_renderer_a431be9dc219e4d2706c95ada2aca8af6}{start} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ada813defebef120813571bfb6053e88f}{width}, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} \hyperlink{class_renderer_ab2e154b790a2d31603f147510c261ac2}{height}) override
+\item 
+virtual void \hyperlink{class_light_z_buffer_renderer_a258b9e41e648b8f6393a39d2935d4d42}{render\+Mesh} (shared\+\_\+ptr$<$ \hyperlink{class_mesh}{Mesh} $>$ mesh) override
+\item 
+virtual uchar $\ast$ \hyperlink{class_light_z_buffer_renderer_a7e712d8d1b3a7be674efb620ba3ff0ef}{get\+Rendered} () override
+\item 
+virtual void \hyperlink{class_light_z_buffer_renderer_ad8084c0d5f0b4555900efbeaa81ec066}{finish} () override
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_light_z_buffer_renderer_a48bc043f59326ca98f2821e96710cd41}{fill\+Triangle} (\hyperlink{class_triangle}{Triangle} \&triangle)
+\item 
+void \hyperlink{class_light_z_buffer_renderer_a4fa5b867bf1e51f603713631d674cb06}{get\+Left\+Right\+Bounds} (std\+::vector$<$ float $>$ \&lleft, std\+::vector$<$ float $>$ \&lright, std\+::vector$<$ \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} $>$ \&nleft, std\+::vector$<$ \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} $>$ \&nright, std\+::vector$<$ float $>$ \&zleft, std\+::vector$<$ float $>$ \&zright, \hyperlink{class_triangle}{Triangle} \&triangle, bool \&swapped)
+\item 
+void \hyperlink{class_light_z_buffer_renderer_a73dff4db530851b997e468bf73eb98ab}{triangle\+Sort} (const std\+::vector$<$ \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} $>$ \&vertices, \hyperlink{class_triangle}{Triangle} \&triangle)
+\item 
+\hyperlink{class_color}{Color} \hyperlink{class_light_z_buffer_renderer_ad22c18963eabaa75aea9e26472e24895}{calculate\+Intensity} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&n, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&orig, const \hyperlink{class_color}{Color} \&ka, const \hyperlink{class_color}{Color} \&kd, const \hyperlink{class_color}{Color} \&ks, float ns)
+\item 
+void \hyperlink{class_light_z_buffer_renderer_a5ab92396f07a122fdd9296d2647d5ba9}{put\+Pixel} (\hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} x, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} y, const \hyperlink{class_color}{Color} \&color)
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_light_z_buffer_renderer_a8f2e11c38172b8a5da977ab951937055}{get\+BrezenhemX} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&p1, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&p2)
+\item 
+std\+::vector$<$ \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} $>$ \hyperlink{class_light_z_buffer_renderer_ae37535afff9d52ee46c6be7321bca843}{get\+Normals} (const std\+::vector$<$ float $>$ \&l, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&n1, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&n2)
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_light_z_buffer_renderer_a7ba24d9b0fbd7e05b85bc857d147ff52}{get\+Z\+Line} (const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&p1, const \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} \&p2, \hyperlink{number_8h_a43d43196463bde49cb067f5c20ab8481}{int32} n)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_z_buffer}{Z\+Buffer} \hyperlink{class_light_z_buffer_renderer_ad2acd2dd6506b9847a5ab10405b3a856}{zbuffer}
+\item 
+uchar $\ast$ \hyperlink{class_light_z_buffer_renderer_adb59e3ede69cc0d7ebf1c203bd01a8fd}{buffer}
+\item 
+\hyperlink{camera_8h_a01f929aec8e912be07dca2c1f8d00f67}{Shared\+Camera} \hyperlink{class_light_z_buffer_renderer_a0484f1880ff31e965399a77b8795903f}{camera}
+\item 
+vector$<$ \hyperlink{light_8h_ae1ec32369be93ce20c1e9047a8d388c0}{Shared\+Light} $>$ \hyperlink{class_light_z_buffer_renderer_aa656a2afff0d9f793c6f93000fdc6f88}{lights}
+\item 
+vector$<$ shared\+\_\+ptr$<$ \hyperlink{class_mesh}{Mesh} $>$ $>$ \hyperlink{class_light_z_buffer_renderer_ab019713ebac78d9b63039a06900f1c76}{meshes}
+\item 
+shared\+\_\+ptr$<$ \hyperlink{class_mesh}{Mesh} $>$ \hyperlink{class_light_z_buffer_renderer_a7971a31fc4b6ce58e115fa0a3580f46c}{current\+Mesh}
+\item 
+vector$<$ \hyperlink{vec3_8h_a221ad8ea4d9be4111628ee1ca22ee3ba}{Vec3} $>$ \hyperlink{class_light_z_buffer_renderer_a809ed37dacd61c93f142be3ed674bc6f}{projected}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 9
+
+
+
+\subsection{Конструктор(ы)}
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{Light\+Z\+Buffer\+Renderer()=default}{LightZBufferRenderer()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Light\+Z\+Buffer\+Renderer\+::\+Light\+Z\+Buffer\+Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_light_z_buffer_renderer_a6b48dd8c2782308bd742cd43f4185a53}{}\label{class_light_z_buffer_renderer_a6b48dd8c2782308bd742cd43f4185a53}
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{Light\+Z\+Buffer\+Renderer(float scale, int32 width, int32 height)}{LightZBufferRenderer(float scale, int32 width, int32 height)}}]{\setlength{\rightskip}{0pt plus 5cm}Light\+Z\+Buffer\+Renderer\+::\+Light\+Z\+Buffer\+Renderer (
+\begin{DoxyParamCaption}
+\item[{float}]{scale, }
+\item[{{\bf int32}}]{width, }
+\item[{{\bf int32}}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{class_light_z_buffer_renderer_ae0d09c94784fc721d926c93a87907a0c}{}\label{class_light_z_buffer_renderer_ae0d09c94784fc721d926c93a87907a0c}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 10
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!````~Light\+Z\+Buffer\+Renderer@{$\sim$\+Light\+Z\+Buffer\+Renderer}}
+\index{````~Light\+Z\+Buffer\+Renderer@{$\sim$\+Light\+Z\+Buffer\+Renderer}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{$\sim$\+Light\+Z\+Buffer\+Renderer()}{~LightZBufferRenderer()}}]{\setlength{\rightskip}{0pt plus 5cm}Light\+Z\+Buffer\+Renderer\+::$\sim$\+Light\+Z\+Buffer\+Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_light_z_buffer_renderer_a8bc0f947c608e08a7094be1b02a27e13}{}\label{class_light_z_buffer_renderer_a8bc0f947c608e08a7094be1b02a27e13}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 18
+
+
+
+\subsection{Методы}
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!add\+Light@{add\+Light}}
+\index{add\+Light@{add\+Light}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{add\+Light(\+Shared\+Light) override}{addLight(SharedLight) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::add\+Light (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Light}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_z_buffer_renderer_a73f101ddbdbb27eb19d6ee719da9bf9a}{}\label{class_light_z_buffer_renderer_a73f101ddbdbb27eb19d6ee719da9bf9a}
+
+
+Замещает \hyperlink{class_renderer_a000c8a4b55c252ad1353bbd33dc4def9}{Renderer}.
+
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 30
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!calculate\+Intensity@{calculate\+Intensity}}
+\index{calculate\+Intensity@{calculate\+Intensity}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{calculate\+Intensity(const Vec3 \&n, const Vec3 \&orig, const Color \&ka, const Color \&kd, const Color \&ks, float ns)}{calculateIntensity(const Vec3 &n, const Vec3 &orig, const Color &ka, const Color &kd, const Color &ks, float ns)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Light\+Z\+Buffer\+Renderer\+::calculate\+Intensity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{n, }
+\item[{const {\bf Vec3} \&}]{orig, }
+\item[{const {\bf Color} \&}]{ka, }
+\item[{const {\bf Color} \&}]{kd, }
+\item[{const {\bf Color} \&}]{ks, }
+\item[{float}]{ns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_ad22c18963eabaa75aea9e26472e24895}{}\label{class_light_z_buffer_renderer_ad22c18963eabaa75aea9e26472e24895}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 111
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!fill\+Triangle@{fill\+Triangle}}
+\index{fill\+Triangle@{fill\+Triangle}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{fill\+Triangle(\+Triangle \&triangle)}{fillTriangle(Triangle &triangle)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::fill\+Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} \&}]{triangle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a48bc043f59326ca98f2821e96710cd41}{}\label{class_light_z_buffer_renderer_a48bc043f59326ca98f2821e96710cd41}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 144
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!finish@{finish}}
+\index{finish@{finish}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{finish() override}{finish() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_z_buffer_renderer_ad8084c0d5f0b4555900efbeaa81ec066}{}\label{class_light_z_buffer_renderer_ad8084c0d5f0b4555900efbeaa81ec066}
+
+
+Замещает \hyperlink{class_renderer_ae8a0a67a993626066a989dbf02ae43f9}{Renderer}.
+
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 319
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!get\+BrezenhemX@{get\+BrezenhemX}}
+\index{get\+BrezenhemX@{get\+BrezenhemX}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{get\+Brezenhem\+X(const Vec3 \&p1, const Vec3 \&p2)}{getBrezenhemX(const Vec3 &p1, const Vec3 &p2)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ float $>$ Light\+Z\+Buffer\+Renderer\+::get\+BrezenhemX (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{p1, }
+\item[{const {\bf Vec3} \&}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a8f2e11c38172b8a5da977ab951937055}{}\label{class_light_z_buffer_renderer_a8f2e11c38172b8a5da977ab951937055}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 53
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!get\+Left\+Right\+Bounds@{get\+Left\+Right\+Bounds}}
+\index{get\+Left\+Right\+Bounds@{get\+Left\+Right\+Bounds}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{get\+Left\+Right\+Bounds(std\+::vector$<$ float $>$ \&lleft, std\+::vector$<$ float $>$ \&lright, std\+::vector$<$ Vec3 $>$ \&nleft, std\+::vector$<$ Vec3 $>$ \&nright, std\+::vector$<$ float $>$ \&zleft, std\+::vector$<$ float $>$ \&zright, Triangle \&triangle, bool \&swapped)}{getLeftRightBounds(std::vector< float > &lleft, std::vector< float > &lright, std::vector< Vec3 > &nleft, std::vector< Vec3 > &nright, std::vector< float > &zleft, std::vector< float > &zright, Triangle &triangle, bool &swapped)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::get\+Left\+Right\+Bounds (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ float $>$ \&}]{lleft, }
+\item[{std\+::vector$<$ float $>$ \&}]{lright, }
+\item[{std\+::vector$<$ {\bf Vec3} $>$ \&}]{nleft, }
+\item[{std\+::vector$<$ {\bf Vec3} $>$ \&}]{nright, }
+\item[{std\+::vector$<$ float $>$ \&}]{zleft, }
+\item[{std\+::vector$<$ float $>$ \&}]{zright, }
+\item[{{\bf Triangle} \&}]{triangle, }
+\item[{bool \&}]{swapped}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a4fa5b867bf1e51f603713631d674cb06}{}\label{class_light_z_buffer_renderer_a4fa5b867bf1e51f603713631d674cb06}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 213
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!get\+Normals@{get\+Normals}}
+\index{get\+Normals@{get\+Normals}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{get\+Normals(const std\+::vector$<$ float $>$ \&l, const Vec3 \&n1, const Vec3 \&n2)}{getNormals(const std::vector< float > &l, const Vec3 &n1, const Vec3 &n2)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Vec3} $>$ Light\+Z\+Buffer\+Renderer\+::get\+Normals (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ float $>$ \&}]{l, }
+\item[{const {\bf Vec3} \&}]{n1, }
+\item[{const {\bf Vec3} \&}]{n2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_ae37535afff9d52ee46c6be7321bca843}{}\label{class_light_z_buffer_renderer_ae37535afff9d52ee46c6be7321bca843}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 72
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!get\+Rendered@{get\+Rendered}}
+\index{get\+Rendered@{get\+Rendered}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{get\+Rendered() override}{getRendered() override}}]{\setlength{\rightskip}{0pt plus 5cm}uchar $\ast$ Light\+Z\+Buffer\+Renderer\+::get\+Rendered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_z_buffer_renderer_a7e712d8d1b3a7be674efb620ba3ff0ef}{}\label{class_light_z_buffer_renderer_a7e712d8d1b3a7be674efb620ba3ff0ef}
+
+
+Замещает \hyperlink{class_renderer_ad3a00c526a6765792b02f328e7a7dad1}{Renderer}.
+
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 40
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!get\+Z\+Line@{get\+Z\+Line}}
+\index{get\+Z\+Line@{get\+Z\+Line}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{get\+Z\+Line(const Vec3 \&p1, const Vec3 \&p2, int32 n)}{getZLine(const Vec3 &p1, const Vec3 &p2, int32 n)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ float $>$ Light\+Z\+Buffer\+Renderer\+::get\+Z\+Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{p1, }
+\item[{const {\bf Vec3} \&}]{p2, }
+\item[{{\bf int32}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a7ba24d9b0fbd7e05b85bc857d147ff52}{}\label{class_light_z_buffer_renderer_a7ba24d9b0fbd7e05b85bc857d147ff52}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 93
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!put\+Pixel@{put\+Pixel}}
+\index{put\+Pixel@{put\+Pixel}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{put\+Pixel(int32 x, int32 y, const Color \&color)}{putPixel(int32 x, int32 y, const Color &color)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::put\+Pixel (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{x, }
+\item[{{\bf int32}}]{y, }
+\item[{const {\bf Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a5ab92396f07a122fdd9296d2647d5ba9}{}\label{class_light_z_buffer_renderer_a5ab92396f07a122fdd9296d2647d5ba9}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 45
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!render\+Mesh@{render\+Mesh}}
+\index{render\+Mesh@{render\+Mesh}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{render\+Mesh(shared\+\_\+ptr$<$ Mesh $>$ mesh) override}{renderMesh(shared_ptr< Mesh > mesh) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::render\+Mesh (
+\begin{DoxyParamCaption}
+\item[{shared\+\_\+ptr$<$ {\bf Mesh} $>$}]{mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_z_buffer_renderer_a258b9e41e648b8f6393a39d2935d4d42}{}\label{class_light_z_buffer_renderer_a258b9e41e648b8f6393a39d2935d4d42}
+
+
+Замещает \hyperlink{class_renderer_a40c3fe3b0e46de69ed563d4b4ca13986}{Renderer}.
+
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 24
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!set\+Camera@{set\+Camera}}
+\index{set\+Camera@{set\+Camera}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{set\+Camera(\+Shared\+Camera value) override}{setCamera(SharedCamera value) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::set\+Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Camera}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_z_buffer_renderer_acc0d204a38cc6105a7c258b49e5197a4}{}\label{class_light_z_buffer_renderer_acc0d204a38cc6105a7c258b49e5197a4}
+
+
+Замещает \hyperlink{class_renderer_a832ac0e6a4fe1e840e07bd82a405edd6}{Renderer}.
+
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 35
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!start@{start}}
+\index{start@{start}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{start(int32 width, int32 height) override}{start(int32 width, int32 height) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::start (
+\begin{DoxyParamCaption}
+\item[{{\bf int32}}]{width, }
+\item[{{\bf int32}}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_light_z_buffer_renderer_a431be9dc219e4d2706c95ada2aca8af6}{}\label{class_light_z_buffer_renderer_a431be9dc219e4d2706c95ada2aca8af6}
+
+
+Замещает \hyperlink{class_renderer_a78cc00edca00b08d09121065fb4fc771}{Renderer}.
+
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 301
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!triangle\+Sort@{triangle\+Sort}}
+\index{triangle\+Sort@{triangle\+Sort}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{triangle\+Sort(const std\+::vector$<$ Vec3 $>$ \&vertices, Triangle \&triangle)}{triangleSort(const std::vector< Vec3 > &vertices, Triangle &triangle)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Z\+Buffer\+Renderer\+::triangle\+Sort (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Vec3} $>$ \&}]{vertices, }
+\item[{{\bf Triangle} \&}]{triangle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a73dff4db530851b997e468bf73eb98ab}{}\label{class_light_z_buffer_renderer_a73dff4db530851b997e468bf73eb98ab}
+
+
+См. определение в файле lightzbufferrenderer.\+cpp строка 269
+
+
+
+\subsection{Данные класса}
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!buffer@{buffer}}
+\index{buffer@{buffer}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{buffer}{buffer}}]{\setlength{\rightskip}{0pt plus 5cm}uchar$\ast$ Light\+Z\+Buffer\+Renderer\+::buffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_adb59e3ede69cc0d7ebf1c203bd01a8fd}{}\label{class_light_z_buffer_renderer_adb59e3ede69cc0d7ebf1c203bd01a8fd}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 43
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!camera@{camera}}
+\index{camera@{camera}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{camera}{camera}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shared\+Camera} Light\+Z\+Buffer\+Renderer\+::camera\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a0484f1880ff31e965399a77b8795903f}{}\label{class_light_z_buffer_renderer_a0484f1880ff31e965399a77b8795903f}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 44
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!current\+Mesh@{current\+Mesh}}
+\index{current\+Mesh@{current\+Mesh}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{current\+Mesh}{currentMesh}}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<${\bf Mesh}$>$ Light\+Z\+Buffer\+Renderer\+::current\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a7971a31fc4b6ce58e115fa0a3580f46c}{}\label{class_light_z_buffer_renderer_a7971a31fc4b6ce58e115fa0a3580f46c}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 49
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!lights@{lights}}
+\index{lights@{lights}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{lights}{lights}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Shared\+Light}$>$ Light\+Z\+Buffer\+Renderer\+::lights\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_aa656a2afff0d9f793c6f93000fdc6f88}{}\label{class_light_z_buffer_renderer_aa656a2afff0d9f793c6f93000fdc6f88}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 46
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!meshes@{meshes}}
+\index{meshes@{meshes}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{meshes}{meshes}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\+\_\+ptr$<${\bf Mesh}$>$ $>$ Light\+Z\+Buffer\+Renderer\+::meshes\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_ab019713ebac78d9b63039a06900f1c76}{}\label{class_light_z_buffer_renderer_ab019713ebac78d9b63039a06900f1c76}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 48
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!projected@{projected}}
+\index{projected@{projected}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{projected}{projected}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Vec3}$>$ Light\+Z\+Buffer\+Renderer\+::projected\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_a809ed37dacd61c93f142be3ed674bc6f}{}\label{class_light_z_buffer_renderer_a809ed37dacd61c93f142be3ed674bc6f}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 50
+
+\index{Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}!zbuffer@{zbuffer}}
+\index{zbuffer@{zbuffer}!Light\+Z\+Buffer\+Renderer@{Light\+Z\+Buffer\+Renderer}}
+\subsubsection[{\texorpdfstring{zbuffer}{zbuffer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Buffer} Light\+Z\+Buffer\+Renderer\+::zbuffer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_light_z_buffer_renderer_ad2acd2dd6506b9847a5ab10405b3a856}{}\label{class_light_z_buffer_renderer_ad2acd2dd6506b9847a5ab10405b3a856}
+
+
+См. определение в файле lightzbufferrenderer.\+h строка 42
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{lightzbufferrenderer_8h}{lightzbufferrenderer.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/animation/\hyperlink{lightzbufferrenderer_8cpp}{lightzbufferrenderer.\+cpp}\end{DoxyCompactItemize}

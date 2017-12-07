@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/d31/classobjl_1_1_loader" kind="class" language="C++" prot="public">
+    <compoundname>objl::Loader</compoundname>
+    <includes refid="de/da6/3rdparty_2_obj_loader_2objloader_8h" local="no">objloader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d31/classobjl_1_1_loader_1aba5e73cc2c1d0a917415498723ea5702" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="db/dea/structobjl_1_1_mesh" kindref="compound">Mesh</ref> &gt;</type>
+        <definition>std::vector&lt;Mesh&gt; objl::Loader::LoadedMeshes</definition>
+        <argsstring></argsstring>
+        <name>LoadedMeshes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="695" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d31/classobjl_1_1_loader_1ada15ad9ce70b5c457907be7988436ed5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d4/dd1/structobjl_1_1_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt;Vertex&gt; objl::Loader::LoadedVertices</definition>
+        <argsstring></argsstring>
+        <name>LoadedVertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="697" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d31/classobjl_1_1_loader_1a29e18c5a09e82ac44106e282d1acf31a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; objl::Loader::LoadedIndices</definition>
+        <argsstring></argsstring>
+        <name>LoadedIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="699" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d31/classobjl_1_1_loader_1a302204a43746c96f7fe0c72516019f9f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d2/dbb/structobjl_1_1_material" kindref="compound">Material</ref> &gt;</type>
+        <definition>std::vector&lt;Material&gt; objl::Loader::LoadedMaterials</definition>
+        <argsstring></argsstring>
+        <name>LoadedMaterials</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="701" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d31/classobjl_1_1_loader_1a8ae8d4592c0f727daca80005ae48ea32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Loader::Loader</definition>
+        <argsstring>()</argsstring>
+        <name>Loader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="392" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="392" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d31/classobjl_1_1_loader_1a40d6e6ce91ce09df26a4042605ef4c4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>objl::Loader::~Loader</definition>
+        <argsstring>()</argsstring>
+        <name>~Loader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="395" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d31/classobjl_1_1_loader_1a4e3c689962e3ac018d5944f37a791518" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool objl::Loader::LoadFile</definition>
+        <argsstring>(std::string Path)</argsstring>
+        <name>LoadFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>Path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="406" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="406" bodyend="692"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="de/d31/classobjl_1_1_loader_1ac7a2017fa9ec1550c00350f87c7ba93a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void objl::Loader::GenVerticesFromRawOBJ</definition>
+        <argsstring>(std::vector&lt; Vertex &gt; &amp;oVerts, const std::vector&lt; Vector3 &gt; &amp;iPositions, const std::vector&lt; Vector2 &gt; &amp;iTCoords, const std::vector&lt; Vector3 &gt; &amp;iNormals, std::string icurline)</argsstring>
+        <name>GenVerticesFromRawOBJ</name>
+        <param>
+          <type>std::vector&lt; <ref refid="d4/dd1/structobjl_1_1_vertex" kindref="compound">Vertex</ref> &gt; &amp;</type>
+          <declname>oVerts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref> &gt; &amp;</type>
+          <declname>iPositions</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="df/d1a/structobjl_1_1_vector2" kindref="compound">Vector2</ref> &gt; &amp;</type>
+          <declname>iTCoords</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d0/d73/structobjl_1_1_vector3" kindref="compound">Vector3</ref> &gt; &amp;</type>
+          <declname>iNormals</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>icurline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="706" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="706" bodyend="814"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d31/classobjl_1_1_loader_1a74d527984ea9cb75c7ea1624ee9621b0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void objl::Loader::VertexTriangluation</definition>
+        <argsstring>(std::vector&lt; unsigned int &gt; &amp;oIndices, const std::vector&lt; Vertex &gt; &amp;iVerts)</argsstring>
+        <name>VertexTriangluation</name>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>oIndices</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d4/dd1/structobjl_1_1_vertex" kindref="compound">Vertex</ref> &gt; &amp;</type>
+          <declname>iVerts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="818" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="818" bodyend="1032"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d31/classobjl_1_1_loader_1af2f27d60aeb3833d41aec46c6fce5348" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool objl::Loader::LoadMaterials</definition>
+        <argsstring>(std::string path)</argsstring>
+        <name>LoadMaterials</name>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="1035" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="1035" bodyend="1227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="376">
+        <label>objl::Loader</label>
+        <link refid="de/d31/classobjl_1_1_loader"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" line="389" column="1" bodyfile="Projects/labs/course_project_cg/src/3rdparty/ObjLoader/objloader.h" bodystart="388" bodyend="1228"/>
+    <listofallmembers>
+      <member refid="de/d31/classobjl_1_1_loader_1ac7a2017fa9ec1550c00350f87c7ba93a" prot="private" virt="non-virtual"><scope>objl::Loader</scope><name>GenVerticesFromRawOBJ</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1a29e18c5a09e82ac44106e282d1acf31a" prot="public" virt="non-virtual"><scope>objl::Loader</scope><name>LoadedIndices</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1a302204a43746c96f7fe0c72516019f9f" prot="public" virt="non-virtual"><scope>objl::Loader</scope><name>LoadedMaterials</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1aba5e73cc2c1d0a917415498723ea5702" prot="public" virt="non-virtual"><scope>objl::Loader</scope><name>LoadedMeshes</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1ada15ad9ce70b5c457907be7988436ed5" prot="public" virt="non-virtual"><scope>objl::Loader</scope><name>LoadedVertices</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1a8ae8d4592c0f727daca80005ae48ea32" prot="public" virt="non-virtual"><scope>objl::Loader</scope><name>Loader</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1a4e3c689962e3ac018d5944f37a791518" prot="public" virt="non-virtual"><scope>objl::Loader</scope><name>LoadFile</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1af2f27d60aeb3833d41aec46c6fce5348" prot="private" virt="non-virtual"><scope>objl::Loader</scope><name>LoadMaterials</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1a74d527984ea9cb75c7ea1624ee9621b0" prot="private" virt="non-virtual"><scope>objl::Loader</scope><name>VertexTriangluation</name></member>
+      <member refid="de/d31/classobjl_1_1_loader_1a40d6e6ce91ce09df26a4042605ef4c4c" prot="public" virt="non-virtual"><scope>objl::Loader</scope><name>~Loader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

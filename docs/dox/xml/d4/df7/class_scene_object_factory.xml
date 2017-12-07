@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d4/df7/class_scene_object_factory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SceneObjectFactory</compoundname>
+    <derivedcompoundref refid="d5/dbd/class_ambient_light_factory" prot="public" virt="non-virtual">AmbientLightFactory</derivedcompoundref>
+    <derivedcompoundref refid="d7/ddc/class_camera_factory" prot="public" virt="non-virtual">CameraFactory</derivedcompoundref>
+    <derivedcompoundref refid="db/da7/class_model_factory" prot="public" virt="non-virtual">ModelFactory</derivedcompoundref>
+    <derivedcompoundref refid="de/d1d/class_point_light_factory" prot="public" virt="non-virtual">PointLightFactory</derivedcompoundref>
+    <includes refid="d9/d8f/sceneobjectfactory_8h" local="no">sceneobjectfactory.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SceneObjectFactory::SceneObjectFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>SceneObjectFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SceneObjectFactory::~SceneObjectFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~SceneObjectFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d5/d69/sceneobject_8h_1af9afe0f4fe2038e305b8b22ff495305f" kindref="member">SharedSceneObject</ref></type>
+        <definition>virtual SharedSceneObject SceneObjectFactory::create</definition>
+        <argsstring>()=0</argsstring>
+        <name>create</name>
+        <reimplementedby refid="d7/ddc/class_camera_factory_1a7a105ab24599d2d48fc03f40a28a1492">create</reimplementedby>
+        <reimplementedby refid="db/da7/class_model_factory_1a4dd20bd3b89ef69c366c3e1fe00ebb69">create</reimplementedby>
+        <reimplementedby refid="d5/dbd/class_ambient_light_factory_1a423c2ae34a9ce60c313470a4d1da0eac">create</reimplementedby>
+        <reimplementedby refid="de/d1d/class_point_light_factory_1aa7b3093c77ea99fae845932e785504e0">create</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="496">
+        <label>PointLightFactory</label>
+        <link refid="de/d1d/class_point_light_factory"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>ModelFactory</label>
+        <link refid="db/da7/class_model_factory"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="492">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+      <node id="494">
+        <label>CameraFactory</label>
+        <link refid="d7/ddc/class_camera_factory"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>AmbientLightFactory</label>
+        <link refid="d5/dbd/class_ambient_light_factory"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="497">
+        <label>SceneObjectFactory</label>
+        <link refid="d4/df7/class_scene_object_factory"/>
+      </node>
+    </collaborationgraph>
+    <location file="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" line="11" column="1" bodyfile="Projects/labs/course_project_cg/src/animation/sceneobjectfactory.h" bodystart="10" bodyend="18"/>
+    <listofallmembers>
+      <member refid="d4/df7/class_scene_object_factory_1a9b90daaddbc34b747c072f770bc6b993" prot="public" virt="pure-virtual"><scope>SceneObjectFactory</scope><name>create</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1a427946fc1492afadea4c6933074f14f6" prot="public" virt="non-virtual"><scope>SceneObjectFactory</scope><name>SceneObjectFactory</name></member>
+      <member refid="d4/df7/class_scene_object_factory_1ad0967a423a589ce6aaf65bccdb7fe9e2" prot="public" virt="virtual"><scope>SceneObjectFactory</scope><name>~SceneObjectFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

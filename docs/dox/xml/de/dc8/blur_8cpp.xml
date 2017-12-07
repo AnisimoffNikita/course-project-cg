@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="de/dc8/blur_8cpp" kind="file" language="C++">
+    <compoundname>blur.cpp</compoundname>
+    <includes refid="d4/df5/blur_8h" local="yes">blur.h</includes>
+    <incdepgraph>
+      <node id="1917">
+        <label>imagebase.h</label>
+        <link refid="de/dd1/imagebase_8h"/>
+        <childnode refid="1915" relation="include">
+        </childnode>
+        <childnode refid="1916" relation="include">
+        </childnode>
+        <childnode refid="1918" relation="include">
+        </childnode>
+        <childnode refid="1919" relation="include">
+        </childnode>
+      </node>
+      <node id="1919">
+        <label>color.h</label>
+        <link refid="da/dec/color_8h"/>
+        <childnode refid="1918" relation="include">
+        </childnode>
+      </node>
+      <node id="1912">
+        <label>Projects/labs/course_project_cg/src/algorithm/blur/blur.cpp</label>
+        <link refid="blur.cpp"/>
+        <childnode refid="1913" relation="include">
+        </childnode>
+      </node>
+      <node id="1918">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="1915">
+        <label>QImage</label>
+      </node>
+      <node id="1914">
+        <label>src/image/image.h</label>
+        <link refid="d5/db2/image_8h"/>
+        <childnode refid="1915" relation="include">
+        </childnode>
+        <childnode refid="1916" relation="include">
+        </childnode>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1918" relation="include">
+        </childnode>
+        <childnode refid="1919" relation="include">
+        </childnode>
+      </node>
+      <node id="1916">
+        <label>memory</label>
+      </node>
+      <node id="1913">
+        <label>blur.h</label>
+        <link refid="d4/df5/blur_8h"/>
+        <childnode refid="1914" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/df5/blur_8h" kindref="compound">blur.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d3/d14/class_blur_1a6b1d2a771f096d933b72f4dff5f07d2d" refkind="member"><highlight class="normal"><ref refid="d3/d14/class_blur_1a6b1d2a771f096d933b72f4dff5f07d2d" kindref="member">Blur::~Blur</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/algorithm/blur/blur.cpp"/>
+  </compounddef>
+</doxygen>

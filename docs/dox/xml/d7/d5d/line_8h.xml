@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="d7/d5d/line_8h" kind="file" language="C++">
+    <compoundname>line.h</compoundname>
+    <includes refid="d3/d22/number_8h" local="yes">src/number.h</includes>
+    <includes refid="d3/dbe/vec2_8h" local="yes">vec2.h</includes>
+    <includedby refid="db/d0b/cylindersizecalculatorbase_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h</includedby>
+    <includedby refid="d9/d6e/linetransform_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.h</includedby>
+    <includedby refid="dd/d54/houghtransform_8h" local="yes">Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.h</includedby>
+    <includedby refid="dd/da3/line_8cpp" local="yes">Projects/labs/course_project_cg/src/math/line.cpp</includedby>
+    <incdepgraph>
+      <node id="3297">
+        <label>Projects/labs/course_project_cg/src/math/line.h</label>
+        <link refid="line.h"/>
+        <childnode refid="3298" relation="include">
+        </childnode>
+        <childnode refid="3299" relation="include">
+        </childnode>
+      </node>
+      <node id="3298">
+        <label>src/number.h</label>
+        <link refid="d3/d22/number_8h"/>
+      </node>
+      <node id="3299">
+        <label>vec2.h</label>
+        <link refid="d3/dbe/vec2_8h"/>
+        <childnode refid="3298" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3312">
+        <label>Projects/labs/course_project_cg/src/math/line.cpp</label>
+        <link refid="dd/da3/line_8cpp"/>
+      </node>
+      <node id="3302">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.h</label>
+        <link refid="d3/dff/cylindersizecalculator_8h"/>
+        <childnode refid="3303" relation="include">
+        </childnode>
+        <childnode refid="3304" relation="include">
+        </childnode>
+      </node>
+      <node id="3309">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.h</label>
+        <link refid="dd/d54/houghtransform_8h"/>
+        <childnode refid="3310" relation="include">
+        </childnode>
+        <childnode refid="3304" relation="include">
+        </childnode>
+      </node>
+      <node id="3308">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.h</label>
+        <link refid="d9/d6e/linetransform_8h"/>
+        <childnode refid="3309" relation="include">
+        </childnode>
+        <childnode refid="3311" relation="include">
+        </childnode>
+      </node>
+      <node id="3300">
+        <label>Projects/labs/course_project_cg/src/math/line.h</label>
+        <link refid="line.h"/>
+        <childnode refid="3301" relation="include">
+        </childnode>
+        <childnode refid="3308" relation="include">
+        </childnode>
+        <childnode refid="3309" relation="include">
+        </childnode>
+        <childnode refid="3312" relation="include">
+        </childnode>
+      </node>
+      <node id="3311">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/linetransform.cpp</label>
+        <link refid="dd/d42/linetransform_8cpp"/>
+      </node>
+      <node id="3306">
+        <label>Projects/labs/course_project_cg/src/mainwindow.cpp</label>
+        <link refid="d8/dd9/mainwindow_8cpp"/>
+      </node>
+      <node id="3301">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.h</label>
+        <link refid="db/d0b/cylindersizecalculatorbase_8h"/>
+        <childnode refid="3302" relation="include">
+        </childnode>
+        <childnode refid="3307" relation="include">
+        </childnode>
+      </node>
+      <node id="3305">
+        <label>Projects/labs/course_project_cg/src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+      <node id="3303">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculator.cpp</label>
+        <link refid="d3/d57/cylindersizecalculator_8cpp"/>
+      </node>
+      <node id="3310">
+        <label>Projects/labs/course_project_cg/src/algorithm/linetransform/houghtransform.cpp</label>
+        <link refid="d0/d3d/houghtransform_8cpp"/>
+      </node>
+      <node id="3304">
+        <label>Projects/labs/course_project_cg/src/mainwindow.h</label>
+        <link refid="d9/d53/mainwindow_8h"/>
+        <childnode refid="3305" relation="include">
+        </childnode>
+        <childnode refid="3306" relation="include">
+        </childnode>
+      </node>
+      <node id="3307">
+        <label>Projects/labs/course_project_cg/src/algorithm/cylindersizecalculatorbase.cpp</label>
+        <link refid="df/de2/cylindersizecalculatorbase_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dd/db4/class_line" prot="public">Line</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d22/number_8h" kindref="compound">src/number.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/dbe/vec2_8h" kindref="compound">vec2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="dd/db4/class_line" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dd/db4/class_line" kindref="compound">Line</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/db4/class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kindref="member">Line</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/db4/class_line_1acc11b8a429d8cdd63ba6803dff5602b3" kindref="member">Line</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/>&amp;<ref refid="dd/db4/class_line_1a165376d8bc780a0b0ec7ffe8cd0d700a" kindref="member">p1</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/>&amp;<ref refid="dd/db4/class_line_1a21d0f4b2e7252e222e9d32921ea0162c" kindref="member">p2</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/><ref refid="dd/db4/class_line_1aacff829b7404b0f81bd3001d9332b4a7" kindref="member">getP1</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/db4/class_line_1a238346a97b448ae7d1156c24dff41224" kindref="member">setP1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/><ref refid="dd/db4/class_line_1a51b59fb089fd7a02d3f9d1d9a9a132c7" kindref="member">getP2</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/db4/class_line_1a9be1bb222db100fe5570558a0ab3bb42" kindref="member">setP2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/>&amp;value);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="dd/db4/class_line_1ae16899b229d209f5fa5d40049937e030" kindref="member">length</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="dd/db4/class_line_1a165376d8bc780a0b0ec7ffe8cd0d700a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/><ref refid="dd/db4/class_line_1a165376d8bc780a0b0ec7ffe8cd0d700a" kindref="member">p1</ref>;</highlight></codeline>
+<codeline lineno="23" refid="dd/db4/class_line_1a21d0f4b2e7252e222e9d32921ea0162c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dbe/class_vector2" kindref="compound">Vec2</ref><sp/><ref refid="dd/db4/class_line_1a21d0f4b2e7252e222e9d32921ea0162c" kindref="member">p2</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LINE_H</highlight></codeline>
+    </programlisting>
+    <location file="Projects/labs/course_project_cg/src/math/line.h"/>
+  </compounddef>
+</doxygen>

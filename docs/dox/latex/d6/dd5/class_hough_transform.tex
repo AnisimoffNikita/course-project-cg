@@ -1,0 +1,222 @@
+\hypertarget{class_hough_transform}{}\section{Класс Hough\+Transform}
+\label{class_hough_transform}\index{Hough\+Transform@{Hough\+Transform}}
+
+
+{\ttfamily \#include $<$houghtransform.\+h$>$}
+
+
+
+Граф наследования\+:Hough\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d4/d8d/class_hough_transform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Hough\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/d45/class_hough_transform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hough_transform_aa0129504dee413d479db4f400047e525}{Hough\+Transform} (\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_hough_transform_aa9de5274a062b1725689fbbc6f0799f7}{threshold}=50)
+\item 
+virtual \hyperlink{class_hough_transform_a1bcf9b1138d21afd88db2a96873ff741}{$\sim$\+Hough\+Transform} ()
+\item 
+virtual std\+::vector$<$ \hyperlink{class_line}{Line} $>$ \hyperlink{class_hough_transform_ab10d9e25f492521d6436701107b93fac}{process} (\hyperlink{class_image}{Image} \&\hyperlink{class_hough_transform_a0fe725cb1f0e3078096c3d7e9dee85f7}{image})
+\end{DoxyCompactItemize}
+\subsection*{Закрытые типы}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{class_hough_transform_acca3cb75c9e1a69b38a0ef97a6b3e6ae}{Points} = std\+::vector$<$ \hyperlink{vec2_8h_a056bf34213a36593f50f333d7653fe1c}{Vec2} $>$
+\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_hough_transform_a9cbe414b810e761a1b776d268fd13fa5}{fill\+Accumulator} ()
+\item 
+void \hyperlink{class_hough_transform_a7292b312db2f7bbf90d52c755b9de28a}{get\+Lines} ()
+\item 
+void \hyperlink{class_hough_transform_a0eee01dc4d43dc5545b832513aeb6ff4}{draw\+Lines} (\hyperlink{class_image}{Image} \&color)
+\item 
+void \hyperlink{class_hough_transform_a2ea26ee041bf7dd1e50616d3411138cf}{brezenhem} (\hyperlink{class_image}{Image} \&color, const \hyperlink{class_line}{Line} \&line)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_hough_transform_aa9de5274a062b1725689fbbc6f0799f7}{threshold}
+\item 
+\hyperlink{class_grayscale_image}{Grayscale\+Image} \hyperlink{class_hough_transform_a0fe725cb1f0e3078096c3d7e9dee85f7}{image}
+\item 
+std\+::vector$<$ \hyperlink{class_hough_transform_acca3cb75c9e1a69b38a0ef97a6b3e6ae}{Points} $>$ \hyperlink{class_hough_transform_aaa271ada2195b2f0dba1a4611648fc2f}{accumulator}
+\item 
+std\+::vector$<$ \hyperlink{class_line}{Line} $>$ \hyperlink{class_hough_transform_abb2e77efd0688f3ea508c5f51b480f22}{lines}
+\item 
+\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_hough_transform_a1c2b5fa2274a44848f8737f396397137}{accumulator\+Width}
+\item 
+\hyperlink{number_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32} \hyperlink{class_hough_transform_aee054a46260dc381123d158617c0e7dc}{accumulator\+Height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле houghtransform.\+h строка 11
+
+
+
+\subsection{Определения типов}
+\index{Hough\+Transform@{Hough\+Transform}!Points@{Points}}
+\index{Points@{Points}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{Points}{Points}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Hough\+Transform\+::\+Points} =  std\+::vector$<${\bf Vec2}$>$\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_acca3cb75c9e1a69b38a0ef97a6b3e6ae}{}\label{class_hough_transform_acca3cb75c9e1a69b38a0ef97a6b3e6ae}
+
+
+См. определение в файле houghtransform.\+h строка 14
+
+
+
+\subsection{Конструктор(ы)}
+\index{Hough\+Transform@{Hough\+Transform}!Hough\+Transform@{Hough\+Transform}}
+\index{Hough\+Transform@{Hough\+Transform}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{Hough\+Transform(uint32 threshold=50)}{HoughTransform(uint32 threshold=50)}}]{\setlength{\rightskip}{0pt plus 5cm}Hough\+Transform\+::\+Hough\+Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32}}]{threshold = {\ttfamily 50}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hough_transform_aa0129504dee413d479db4f400047e525}{}\label{class_hough_transform_aa0129504dee413d479db4f400047e525}
+
+
+См. определение в файле houghtransform.\+cpp строка 7
+
+\index{Hough\+Transform@{Hough\+Transform}!````~Hough\+Transform@{$\sim$\+Hough\+Transform}}
+\index{````~Hough\+Transform@{$\sim$\+Hough\+Transform}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{$\sim$\+Hough\+Transform()}{~HoughTransform()}}]{\setlength{\rightskip}{0pt plus 5cm}Hough\+Transform\+::$\sim$\+Hough\+Transform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_hough_transform_a1bcf9b1138d21afd88db2a96873ff741}{}\label{class_hough_transform_a1bcf9b1138d21afd88db2a96873ff741}
+
+
+См. определение в файле houghtransform.\+cpp строка 12
+
+
+
+\subsection{Методы}
+\index{Hough\+Transform@{Hough\+Transform}!brezenhem@{brezenhem}}
+\index{brezenhem@{brezenhem}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{brezenhem(\+Image \&color, const Line \&line)}{brezenhem(Image &color, const Line &line)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hough\+Transform\+::brezenhem (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} \&}]{color, }
+\item[{const {\bf Line} \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_a2ea26ee041bf7dd1e50616d3411138cf}{}\label{class_hough_transform_a2ea26ee041bf7dd1e50616d3411138cf}
+
+
+См. определение в файле houghtransform.\+cpp строка 139
+
+\index{Hough\+Transform@{Hough\+Transform}!draw\+Lines@{draw\+Lines}}
+\index{draw\+Lines@{draw\+Lines}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{draw\+Lines(\+Image \&color)}{drawLines(Image &color)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hough\+Transform\+::draw\+Lines (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_a0eee01dc4d43dc5545b832513aeb6ff4}{}\label{class_hough_transform_a0eee01dc4d43dc5545b832513aeb6ff4}
+
+
+См. определение в файле houghtransform.\+cpp строка 131
+
+\index{Hough\+Transform@{Hough\+Transform}!fill\+Accumulator@{fill\+Accumulator}}
+\index{fill\+Accumulator@{fill\+Accumulator}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{fill\+Accumulator()}{fillAccumulator()}}]{\setlength{\rightskip}{0pt plus 5cm}void Hough\+Transform\+::fill\+Accumulator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_a9cbe414b810e761a1b776d268fd13fa5}{}\label{class_hough_transform_a9cbe414b810e761a1b776d268fd13fa5}
+
+
+См. определение в файле houghtransform.\+cpp строка 29
+
+\index{Hough\+Transform@{Hough\+Transform}!get\+Lines@{get\+Lines}}
+\index{get\+Lines@{get\+Lines}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{get\+Lines()}{getLines()}}]{\setlength{\rightskip}{0pt plus 5cm}void Hough\+Transform\+::get\+Lines (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_a7292b312db2f7bbf90d52c755b9de28a}{}\label{class_hough_transform_a7292b312db2f7bbf90d52c755b9de28a}
+
+
+См. определение в файле houghtransform.\+cpp строка 58
+
+\index{Hough\+Transform@{Hough\+Transform}!process@{process}}
+\index{process@{process}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{process(\+Image \&image)}{process(Image &image)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Line} $>$ Hough\+Transform\+::process (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} \&}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_hough_transform_ab10d9e25f492521d6436701107b93fac}{}\label{class_hough_transform_ab10d9e25f492521d6436701107b93fac}
+
+
+Замещает \hyperlink{class_line_transform_a391ea9da214224bd3fe428a41c271761}{Line\+Transform}.
+
+
+
+См. определение в файле houghtransform.\+cpp строка 16
+
+
+
+\subsection{Данные класса}
+\index{Hough\+Transform@{Hough\+Transform}!accumulator@{accumulator}}
+\index{accumulator@{accumulator}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{accumulator}{accumulator}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Points}$>$ Hough\+Transform\+::accumulator\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_aaa271ada2195b2f0dba1a4611648fc2f}{}\label{class_hough_transform_aaa271ada2195b2f0dba1a4611648fc2f}
+
+
+См. определение в файле houghtransform.\+h строка 32
+
+\index{Hough\+Transform@{Hough\+Transform}!accumulator\+Height@{accumulator\+Height}}
+\index{accumulator\+Height@{accumulator\+Height}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{accumulator\+Height}{accumulatorHeight}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32} Hough\+Transform\+::accumulator\+Height\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_aee054a46260dc381123d158617c0e7dc}{}\label{class_hough_transform_aee054a46260dc381123d158617c0e7dc}
+
+
+См. определение в файле houghtransform.\+h строка 34
+
+\index{Hough\+Transform@{Hough\+Transform}!accumulator\+Width@{accumulator\+Width}}
+\index{accumulator\+Width@{accumulator\+Width}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{accumulator\+Width}{accumulatorWidth}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32} Hough\+Transform\+::accumulator\+Width\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_a1c2b5fa2274a44848f8737f396397137}{}\label{class_hough_transform_a1c2b5fa2274a44848f8737f396397137}
+
+
+См. определение в файле houghtransform.\+h строка 34
+
+\index{Hough\+Transform@{Hough\+Transform}!image@{image}}
+\index{image@{image}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{image}{image}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Grayscale\+Image} Hough\+Transform\+::image\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_a0fe725cb1f0e3078096c3d7e9dee85f7}{}\label{class_hough_transform_a0fe725cb1f0e3078096c3d7e9dee85f7}
+
+
+См. определение в файле houghtransform.\+h строка 30
+
+\index{Hough\+Transform@{Hough\+Transform}!lines@{lines}}
+\index{lines@{lines}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{lines}{lines}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Line}$>$ Hough\+Transform\+::lines\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_abb2e77efd0688f3ea508c5f51b480f22}{}\label{class_hough_transform_abb2e77efd0688f3ea508c5f51b480f22}
+
+
+См. определение в файле houghtransform.\+h строка 33
+
+\index{Hough\+Transform@{Hough\+Transform}!threshold@{threshold}}
+\index{threshold@{threshold}!Hough\+Transform@{Hough\+Transform}}
+\subsubsection[{\texorpdfstring{threshold}{threshold}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32} Hough\+Transform\+::threshold\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_hough_transform_aa9de5274a062b1725689fbbc6f0799f7}{}\label{class_hough_transform_aa9de5274a062b1725689fbbc6f0799f7}
+
+
+См. определение в файле houghtransform.\+h строка 29
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/linetransform/\hyperlink{houghtransform_8h}{houghtransform.\+h}\item 
+Projects/labs/course\+\_\+project\+\_\+cg/src/algorithm/linetransform/\hyperlink{houghtransform_8cpp}{houghtransform.\+cpp}\end{DoxyCompactItemize}
