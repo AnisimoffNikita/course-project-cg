@@ -147,6 +147,7 @@ void MainWindow::on_btnCalibrate_clicked()
         if (!res)
         {
             QMessageBox msgBox;
+            msgBox.setWindowTitle("Предупреждение");
             msgBox.setText("Калибровка не удалась");
             msgBox.exec();
             return;
@@ -192,6 +193,7 @@ void MainWindow::on_btnEval_clicked()
     if (size.getHeight() == -2)
     {
         QMessageBox msgBox;
+        msgBox.setWindowTitle("Предупреждение");
         msgBox.setText("Цилиндр не найден однозначно");
         msgBox.exec();
         return;

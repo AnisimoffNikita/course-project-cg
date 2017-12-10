@@ -76,6 +76,13 @@ void ModelView2::wheelEvent(QWheelEvent *event)
     auto delta = -(pos - look) * (event->delta() / 1200.0);
     MoveTransformation move(delta);
     workCamera->transform(move);
+
+    if (workCamera->getPosition().length() < 5.5 ||
+            workCamera->getPosition().length() > 40)
+    {
+        MoveTransformation move(-delta);
+        workCamera->transform(move);
+    }
 }
 
 void ModelView2::paintEvent(QPaintEvent *)

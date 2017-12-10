@@ -124,7 +124,7 @@ void CylinderSizeCalculator::calculateSize()
         auto evalDiam = visibleDiam / localFactor;
         return evalDiam - inDiam;
     };
-    float radius = Math::Bisection(0.01, distance * 0.5, f);
+    float radius = Math::Bisection(distance * 0.01, distance * 0.5, f);
     auto localFactor = factor * ((distance - (radius + radius * radius /
                                   (distance - radius))) / distance);
     float height = localFactor * (lines[0].length() + lines[1].length()) / 2;
