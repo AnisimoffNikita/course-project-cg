@@ -15,31 +15,55 @@ CylinderSize CylinderSizeCalculator::evaluate(const Lines &lines)
 {
     this->lines = lines;
     findEdges();
+
+    if (this->lines.size() == 0)
+    {
+        return CylinderSize(-1, -1);
+    }
+
+    if (this->lines.size() > 2)
+    {
+        return CylinderSize(-2, -2);
+    }
+
     calculateSize();
     return size;
 }
 
-void CylinderSizeCalculator::calibrate(const std::vector<Line> &inLines,
+bool CylinderSizeCalculator::calibrate(const std::vector<Line> &inLines,
                                        float distance, float radius, float height)
 {
     lines = inLines;
     this->distance = distance;
     findEdges();
+
+    if (this->lines.size() == 0)
+    {
+        return false;
+    }
+
+    if (this->lines.size() > 2)
+    {
+        return false;
+    }
+
     float visibleEdge = distance - (radius + radius * radius /
                                     (distance - radius));
     float localFactor = height / lines[0].length();
     factor = localFactor * (distance / visibleEdge);
+    return true;
 }
 
-void CylinderSizeCalculator::calibrate(float distance, float diag, float diagPx)
+bool CylinderSizeCalculator::calibrate(float distance, float scale)
 {
     this->distance = distance;
-    factor = diag / diagPx;
+    factor = scale;
+    return true;
 }
 
 void CylinderSizeCalculator::findEdges()
 {
-    std::vector<Line> result(2);
+    std::vector<Line> result;
 
     for (uint32 i = 0; i < lines.size(); i++)
     {
@@ -76,8 +100,8 @@ void CylinderSizeCalculator::findEdges()
                     if (width > maxWidth)
                     {
                         maxWidth = width;
-                        result[0] = lines[i];
-                        result[1] = lines[j];
+                        result.push_back(lines[i]);
+                        result.push_back(lines[j]);
                     }
                 }
             }
@@ -100,10 +124,10 @@ void CylinderSizeCalculator::calculateSize()
         auto evalDiam = visibleDiam / localFactor;
         return evalDiam - inDiam;
     };
-    float radius = Math::Bisection(0.01, 0.3, f);
+    float radius = Math::Bisection(0.01, distance * 0.5, f);
     auto localFactor = factor * ((distance - (radius + radius * radius /
                                   (distance - radius))) / distance);
-    float height = localFactor * lines[0].length();
+    float height = localFactor * (lines[0].length() + lines[1].length()) / 2;
     size.setHeight(height);
     size.setRadius(radius);
 }

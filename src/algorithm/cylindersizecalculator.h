@@ -12,9 +12,9 @@ public:
     virtual ~CylinderSizeCalculator();
 
     virtual CylinderSize evaluate(const Lines &lines);
-    virtual void calibrate(const std::vector<Line> &lines, float distance,
+    virtual bool calibrate(const std::vector<Line> &lines, float distance,
                            float radius, float height);
-    virtual void calibrate(float distance, float diag, float diagPx);
+    virtual bool calibrate(float distance, float scale);
 
 private:
     void findEdges();

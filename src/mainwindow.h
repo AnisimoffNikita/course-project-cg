@@ -74,6 +74,7 @@ private:
     AnimationWindow w;
     Ui::MainWindow *ui;
     QImage image;
+    bool loaded;
 
     CylinderSizeCalculator calc;
 
